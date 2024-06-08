@@ -1,5 +1,5 @@
 baseURL = 'https://luojiahai.com/'
-languageCode = 'en-us'
+languageCode = 'zh-cn'
 title = 'luojiahai'
 theme = 'paper'
 
