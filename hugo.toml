@@ -3,6 +3,18 @@ languageCode = 'en-us'
 title = 'luojiahai'
 theme = 'paper'
 
+[menu]
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 10
+
 [params]
   # color style
   color = 'linen'                           # linen, wheat, gray, light

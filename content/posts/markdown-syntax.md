@@ -2,6 +2,7 @@
 title = 'Markdown Syntax Guide'
 date = 2024-06-08T12:12:53+10:00
 draft = false
+author = 'luojiahai'
 +++
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
