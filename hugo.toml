@@ -1,0 +1,4 @@
+baseURL = 'https://luojiahai.com/'
+languageCode = 'en-us'
+title = 'luojiahai'
+theme = 'ananke'
