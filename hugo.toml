@@ -2,6 +2,12 @@ baseURL = 'https://luojiahai.com/'
 languageCode = 'zh-cn'
 title = 'luojiahai'
 theme = 'paper'
+enableInlineShortcodes = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
   [[menu.main]]
