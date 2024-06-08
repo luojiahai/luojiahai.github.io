@@ -2,4 +2,6 @@ baseURL = 'https://luojiahai.com/'
 languageCode = 'en-us'
 title = 'luojiahai'
 theme = 'ananke'
-favicon = true
+
+[params]
+  favicon = true
