@@ -11,14 +11,9 @@ enableInlineShortcodes = true
 
 [menu]
   [[menu.main]]
-    identifier = 'about'
-    name = 'About'
-    url = '/about/'
-    weight = 10
-  [[menu.main]]
-    identifier = 'contact'
-    name = 'Contact'
-    url = '/contact/'
+    identifier = 'readme'
+    name = 'README'
+    url = '/readme/'
     weight = 10
 
 [params]
