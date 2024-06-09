@@ -9,8 +9,8 @@ author = 'luojiahai'
 state-of-the-art pretrained models. These models support common tasks in different modalities, such as Natural Language
 Processing, Computer Vision, Audio, and Multimodal.
 
-Inference is the process of using a pretrained model to generate outputs on new data. There are several ways to run
-inference with:
+Inference is the process of using a pretrained model to generate outputs on new data. In Hugging Face, there are several
+ways to run inference with:
 
 - [Inference API]({{% ref "#inference-api" %}}).
 - [Inference Endpoints]({{% ref "#inference-endpoints" %}}).
@@ -20,8 +20,8 @@ inference with:
 ## Inference API {#inference-api}
 
 [Inference API](https://huggingface.co/docs/api-inference/) is free to use, and rate limited. You can test and evaluate
-over 150,000 publicly accessible machine learning models, or your own private models, via simple HTTP requests, with
-fast inference hosted on Hugging Face shared infrastructure.
+publicly accessible machine learning models, or your own private models, via simple HTTP requests, with fast inference
+hosted on Hugging Face shared infrastructure.
 
 ### Running Inference with API Requests
 
@@ -95,64 +95,63 @@ For usage, see this article:
 The pipelines are a great and easy way to use models for inference. These pipelines are objects that abstract most of
 the complex code from the library, offering a simple API dedicated to several tasks.
 
+A pipeline groups together three steps: preprocessing, forward (passing the inputs through the model), and
+postprocessing.
+
 ### The pipeline abstraction
 
 The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. It internally builds a pretrained model inheriting
-from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used for inference.
+The `pipeline()` is a utility factory method to build a `Pipeline`. Given a task, it returns an instance of a concrete
+`Pipeline` class which contains instances (model/tokenizer) and processes (preprocessing/forward/postprocessing) to run
+inference on the specified task. Call the pipeline instance to generate the model outputs.
 
 There are multiple ways to fetch pretrained models to run inference:
 
-#### Fetch online model given task identifier
+#### Fetch online model given a task
 
-The pipeline downloads the default model (configured for each eask) from the Model Hub and caches it locally.
+The pipeline downloads the default model (configured for each eask) from the Hub and caches it locally.
 
 ```python
->>> pipeline = transformers.pipeline(task='text-classification')
->>> pipeline(inputs='This restaurant is awesome')
-[{'label': 'POSITIVE', 'score': 0.9998743534088135}]
+pipeline = transformers.pipeline(task='text-classification')
+outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Fetch online model given model identifier
+#### Fetch online model given a model identifier
 
-The pipeline downloads the model from the Model Hub and caches it locally.
+The pipeline downloads the model from the Hub and caches it locally.
 
 ```python
->>> pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
->>> pipeline(inputs='This restaurant is awesome')
-[{'label': 'NEUTRAL', 'score': 0.7313136458396912}]
+pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
+outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
 #### Fetch offline model (Internet not required)
 
-The pipeline loads the model directly from your local storage and builds the model and tokenizer (required for offline
-inference) using [Auto Classes](https://huggingface.co/docs/transformers/model_doc/auto).
+The pipeline loads the model directly from your local storage using the Auto Classes.
 
 ```python
->>> model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
->>> tokenizer = transformers.AutoTokenizer.from_pretrained(pretrained_model_name_or_path='path/to/model')
->>> pipeline = transformers.pipeline(task='text-classification', model=model, tokenizer=tokenizer)
->>> pipeline(inputs='This restaurant is awesome')
-[{'label': 'POSITIVE', 'score': 0.9998743534088135}]
+model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
+tokenizer = transformers.AutoTokenizer.from_pretrained(pretrained_model_name_or_path='path/to/model')
+pipeline = transformers.pipeline(task='text-classification', model=model, tokenizer=tokenizer)
+outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
 ## Auto Classes {#autoclasses}
 
 In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
-supplying to the `from_pretrained()` method. Auto Classes are here to do this job for you so that you automatically
-retrieve the relevant model given the name/path to the pretrained weights/config/vocabulary.
+supplying to the `from_pretrained()` method. [Auto Classes](https://huggingface.co/docs/transformers/model_doc/auto) are
+here to do this job for you so that you automatically retrieve the relevant model given the name/path to the pretrained
+weights/config/vocabulary.
 
 Under the hood, the Auto Classes work together to power the `pipeline()`. An `AutoClass` is a shortcut that
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
-Unlike the `pipeline()`, there is no one generic way to run inference with the Auto Classes. It depends on the task and the
-pretrained model you select.
-
-This is an example of using an `AutoClass` to run inference for text classification task:
+Unlike the `pipeline()`, there is no one generic way to run inference with the Auto Classes. You need to define all
+inference processes whereas a pipeline wraps them together. This is an example of using an `AutoClass`:
 
 ```python
 import transformers
