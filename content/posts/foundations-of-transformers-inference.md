@@ -128,7 +128,8 @@ The pipeline downloads the model from the Model Hub and caches it locally.
 
 #### Fetch offline model (Internet not required)
 
-The pipeline loads the model directly from your local storage.
+The pipeline loads the model directly from your local storage and builds the model and tokenizer (required for offline
+inference) using [Auto Classes](https://huggingface.co/docs/transformers/model_doc/auto).
 
 ```python
 >>> model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
@@ -138,13 +139,13 @@ The pipeline loads the model directly from your local storage.
 [{'label': 'POSITIVE', 'score': 0.9998743534088135}]
 ```
 
-## AutoClasses {#autoclasses}
+## Auto Classes {#autoclasses}
 
 In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
 supplying to the `from_pretrained()` method. AutoClasses are here to do this job for you so that you automatically
 retrieve the relevant model given the name/path to the pretrained weights/config/vocabulary.
 
-Under the hood, the `AutoClasses` work together to power the `pipeline()`. An `AutoClass` is a shortcut that
+Under the hood, the Auto Classe work together to power the `pipeline()`. An `AutoClass` is a shortcut that
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
