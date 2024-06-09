@@ -5,11 +5,5 @@ draft = false
 author = 'luojiahai'
 +++
 
-## About
-
 This site is for blogging, hosted on [GitHub Pages](https://pages.github.com/), powered by [Hugo](https://gohugo.io/)
 with [Paper](https://github.com/nanxiaobei/hugo-paper) theme.
-
-## Contact
-
-📧 Email: luo@jiahai.co
