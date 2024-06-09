@@ -15,7 +15,7 @@ inference with:
 - [Inference API]({{% ref "#inference-api" %}}).
 - [Inference Endpoints]({{% ref "#inference-endpoints" %}}).
 - [Pipelines]({{% ref "#pipelines" %}}).
-- [Models]({{% ref "#models" %}}).
+- [AutoClasses]({{% ref "#autoclasses" %}}).
 
 ## Inference API {#inference-api}
 
@@ -105,7 +105,7 @@ The `pipeline()` is a utility factory method to build a `Pipeline`. It internall
 pretrained model inheriting from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used for
 inference.
 
-There are multiple ways to fetch models to run inference:
+There are multiple ways to fetch pretrained models to run inference:
 
 #### Fetch online model given task identifier
 
@@ -149,17 +149,18 @@ and tokenizer are required to build a pipeline.
 [{'label': 'POSITIVE', 'score': 0.9998743534088135}]
 ```
 
-## Models {#models}
+## AutoClasses {#autoclasses}
 
-The base classes `PreTrainedModel`, `TFPreTrainedModel`, and `FlaxPreTrainedModel` implement the common methods for
-loading/saving a model either from a local file or directory, or from a pretrained model configuration provided by the
-library (downloaded from HuggingFace’s AWS S3 repository).
+In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
+supplying to the from_pretrained() method. AutoClasses are here to do this job for you so that you automatically
+retrieve the relevant model given the name/path to the pretrained weights/config/vocabulary.
 
 Under the hood, the `AutoClasses` work together to power the `pipeline()`. An `AutoClass` is a shortcut that
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
-For a text classification task, this is an example of using `AutoClass` to run inference.
+Unlike `pipeline()`, there is no one generic way to run inference with `AutoClasses`. It depends on the task and the
+pretrained model you select. This is an example of using an `AutoClass` to run inference for text classification task.
 
 ```python
 import transformers
