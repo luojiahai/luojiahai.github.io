@@ -121,7 +121,7 @@ You can call a pipeline on many inputs with a list.
 
 ```python
 >>> pipeline = transformers.pipeline(task='text-classification')
->>> pipeline(['This restaurant is awesome', 'This restaurant is awful'])
+>>> pipeline(inputs=['This restaurant is awesome', 'This restaurant is awful'])
 [{'label': 'POSITIVE', 'score': 0.9998743534088135},
  {'label': 'NEGATIVE', 'score': 0.9996669292449951}]
 ```
