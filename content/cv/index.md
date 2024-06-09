@@ -1,9 +1,11 @@
 +++
-title = 'CV'
+title = 'Curriculum Vitae'
 date = 2024-06-09T13:38:12+10:00
 draft = false
 author = 'luojiahai'
 +++
+
+This is a simplified CV. For more details, please visit my LinkedIn profile.
 
 ## About
 
@@ -11,11 +13,11 @@ I am a pragmatic software development engineer dedicated to crafting innovative 
 with principled thinking. I excel in full-stack software development, leveraging cloud computing and site reliability
 engineering. I am interested in exploring the vast realm of machine intelligence.
 
-## Contact
+## Skills
 
-📧 Email: luo@jiahai.co
-
-Note: To recruiters, message with total compensation please.
+- Languages: Python, TypeScript, Java, C
+- Technologies: [🤗 Transformers](https://huggingface.co/docs/transformers/), [PyTorch](https://pytorch.org/), AWS,
+  Kafka, GraphQL
 
 ## Experience
 
