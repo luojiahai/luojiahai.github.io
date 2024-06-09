@@ -101,9 +101,9 @@ The pipeline abstraction is a wrapper around all the other available pipelines. 
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/v4.41.3/en/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. It internally builds an actual instance of a
-pretrained model inheriting from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used for
-inference.
+The `pipeline()` is a utility factory method to build an instance of `Pipeline`. It internally builds an actual instance
+of a pretrained model inheriting from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used
+for inference.
 
 There are multiple ways to fetch pretrained models to run inference:
 
@@ -152,14 +152,14 @@ and tokenizer are required to build a pipeline.
 ## AutoClasses {#autoclasses}
 
 In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
-supplying to the from_pretrained() method. AutoClasses are here to do this job for you so that you automatically
+supplying to the `from_pretrained()` method. AutoClasses are here to do this job for you so that you automatically
 retrieve the relevant model given the name/path to the pretrained weights/config/vocabulary.
 
 Under the hood, the `AutoClasses` work together to power the `pipeline()`. An `AutoClass` is a shortcut that
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
-Unlike `pipeline()`, there is no one generic way to run inference with `AutoClasses`. It depends on the task and the
+Unlike the `pipeline()`, there is no one generic way to run inference with `AutoClasses`. It depends on the task and the
 pretrained model you select. This is an example of using an `AutoClass` to run inference for text classification task.
 
 ```python
