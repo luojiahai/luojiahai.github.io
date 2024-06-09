@@ -142,7 +142,7 @@ inference) using [Auto Classes](https://huggingface.co/docs/transformers/model_d
 ## Auto Classes {#autoclasses}
 
 In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
-supplying to the `from_pretrained()` method. AutoClasses are here to do this job for you so that you automatically
+supplying to the `from_pretrained()` method. Auto Classes are here to do this job for you so that you automatically
 retrieve the relevant model given the name/path to the pretrained weights/config/vocabulary.
 
 Under the hood, the Auto Classes work together to power the `pipeline()`. An `AutoClass` is a shortcut that
