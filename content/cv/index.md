@@ -5,7 +5,7 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is a simplified CV. For more details, please visit my LinkedIn profile.
+This is a simplified CV. For more details, please visit my [LinkedIn profile](https://linkedin.com/in/luojiahai).
 
 ## About
 
@@ -16,8 +16,7 @@ engineering. I am interested in exploring the vast realm of machine intelligence
 ## Skills
 
 - Languages: Python, TypeScript, Java, C
-- Technologies: [🤗 Transformers](https://huggingface.co/docs/transformers/), [PyTorch](https://pytorch.org/), AWS,
-  Kafka, GraphQL
+- Technologies: 🤗 Hugging Face, AWS, Kafka, GraphQL
 
 ## Experience
 
