@@ -108,7 +108,7 @@ There are multiple ways to fetch pretrained models to run inference:
 
 #### Fetch online model given task identifier
 
-The pipeline downloads and caches the default model (configured for each eask) from the Model Hub.
+The pipeline downloads the default model (configured for each eask) from the Model Hub and caches it locally.
 
 ```python
 >>> pipeline = transformers.pipeline(task='text-classification')
@@ -118,7 +118,7 @@ The pipeline downloads and caches the default model (configured for each eask) f
 
 #### Fetch online model given model identifier
 
-The pipeline downloads and caches the model from the Model Hub.
+The pipeline downloads the model from the Model Hub and caches it locally.
 
 ```python
 >>> pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
