@@ -82,8 +82,7 @@ deploy any Transformers, Sentence-Transformers and Diffusion models from the Hub
 infrastructure managed by Hugging Face.
 
 With Inference Endpoints, you can easily deploy any machine learning model on dedicated and fully managed
-infrastructure. Select the cloud, region, compute instance, autoscaling range and security level to match your model,
-latency, throughput, and compliance needs.
+infrastructure.
 
 ![](https://raw.githubusercontent.com/huggingface/hf-endpoints-documentation/main/assets/creation_flow.png)
 
@@ -150,8 +149,7 @@ Under the hood, the Auto Classes work together to power the `pipeline()`. An `Au
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
-Unlike the `pipeline()`, there is no one generic way to run inference with the Auto Classes. You need to define all
-inference processes whereas a pipeline wraps them together. This is an example of using an `AutoClass`:
+This is an example of using an `AutoClass`:
 
 ```python
 import transformers
