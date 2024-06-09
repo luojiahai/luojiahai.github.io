@@ -15,8 +15,8 @@ engineering. I am interested in exploring the vast realm of machine intelligence
 
 ## Skills
 
-- Languages: Python, TypeScript, Java, C
-- Technologies: 🤗 Hugging Face, AWS, Kafka, GraphQL
+- Programming Languages: Python, TypeScript, Java, C
+- Technologies: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL
 
 ## Experience
 
