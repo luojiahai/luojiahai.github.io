@@ -170,3 +170,5 @@ outputs = model(**inputs)
 scores = outputs['logits'][0]
 dict_scores = [{'label': model.config.id2label[i], 'score': score.item()} for i, score in enumerate(scores)]
 ```
+
+---
