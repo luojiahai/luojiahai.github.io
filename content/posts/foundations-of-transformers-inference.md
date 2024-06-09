@@ -77,8 +77,8 @@ curl https://api-inference.huggingface.co/models/gpt2 \
 
 ## Inference Endpoints {#inference-endpoints}
 
-[🤗 Inference Endpoints](https://huggingface.co/docs/inference-endpoints/) offers a secure production solution to easily
-deploy any 🤗 Transformers, Sentence-Transformers and Diffusion models from the Hub on dedicated and autoscaling
+[Inference Endpoints](https://huggingface.co/docs/inference-endpoints/) offers a secure production solution to easily
+deploy any Transformers, Sentence-Transformers and Diffusion models from the Hub on dedicated and autoscaling
 infrastructure managed by Hugging Face.
 
 With Inference Endpoints, you can easily deploy any machine learning model on dedicated and fully managed
