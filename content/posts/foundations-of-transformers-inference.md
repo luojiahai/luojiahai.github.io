@@ -149,7 +149,7 @@ Under the hood, the Auto Classes work together to power the `pipeline()`. An `Au
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
 
-Unlike the `pipeline()`, there is no one generic way to run inference with `AutoClasses`. It depends on the task and the
+Unlike the `pipeline()`, there is no one generic way to run inference with the Auto Classes. It depends on the task and the
 pretrained model you select.
 
 This is an example of using an `AutoClass` to run inference for text classification task:
