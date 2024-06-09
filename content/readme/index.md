@@ -14,7 +14,7 @@ Read through the posts.
 
 This site includes my [CV]({{% ref "/cv" %}}). Though, it is simplified.
 
-## About Me
+## About
 
 I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
 with principled thinking. I excel in full-stack software development, leveraging cloud computing and site reliability
@@ -29,3 +29,7 @@ cuisines, and discovering eateries. I immensely enjoy yum-cha, barbecue, fried c
 
 My favourite edibles are pringles sour cream and onion flavour potato crisps, proper onion with green chives flavour
 potato crisps, kinder happy hippo cocoa wafer, and coca-cola zero sugar soft drink.
+
+## Contact
+
+📧 Email: luo@jiahai.co
