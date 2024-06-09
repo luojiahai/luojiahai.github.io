@@ -95,11 +95,86 @@ For usage, see this article:
 The pipelines are a great and easy way to use models for inference. These pipelines are objects that abstract most of
 the complex code from the library, offering a simple API dedicated to several tasks.
 
-The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
-but can provide additional quality of life.
+### The pipeline abstraction
 
-TODO
+The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
+but can provide additional quality of life. See the
+[task summary](https://huggingface.co/docs/transformers/v4.41.3/en/task_summary) for examples of use.
+
+The `pipeline()` is a utility factory method to build a `Pipeline`. It internally builds an actual instance of a
+pretrained model inheriting from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used for
+inference.
+
+There are multiple ways to fetch models to run inference:
+
+#### Fetch online model given task identifier
+
+The pipeline downloads and caches the default model to the task from the Hugging Face Hub.
+
+```python
+>>> pipeline = transformers.pipeline(task='text-classification')
+>>> pipeline(inputs='This restaurant is awesome')
+[{'label': 'POSITIVE', 'score': 0.9998743534088135}]
+```
+
+You can call a pipeline on many inputs with a list.
+
+```python
+>>> pipeline = transformers.pipeline(task='text-classification')
+>>> pipeline(['This restaurant is awesome', 'This restaurant is awful'])
+[{'label': 'POSITIVE', 'score': 0.9998743534088135},
+ {'label': 'NEGATIVE', 'score': 0.9996669292449951}]
+```
+
+#### Fetch online model given model identifier
+
+The pipeline downloads and caches the specified model from the Hugging Face Hub.
+
+```python
+>>> pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
+>>> pipeline(inputs='This restaurant is awesome')
+[{'label': 'NEUTRAL', 'score': 0.7313136458396912}]
+```
+
+#### Fetch offline model (Internet not required)
+
+The pipeline loads the model directly from your local storage. In this case of offline inference, parameters task, model
+and tokenizer are required to build a pipeline.
+
+```python
+>>> model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
+>>> tokenizer = transformers.AutoTokenizer.from_pretrained(pretrained_model_name_or_path='path/to/model')
+>>> pipeline = transformers.pipeline(task='text-classification', model=model, tokenizer=tokenizer)
+>>> pipeline(inputs='This restaurant is awesome')
+[{'label': 'POSITIVE', 'score': 0.9998743534088135}]
+```
 
 ## Models {#models}
 
-TODO
+The base classes `PreTrainedModel`, `TFPreTrainedModel`, and `FlaxPreTrainedModel` implement the common methods for
+loading/saving a model either from a local file or directory, or from a pretrained model configuration provided by the
+library (downloaded from HuggingFace’s AWS S3 repository).
+
+Under the hood, the `AutoClasses` work together to power the `pipeline()`. An `AutoClass` is a shortcut that
+automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
+appropriate `AutoClass` for your task and it’s associated preprocessing class.
+
+For a text classification task, this is an example of using `AutoClass` to run inference.
+
+```python
+import transformers
+
+model_name = 'distilbert/distilbert-base-uncased-finetuned-sst-2-english'
+
+# preprocess
+model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path=model_name)
+tokenizer = transformers.AutoTokenizer.from_pretrained(pretrained_model_name_or_path=model_name)
+inputs = tokenizer('This restaurant is awesome', return_tensors='pt')
+
+# forward
+outputs = model(**inputs)
+
+# postprocess
+scores = outputs['logits'][0]
+dict_scores = [{'label': model.config.id2label[i], 'score': score.item()} for i, score in enumerate(scores)]
+```
