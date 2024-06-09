@@ -99,11 +99,10 @@ the complex code from the library, offering a simple API dedicated to several ta
 
 The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
 but can provide additional quality of life. See the
-[task summary](https://huggingface.co/docs/transformers/v4.41.3/en/task_summary) for examples of use.
+[task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build an instance of `Pipeline`. It internally builds an actual instance
-of a pretrained model inheriting from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used
-for inference.
+The `pipeline()` is a utility factory method to build a `Pipeline`. It internally builds a pretrained model inheriting
+from `PreTrainedModel` (for PyTorch) or `TFPreTrainedModel` (for TensorFlow) to be used for inference.
 
 There are multiple ways to fetch pretrained models to run inference:
 
