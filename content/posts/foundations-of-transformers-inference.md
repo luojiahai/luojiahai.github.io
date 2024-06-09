@@ -36,7 +36,7 @@ ENDPOINT = https://api-inference.huggingface.co/models/<MODEL_ID>
 
 Let’s use [gpt2](https://huggingface.co/gpt2) as an example. To run inference, simply use this code:
 
-Python:
+Python
 ```python
 import requests
 API_URL = "https://api-inference.huggingface.co/models/gpt2"
@@ -47,7 +47,7 @@ def query(payload):
 data = query("Can you please let us know more details about your ")
 ```
 
-JavaScript:
+JavaScript
 ```javascript
 import fetch from "node-fetch";
 async function query(data) {
@@ -67,7 +67,7 @@ query("Can you please let us know more details about your ").then((response) => 
 });
 ```
 
-cURL:
+cURL
 ```bash
 curl https://api-inference.huggingface.co/models/gpt2 \
         -X POST \
@@ -108,7 +108,7 @@ There are multiple ways to fetch pretrained models to run inference:
 
 #### Fetch online model given task identifier
 
-The pipeline downloads and caches the default model to the task from the Hugging Face Hub.
+The pipeline downloads and caches the default model (configured for each eask) from the Model Hub.
 
 ```python
 >>> pipeline = transformers.pipeline(task='text-classification')
@@ -116,18 +116,9 @@ The pipeline downloads and caches the default model to the task from the Hugging
 [{'label': 'POSITIVE', 'score': 0.9998743534088135}]
 ```
 
-You can call a pipeline on many inputs with a list.
-
-```python
->>> pipeline = transformers.pipeline(task='text-classification')
->>> pipeline(inputs=['This restaurant is awesome', 'This restaurant is awful'])
-[{'label': 'POSITIVE', 'score': 0.9998743534088135},
- {'label': 'NEGATIVE', 'score': 0.9996669292449951}]
-```
-
 #### Fetch online model given model identifier
 
-The pipeline downloads and caches the specified model from the Hugging Face Hub.
+The pipeline downloads and caches the model from the Model Hub.
 
 ```python
 >>> pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
@@ -137,8 +128,7 @@ The pipeline downloads and caches the specified model from the Hugging Face Hub.
 
 #### Fetch offline model (Internet not required)
 
-The pipeline loads the model directly from your local storage. In this case of offline inference, parameters task, model
-and tokenizer are required to build a pipeline.
+The pipeline loads the model directly from your local storage.
 
 ```python
 >>> model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
