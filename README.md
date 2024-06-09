@@ -1,3 +1,3 @@
-# luojiahai.github.io
+# [luojiahai.com](https://luojiahai.com/)
 
-🪺 It is the source of luojiahai.com site.
+🪺 It is the source of my site.
