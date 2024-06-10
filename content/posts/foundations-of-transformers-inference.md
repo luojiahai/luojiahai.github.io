@@ -109,7 +109,7 @@ inference on the specified task. Call the pipeline instance to generate the mode
 
 There are multiple ways to fetch pretrained models to run inference:
 
-#### Fetch online model given a task
+#### Fetch remote model given a task
 
 The pipeline downloads the default model (configured for each eask) from the Hub and caches it locally.
 
@@ -118,7 +118,7 @@ pipeline = transformers.pipeline(task='text-classification')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Fetch online model given a model identifier
+#### Fetch remote model given a model identifier
 
 The pipeline downloads the model from the Hub and caches it locally.
 
@@ -127,7 +127,7 @@ pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Fetch offline model (Internet not required)
+#### Fetch local model
 
 The pipeline loads the model directly from your local storage using the Auto Classes.
 
