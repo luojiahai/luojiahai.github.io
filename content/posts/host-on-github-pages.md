@@ -20,8 +20,8 @@ hugo version
 
 Run these commands to create a Hugo site with the [Paper](https://github.com/nanxiaobei/hugo-paper) theme.
 ```
-hugo new site
-cd quickstart
+hugo new site <name>
+cd <name>
 git init
 git submodule add https://github.com/nanxiaobei/hugo-paper.git themes/paper
 echo "theme = 'paper'" >> hugo.toml
