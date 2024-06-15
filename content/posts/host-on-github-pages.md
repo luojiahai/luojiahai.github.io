@@ -7,13 +7,13 @@ author = 'luojiahai'
 
 ## Prerequisites 
 
-- Create a GitHub account.
-- Install Git.
-- Install Hugo (extended edition, v0.112.0 or later).
+- Create a [GitHub](https://github.com/) account.
+- Install [Git](https://www.git-scm.com/).
+- Install [Hugo](https://gohugo.io/).
 
 ## Create a site
 
-Verify that you have installed Hugo v0.112.0 or later.
+Verify that you have installed Hugo.
 ```
 hugo version
 ```
