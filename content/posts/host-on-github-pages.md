@@ -1,5 +1,5 @@
 +++
-title = 'Host Hugo on GitHub Pages'
+title = 'Host on GitHub Pages'
 date = 2024-06-08T13:14:29+10:00
 draft = false
 author = 'luojiahai'
@@ -54,15 +54,7 @@ This is **bold** text, and this is *emphasized* text.
 Visit the [Hugo](https://gohugo.io) website!
 ```
 
-## Publish the site
-
-Create a GitHub repository.
-
-Push your local repository to GitHub.
-
-Visit your GitHub repository. From the main menu choose Settings > Pages.
-
-Change the Source to GitHub Actions. The change is immediate; you do not have to press a Save button.
+## Add GitHub Workflows
 
 Create an empty file in your local repository.
 ```
@@ -152,6 +144,14 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-Commit the change to your local repository and push to GitHub.
+## Publish the site
+
+Create a GitHub repository.
+
+Push your local repository to GitHub.
+
+Visit your GitHub repository. From the main menu choose Settings > Pages.
+
+Change the Source to GitHub Actions.
 
 ---
