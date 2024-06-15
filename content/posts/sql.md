@@ -20,97 +20,104 @@ SQL commands are mainly categorized into the following categories:
 
 Create a database.
 ```
-CREATE DATABASE [IF NOT EXISTS] example_db;
+CREATE DATABASE [IF NOT EXISTS] company;
 ```
 
 Delete a database.
 ```
-DROP DATABASE [IF EXISTS] example_db;
+DROP DATABASE [IF EXISTS] company;
 ```
 
 Update database encoding.
 ```
-ALTER DATABASE example_db CHARACTER SET utf8;
+ALTER DATABASE company CHARACTER SET utf8;
 ```
 
-Create a table with common data types.
+Create a table.
 ```
-CREATE TABLE example_table (
-    id INT PRIMARY KEY,
-    column_int INT,
-    column_double DOUBLE,
-    column_decimal DECIMAL,
-    column_char CHAR(10),
-    column_varchar VARCHAR(100),
-    column_text TEXT(100),
-    column_blob BLOB,
-    column_date DATE,
-    column_time TIME,
-    column_timestamp TIMESTAMP
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
 )
 ```
 
 Delete a table.
 ```
-DROP TABLE example_table;
+DROP TABLE employees;
 ```
 
 Add a column.
 ```
-ALTER TABLE example_table ADD column_new VARCHAR(255);
+ALTER TABLE employees ADD email VARCHAR(255);
 ```
 
 Delete a column.
 ```
-ALTER TABLE example_table DROP COLUMN column_new;
+ALTER TABLE employees DROP COLUMN email;
 ```
 
 Update a column.
 ```
-ALTER TABLE example_table MODIFY COLUMN column_varchar VARCHAR(255);
+ALTER TABLE employees MODIFY COLUMN name VARCHAR(255);
 ```
 
 Rename a column.
 ```
-ALTER TABLE example_table RENAME COLUMN column_old TO column_new;
+ALTER TABLE employees RENAME COLUMN name TO full_name;
 ```
 
 Create an index.
 ```
-CREATE INDEX example_index ON example_table(column_varchar);
+CREATE INDEX index_employee_name ON employees(name);
 ```
 
 Delete an index.
 ```
-DROP INDEX example_index ON example_table;
+DROP INDEX index_employee_name ON employees;
 ```
 
 Create a view.
 ```
-CREATE VIEW example_view AS
-SELECT group_id, COUNT(*) AS num_groups
-FROM example_table
-GROUP BY group_id;
+CREATE VIEW department_summary AS
+SELECT department_id, COUNT(*) AS num_employees
+FROM employees
+GROUP BY department_id;
 ```
 
 Delete a view.
 ```
-DROP VIEW example_view;
+DROP VIEW department_summary;
 ```
 
 Create a primary key.
 ```
-ALTER TABLE example_table ADD PRIMARY KEY example_id;
+ALTER TABLE employees ADD PRIMARY KEY (employee_id);
 ```
 
 Delete a primary key.
 ```
-ALTER TABLE example_table DROP PRIMARY KEY;
+ALTER TABLE employees DROP PRIMARY KEY;
 ```
 
 ## Data Manipulation Language (DML) {#dml}
 
-TODO
+Create a row.
+```
+INSERT INTO employees (id, name, age) VALUES (1, 'John Doe', 18);
+```
+
+Update a row.
+```
+UPDATE employees
+SET name = 'Jane Doe'
+WHERE id = 1;
+```
+
+Delete a row.
+```
+DELETE FROM employees WHERE id = 1;
+```
 
 ## Data Control Language (DCL) {#dcl}
 
@@ -118,9 +125,118 @@ TODO
 
 ## Data Query Language (DQL) {#dql}
 
-TODO
+Get all rows.
+```
+SELECT * FROM employees;
+```
+
+Get all rows. Show only specific columns.
+```
+SELECT name, age FROM employees;
+```
+
+Get all rows. Filter by a condition.
+```
+SELECT * FROM employees WHERE age > 30;
+```
+
+Get all rows. Limit the returning rows.
+```
+SELECT * FROM employees LIMIT 10;
+```
+
+Get all rows. Order by a column.
+```
+SELECT * FROM employees ORDER BY age DESC;
+```
+
+Group rows.
+```
+SELECT department_id, COUNT(*) AS num_employees
+FROM employees
+GROUP BY department_id;
+```
+
+Join tables.
+```
+SELECT employees.name, departments.name
+FROM employees JOIN departments
+ON employees.department_id = departments.department_id;
+```
+
+Left join tables.
+```
+SELECT employees.name, departments.name
+FROM employees LEFT JOIN departments
+ON employees.department_id = departments.department_id;
+```
+
+Nested query.
+```
+SELECT name FROM employees
+WHERE department_id IN (
+    SELECT department_id FROM departments
+    WHERE name = 'IT'
+);
+```
+
+Calculate sum.
+```
+```
+
+Calculate average.
+```
+```
+
+Calculate max.
+```
+```
+
+Calculate min.
+```
+```
+
+Count.
+```
+```
+
+Use alias.
+```
+```
+
+Get distinct rows.
+```
+```
+
+Use CASE function.
+```
+```
+
+Use LIKE function.
+```
+```
+
+Use BETWEEN function.
+```
+```
+
+Use IS NULL function.
+```
+```
+
+Use IS NOT NULL function.
+```
+```
 
 ## Transaction Control Language (TCL) {#tcl}
+
+TODO
+
+## Advanced Queries
+
+TODO
+
+## Optimisation and Performance
 
 TODO
 
