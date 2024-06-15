@@ -1,7 +1,7 @@
 +++
 title = 'SQL'
 date = 2024-06-15T11:46:16+10:00
-draft = true
+draft = false
 +++
 
 Structured query language (SQL) is a programming language for storing and processing information in a relational database.
