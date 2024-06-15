@@ -16,7 +16,7 @@ SQL commands are mainly categorized into the following categories:
 - [Data Control Language (DCL)]({{% ref "#dcl" %}})
 - [Transaction Control Language (TCL)]({{% ref "#tcl" %}})
 
-## Data Definition Language (DDL) (#ddl)
+## Data Definition Language (DDL) {#ddl}
 
 Create a database.
 ```
@@ -108,19 +108,19 @@ Delete a primary key.
 ALTER TABLE example_table DROP PRIMARY KEY;
 ```
 
-## Data Manipulation Language (DML) (#dml)
+## Data Manipulation Language (DML) {#dml}
 
 TODO
 
-## Data Control Language (DCL) (#dcl)
+## Data Control Language (DCL) {#dcl}
 
 TODO
 
-## Data Query Language (DQL) (#dql)
+## Data Query Language (DQL) {#dql}
 
 TODO
 
-## Transaction Control Language (TCL) (#tcl)
+## Transaction Control Language (TCL) {#tcl}
 
 TODO
 
