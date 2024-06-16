@@ -6,7 +6,7 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is simplified. Checkout my [cv](https://github.com/luojiahai/cv/) repository for a fully compiled CV in
+This is simplified. Checkout my [cv](https://github.com/luojiahai/cv/) repository for a complete version in
 [pdf](https://github.com/luojiahai/cv/blob/main/cv.pdf) and the source code in LaTex.
 
 ## Profile
