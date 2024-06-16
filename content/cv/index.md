@@ -6,7 +6,13 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is a simplified CV. For more details, please visit my [LinkedIn profile](https://linkedin.com/in/luojiahai).
+This is a simplified CV. Download [cv.pdf](/cv.pdf) for a full version.
+
+## Professional Profile
+
+I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
+with principled thinking. I excel in full-stack software development, leveraging cloud computing and site reliability
+engineering. I am interested in exploring the vast realm of machine intelligence.
 
 ## Experience
 
@@ -22,4 +28,4 @@ This is a simplified CV. For more details, please visit my [LinkedIn profile](ht
 ## Skills
 
 - Programming Languages: Python, TypeScript, Java, C
-- Technologies: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL
+- Technologies: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL, Node
