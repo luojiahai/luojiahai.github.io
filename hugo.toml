@@ -35,7 +35,7 @@ enableInlineShortcodes = true
   # home page profile
   avatar = 'ljiahai@hotmail.com'            # gravatar email or image url
   name = 'luojiahai'
-  bio = 'Hello, World!'
+  bio = 'I cook, I eat, I'm afk, and I get disconnected.'
 
   # misc
   disableHLJS = true                        # disable highlight.js
