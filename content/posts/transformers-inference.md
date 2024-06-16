@@ -12,13 +12,13 @@ Processing, Computer Vision, Audio, and Multimodal.
 Inference is the process of using a pretrained model to generate outputs on new data. In Hugging Face, there are several
 ways to run inference with:
 
-- [HuggingChat]({{% ref "#hugging-chat" %}})
+- [Hugging Chat]({{% ref "#hugging-chat" %}})
 - [Inference API]({{% ref "#inference-api" %}})
 - [Inference Endpoints]({{% ref "#inference-endpoints" %}})
 - [Pipelines]({{% ref "#pipelines" %}})
 - [AutoClasses]({{% ref "#autoclasses" %}})
 
-## HuggingChat {#hugging-chat}
+## Hugging Chat {#hugging-chat}
 
 [Hugging Chat](https://huggingface.co/chat/) is an open-source interface enabling everyone to try open-source large language models.
 
