@@ -468,30 +468,46 @@ SELECT name FROM departments;
 
 Use FORCE INDEX to optimise query.
 ```sql
+SELECT * FROM employees FORCE INDEX (index_employee_name) WHERE name = 'John';
 ```
 
 Get query execution plan.
 ```sql
+EXPLAIN SELECT * FROM employees WHERE department_id = 5;
 ```
 
 Create partitions.
 ```sql
+CREATE TABLE sales (
+    sale_id INT,
+    sale_date DATE,
+    amount DECIMAL(10, 2)
+)
+PARTITION BY RANGE (YEAR(sale_date)) (
+    PARTITION p0 VALUES LESS THAN (1991),
+    PARTITION p1 VALUES LESS THAN (1992),
+    PARTITION p2 VALUES LESS THAN (1993)
+);
 ```
 
 Use temporary table.
 ```sql
+CREATE TEMPORARY TABLE temp_employees AS SELECT * FROM employees WHERE department_id = 5;
 ```
 
 Clear all rows from a table.
 ```sql
+TRUNCATE TABLE employees;
 ```
 
-Update rows with conditions.
+Update a column with conditions.
 ```sql
+UPDATE employees SET salary = salary * 1.1 WHERE department_id = 3;
 ```
 
 Delete rows with conditions.
 ```sql
+DELETE FROM employees WHERE hire_date '2000-01-01';
 ```
 
 ---
