@@ -18,8 +18,9 @@ This site includes my [CV]({{% ref "/cv" %}}). Though, it is simplified.
 ## About
 
 I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
-with principled thinking. I excel in full-stack software development, leveraging cloud computing and site reliability
-engineering. I am interested in exploring the vast realm of machine intelligence.
+with principled thinking and engineering leadership. I excel in full-stack software development, leveraging cloud
+computing and site reliability engineering. I am interested in exploring the vast realm of artificial intelligence and
+practising state-of-the-art machine learning.
 
 I was born and raised in guangzhou, china. Then, I migrated to australia with my family. I completed my undergraduate
 and graduate degrees in computer science at the university of melbourne, where I conducted academic research on
