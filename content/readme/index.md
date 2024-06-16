@@ -7,7 +7,7 @@ author = 'luojiahai'
 +++
 
 This site is for blogging, hosted on [GitHub Pages](https://pages.github.com/), powered by [Hugo](https://gohugo.io/)
-with [Paper](https://github.com/nanxiaobei/hugo-paper) theme. This site includes my [CV]({{% ref "/cv" %}}).
+with [Paper](https://github.com/nanxiaobei/hugo-paper) theme. This site includes my [CV](/cv).
 
 ## Usage
 
