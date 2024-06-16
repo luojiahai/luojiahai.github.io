@@ -115,6 +115,7 @@ The `pipeline()` is a utility factory method to build a `Pipeline`. There are mu
 The pipeline downloads the default model (configured for each eask) from the Hub and caches it locally.
 
 ```python
+import transformers
 pipeline = transformers.pipeline(task='text-classification')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
@@ -124,6 +125,7 @@ outputs = pipeline(inputs='This restaurant is awesome')
 The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards), downloads the model from the Hub and caches it locally.
 
 ```python
+import transformers
 pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
@@ -133,6 +135,7 @@ outputs = pipeline(inputs='This restaurant is awesome')
 The pipeline loads the model directly from your local storage using the Auto Classes.
 
 ```python
+import transformers
 model = transformers.AutoModelForSequenceClassification.from_pretrained(pretrained_model_name_or_path='path/to/model')
 tokenizer = transformers.AutoTokenizer.from_pretrained(pretrained_model_name_or_path='path/to/model')
 pipeline = transformers.pipeline(task='text-classification', model=model, tokenizer=tokenizer)
