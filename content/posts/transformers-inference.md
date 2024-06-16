@@ -108,9 +108,9 @@ The pipeline abstraction is a wrapper around all the other available pipelines. 
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to fetch a pretrained model to run inference with a pipeline:
+The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to run inference with a pipeline:
 
-#### Fetch remote model given a task
+#### Use remote model given a task
 
 The pipeline downloads the default model (configured for each eask) from the Hub and caches it locally.
 
@@ -120,7 +120,7 @@ pipeline = transformers.pipeline(task='text-classification')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Fetch remote model given a model identifier
+#### Use remote model given a model identifier
 
 The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards), downloads the model from the Hub and caches it locally.
 
@@ -130,7 +130,7 @@ pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Fetch local model
+#### Use local model
 
 The pipeline loads the model directly from your local storage using the Auto Classes.
 
