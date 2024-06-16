@@ -11,9 +11,7 @@ This is a simplified CV. Download [cv.pdf](/cv.pdf) for a full version.
 ## Professional Profile
 
 I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
-with principled thinking and engineering leadership. I excel in full-stack software development, leveraging cloud
-computing and site reliability engineering. I am interested in exploring the vast realm of artificial intelligence and
-practising state-of-the-art machine learning.
+with principled thinking and engineering leadership.
 
 ## Experience
 
