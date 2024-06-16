@@ -6,8 +6,8 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is simplified. Checkout my [cv](https://github.com/luojiahai/cv/) repository for a complete version in
-[pdf](https://github.com/luojiahai/cv/blob/main/cv.pdf) and the source code in LaTex.
+This is simplified. Checkout my {{% link "cv" "https://github.com/luojiahai/cv/" %}} repository for a complete version
+in {{% link "pdf" "https://github.com/luojiahai/cv/blob/main/cv.pdf" %}} and the source code in LaTex.
 
 ## Profile
 
@@ -16,14 +16,14 @@ principled thinking and engineering leadership.
 
 ## Experience
 
-- Software Developer, [REA Group](https://www.rea-group.com/)
-- Software Development Engineer, [Amazon Web Services (AWS)](https://aws.amazon.com/)
-- Consultant, [Deloitte](https://www.deloitte.com/)
-- Teaching Assistant, [The University of Melbourne](https://www.unimelb.edu.au/)
+- Software Developer, {{% link "REA Group" "https://www.rea-group.com/" %}}
+- Software Development Engineer, {{% link "Amazon Web Services (AWS)" "https://aws.amazon.com/" %}}
+- Consultant, {{% link "Deloitte" "https://www.deloitte.com/" %}}
+- Teaching Assistant, {{% link "The University of Melbourne" "https://www.unimelb.edu.au/" %}}
 
 ## Education
-- Master of Science (Computer Science), [The University of Melbourne](https://www.unimelb.edu.au/)
-- Bachelor of Science, [The University of Melbourne](https://www.unimelb.edu.au/)
+- Master of Science (Computer Science), {{% link "The University of Melbourne" "https://www.unimelb.edu.au/" %}}
+- Bachelor of Science, {{% link "The University of Melbourne" "https://www.unimelb.edu.au/" %}}
 
 ## Skills
 
