@@ -1,5 +1,5 @@
 +++
-title = 'SQL'
+title = '💾 Knowledge Base: SQL'
 date = 2024-06-08T13:46:16+10:00
 draft = false
 author = 'luojiahai'
@@ -351,17 +351,101 @@ Get current isolation level in current transaction.
 SELECT @@tx_isolation;
 ```
 
-Start a transaction in read only.
+Start a transaction in read only mode.
 ```sql
 START TRANSACTION READ ONLY;
 ```
 
 ## Advanced Queries {#advanced}
 
-TODO
+Use nested queries.
+```sql
+```
+
+Use RANK function.
+```sql
+```
+
+Use recursive queries.
+```sql
+```
+
+Use locking.
+```sql
+```
+
+Use self-join.
+```sql
+```
+
+Use OUTER JOIN.
+```sql
+```
+
+Use CROSS JOIN.
+```sql
+```
+
+Use EXISTS.
+```sql
+```
+
+Use NOT EXISTS.
+```sql
+```
+
+Use GROUP BY and HAVING to filter.
+```sql
+```
+
+Use OFFSET FETCH to paginate.
+```sql
+```
+
+Use UNION to combine results.
+```sql
+```
+
+Use UNION ALL to combine results.
+```sql
+```
+
+Use INTERSECT.
+```sql
+```
+
+Use EXCEPT.
+```sql
+```
 
 ## Optimisation {#optimisation}
 
-TODO
+Use FORCE INDEX.
+```sql
+```
+
+Check query execution plan.
+```sql
+```
+
+Create partitions.
+```sql
+```
+
+Use temporary table.
+```sql
+```
+
+Clear all rows from a table.
+```sql
+```
+
+Update rows with conditions.
+```sql
+```
+
+Delete rows with conditions.
+```sql
+```
 
 ---
