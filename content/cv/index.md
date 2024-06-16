@@ -8,10 +8,11 @@ author = 'luojiahai'
 
 This is a simplified CV. Download [cv.pdf](/cv.pdf) for a full version.
 
-## Professional Profile
+## Profile
 
-I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
-with principled thinking and engineering leadership.
+Pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems with
+principled thinking and engineering leadership. Excel in full-stack software development, leveraging cloud computing and
+site reliability engineering. Practise the vast realm of artificial intelligence and state-of-the-art machine learning.
 
 ## Experience
 
