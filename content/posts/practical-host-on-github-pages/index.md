@@ -1,4 +1,5 @@
 +++
+slug = 'host-on-github-pages'
 title = '🚀 Practical: Host on GitHub Pages'
 date = 2024-06-08T13:14:29+10:00
 draft = false

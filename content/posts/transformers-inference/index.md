@@ -1,4 +1,5 @@
 +++
+slug = 'transformers-inference'
 title = '🤗 Transformers: Inference'
 date = 2024-06-09T14:29:21+10:00
 draft = false
