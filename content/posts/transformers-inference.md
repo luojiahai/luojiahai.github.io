@@ -108,9 +108,7 @@ The pipeline abstraction is a wrapper around all the other available pipelines. 
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline` given a task. Call the pipeline instance to generate the model outputs.
-
-There are multiple ways to fetch pretrained models to run inference:
+The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to fetch a pretrained model to run inference with a pipeline:
 
 #### Fetch remote model given a task
 
