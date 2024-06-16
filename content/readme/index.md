@@ -13,7 +13,7 @@ with [Paper](https://github.com/nanxiaobei/hugo-paper) theme.
 
 Read through the posts.
 
-This site includes my [CV]({{% ref "/cv" %}}). Though, it is simplified.
+This site includes my [CV]({{% ref "/cv" %}}).
 
 ## About
 
