@@ -6,7 +6,7 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is a simplified CV. Download [cv.pdf](/cv.pdf) for a full version.
+This is a simplified CV. Download a fully compiled example CV: [cv.pdf](/cv.pdf) (source: [cv.zip](/cv.zip)).
 
 ## Profile
 
