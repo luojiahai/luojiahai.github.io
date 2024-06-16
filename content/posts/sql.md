@@ -450,14 +450,14 @@ UNION ALL
 SELECT name FROM departments;
 ```
 
-Use INTERSECT.
+Use INTERSECT to find intersection.
 ```sql
 SELECT name FROM employees
 INTERSECT
 SELECT name FROM departments;
 ```
 
-Use EXCEPT.
+Use EXCEPT to find difference.
 ```sql
 SELECT name FROM employees
 EXCEPT
@@ -466,11 +466,11 @@ SELECT name FROM departments;
 
 ## Optimisation {#optimisation}
 
-Use FORCE INDEX.
+Use FORCE INDEX to optimise query.
 ```sql
 ```
 
-Check query execution plan.
+Get query execution plan.
 ```sql
 ```
 
