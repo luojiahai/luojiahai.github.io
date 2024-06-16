@@ -10,11 +10,14 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
 
 ## Table of Contents
 
-- The TypeScript compiler
-- Configure TypeScript environment
-- Data types
+- The Basics
+    - The TypeScript compiler
+    - Configure TypeScript environment
+- Data Types
 
-## The TypeScript compiler
+## The Basics
+
+### The TypeScript compiler
 
 Install the TypeScript Compiler `tsc` globally.
 ```shell
@@ -34,7 +37,7 @@ tsc hello.ts
 
 In our current directory, we see a `hello.js` file next to `hello.ts`. That’s the output from our `hello.ts` file after `tsc` compiles or transforms it into a plain JavaScript file.
 
-## Configure TypeScript environment
+### Configure TypeScript environment
 
 Make a directory. In the directory root, run:
 ```shell
@@ -53,6 +56,6 @@ Now, the TypeScript configuration file `tsconfig.json` is generated in the direc
 }
 ```
 
-## Data types
+## Data Types
 
 TODO
