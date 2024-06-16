@@ -360,62 +360,108 @@ START TRANSACTION READ ONLY;
 
 Use nested queries.
 ```sql
+SELECT name, (SELECT AVG(salary) FROM exmployees) AS avg_salary
+FROM employees WHERE salary > (SELECT AVG(salary) FROM employees);
 ```
 
 Use RANK function.
 ```sql
+SELECT name, RANK() OVER (ORDER BY salary DESC) AS rank FROM employees;
 ```
 
 Use recursive queries.
 ```sql
+WITH RECURSIVE subordinates AS (
+    SELECT employee_id, name, manager_id FROM employees WHERE manager_id IS NULL
+    UNION ALL
+    SELECT e.employee_id, e.name, e.manager_id
+    FROM employees e
+    INNER JOIN subordinates s ON s.employee_id = e.manager_id
+)
+SELECT * FROM subordinates;
 ```
 
 Use locking.
 ```sql
+SELECT * FROM employees FOR UPDATE;
 ```
 
 Use self-join.
 ```sql
+SELECT a.name AS employee_name, b.name AS manager_name
+FROM employees a, employees b
+WHERE a.manager_id = b.employee_id;
 ```
 
 Use OUTER JOIN.
 ```sql
+SELECT employees.name, departments.name
+FROM employees
+FULL OUTER JOIN departments ON employees.department_id = departments.department_id;
 ```
 
 Use CROSS JOIN.
 ```sql
+SELECT a.name, b.name
+FROM employees a
+CROSS JOIN employees b;
 ```
 
 Use EXISTS.
 ```sql
+SELECT * FROM employees WHERE EXISTS (
+    SELECT * FROM departments WHERE employees.department_id = departments.department_id
+);
 ```
 
 Use NOT EXISTS.
 ```sql
+SELECT * FROM employees WHERE NOT EXISTS (
+    SELECT * FROM departments WHERE employees.department_id = departments.department_id
+);
 ```
 
 Use GROUP BY and HAVING to filter.
 ```sql
+SELECT department_id, AVG(salary)
+FROM employees
+GROUP BY department_id
+HAVING AVG(salary) > 50000;
 ```
 
 Use OFFSET FETCH to paginate.
 ```sql
+SELECT * FROM employees
+ORDER BY name
+OFFSET 10 ROWS FETCH NEXT 10 ROWS ONLY;
 ```
 
 Use UNION to combine results.
 ```sql
+SELECT name FROM employees
+UNION
+SELECT name FROM departments;
 ```
 
 Use UNION ALL to combine results.
 ```sql
+SELECT name FROM employees
+UNION ALL
+SELECT name FROM departments;
 ```
 
 Use INTERSECT.
 ```sql
+SELECT name FROM employees
+INTERSECT
+SELECT name FROM departments;
 ```
 
 Use EXCEPT.
 ```sql
+SELECT name FROM employees
+EXCEPT
+SELECT name FROM departments;
 ```
 
 ## Optimisation {#optimisation}
