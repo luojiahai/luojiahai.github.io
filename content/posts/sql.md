@@ -279,7 +279,8 @@ SELECT DISTINCT department_id FROM employees;
 
 Use CASE function.
 ```sql
-SELECT name, CASE WHEN age >= 18 THEN 'Adult' ELSE 'Minor' END AS status FROM employees;
+SELECT name, CASE WHEN age >= 18 THEN 'Adult' ELSE 'Minor' END AS status
+FROM employees;
 ```
 
 Use LIKE function.
@@ -410,14 +411,16 @@ CROSS JOIN employees b;
 Use EXISTS.
 ```sql
 SELECT * FROM employees WHERE EXISTS (
-    SELECT * FROM departments WHERE employees.department_id = departments.department_id
+    SELECT * FROM departments
+    WHERE employees.department_id = departments.department_id
 );
 ```
 
 Use NOT EXISTS.
 ```sql
 SELECT * FROM employees WHERE NOT EXISTS (
-    SELECT * FROM departments WHERE employees.department_id = departments.department_id
+    SELECT * FROM departments
+    WHERE employees.department_id = departments.department_id
 );
 ```
 
@@ -492,7 +495,8 @@ PARTITION BY RANGE (YEAR(sale_date)) (
 
 Use temporary table.
 ```sql
-CREATE TEMPORARY TABLE temp_employees AS SELECT * FROM employees WHERE department_id = 5;
+CREATE TEMPORARY TABLE temp_employees AS
+SELECT * FROM employees WHERE department_id = 5;
 ```
 
 Clear all rows from a table.
