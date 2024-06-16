@@ -6,7 +6,8 @@ draft = false
 author = 'luojiahai'
 +++
 
-This is a simplified CV. Download a fully compiled example CV: [cv.pdf](/cv.pdf) (source: [cv.zip](/cv.zip)).
+This is simplified. Checkout my [cv](https://github.com/luojiahai/cv/) repository on GitHub for the fully compiled
+[pdf](https://github.com/luojiahai/cv/blob/main/cv.pdf) file and source code.
 
 ## Profile
 
