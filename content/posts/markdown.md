@@ -1,5 +1,5 @@
 +++
-title = 'Markdown Syntax Guide'
+title = '💾 Knowledge Base: Markdown'
 date = 2024-06-08T12:12:53+10:00
 draft = false
 author = 'luojiahai'
