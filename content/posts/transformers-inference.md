@@ -108,9 +108,7 @@ The pipeline abstraction is a wrapper around all the other available pipelines. 
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. Given a task, it returns an instance of a concrete
-`Pipeline` class which contains instances (model/tokenizer) and processes (preprocessing/forward/postprocessing) to run
-inference on the specified task. Call the pipeline instance to generate the model outputs.
+The `pipeline()` is a utility factory method to build a `Pipeline` given a task. Call the pipeline instance to generate the model outputs.
 
 There are multiple ways to fetch pretrained models to run inference:
 
@@ -125,7 +123,7 @@ outputs = pipeline(inputs='This restaurant is awesome')
 
 #### Fetch remote model given a model identifier
 
-The pipeline downloads the model from the Hub and caches it locally.
+The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards), downloads the model from the Hub and caches it locally.
 
 ```python
 pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
