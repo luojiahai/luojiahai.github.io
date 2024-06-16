@@ -149,9 +149,11 @@ supplying to the `from_pretrained()` method. [Auto Classes](https://huggingface.
 here to do this job for you so that you automatically retrieve the relevant model given the name/path to the pretrained
 weights/config/vocabulary.
 
-Under the hood, the Auto Classes work together to power the `pipeline()`. An `AutoClass` is a shortcut that
+An `AutoClass` is a shortcut that
 automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
 appropriate `AutoClass` for your task and it’s associated preprocessing class.
+
+The Auto Classes work together to power the `pipeline()`.
 
 This is an example of using an `AutoClass`:
 
