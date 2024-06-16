@@ -7,7 +7,7 @@ author = 'luojiahai'
 +++
 
 This is simplified. Checkout my [cv](https://github.com/luojiahai/cv/) repository on GitHub for the fully compiled
-[pdf](https://github.com/luojiahai/cv/blob/main/cv.pdf) file and source code.
+[pdf](https://github.com/luojiahai/cv/raw/main/cv.pdf) file and source code.
 
 ## Profile
 
