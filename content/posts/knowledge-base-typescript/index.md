@@ -28,6 +28,12 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
     - `null` and `undefined`
     - Enums
     - Less Common Primitives
+- Narrowing
+    - `typeof` type guards
+    - Truthiness narrowing
+    - Discriminated unions
+    - The `never` type
+    - Exhaustiveness checking
 
 ## The Basics
 
@@ -199,3 +205,122 @@ printId("202");
 printId({ myID: 22342 });
 ```
 
+Narrow the union with code
+```typescript
+function printId(id: number | string) {
+  if (typeof id === "string") {
+    // In this branch, id is of type 'string'
+    console.log(id.toUpperCase());
+  } else {
+    // Here, id is of type 'number'
+    console.log(id);
+  }
+}
+```
+
+### Type Aliases
+
+A type alias is a name for any type.
+
+```typescript
+type Point = {
+  x: number;
+  y: number;
+};
+ 
+// Exactly the same as the earlier example
+function printCoord(pt: Point) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+ 
+printCoord({ x: 100, y: 100 });
+```
+
+### Interfaces
+
+An interface declaration is another way to name an object type.
+
+```typescript
+interface Point {
+  x: number;
+  y: number;
+}
+ 
+function printCoord(pt: Point) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+ 
+printCoord({ x: 100, y: 100 });
+```
+
+Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features
+of an interface are available in type, the key distinction is that a type cannot be re-opened to add new properties vs
+an interface which is always extendable.
+
+### Type Assertions
+
+```typescript
+const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
+```
+
+```typescript
+const myCanvas = <HTMLCanvasElement>document.getElementById("main_canvas");
+```
+
+### Literal Types
+
+```typescript
+const constantString = "Hello World";
+```
+
+### `null` and `undefined`
+
+```typescript
+function doSomething(x: string | null) {
+  if (x === null) {
+    // do nothing
+  } else {
+    console.log("Hello, " + x.toUpperCase());
+  }
+}
+```
+
+### Enums
+
+```typescript
+enum Direction {
+  Up = 1,
+  Down,
+  Left,
+  Right,
+}
+```
+
+### Less Common Primitives
+
+`bigint`
+```typescript
+// Creating a bigint via the BigInt function
+const oneHundred: bigint = BigInt(100);
+ 
+// Creating a BigInt via the literal syntax
+const anotherHundred: bigint = 100n;
+```
+
+`symbol`
+```typescript
+const firstName = Symbol("name");
+const secondName = Symbol("name");
+ 
+if (firstName === secondName) {
+  // Can't ever happen
+}
+```
+
+## Narrowing
+
+TODO
+
+---
