@@ -34,6 +34,17 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
     - Discriminated unions
     - The `never` type
     - Exhaustiveness checking
+- More on Functions
+    - Function Type Expressions
+    - Call Signatures
+    - Construct Signatures
+    - Generic Functions
+    - Optional Parameters
+    - Function Overloads
+    - Other Types to Know About
+    - Rest Parameters and Arguments
+    - Parameter Destructuring
+    - Assignability of Functions
 
 ## The Basics
 
@@ -517,5 +528,9 @@ function getArea(shape: Shape) {
   }
 }
 ```
+
+## More on Functions
+
+TODO
 
 ---
