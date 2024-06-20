@@ -82,9 +82,6 @@ Now, the TypeScript configuration file `tsconfig.json` is generated in the direc
 
 ### The primitives: `string`, `number`, and `boolean`
 
-JavaScript has three very commonly used primitives: `string`, `number`, and `boolean`. Each has a corresponding type in
-TypeScript.
-
 ```typescript
 let var1: string = "Hello, world";
 let var2: number = 42;
@@ -93,10 +90,6 @@ let var3: boolean = true;
 
 ### Arrays
 
-To specify the type of an array like `[1, 2, 3]`, you can use the syntax `number[]`; this syntax works for any type
-(e.g., `string[]` is an array of strings, and so on). You may also see this written as `Array<number>`, which means the
-same thing.
-
 ```typescript
 let var1: number[] = [1, 2, 3];
 let var2: string[] = ['x', 'y', 'z'];
@@ -104,9 +97,6 @@ let var3: Array<number> = [1, 2, 3];
 ```
 
 ### `any`
-
-TypeScript also has a special type, `any`, that you can use whenever you don’t want a particular value to cause
-typechecking errors.
 
 ```typescript
 let obj: any = { x: 0 };
@@ -130,9 +120,6 @@ let myName: string = "Alice";
 ```
 
 ### Functions
-
-Functions are the primary means of passing data around in JavaScript. TypeScript allows you to specify the types of both
-the input and output values of functions.
 
 Parameter type annotation
 ```typescript
@@ -254,6 +241,8 @@ function printCoord(pt: Point) {
  
 printCoord({ x: 100, y: 100 });
 ```
+
+#### Differences Between Type Aliases and Interfaces
 
 Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features
 of an interface are available in type, the key distinction is that a type cannot be re-opened to add new properties vs
