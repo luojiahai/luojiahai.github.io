@@ -45,6 +45,10 @@ TypeScript is a strongly typed programming language that builds on JavaScript, g
     - Rest Parameters and Arguments
     - Parameter Destructuring
     - Assignability of Functions
+- Object Types
+- Type Manipulation
+- Classes
+- Modules
 
 ## The Basics
 
@@ -530,6 +534,22 @@ function getArea(shape: Shape) {
 ```
 
 ## More on Functions
+
+TODO
+
+## Object Types
+
+TODO
+
+## Type Manipulation
+
+TODO
+
+## Classes
+
+TODO
+
+## Modules
 
 TODO
 
