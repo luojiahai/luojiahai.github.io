@@ -134,10 +134,6 @@ menu:
       name: Curriculum Vitae
       url: cv
       weight: 40
-    - identifier: readme
-      name: README
-      url: readme
-      weight: 50 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
