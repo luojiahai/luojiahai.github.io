@@ -8,51 +8,11 @@ author = 'luojiahai'
 
 TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
-## Table of Contents
-
-- The Basics
-    - `tsc`, the TypeScript compiler
-    - Configure TypeScript environment
-- Everyday Types
-    - The primitives: `string`, `number`, and `boolean`
-    - Arrays
-    - `any`
-    - Type Annotations on Variables
-    - Functions
-    - Object Types
-    - Union Types
-    - Type Aliases
-    - Interfaces
-    - Type Assertions
-    - Literal Types
-    - `null` and `undefined`
-    - Enums
-    - Less Common Primitives
-- Narrowing
-    - `typeof` type guards
-    - Truthiness narrowing
-    - Discriminated unions
-    - The `never` type
-    - Exhaustiveness checking
-- More on Functions
-    - Function Type Expressions
-    - Call Signatures
-    - Construct Signatures
-    - Generic Functions
-    - Optional Parameters
-    - Function Overloads
-    - Other Types to Know About
-    - Rest Parameters and Arguments
-    - Parameter Destructuring
-    - Assignability of Functions
-- Object Types
-- Type Manipulation
-- Classes
-- Modules
-
 ## The Basics
 
-TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript.
+TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support
+tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable,
+standards-based JavaScript.
 
 ### `tsc`, the TypeScript compiler
 
@@ -67,12 +27,15 @@ Now let’s move to an empty folder and try writing our first TypeScript program
 console.log("Hello world!");
 ```
 
-Notice there are no frills here; this “hello world” program looks identical to what you’d write for a “hello world” program in JavaScript. And now let’s type-check it by running the command `tsc` which was installed for us by the `typescript` package.
+Notice there are no frills here; this “hello world” program looks identical to what you’d write for a “hello world”
+program in JavaScript. And now let’s type-check it by running the command `tsc` which was installed for us by the
+`typescript` package.
 ```shell
 tsc hello.ts
 ```
 
-In our current directory, we see a `hello.js` file next to `hello.ts`. That’s the output from our `hello.ts` file after `tsc` compiles or transforms it into a plain JavaScript file.
+In our current directory, we see a `hello.js` file next to `hello.ts`. That’s the output from our `hello.ts` file after
+`tsc` compiles or transforms it into a plain JavaScript file.
 
 ### Configure TypeScript environment
 

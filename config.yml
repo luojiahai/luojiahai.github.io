@@ -1,0 +1,159 @@
+baseURL: "https://luojiahai.com/"
+title: luojiahai
+paginate: 5
+theme: [PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: luojiahai
+  # description: ""
+  # keywords: [Blog, Portfolio, PaperMod]
+  author: luojiahai
+  # author: ["Me", "You"] # multiple authors
+  # images: [""]
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  ShowPageNums: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "luojiahai"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: luojiahai
+    # subtitle: ""
+    imageUrl: "/apple-touch-icon.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: profile
+    buttons:
+      - name: CV
+        url: cv
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Hello, World!
+
+  socialIcons:
+    - name: x
+      url: "https://x.com/luojiahai/"
+    - name: instagram
+      url: "https://instagram.com/luojiahai/"
+    - name: github
+      url: "https://github.com/luojiahai/"
+    - name: linkedin
+      url: "https://linkedin.com/in/luojiahai/"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  # cover:
+  #   hidden: true # hide everywhere but not in structured data
+  #   hiddenInList: true # hide on list pages and home
+  #   hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/luojiahai/luojiahai.github.io/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: 🗂️ Posts
+      url: posts
+      weight: 10
+    - identifier: archives
+      name: 🗃️ Archives
+      url: archives
+      weight: 20
+    - identifier: search
+      name: 🔍 Search
+      url: search
+      weight: 30
+    - identifier: cv
+      name: 📜 Curriculum Vitae
+      url: cv
+      weight: 40
+    - identifier: readme
+      name: 📎 README
+      url: readme
+      weight: 50 
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

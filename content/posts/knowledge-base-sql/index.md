@@ -10,17 +10,7 @@ Structured query language (SQL) is a programming language for storing and proces
 
 SQL was invented in the 1970s based on the relational data model. It was initially known as the structured English query language (SEQUEL). The term was later shortened to SQL. Oracle, formerly known as Relational Software, became the first vendor to offer a commercial SQL relational database management system.
 
-## Table of Contents
-
-- [Data Definition Language (DDL)]({{% ref "#ddl" %}})
-- [Data Manipulation Language (DML)]({{% ref "#dml" %}})
-- [Data Query Language (DQL)]({{% ref "#dql" %}})
-- [Data Control Language (DCL)]({{% ref "#dcl" %}})
-- [Transaction Control Language (TCL)]({{% ref "#tcl" %}})
-- [Advanced Queries]({{% ref "#advanced" %}})
-- [Optimisation]({{% ref "#optimisation" %}})
-
-## Data Definition Language (DDL) {#ddl}
+## Data Definition Language (DDL)
 
 Create a database.
 ```sql
@@ -104,7 +94,7 @@ Delete a primary key.
 ALTER TABLE employees DROP PRIMARY KEY;
 ```
 
-## Data Manipulation Language (DML) {#dml}
+## Data Manipulation Language (DML)
 
 Create a row.
 ```sql
@@ -123,7 +113,7 @@ Delete a row.
 DELETE FROM employees WHERE id = 1;
 ```
 
-## Data Control Language (DCL) {#dcl}
+## Data Control Language (DCL)
 
 Grant a permission on a table to a user.
 ```sql
@@ -186,7 +176,7 @@ Expire a user password.
 ALTER USER user_john PASSWORD EXPIRE;
 ```
 
-## Data Query Language (DQL) {#dql}
+## Data Query Language (DQL)
 
 Get all rows.
 ```sql
@@ -304,7 +294,7 @@ Use IS NOT NULL function.
 SELECT * FROM employees WHERE department_id IS NOT NULL;
 ```
 
-## Transaction Control Language (TCL) {#tcl}
+## Transaction Control Language (TCL)
 
 Start a transaction.
 ```sql
@@ -358,7 +348,7 @@ Start a transaction in read only mode.
 START TRANSACTION READ ONLY;
 ```
 
-## Advanced Queries {#advanced}
+## Advanced Queries
 
 Use nested queries.
 ```sql
@@ -468,7 +458,7 @@ EXCEPT
 SELECT name FROM departments;
 ```
 
-## Optimisation {#optimisation}
+## Optimisation
 
 Use FORCE INDEX to optimise query.
 ```sql
