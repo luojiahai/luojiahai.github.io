@@ -1,12 +1,14 @@
 +++
 slug = 'cv'
-title = '📜 Curriculum Vitae'
+title = 'Curriculum Vitae'
 date = 2024-06-09T13:38:12+10:00
 draft = false
 author = 'luojiahai'
 +++
 
-I am a pragmatic software development engineer dedicated to crafting innovative solutions and solving complex problems
+## Profile
+
+I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex problems
 with principled thinking and engineering leadership. I excel in full-stack software development, leveraging cloud
 computing and site reliability engineering. I am committed to exploring the vast realm of artificial intelligence and
 practising state-of-the-art machine learning.

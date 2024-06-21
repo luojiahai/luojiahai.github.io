@@ -1,6 +1,6 @@
 +++
 slug = 'sql'
-title = '💾 Knowledge Base: SQL'
+title = 'Knowledge Base: SQL'
 date = 2024-06-08T13:46:16+10:00
 draft = false
 author = 'luojiahai'

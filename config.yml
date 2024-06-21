@@ -27,7 +27,7 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: false
   ShowBreadCrumbs: true
@@ -55,8 +55,8 @@ params:
 
   label:
     text: "luojiahai"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -73,8 +73,11 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Hello, World!
+    Title: 👋 Hi there, this is luojiahai.
+    Content: >
+      ```
+      print("Hello, World!")
+      ```
 
   socialIcons:
     - name: x
@@ -119,23 +122,23 @@ params:
 menu:
   main:
     - identifier: posts
-      name: 🗂️ Posts
+      name: Posts
       url: posts
       weight: 10
     - identifier: archives
-      name: 🗃️ Archives
+      name: Archives
       url: archives
       weight: 20
     - identifier: search
-      name: 🔍 Search
+      name: Search
       url: search
       weight: 30
     - identifier: cv
-      name: 📜 Curriculum Vitae
+      name: Curriculum Vitae
       url: cv
       weight: 40
     - identifier: readme
-      name: 📎 README
+      name: README
       url: readme
       weight: 50 
 
