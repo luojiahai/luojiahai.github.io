@@ -73,7 +73,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "👋 Hi there, this is luojiahai."
+    Title: "Hi, I'm luojiahai 👋"
     Content: "Hello, World!"
 
   socialIcons:
@@ -81,10 +81,10 @@ params:
       url: "https://x.com/luojiahai/"
     - name: instagram
       url: "https://instagram.com/luojiahai/"
-    - name: github
-      url: "https://github.com/luojiahai/"
     - name: linkedin
       url: "https://linkedin.com/in/luojiahai/"
+    - name: github
+      url: "https://github.com/luojiahai/"
 
   # analytics:
   #   google:
