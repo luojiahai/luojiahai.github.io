@@ -1,6 +1,6 @@
 +++
 slug = 'markdown'
-title = 'Knowledge Base: Markdown'
+title = 'Markdown Syntax Guide'
 date = 2024-06-08T12:12:53+10:00
 draft = false
 author = 'luojiahai'
