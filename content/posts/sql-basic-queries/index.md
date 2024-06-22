@@ -1,14 +1,17 @@
 +++
-slug = 'sql'
-title = 'Knowledge Base: SQL'
+slug = 'sql-basic-queries'
+title = 'SQL: Basic Queries'
 date = 2024-06-08T13:46:16+10:00
 draft = false
 author = 'luojiahai'
 +++
 
-Structured query language (SQL) is a programming language for storing and processing information in a relational database.
+Structured query language (SQL) is a programming language for storing and processing information in a relational
+database.
 
-SQL was invented in the 1970s based on the relational data model. It was initially known as the structured English query language (SEQUEL). The term was later shortened to SQL. Oracle, formerly known as Relational Software, became the first vendor to offer a commercial SQL relational database management system.
+SQL was invented in the 1970s based on the relational data model. It was initially known as the structured English query
+language (SEQUEL). The term was later shortened to SQL. Oracle, formerly known as Relational Software, became the first
+vendor to offer a commercial SQL relational database management system.
 
 ## Data Definition Language (DDL)
 

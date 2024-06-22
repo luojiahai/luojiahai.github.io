@@ -1,6 +1,6 @@
 +++
-slug = 'ts'
-title = 'Knowledge Base: TypeScript'
+slug = 'typescript-handbook'
+title = 'TypeScript: Handbook'
 date = 2024-06-11T13:46:16+10:00
 draft = false
 author = 'luojiahai'
