@@ -34,7 +34,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: false
-  ShowPageNums: true
+  ShowPageNums: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -77,7 +77,7 @@ params:
     Content: |
       I was born and raised in Guangzhou, China. Then, I migrated to Australia with my family and completed studies in
       Computer Science at the University of Melbourne. I am currently working professionally in the computer industry.
-      
+
       I find joy in the culinary world, indulging in cooking, experimenting with recipes, savouring diverse cuisines,
       and discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
 
