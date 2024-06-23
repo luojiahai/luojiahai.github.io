@@ -75,7 +75,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   # images: [""]
   DateFormat: "2006-01-02"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: false
 
   ShowBreadCrumbs: true
