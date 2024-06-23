@@ -78,23 +78,18 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: false
-  ShowShareButtons: false
-  ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowWordCount: true
   ShowRssButtonInSectionTermList: false
   ShowPageNums: false
   UseHugoToc: true
   displayFullLangName: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
-  hidemeta: false
+  hideMeta: false
   hideSummary: false
-  showtoc: true
-  tocopen: false
+  ShowToc: true
+  TocOpen: false
 
   assets:
     disableHLJS: true # to disable highlight.js
