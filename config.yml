@@ -55,7 +55,7 @@ languages:
         Content: |
           我是一个美食爱好者。
 
-          我是一个务实的软件开发工程师，致力于通过原则性的思维来打造富有创意的方案和解决复杂的问题。
+          我是一个务实的软件开发工程师。
 
           [阅读更多](/about)…
 
@@ -127,9 +127,8 @@ params:
     Content: |
       I am a food enthusiast.
 
-      I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex
-      problems with principled thinking.
-      
+      I am a pragmatic software development engineer.
+
       [Read more](/about)…
 
   socialIcons:
