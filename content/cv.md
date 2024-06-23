@@ -9,9 +9,9 @@ author = 'luojiahai'
 ## Profile
 
 I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex problems
-with principled thinking and engineering leadership. I excel in full-stack software development, leveraging cloud
-computing and site reliability engineering. I am committed to exploring the vast realm of artificial intelligence and
-practising state-of-the-art machine learning.
+with principled thinking. I excel in full-stack software development, leveraging cloud computing and site reliability
+engineering. I am committed to exploring the vast realm of artificial intelligence and practising state-of-the-art
+machine learning.
 
 ## Contact
 

@@ -19,35 +19,46 @@ languages:
   en:
     languageName: "English"
     weight: 1
+
   zh:
     languageName: "🇨🇳 中文"
     weight: 2
+
     menu:
       main:
+        - identifier: about
+          name: 关于
+          url: about
+          weight: 10
         - identifier: posts
           name: 帖子
           url: posts
-          weight: 10
+          weight: 20
         - identifier: archives
           name: 归档
           url: archives
-          weight: 20
+          weight: 30
         - identifier: search
           name: 搜索
           url: search
-          weight: 30
+          weight: 40
         - identifier: cv
           name: 履历
           url: cv
-          weight: 40
+          weight: 50
+
     params:
       DateFormat: "2006年1月2日"
-      homeInfoParams:
-        Title: "你好，我是 luojiahai 👋"
-        Content: |
-          我在中国广州出生和长大。我现在居住在澳大利亚墨尔本。我在墨尔本大学完成了计算机科学的学业。我目前在计算机行业工作。
 
-          我喜欢吃，享受烹饪和尝试不同食谱，品尝多样化的美食，探索餐馆。我特别喜欢早茶、烧烤和炸鸡。
+      homeInfoParams:
+        Title: "`$ whoami`"
+        Content: |
+          我是一个美食爱好者。
+
+          我是一个务实的软件开发工程师，致力于通过原则性的思维来打造富有创意的方案和解决复杂的问题。
+
+          [阅读更多](/about)…
+
       editPost:
         URL: "https://github.com/luojiahai/luojiahai.github.io/tree/main/content"
         Text: "推荐编辑" # edit text
@@ -112,13 +123,14 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi, I'm luojiahai 👋"
+    Title: "`$ whoami`"
     Content: |
-      I was born and raised in Guangzhou, China. I am based in Melbourne, Australia. I completed studies in Computer
-      Science at the University of Melbourne. I am working professionally in the computer industry.
+      I am a food enthusiast.
 
-      I find joy in the culinary world, indulging in cooking, experimenting with recipes, savouring diverse cuisines,
-      and discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
+      I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex
+      problems with principled thinking.
+      
+      [Read more](/about)…
 
   socialIcons:
     - name: x
@@ -162,22 +174,26 @@ params:
 
 menu:
   main:
+    - identifier: about
+      name: About
+      url: about
+      weight: 10
     - identifier: posts
       name: Posts
       url: posts
-      weight: 10
+      weight: 20
     - identifier: archives
       name: Archives
       url: archives
-      weight: 20
+      weight: 30
     - identifier: search
       name: Search
       url: search
-      weight: 30
+      weight: 40
     - identifier: cv
       name: Curriculum Vitae
       url: cv
-      weight: 40
+      weight: 50
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
