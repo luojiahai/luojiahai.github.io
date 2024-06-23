@@ -76,7 +76,7 @@ params:
   # images: [""]
   dateFormat: "2006-01-02"
   defaultTheme: dark # dark, light
-  enableThemeToggle: false
+  enableThemeToggle: true
   showBreadCrumbs: true
   showCodeCopyButtons: true
   showRssButtonInSectionTermList: false
