@@ -48,7 +48,7 @@ languages:
           weight: 50
 
     params:
-      DateFormat: "2006年1月2日"
+      dateFormat: "2006年1月2日"
 
       homeInfoParams:
         Title: "`:~$ whoami`"
@@ -74,22 +74,21 @@ params:
   author: luojiahai
   # author: ["Me", "You"] # multiple authors
   # images: [""]
-  DateFormat: "2006-01-02"
+  dateFormat: "2006-01-02"
   defaultTheme: dark # dark, light
-  disableThemeToggle: false
-
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: false
-  ShowPageNums: false
-  UseHugoToc: true
+  enableThemeToggle: false
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  showRssButtonInSectionTermList: false
+  showPageNums: false
+  enableAnchoredHeadings: true
+  enableScrollToTop: true
+  useHugoToc: true
   displayFullLangName: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
   hideMeta: false
   hideSummary: false
-  ShowToc: true
-  TocOpen: false
+  showToc: true
+  tocOpen: false
 
   assets:
     disableHLJS: true # to disable highlight.js
