@@ -37,10 +37,11 @@ languages:
           url: search
           weight: 30
         - identifier: cv
-          name: 简历
+          name: 履历
           url: cv
           weight: 40
     params:
+      DateFormat: "2006年1月2日"
       homeInfoParams:
         Title: "你好，我是 luojiahai 👋"
         Content: |
