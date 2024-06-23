@@ -51,7 +51,7 @@ languages:
       DateFormat: "2006年1月2日"
 
       homeInfoParams:
-        Title: "`[/]# whoami`"
+        Title: "`:~$ whoami`"
         Content: |
           我是一个美食爱好者
 
@@ -125,7 +125,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "`[/]# whoami`"
+    Title: "`:~$ whoami`"
     Content: |
       I am a food enthusiast
 
