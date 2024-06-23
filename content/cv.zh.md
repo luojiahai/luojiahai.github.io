@@ -13,7 +13,7 @@ author = 'luojiahai'
 ## 联系
 
 - 手机: `<撤回>`
-- 电子邮箱: luo@jiahai.co
+- 电子邮箱: luo[at]jiahai.co
 
 ## 经验
 

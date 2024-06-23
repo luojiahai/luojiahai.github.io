@@ -53,9 +53,11 @@ languages:
       homeInfoParams:
         Title: "`$ whoami`"
         Content: |
-          我是一个美食爱好者。
+          我是一个美食爱好者
 
-          我是一个务实的软件开发工程师。
+          我是一个务实的软件开发工程师
+
+          如何联系我: luo[at]jiahai.co
 
           [阅读更多](/about)…
 
@@ -125,9 +127,11 @@ params:
   homeInfoParams:
     Title: "`$ whoami`"
     Content: |
-      I am a food enthusiast.
+      I am a food enthusiast
 
-      I am a pragmatic software development engineer.
+      I am a pragmatic software development engineer
+
+      How to reach me: luo[at]jiahai.co
 
       [Read more](/about)…
 
