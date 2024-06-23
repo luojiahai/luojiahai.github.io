@@ -1,7 +1,7 @@
 baseURL: "https://luojiahai.com/"
 title: luojiahai
 paginate: 5
-theme: [PaperMod]
+theme: paper
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -70,7 +70,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: luojiahai
   # description: ""
-  # keywords: [Blog, Portfolio, PaperMod]
+  # keywords: [Blog, Portfolio]
   author: luojiahai
   # author: ["Me", "You"] # multiple authors
   # images: [""]
@@ -198,7 +198,6 @@ menu:
       url: cv
       weight: 50
 
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 markup:
   goldmark:
     renderer:
