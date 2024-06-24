@@ -16,7 +16,7 @@ machine learning.
 ## Contact
 
 - Mobile: `<RETRACTED>`
-- Email: luo[at]jiahai.co
+- Email: `luo[at]jiahai.co`
 
 ## Experience
 
