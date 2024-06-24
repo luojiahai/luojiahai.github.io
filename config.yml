@@ -55,7 +55,7 @@ languages:
         content: |
           🥢 我是一个美食爱好者。
 
-          👨‍💻 我是一个软件开发工程师。
+          🖥️ 我是一个软件开发工程师。
 
           📧 如何联系我: `luo[at]jiahai.co`
 
@@ -104,7 +104,7 @@ params:
     content: |
       🥢 I am a food enthusiast.
 
-      👨‍💻 I am a software development engineer.
+      🖥️ I am a software development engineer.
 
       📧 How to reach me: `luo[at]jiahai.co`
 
