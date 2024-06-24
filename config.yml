@@ -43,7 +43,7 @@ languages:
           url: search
           weight: 40
         - identifier: cv
-          name: 履历
+          name: 简历
           url: cv
           weight: 50
 
@@ -61,11 +61,6 @@ languages:
 
           [阅读更多](/about)…
 
-      editPost:
-        URL: "https://github.com/luojiahai/luojiahai.github.io/tree/main/content"
-        Text: "推荐编辑" # edit text
-        appendFilePath: true # to append file path to Edit link
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: luojiahai
@@ -73,22 +68,23 @@ params:
   # keywords: [Blog, Portfolio]
   author: luojiahai
   # author: ["Me", "You"] # multiple authors
-  # images: [""]
+  # images: [""] 
   dateFormat: "2006-01-02"
   defaultTheme: dark # dark, light
-  enableThemeToggle: true
-  showBreadCrumbs: true
-  showCodeCopyButtons: true
-  showRssButtonInSectionTermList: false
-  showPageNums: false
+  
   enableAnchoredHeadings: true
   enableScrollToTop: true
-  useHugoToc: true
-  displayFullLangName: true
+  enableThemeToggle: true
   hideMeta: false
   hideSummary: false
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  showFullLanguageName: true
+  showPageNums: false
+  showRssButtonInSectionTermList: false
   showToc: true
   tocOpen: false
+  useHugoToc: true
 
   assets:
     disableHLJS: true # to disable highlight.js
@@ -151,11 +147,6 @@ params:
   #   hidden: true # hide everywhere but not in structured data
   #   hiddenInList: true # hide on list pages and home
   #   hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/luojiahai/luojiahai.github.io/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
