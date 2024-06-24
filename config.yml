@@ -65,9 +65,8 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: luojiahai
   # description: ""
-  # keywords: [Blog, Portfolio]
+  # keywords: [""]
   author: luojiahai
-  # author: ["Me", "You"] # multiple authors
   # images: [""] 
   dateFormat: "2006-01-02"
   defaultTheme: dark # dark, light
@@ -98,7 +97,7 @@ params:
   label:
     text: "luojiahai"
     icon: /apple-touch-icon.png
-    iconHeight: 35
+    iconHeight: 25
 
   # profile-mode
   profileMode:
