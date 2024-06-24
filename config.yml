@@ -53,13 +53,13 @@ languages:
       homeInfoParams:
         Title: "`:~$ whoami`"
         Content: |
-          我是一个美食爱好者
+          我是一个美食爱好者。
 
-          我是一个软件开发工程师
+          我是一个软件开发工程师。
 
-          如何联系我: luo[at]jiahai.co
+          如何联系我: `luo[at]jiahai.co`
 
-          [阅读更多](/about)…
+          […阅读更多](/about)
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -117,13 +117,13 @@ params:
   homeInfoParams:
     Title: "`:~$ whoami`"
     Content: |
-      I am a food enthusiast
+      I am a food enthusiast.
 
-      I am a software development engineer
+      I am a software development engineer.
 
-      How to reach me: luo[at]jiahai.co
+      How to reach me: `luo[at]jiahai.co`
 
-      [Read more](/about)…
+      [… Read more](/about)
 
   socialIcons:
     - name: x
