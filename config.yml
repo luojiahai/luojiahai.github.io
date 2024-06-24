@@ -50,9 +50,9 @@ languages:
     params:
       dateFormat: "2006年1月2日"
 
-      homeInfoParams:
-        Title: "`:~$ whoami`"
-        Content: |
+      homeInfo:
+        title: "`:~$ whoami`"
+        content: |
           我是一个美食爱好者。
 
           我是一个软件开发工程师。
@@ -99,23 +99,9 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 25
 
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: luojiahai
-    # subtitle: ""
-    imageUrl: "/apple-touch-icon.png"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: profile
-    buttons:
-      - name: CV
-        url: cv
-
-  # home-info mode
-  homeInfoParams:
-    Title: "`:~$ whoami`"
-    Content: |
+  homeInfo:
+    title: "`:~$ whoami`"
+    content: |
       I am a food enthusiast.
 
       I am a software development engineer.
