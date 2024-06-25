@@ -101,7 +101,7 @@ function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
 
 ## Other Types to Know About
 
-## `void`
+### `void`
 
 `void` represents the return value of functions which don't return a value.
 
@@ -112,12 +112,12 @@ function noop() {
 }
 ```
 
-## `object`
+### `object`
 
 The special type `object` refers to any value that isn't a primitive (`string`, `number`, `bigint`, `boolean`, `symbol`,
 `null`, or `undefined`).
 
-## `unknown`
+### `unknown`
 
 The `unknown` type represents any value. This is similar to the `any` type, but is safer because it's not legal to do
 anything with an `unknown` value.
@@ -131,7 +131,7 @@ function f2(a: unknown) {
 }
 ```
 
-## `never`
+### `never`
 
 The `never` type represents values which are *never* observed. In a return type, this means that the function throws an
 exception or terminates execution of the program.
@@ -142,7 +142,7 @@ function fail(msg: string): never {
 }
 ```
 
-## `Function`
+### `Function`
 
 This is an *untyped function call* and is generally best avoided because of the unsafe `any` return type.
 
@@ -154,7 +154,7 @@ function doSomething(f: Function) {
 
 ## Rest Parameters and Arguments
 
-## Rest Parameters
+### Rest Parameters
 
 ```typescript
 function multiply(n: number, ...m: number[]) {
@@ -164,7 +164,7 @@ function multiply(n: number, ...m: number[]) {
 const a = multiply(10, 1, 2, 3, 4);
 ```
 
-## Rest Arguments
+### Rest Arguments
 
 ```typescript
 const arr1 = [1, 2, 3];
