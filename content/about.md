@@ -21,7 +21,7 @@ and discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken
 
 ## The `luojiahai.com` site
 
-This site is just for fun. It is hosted on [GitHub Pages](https://pages.github.com/) for free. I post random technical
+This site is just for fun. It is hosted on [GitHub Pages](https://pages.github.com/) for free. I post technical
 articles, notes, and food recipes.
 
 ---
