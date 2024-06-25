@@ -6,7 +6,7 @@ draft = false
 author = 'luojiahai'
 +++
 
-👋 Hi there, I'm luojiahai.
+👋 Hi there, I am luojiahai (luo-jia-hai).
 
 I am from Guangzhou, China 🇨🇳, in which I was born and raised. I am currently based in Melbourne, Australia.
 
