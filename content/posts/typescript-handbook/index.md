@@ -21,20 +21,20 @@ Install the TypeScript Compiler `tsc` globally.
 npm install -g typescript
 ```
 
-Now let’s move to an empty folder and try writing our first TypeScript program: `hello.ts`:
+Now let's move to an empty folder and try writing our first TypeScript program: `hello.ts`:
 ```typescript
 // Greets the world.
 console.log("Hello world!");
 ```
 
-Notice there are no frills here; this “hello world” program looks identical to what you’d write for a “hello world”
-program in JavaScript. And now let’s type-check it by running the command `tsc` which was installed for us by the
+Notice there are no frills here; this "hello world" program looks identical to what you'd write for a "hello world"
+program in JavaScript. And now let's type-check it by running the command `tsc` which was installed for us by the
 `typescript` package.
 ```shell
 tsc hello.ts
 ```
 
-In our current directory, we see a `hello.js` file next to `hello.ts`. That’s the output from our `hello.ts` file after
+In our current directory, we see a `hello.js` file next to `hello.ts`. That's the output from our `hello.ts` file after
 `tsc` compiles or transforms it into a plain JavaScript file.
 
 ### Configure TypeScript environment
@@ -473,7 +473,7 @@ function getArea(shape: Shape) {
 ### The `never` type
 
 When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have
-nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn’t exist.
+nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn't exist.
 
 ### Exhaustiveness checking
 
@@ -498,22 +498,194 @@ function getArea(shape: Shape) {
 
 ## More on Functions
 
-TODO
+### Function Type Expressions
 
-## Object Types
+```typescript
+function greeter(fn: (a: string) => void) {
+  fn("Hello, World");
+}
+ 
+function printToConsole(s: string) {
+  console.log(s);
+}
+ 
+greeter(printToConsole);
+```
 
-TODO
+The syntax `(a: string) => void` means "a function with one parameter, named `a`, of type `string`, that doesn't have a
+return value".
 
-## Type Manipulation
+### Call Signatures
 
-TODO
+```typescript
+type DescribableFunction = {
+  description: string;
+  (someArg: number): boolean;
+};
+function doSomething(fn: DescribableFunction) {
+  console.log(fn.description + " returned " + fn(6));
+}
+ 
+function myFunc(someArg: number) {
+  return someArg > 3;
+}
+myFunc.description = "default description";
+ 
+doSomething(myFunc);
+```
 
-## Classes
+### Construct Signatures
 
-TODO
+```typescript
+type SomeConstructor = {
+  new (s: string): SomeObject;
+};
+function fn(ctor: SomeConstructor) {
+  return new ctor("hello");
+}
+```
 
-## Modules
+### Generic Functions
 
-TODO
+```typescript
+function filter1<Type>(arr: Type[], func: (arg: Type) => boolean): Type[] {
+  return arr.filter(func);
+}
+ 
+function filter2<Type, Func extends (arg: Type) => boolean>(
+  arr: Type[],
+  func: Func
+): Type[] {
+  return arr.filter(func);
+}
+```
+
+### Optional Parameters
+
+```typescript
+function f(x?: number) {
+  // ...
+}
+```
+
+```typescript
+function f(x = 10) {
+  // ...
+}
+```
+
+### Function Overloads
+
+```typescript
+function makeDate(timestamp: number): Date;
+function makeDate(m: number, d: number, y: number): Date;
+function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
+  if (d !== undefined && y !== undefined) {
+    return new Date(y, mOrTimestamp, d);
+  } else {
+    return new Date(mOrTimestamp);
+  }
+}
+```
+
+### Other Types to Know About
+
+#### `void`
+
+`void` represents the return value of functions which don't return a value.
+
+```typescript
+// The inferred return type is void
+function noop() {
+  return;
+}
+```
+
+#### `object`
+
+The special type `object` refers to any value that isn't a primitive (`string`, `number`, `bigint`, `boolean`, `symbol`,
+`null`, or `undefined`).
+
+#### `unknown`
+
+The `unknown` type represents any value. This is similar to the `any` type, but is safer because it's not legal to do
+anything with an `unknown` value.
+
+```typescript
+function f1(a: any) {
+  a.b(); // OK
+}
+function f2(a: unknown) {
+  a.b(); // 'a' is of type 'unknown'.
+}
+```
+
+#### `never`
+
+The `never` type represents values which are *never* observed. In a return type, this means that the function throws an
+exception or terminates execution of the program.
+
+```typescript
+function fail(msg: string): never {
+  throw new Error(msg);
+}
+```
+
+#### `Function`
+
+This is an *untyped function call* and is generally best avoided because of the unsafe `any` return type.
+
+```typescript
+function doSomething(f: Function) {
+  return f(1, 2, 3);
+}
+```
+
+### Rest Parameters and Arguments
+
+#### Rest Parameters
+
+```typescript
+function multiply(n: number, ...m: number[]) {
+  return m.map((x) => n * x);
+}
+// 'a' gets value [10, 20, 30, 40]
+const a = multiply(10, 1, 2, 3, 4);
+```
+
+#### Rest Arguments
+
+```typescript
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+arr1.push(...arr2);
+```
+
+### Parameter Destructuring
+
+```typescript
+function sum({ a, b, c }) {
+  console.log(a + b + c);
+}
+sum({ a: 10, b: 3, c: 9 });
+```
+
+### Assignability of Functions
+
+Contextual typing with a return type of `void` does **not** force functions to **not** return something.
+
+```typescript
+type voidFunc = () => void;
+ 
+const f1: voidFunc = () => {
+  return true;
+};
+ 
+const f2: voidFunc = () => true;
+ 
+const f3: voidFunc = function () {
+  return true;
+};
+```
 
 ---
