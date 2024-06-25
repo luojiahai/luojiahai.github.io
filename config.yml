@@ -1,7 +1,7 @@
-baseURL: "https://luojiahai.com/"
-title: luojiahai
+baseURL: 'https://luojiahai.com/'
+title: 'luojiahai'
 paginate: 5
-theme: paper
+theme: 'paper'
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -17,41 +17,41 @@ minify:
 
 languages:
   en:
-    languageName: "English"
+    languageName: 'English'
     weight: 1
 
   zh:
-    languageName: "中文"
+    languageName: '中文'
     weight: 2
 
     menu:
       main:
-        - identifier: about
-          name: 关于
-          url: about
+        - identifier: 'about'
+          name: '关于'
+          url: 'about'
           weight: 10
-        - identifier: posts
-          name: 帖子
-          url: posts
+        - identifier: 'posts'
+          name: '帖子'
+          url: 'posts'
           weight: 20
-        - identifier: archives
-          name: 归档
-          url: archives
+        - identifier: 'archives'
+          name: '归档'
+          url: 'archives'
           weight: 30
-        - identifier: search
-          name: 搜索
-          url: search
+        - identifier: 'search'
+          name: '搜索'
+          url: 'search'
           weight: 40
         - identifier: cv
-          name: 简历
-          url: cv
+          name: '简历'
+          url: 'cv'
           weight: 50
 
     params:
-      dateFormat: "2006年1月2日"
+      dateFormat: '2006年1月2日'
 
       homeInfo:
-        title: "`:~$ whoami`"
+        title: '`:~$ whoami`'
         content: |
           🥢 我是一个美食爱好者。
 
@@ -62,14 +62,14 @@ languages:
           [阅读更多](/about)…
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: luojiahai
-  # description: ""
-  # keywords: [""]
-  author: luojiahai
-  # images: [""] 
-  dateFormat: "2006-01-02"
-  defaultTheme: dark # dark, light
+  env: 'production' # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 'luojiahai'
+  # description: ''
+  # keywords: ['']
+  author: 'luojiahai'
+  # images: [''] 
+  dateFormat: '2006-01-02'
+  defaultTheme: 'dark' # dark, light
   
   enableAnchoredHeadings: true
   enableScrollToTop: true
@@ -88,19 +88,19 @@ params:
   assets:
     disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    # favicon: "<link / abs url>"
-    # favicon16x16: "<link / abs url>"
-    # favicon32x32: "<link / abs url>"
-    # apple_touch_icon: "<link / abs url>"
-    # safari_pinned_tab: "<link / abs url>"
+    # favicon: '<link / abs url>'
+    # favicon16x16: '<link / abs url>'
+    # favicon32x32: '<link / abs url>'
+    # apple_touch_icon: '<link / abs url>'
+    # safari_pinned_tab: '<link / abs url>'
 
   label:
-    text: "luojiahai"
-    icon: /apple-touch-icon.png
+    text: 'luojiahai'
+    icon: '/apple-touch-icon.png'
     iconHeight: 25
 
   homeInfo:
-    title: "`:~$ whoami`"
+    title: '`:~$ whoami`'
     content: |
       🥢 I am a food enthusiast.
 
@@ -111,22 +111,22 @@ params:
       [Read more](/about)…
 
   socialIcons:
-    - name: x
-      url: "https://x.com/luojiahai/"
-    - name: instagram
-      url: "https://instagram.com/luojiahai/"
-    - name: linkedin
-      url: "https://linkedin.com/in/luojiahai/"
-    - name: github
-      url: "https://github.com/luojiahai/"
+    - name: 'x'
+      url: 'https://x.com/luojiahai/'
+    - name: 'instagram'
+      url: 'https://instagram.com/luojiahai/'
+    - name: 'linkedin'
+      url: 'https://linkedin.com/in/luojiahai/'
+    - name: 'github'
+      url: 'https://github.com/luojiahai/'
 
   # analytics:
   #   google:
-  #     SiteVerificationTag: "XYZabc"
+  #     SiteVerificationTag: 'XYZabc'
   #   bing:
-  #     SiteVerificationTag: "XYZabc"
+  #     SiteVerificationTag: 'XYZabc'
   #   yandex:
-  #     SiteVerificationTag: "XYZabc"
+  #     SiteVerificationTag: 'XYZabc'
 
   # cover:
   #   hidden: true # hide everywhere but not in structured data
@@ -143,29 +143,29 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ['title', 'permalink', 'summary', 'content']
 
 menu:
   main:
-    - identifier: about
-      name: About
-      url: about
+    - identifier: 'about'
+      name: 'About'
+      url: 'about'
       weight: 10
-    - identifier: posts
-      name: Posts
-      url: posts
+    - identifier: 'posts'
+      name: 'Posts'
+      url: 'posts'
       weight: 20
-    - identifier: archives
-      name: Archives
-      url: archives
+    - identifier: 'archives'
+      name: 'Archives'
+      url: 'archives'
       weight: 30
-    - identifier: search
-      name: Search
-      url: search
+    - identifier: 'search'
+      name: 'Search'
+      url: 'search'
       weight: 40
-    - identifier: cv
-      name: Curriculum Vitae
-      url: cv
+    - identifier: 'cv'
+      name: 'Curriculum Vitae'
+      url: 'cv'
       weight: 50
 
 markup:

@@ -1,7 +1,7 @@
 +++
 slug = 'sql-basic-queries'
 title = 'SQL: Basic Queries'
-date = 2024-06-08T13:46:16+10:00
+date = 2024-06-10T20:00:00+10:00
 draft = false
 author = 'luojiahai'
 +++

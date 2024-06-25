@@ -1,7 +1,7 @@
 +++
 slug = 'typescript-basics'
 title = 'TypeScript: Basics'
-date = 2024-06-11T13:00:00+10:00
+date = 2024-06-11T20:00:00+10:00
 draft = false
 author = 'luojiahai'
 +++

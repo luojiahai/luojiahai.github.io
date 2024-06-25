@@ -1,7 +1,7 @@
 +++
 slug = 'cv'
 title = 'Curriculum Vitae'
-date = 2024-06-09T13:38:12+10:00
+date = 2024-06-08T18:00:00+10:00
 draft = false
 author = 'luojiahai'
 +++
