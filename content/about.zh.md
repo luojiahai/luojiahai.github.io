@@ -16,4 +16,8 @@ author = 'luojiahai'
 
 我喜欢吃，享受烹饪和尝试不同食谱，品尝多样化的美食，探索餐馆。我特别喜欢早茶、烧烤和炸鸡。
 
+## `luojiahai.com` 网站
+
+这个网站只是为了娱乐。它免费托管在 [GitHub Pages](https://pages.github.com/) 上。我发布随机的技术文章、笔记和食谱。
+
 ---
