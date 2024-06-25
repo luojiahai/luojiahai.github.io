@@ -1,64 +1,12 @@
 +++
-slug = 'typescript-handbook'
-title = 'TypeScript: Handbook'
-date = 2024-06-11T13:46:16+10:00
+slug = 'typescript-types'
+title = 'TypeScript: Types'
+date = 2024-06-12T13:00:00+10:00
 draft = false
 author = 'luojiahai'
 +++
 
-TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
-
-## The Basics
-
-TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support
-tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable,
-standards-based JavaScript.
-
-### `tsc`, the TypeScript compiler
-
-Install the TypeScript Compiler `tsc` globally.
-```shell
-npm install -g typescript
-```
-
-Now let's move to an empty folder and try writing our first TypeScript program: `hello.ts`:
-```typescript
-// Greets the world.
-console.log("Hello world!");
-```
-
-Notice there are no frills here; this "hello world" program looks identical to what you'd write for a "hello world"
-program in JavaScript. And now let's type-check it by running the command `tsc` which was installed for us by the
-`typescript` package.
-```shell
-tsc hello.ts
-```
-
-In our current directory, we see a `hello.js` file next to `hello.ts`. That's the output from our `hello.ts` file after
-`tsc` compiles or transforms it into a plain JavaScript file.
-
-### Configure TypeScript environment
-
-Make a directory. In the directory root, run:
-```shell
-tsc --init
-```
-
-Now, the TypeScript configuration file `tsconfig.json` is generated in the directory root.
-```json
-{
-  "compilerOptions": {
-    "target": "es6",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
-  }
-}
-```
-
-## Everyday Types
-
-### The primitives: `string`, `number`, and `boolean`
+## The primitives: `string`, `number`, and `boolean`
 
 ```typescript
 let var1: string = "Hello, world";
@@ -66,7 +14,7 @@ let var2: number = 42;
 let var3: boolean = true;
 ```
 
-### Arrays
+## Arrays
 
 ```typescript
 let var1: number[] = [1, 2, 3];
@@ -74,7 +22,7 @@ let var2: string[] = ['x', 'y', 'z'];
 let var3: Array<number> = [1, 2, 3];
 ```
 
-### `any`
+## `any`
 
 ```typescript
 let obj: any = { x: 0 };
@@ -88,7 +36,7 @@ obj = "hello";
 const n: number = obj;
 ```
 
-### Type Annotations on Variables
+## Type Annotations on Variables
 
 When you declare a variable using `const`, `var`, or `let`, you can optionally add a type annotation to explicitly
 specify the type of the variable:
@@ -97,30 +45,33 @@ specify the type of the variable:
 let myName: string = "Alice";
 ```
 
-### Functions
+## Functions
 
-Parameter type annotation
+### Parameter Type Annotations
+
 ```typescript
 function greet(name: string) {
   console.log("Hello, " + name.toUpperCase() + "!!");
 }
 ```
 
-Return type annotation
+### Return Type Annotations
+
 ```typescript
 function getFavoriteNumber(): number {
   return 26;
 }
 ```
 
-Function which returns a promise
 ```typescript
+// Function which returns a promise
 async function getFavoriteNumber(): Promise<number> {
   return 26;
 }
 ```
 
-Anonymous function
+### Anonymous Functions
+
 ```typescript
 const names = ["Alice", "Bob", "Eve"];
  
@@ -135,7 +86,7 @@ names.forEach((s) => {
 });
 ```
 
-### Object Types
+## Object Types
 
 ```typescript
 // The parameter's type annotation is an object type
@@ -156,7 +107,7 @@ printName({ first: "Bob" });
 printName({ first: "Alice", last: "Alisson" });
 ```
 
-### Union Types
+## Union Types
 
 ```typescript
 function printId(id: number | string) {
@@ -183,7 +134,7 @@ function printId(id: number | string) {
 }
 ```
 
-### Type Aliases
+## Type Aliases
 
 A type alias is a name for any type.
 
@@ -202,7 +153,7 @@ function printCoord(pt: Point) {
 printCoord({ x: 100, y: 100 });
 ```
 
-### Interfaces
+## Interfaces
 
 An interface declaration is another way to name an object type.
 
@@ -220,13 +171,13 @@ function printCoord(pt: Point) {
 printCoord({ x: 100, y: 100 });
 ```
 
-#### Differences Between Type Aliases and Interfaces
+### Differences Between Type Aliases and Interfaces
 
 Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features
 of an interface are available in type, the key distinction is that a type cannot be re-opened to add new properties vs
 an interface which is always extendable.
 
-### Type Assertions
+## Type Assertions
 
 ```typescript
 const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
@@ -236,13 +187,13 @@ const myCanvas = document.getElementById("main_canvas") as HTMLCanvasElement;
 const myCanvas = <HTMLCanvasElement>document.getElementById("main_canvas");
 ```
 
-### Literal Types
+## Literal Types
 
 ```typescript
 const constantString = "Hello World";
 ```
 
-### `null` and `undefined`
+## `null` and `undefined`
 
 ```typescript
 function doSomething(x: string | null) {
@@ -254,7 +205,7 @@ function doSomething(x: string | null) {
 }
 ```
 
-### Enums
+## Enums
 
 ```typescript
 enum Direction {
@@ -265,7 +216,7 @@ enum Direction {
 }
 ```
 
-### Less Common Primitives
+## Less Common Primitives
 
 `bigint`
 ```typescript
@@ -288,7 +239,7 @@ if (firstName === secondName) {
 
 ## Narrowing
 
-### `typeof` type guards
+## `typeof` type guards
 
 ```typescript
 function printAll(strs: string | string[] | null) {
@@ -304,7 +255,7 @@ function printAll(strs: string | string[] | null) {
 }
 ```
 
-### Truthiness narrowing
+## Truthiness narrowing
 
 ```typescript
 function printAll(strs: string | string[] | null) {
@@ -318,7 +269,7 @@ function printAll(strs: string | string[] | null) {
 }
 ```
 
-#### Equality narrowing
+### Equality narrowing
 
 ```typescript
 function example(x: string | number, y: string | boolean) {
@@ -333,7 +284,7 @@ function example(x: string | number, y: string | boolean) {
 }
 ```
 
-#### The `in` operator narrowing
+### The `in` operator narrowing
 
 ```typescript
 type Fish = { swim: () => void };
@@ -347,7 +298,7 @@ function move(animal: Fish | Bird) {
 }
 ```
 
-#### `instanceof` narrowing
+### `instanceof` narrowing
 
 ```typescript
 function logValue(x: Date | string) {
@@ -359,7 +310,7 @@ function logValue(x: Date | string) {
 }
 ```
 
-#### Assignments
+### Assignments
 
 ```typescript
 let x = Math.random() < 0.5 ? 10 : "hello world!";  // let x: string | number
@@ -374,7 +325,7 @@ x = true;  // Type 'boolean' is not assignable to type 'string | number'.
 console.log(x);
 ```
 
-#### Control flow analysis
+### Control flow analysis
 
 ```typescript
 function example() {
@@ -395,7 +346,7 @@ function example() {
 }
 ```
 
-#### Using type predicates
+### Using type predicates
 
 ```typescript
 function isFish(pet: Fish | Bird): pet is Fish {
@@ -414,7 +365,7 @@ const underWater3: Fish[] = zoo.filter((pet): pet is Fish => {
 });
 ```
 
-#### Assertion functions
+### Assertion functions
 
 ```typescript
 function multiply(x, y) {
@@ -445,7 +396,7 @@ function assertIsDefined<T>(val: T): asserts val is NonNullable<T> {
 }
 ```
 
-### Discriminated unions
+## Discriminated unions
 
 ```typescript
 interface Circle {
@@ -470,12 +421,12 @@ function getArea(shape: Shape) {
 }
 ```
 
-### The `never` type
+## The `never` type
 
 When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have
 nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn't exist.
 
-### Exhaustiveness checking
+## Exhaustiveness checking
 
 The never type is assignable to every type; however, no type is assignable to never (except never itself). This means
 you can use narrowing and rely on never turning up to do exhaustive checking in a switch statement.
@@ -494,198 +445,6 @@ function getArea(shape: Shape) {
       return _exhaustiveCheck;
   }
 }
-```
-
-## More on Functions
-
-### Function Type Expressions
-
-```typescript
-function greeter(fn: (a: string) => void) {
-  fn("Hello, World");
-}
- 
-function printToConsole(s: string) {
-  console.log(s);
-}
- 
-greeter(printToConsole);
-```
-
-The syntax `(a: string) => void` means "a function with one parameter, named `a`, of type `string`, that doesn't have a
-return value".
-
-### Call Signatures
-
-```typescript
-type DescribableFunction = {
-  description: string;
-  (someArg: number): boolean;
-};
-function doSomething(fn: DescribableFunction) {
-  console.log(fn.description + " returned " + fn(6));
-}
- 
-function myFunc(someArg: number) {
-  return someArg > 3;
-}
-myFunc.description = "default description";
- 
-doSomething(myFunc);
-```
-
-### Construct Signatures
-
-```typescript
-type SomeConstructor = {
-  new (s: string): SomeObject;
-};
-function fn(ctor: SomeConstructor) {
-  return new ctor("hello");
-}
-```
-
-### Generic Functions
-
-```typescript
-function filter1<Type>(arr: Type[], func: (arg: Type) => boolean): Type[] {
-  return arr.filter(func);
-}
- 
-function filter2<Type, Func extends (arg: Type) => boolean>(
-  arr: Type[],
-  func: Func
-): Type[] {
-  return arr.filter(func);
-}
-```
-
-### Optional Parameters
-
-```typescript
-function f(x?: number) {
-  // ...
-}
-```
-
-```typescript
-function f(x = 10) {
-  // ...
-}
-```
-
-### Function Overloads
-
-```typescript
-function makeDate(timestamp: number): Date;
-function makeDate(m: number, d: number, y: number): Date;
-function makeDate(mOrTimestamp: number, d?: number, y?: number): Date {
-  if (d !== undefined && y !== undefined) {
-    return new Date(y, mOrTimestamp, d);
-  } else {
-    return new Date(mOrTimestamp);
-  }
-}
-```
-
-### Other Types to Know About
-
-#### `void`
-
-`void` represents the return value of functions which don't return a value.
-
-```typescript
-// The inferred return type is void
-function noop() {
-  return;
-}
-```
-
-#### `object`
-
-The special type `object` refers to any value that isn't a primitive (`string`, `number`, `bigint`, `boolean`, `symbol`,
-`null`, or `undefined`).
-
-#### `unknown`
-
-The `unknown` type represents any value. This is similar to the `any` type, but is safer because it's not legal to do
-anything with an `unknown` value.
-
-```typescript
-function f1(a: any) {
-  a.b(); // OK
-}
-function f2(a: unknown) {
-  a.b(); // 'a' is of type 'unknown'.
-}
-```
-
-#### `never`
-
-The `never` type represents values which are *never* observed. In a return type, this means that the function throws an
-exception or terminates execution of the program.
-
-```typescript
-function fail(msg: string): never {
-  throw new Error(msg);
-}
-```
-
-#### `Function`
-
-This is an *untyped function call* and is generally best avoided because of the unsafe `any` return type.
-
-```typescript
-function doSomething(f: Function) {
-  return f(1, 2, 3);
-}
-```
-
-### Rest Parameters and Arguments
-
-#### Rest Parameters
-
-```typescript
-function multiply(n: number, ...m: number[]) {
-  return m.map((x) => n * x);
-}
-// 'a' gets value [10, 20, 30, 40]
-const a = multiply(10, 1, 2, 3, 4);
-```
-
-#### Rest Arguments
-
-```typescript
-const arr1 = [1, 2, 3];
-const arr2 = [4, 5, 6];
-arr1.push(...arr2);
-```
-
-### Parameter Destructuring
-
-```typescript
-function sum({ a, b, c }) {
-  console.log(a + b + c);
-}
-sum({ a: 10, b: 3, c: 9 });
-```
-
-### Assignability of Functions
-
-Contextual typing with a return type of `void` does **not** force functions to **not** return something.
-
-```typescript
-type voidFunc = () => void;
- 
-const f1: voidFunc = () => {
-  return true;
-};
- 
-const f2: voidFunc = () => true;
- 
-const f3: voidFunc = function () {
-  return true;
-};
 ```
 
 ---
