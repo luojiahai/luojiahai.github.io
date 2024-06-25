@@ -121,8 +121,8 @@ printId("202");
 printId({ myID: 22342 });
 ```
 
-Narrow the union with code
 ```typescript
+// Narrow the union with code
 function printId(id: number | string) {
   if (typeof id === "string") {
     // In this branch, id is of type 'string'

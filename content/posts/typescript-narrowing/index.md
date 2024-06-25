@@ -153,6 +153,7 @@ function multiply(x, y) {
 
 `asserts val is string` ensures that after any call to `assertIsString`, any variable passed in will be known to be a
 `string`.
+
 ```typescript
 function assertIsString(val: any): asserts val is string {
   if (typeof val !== "string") {
@@ -161,8 +162,8 @@ function assertIsString(val: any): asserts val is string {
 }
 ```
 
-More sophisticated sssertion signatures
 ```typescript
+// More sophisticated sssertion signatures
 function assertIsDefined<T>(val: T): asserts val is NonNullable<T> {
   if (val === undefined || val === null) {
     throw new AssertionError(
@@ -200,12 +201,12 @@ function getArea(shape: Shape) {
 ## The `never` type
 
 When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have
-nothing left. In those cases, TypeScript will use a never type to represent a state which shouldn't exist.
+nothing left. In those cases, TypeScript will use a `never` type to represent a state which shouldn't exist.
 
 ## Exhaustiveness checking
 
-The never type is assignable to every type; however, no type is assignable to never (except never itself). This means
-you can use narrowing and rely on never turning up to do exhaustive checking in a switch statement.
+The `never` type is assignable to every type; however, no type is assignable to `never` (except `never` itself). This
+means you can use narrowing and rely on `never` turning up to do exhaustive checking in a `switch` statement.
 
 ```typescript
 type Shape = Circle | Square;
