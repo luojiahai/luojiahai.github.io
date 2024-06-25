@@ -1,10 +1,13 @@
 +++
-slug = 'typescript-types'
-title = 'TypeScript: Types'
-date = 2024-06-13T13:00:00+10:00
+slug = 'typescript-functions'
+title = 'TypeScript: Functions'
+date = 2024-06-14T13:00:00+10:00
 draft = false
 author = 'luojiahai'
 +++
+
+Functions are the basic building block of any application, whether they’re local functions, imported from another
+module, or methods on a class.
 
 ## Function Type Expressions
 
