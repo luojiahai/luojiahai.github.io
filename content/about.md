@@ -19,7 +19,7 @@ industry. Checkout the [Curriculum Vitae](/cv) for my professional profile.
 I find joy in the culinary world, indulging in cooking, experimenting with recipes, savouring diverse cuisines,
 and discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
 
-## The `luojiahai.com` site
+## The site
 
 This site is just for fun. It is hosted on [GitHub Pages](https://pages.github.com/) for free. I post technical
 articles, notes, and food recipes.
