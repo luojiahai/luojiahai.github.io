@@ -6,10 +6,10 @@ draft = false
 author = 'luojiahai'
 +++
 
-👋 Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I am currently based in Melbourne, Australia.
+Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I am currently based in Melbourne, Australia.
 
-I was born in the Chinese year of Pig 🐷. My personality is Architect
-([INTJ-A](https://www.16personalities.com/intj-personality/)). My Zodiac sign is Cancer ♋, Libra ascendant.
+I was born in the Chinese year of Pig. My personality is Architect
+([INTJ-A](https://www.16personalities.com/intj-personality/)). My Zodiac sign is Cancer, Libra ascendant.
 
 I completed studies in Computer Science at the University of Melbourne. I am working professionally in the computer
 industry. Checkout the [Curriculum Vitae](/cv) for my professional profile.
