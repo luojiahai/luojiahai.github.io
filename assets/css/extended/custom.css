@@ -8,8 +8,8 @@
     content: "";
     margin-inline-start: 1rem;
     margin-bottom: 0;
-    width: 0.8rem;
-    height: 0.2rem;
+    width: 1.0rem;
+    height: 0.3rem;
     background: var(--primary);
     display: inline-block;
     animation: cursor-blink 1.2s steps(2)infinite
