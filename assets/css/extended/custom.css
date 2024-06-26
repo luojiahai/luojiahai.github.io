@@ -7,7 +7,7 @@
 .home-info header h1 code::after {
     content: "";
     margin-inline-start: 1.0rem;
-    margin-bottom: -0.05rem;
+    margin-bottom: 0;
     width: 1.0rem;
     height: 0.3rem;
     background: var(--primary);
