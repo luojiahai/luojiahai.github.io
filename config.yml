@@ -51,7 +51,7 @@ languages:
       dateFormat: '2006年1月2日'
 
       homeInfo:
-        title: '`:~$ whoami`'
+        title: '`> whoami`'
         content: |
           🥢 我是一个美食爱好者。
 
@@ -100,7 +100,7 @@ params:
     iconHeight: 25
 
   homeInfo:
-    title: '`:~$ whoami`'
+    title: '`> whoami`'
     content: |
       🥢 I am a food enthusiast.
 
