@@ -34,7 +34,9 @@ that to the model.
 1. **Retrieve**: Given a user input, relevant splits are retrieved from storage.
 2. **Generate**: An LLM produces an answer using a prompt that includes the question and the retrieved data.
 
-## Implement RAG using Knowledge Bases for Amazon Bedrock
+## Walkthrough
+
+### Implement RAG using Knowledge Bases for Amazon Bedrock
 
 Knowledge bases for Amazon Bedrock provides you the capability of amassing data sources into a repository of
 information. With knowledge bases, you can easily build an application that takes advantage of retrieval-augmented
@@ -49,7 +51,7 @@ which queries a knowledge base and generates responses based on the retrieved re
 
 See https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html.
 
-## Implement RAG using Hugging Face and LangChain
+### Implement RAG using Hugging Face and LangChain
 
 Import required libraries:
 
