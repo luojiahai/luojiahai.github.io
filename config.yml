@@ -52,9 +52,7 @@ languages:
       homeInfo:
         title: '`> whoami`'
         content: |
-          🥢 我是一个美食爱好者。
-
-          🖥️ 我是一个软件开发工程师。
+          🖥️ 我是一名计算机专业工作者。
 
           🔭 我目前在努力工作谋生。
 
@@ -92,9 +90,7 @@ params:
   homeInfo:
     title: '`> whoami`'
     content: |
-      🥢 I am a food enthusiast.
-
-      🖥️ I am a software development engineer.
+      🖥️ I am a professional computer worker.
 
       🔭 I am currently working hard for a living.
 
