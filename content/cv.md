@@ -32,7 +32,7 @@ machine learning.
 ## Skills
 
 - Programming Languages: Python, TypeScript, Java, C
-- Technologies: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL, Node
+- Technologies: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL, Node.js
 
 ## Resources
 

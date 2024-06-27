@@ -30,7 +30,7 @@ author = 'luojiahai'
 ## 技能
 
 - 编程语言: Python, TypeScript, Java, C
-- 技术: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL, Node
+- 技术: 🤗 Hugging Face, AWS, Docker, Kafka, GraphQL, Node.js
 
 ## 资源
 
