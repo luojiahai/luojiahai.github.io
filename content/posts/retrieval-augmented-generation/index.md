@@ -48,15 +48,10 @@ Here is the user's question:
 $query$
 ```
 
-Load system prompt:
+Define system prompt and query:
 
 ```python
 system_prompt = open('<path_to_system_prompt_file>', 'r').read()
-```
-
-Write query / question:
-
-```python
 query = 'What is potato?'
 ```
 
