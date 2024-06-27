@@ -63,10 +63,10 @@ embeddings = HuggingFaceEmbeddings(model_name=embeddings_path)
 vector_database = Chroma(embedding_function=embeddings, persist_directory=persist_directory)
 ```
 
-Load and split documents:
+Load and split (e.g., PDF) documents:
 
 ```python
-pdf_loader = PyPDFLoader(file_path=file_path)   # e.g., a pdf file containing exclusive knowledge about potatoes
+pdf_loader = PyPDFLoader(file_path=file_path)  # e.g., a pdf file containing exclusive knowledge about potatoes
 documents = pdf_loader.load_and_split()
 ```
 
