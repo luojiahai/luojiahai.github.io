@@ -1,6 +1,6 @@
 +++
 slug = 'retrieval-augmented-generation'
-title = 'Retrieval-Augmented Generation'
+title = 'Retrieval-Augmented Generation (RAG)'
 date = 2024-06-27T20:00:00+10:00
 draft = false
 author = 'luojiahai'
