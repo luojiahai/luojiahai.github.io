@@ -2,7 +2,7 @@
 slug = 'typescript-functions'
 title = 'TypeScript: Functions'
 date = 2024-06-14T20:00:00+10:00
-draft = false
+draft = true
 author = 'luojiahai'
 +++
 
