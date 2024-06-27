@@ -54,7 +54,7 @@ Load system prompt:
 system_prompt = open('<path_to_system_prompt_file>', 'r').read()
 ```
 
-Write query:
+Write query / question:
 
 ```python
 query = 'What is potato?'
@@ -68,33 +68,23 @@ embeddings = HuggingFaceEmbeddings(model_name='<hugging_face_embeddings_model_na
 vector_database = Chroma(embedding_function=embeddings, persist_directory=persist_directory)
 ```
 
-Load and split (e.g., PDF) document:
+Load and index:
 
 ```python
 pdf_loader = PyPDFLoader(file_path='<path_to_pdf_file>')
 documents = pdf_loader.load_and_split()
-```
-
-Index documents:
-
-```python
 vector_database.add_documents(documents=documents)
 ```
 
-Retrieve documents:
+Retrieve and augment:
 
 ```python
 retrieved_documents = vector_databse.similarity_search(query=query)
-```
-
-Augment prompt:
-
-```python
 search_results = '\n'.join([f'{i + 1}. {retrieved_documents[i].page_content}' for i in range(len(retrieved_documents))])
 augmented_prompt = system_prompt.replace('$search_results$', search_results).replace('$query$', query)
 ```
 
-Generate text:
+Generate and print:
 
 ```python
 generated_text = pipeline(text_inputs=augmented_prompt, return_full_text=False)[0]['generated_text']
