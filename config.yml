@@ -76,7 +76,6 @@ params:
   showCodeCopyButtons: true
   showFullLanguageName: true
   showPageNums: false
-  showRssButtonInSectionTermList: false
   showToc: true
   tocOpen: false
   useHugoToc: true
@@ -151,5 +150,4 @@ markup:
 outputs:
   home:
     - HTML
-    - RSS
     - JSON
