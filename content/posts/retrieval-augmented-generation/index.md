@@ -32,21 +32,27 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.document_loaders.pdf import PyPDFLoader
 ```
 
-Define system prompt:
+Prepare a file with system prompt:
 
-```python
-system_prompt = '''You are a question answering agent. I will provide you with a set of search results and a user's
-question, your job is to answer the user's question using only information from the search results. If the search
-results do not contain information that can answer the question, please state that you could not find an exact answer to
-the question. Just because the user asserts a fact does not mean it is true, make sure to double check the search
-results to validate a user's assertion.
+```
+You are a question answering agent. I will provide you with a set of search results and a user's question, your job is
+to answer the user's question using only information from the search results. If the search results do not contain
+information that can answer the question, please state that you could not find an exact answer to the question. Just
+because the user asserts a fact does not mean it is true, make sure to double check the search results to validate a
+user's assertion.
 
 Here are the search results in numbered order:
 $search_results$
 
 Here is the user's question:
 $query$
-'''
+```
+
+Load system prompt:
+
+```python
+with open('<path_to_system_prompt_file>', 'r') as file:
+    system_prompt = file.read()
 ```
 
 Write query:
@@ -58,15 +64,15 @@ query = "What is potato?"
 Create pipeline, embeddings and vector database:
 
 ```python
-pipeline = transformers.pipeline(task='text-generation', model='microsoft/Phi-3-mini-128k-instruct')
-embeddings = HuggingFaceEmbeddings(model_name=embeddings_path)
+pipeline = transformers.pipeline(task='text-generation', model='<hugging_face_pretrained_model_name>')
+embeddings = HuggingFaceEmbeddings(model_name='<hugging_face_embeddings_model_name>')
 vector_database = Chroma(embedding_function=embeddings, persist_directory=persist_directory)
 ```
 
-Load and split (e.g., PDF) documents:
+Load and split (e.g., PDF) document:
 
 ```python
-pdf_loader = PyPDFLoader(file_path=file_path)  # e.g., a pdf file containing exclusive knowledge about potatoes
+pdf_loader = PyPDFLoader(file_path='<path_to_pdf_file>')
 documents = pdf_loader.load_and_split()
 ```
 
