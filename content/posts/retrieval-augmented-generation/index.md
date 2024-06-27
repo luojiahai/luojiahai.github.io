@@ -13,11 +13,39 @@ The following diagram shows the conceptual flow of using RAG with LLMs.
 
 ![](images/fm-rag.jpg)
 
+## Components
+
+### Indexing
+
+A pipeline for ingesting data from a source and indexing it. This usually happens offline.
+
+1. **Load**: First we need to load our data.
+2. **Split**: We need to break large documents into smaller chunks. This is useful both for indexing data and for
+   passing it in to a model, since large chunks are harder to search over and won't fit in a model's finite context
+   window.
+3. **Store**: We need somewhere to store and index our splits, so that they can later be searched over. This is often
+   done using a vector database and embeddings model.
+
+### Retrieval and generation
+
+The actual RAG chain, which takes the user query at run time and retrieves the relevant data from the index, then passes
+that to the model.
+
+1. **Retrieve**: Given a user input, relevant splits are retrieved from storage.
+2. **Generate**: An LLM produces an answer using a prompt that includes the question and the retrieved data.
+
 ## Implement RAG using Knowledge Bases for Amazon Bedrock
 
 Knowledge bases for Amazon Bedrock provides you the capability of amassing data sources into a repository of
 information. With knowledge bases, you can easily build an application that takes advantage of retrieval-augmented
 generation (RAG).
+
+Knowledge bases are managed by AWS. Implementing the RAG workflow from scratch is not required. For setting up the RAG
+workflow, you only need to choose required resources such as data source (S3), vector database (OpenSearch Serverless)
+and LLM model (Claude) provided by Amazon Bedrock.
+
+Amazon Bedrock provides [RetrieveAndGenerate API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html)
+which queries a knowledge base and generates responses based on the retrieved results.
 
 See https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html.
 
@@ -55,7 +83,7 @@ system_prompt = open('<path_to_system_prompt_file>', 'r').read()
 query = 'What is potato?'
 ```
 
-Create pipeline, embeddings and vector database:
+Create HUgging Face pipeline, embeddings and vector database:
 
 ```python
 pipeline = transformers.pipeline(task='text-generation', model='<hugging_face_pretrained_model_name>')
@@ -63,7 +91,7 @@ embeddings = HuggingFaceEmbeddings(model_name='<hugging_face_embeddings_model_na
 vector_database = Chroma(embedding_function=embeddings, persist_directory=persist_directory)
 ```
 
-Load and index:
+Load, split and index:
 
 ```python
 pdf_loader = PyPDFLoader(file_path='<path_to_pdf_file>')
@@ -79,7 +107,7 @@ search_results = '\n'.join([f'{i + 1}. {retrieved_documents[i].page_content}' fo
 augmented_prompt = system_prompt.replace('$search_results$', search_results).replace('$query$', query)
 ```
 
-Generate and print:
+Generate text response and print:
 
 ```python
 generated_text = pipeline(text_inputs=augmented_prompt, return_full_text=False)[0]['generated_text']
