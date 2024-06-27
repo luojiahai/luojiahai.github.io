@@ -49,7 +49,7 @@ and LLM model (Claude) provided by Amazon Bedrock.
 Amazon Bedrock provides [RetrieveAndGenerate API](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_RetrieveAndGenerate.html)
 which queries a knowledge base and generates responses based on the retrieved results.
 
-See https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html.
+For detailed walkthrough, see https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html.
 
 ### Implement RAG using Hugging Face and LangChain
 
