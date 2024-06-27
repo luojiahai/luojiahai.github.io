@@ -51,14 +51,13 @@ $query$
 Load system prompt:
 
 ```python
-with open('<path_to_system_prompt_file>', 'r') as file:
-    system_prompt = file.read()
+system_prompt = open('<path_to_system_prompt_file>', 'r').read()
 ```
 
 Write query:
 
 ```python
-query = "What is potato?"
+query = 'What is potato?'
 ```
 
 Create pipeline, embeddings and vector database:
