@@ -43,7 +43,7 @@ params:
   env: 'production'
   title: 'luojiahai'
   author: 'luojiahai'
-  dateFormat: '2006-01-02'
+  dateFormat: '2006 January 2'
   defaultTheme: 'dark' # dark, light
 
   enableAnchoredHeadings: true
