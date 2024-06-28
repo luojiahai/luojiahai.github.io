@@ -41,14 +41,10 @@ languages:
           name: '归档'
           url: 'archives'
           weight: 40
-        - identifier: 'notes'
-          name: '笔记'
-          url: 'notes'
-          weight: 50
         - identifier: 'search'
           name: '搜索'
           url: 'search'
-          weight: 60
+          weight: 50
 
     params:
       dateFormat: '2006年1月2日'
@@ -143,14 +139,10 @@ menu:
       name: 'Archives'
       url: 'archives'
       weight: 40
-    - identifier: 'notes'
-      name: 'Notes'
-      url: 'notes'
-      weight: 50
     - identifier: 'search'
       name: 'Search'
       url: 'search'
-      weight: 60
+      weight: 50
 
 markup:
   goldmark:
