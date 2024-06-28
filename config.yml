@@ -52,7 +52,7 @@ languages:
       homeInfo:
         title: '`> whoami`'
         content: |
-          🖥️ 我是一名专业的计算机工作者。
+          🖥️ 我是一名软件开发工程师。
 
           🔭 我目前在努力工作谋生。
 
@@ -90,7 +90,7 @@ params:
   homeInfo:
     title: '`> whoami`'
     content: |
-      🖥️ I am a professional computer worker.
+      🖥️ I am a software development engineer.
 
       🔭 I am currently working hard for a living.
 
