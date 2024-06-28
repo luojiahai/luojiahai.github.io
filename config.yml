@@ -29,9 +29,9 @@ languages:
           name: '关于'
           url: 'about'
           weight: 10
-        - identifier: cv
+        - identifier: 'resume'
           name: '简历'
-          url: 'cv'
+          url: 'resume'
           weight: 20
         - identifier: 'posts'
           name: '帖子'

@@ -12,7 +12,7 @@ My Chinese animal sign is Pig. My personality is Architect [INTJ-A](https://www.
 My Zodiac sign is Cancer, Libra ascendant.
 
 I completed studies in Computer Science at the University of Melbourne. I am working professionally in the computer
-industry. Checkout the [Curriculum Vitae](/cv) for my professional profile.
+industry. Checkout the [Résumé](/resume) for my professional profile.
 
 I find joy in the culinary world, indulging in cooking, experimenting with recipes, savouring diverse cuisines, and
 discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
