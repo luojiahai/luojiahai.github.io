@@ -22,9 +22,4 @@ discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
 This site is just for fun. It is hosted on [GitHub Pages](https://pages.github.com/) for free. I post technical
 articles, notes, and food recipes.
 
-### Hidden pages
-
-- [Notes](/notes)
-- [Recipes](/recipes)
-
 ---

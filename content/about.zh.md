@@ -18,9 +18,4 @@ author = 'luojiahai'
 
 这个网站只是为了好玩。它免费托管在 [GitHub Pages](https://pages.github.com/) 上。我发布技术文章、笔记和食谱。
 
-### 隐藏页面
-
-- [笔记](/zh/notes)
-- [菜谱](/zh/recipes)
-
 ---
