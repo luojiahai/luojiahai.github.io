@@ -19,11 +19,11 @@ ways to run inference with:
 - [Pipelines]({{% ref "#pipelines" %}})
 - [AutoClasses]({{% ref "#autoclasses" %}})
 
-## Hugging Chat {#hugging-chat}
+## Hugging Chat
 
 [Hugging Chat](https://huggingface.co/chat/) is an open-source interface enabling everyone to try open-source large language models.
 
-## Inference API {#inference-api}
+## Inference API
 
 [Inference API](https://huggingface.co/docs/api-inference/) is free to use, and rate limited. You can test and evaluate
 publicly accessible machine learning models, or your own private models, via simple HTTP requests, with fast inference
@@ -81,7 +81,7 @@ curl https://api-inference.huggingface.co/models/gpt2 \
         -H "Authorization: Bearer ${API_TOKEN}"
 ```
 
-## Inference Endpoints {#inference-endpoints}
+## Inference Endpoints
 
 [Inference Endpoints](https://huggingface.co/docs/inference-endpoints/) offers a secure production solution to easily
 deploy any Transformers, Sentence-Transformers and Diffusion models from the Hub on dedicated and autoscaling
@@ -95,7 +95,7 @@ infrastructure.
 For usage, see this article:
 [Getting Started with Hugging Face Inference Endpoints](https://huggingface.co/blog/inference-endpoints).
 
-## Pipelines {#pipelines}
+## Pipelines
 
 The pipelines are a great and easy way to use models for inference. These pipelines are objects that abstract most of
 the complex code from the library, offering a simple API dedicated to several tasks.
@@ -143,20 +143,11 @@ pipeline = transformers.pipeline(task='text-classification', model=model, tokeni
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-## Auto Classes {#autoclasses}
+## Auto Classes
 
-In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are
-supplying to the `from_pretrained()` method. [Auto Classes](https://huggingface.co/docs/transformers/model_doc/auto) are
-here to do this job for you so that you automatically retrieve the relevant model given the name/path to the pretrained
-weights/config/vocabulary.
-
-An `AutoClass` is a shortcut that
-automatically retrieves the architecture of a pretrained model from its name or path. You only need to select the
-appropriate `AutoClass` for your task and it’s associated preprocessing class.
-
-The Auto Classes work together to power the `pipeline()`.
-
-This is an example of using an `AutoClass`:
+[Auto Classes](https://huggingface.co/docs/transformers/model_doc/auto) automatically retrieves the architecture of a
+pretrained model from its name/path to the pretrained weights/config/vocabulary. You only need to select the appropriate
+`AutoClass` for your task and it’s associated preprocessing class.
 
 ```python
 import transformers
