@@ -6,4 +6,6 @@ weight = 30
 author = 'luojiahai'
 +++
 
-More contents: [Notes](/notes), [Recipes](/recipes)
+More contents not in this list: [Notes](/notes), [Recipes](/recipes)
+
+---

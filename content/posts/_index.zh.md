@@ -6,4 +6,6 @@ weight = 30
 author = 'luojiahai'
 +++
 
-更多内容：[笔记](/zh/notes)、[菜谱](/zh/recipes)
+不在此列表里的更多内容：[笔记](/zh/notes)、[菜谱](/zh/recipes)
+
+---
