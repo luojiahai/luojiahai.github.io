@@ -17,6 +17,6 @@ showBreadCrumbs = false
 
 ## 网站
 
-这个网站只是为了好玩。它免费托管在 [GitHub Pages](https://pages.github.com/) 上。我发布技术文章、笔记和食谱。
+这个网站只是为了好玩。它免费托管在 [GitHub Pages](https://pages.github.com/) 上，由 [Hugo](https://gohugo.io/) 驱动。我发布技术文章、笔记和食谱。
 
 ---
