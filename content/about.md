@@ -6,10 +6,8 @@ draft = false
 author = 'luojiahai'
 +++
 
-Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I am currently based in Melbourne, Australia.
-
-My Chinese animal sign is Pig. My personality is Architect [INTJ-A](https://www.16personalities.com/intj-personality/).
-My Zodiac sign is Cancer, Libra ascendant.
+Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I am currently based in Melbourne, Australia. My
+personality is Architect [INTJ-A](https://www.16personalities.com/intj-personality/).
 
 I completed studies in Computer Science at the University of Melbourne. I am working professionally in the computer
 industry. Checkout the [Résumé](/resume) for my professional profile.
