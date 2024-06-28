@@ -92,12 +92,10 @@ For usage, see this article: [Getting Started with Hugging Face Inference Endpoi
 The pipelines are objects that abstract most of the complex code from the library, offering a simple API dedicated to
 several tasks.
 
-### The pipeline abstraction
+The *pipeline abstraction* is a wrapper around all the other available pipelines. It is instantiated as any other
+pipeline. There are multiple ways to load a pretrained model to run inference with the pipeline:
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to
-run inference with the pipeline:
-
-#### Use remote model given a task
+Use remote model by task:
 
 ```python
 import transformers
@@ -105,7 +103,7 @@ pipeline = transformers.pipeline(task='text-classification')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Use remote model given a model identifier
+Use remote model by model name:
 
 ```python
 import transformers
@@ -113,7 +111,7 @@ pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
 outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
-#### Use local model
+Use local model:
 
 ```python
 import transformers
