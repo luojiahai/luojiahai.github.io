@@ -1,6 +1,6 @@
 +++
-slug = 'transformers-basics'
-title = '🤗 Transformers: Basics'
+slug = 'hugging-face-transformers-basics'
+title = '🤗 Hugging Face Transformers: Basics'
 date = 2024-06-19T20:00:00+10:00
 draft = false
 author = 'luojiahai'

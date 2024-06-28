@@ -1,6 +1,6 @@
 +++
-slug = 'transformers-fine-tuning'
-title = '🤗 Transformers: Fine-Tuning'
+slug = 'hugging-face-transformers-fine-tuning'
+title = '🤗 Hugging Face Transformers: Fine-Tuning'
 date = 2024-06-28T10:00:00+10:00
 draft = false
 author = 'luojiahai'
