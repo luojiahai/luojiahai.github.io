@@ -21,7 +21,8 @@ ways to run inference with:
 
 ## Hugging Chat
 
-[Hugging Chat](https://huggingface.co/chat/) is an open-source interface enabling everyone to try open-source large language models.
+[Hugging Chat](https://huggingface.co/chat/) is an open-source interface enabling everyone to try open-source large
+language models.
 
 ## Inference API
 
@@ -109,7 +110,8 @@ The pipeline abstraction is a wrapper around all the other available pipelines. 
 but can provide additional quality of life. See the
 [task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
 
-The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to run inference with a pipeline:
+The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to
+run inference with a pipeline:
 
 #### Use remote model given a task
 
@@ -123,7 +125,8 @@ outputs = pipeline(inputs='This restaurant is awesome')
 
 #### Use remote model given a model identifier
 
-The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards), downloads the model from the Hub and caches it locally.
+The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards),
+downloads the model from the Hub and caches it locally.
 
 ```python
 import transformers
