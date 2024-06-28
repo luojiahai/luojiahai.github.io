@@ -83,7 +83,7 @@ infrastructure managed by Hugging Face.
 With Inference Endpoints, you can easily deploy any machine learning model on dedicated and fully managed
 infrastructure.
 
-![](https://raw.githubusercontent.com/huggingface/hf-endpoints-documentation/main/assets/creation_flow.png)
+![](images/creation_flow.png)
 
 For usage, see this article: [Getting Started with Hugging Face Inference Endpoints](https://huggingface.co/blog/inference-endpoints).
 
@@ -94,16 +94,10 @@ several tasks.
 
 ### The pipeline abstraction
 
-The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
-but can provide additional quality of life. See the [task summary](https://huggingface.co/docs/transformers/task_summary)
-for examples of use.
-
 The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to
-run inference with a pipeline:
+run inference with the pipeline:
 
 #### Use remote model given a task
-
-The pipeline downloads the default model (configured for each eask) from the Hub and caches it locally.
 
 ```python
 import transformers
@@ -113,9 +107,6 @@ outputs = pipeline(inputs='This restaurant is awesome')
 
 #### Use remote model given a model identifier
 
-The pipeline determins the task by looking up the [Model Card](https://huggingface.co/docs/hub/en/model-cards),
-downloads the model from the Hub and caches it locally.
-
 ```python
 import transformers
 pipeline = transformers.pipeline(model='FacebookAI/roberta-large-mnli')
@@ -123,8 +114,6 @@ outputs = pipeline(inputs='This restaurant is awesome')
 ```
 
 #### Use local model
-
-The pipeline loads the model directly from your local storage using the Auto Classes.
 
 ```python
 import transformers
