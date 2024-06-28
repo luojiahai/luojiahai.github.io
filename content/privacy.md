@@ -4,6 +4,7 @@ title = 'Privacy Policy'
 date = 2024-06-29T00:00:00+10:00
 draft = false
 author = 'luojiahai'
+showBreadCrumbs = false
 +++
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.

@@ -49,8 +49,8 @@ params:
   enableAnchoredHeadings: true
   enableScrollToTop: true
   enableThemeToggle: true
-  hideMeta: false
-  hideSummary: false
+  showMeta: true
+  showSummary: true
   showBreadCrumbs: true
   showCodeCopyButtons: true
   showFullLanguageName: true

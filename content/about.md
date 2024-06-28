@@ -6,6 +6,7 @@ weight = 10
 date = 2024-06-08T17:00:00+10:00
 draft = false
 author = 'luojiahai'
+showBreadCrumbs = false
 +++
 
 Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I am currently based in Melbourne, Australia. My
