@@ -2,7 +2,7 @@
 slug = 'typescript-types'
 title = 'TypeScript: Types'
 date = 2024-06-12T20:00:00+10:00
-draft = true
+draft = false
 author = 'luojiahai'
 +++
 

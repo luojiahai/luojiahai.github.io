@@ -1,6 +1,6 @@
 +++
-slug = 'cv'
-title = 'Curriculum Vitae'
+slug = 'resume'
+title = 'Résumé'
 date = 2024-06-08T18:00:00+10:00
 draft = false
 author = 'luojiahai'

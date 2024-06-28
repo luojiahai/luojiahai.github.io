@@ -1,5 +1,5 @@
 +++
-slug = 'cv'
+slug = 'resume'
 title = '简历'
 date = 2024-06-08T18:00:00+10:00
 draft = false

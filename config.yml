@@ -41,10 +41,14 @@ languages:
           name: '归档'
           url: 'archives'
           weight: 40
+        - identifier: 'notes'
+          name: '笔记'
+          url: 'notes'
+          weight: 50
         - identifier: 'search'
           name: '搜索'
           url: 'search'
-          weight: 50
+          weight: 60
 
     params:
       dateFormat: '2006年1月2日'
@@ -127,9 +131,9 @@ menu:
       name: 'About'
       url: 'about'
       weight: 10
-    - identifier: 'cv'
-      name: 'Curriculum Vitae'
-      url: 'cv'
+    - identifier: 'resume'
+      name: 'Résumé'
+      url: 'resume'
       weight: 20
     - identifier: 'posts'
       name: 'Posts'
@@ -139,10 +143,14 @@ menu:
       name: 'Archives'
       url: 'archives'
       weight: 40
+    - identifier: 'notes'
+      name: 'Notes'
+      url: 'notes'
+      weight: 50
     - identifier: 'search'
       name: 'Search'
       url: 'search'
-      weight: 50
+      weight: 60
 
 markup:
   goldmark:
