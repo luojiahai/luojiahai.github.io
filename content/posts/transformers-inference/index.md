@@ -6,18 +6,7 @@ draft = false
 author = 'luojiahai'
 +++
 
-[🤗 Transformers](https://huggingface.co/docs/transformers/) provides APIs and tools to easily download and train
-state-of-the-art pretrained models. These models support common tasks in different modalities, such as Natural Language
-Processing, Computer Vision, Audio, and Multimodal.
-
-Inference is the process of using a pretrained model to generate outputs on new data. In Hugging Face, there are several
-ways to run inference with:
-
-- [Hugging Chat]({{% ref "#hugging-chat" %}})
-- [Inference API]({{% ref "#inference-api" %}})
-- [Inference Endpoints]({{% ref "#inference-endpoints" %}})
-- [Pipelines]({{% ref "#pipelines" %}})
-- [AutoClasses]({{% ref "#autoclasses" %}})
+Inference is the process of using a pretrained model to generate outputs on new data.
 
 ## Hugging Chat
 
@@ -43,18 +32,20 @@ ENDPOINT = https://api-inference.huggingface.co/models/<MODEL_ID>
 
 Let’s use [gpt2](https://huggingface.co/gpt2) as an example. To run inference, simply use this code:
 
-Python
+Python:
+
 ```python
 import requests
-API_URL = "https://api-inference.huggingface.co/models/gpt2"
-headers = {"Authorization": f"Bearer {API_TOKEN}"}
+API_URL = 'https://api-inference.huggingface.co/models/gpt2'
+headers = {'Authorization': f'Bearer {API_TOKEN}'}
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
     return response.json()
-data = query("Can you please let us know more details about your ")
+data = query('Can you please let us know more details about your ')
 ```
 
-JavaScript
+JavaScript:
+
 ```javascript
 import fetch from "node-fetch";
 async function query(data) {
@@ -74,7 +65,8 @@ query("Can you please let us know more details about your ").then((response) => 
 });
 ```
 
-cURL
+cURL:
+
 ```bash
 curl https://api-inference.huggingface.co/models/gpt2 \
         -X POST \
@@ -93,22 +85,18 @@ infrastructure.
 
 ![](https://raw.githubusercontent.com/huggingface/hf-endpoints-documentation/main/assets/creation_flow.png)
 
-For usage, see this article:
-[Getting Started with Hugging Face Inference Endpoints](https://huggingface.co/blog/inference-endpoints).
+For usage, see this article: [Getting Started with Hugging Face Inference Endpoints](https://huggingface.co/blog/inference-endpoints).
 
 ## Pipelines
 
-The pipelines are a great and easy way to use models for inference. These pipelines are objects that abstract most of
-the complex code from the library, offering a simple API dedicated to several tasks.
-
-A pipeline groups together three steps: preprocessing, forward (passing the inputs through the model), and
-postprocessing.
+The pipelines are objects that abstract most of the complex code from the library, offering a simple API dedicated to
+several tasks.
 
 ### The pipeline abstraction
 
 The pipeline abstraction is a wrapper around all the other available pipelines. It is instantiated as any other pipeline
-but can provide additional quality of life. See the
-[task summary](https://huggingface.co/docs/transformers/task_summary) for examples of use.
+but can provide additional quality of life. See the [task summary](https://huggingface.co/docs/transformers/task_summary)
+for examples of use.
 
 The `pipeline()` is a utility factory method to build a `Pipeline`. There are multiple ways to use a pretrained model to
 run inference with a pipeline:
