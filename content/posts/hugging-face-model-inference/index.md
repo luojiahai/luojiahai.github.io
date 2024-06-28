@@ -6,7 +6,8 @@ draft = false
 author = 'luojiahai'
 +++
 
-Inference is the process of using a pretrained model to generate outputs on new data.
+Inference is the process of using a pretrained model to generate outputs on new data. Hugging Face provides different
+ways to run inference on pretrained models.
 
 ## Hugging Chat
 

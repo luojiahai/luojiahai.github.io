@@ -16,9 +16,9 @@ In this post, we will fine-tune a pretrained model `bert-base-uncased` for sente
 
 ## Processing the data
 
-We will use as an example the MRPC (Microsoft Research Paraphrase Corpus) dataset, introduced in a [paper](https://www.aclweb.org/anthology/I05-5002.pdf)
-by William B. Dolan and Chris Brockett. The dataset consists of 5,801 pairs of sentences, with a label indicating if
-they are paraphrases or not (i.e., if both sentences mean the same thing).
+We will use the MRPC (Microsoft Research Paraphrase Corpus) dataset, introduced in a [paper](https://www.aclweb.org/anthology/I05-5002.pdf).
+The dataset consists of 5,801 pairs of sentences, with a label indicating if they are paraphrases or not (i.e., if both
+sentences mean the same thing).
 
 ### Loading a dataset from the Hub
 
