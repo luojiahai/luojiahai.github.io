@@ -1,6 +1,6 @@
 +++
-slug = 'transformers-inference'
-title = '🤗 Transformers: Inference'
+slug = 'hugging-face-inference'
+title = '🤗 Hugging Face: Inference'
 date = 2024-06-20T20:00:00+10:00
 draft = false
 author = 'luojiahai'
