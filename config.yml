@@ -87,6 +87,9 @@ params:
     - name: 'github'
       url: 'https://github.com/luojiahai/'
 
+  mainSections:
+    - 'posts'
+
   # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
