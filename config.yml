@@ -23,29 +23,6 @@ languages:
     languageName: '中文'
     weight: 2
 
-    menu:
-      main:
-        - identifier: 'about'
-          name: '关于'
-          url: 'about'
-          weight: 10
-        - identifier: 'resume'
-          name: '简历'
-          url: 'resume'
-          weight: 20
-        - identifier: 'posts'
-          name: '帖子'
-          url: 'posts'
-          weight: 30
-        - identifier: 'archives'
-          name: '归档'
-          url: 'archives'
-          weight: 40
-        - identifier: 'search'
-          name: '搜索'
-          url: 'search'
-          weight: 50
-
     params:
       dateFormat: '2006年1月2日'
 
@@ -120,29 +97,6 @@ params:
     minMatchCharLength: 0
     limit: 10
     keys: ['title', 'permalink', 'summary', 'content']
-
-menu:
-  main:
-    - identifier: 'about'
-      name: 'About'
-      url: 'about'
-      weight: 10
-    - identifier: 'resume'
-      name: 'Résumé'
-      url: 'resume'
-      weight: 20
-    - identifier: 'posts'
-      name: 'Posts'
-      url: 'posts'
-      weight: 30
-    - identifier: 'archives'
-      name: 'Archives'
-      url: 'archives'
-      weight: 40
-    - identifier: 'search'
-      name: 'Search'
-      url: 'search'
-      weight: 50
 
 markup:
   goldmark:

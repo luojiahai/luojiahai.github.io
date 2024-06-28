@@ -1,6 +1,8 @@
 +++
 slug = 'resume'
 title = 'Résumé'
+menus = 'main'
+weight = 20
 date = 2024-06-08T18:00:00+10:00
 draft = false
 author = 'luojiahai'
