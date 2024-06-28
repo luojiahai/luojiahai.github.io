@@ -26,10 +26,6 @@ Get a User Access or API token [in your Hugging Face profile settings](https://h
 Choose which model you are going to run. Go to the [Model Hub](https://huggingface.co/models) and select the model you
 want to use.
 
-```
-ENDPOINT = https://api-inference.huggingface.co/models/<MODEL_ID>
-```
-
 Let’s use [gpt2](https://huggingface.co/gpt2) as an example. To run inference, simply use this code:
 
 Python:
