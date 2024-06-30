@@ -1,6 +1,6 @@
 +++
-slug = 'resume'
-title = '简历'
+slug = 'profile'
+title = '简介'
 menus = 'main'
 weight = 20
 date = 2024-06-08T18:00:00+10:00
@@ -8,8 +8,6 @@ draft = false
 author = 'luojiahai'
 showBreadCrumbs = false
 +++
-
-## 简介
 
 我是一个务实的软件开发工程师，致力于通过原则性的思维来打造富有创意的方案和解决复杂的问题。我擅长全栈软件开发，熟练运用云科技和站点可靠性工程。我致力于探索人工智能，并实践最先进的机器学习技术。
 
