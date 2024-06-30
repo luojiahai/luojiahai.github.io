@@ -37,7 +37,7 @@ machine learning.
 
 ## Resources
 
-- CV Source: https://github.com/luojiahai/cv/
+- CV source code: https://github.com/luojiahai/cv/
 - CV PDF: https://github.com/luojiahai/cv/blob/main/cv.pdf
 
 ---
