@@ -7,6 +7,7 @@ date = 2024-06-08T17:00:00+10:00
 draft = false
 author = 'luojiahai'
 showBreadCrumbs = false
+showPin = false
 +++
 
 你好，我是luojiahai。我来自中国广州🇨🇳。我目前居住在澳大利亚墨尔本。我的性格是建筑师 [INTJ-A](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC/)。

@@ -7,6 +7,7 @@ date = 2024-06-08T18:00:00+10:00
 draft = false
 author = 'luojiahai'
 showBreadCrumbs = false
+showPin = false
 +++
 
 I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex problems

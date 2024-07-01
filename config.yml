@@ -52,6 +52,7 @@ params:
   showCodeCopyButtons: true
   showFullLanguageName: true
   showPageNums: false
+  showPin: true
   showToc: true
   tocOpen: false
   useHugoToc: true
