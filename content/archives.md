@@ -1,6 +1,6 @@
 +++
 slug = 'archives'
-title = 'Archive'
+title = 'Archives'
 menus = 'main'
 weight = 40
 layout = 'archives'
