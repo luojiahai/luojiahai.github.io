@@ -60,7 +60,7 @@ params:
   label:
     text: 'luojiahai'
     icon: '/apple-touch-icon.png'
-    iconHeight: 25
+    iconHeight: 30
 
   homeInfo:
     title: '`> whoami`'
