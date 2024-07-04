@@ -1,6 +1,6 @@
 +++
 slug = 'cv'
-title = 'CV'
+title = 'Curriculum Vitae'
 menus = 'main'
 weight = 20
 date = 2024-06-08T18:00:00+10:00
