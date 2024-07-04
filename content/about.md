@@ -16,7 +16,7 @@ Hi there, I am luojiahai (luo-jia-hai). I am from Guangzhou, China 🇨🇳. I a
 personality is Architect [INTJ-A](https://www.16personalities.com/intj-personality/).
 
 I completed studies in Computer Science at the University of Melbourne. I am working professionally in the computer
-industry. Checkout this [page](/cv) for my CV.
+industry. My CV is in this [page](/cv).
 
 I find joy in the culinary world, indulging in cooking, experimenting with recipes, savouring diverse cuisines, and
 discovering eateries. I immensely enjoy yum-cha, barbecue, and fried chicken.
