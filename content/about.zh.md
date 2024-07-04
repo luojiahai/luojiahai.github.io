@@ -10,6 +10,8 @@ showBreadCrumbs = false
 showPin = false
 +++
 
+## 我
+
 你好，我是luojiahai。我来自中国广州🇨🇳。我目前居住在澳大利亚墨尔本。我的性格是建筑师 [INTJ-A](https://www.16personalities.com/ch/intj-%E4%BA%BA%E6%A0%BC/)。
 
 我在墨尔本大学完成了计算机科学的学业。我在计算机行业工作。请查看[简介](/zh/profile)页面了解我的专业资料。
