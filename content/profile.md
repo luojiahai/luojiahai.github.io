@@ -1,6 +1,6 @@
 +++
-slug = 'profile'
-title = 'Profile'
+slug = 'cv'
+title = 'CV'
 menus = 'main'
 weight = 20
 date = 2024-06-08T18:00:00+10:00
@@ -9,6 +9,8 @@ author = 'luojiahai'
 showBreadCrumbs = false
 showPin = false
 +++
+
+## Profile
 
 I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex problems
 with principled thinking. I excel in full-stack software development, leveraging cloud technologies and site reliability
@@ -38,7 +40,7 @@ machine learning.
 
 ## Resources
 
-- CV source code: https://github.com/luojiahai/cv/
-- CV PDF: https://github.com/luojiahai/cv/blob/main/cv.pdf
+- Source: https://github.com/luojiahai/cv/
+- PDF: https://github.com/luojiahai/cv/blob/main/cv.pdf
 
 ---
