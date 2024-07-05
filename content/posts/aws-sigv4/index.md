@@ -73,7 +73,8 @@ X-Amz-Algorithm=AWS4-HMAC-SHA256 &
 X-Amz-Credential=<your-access-key-id>/20130721/us-east-1/s3/aws4_request &
 X-Amz-Date=20130721T201207Z &
 X-Amz-Expires=86400 &
-X-Amz-SignedHeaders=host &X-Amz-Signature=<signature-value>
+X-Amz-SignedHeaders=host &
+X-Amz-Signature=<signature-value>
 ```
 
 ---
