@@ -10,17 +10,22 @@ showBreadCrumbs = false
 showPin = false
 +++
 
+## 教育背景
+
+- 理学硕士（计算机科学）, [墨尔本大学](https://www.unimelb.edu.au/)
+- 理学学士, [墨尔本大学](https://www.unimelb.edu.au/)
+
+## 专业技能
+
+- 功能性: 软件开发, 站点可靠性工程, 云计算, 数据库管理, 机器学习
+- 技术性: Python, TypeScript, Java, C, Hugging Face, AWS, Docker, Kafka, GraphQL, Node.js, SQL, LATEX
+
 ## 工作经验
 
 - 软件开发者, [REA集团](https://www.rea-group.com/)
 - 软件开发工程师, [亚马逊云科技 (AWS)](https://aws.amazon.com/)
 - 软件开发顾问, [德勤](https://www.deloitte.com/)
 - 教学助理, [墨尔本大学](https://www.unimelb.edu.au/)
-
-## 教育背景
-
-- 理学硕士（计算机科学）, [墨尔本大学](https://www.unimelb.edu.au/)
-- 理学学士, [墨尔本大学](https://www.unimelb.edu.au/)
 
 ## 英文简历
 
