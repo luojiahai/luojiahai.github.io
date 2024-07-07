@@ -14,7 +14,7 @@ showPin = false
 
 - Software Developer, [REA Group](https://www.rea-group.com/)
 - Software Development Engineer, [Amazon Web Services (AWS)](https://aws.amazon.com/)
-- Consultant, [Deloitte](https://www.deloitte.com/)
+- Software Development Consultant, [Deloitte](https://www.deloitte.com/)
 - Teaching Assistant, [The University of Melbourne](https://www.unimelb.edu.au/)
 
 ## Education
