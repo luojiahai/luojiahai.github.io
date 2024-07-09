@@ -72,6 +72,31 @@ TODO
 
 TODO
 
+#### Architecture: server-based web application
+
+This architecture includes website content and application functions hosted on Amazon EC2 instances. Amazon RDS provides
+data store in multiple Availability Zones for fault tolerance.
+
+![](images/sbwa.png)
+
+#### Architecture: disaster recovery
+
+Amazon RDS for Oracle commonly runs mission critical databases. If anything were to happen to these databases, it would
+be devastating.
+
+This architecture is one option for creating a disaster recovery solution for the databases.
+
+![](images/dr.png)
+
+#### Architecture: real-time data analytics
+
+Amazon RDS databases are busy places. When real-time data analytics are run directly against the Amazon RDS database, it
+can cause latency.
+
+One solution is to create an architecture that moves these records off the database for analysis.
+
+![](images/rtda.png)
+
 ### Amazon Aurora
 
 TODO
@@ -83,6 +108,14 @@ TODO
 ### Amazon DynamoDB
 
 TODO
+
+#### Architecture: serverless web application
+
+This architecture includes website content stored in Amazon Simple Storage Service (Amazon S3), application code
+executed using AWS Lambda functions, user authentication provided by Amazon Cognito, and DynamoDB to store application
+data.
+
+![](images/swa.png)
 
 ### Amazon Keyspaces (for Apache Cassandra)
 
@@ -124,38 +157,4 @@ TODO
 
 TODO
 
-## Architectures
-
-### Server-based web application
-
-This architecture includes website content and application functions hosted on Amazon EC2 instances. Amazon RDS provides
-data store in multiple Availability Zones for fault tolerance.
-
-![](images/sbwa.png)
-
-### Serverless web application
-
-This architecture includes website content stored in Amazon Simple Storage Service (Amazon S3), application code
-executed using AWS Lambda functions, user authentication provided by Amazon Cognito, and DynamoDB to store application
-data.
-
-![](images/swa.png)
-
-### Disaster recovery
-
-Amazon RDS for Oracle commonly runs mission critical databases. If anything were to happen to these databases, it would
-be devastating.
-
-This architecture is one option for creating a disaster recovery solution for the databases.
-
-![](images/dr.png)
-
-### Real-time data analytics
-
-Amazon RDS databases are busy places. When real-time data analytics are run directly against the Amazon RDS database, it
-can cause latency.
-
-One solution is to create an architecture that moves these records off the database for analysis.
-
-![](images/rtda.png)
-
+---
