@@ -80,3 +80,5 @@ Amazon RDS Proxy:
 - Integrates with AWS Secrets Manager and IAM
 - Helps users get started quickly in the console
 - Provides all the benefits of a database proxy without patching or management overhead
+
+---
