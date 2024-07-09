@@ -15,11 +15,6 @@ showPin = false
 - 理学硕士（计算机科学）, [墨尔本大学](https://www.unimelb.edu.au/)
 - 理学学士, [墨尔本大学](https://www.unimelb.edu.au/)
 
-## 专业技能
-
-- 功能性: 软件开发, 站点可靠性工程, 云计算, 数据库管理, 机器学习
-- 技术性: Python, TypeScript, Java, C, Hugging Face, AWS, Docker, Kafka, GraphQL, Node.js, SQL, LATEX
-
 ## 工作经验
 
 - 软件开发者, [REA集团](https://www.rea-group.com/)

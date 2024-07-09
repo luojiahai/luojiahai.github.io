@@ -15,11 +15,6 @@ showPin = false
 - Master of Science (Computer Science), [The University of Melbourne](https://www.unimelb.edu.au/)
 - Bachelor of Science, [The University of Melbourne](https://www.unimelb.edu.au/)
 
-## Technical Skills
-
-- Functional: Software Development, Site Reliability Engineering, Cloud Computing, Database Management, Machine Learning
-- Technologies: Python, TypeScript, Java, C, Hugging Face, AWS, Docker, Kafka, GraphQL, Node.js, SQL, LATEX
-
 ## Professional Experience
 
 - Software Developer, [REA Group](https://www.rea-group.com/)
