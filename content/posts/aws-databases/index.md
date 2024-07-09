@@ -66,40 +66,46 @@ Time-series databases can be used for structured data sources.
 
 ## Relational Databases
 
-TODO
+Relational databases rely on a series of structures, called tables, to hold data.
 
 ### Amazon Relational Database Service (Amazon RDS)
 
-TODO
+Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the
+cloud.
 
-#### Architecture: server-based web application
+#### Use case: server-based web application
 
 This architecture includes website content and application functions hosted on Amazon EC2 instances. Amazon RDS provides
 data store in multiple Availability Zones for fault tolerance.
 
-![](images/sbwa.png)
+![](images/server-based-web-application.png)
 
-#### Architecture: disaster recovery
+#### Use case: disaster recovery
 
 Amazon RDS for Oracle commonly runs mission critical databases. If anything were to happen to these databases, it would
 be devastating.
 
 This architecture is one option for creating a disaster recovery solution for the databases.
 
-![](images/dr.png)
+![](images/disaster-recovery.png)
 
-#### Architecture: real-time data analytics
+#### Use case: real-time data analytics
 
 Amazon RDS databases are busy places. When real-time data analytics are run directly against the Amazon RDS database, it
 can cause latency.
 
 One solution is to create an architecture that moves these records off the database for analysis.
 
-![](images/rtda.png)
+![](images/real-time-data-analytics.png)
 
 ### Amazon Aurora
 
-TODO
+Aurora is a MySQL- and PostgreSQL-compatible relational database built for the cloud that combines the performance and
+availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
+
+#### Use case: public source data ingestion
+
+![](images/public-source-data-ingestion.png)
 
 ## Nonrelational Databases
 
@@ -109,13 +115,13 @@ TODO
 
 TODO
 
-#### Architecture: serverless web application
+#### Use case: serverless web application
 
 This architecture includes website content stored in Amazon Simple Storage Service (Amazon S3), application code
 executed using AWS Lambda functions, user authentication provided by Amazon Cognito, and DynamoDB to store application
 data.
 
-![](images/swa.png)
+![](images/serverless-web-application.png)
 
 ### Amazon Keyspaces (for Apache Cassandra)
 
