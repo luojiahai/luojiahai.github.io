@@ -66,35 +66,20 @@ Time-series databases can be used for structured data sources.
 
 ## Relational Databases
 
-Relational databases rely on a series of structures, called tables, to hold data.
-
 ### Amazon Relational Database Service (Amazon RDS)
 
 Amazon Relational Database Service (Amazon RDS) makes it easy to set up, operate, and scale a relational database in the
 cloud.
 
-#### Use case: server-based web application
-
-This architecture includes website content and application functions hosted on Amazon EC2 instances. Amazon RDS provides
-data store in multiple Availability Zones for fault tolerance.
+#### Use Case: Server-based web application
 
 ![](images/server-based-web-application.png)
 
-#### Use case: disaster recovery
-
-Amazon RDS for Oracle commonly runs mission critical databases. If anything were to happen to these databases, it would
-be devastating.
-
-This architecture is one option for creating a disaster recovery solution for the databases.
+#### Use Case: Disaster recovery
 
 ![](images/disaster-recovery.png)
 
-#### Use case: real-time data analytics
-
-Amazon RDS databases are busy places. When real-time data analytics are run directly against the Amazon RDS database, it
-can cause latency.
-
-One solution is to create an architecture that moves these records off the database for analysis.
+#### Use Case: Real-time data analytics
 
 ![](images/real-time-data-analytics.png)
 
@@ -103,64 +88,116 @@ One solution is to create an architecture that moves these records off the datab
 Aurora is a MySQL- and PostgreSQL-compatible relational database built for the cloud that combines the performance and
 availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
 
-#### Use case: public source data ingestion
+#### Use Case: Public source data ingestion
 
 ![](images/public-source-data-ingestion.png)
 
 ## Nonrelational Databases
 
-TODO
-
 ### Amazon DynamoDB
 
-TODO
+DynamoDB is a fully managed, serverless, key-value, NoSQL database designed to run high-performance applications at any
+scale.
 
-#### Use case: serverless web application
-
-This architecture includes website content stored in Amazon Simple Storage Service (Amazon S3), application code
-executed using AWS Lambda functions, user authentication provided by Amazon Cognito, and DynamoDB to store application
-data.
+#### Use Case: Serverless web application
 
 ![](images/serverless-web-application.png)
 
+#### Use Case: Anomaly detection on Amazon DynamoDB Streams
+
+![](images/anomaly-detection-on-amazon-dynamodb-streams.png)
+
 ### Amazon Keyspaces (for Apache Cassandra)
 
-TODO
+Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed database service that is compatible
+with Apache Cassandra.
 
 ### Amazon DocumentDB
 
-TODO
+Amazon DocumentDB (with MongoDB compatibility) is a fast, reliable, and fully managed database service.
+
+#### Use Case: Online user profile
+
+![](images/online-user-profile.png)
+
+#### Use Case: Real-time mobile web application
+
+![](images/real-time-mobile-web-application.png)
 
 ### Amazon Neptune
 
-TODO
+Amazon Neptune is a fast, reliable, fully managed graph database service that streamlines building and running
+applications that work with highly connected datasets.
+
+#### Use Case: Fraud detection
+
+![](images/fraud-detection.png)
+
+#### Use Case: RSS keyword capture
+
+![](images/rss-keyword-capture.png)
 
 ### Amazon Timestream
 
-TODO
+Amazon Timestream is a fast, scalable, and serverless time-series database service for Internet of Things (IoT) and
+operational applications that makes it easy to store and analyze trillions of events per day.
+
+#### Use Case: IoT sensor data capture
+
+![](images/iot-sensor-data-capture.png)
 
 ### Amazon Quantum Ledger Database (Amazon QLDB)
 
-TODO
+Amazon Quantum Ledger Database (Amazon QLDB) is a fully managed ledger database that provides a transparent, immutable,
+and cryptographically verifiable transaction log owned by a central trusted authority.
+
+#### Use Case: Delivering cryptographically secure and verifiable medical data
+
+![](images/delivering-cryptographically-secure-and-verifiable-medical-data.png)
 
 ### Amazon ElastiCache
 
-TODO
+ElastiCache offers fully managed Redis and Memcached distributed memory caches. Seamlessly deploy, run, and scale
+popular open source-compatible, in-memory data stores.
+
+#### Use Case: WordPress database cache
+
+![](images/wordpress-database-cache.png)
+
+#### Use Case: Scalable distributed cache
+
+![](images/scalable-distributed-cache.png)
 
 ### Amazon MemoryDB for Redis
 
-TODO
+Amazon MemoryDB for Redis is a Redis-compatible, durable, in-memory database service that delivers ultra-fast
+performance.
+
+#### Use Case: Redis data structures for microservices
+
+![](images/redis-data-structures-for-microservices.png)
 
 ## Data Access and Analysis
 
-TODO
-
 ### Amazon Redshift
 
-TODO
+Amazon Redshift is a fast, scalable data warehouse that makes it simple and cost effective to analyze all your data
+across your data warehouse and data lake.
+
+#### Use Case: Rich data platform
+
+![](images/rich-data-platform.png)
+
+#### Use Case: Event-driven data analysis
+
+![](images/event-driven-data-analysis.png)
 
 ### Amazon Athena
 
-TODO
+Athena is an interactive query service that facilitates analyzing data in Amazon S3 using standard SQL.
+
+#### Use Case: Building for Athena Federated Query
+
+![](images/building-for-athena-federated-query.png)
 
 ---
