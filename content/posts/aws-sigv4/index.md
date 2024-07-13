@@ -50,7 +50,7 @@ The following is an example of the Authorization header value.
 
 ```
 Authorization: AWS4-HMAC-SHA256
-Credential=AKIAIOSFODNN7EXAMPLE/20130524/us-east-1/s3/aws4_request, 
+Credential=AKIAIOSFODNN7EXAMPLE/20130721/us-east-1/s3/aws4_request, 
 SignedHeaders=host;range;x-amz-date, 
 Signature=<signature-value>
 ```
