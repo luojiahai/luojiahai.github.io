@@ -77,4 +77,47 @@ X-Amz-SignedHeaders=host &
 X-Amz-Signature=<signature-value>
 ```
 
+## Create a signed AWS API request
+
+The following diagram illustrates the process, including the various components of the string that you create for
+signing.
+
+![](images/sigV4-using-auth-header.png)
+
+### Temporary security credentials
+
+Instead of using long-term credentials to sign a request, you can use temporary security credentials provided by AWS
+Security Token Service (AWS STS).
+
+When you use temporary security credentials, you must add `X-Amz-Security-Token` to the Authorization header or the
+query string to hold the session token. Some services require that you add `X-Amz-Security-Token` to the canonical
+request. Other services require only that you add `X-Amz-Security-Token` at the end, after you calculate the signature.
+Check the documentation for each AWS service for details.
+
+### Summary of signing steps
+
+**Step 1: Create a canonical request**
+
+Arrange the contents of your request (host, action, headers, etc.) into a standard canonical format. The canonical
+request is one of the inputs used to create a string to sign. For details, see Elements of an AWS API request signature.
+
+**Step 2: Create a hash of the canonical request**
+
+Derive a signing key by performing a succession of keyed hash operations (HMAC operations) on the request date, Region,
+and service, with your AWS secret access key as the key for the initial hashing operation.
+
+**Step 3: Create a String to Sign**
+
+Create a string to sign with the canonical request and extra information such as the algorithm, request date, credential
+scope, and the digest (hash) of the canonical request.
+
+**Step 4: Calculate the signature**
+
+After you derive the signing key, you then calculate the signature by performing a keyed hash operation on the string to
+sign. Use the derived signing key as the hash key for this operation.
+
+**Step 5: Add the signature to the request**
+
+After you calculate the signature, add it to an HTTP header or to the query string of the request.
+
 ---
