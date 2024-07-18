@@ -16,11 +16,11 @@ Processing, Computer Vision, Audio, and Multimodal.
 from transformers import pipeline
 
 classifier = pipeline('sentiment-analysis')
-intputs = [
+inputs = [
     'I love this so much!',
     'I hate this so much!',
 ]
-outputs = classifier(intputs)
+outputs = classifier(inputs)
 ```
 
 The pipeline groups together three steps: preprocessing, passing the inputs through the model, and postprocessing:
