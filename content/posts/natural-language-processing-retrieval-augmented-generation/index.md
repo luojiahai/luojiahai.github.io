@@ -1,5 +1,5 @@
 +++
-slug = 'retrieval-augmented-generation'
+slug = 'natural-language-processing-retrieval-augmented-generation'
 title = '📝 Natural Language Processing: Retrieval-Augmented Generation (RAG)'
 date = 2024-06-27T20:00:00+10:00
 draft = false
