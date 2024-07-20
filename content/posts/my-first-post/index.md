@@ -13,6 +13,6 @@ This is **bold** text, and this is *emphasized* text.
 
 Visit the [Hugo](https://gohugo.io) website!
 
-This post is pinned for nothing. Please read other posts.
+This post is pinned for nothing. Sorry for wasting your time. Please read other posts.
 
 ---
