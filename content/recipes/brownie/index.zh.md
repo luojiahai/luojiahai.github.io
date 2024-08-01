@@ -1,6 +1,6 @@
 +++
 slug = 'brownie'
-title = '布朗尼'
+title = '软糖蛋糕（布朗尼）'
 date = 2024-07-31T21:00:00+10:00
 draft = false
 author = 'luojiahai'
