@@ -24,7 +24,7 @@ showPin = false
 
 ## 英文简历
 
-- 源代码: https://github.com/luojiahai/cv/
-- PDF: https://github.com/luojiahai/cv/blob/main/cv.pdf
+- 源代码: https://github.com/luojiahai/xsha/
+- PDF: https://github.com/luojiahai/xsha/blob/main/jianli.pdf
 
 ---
