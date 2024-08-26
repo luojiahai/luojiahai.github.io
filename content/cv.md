@@ -24,7 +24,7 @@ showPin = false
 
 ## Resources
 
-- Source: https://github.com/luojiahai/cv/
-- PDF: https://github.com/luojiahai/cv/blob/main/cv.pdf
+- Source: https://github.com/luojiahai/xsha/
+- PDF: https://github.com/luojiahai/xsha/blob/main/jianli.pdf
 
 ---
