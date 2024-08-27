@@ -22,9 +22,8 @@ showPin = false
 - 软件开发顾问, [德勤](https://www.deloitte.com/)
 - 教学助理, [墨尔本大学](https://www.unimelb.edu.au/)
 
-## 英文简历
+## 简历模板
 
-- 源代码: https://github.com/luojiahai/xsha/
-- PDF: https://github.com/luojiahai/xsha/blob/main/jianli.pdf
+https://github.com/luojiahai/xsha/
 
 ---
