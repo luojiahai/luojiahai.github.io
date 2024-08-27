@@ -22,9 +22,8 @@ showPin = false
 - Software Development Consultant, [Deloitte](https://www.deloitte.com/)
 - Teaching Assistant, [The University of Melbourne](https://www.unimelb.edu.au/)
 
-## Resources
+## Template
 
-- Source: https://github.com/luojiahai/xsha/
-- PDF: https://github.com/luojiahai/xsha/blob/main/jianli.pdf
+https://github.com/luojiahai/xsha/
 
 ---
