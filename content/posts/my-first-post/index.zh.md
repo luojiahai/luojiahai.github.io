@@ -4,7 +4,6 @@ title = '第一个帖子'
 date = 2024-06-09T08:00:00+10:00
 draft = false
 author = 'luojiahai'
-weight = 1
 +++
 
 ## 介绍

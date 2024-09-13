@@ -35,7 +35,7 @@ languages:
 
           📫 如何联系我: `luo[at]jiahai.co`
 
-          [阅读更多…](/about)
+          [阅读更多…](/whoami)
 
 params:
   env: 'production'
@@ -73,7 +73,7 @@ params:
 
       📫 How to reach me: `luo[at]jiahai.co`
 
-      [Read more…](/about)
+      [Read more…](/whoami)
 
   socialIcons:
     - name: 'x'
