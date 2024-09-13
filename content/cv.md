@@ -15,15 +15,11 @@ showPin = false
 - Master of Science (Computer Science), [The University of Melbourne](https://www.unimelb.edu.au/)
 - Bachelor of Science, [The University of Melbourne](https://www.unimelb.edu.au/)
 
-## Professional Experience
+## Experience
 
 - Software Developer, [REA Group](https://www.rea-group.com/)
 - Software Development Engineer, [Amazon Web Services (AWS)](https://aws.amazon.com/)
 - Software Development Consultant, [Deloitte](https://www.deloitte.com/)
 - Teaching Assistant, [The University of Melbourne](https://www.unimelb.edu.au/)
-
-## Template
-
-https://github.com/luojiahai/xsha/
 
 ---
