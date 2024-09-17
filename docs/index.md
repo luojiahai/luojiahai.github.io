@@ -48,7 +48,7 @@ title: luojiahai
 ### 🚀 skills
 
 - **functional**: full-stack software development engineering, cloud engineering, site reliability engineering
-- **technical**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, latex
+- **technical**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, react, latex
 
 ### 🥔 additional information
 
