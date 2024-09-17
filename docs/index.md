@@ -23,7 +23,8 @@ title: luojiahai
   - **research**: explainable artificial intelligence
 - bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/)
   - **coursework**: computing, algorithms, software modelling and design, database systems, computer systems, discrete mathematics, probability
-  - **study overseas**: peking university summer school international program 2016, beijing, china
+- summer school international program, [peking university](https://www.pku.edu.cn/)
+  - **coursework**: biometric authentication, international collegiate programming contest training
 
 ### 🏢 experience
 
