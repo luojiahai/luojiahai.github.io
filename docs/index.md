@@ -1,19 +1,19 @@
 ---
 layout: home
+title: luojiahai
 ---
 
 <br/>
 
-# 🐷
+# `> whoami _`
 
-👋 hi there. i cook, eat, am afk, and get disconnected.
-
-### 🤔 whoami
+👋 hi there.
 
 - 🖥️ i am a software development engineer.
 - 🔭 i am currently working hard for a living.
 - 🌱 i am currently learning how machine thinks.
-- 😄 personality: intj
+- 😄 personality: architect / intj
+- 💬 motto: i cook, eat, am afk, and get disconnected.
 - 📫 how to reach me: `luo[at]jiahai.co`
 
 ### 🎓 education
