@@ -1,6 +1,10 @@
 ---
 layout: home
 title: luojiahai
+
+hero:
+  name: luojiahai
+  tagline: I cook, eat, am afk, and get disconnected.
 ---
 
 <br/>
@@ -13,7 +17,6 @@ title: luojiahai
 - 🔭 I am currently working hard for a living.
 - 🌱 I am currently learning how machine thinks.
 - 😄 Personality: Architect / INTJ
-- 💬 Motto: I cook, eat, am afk, and get disconnected.
 - 📫 How to reach me: `luo[at]jiahai.co`
 - 📍 Current location: Melbourne, Victoria, Australia
 

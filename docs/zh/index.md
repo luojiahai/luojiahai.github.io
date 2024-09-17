@@ -1,6 +1,10 @@
 ---
 layout: home
 title: luojiahai
+
+hero:
+  name: luojiahai
+  tagline: 我做饭、吃饭、离开键盘、然后掉线了。
 ---
 
 <br/>
@@ -13,7 +17,6 @@ title: luojiahai
 - 🔭 我目前在努力工作谋生。
 - 🌱 我目前在学习机器如何思考。
 - 😄 性格：建筑师 / INTJ
-- 💬 座右铭：我做饭、吃饭、离开键盘、然后掉线了。
 - 📫 如何联系我：`luo[at]jiahai.co`
 - 📍 当前坐标：澳大利亚墨尔本
 
