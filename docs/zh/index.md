@@ -9,7 +9,7 @@ hero:
     src: /dgaz.png
 ---
 
-# `> whoami _`
+## `> whoami _`
 
 👋 你好。
 
