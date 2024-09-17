@@ -19,20 +19,31 @@ title: luojiahai
 
 ### 🎓 education
 
-- master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
+- **master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/)**
+  - **location**: parkville, victoria, australia
   - **coursework**: artificial intelligence, machine learning, distributed systems, cloud computing, programming language implementation
   - **research**: explainable artificial intelligence
-- bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
+- **bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/)**
+  - **location**: parkville, victoria, australia
   - **coursework**: computing, algorithms, software modelling and design, database systems, computer systems, discrete mathematics, probability
-- summer school international program, [peking university](https://www.pku.edu.cn/), beijing, china
+- **summer school international program, [peking university](https://www.pku.edu.cn/)**
+  - **location**: beijing, china
   - **coursework**: biometric authentication, international collegiate programming contest training
 
 ### 🏢 experience
 
-- software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/)), richmond, victoria, australia
-- software development engineer, [amazon web services (aws)](https://aws.amazon.com/), sydney, new south wales, australia
-- software development consultant, [deloitte](https://www.deloitte.com/), melbourne, victoria, australia
-- teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
+- **software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))**
+  - **location**: richmond, victoria, australia
+  - **line of business**: product & audience
+- **software development engineer, [amazon web services (aws)](https://aws.amazon.com/)**
+  - **location**: sydney, new south wales, australia
+  - **line of business**: builder tools
+- **software development consultant, [deloitte](https://www.deloitte.com/)**
+  - **location**: melbourne, victoria, australia
+  - **line of business**: core businese operations
+- **teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)**
+  - **location**: parkville, victoria, australia
+  - **line of business**: school of computing and information systems
 
 ### 🚀 skills
 
