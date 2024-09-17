@@ -34,16 +34,16 @@ title: luojiahai
 
 - **software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))**
   - **location**: richmond, victoria, australia
-  - **line of business**: product & audience
+  - **department**: product & audience
 - **software development engineer, [amazon web services (aws)](https://aws.amazon.com/)**
   - **location**: sydney, new south wales, australia
-  - **line of business**: builder tools
+  - **department**: builder tools
 - **software development consultant, [deloitte](https://www.deloitte.com/)**
   - **location**: melbourne, victoria, australia
-  - **line of business**: core businese operations
+  - **department**: core businese operations
 - **teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)**
   - **location**: parkville, victoria, australia
-  - **line of business**: school of computing and information systems
+  - **department**: school of computing and information systems
 
 ### 🚀 skills
 
