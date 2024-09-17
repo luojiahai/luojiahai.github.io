@@ -22,7 +22,7 @@ export const socialLinks: DefaultTheme.SocialLink[] = [
 ];
 
 export const footer: DefaultTheme.Footer = {
-  copyright: 'copyright © 2019-present luojiahai',
+  copyright: 'Copyright © 2019-Present luojiahai',
 };
 
 export const locales: LocaleConfig<DefaultTheme.Config> = {
