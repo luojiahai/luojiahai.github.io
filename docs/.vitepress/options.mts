@@ -27,7 +27,7 @@ export const footer: DefaultTheme.Footer = {
 
 export const locales: LocaleConfig<DefaultTheme.Config> = {
   root: {
-    label: 'english',
+    label: 'English',
     lang: 'en',
   },
   zh: {
