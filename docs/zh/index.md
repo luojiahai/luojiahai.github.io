@@ -48,7 +48,7 @@ title: luojiahai
 ### 🚀 专业技能
 
 - **功能**: 全栈软件开发工程, 云计算工程, 站点可靠性工程
-- **技术**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, latex
+- **技术**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, react, latex
 
 ### 🥔 附加信息
 
