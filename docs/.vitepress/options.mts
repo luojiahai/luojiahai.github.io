@@ -2,8 +2,6 @@ import { DefaultTheme, HeadConfig, LocaleConfig } from 'vitepress'
 
 export const title: string = 'luojiahai';
 
-export const logo: string = '/apple-touch-icon.png';
-
 export const search : { provider: 'local', options?: DefaultTheme.LocalSearchOptions } = {
   provider: 'local',
   options: {
