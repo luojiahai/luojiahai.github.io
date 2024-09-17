@@ -6,7 +6,7 @@ export default defineConfig({
   description: '',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/static/apple-touch-icon.png',
+    logo: '/apple-touch-icon.png',
 
     search: {
       provider: 'local'
