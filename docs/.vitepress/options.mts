@@ -45,15 +45,15 @@ export const search : { provider: 'local', options?: DefaultTheme.LocalSearchOpt
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: 'whoami', link: '/' },
-  { text: 'examples', link: '/examples' },
+  { text: 'posts', link: '/posts' },
 ];
 
 export const sidebar: DefaultTheme.Sidebar = [
   {
-    text: 'Examples',
+    text: 'posts',
     items: [
-      { text: 'Runtime API Examples', link: '/examples/api-examples' },
-      { text: 'Markdown Extension Examples', link: '/examples/markdown-examples' },
+      { text: 'Runtime API Examples', link: '/posts/api-examples' },
+      { text: 'Markdown Extension Examples', link: '/posts/markdown-examples' },
     ]
   }
 ];
@@ -63,6 +63,10 @@ export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'instagram', link: 'https://instagram.com/luojiahai' },
   { icon: 'github', link: 'https://github.com/luojiahai' },
 ];
+
+export const footer: DefaultTheme.Footer = {
+  copyright: 'copyright © 2019-present luojiahai',
+};
 
 export const locales: LocaleConfig<DefaultTheme.Config> = {
   root: {

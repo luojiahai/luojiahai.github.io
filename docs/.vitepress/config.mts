@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { search, nav, sidebar, socialLinks, locales, head, title, logo } from './options.mts'
+import { search, nav, sidebar, socialLinks, locales, head, title, logo, footer } from './options.mts'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,6 +11,7 @@ export default defineConfig({
     nav: nav,
     sidebar: sidebar,
     socialLinks: socialLinks,
+    footer: footer,
   },
   locales: locales,
   head: head,
