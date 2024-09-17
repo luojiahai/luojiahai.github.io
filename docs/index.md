@@ -38,7 +38,7 @@ title: luojiahai
 - **functional**: full-stack software development engineering, cloud engineering, site reliability engineering
 - **technical**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, latex
 
-### 💁‍♂️ additional information
+### 🥔 additional information
 
 - **languages**: english, mandarin chinese, cantonese chinese
 - **interests**: food, guitar, aviation
