@@ -45,7 +45,6 @@ export const search : { provider: 'local', options?: DefaultTheme.LocalSearchOpt
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: 'whoami', link: '/' },
-  { text: 'posts', link: '/posts' },
 ];
 
 export const sidebar: DefaultTheme.Sidebar = [
