@@ -60,6 +60,7 @@ export const sidebar: DefaultTheme.Sidebar = [
 export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'x', link: 'https://x.com/luojiahai' },
   { icon: 'instagram', link: 'https://instagram.com/luojiahai' },
+  { icon: 'linkedin', link: 'https://linkedin.com/in/luojiahai' },
   { icon: 'github', link: 'https://github.com/luojiahai' },
 ];
 

@@ -3,18 +3,19 @@ layout: home
 ---
 
 <br/>
+<img src="/dgaz.jpg" alt="dgaz" width="300"/>
 
-# `whoami`
+## `> whoami _`
 
 - 🖥️ 我是一名软件开发工程师。
 - 🔭 我目前在努力工作谋生。
 - 🌱 我目前在学习机器如何思考。
-- ✨ 性格: intj
+- 🤔 性格: intj
 - 📫 如何联系我: `luo[at]jiahai.co`
 
 ### 教育
 
-- 理学硕士（计算机科学）, [墨尔本大学](https://www.unimelb.edu.au/)
+- 理学硕士 (计算机科学), [墨尔本大学](https://www.unimelb.edu.au/)
 - 理学学士, [墨尔本大学](https://www.unimelb.edu.au/)
 
 ### 经验
