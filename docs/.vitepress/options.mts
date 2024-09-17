@@ -45,15 +45,7 @@ export const nav: DefaultTheme.NavItem[] = [
   { text: 'whoami', link: '/' },
 ];
 
-export const sidebar: DefaultTheme.Sidebar = [
-  {
-    text: 'posts',
-    items: [
-      { text: 'Runtime API Examples', link: '/posts/api-examples' },
-      { text: 'Markdown Extension Examples', link: '/posts/markdown-examples' },
-    ]
-  }
-];
+export const sidebar: DefaultTheme.Sidebar = [];
 
 export const socialLinks: DefaultTheme.SocialLink[] = [
   { icon: 'x', link: 'https://x.com/luojiahai' },
