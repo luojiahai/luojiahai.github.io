@@ -19,29 +19,29 @@ title: luojiahai
 
 ### 🎓 education
 
-- **master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/)**
+- **master of science (computer science), the university of melbourne**
   - **location**: parkville, victoria, australia
   - **coursework**: artificial intelligence, machine learning, distributed systems, cloud computing, programming language implementation
   - **research**: explainable artificial intelligence
-- **bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/)**
+- **bachelor of science, the university of melbourne**
   - **location**: parkville, victoria, australia
   - **coursework**: computing, algorithms, software modelling and design, database systems, computer systems, discrete mathematics, probability
-- **summer school international program, [peking university](https://www.pku.edu.cn/)**
+- **summer school international program, peking university**
   - **location**: beijing, china
   - **coursework**: biometric authentication, international collegiate programming contest training
 
 ### 🏢 experience
 
-- **software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))**
+- **software developer, rea group ([realestate.com.au](https://realestate.com.au/))**
   - **location**: richmond, victoria, australia
   - **department**: product & audience
-- **software development engineer, [amazon web services (aws)](https://aws.amazon.com/)**
+- **software development engineer, amazon web services (aws)**
   - **location**: sydney, new south wales, australia
   - **department**: builder tools
-- **software development consultant, [deloitte](https://www.deloitte.com/)**
+- **software development consultant, deloitte**
   - **location**: melbourne, victoria, australia
   - **department**: core businese operations
-- **teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)**
+- **teaching assistant, the university of melbourne**
   - **location**: parkville, victoria, australia
   - **department**: school of computing and information systems
 
