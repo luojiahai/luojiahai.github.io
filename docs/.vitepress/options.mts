@@ -9,7 +9,7 @@ export const search : { provider: 'local', options?: DefaultTheme.LocalSearchOpt
 };
 
 export const nav: DefaultTheme.NavItem[] = [
-  { text: 'whoami', link: '/' },
+  { text: 'Home', link: '/' },
 ];
 
 export const sidebar: DefaultTheme.Sidebar = [];
