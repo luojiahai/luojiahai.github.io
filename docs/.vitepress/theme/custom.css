@@ -12,7 +12,7 @@
   --vp-c-brand-soft: rgba(255, 255, 255, 0.16);
 }
 
-.VPHero .image {
-  padding-top: 128px;
-  padding-bottom: 32px;
+.VPHero .image-src {
+  min-width: 192px;
+  max-width: 192px;
 }
