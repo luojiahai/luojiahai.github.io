@@ -19,7 +19,11 @@ title: luojiahai
 ### 🎓 education
 
 - master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/)
+  - **coursework**: artificial intelligence, machine learning, distributed systems, cloud computing, programming language implementation
+  - **research**: explainable artificial intelligence
 - bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/)
+  - **coursework**: computing, algorithms, software modelling and design, database systems, computer systems, discrete mathematics, probability
+  - **study overseas**: peking university summer school international program 2016, beijing, china
 
 ### 🏢 experience
 
@@ -30,4 +34,5 @@ title: luojiahai
 
 ### 🚀 skills
 
-python, typescript, java, c, aws, docker, kafka, graphql, node.js, latex
+- **functional**: full-stack software development engineering, cloud engineering, site reliability engineering
+- **technical**: python, typescript, java, c, aws, docker, kafka, graphql, node.js, latex
