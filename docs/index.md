@@ -15,23 +15,24 @@ title: luojiahai
 - 😄 personality: architect / intj
 - 💬 motto: i cook, eat, am afk, and get disconnected.
 - 📫 how to reach me: `luo[at]jiahai.co`
+- 📍 current location: melbourne, victoria, australia
 
 ### 🎓 education
 
-- master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/)
+- master of science (computer science), [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
   - **coursework**: artificial intelligence, machine learning, distributed systems, cloud computing, programming language implementation
   - **research**: explainable artificial intelligence
-- bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/)
+- bachelor of science, [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
   - **coursework**: computing, algorithms, software modelling and design, database systems, computer systems, discrete mathematics, probability
-- summer school international program, [peking university](https://www.pku.edu.cn/)
+- summer school international program, [peking university](https://www.pku.edu.cn/), beijing, china
   - **coursework**: biometric authentication, international collegiate programming contest training
 
 ### 🏢 experience
 
-- software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))
-- software development engineer, [amazon web services (aws)](https://aws.amazon.com/)
-- software development consultant, [deloitte](https://www.deloitte.com/)
-- teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)
+- software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/)), richmond, victoria, australia
+- software development engineer, [amazon web services (aws)](https://aws.amazon.com/), sydney, new south wales, australia
+- software development consultant, [deloitte](https://www.deloitte.com/), melbourne, victoria, australia
+- teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/), parkville, victoria, australia
 
 ### 🚀 skills
 

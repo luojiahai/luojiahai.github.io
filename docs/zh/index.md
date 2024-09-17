@@ -15,23 +15,24 @@ title: luojiahai
 - 😄 性格: 建筑师 / intj
 - 💬 座右铭: 我做饭, 吃饭, 离开键盘, 然后掉线了.
 - 📫 如何联系我: `luo[at]jiahai.co`
+- 📍 当前坐标: 澳大利亚·维多利亚·墨尔本
 
 ### 🎓 教育背景
 
-- 理学硕士 (计算机科学), [墨尔本大学](https://www.unimelb.edu.au/)
+- 理学硕士 (计算机科学), [墨尔本大学](https://www.unimelb.edu.au/), 澳大利亚·维多利亚·墨尔本
   - **课程**: 人工智能, 机器学习, 分布式系统, 云计算, 编程语言的实现
   - **研究**: 可解释的人工智能
-- 理学学士, [墨尔本大学](https://www.unimelb.edu.au/)
+- 理学学士, [墨尔本大学](https://www.unimelb.edu.au/), 澳大利亚·维多利亚·墨尔本
   - **课程**: 算法, 软件设计, 数据库系统, 计算机系统, 离散数学, 概率学
-- 暑期学校国际课程, [北京大学](https://www.pku.edu.cn/)
+- 暑期学校国际课程, [北京大学](https://www.pku.edu.cn/), 中国·北京
   - **课程**: 生物特征识别, 编程竞赛训练
 
 ### 🏢 工作经验
 
-- 软件开发者, [rea集团](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))
-- 软件开发工程师, [亚马逊云科技 (aws)](https://aws.amazon.com/)
-- 软件开发顾问, [德勤](https://www.deloitte.com/)
-- 教学助理, [墨尔本大学](https://www.unimelb.edu.au/)
+- 软件开发者, [rea集团](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/)), 澳大利亚·维多利亚·墨尔本
+- 软件开发工程师, [亚马逊云科技 (aws)](https://aws.amazon.com/), 澳大利亚·新南威尔士·悉尼
+- 软件开发顾问, [德勤](https://www.deloitte.com/), 澳大利亚·维多利亚·墨尔本
+- 教学助理, [墨尔本大学](https://www.unimelb.edu.au/), 澳大利亚·维多利亚·墨尔本
 
 ### 🚀 专业技能
 
