@@ -9,9 +9,7 @@ hero:
     src: /dgaz.png
 ---
 
-<br/>
-
-## `> whoami _`
+# `> whoami _`
 
 👋 Hi there.
 
