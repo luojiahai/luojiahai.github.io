@@ -8,7 +8,7 @@ layout: home
 
 👋 hi there. i cook, eat, am afk, and get disconnected.
 
-### `> whoami _`
+### 🤔 whoami
 
 - 🖥️ i am a software development engineer.
 - 🔭 i am currently working hard for a living.
