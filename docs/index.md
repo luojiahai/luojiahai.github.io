@@ -4,7 +4,7 @@ layout: home
 
 <br/>
 
-# luojiahai
+# `whoami`
 
 - 🖥️ i am a software development engineer.
 - 🔭 i am currently working hard for a living.
@@ -19,10 +19,10 @@ layout: home
 
 ### experience
 
-- Software Developer, [rea group](https://www.rea-group.com/)
-- Software Development Engineer, [amazon web services (aws)](https://aws.amazon.com/)
-- Software Development Consultant, [deloitte](https://www.deloitte.com/)
-- Teaching Assistant, [the university of melbourne](https://www.unimelb.edu.au/)
+- software developer, [rea group](https://www.rea-group.com/)
+- software development engineer, [amazon web services (aws)](https://aws.amazon.com/)
+- software development consultant, [deloitte](https://www.deloitte.com/)
+- teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)
 
 ### skills
 
