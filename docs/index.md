@@ -27,7 +27,7 @@ title: luojiahai
 
 ### 🏢 experience
 
-- software developer, [rea group](https://www.rea-group.com/)
+- software developer, [rea group](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))
 - software development engineer, [amazon web services (aws)](https://aws.amazon.com/)
 - software development consultant, [deloitte](https://www.deloitte.com/)
 - teaching assistant, [the university of melbourne](https://www.unimelb.edu.au/)

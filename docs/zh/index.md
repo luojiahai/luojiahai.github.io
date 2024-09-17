@@ -27,7 +27,7 @@ title: luojiahai
 
 ### 🏢 经验
 
-- 软件开发者, [rea集团](https://www.rea-group.com/)
+- 软件开发者, [rea集团](https://www.rea-group.com/) ([realestate.com.au](https://realestate.com.au/))
 - 软件开发工程师, [亚马逊云科技 (aws)](https://aws.amazon.com/)
 - 软件开发顾问, [德勤](https://www.deloitte.com/)
 - 教学助理, [墨尔本大学](https://www.unimelb.edu.au/)
