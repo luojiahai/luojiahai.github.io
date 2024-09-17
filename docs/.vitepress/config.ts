@@ -30,4 +30,5 @@ export default defineConfig({
       lang: 'zh',
     }
   },
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
 })
