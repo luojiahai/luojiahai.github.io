@@ -12,7 +12,7 @@ title: luojiahai
 - 🖥️ 我是一名软件开发工程师。
 - 🔭 我目前在努力工作谋生。
 - 🌱 我目前在学习机器如何思考。
-- 😄 性格：建筑师 / intj
+- 😄 性格：建筑师 / INTJ
 - 💬 座右铭：我做饭、吃饭、离开键盘、然后掉线了。
 - 📫 如何联系我：`luo[at]jiahai.co`
 - 📍 当前坐标：澳大利亚墨尔本
@@ -32,10 +32,10 @@ title: luojiahai
 
 ### 🏢 工作经验
 
-- **软件开发者，rea集团（[realestate.com.au](https://realestate.com.au/)）**
+- **软件开发者，REA集团（[realestate.com.au](https://realestate.com.au/)）**
   - **地点**：澳大利亚墨尔本
   - **部门**：产品与受众
-- **软件开发工程师，亚马逊云科技（aws）**
+- **软件开发工程师，亚马逊云科技（AWS）**
   - **地点**：澳大利亚悉尼
   - **部门**：开发者工具
 - **软件开发顾问，德勤**
@@ -48,7 +48,7 @@ title: luojiahai
 ### 🚀 专业技能
 
 - **功能**：全栈软件开发工程、云计算工程、站点可靠性工程
-- **技术**：python、typescript、java、c、aws、docker、kafka、graphql、node.js、react、latex
+- **技术**：Python、TypeScript、Java、C、AWS、Docker、Kafka、GraphQL、Node.js、React、LaTeX
 
 ### 🥔 附加信息
 
