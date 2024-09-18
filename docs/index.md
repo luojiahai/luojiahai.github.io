@@ -3,7 +3,8 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: zhu
+  text: '@luojiahai'
   tagline: |
     👋 Hi there. 
     I'm afk, I cook, I eat, and I get disconnected.

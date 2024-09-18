@@ -3,7 +3,8 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: 阿猪
+  text: '@luojiahai'
   tagline: |
     👋 你好。
     我离开键盘、我做饭、我吃饭、然后我就掉线了。
