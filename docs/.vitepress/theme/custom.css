@@ -2,14 +2,14 @@
   --vp-c-indigo-1: #b2346b;
   --vp-c-indigo-2: #cc3979;
   --vp-c-indigo-3: #cc5689;
-  --vp-c-indigo-soft: rgba(255, 99, 167, 0.14);
+  --vp-c-indigo-soft: rgba(255, 99, 138, 0.14);
 }
 
 .dark {
   --vp-c-indigo-1: #ffa8c2;
   --vp-c-indigo-2: #e85d90;
   --vp-c-indigo-3: #de3e83;
-  --vp-c-indigo-soft: rgba(255, 99, 167, 0.16);
+  --vp-c-indigo-soft: rgba(255, 99, 138, 0.16);
 }
 
 .VPHero .name, .VPHero .text {
