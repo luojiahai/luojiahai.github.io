@@ -10,6 +10,12 @@ hero:
     I'm afk, I cook, I eat, and I get disconnected.
   image:
     src: /dgaz.png
+  actions:
+    - theme: brand
+      text: This button does nothing
+    - theme: alt
+      text: Visit my GitHub
+      link: https://github.com/luojiahai
 ---
 
 ## `> whoami _`
