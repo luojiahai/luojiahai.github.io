@@ -4,14 +4,12 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  tagline: 我做饭、吃饭、离开键盘、然后掉线了。
+  tagline: 👋 你好，我做饭、吃饭、离开键盘、然后掉线了。
   image:
     src: /dgaz.png
 ---
 
 ## `> whoami _`
-
-👋 你好。
 
 - 🖥️ 我是一名软件开发工程师。
 - 🔭 我目前在努力工作谋生。
