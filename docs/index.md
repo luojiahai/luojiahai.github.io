@@ -38,12 +38,15 @@ hero:
 - **Software Developer, REA Group ([realestate.com.au](https://realestate.com.au/))**
   - **Location**: Richmond, Victoria, Australia
   - **Department**: Product & Audience
+  - **Stack**: AWS, Docker, TypeScript, Node.js, React, PostgreSQL, GraphQL
 - **Software Development Engineer, Amazon Web Services (AWS)**
   - **Location**: Sydney, New South Wales, Australia
   - **Department**: Builder Tools
+  - **Stack**: AWS, Python, Java, Spring, TypeScript, React, DynamoDB, Elasticsearch
 - **Software Development Consultant, Deloitte**
   - **Location**: Melbourne, Victoria, Australia
   - **Department**: Core Businese Operations
+  - **Stack**: Microsoft Azure, Docker, C#, .NET, Java, Cucumber
 - **Teaching Assistant, The University of Melbourne**
   - **Location**: Parkville, Victoria, Australia
   - **Department**: School of Computing and Information Systems
@@ -51,7 +54,7 @@ hero:
 ### 🚀 Skills
 
 - **Functional**: Full-Stack Software Development Engineering, Cloud Engineering, Site Reliability Engineering
-- **Technical**: Python, TypeScript, Java, C, AWS, Docker, Kafka, GraphQL, Node.js, React, LaTeX
+- **Technical**: Python, TypeScript, Java, C, AWS, Docker, GraphQL, Node.js, React, LaTeX
 
 ### 🥔 Additional Information
 

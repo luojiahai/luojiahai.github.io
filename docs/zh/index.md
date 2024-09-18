@@ -51,7 +51,7 @@ hero:
 ### 🚀 专业技能
 
 - **功能**：全栈软件开发工程、云计算工程、站点可靠性工程
-- **技术**：Python、TypeScript、Java、C、AWS、Docker、Kafka、GraphQL、Node.js、React、LaTeX
+- **技术**：Python、TypeScript、Java、C、AWS、Docker、GraphQL、Node.js、React、LaTeX
 
 ### 🥔 附加信息
 
