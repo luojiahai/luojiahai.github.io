@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  tagline: 👋 Hi there, I cook, eat, am afk, and get disconnected.
+  tagline: 👋 Hi there. I cook, eat, am afk, and get disconnected.
   image:
     src: /dgaz.png
 ---
