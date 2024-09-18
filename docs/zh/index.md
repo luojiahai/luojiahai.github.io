@@ -10,6 +10,12 @@ hero:
     我离开键盘、我做饭、我吃饭、然后我就掉线了。
   image:
     src: /dgaz.png
+  actions:
+    - theme: brand
+      text: 没用的按钮
+    - theme: alt
+      text: GitHub
+      link: https://github.com/luojiahai
 ---
 
 ## `> whoami _`

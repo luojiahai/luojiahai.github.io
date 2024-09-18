@@ -12,9 +12,9 @@ hero:
     src: /dgaz.png
   actions:
     - theme: brand
-      text: This button does nothing
+      text: Useless Button
     - theme: alt
-      text: Visit my GitHub
+      text: GitHub
       link: https://github.com/luojiahai
 ---
 

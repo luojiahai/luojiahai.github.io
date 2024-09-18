@@ -1,0 +1,60 @@
+import { defineConfig } from 'vitepress'
+import { search as zhSearch } from './zh'
+
+export const shared = defineConfig({
+  title: 'luojiahai',
+
+  rewrites: {
+    'en/:rest*': ':rest*',
+  },
+
+  lastUpdated: true,
+  cleanUrls: true,
+  metaChunk: true,
+
+  markdown: {
+    math: true,
+  },
+
+  sitemap: {
+    hostname: 'https://luojiahai.com',
+    transformItems(items) {
+      return items.filter((item) => !item.url.includes('migration'));
+    },
+  },
+
+  /* prettier-ignore */
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' }],
+    ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'en' }],
+    ['meta', { property: 'og:title', content: 'luojiahai' }],
+    ['meta', { property: 'og:site_name', content: 'luojiahai' }],
+    ['meta', { property: 'og:image', content: 'https://luojiahai.com/dgaz.png' }],
+    ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
+  ],
+
+  themeConfig: {
+    logo: { src: '/apple-touch-icon.png' },
+
+    socialLinks: [
+      { icon: 'x', link: 'https://x.com/luojiahai' },
+      { icon: 'instagram', link: 'https://instagram.com/luojiahai' },
+      { icon: 'linkedin', link: 'https://linkedin.com/in/luojiahai' },
+      { icon: 'github', link: 'https://github.com/luojiahai' },
+    ],
+
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          ...zhSearch,
+        },
+      },
+    },
+  },
+});
