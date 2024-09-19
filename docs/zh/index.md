@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: 阿猪
   text: '@luojiahai'
-  tagline: 这是一个没用的网站
+  tagline: 这是一个没用的网站。
   actions:
     - theme: alt
       text: 没用的按钮

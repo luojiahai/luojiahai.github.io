@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: zhu
   text: '@luojiahai'
-  tagline: This is a useless site
+  tagline: This is a useless site.
   actions:
     - theme: alt
       text: Useless Button
