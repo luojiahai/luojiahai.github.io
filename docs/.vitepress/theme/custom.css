@@ -4,7 +4,7 @@
   --header-foreground: #242424;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
-  --accent-soft: #8fc3fe;
+  --accent-soft: rgba(0, 120, 212, 0.14);
   --link-foreground: #005fb8;
   --border-background: rgba(0, 0, 0, 0.12);
 }
@@ -15,7 +15,7 @@
   --header-foreground: #e9eaeb;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
-  --accent-soft: #00376b;
+  --accent-soft: rgba(0, 120, 212, 0.16);
   --link-foreground: #4daafc;
   --border-background: rgba(255, 255, 255, 0.12);
 }
