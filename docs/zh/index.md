@@ -3,13 +3,11 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
-  text: 这是一个没用的网站
-  tagline: |
-    👋 你好。
-    我离开键盘、我做饭、我吃饭、然后我就掉线了。
+  name: 阿猪
+  text: '@luojiahai'
+  tagline: 这是一个没用的网站
   image:
-    src: /dgaz.png
+    src: /zhu.png
   actions:
     - theme: brand
       text: 没用的按钮
@@ -20,10 +18,13 @@ hero:
 
 ## `> whoami _`
 
+👋 你好。
+
 - 🖥️ 我是一名软件开发工程师。
 - 🔭 我目前在努力工作谋生。
 - 🌱 我目前在学习机器如何思考。
 - 😄 性格：建筑师 / INTJ
+- 💬 座右铭：我离开键盘、我做饭、我吃饭、然后我就掉线了。
 - 📫 如何联系我：`luo[at]jiahai.co`
 - 📍 当前坐标：澳大利亚墨尔本
 

@@ -3,13 +3,11 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
-  text: This is a useless site.
-  tagline: |
-    👋 Hi there. 
-    I'm afk, I cook, I eat, and I get disconnected.
+  name: zhu
+  text: '@luojiahai'
+  tagline: This is a useless site
   image:
-    src: /dgaz.png
+    src: /zhu.png
   actions:
     - theme: brand
       text: Useless Button
@@ -20,10 +18,13 @@ hero:
 
 ## `> whoami _`
 
+👋 Hi there.
+
 - 🖥️ I'm a software development engineer.
 - 🔭 I'm currently working hard for a living.
 - 🌱 I'm currently learning how machine thinks.
 - 😄 Personality: Architect / INTJ
+- 💬 Motto: I'm afk, I cook, I eat, and I get disconnected.
 - 📫 How to reach me: `luo[at]jiahai.co`
 - 📍 Current location: Melbourne, Victoria, Australia
 
