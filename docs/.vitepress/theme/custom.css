@@ -4,8 +4,8 @@
   --header-foreground: #242424;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
+  --accent-tertiary: #005fb8;
   --accent-soft: rgba(0, 120, 212, 0.14);
-  --link-foreground: #005fb8;
   --border-background: rgba(0, 0, 0, 0.12);
 }
 
@@ -15,8 +15,8 @@
   --header-foreground: #e9eaeb;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
+  --accent-tertiary: #4daafc;
   --accent-soft: rgba(0, 120, 212, 0.16);
-  --link-foreground: #4daafc;
   --border-background: rgba(255, 255, 255, 0.12);
 }
 
@@ -34,7 +34,7 @@
   --vp-c-text-2: var(--foreground);
   --vp-c-text-3: var(--foreground);
 
-  --vp-c-indigo-1: var(--link-foreground);
+  --vp-c-indigo-1: var(--accent-tertiary);
   --vp-c-indigo-2: var(--accent-secondary);
   --vp-c-indigo-3: var(--accent-primary);
   --vp-c-indigo-soft: var(--accent-soft);
