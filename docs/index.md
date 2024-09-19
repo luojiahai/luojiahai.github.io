@@ -27,7 +27,7 @@ hero:
 
 - To **recuiters**: I can provide my CV upon request. Please contact me via LinkedIn direct message with compensation details. Inquiries without compensation will not receive a response.
 - To **students and junior devs**: I have limited availability for mentorship. Please express your interest by email or via LinkedIn direct message.
-- To **others**: Please feel free to browse this site. If you'd like to chat, the best way to reach me is via LinkedIn direct message. I can provide my WeChat upon request.
+- To **other mates**: Please feel free to browse this site. If you'd like to chat, the best way to reach me is via LinkedIn direct message. I can provide my WeChat upon request.
 
 ### 🎓 Education
 
