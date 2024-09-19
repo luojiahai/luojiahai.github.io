@@ -6,8 +6,6 @@ hero:
   name: zhu
   text: '@luojiahai'
   tagline: This is a useless site
-  image:
-    src: /zhu.png
   actions:
     - theme: brand
       text: Useless Button
