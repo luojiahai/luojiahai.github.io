@@ -7,11 +7,8 @@ hero:
   text: '@luojiahai'
   tagline: 这是一个没用的网站
   actions:
-    - theme: brand
-      text: 没用的按钮
     - theme: alt
-      text: GitHub
-      link: https://github.com/luojiahai
+      text: 没用的按钮
 ---
 
 ## `> whoami _`

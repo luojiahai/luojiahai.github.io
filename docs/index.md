@@ -7,11 +7,8 @@ hero:
   text: '@luojiahai'
   tagline: This is a useless site
   actions:
-    - theme: brand
-      text: Useless Button
     - theme: alt
-      text: GitHub
-      link: https://github.com/luojiahai
+      text: Useless Button
 ---
 
 ## `> whoami _`

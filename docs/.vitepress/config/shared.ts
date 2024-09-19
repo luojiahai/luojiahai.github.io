@@ -30,6 +30,7 @@ export const shared = defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
+    ['meta', { name: 'theme-color', content: '#0078d4' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:site_name', content: 'luojiahai' }],

@@ -38,6 +38,9 @@
   --vp-c-indigo-2: var(--accent-secondary);
   --vp-c-indigo-3: var(--accent-primary);
   --vp-c-indigo-soft: var(--accent-soft);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #005fb8 30%, #4daafc);
 }
 
 .VPHero .name, .VPHero .text {
