@@ -1,15 +1,43 @@
 :root {
-  --vp-c-indigo-1: #3488b3;
-  --vp-c-indigo-2: #399bcc;
-  --vp-c-indigo-3: #56a5cc;
-  --vp-c-indigo-soft: rgba(99, 174, 255, 0.14);
+  --background: #ffffff;
+  --foreground: #333333;
+  --header-foreground: #242424;
+  --accent-primary: #0078d4;
+  --accent-secondary: #0069b9;
+  --link-foreground: #005fb8;
+  --link-foreground-hover: #00376b;
+  --border-background: rgba(0, 0, 0, 0.12);
 }
 
 .dark {
-  --vp-c-indigo-1: #a8d7ff;
-  --vp-c-indigo-2: #5db0e8;
-  --vp-c-indigo-3: #3ea9de;
-  --vp-c-indigo-soft: rgba(99, 174, 255, 0.16);
+  --background: #0e0e0e;
+  --foreground: #9ba3b4;
+  --header-foreground: #e9eaeb;
+  --accent-primary: #0078d4;
+  --accent-secondary: #0069b9;
+  --link-foreground: #4daafc;
+  --link-foreground-hover: #8fc3fe;
+  --border-background: rgba(255, 255, 255, 0.12);
+}
+
+:root {
+  --vp-c-bg: var(--background);
+  --vp-c-bg-alt: var(--background);
+  --vp-c-bg-elv: var(--background);
+  --vp-c-bg-soft: var(--background);
+
+  --vp-c-border: var(--border-background);
+  --vp-c-divider: var(--border-background);
+  --vp-c-gutter: var(--border-background);
+
+  --vp-c-text-1: var(--header-foreground);
+  --vp-c-text-2: var(--foreground);
+  --vp-c-text-3: var(--foreground);
+
+  --vp-c-indigo-1: var(--link-foreground);
+  --vp-c-indigo-2: var(--accent-secondary);
+  --vp-c-indigo-3: var(--accent-primary);
+  --vp-c-indigo-soft: var(--link-foreground-hover);
 }
 
 .VPHero .name, .VPHero .text {
