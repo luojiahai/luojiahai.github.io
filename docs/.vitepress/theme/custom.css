@@ -1,15 +1,15 @@
 :root {
-  --vp-c-indigo-1: #187873;
-  --vp-c-indigo-2: #29968f;
-  --vp-c-indigo-3: #2fa39a;
-  --vp-c-indigo-soft: rgba(17, 175, 186, 0.14);
+  --vp-c-indigo-1: #3488b3;
+  --vp-c-indigo-2: #399bcc;
+  --vp-c-indigo-3: #56a5cc;
+  --vp-c-indigo-soft: rgba(99, 174, 255, 0.14);
 }
 
 .dark {
-  --vp-c-indigo-1: #3ed6c9;
-  --vp-c-indigo-2: #2fa399;
-  --vp-c-indigo-3: #29857f;
-  --vp-c-indigo-soft: rgba(17, 175, 186, 0.16);
+  --vp-c-indigo-1: #a8d7ff;
+  --vp-c-indigo-2: #5db0e8;
+  --vp-c-indigo-3: #3ea9de;
+  --vp-c-indigo-soft: rgba(99, 174, 255, 0.16);
 }
 
 .VPHero .name, .VPHero .text {
