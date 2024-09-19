@@ -4,8 +4,8 @@
   --header-foreground: #242424;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
+  --accent-soft: #8fc3fe;
   --link-foreground: #005fb8;
-  --link-foreground-hover: #00376b;
   --border-background: rgba(0, 0, 0, 0.12);
 }
 
@@ -15,8 +15,8 @@
   --header-foreground: #e9eaeb;
   --accent-primary: #0078d4;
   --accent-secondary: #0069b9;
+  --accent-soft: #00376b;
   --link-foreground: #4daafc;
-  --link-foreground-hover: #8fc3fe;
   --border-background: rgba(255, 255, 255, 0.12);
 }
 
@@ -37,7 +37,7 @@
   --vp-c-indigo-1: var(--link-foreground);
   --vp-c-indigo-2: var(--accent-secondary);
   --vp-c-indigo-3: var(--accent-primary);
-  --vp-c-indigo-soft: var(--link-foreground-hover);
+  --vp-c-indigo-soft: var(--accent-soft);
 }
 
 .VPHero .name, .VPHero .text {
