@@ -6,8 +6,6 @@ hero:
   name: 阿猪
   text: '@luojiahai'
   tagline: 这是一个没用的网站
-  image:
-    src: /zhu.png
   actions:
     - theme: brand
       text: 没用的按钮
