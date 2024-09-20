@@ -11,6 +11,20 @@ hero:
       text: Useless Button
     - theme: alt
       text: Another Useless Button
+
+features:
+  - icon: 😄
+    title: Personality
+    details: Architect / INTJ
+  - icon: 💬
+    title: Motto
+    details: I'm afk, I cook, I eat, and I get disconnected.
+  - icon: 📫
+    title: How to reach me
+    details: luo[at]jiahai.co
+  - icon: 📍
+    title: Current location
+    details: Melbourne, Victoria, Australia
 ---
 
 ## 🤔 Who Am I?
@@ -20,10 +34,6 @@ hero:
 - 🖥️ I'm a software development engineer.
 - 🔭 I'm currently working hard for a living.
 - 🌱 I'm currently learning how machine thinks.
-- 😄 Personality: Architect / INTJ
-- 💬 Motto: I'm afk, I cook, I eat, and I get disconnected.
-- 📫 How to reach me: luo[at]jiahai.co
-- 📍 Current location: Melbourne, Victoria, Australia
 
 ## 📨 My Message
 

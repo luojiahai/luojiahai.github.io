@@ -11,6 +11,20 @@ hero:
       text: 没用的按钮
     - theme: alt
       text: 另一个没用的按钮
+
+features:
+  - icon: 😄
+    title: 性格
+    details: 建筑师 / INTJ
+  - icon: 💬
+    title: 座右铭
+    details: 我离开键盘、我做饭、我吃饭、然后我就掉线了。
+  - icon: 📫
+    title: 如何联系我
+    details: luo[at]jiahai.co
+  - icon: 📍
+    title: 当前坐标
+    details: 澳大利亚墨尔本
 ---
 
 ## 🤔 我是谁？
@@ -20,10 +34,6 @@ hero:
 - 🖥️ 我是一名软件开发工程师。
 - 🔭 我目前在努力工作谋生。
 - 🌱 我目前在学习机器如何思考。
-- 😄 性格：建筑师 / INTJ
-- 💬 座右铭：我离开键盘、我做饭、我吃饭、然后我就掉线了。
-- 📫 如何联系我：luo[at]jiahai.co
-- 📍 当前坐标：澳大利亚墨尔本
 
 ## 📨 我的留言
 

@@ -1,5 +1,6 @@
 :root {
   --background: #FFFFFF;
+  --background-alt: #F1F2F3;
   --text-primary: #18191C;
   --text-secondary: #61666D;
   --text-tertiary: #9499A0;
@@ -13,6 +14,7 @@
 
 .dark {
   --background: #000000;
+  --background-alt: #18191C;
   --text-primary: #F6F7F8;
   --text-secondary: #C9CCD0;
   --accent-soft: rgba(255, 102, 153, 0.16);
@@ -25,9 +27,9 @@
   --vp-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
   --vp-c-bg: var(--background);
-  --vp-c-bg-alt: var(--background);
-  --vp-c-bg-elv: var(--background);
-  --vp-c-bg-soft: var(--background);
+  --vp-c-bg-alt: var(--background-alt);
+  --vp-c-bg-elv: var(--background-alt);
+  --vp-c-bg-soft: var(--background-alt);
 
   --vp-c-border: var(--border);
   --vp-c-divider: var(--border);
