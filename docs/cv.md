@@ -1,4 +1,4 @@
-# 📜 CV (Preview)
+# CV
 
 ## 📨 My Message
 
