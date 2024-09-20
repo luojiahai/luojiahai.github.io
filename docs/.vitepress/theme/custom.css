@@ -47,18 +47,3 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, var(--brand-1) 30%, var(--brand-alt-1));
 }
-
-.VPHero .name, .VPHero .text {
-  line-height: 40px;
-  font-size: 32px;
-}
-
-.VPHero .tagline {
-  line-height: 28px;
-  font-size: 18px;
-}
-
-.VPHero .image-src {
-  min-width: 192px;
-  max-width: 192px;
-}
