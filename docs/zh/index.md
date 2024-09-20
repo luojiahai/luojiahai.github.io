@@ -3,9 +3,9 @@ layout: home
 title: luojiahai
 
 hero:
-  name: Luo, Jiahai
-  text: 我的站点
-  tagline: 这是一个没用的站点。
+  name: luojiahai
+  text: print('Hello, World!')
+  tagline: 这是我的站点，一个没用的站点。
   actions:
     - theme: brand
       text: 我是谁？

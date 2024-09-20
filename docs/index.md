@@ -3,9 +3,9 @@ layout: home
 title: luojiahai
 
 hero:
-  name: Luo, Jiahai
-  text: My Site
-  tagline: This is a useless site.
+  name: luojiahai
+  text: print('Hello, World!')
+  tagline: This is my site, a useless site.
   actions:
     - theme: brand
       text: Who Am I?
