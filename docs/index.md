@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: Hello, World!
   text: My Site
   tagline: This is a useless site.
   actions:

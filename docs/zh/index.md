@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: 你好，世界！
   text: 我的站点
   tagline: 这是一个没用的站点。
   actions:
