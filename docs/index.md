@@ -20,7 +20,7 @@ hero:
 - 🌱 I'm currently learning how machine thinks.
 - 😄 Personality: Architect / INTJ
 - 💬 Motto: I'm afk, I cook, I eat, and I get disconnected.
-- 📫 How to reach me: `luo[at]jiahai.co`
+- 📫 How to reach me: luo[at]jiahai.co
 - 📍 Current location: Melbourne, Victoria, Australia
 
 ## 📨 My Message
@@ -51,7 +51,7 @@ I am a pragmatic software development engineer dedicated to crafting imaginative
 
 ### 🏢 Experience
 
-- **Software Developer, REA Group ([realestate.com.au](https://realestate.com.au/))**
+- **Software Developer, REA Group (realestate.com.au)**
   - **Location**: Richmond, Victoria, Australia
   - **Department**: Product & Audience
 - **Software Development Engineer, Amazon Web Services (AWS)**
