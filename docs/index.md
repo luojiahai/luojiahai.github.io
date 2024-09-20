@@ -9,6 +9,8 @@ hero:
   actions:
     - theme: brand
       text: Useless Button
+    - theme: alt
+      text: Another Useless Button
 ---
 
 ## 🤔 Who Am I?

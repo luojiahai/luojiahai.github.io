@@ -7,8 +7,10 @@ hero:
   text: '@luojiahai'
   tagline: 这是一个没用的站点。
   actions:
-    - theme: alt
+    - theme: brand
       text: 没用的按钮
+    - theme: alt
+      text: 另一个没用的按钮
 ---
 
 ## 🤔 我是谁？
