@@ -2,6 +2,15 @@
 
 👋 Hi there.
 
+## 📨 My Message
+
+- To **recruiters**,
+  > I can provide my full CV upon request. Please contact me via LinkedIn direct message with compensation details. Inquiries without compensation will not receive a response.
+- To **students and junior devs**,
+  > I have limited availability for mentorship. Please express your interest by email or via LinkedIn direct message.
+- To **other mates**,
+  > If you'd like to chat, the best way to reach me is via LinkedIn direct message. I can provide my WeChat upon request.
+
 ## 📇 Profile
 
 I am a pragmatic software development engineer dedicated to crafting imaginative solutions and solving complex problems with principled thinking. I excel in full-stack software development, leveraging cloud technologies and site reliability engineering.
