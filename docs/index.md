@@ -13,9 +13,11 @@ hero:
 
 ---
 
-# `> whoami _`
+<br/>
 
-👋 Hi there.
+# 🤔 whoami?
+
+👋 Hi there, I'm luojiahai. zhu is my nickname.
 
 - 🖥️ I'm a software development engineer.
 - 🔭 I'm currently working hard for a living.
