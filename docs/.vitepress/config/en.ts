@@ -16,5 +16,6 @@ export const en = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: 'Home', link: '/' },
+    { text: 'CV', link: '/cv' },
   ];
 }
