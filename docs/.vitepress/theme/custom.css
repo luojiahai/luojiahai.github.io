@@ -14,8 +14,8 @@
 }
 
 .dark {
-  --background: #000000;
-  --background-alt: #18191C;
+  --background: #18191C;
+  --background-alt: #2F3238;
   --text-1: #F6F7F8;
   --text-2: #C9CCD0;
   --text-3: #9499A0;
@@ -52,4 +52,10 @@
   --vp-c-tip-2: var(--brand-alt-2);
   --vp-c-tip-3: var(--brand-alt-1);
   --vp-c-tip-soft: var(--brand-alt-soft);
+}
+
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
 }
