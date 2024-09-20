@@ -11,11 +11,7 @@ hero:
       text: Useless Button
 ---
 
----
-
-<br/>
-
-# 🤔 Who Am I?
+## 🤔 Who Am I?
 
 👋 Hi there.
 
