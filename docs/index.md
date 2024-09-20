@@ -8,9 +8,10 @@ hero:
   tagline: This is a useless site.
   actions:
     - theme: brand
-      text: Useless Button
+      text: 🤔 Who Am I?
+      link: /cv
     - theme: alt
-      text: Another Useless Button
+      text: Useless Button
 
 features:
   - icon: 😄
@@ -26,14 +27,6 @@ features:
     title: Current location
     details: Melbourne, Victoria, Australia
 ---
-
-## 🤔 Who Am I?
-
-👋 Hi there.
-
-- 🖥️ I'm a software development engineer.
-- 🔭 I'm currently working hard for a living.
-- 🌱 I'm currently learning how machine thinks.
 
 ## 📨 My Message
 
