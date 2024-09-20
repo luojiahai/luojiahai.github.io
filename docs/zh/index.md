@@ -4,8 +4,8 @@ title: luojiahai
 
 hero:
   name: 我的站点
-  text: '@luojiahai'
-  tagline: 这是一个没用的站点。
+  text: 这是一个没用的站点。
+  tagline: 👋 你好。
   actions:
     - theme: brand
       text: 🤔 我是谁？

@@ -4,8 +4,8 @@ title: luojiahai
 
 hero:
   name: My Site
-  text: '@luojiahai'
-  tagline: This is a useless site.
+  text: This is a useless site.
+  tagline: 👋 Hi there.
   actions:
     - theme: brand
       text: 🤔 Who Am I?
