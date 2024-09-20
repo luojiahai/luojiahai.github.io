@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: My Site
   text: This is a useless site.
-  tagline: 👋 Hi there.
+  tagline: 👋 Hi there. I'm afk, I cook, I eat, and I get disconnected.
   actions:
     - theme: brand
       text: 🤔 Who Am I?
@@ -17,9 +17,6 @@ features:
   - icon: 😄
     title: Personality
     details: Architect / INTJ
-  - icon: 💬
-    title: Motto
-    details: I'm afk, I cook, I eat, and I get disconnected.
   - icon: 📫
     title: How to reach me
     details: luo[at]jiahai.co
