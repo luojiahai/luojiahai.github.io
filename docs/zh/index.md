@@ -3,9 +3,9 @@ layout: home
 title: luojiahai
 
 hero:
-  name: 我的网站
+  name: 我的站点
   text: '@luojiahai'
-  tagline: 这是一个没用的网站。
+  tagline: 这是一个没用的站点。
   actions:
     - theme: alt
       text: 没用的按钮
