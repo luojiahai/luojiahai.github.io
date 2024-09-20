@@ -15,7 +15,7 @@ hero:
 
 <br/>
 
-# 🤔 whoami?
+# 🤔 Who Am I?
 
 👋 Hi there.
 
