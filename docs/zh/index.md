@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: 我的站点
   text: 这是一个没用的站点。
-  tagline: 👋 你好。我离开键盘、我做饭、我吃饭、然后我就掉线了。
+  tagline: 我离开键盘、我做饭、我吃饭、然后我就掉线了。
   actions:
     - theme: brand
       text: 🤔 我是谁？

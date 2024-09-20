@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: My Site
   text: This is a useless site.
-  tagline: 👋 Hi there. I'm afk, I cook, I eat, and I get disconnected.
+  tagline: I'm afk, I cook, I eat, and I get disconnected.
   actions:
     - theme: brand
       text: 🤔 Who Am I?
