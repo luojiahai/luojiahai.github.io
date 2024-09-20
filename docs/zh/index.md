@@ -8,7 +8,7 @@ hero:
   tagline: 这是一个没用的站点。
   actions:
     - theme: brand
-      text: 🤔 我是谁？
+      text: 我是谁？
       link: /zh/cv
     - theme: alt
       text: 没用的按钮
