@@ -21,6 +21,8 @@
 }
 
 :root {
+  --vp-font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   --vp-c-bg: var(--background);
   --vp-c-bg-alt: var(--background);
   --vp-c-bg-elv: var(--background);
