@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: print('Hello, World!')
+  text: print('Hello, World!');
   tagline: 这是我的站点，一个没用的站点。
   actions:
     - theme: brand
