@@ -7,7 +7,7 @@ hero:
   text: '@luojiahai'
   tagline: This is a useless site.
   actions:
-    - theme: alt
+    - theme: brand
       text: Useless Button
 ---
 
