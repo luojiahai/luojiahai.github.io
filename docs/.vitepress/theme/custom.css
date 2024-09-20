@@ -23,7 +23,7 @@
 }
 
 :root {
-  --vp-font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --vp-font-family-base: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', sans-serif;
   --vp-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
   --vp-c-bg: var(--background);
