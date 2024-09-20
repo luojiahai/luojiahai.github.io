@@ -39,7 +39,7 @@ I am a pragmatic software development engineer dedicated to crafting imaginative
 - **Functional**: Full-Stack Software Development Engineering, Cloud Engineering, Site Reliability Engineering
 - **Technical**: Python, TypeScript, Java, C, AWS, Docker, GraphQL, Node.js, React, LaTeX
 
-## 🥔 Additional Information
+## 🍟 Additional Information
 
 - **Languages**: English, Mandarin Chinese, Cantonese Chinese
 - **Interests**: Food, Cooking, Grocery Shopping, Guitar, Aviation

@@ -39,7 +39,7 @@
 - **功能**：全栈软件开发工程、云计算工程、站点可靠性工程
 - **技术**：Python、TypeScript、Java、C、AWS、Docker、GraphQL、Node.js、React、LaTeX
 
-## 🥔 附加信息
+## 🍟 附加信息
 
 - **语言**：英文、中文普通话、中文广东话
 - **兴趣**：吃、烹饪、逛超市、吉他、航天
