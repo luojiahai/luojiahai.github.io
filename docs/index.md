@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: zhu
+  name: My Site
   text: '@luojiahai'
   tagline: This is a useless site.
   actions:
@@ -17,7 +17,7 @@ hero:
 
 # 🤔 whoami?
 
-👋 Hi there, I'm luojiahai. zhu is my nickname.
+👋 Hi there.
 
 - 🖥️ I'm a software development engineer.
 - 🔭 I'm currently working hard for a living.
