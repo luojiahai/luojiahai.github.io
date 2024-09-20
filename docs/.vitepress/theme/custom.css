@@ -2,8 +2,8 @@
   --background: #FFFFFF;
   --background-alt: #F1F2F3;
   --text-primary: #18191C;
-  --text-secondary: #61666D;
-  --text-tertiary: #9499A0;
+  --text-secondary: #484C53;
+  --text-tertiary: #797F87;
   --accent-primary: #FF6699;
   --accent-secondary: #FF8CB0;
   --accent-primary-alt: #00AEEC;
@@ -16,7 +16,8 @@
   --background: #000000;
   --background-alt: #18191C;
   --text-primary: #F6F7F8;
-  --text-secondary: #C9CCD0;
+  --text-secondary: #E3E5E7;
+  --text-tertiary: #AEB3B9;
   --accent-soft: rgba(255, 102, 153, 0.16);
   --border: #484C53;
 }
