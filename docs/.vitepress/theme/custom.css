@@ -1,4 +1,5 @@
-:root {
+/* blue */
+/* :root {
   --background: #ffffff;
   --foreground: #333333;
   --header-foreground: #242424;
@@ -18,8 +19,32 @@
   --accent-tertiary: #4daafc;
   --accent-soft: rgba(0, 120, 212, 0.16);
   --border-background: rgba(255, 255, 255, 0.12);
+} */
+
+/* pink */
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --header-foreground: #242424;
+  --accent-primary: #d40078;
+  --accent-secondary: #ba0069;
+  --accent-tertiary: #b8005f;
+  --accent-soft: rgba(212, 0, 120, 0.14);
+  --border-background: rgba(0, 0, 0, 0.12);
 }
 
+.dark {
+  --background: #0e0e0e;
+  --foreground: #9ba3b4;
+  --header-foreground: #e9eaeb;
+  --accent-primary: #d40078;
+  --accent-secondary: #ba0069;
+  --accent-tertiary: #fc4eab;
+  --accent-soft: rgba(212, 0, 120, 0.16);
+  --border-background: rgba(255, 255, 255, 0.12);
+}
+
+/* --- */
 :root {
   --vp-font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --vp-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
@@ -43,7 +68,8 @@
   --vp-c-indigo-soft: var(--accent-soft);
 
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #005fb8 30%, #4daafc);
+  /* --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #005fb8 30%, #4daafc); */
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #d40078 30%, #fc4eab);
 }
 
 .VPHero .name, .VPHero .text {
