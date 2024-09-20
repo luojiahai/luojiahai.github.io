@@ -3,9 +3,9 @@ layout: home
 title: luojiahai
 
 hero:
-  name: My Site
-  text: This is a useless site.
-  tagline: I'm afk, I cook, I eat, and I get disconnected.
+  name: luojiahai
+  text: My Site
+  tagline: This is a useless site.
   actions:
     - theme: brand
       text: 🤔 Who Am I?
