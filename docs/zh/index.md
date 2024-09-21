@@ -21,7 +21,7 @@ features:
     title: 我做什么
     details: 我是一个软件开发工程师。我目前正在努力工作谋生。
   - icon: ⚡
-    title: 我的兴趣
+    title: 有趣的事实
     details: 我喜欢吃饭、做饭、逛超市。
   - icon: 📫
     title: 如何联系我
