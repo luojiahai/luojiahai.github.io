@@ -21,7 +21,7 @@ features:
     title: What I do
     details: I'm a software development engineer. I'm currently working hard for a living.
   - icon: ⚡
-    title: My interests
+    title: Fun fact
     details: I like eating, cooking, and grocery shopping.
   - icon: 📫
     title: How to reach me
