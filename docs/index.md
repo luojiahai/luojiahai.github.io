@@ -21,7 +21,7 @@ features:
     title: How to reach me
     details: |
       Email: luo[at]jiahai.co
-      or any social sites (see navigation menu on the top right)
+      or any social sites (see navigation on the top right)
   - icon: 📍
     title: Current location
     details: Melbourne, Victoria, Australia
