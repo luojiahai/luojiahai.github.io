@@ -25,5 +25,5 @@ features:
     details: I like eating, cooking, and grocery shopping. I like doing complex logical deduction in my mind.
   - icon: 📫
     title: How to reach me
-    details: 'Email: luo[at]jiahai.co (replace [at] with @)'
+    details: Email to luo[at]jiahai.co or direct message on any social sites.
 ---
