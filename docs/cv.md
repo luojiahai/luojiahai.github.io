@@ -1,13 +1,17 @@
 # CV
 
+::: info
+This CV is a preview and does not contain the details. I can provide my full CV upon request.
+:::
+
 ## 📨 My Message
 
-This CV is a preview and does not contain the details. I can provide my full CV upon request.
-
 - To **recruiters and hiring managers**,
-  > If you would like to contact me, please do so via LinkedIn direct message with job description and compensation details. Inquiries without compensation details will not receive a response. Currently not considering relocation outside of Melbourne.
-- To **head hunters**,
-  > Please don't contact me. All inquiries from head hunters will not receive a response.
+  > If you would like to contact me, please send an inquiry via LinkedIn direct message with job description and compensation details. Inquiries without compensation details will not receive a response. Currently not considering relocation outside of Melbourne.
+- To **recruitment agents and head hunters**,
+  > Please don't contact me. All inquiries from you will not receive a response.
+- To **other mates**,
+  > I'm happy to chat with you and respond to any inquiries that I can answer. I offer professional mentorship and technical tutoring, but my availability is limited. Please express your interest via email.
 
 ## 📇 Profile
 
