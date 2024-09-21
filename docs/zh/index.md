@@ -15,7 +15,7 @@ hero:
 features:
   - icon: 🤔
     title: 我是谁？
-    details: 我来自中国广州。我在墨尔本大学学习计算机科学。我目前正在努力工作谋生。
+    details: 我来自中国广州。我毕业于墨尔本大学，学习了计算机科学。我目前正在努力工作谋生。
   - icon: 😄
     title: 性格
     details: 建筑师 / INTJ
