@@ -25,5 +25,5 @@ features:
     details: I like eating, cooking, and grocery shopping. I can do complex computation in my mind.
   - icon: 📫
     title: How to reach me
-    details: 'Email: luo[at]jiahai.co'
+    details: 'Email: luo[at]jiahai.co (replace [at] with @)'
 ---
