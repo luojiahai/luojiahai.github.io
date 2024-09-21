@@ -22,7 +22,7 @@ features:
     details: I work in software development and site reliability engineering. I'm currently working hard for a living.
   - icon: ⚡
     title: Fun fact
-    details: I like eating, cooking, and grocery shopping.
+    details: I like eating, cooking, and grocery shopping. I can do complex computation in my mind.
   - icon: 📫
     title: How to reach me
     details: 'Email: luo[at]jiahai.co'
