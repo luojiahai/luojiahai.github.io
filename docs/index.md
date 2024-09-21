@@ -8,12 +8,14 @@ hero:
   tagline: This is my site, a useless site.
   actions:
     - theme: brand
-      text: Who Am I?
-      link: /cv
-    - theme: alt
       text: Useless Button
+    - theme: alt
+      text: Another Useless Button
 
 features:
+  - icon: 🤔
+    title: Who Am I?
+    details: I'm from Guangzhou, China. I studied Computer Science at the University of Melbourne. I'm currently working hard for a living.
   - icon: 😄
     title: Personality
     details: Architect / INTJ
