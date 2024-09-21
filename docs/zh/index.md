@@ -24,5 +24,5 @@ features:
       或者任何一个社交站点（在右上的导航栏菜单）
   - icon: 📍
     title: 当前坐标
-    details: 澳大利亚墨尔本
+    details: 澳大利亚 维多利亚州 墨尔本
 ---
