@@ -27,9 +27,3 @@ features:
     title: How to reach me
     details: Email to luo[at]jiahai.co or direct message on any social sites.
 ---
-
-<style>
-pre {
-  margin: 0;
-}
-</style>

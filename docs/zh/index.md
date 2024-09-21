@@ -27,9 +27,3 @@ features:
     title: 如何联系我
     details: 发送电子邮件至 luo[at]jiahai.co 或在任何社交站点上私信。
 ---
-
-<style>
-pre {
-  margin: 0;
-}
-</style>
