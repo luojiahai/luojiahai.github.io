@@ -16,7 +16,7 @@ hero:
 features:
   - icon: 🤔
     title: Who am I
-    details: I'm INTJ personality. I'm from Guangzhou 🇨🇳 and currently based in Melbourne 🇦🇺.
+    details: I'm luojiahai. My personality is INTJ. I'm from Guangzhou 🇨🇳 and currently based in Melbourne 🇦🇺.
   - icon: 🔭
     title: What I do
     details: I work in software development and site reliability engineering. I'm currently working hard for a living.
