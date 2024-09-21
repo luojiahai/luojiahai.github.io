@@ -25,7 +25,7 @@ features:
     details: I like eating, cooking, and grocery shopping. I can fly the A320 in Microsoft Flight Simulator.
   - icon: 📫
     title: How to reach me
-    details: Email to <pre>luo[at]jiahai.co</pre> or direct message on any social sites.
+    details: Email to luo[at]jiahai.co or direct message on any social sites.
 ---
 
 <style>
