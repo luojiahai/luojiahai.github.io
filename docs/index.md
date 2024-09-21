@@ -22,7 +22,7 @@ features:
     details: I'm a software development engineer. I'm currently working hard for a living.
   - icon: ⚡
     title: My interests
-    details: Eating, Cooking, Grocery Shopping
+    details: I like eating, cooking, and grocery shopping.
   - icon: 📫
     title: How to reach me
     details: 'Email: luo[at]jiahai.co'
