@@ -21,7 +21,7 @@ features:
     title: 如何联系我
     details: |
       电子邮箱：luo[at]jiahai.co
-      或者任何一个社交站点（在右上的导航栏菜单）
+      或者任何一个社交站点（在右上的导航栏菜单查看）
   - icon: 📍
     title: 当前坐标
     details: 澳大利亚 维多利亚州 墨尔本
