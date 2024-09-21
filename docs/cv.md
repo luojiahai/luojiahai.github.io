@@ -2,10 +2,12 @@
 
 ## 📨 My Message
 
+This CV is a preview and does not contain the details. I can provide my full CV upon request.
+
 - To **recruiters**,
-  > I can provide my full CV upon request. Please contact me via LinkedIn direct message with compensation details. Inquiries without compensation will not receive a response.
-- To **other mates**,
-  > Please feel free to contact me for any inquiries. I can provide my WeChat upon request.
+  > If you would like to contact me, please feel free to do so via LinkedIn direct message with job description and compensation details. Inquiries without compensation details will not receive a response.
+- To **head hunters**,
+  > Please don't contact me. All inquiries from head hunters will not receive a response.
 
 ## 📇 Profile
 
