@@ -19,7 +19,7 @@ features:
     details: My personality is INTJ. I'm from Guangzhou, China. I'm currently located in Melbourne, Australia.
   - icon: 🔭
     title: What I do
-    details: I'm a software development engineer. I'm currently working hard for a living.
+    details: I work in software development and site reliability engineering. I'm currently working hard for a living.
   - icon: ⚡
     title: Fun fact
     details: I like eating, cooking, and grocery shopping.

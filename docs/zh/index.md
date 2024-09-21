@@ -19,7 +19,7 @@ features:
     details: 我的性格是INTJ。我来自中国广州。我目前在澳大利亚墨尔本。
   - icon: 🔭
     title: 我做什么
-    details: 我是一个软件开发工程师。我目前正在努力工作谋生。
+    details: 我从事软件开发和站点可靠性工程。我目前正在努力工作谋生。
   - icon: ⚡
     title: 有趣的事实
     details: 我喜欢吃饭、做饭、逛超市。
