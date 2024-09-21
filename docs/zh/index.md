@@ -19,7 +19,7 @@ features:
     details: 建筑师 / INTJ
   - icon: 📫
     title: 如何联系我
-    details: luo[at]jiahai.co
+    details: 电子邮箱：luo[at]jiahai.co
   - icon: 📍
     title: 当前坐标
     details: 澳大利亚墨尔本
