@@ -16,7 +16,7 @@ hero:
 features:
   - icon: 🤔
     title: Who am I
-    details: My personality is INTJ (Architect). I'm from Guangzhou 🇨🇳, currently based in Melbourne 🇦🇺.
+    details: My personality is INTJ (Architect). I'm from Guangzhou 🇨🇳 and currently based in Melbourne 🇦🇺.
   - icon: 🔭
     title: What I do
     details: I work in software development and site reliability engineering. I'm currently working hard for a living.
