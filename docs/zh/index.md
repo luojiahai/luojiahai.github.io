@@ -10,19 +10,17 @@ hero:
     - theme: brand
       text: 没有的按钮
     - theme: alt
-      text: 另一个没用的按钮
+      text: 简历
+      link: /zh/cv
 
 features:
   - icon: 🤔
-    title: 我是谁？
-    details: 我来自中国广州。我毕业于墨尔本大学，学习了计算机科学。我目前正在努力工作谋生。
-  - icon: 😄
-    title: 性格
-    details: 建筑师 / INTJ
+    title: 我是谁
+    details: 我的性格是INTJ。我来自中国广州。我目前在澳大利亚墨尔本。
+  - icon: 🖥️
+    title: 我做什么
+    details: 我是一个软件开发工程师。我目前正在努力工作谋生。
   - icon: 📫
     title: 如何联系我
     details: '电子邮箱：luo[at]jiahai.co'
-  - icon: 📍
-    title: 当前坐标
-    details: 澳大利亚 维多利亚州 墨尔本
 ---

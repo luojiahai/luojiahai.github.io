@@ -10,19 +10,17 @@ hero:
     - theme: brand
       text: Useless Button
     - theme: alt
-      text: Another Useless Button
+      text: CV
+      link: /cv
 
 features:
   - icon: 🤔
-    title: Who Am I?
-    details: I'm from Guangzhou, China. I studied Computer Science at the University of Melbourne. I'm currently working hard for a living.
-  - icon: 😄
-    title: Personality
-    details: Architect / INTJ
+    title: Who am I
+    details: My personality is INTJ. I'm from Guangzhou, China. I'm currently located in Melbourne, Australia.
+  - icon: 🖥️
+    title: What I do
+    details: I'm a software development engineer. I'm currently working hard for a living.
   - icon: 📫
     title: How to reach me
     details: 'Email: luo[at]jiahai.co'
-  - icon: 📍
-    title: Current location
-    details: Melbourne, Victoria, Australia
 ---
