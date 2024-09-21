@@ -19,9 +19,7 @@ features:
     details: Architect / INTJ
   - icon: 📫
     title: How to reach me
-    details: |
-      Email: luo[at]jiahai.co
-      or any social sites (see navigation on the top right)
+    details: 'Email: luo[at]jiahai.co'
   - icon: 📍
     title: Current location
     details: Melbourne, Victoria, Australia
