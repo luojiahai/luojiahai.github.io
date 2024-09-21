@@ -16,7 +16,7 @@ hero:
 features:
   - icon: 🤔
     title: 我是谁
-    details: 我的性格是INTJ（建筑师）。我来自中国广州。我目前在澳大利亚墨尔本。
+    details: 我的性格是INTJ（建筑师）。我来自广州🇨🇳。我目前在墨尔本🇦🇺。
   - icon: 🔭
     title: 我做什么
     details: 我从事软件开发和站点可靠性工程。我目前正在努力工作赚钱谋生。
