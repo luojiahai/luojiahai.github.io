@@ -22,7 +22,7 @@ features:
     details: 我从事软件开发和站点可靠性工程。我目前正在努力工作谋生。
   - icon: ⚡
     title: 有趣的事实
-    details: 我喜欢吃饭、做饭、逛超市。我可以在脑海中进行复杂的计算。
+    details: 我喜欢吃饭、做饭、逛超市。我喜欢做复杂的逻辑推理。
   - icon: 📫
     title: 如何联系我
     details: '电子邮箱：luo[at]jiahai.co（把[at]替换成@）'
