@@ -20,6 +20,9 @@ features:
   - icon: 🔭
     title: What I do
     details: I'm a software development engineer. I'm currently working hard for a living.
+  - icon: ⚡
+    title: My interests
+    details: Eating, Cooking, Grocery Shopping
   - icon: 📫
     title: How to reach me
     details: 'Email: luo[at]jiahai.co'

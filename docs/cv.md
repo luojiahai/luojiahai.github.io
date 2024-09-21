@@ -47,4 +47,4 @@ I am a pragmatic software development engineer dedicated to crafting imaginative
 ## 🍟 Additional Information
 
 - **Languages**: English, Mandarin Chinese, Cantonese Chinese
-- **Interests**: Food, Cooking, Grocery Shopping, Guitar, Aviation
+- **Interests**: Eating, Cooking, Grocery Shopping
