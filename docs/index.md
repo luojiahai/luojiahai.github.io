@@ -25,5 +25,5 @@ features:
     details: I like eating, cooking, and grocery shopping. I can pilot the A320 in Microsoft Flight Simulator.
   - icon: 📫
     title: How to reach me
-    details: Email luo[at]jiahai.co or direct message on any social sites. My Wechat ID is luowlni.
+    details: Email luo[at]jiahai.co or direct message on any social sites. My WeChat ID is luowlni.
 ---
