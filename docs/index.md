@@ -22,7 +22,7 @@ features:
     details: I studied computer science. I work in software development and site reliability engineering. I'm currently working hard for a living.
   - icon: ⚡
     title: Fun fact
-    details: I like eating, cooking, and grocery shopping. I can pilot the Airbus A320 in Microsoft Flight Simulator. I'm not interested in sports.
+    details: I like eating, cooking, and grocery shopping. I don't like sports. I can pilot the Airbus A320 in Microsoft Flight Simulator.
   - icon: 📫
     title: How to reach me
     details: Email luo[at]jiahai.co or direct message on any social sites, preferably LinkedIn for professional stuff.
