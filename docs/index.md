@@ -22,8 +22,8 @@ features:
     details: I studied computer science. I work in software development and site reliability engineering. I'm currently working hard for a living.
   - icon: ⚡
     title: Fun fact
-    details: I like eating, cooking, and grocery shopping. I can pilot the A320 in Microsoft Flight Simulator.
+    details: I like eating, cooking, and grocery shopping. I can pilot the Airbus A320 in Microsoft Flight Simulator.
   - icon: 📫
     title: How to reach me
-    details: Email luo[at]jiahai.co or direct message on any social sites. My WeChat ID is luowlni.
+    details: Email luo[at]jiahai.co or direct message on any social sites, preferably LinkedIn for professional stuff.
 ---
