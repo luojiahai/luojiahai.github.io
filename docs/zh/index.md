@@ -8,7 +8,7 @@ hero:
   tagline: 这是我的站点，一个没用的站点。
   actions:
     - theme: brand
-      text: 没有的按钮
+      text: 没用的按钮
     - theme: alt
       text: 预览简历
       link: /zh/cv
