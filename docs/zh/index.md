@@ -25,5 +25,5 @@ features:
     details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。我能在微软模拟飞行中驾驶空客A320。
   - icon: 📫
     title: 如何联系我
-    details: 发送电子邮件至luo[at]jiahai.co或在任何社交站点上私信，专业相关最好通过领英。
+    details: 发送电子邮件至luo[at]jiahai.co或在任何社交站点上私信。我可以提供我的微信号和电话号码。
 ---
