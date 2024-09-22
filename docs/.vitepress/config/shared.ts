@@ -2,8 +2,6 @@ import { defineConfig } from 'vitepress'
 import { search as zhSearch } from './zh'
 
 export const shared = defineConfig({
-  title: 'luojiahai',
-
   rewrites: {
     'en/:rest*': ':rest*',
   },
@@ -41,7 +39,7 @@ export const shared = defineConfig({
   ],
 
   themeConfig: {
-    // logo: { src: '/apple-touch-icon.png' },
+    logo: { src: '/apple-touch-icon.png' },
 
     socialLinks: [
       { icon: 'x', link: 'https://x.com/luojiahai' },
