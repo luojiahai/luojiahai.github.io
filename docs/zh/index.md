@@ -22,7 +22,7 @@ features:
     details: 我是计算机科班出身。我从事软件开发工程。我目前正在努力工作赚钱谋生。
   - icon: ⚡
     title: 有趣的事实
-    details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。我能在微软模拟飞行中驾驶空客A320。
+    details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。
   - icon: 📫
     title: 如何联系我
     details: luo[at]jiahai.co
