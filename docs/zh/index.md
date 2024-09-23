@@ -19,11 +19,11 @@ features:
     details: 我是luojiahai，来自广州🇨🇳，目前在墨尔本🇦🇺。我的性格是INTJ（建筑师）。
   - icon: 🔭
     title: 我做什么
-    details: 我是计算机科班出身。我从事软件开发和站点可靠性工程。我目前正在努力工作赚钱谋生。
+    details: 我是计算机科班出身。我从事软件开发工程。我目前正在努力工作赚钱谋生。
   - icon: ⚡
     title: 有趣的事实
     details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。我能在微软模拟飞行中驾驶空客A320。
   - icon: 📫
     title: 如何联系我
-    details: 发送电子邮件至luo[at]jiahai.co或在任何社交站点上私信。我可以提供我的微信号和电话号码。
+    details: luo[at]jiahai.co
 ---
