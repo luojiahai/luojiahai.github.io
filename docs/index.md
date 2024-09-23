@@ -19,7 +19,7 @@ features:
     details: I'm luojiahai, from Guangzhou 🇨🇳, and currently based in Melbourne 🇦🇺. My personality is INTJ (Architect).
   - icon: 🔭
     title: What I do
-    details: I studied computer science. I work in software development and site reliability engineering. I'm currently working hard for a living.
+    details: I studied computer science. I work in software development engineering. I'm currently working hard for a living.
   - icon: ⚡
     title: Fun fact
     details: I like eating, cooking, and grocery shopping. I don't like sports. I can pilot the Airbus A320 in Microsoft Flight Simulator.
