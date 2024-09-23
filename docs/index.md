@@ -25,5 +25,5 @@ features:
     details: I like eating, cooking, and grocery shopping. I don't like sports. I can pilot the Airbus A320 in Microsoft Flight Simulator.
   - icon: 📫
     title: How to reach me
-    details: Email luo[at]jiahai.co or direct message on any social sites. I can provide my WeChat ID and phone number upon request.
+    details: luo[at]jiahai.co
 ---
