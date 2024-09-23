@@ -16,7 +16,7 @@ hero:
 features:
   - icon: 🤔
     title: 我是谁
-    details: 我是luojiahai，来自广州🇨🇳，目前在墨尔本🇦🇺。我的性格是INTJ（建筑师）。
+    details: 我是luojiahai，来自广州🇨🇳，目前在墨尔本🇦🇺。我的性格是INTJ。
   - icon: 🔭
     title: 我做什么
     details: 我是计算机科班出身。我从事软件开发工程。我目前正在努力工作赚钱谋生。
