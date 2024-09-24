@@ -18,7 +18,7 @@ features:
     title: Who am I
     details: This is luojiahai. My personality is INTJ. I'm from Guangzhou, China.
   - icon: 🖥️
-    title: What I do
+    title: Work
     details: I work in software development engineering. I'm currently working hard for a living.
   - icon: 🍚
     title: Interests

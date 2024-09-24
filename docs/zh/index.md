@@ -18,10 +18,10 @@ features:
     title: 我是谁
     details: 我是luojiahai。我的性格是INTJ。我来自中国广州。
   - icon: 🖥️
-    title: 我做什么
+    title: 工作
     details: 我从事软件开发的工作。为了生活，我目前正在努力工作赚钱。
   - icon: 🍚
-    title: 兴趣爱好
+    title: 兴趣
     details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。
   - icon: 📫
     title: 联系方式
