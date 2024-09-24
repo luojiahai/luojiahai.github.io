@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai
   text: print('Hello, World!');
-  tagline: This is my site, a useless site.
+  tagline: This is a useless site.
   actions:
     - theme: brand
       text: Useless button

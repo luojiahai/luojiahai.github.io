@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 export const en = defineConfig({
   lang: 'en-US',
   title: 'Mystery Pig Farm',
-  description: 'This is a useless site',
+  description: 'This is a useless site.',
 
   themeConfig: {
     nav: nav(),
