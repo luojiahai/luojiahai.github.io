@@ -8,7 +8,7 @@ hero:
   tagline: This is a useless site.
   actions:
     - theme: brand
-      text: Useless button
+      text: Useless Button
     - theme: alt
       text: CV
       link: /cv
