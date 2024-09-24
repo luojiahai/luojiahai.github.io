@@ -19,7 +19,7 @@ features:
     details: 我是罗嘉海。我的性格是INTJ。我来自中国广州。
   - icon: 🖥️
     title: 工作
-    details: 我做软件工程。为了生活，我在努力工作赚钱。
+    details: 我是做软件工程的。为了生活，我在努力工作赚钱。
   - icon: 🍚
     title: 兴趣
     details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。
