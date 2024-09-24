@@ -25,5 +25,5 @@ features:
     details: I like eating, cooking, and grocery shopping. I don't like sports.
   - icon: 📫
     title: How to reach me
-    details: luo[at]jiahai.co
+    details: luo [at] jiahai.co
 ---

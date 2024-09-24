@@ -25,5 +25,5 @@ features:
     details: 我喜欢吃饭、做饭、逛超市。我不喜欢运动。
   - icon: 📫
     title: 如何联系我
-    details: luo[at]jiahai.co
+    details: luo [at] jiahai.co
 ---
