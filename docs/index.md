@@ -21,9 +21,9 @@ features:
     title: What I do
     details: I work in software development engineering. I'm currently working hard for a living.
   - icon: 🍚
-    title: Fun facts
+    title: Interests
     details: I like eating, cooking, and grocery shopping. I don't like sports.
   - icon: 📫
     title: How to reach me
-    details: luo [at] jiahai.co
+    details: 'Email: luo [at] jiahai.co'
 ---
