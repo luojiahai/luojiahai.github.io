@@ -10,7 +10,7 @@ hero:
     - theme: brand
       text: Useless button
     - theme: alt
-      text: Preview my CV
+      text: CV
       link: /cv
 
 features:

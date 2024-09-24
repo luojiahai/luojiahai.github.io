@@ -10,7 +10,7 @@ hero:
     - theme: brand
       text: 没用的按钮
     - theme: alt
-      text: 预览我的简历
+      text: 简历
       link: /zh/cv
 
 features:
