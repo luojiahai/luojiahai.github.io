@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 export const zh = defineConfig({
   lang: 'zh-Hans',
-  title: '神秘猪场',
+  title: 'luojiahai',
   description: '这是一个没用的网站。',
 
   themeConfig: {
