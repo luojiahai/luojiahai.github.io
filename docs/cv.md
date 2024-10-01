@@ -28,7 +28,7 @@ This CV is a preview and does not contain the details. I can provide my full CV 
 - **REA Group (realestate.com.au)**
   - **Position**: Software Developer
   - **Location**: Richmond, Victoria, Australia
-- **, Amazon Web Services (AWS)**
+- **Amazon Web Services (AWS)**
   - **Position**: Software Development Engineer
   - **Location**: Sydney, New South Wales, Australia
 - **Deloitte**
