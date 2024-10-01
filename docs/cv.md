@@ -13,22 +13,29 @@ This CV is a preview and does not contain the details. I can provide my full CV 
 
 ## 🎓 Education
 
-- **Master of Science (Computer Science), The University of Melbourne**
+- **The University of Melbourne**
+  - **Degree**: Master of Science (Computer Science)
   - **Location**: Parkville, Victoria, Australia
-- **Bachelor of Science, The University of Melbourne**
+- **The University of Melbourne**
+  - **Degree**: Bachelor of Science,
   - **Location**: Parkville, Victoria, Australia
-- **Summer School International Program, Peking University**
+- **Peking University**
+  - **Program**: Summer School International Program
   - **Location**: Beijing, China
 
 ## 🏢 Experience
 
-- **Software Developer, REA Group (realestate.com.au)**
+- **REA Group (realestate.com.au)**
+  - **Position**: Software Developer
   - **Location**: Richmond, Victoria, Australia
-- **Software Development Engineer, Amazon Web Services (AWS)**
+- **, Amazon Web Services (AWS)**
+  - **Position**: Software Development Engineer
   - **Location**: Sydney, New South Wales, Australia
-- **Software Development Consultant, Deloitte**
+- **Deloitte**
+  - **Position**: Software Development Consultant
   - **Location**: Melbourne, Victoria, Australia
-- **Teaching Assistant, The University of Melbourne**
+- **The University of Melbourne**
+  - **Position**: Teaching Assistant
   - **Location**: Parkville, Victoria, Australia
 
 ## 🚀 Skills
