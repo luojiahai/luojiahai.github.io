@@ -17,7 +17,7 @@ This CV is a preview and does not contain the details. I can provide my full CV 
   - **Degree**: Master of Science (Computer Science)
   - **Location**: Parkville, Victoria, Australia
 - **The University of Melbourne**
-  - **Degree**: Bachelor of Science,
+  - **Degree**: Bachelor of Science
   - **Location**: Parkville, Victoria, Australia
 - **Peking University**
   - **Program**: Summer School International Program
