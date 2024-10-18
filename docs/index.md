@@ -4,11 +4,11 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: print('Hello, World!');
-  tagline: This is a useless site.
+  text: This is a useless site.
+  tagline: print(chr(34295))
   actions:
     - theme: brand
-      text: About me
+      text: About Me
       link: /about
     - theme: alt
       text: CV
@@ -17,10 +17,10 @@ hero:
 features:
   - icon: 🤔
     title: Who am I
-    details: My internet handle is luojiahai. </br><a href='/about'>Click here to read more...</a>
+    details: My internet handle is luojiahai. My personality is INTJ.
   - icon: 🔭
     title: What I do
-    details: I do software development for a living.
+    details: I am a software developer. I am striving to live life.
   - icon: 🌱
     title: What I like
     details: I like eating, cooking, and grocery shopping.

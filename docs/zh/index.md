@@ -4,8 +4,8 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: print('Hello, World!');
-  tagline: 这是一个没用的网站。
+  text: 这是一个没用的网站。
+  tagline: print(chr(34295))
   actions:
     - theme: brand
       text: 关于我
@@ -17,10 +17,10 @@ hero:
 features:
   - icon: 🤔
     title: 我是谁
-    details: 我的网名是luojiahai。</br><a href='/zh/about'>点击此处阅读更多...</a>
+    details: 我的网名是luojiahai。我的性格是INTJ。
   - icon: 🔭
-    title: 我做什么
-    details: 我从事软件开发的工作。
+    title: 我做什么的
+    details: 我是一名软件开发者。我在努力生活。
   - icon: 🌱
     title: 我喜欢什么
     details: 我喜欢吃饭、做饭、逛超市。
