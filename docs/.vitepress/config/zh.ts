@@ -41,6 +41,7 @@ export const zh = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: '首页', link: '/zh/' },
+    { text: '关于', link: '/zh/about' },
     { text: '简历', link: '/zh/cv' },
   ];
 }
