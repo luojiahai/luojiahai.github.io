@@ -5,7 +5,8 @@ title: luojiahai
 hero:
   name: luojiahai
   text: 这是一个没用的网站。
-  tagline: print(chr(34295))
+  tagline: |
+    两岸猿声啼不住，轻舟已过万重山。
   actions:
     - theme: brand
       text: 关于我

@@ -5,7 +5,11 @@ title: luojiahai
 hero:
   name: luojiahai
   text: This is a useless site.
-  tagline: print(chr(34295))
+  tagline: |
+    while (True):
+        listen(ape1.cry() and ape2.cry())
+        boat.pass(mountains)
+        if (len(mountains) > 10000): break
   actions:
     - theme: brand
       text: About Me
