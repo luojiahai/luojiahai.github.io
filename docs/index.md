@@ -17,7 +17,7 @@ features:
   - icon: 🐷
     title: whoami
     details: |
-      🤔 My personality is INTJ.<br>🔭 I am a software development engineer.<br>🌱 I like eating, cooking, and grocery shopping.<br>📫 How to reach me: luo[at]jiahai.co
+      🤗 My personality is INTJ (Architect).<br>🔭 I am a software development engineer.<br>🌱 I like eating, cooking, and grocery shopping.<br>📫 How to reach me: luo[at]jiahai.co
 ---
 
 ##
