@@ -10,7 +10,7 @@ hero:
       text: 关于我
       link: /zh/about
     - theme: alt
-      text: 简历
+      text: 我的简历
       link: /zh/cv
 
 features:

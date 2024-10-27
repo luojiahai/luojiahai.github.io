@@ -7,10 +7,10 @@ hero:
   text: This is a useless site.
   actions:
     - theme: brand
-      text: About Me
+      text: About me
       link: /about
     - theme: alt
-      text: CV
+      text: My CV
       link: /cv
 
 features:
