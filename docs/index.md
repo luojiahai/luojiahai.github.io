@@ -24,8 +24,8 @@ features:
 
 ```ts:line-numbers
 while (true) {
-    listen(ape1.cry() && ape2.cry());
-    boat.pass(mountain);
-    if (mountain > 10000) break;
+  listen(ape1.cry() && ape2.cry());
+  boat.pass(mountain);
+  if (mountain > 10000) break;
 }
 ```
