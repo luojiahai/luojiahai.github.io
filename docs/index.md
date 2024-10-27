@@ -8,8 +8,8 @@ hero:
   tagline: |
     while (True):
         listen(ape1.cry() and ape2.cry())
-        boat.pass(mountains)
-        if (len(mountains) > 10000): break
+        boat.pass(mountain)
+        if (mountain > 10000): break
   actions:
     - theme: brand
       text: About Me
