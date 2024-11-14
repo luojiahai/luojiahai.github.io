@@ -21,10 +21,9 @@ features:
 
 ##
 
-```ts:line-numbers
-while (true) {
-  listen(ape1.cry() && ape2.cry());
-  boat.pass(mountain);
-  if (mountain > 10000) break;
+```js
+var n = 3;
+for (var i = 0; i < n; i++) {
+	console.log("問天地好在。");
 }
 ```
