@@ -16,7 +16,7 @@ hero:
 features:
   - title: 我是谁
     details: |
-      🤗 我的性格是INTJ（建筑师）。<br>🔭 我是一名软件开发工程师。<br>🌱 我喜欢吃饭、做饭、逛超市。<br>📫 如果联系我：luo[at]jiahai.co
+      🤗 INTJ<br>🔭 软件开发者<br>🌱 吃饭、做饭、逛超市<br>📫 luo[at]jiahai.co
 ---
 
 ##
