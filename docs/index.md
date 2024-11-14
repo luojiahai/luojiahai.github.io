@@ -22,7 +22,7 @@ features:
 ##
 
 ```ts
-let n = 3;
+const n = 3;
 for (let i = 0; i < n; i++) {
 	console.log("問天地好在。");
 }
