@@ -16,7 +16,7 @@ hero:
 features:
   - title: whoami
     details: |
-      🤗 INTJ<br>🔭 Software developer<br>🌱 Eating, cooking, grocery shopping<br>📫 luo[at]jiahai.co
+      🤗 INTJ<br>🔭 software developer<br>🌱 eating, cooking, grocery shopping<br>📫 luo[at]jiahai.co
 ---
 
 ##
