@@ -11,7 +11,7 @@ hero:
       link: /about
     - theme: alt
       text: resume
-      link: /cv
+      link: /resume
 
 features:
   - title: whoami
