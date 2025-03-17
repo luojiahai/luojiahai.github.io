@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 export const en = defineConfig({
   lang: 'en-US',
   title: 'luojiahai',
-  description: 'this is a useless site.',
+  description: 'this is a useless site',
 
   themeConfig: {
     nav: nav(),
