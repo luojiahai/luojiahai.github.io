@@ -1,7 +1,7 @@
-# CV
+# Resume
 
 ::: info
-This CV is a preview and does not contain the details. I can provide my full CV upon request.
+This resume is a preview and does not contain the details. I can provide my full resume upon request.
 
 - To **recruiters and hiring managers**,
   > If you would like to contact me, please send an inquiry via LinkedIn direct message with job description and compensation details. Inquiries without compensation details will not receive a response. Currently not considering relocation outside of Melbourne.
