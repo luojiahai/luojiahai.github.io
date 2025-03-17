@@ -20,7 +20,6 @@ npm -v
 
 ## Running
 
-Windows:
 ```shell
 # install dependencies
 npm install
