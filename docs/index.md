@@ -16,7 +16,7 @@ hero:
 features:
   - title: whoami
     details: |
-      🤗 INTJ<br>🔭 software developer<br>🌱 eating, cooking, grocery shopping<br>📫 luo[at]jiahai.co
+      🤗 intj assertive personality<br>🔭 non-senior earth resident<br>🌱 eating, cooking, grocery shopping<br>📫 luo[at]jiahai.co
 ---
 
 ##
