@@ -11,7 +11,7 @@ hero:
       link: /zh/about
     - theme: alt
       text: 简历
-      link: /zh/cv
+      link: /zh/resume
 
 features:
   - title: 我是谁
