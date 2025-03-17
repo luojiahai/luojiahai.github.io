@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: this is a useless site.
+  text: this is a useless site
   actions:
     - theme: brand
       text: about
