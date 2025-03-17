@@ -7,10 +7,10 @@ hero:
   text: 这是一个没用的网站。
   actions:
     - theme: brand
-      text: 关于我
+      text: 关于
       link: /zh/about
     - theme: alt
-      text: 我的简历
+      text: 简历
       link: /zh/cv
 
 features:
