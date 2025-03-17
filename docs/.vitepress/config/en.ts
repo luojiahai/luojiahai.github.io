@@ -18,6 +18,6 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: 'home', link: '/' },
     { text: 'about', link: '/about' },
-    { text: 'resume', link: '/cv' },
+    { text: 'resume', link: '/resume' },
   ];
 }
