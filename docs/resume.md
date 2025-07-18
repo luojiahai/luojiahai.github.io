@@ -26,10 +26,10 @@ This resume is a preview and does not contain the details. I can provide my full
 ## 🏢 Experience
 
 - **REA Group (realestate.com.au)**
-  - **Position**: Senior Software Developer
+  - **Position**: Senior Software Engineer
   - **Location**: Richmond, Victoria, Australia
 - **REA Group (realestate.com.au)**
-  - **Position**: Software Developer
+  - **Position**: Software Engineer
   - **Location**: Richmond, Victoria, Australia
 - **Amazon Web Services (AWS)**
   - **Position**: Software Development Engineer
