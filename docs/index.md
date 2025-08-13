@@ -5,9 +5,21 @@ title: luojiahai
 hero:
   name: luojiahai
   text: this is a useless site
-
-features:
-  - title: whoami
-    details: |
-      🤗 intj-assertive (personality)<br>🔭 non-senior earth resident<br>🌱 eating, cooking, grocery shopping<br>📫 luo[at]jiahai.co
 ---
+
+::: code-group
+
+```ts [profile.ts] :line-numbers
+export const profile = {
+  name: "luojiahai",
+  mbti: {
+    code: "intj",
+    name: "architect",
+  },
+  email: "luo[at]jiahai.co".replace("[at]", "@"),
+  title: "non-senior earth resident",
+  professional_title: "senior software engineer",
+};
+```
+
+:::
