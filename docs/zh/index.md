@@ -14,7 +14,7 @@ export const profile = {
   name: "luojiahai",
   mbti: {
     code: "intj",
-    name: "architect",
+    name: "建筑师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   title: "低级地球居民",
