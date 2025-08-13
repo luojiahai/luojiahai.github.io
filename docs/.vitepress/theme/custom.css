@@ -1,32 +1,33 @@
 :root {
-  --background: #FFFFFF;
-  --background-alt: #F1F2F3;
-  --text-1: #18191C;
-  --text-2: #61666D;
-  --text-3: #9499A0;
-  --brand-1: #FF6699;
-  --brand-2: #FF8CB0;
+  --background: #ffffff;
+  --background-alt: #f1f2f3;
+  --text-1: #18191c;
+  --text-2: #61666d;
+  --text-3: #9499a0;
+  --brand-1: #ff6699;
+  --brand-2: #ff8cb0;
   --brand-soft: rgba(255, 102, 153, 0.14);
-  --brand-alt-1: #00AEEC;
-  --brand-alt-2: #40C5F1;
+  --brand-alt-1: #00aeec;
+  --brand-alt-2: #40c5f1;
   --brand-alt-soft: rgba(0, 174, 236, 0.14);
-  --border: #E3E5E7;
+  --border: #e3e5e7;
 }
 
 .dark {
-  --background: #0E0E0E;
-  --background-alt: #18191C;
-  --text-1: #F6F7F8;
-  --text-2: #C9CCD0;
-  --text-3: #9499A0;
+  --background: #0e0e0e;
+  --background-alt: #18191c;
+  --text-1: #f6f7f8;
+  --text-2: #c9ccd0;
+  --text-3: #9499a0;
   --brand-soft: rgba(255, 102, 153, 0.16);
   --brand-alt-soft: rgba(0, 174, 236, 0.16);
-  --border: #2F3238;
+  --border: #2f3238;
 }
 
 :root {
-  --vp-font-family-base: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', sans-serif;
-  --vp-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --vp-font-family-base: "PingFang SC", "Helvetica Neue", Helvetica, Arial,
+    "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 :root {

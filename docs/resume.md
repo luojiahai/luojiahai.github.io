@@ -9,7 +9,7 @@ This resume is a preview and does not contain the details. I can provide my full
   > Please don't contact me. All inquiries from you will not receive a response.
 - To **other mates**,
   > I'm happy to chat with you and respond to any inquiries that I can answer. I offer free mentoring and tutoring, but my availability is limited. Please express your interest via email.
-:::
+  > :::
 
 ## 🎓 Education
 

@@ -1,9 +1,9 @@
-import { defineConfig } from 'vitepress'
-import { search as zhSearch } from './zh'
+import { defineConfig } from "vitepress";
+import { search as zhSearch } from "./zh";
 
 export const shared = defineConfig({
   rewrites: {
-    'en/:rest*': ':rest*',
+    "en/:rest*": ":rest*",
   },
 
   lastUpdated: true,
@@ -15,9 +15,9 @@ export const shared = defineConfig({
   },
 
   sitemap: {
-    hostname: 'https://luojiahai.com',
+    hostname: "https://luojiahai.com",
     transformItems(items) {
-      return items.filter((item) => !item.url.includes('migration'));
+      return items.filter((item) => !item.url.includes("migration"));
     },
   },
 
@@ -42,19 +42,19 @@ export const shared = defineConfig({
     // logo: { src: '/apple-touch-icon.png' },
 
     socialLinks: [
-      { icon: 'x', link: 'https://x.com/luojiahai' },
-      { icon: 'instagram', link: 'https://instagram.com/luojiahai' },
-      { icon: 'linkedin', link: 'https://linkedin.com/in/luojiahai' },
-      { icon: 'github', link: 'https://github.com/luojiahai' },
+      { icon: "x", link: "https://x.com/luojiahai" },
+      { icon: "instagram", link: "https://instagram.com/luojiahai" },
+      { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
+      { icon: "github", link: "https://github.com/luojiahai" },
     ],
 
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          ...zhSearch,
-        },
-      },
-    },
+    // search: {
+    //   provider: 'local',
+    //   options: {
+    //     locales: {
+    //       ...zhSearch,
+    //     },
+    //   },
+    // },
   },
 });
