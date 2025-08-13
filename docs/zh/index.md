@@ -5,13 +5,6 @@ title: luojiahai
 hero:
   name: luojiahai
   text: 这是一个没用的网站
-  actions:
-    - theme: brand
-      text: 关于
-      link: /zh/about
-    - theme: alt
-      text: 简历
-      link: /zh/resume
 
 features:
   - title: 我是谁
