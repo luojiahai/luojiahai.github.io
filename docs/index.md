@@ -5,13 +5,6 @@ title: luojiahai
 hero:
   name: luojiahai
   text: this is a useless site
-  actions:
-    - theme: brand
-      text: about
-      link: /about
-    - theme: alt
-      text: resume
-      link: /resume
 
 features:
   - title: whoami
