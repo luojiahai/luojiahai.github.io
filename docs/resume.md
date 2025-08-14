@@ -1,15 +1,21 @@
 # Resume
 
 ::: info
-This resume is a preview and does not contain the details. I can provide my full resume upon request.
+This is a preview of my resume and does not include full details. The complete version is available upon request.
 
-- To **recruiters and hiring managers**,
-  > If you would like to contact me, please send an inquiry via LinkedIn direct message with job description and compensation details. Inquiries without compensation details will not receive a response. Currently not considering relocation outside of Melbourne.
-- To **recruitment agents and head hunters**,
-  > Please don't contact me. All inquiries from you will not receive a response.
-- To **other mates**,
-  > I'm happy to chat with you and respond to any inquiries that I can answer. I offer free mentoring and tutoring, but my availability is limited. Please express your interest via email.
-  > :::
+- Recruiters & Hiring Managers
+
+  > Please contact me via LinkedIn direct message, including the job description and compensation details. Messages without compensation information will not receive a response. I am not considering relocation outside Melbourne.
+
+- Recruitment Agents & Headhunters
+
+  > I am not seeking engagement through agencies. All such inquiries will be ignored.
+
+- Friends & Colleagues
+
+  > Happy to chat and answer questions where I can. I offer free mentoring and tutoring, subject to limited availability — please email me to express interest.
+
+:::
 
 ## 🎓 Education
 
