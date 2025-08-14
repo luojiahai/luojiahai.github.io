@@ -17,6 +17,7 @@ export const profile = {
     name: "建筑师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
+  website: "luojiahai.com",
   title: "低级地球居民",
   professional_title: "高级软件工程师",
 };
