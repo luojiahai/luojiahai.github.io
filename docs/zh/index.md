@@ -24,7 +24,7 @@ export default {
   website: "luojiahai.com/zh",
   languages: ["中文普通话", "中文广东话", "英文"],
   professions: ["软件工程", "站点可靠性工程"],
-};
+} satisfies WhoAmI;
 ```
 
 ```typescript [resume.ts] :line-numbers
