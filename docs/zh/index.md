@@ -27,7 +27,7 @@ export default {
 ```
 
 ```typescript [resume.ts] :line-numbers
-// 这是我的简历预览版。完整版本可按需提供。
+// 这是我的简历预览版，仅包含有限的信息。完整版本可按需提供。
 // 请通过领英联系，并注明职位及薪资细节（仅限墨尔本或远程；谢绝中介）。
 
 import { Resume } from "./types";
