@@ -13,7 +13,7 @@ hero:
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: "luojiahai",
-  self_declared_title: "低级地球居民",
+  self_proclaimed_title: "低级地球居民",
   mbti: {
     code: "intj",
     identity: "assertive",
