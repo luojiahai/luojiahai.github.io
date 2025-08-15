@@ -21,6 +21,56 @@ export default {
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: "luojiahai.com",
+  languages: ["中文普通话", "中文广东话", "英文"],
+};
+```
+
+```typescript [resume.ts] :line-numbers
+export default {
+  education: [
+    {
+      institution: "墨尔本大学",
+      degree: "理学硕士（计算机科学）",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      institution: "墨尔本大学",
+      degree: "理学学士",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      institution: "北京大学",
+      program: "暑期学校国际课程",
+      location: "中国北京",
+    },
+  ],
+  experience: [
+    {
+      company: "REA 集团（realestate.com.au）",
+      position: "高级软件工程师",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      company: "REA 集团（realestate.com.au）",
+      position: "软件工程师",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      company: "亚马逊云科技（AWS）",
+      position: "软件开发工程师",
+      location: "澳大利亚悉尼",
+    },
+    {
+      company: "德勤",
+      position: "软件开发顾问",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      company: "墨尔本大学",
+      position: "教学助理",
+      location: "澳大利亚墨尔本",
+    },
+  ],
 };
 ```
 

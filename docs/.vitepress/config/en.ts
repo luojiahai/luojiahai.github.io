@@ -15,8 +15,5 @@ export const en = defineConfig({
 });
 
 function nav(): DefaultTheme.NavItem[] {
-  return [
-    { text: "Home", link: "/" },
-    { text: "Resume", link: "/resume" },
-  ];
+  return [{ text: "Home", link: "/" }];
 }

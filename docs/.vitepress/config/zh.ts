@@ -39,10 +39,7 @@ export const zh = defineConfig({
 });
 
 function nav(): DefaultTheme.NavItem[] {
-  return [
-    { text: "首页", link: "/zh/" },
-    { text: "简历", link: "/zh/resume" },
-  ];
+  return [{ text: "首页", link: "/zh/" }];
 }
 
 export const search: DefaultTheme.AlgoliaSearchOptions["locales"] = {
