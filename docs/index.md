@@ -104,3 +104,7 @@ export interface Resume {
 ```
 
 :::
+
+> <small>
+> Disclaimer: I’m using TypeScript just to make it easier for you to read, not because I like it.
+> </small>
