@@ -80,7 +80,7 @@ interface Personality {
 
 export interface WhoAmI {
   name: string;
-  selfProclaimedTitle: string;
+  title: string;
   personality: Personality;
   email: string;
   website: URL;
@@ -90,17 +90,11 @@ export interface WhoAmI {
 interface Education {
   school: string;
   degree: string;
-  location?: string;
-  startDate?: Date;
-  endDate?: Date;
 }
 
 interface Experience {
   company: string;
   title: string;
-  location?: string;
-  startDate?: Date;
-  endDate?: Date;
 }
 
 export interface Resume {
