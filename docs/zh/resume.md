@@ -1,6 +1,7 @@
 # 简历
 
 ::: info
+
 这是我的简历预览版，不包含完整细节。完整版本可按需提供。
 
 - 招聘人员与用人经理
@@ -23,18 +24,18 @@
 {
   "education": [
     {
-      "school": "墨尔本大学",
+      "institution": "墨尔本大学",
       "degree": "理学硕士（计算机科学）",
       "location": "澳大利亚墨尔本"
     },
     {
-      "school": "墨尔本大学",
+      "institution": "墨尔本大学",
       "degree": "理学学士",
       "location": "澳大利亚墨尔本"
     },
     {
-      "school": "北京大学",
-      "course": "暑期学校国际课程",
+      "institution": "北京大学",
+      "program": "暑期学校国际课程",
       "location": "中国北京"
     }
   ],
@@ -66,8 +67,8 @@
     }
   ],
   "skills": {
-    "roles": ["全栈软件开发工程", "云计算工程", "站点可靠性工程"],
-    "technologies": [
+    "functional": ["全栈软件开发", "云计算", "站点可靠性工程"],
+    "technical": [
       "Python",
       "TypeScript",
       "Java",

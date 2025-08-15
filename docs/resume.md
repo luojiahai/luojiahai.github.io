@@ -1,6 +1,7 @@
 # Resume
 
 ::: info
+
 This is a preview of my resume and does not include full details. The complete version is available upon request.
 
 - Recruiters & Hiring Managers
@@ -67,8 +68,8 @@ This is a preview of my resume and does not include full details. The complete v
   ],
   "skills": {
     "functional": [
-      "Full-Stack Software Development Engineering",
-      "Cloud Engineering",
+      "Full-Stack Software Development",
+      "Cloud Computing",
       "Site Reliability Engineering"
     ],
     "technical": [

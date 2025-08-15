@@ -10,18 +10,18 @@ hero:
 
 ::: code-group
 
-```json [whoami.json] :line-numbers
-{
-  "name": "luojiahai",
-  "title": "non-senior earth resident",
-  "mbti": {
-    "code": "intj",
-    "identity": "assertive",
-    "name": "architect"
+```typescript [whoami.ts] :line-numbers
+export default {
+  name: "luojiahai",
+  title: "non-senior earth resident",
+  mbti: {
+    code: "intj",
+    identity: "assertive",
+    name: "architect",
   },
-  "email": "luo@jiahai.co",
-  "website": "luojiahai.com"
-}
+  email: "luo[at]jiahai.co".replace("[at]", "@"),
+  website: "luojiahai.com",
+};
 ```
 
 :::
