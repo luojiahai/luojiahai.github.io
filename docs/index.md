@@ -15,9 +15,9 @@ export default {
   name: "luojiahai",
   selfProclaimedTitle: "non-senior earth resident",
   personality: {
-    type: "intj",
+    code: "intj",
     identity: "assertive",
-    friendlyName: "architect",
+    type: "architect",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: "luojiahai.com",
