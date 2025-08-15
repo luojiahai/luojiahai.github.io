@@ -13,7 +13,7 @@ hero:
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: "luojiahai",
-  title: "non-senior earth resident",
+  self_declared_title: "non-senior earth resident",
   mbti: {
     code: "intj",
     identity: "assertive",
@@ -22,6 +22,7 @@ export default {
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: "luojiahai.com",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
+  professional: "software engineering",
 };
 ```
 

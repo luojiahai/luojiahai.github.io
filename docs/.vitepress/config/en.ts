@@ -6,14 +6,8 @@ export const en = defineConfig({
   description: "non-senior earth resident",
 
   themeConfig: {
-    nav: nav(),
-
     footer: {
-      copyright: `Copyright © 2019-${new Date().getFullYear()} luojiahai`,
+      copyright: `Copyright © 2015-${new Date().getFullYear()} luojiahai`,
     },
   },
 });
-
-function nav(): DefaultTheme.NavItem[] {
-  return [{ text: "Home", link: "/" }];
-}

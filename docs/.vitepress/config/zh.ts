@@ -6,10 +6,8 @@ export const zh = defineConfig({
   description: "低级地球居民",
 
   themeConfig: {
-    nav: nav(),
-
     footer: {
-      copyright: `版权所有 © 2019-${new Date().getFullYear()} luojiahai`,
+      copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
 
     docFooter: {
@@ -37,10 +35,6 @@ export const zh = defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
   },
 });
-
-function nav(): DefaultTheme.NavItem[] {
-  return [{ text: "首页", link: "/zh/" }];
-}
 
 export const search: DefaultTheme.AlgoliaSearchOptions["locales"] = {
   zh: {
