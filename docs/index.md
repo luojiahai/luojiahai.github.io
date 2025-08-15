@@ -23,7 +23,6 @@ export default {
   email: "luo[at]jiahai.co".replace("[at]", "@"), // email is obfuscated to prevent spam; replace [at] with @
   website: new URL("https://luojiahai.com/"),
   languages: ["mandarin chinese", "cantonese chinese", "english"],
-  professions: ["software engineering", "site reliability engineering"],
 } satisfies WhoAmI;
 ```
 
@@ -86,7 +85,6 @@ export interface WhoAmI {
   email: string;
   website: URL;
   languages: string[];
-  professions: string[];
 }
 
 interface Education {
