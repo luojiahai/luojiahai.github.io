@@ -22,7 +22,7 @@ export default {
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: "luojiahai.com",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
-  professional: "software engineering",
+  professional: ["software engineering", "site reliability engineering"],
 };
 ```
 
