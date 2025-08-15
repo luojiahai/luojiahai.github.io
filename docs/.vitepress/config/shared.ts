@@ -54,13 +54,13 @@ export const shared = defineConfig({
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
 
-    // search: {
-    //   provider: 'local',
-    //   options: {
-    //     locales: {
-    //       ...zhSearch,
-    //     },
-    //   },
-    // },
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          ...zhSearch,
+        },
+      },
+    },
   },
 });
