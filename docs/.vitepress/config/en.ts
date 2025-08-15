@@ -9,7 +9,7 @@ export const en = defineConfig({
     nav: nav(),
 
     footer: {
-      copyright: `copyright © 2019-${new Date().getFullYear()} luojiahai`,
+      copyright: `Copyright © 2019-${new Date().getFullYear()} luojiahai`,
     },
   },
 });
