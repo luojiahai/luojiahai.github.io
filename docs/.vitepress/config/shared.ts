@@ -32,7 +32,7 @@ export const shared = defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { 
       rel: 'stylesheet', 
-      href: 'https://fonts.googleapis.com/css2?family=Cascadia+Code&family=Cascadia+Mono&family=Source+Code+Pro&display=swap' 
+      href: 'https://fonts.googleapis.com/css2?family=Cascadia+Code&family=Cascadia+Mono&display=swap' 
     }],
     ['meta', { name: 'theme-color', content: '#FF6699' }],
     ['meta', { property: 'og:type', content: 'website' }],
