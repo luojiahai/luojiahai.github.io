@@ -40,7 +40,7 @@ export const shared = defineConfig({
     ['meta', { property: 'og:site_name', content: 'luojiahai' }],
     ['meta', { property: 'og:title', content: 'luojiahai' }],
     ['meta', { property: 'og:description', content: '' }],
-    ['meta', { property: 'og:image', content: 'https://luojiahai.com/zhu.png' }],
+    ['meta', { property: 'og:image', content: 'https://luojiahai.com/image.png' }],
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
 
