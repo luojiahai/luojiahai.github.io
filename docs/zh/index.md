@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: 这是一个没用的网站
+  text: 低级地球居民
 ---
 
 ::: code-group

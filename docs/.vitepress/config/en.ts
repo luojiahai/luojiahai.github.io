@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 export const en = defineConfig({
   lang: "en-US",
   title: "luojiahai",
-  description: "this is a useless site",
+  description: "non-senior earth resident",
 
   themeConfig: {
     nav: nav(),
@@ -16,7 +16,7 @@ export const en = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: "home", link: "/" },
-    { text: "resume", link: "/resume" },
+    { text: "Home", link: "/" },
+    { text: "Resume", link: "/resume" },
   ];
 }

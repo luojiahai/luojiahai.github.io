@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: this is a useless site
+  text: non-senior earth resident
 ---
 
 ::: code-group
