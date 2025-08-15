@@ -66,21 +66,7 @@ export default {
       location: "澳大利亚墨尔本",
     },
   ],
-  skills: {
-    functional: ["全栈软件开发", "云计算", "站点可靠性工程"],
-    technical: [
-      "Python",
-      "TypeScript",
-      "Java",
-      "C",
-      "AWS",
-      "Docker",
-      "GraphQL",
-      "Node.js",
-      "React",
-      "LaTeX",
-    ],
-  },
+  skills: getSkills(),
   additional: {
     languages: ["中文普通话", "中文广东话", "英文"],
   },

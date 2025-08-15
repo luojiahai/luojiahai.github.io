@@ -66,25 +66,7 @@ export default {
       location: "Parkville, Victoria, Australia",
     },
   ],
-  skills: {
-    functional: [
-      "Full-Stack Software Development",
-      "Cloud Computing",
-      "Site Reliability Engineering",
-    ],
-    technical: [
-      "Python",
-      "TypeScript",
-      "Java",
-      "C",
-      "AWS",
-      "Docker",
-      "GraphQL",
-      "Node.js",
-      "React",
-      "LaTeX",
-    ],
-  },
+  skills: getSkills(),
   additional_information: {
     languages: ["English", "Mandarin Chinese", "Cantonese Chinese"],
   },
