@@ -15,7 +15,7 @@ import { WhoAmI } from "./types";
 
 export default {
   name: "luojiahai",
-  selfProclaimedTitle: "低级地球居民",
+  title: "低级地球居民",
   personality: {
     code: "intj",
     type: "架构师",
