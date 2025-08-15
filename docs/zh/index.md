@@ -20,7 +20,7 @@ export default {
     name: "架构师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: "luojiahai.com",
+  website: "luojiahai.com/zh",
   languages: ["中文普通话", "中文广东话", "英文"],
   professional: ["软件工程", "站点可靠性工程"],
 };
