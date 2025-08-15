@@ -38,44 +38,36 @@ export default {
     {
       school: "The University of Melbourne",
       degree: "Master of Science (Computer Science)",
-      location: "Parkville, Victoria, Australia",
     },
     {
       school: "The University of Melbourne",
       degree: "Bachelor of Science",
-      location: "Parkville, Victoria, Australia",
     },
     {
       school: "Peking University",
       degree: "Summer School International Program",
-      location: "Beijing, China",
     },
   ],
   experience: [
     {
       company: "REA Group (realestate.com.au)",
       title: "Senior Software Engineer",
-      location: "Richmond, Victoria, Australia",
     },
     {
       company: "REA Group (realestate.com.au)",
       title: "Software Engineer",
-      location: "Richmond, Victoria, Australia",
     },
     {
       company: "Amazon Web Services (AWS)",
       title: "Software Development Engineer",
-      location: "Sydney, New South Wales, Australia",
     },
     {
       company: "Deloitte",
       title: "Software Development Consultant",
-      location: "Melbourne, Victoria, Australia",
     },
     {
       company: "The University of Melbourne",
       title: "Teaching Assistant",
-      location: "Parkville, Victoria, Australia",
     },
   ],
 } satisfies Resume;
@@ -100,7 +92,7 @@ export interface WhoAmI {
 interface Education {
   school: string;
   degree: string;
-  location: string;
+  location?: string;
   startDate?: Date;
   endDate?: Date;
 }
@@ -108,7 +100,7 @@ interface Education {
 interface Experience {
   company: string;
   title: string;
-  location: string;
+  location?: string;
   startDate?: Date;
   endDate?: Date;
 }
