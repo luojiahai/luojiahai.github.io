@@ -17,41 +17,73 @@
 
 :::
 
-## 🎓 教育背景
+::: code-group
 
-- **墨尔本大学**
-  - **学位**：理学硕士（计算机科学）
-  - **地点**：澳大利亚墨尔本
-- **墨尔本大学**
-  - **学位**：理学学士
-  - **地点**：澳大利亚墨尔本
-- **北京大学**
-  - **课程**：暑期学校国际课程
-  - **地点**：中国北京
+```json [简历.json] :line-numbers
+{
+  "education": [
+    {
+      "school": "墨尔本大学",
+      "degree": "理学硕士（计算机科学）",
+      "location": "澳大利亚墨尔本"
+    },
+    {
+      "school": "墨尔本大学",
+      "degree": "理学学士",
+      "location": "澳大利亚墨尔本"
+    },
+    {
+      "school": "北京大学",
+      "course": "暑期学校国际课程",
+      "location": "中国北京"
+    }
+  ],
+  "experience": [
+    {
+      "company": "REA 集团（realestate.com.au）",
+      "position": "高级软件工程师",
+      "location": "澳大利亚墨尔本"
+    },
+    {
+      "company": "REA 集团（realestate.com.au）",
+      "position": "软件工程师",
+      "location": "澳大利亚墨尔本"
+    },
+    {
+      "company": "亚马逊云科技（AWS）",
+      "position": "软件开发工程师",
+      "location": "澳大利亚悉尼"
+    },
+    {
+      "company": "德勤",
+      "position": "软件开发顾问",
+      "location": "澳大利亚墨尔本"
+    },
+    {
+      "company": "墨尔本大学",
+      "position": "教学助理",
+      "location": "澳大利亚墨尔本"
+    }
+  ],
+  "skills": {
+    "roles": ["全栈软件开发工程", "云计算工程", "站点可靠性工程"],
+    "technologies": [
+      "Python",
+      "TypeScript",
+      "Java",
+      "C",
+      "AWS",
+      "Docker",
+      "GraphQL",
+      "Node.js",
+      "React",
+      "LaTeX"
+    ]
+  },
+  "additional": {
+    "languages": ["中文普通话", "中文广东话", "英文"]
+  }
+}
+```
 
-## 🏢 工作经验
-
-- **REA 集团（realestate.com.au）**
-  - **职位**：高级软件工程师
-  - **地点**：澳大利亚墨尔本
-- **REA 集团（realestate.com.au）**
-  - **职位**：软件工程师
-  - **地点**：澳大利亚墨尔本
-- **亚马逊云科技（AWS）**
-  - **职位**：软件开发工程师
-  - **地点**：澳大利亚悉尼
-- **德勤**
-  - **职位**：软件开发顾问
-  - **地点**：澳大利亚墨尔本
-- **墨尔本大学**
-  - **职位**：教学助理
-  - **地点**：澳大利亚墨尔本
-
-## 🚀 专业技能
-
-- **功能**：全栈软件开发工程、云计算工程、站点可靠性工程
-- **技术**：Python、TypeScript、Java、C、AWS、Docker、GraphQL、Node.js、React、LaTeX
-
-## 🌱 附加信息
-
-- **语言**：中文普通话、中文广东话、英文
+:::

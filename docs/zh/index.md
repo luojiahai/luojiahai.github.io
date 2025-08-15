@@ -9,7 +9,7 @@ hero:
 
 ::: code-group
 
-```json [profile.json] :line-numbers
+```json [个人资料.json] :line-numbers
 {
   "name": "luojiahai",
   "title": "低级地球居民",
