@@ -9,4 +9,7 @@ export default defineConfig({
     root: { label: "English", ...en },
     zh: { label: "简体中文", ...zh },
   },
+  markdown: {
+    theme: { light: "github-light-default", dark: "github-dark-default" },
+  },
 });

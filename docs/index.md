@@ -5,23 +5,24 @@ title: luojiahai
 hero:
   name: luojiahai
   text: non-senior earth resident
+  tagline: howdy!
 ---
 
 ::: code-group
 
-```ts [profile.ts] :line-numbers
-export const profile = {
-  name: "luojiahai",
-  mbti: {
-    code: "intj",
-    identity: "assertive",
-    name: "architect",
+```json [profile.json] :line-numbers
+{
+  "name": "luojiahai",
+  "title": "non-senior earth resident",
+  "professional_title": "senior software engineer",
+  "mbti": {
+    "code": "intj",
+    "identity": "assertive",
+    "name": "architect"
   },
-  email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: "luojiahai.com",
-  title: "non-senior earth resident",
-  professional_title: "senior software engineer",
-};
+  "email": "luo@jiahai.co",
+  "website": "luojiahai.com"
+}
 ```
 
 :::

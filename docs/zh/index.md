@@ -9,19 +9,19 @@ hero:
 
 ::: code-group
 
-```ts [profile.ts] :line-numbers
-export const profile = {
-  name: "luojiahai",
-  mbti: {
-    code: "intj",
-    identity: "assertive",
-    name: "架构师",
+```json [profile.json] :line-numbers
+{
+  "name": "luojiahai",
+  "title": "低级地球居民",
+  "professional_title": "高级软件工程师",
+  "mbti": {
+    "code": "intj",
+    "identity": "assertive",
+    "name": "架构师"
   },
-  email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: "luojiahai.com",
-  title: "低级地球居民",
-  professional_title: "高级软件工程师",
-};
+  "email": "luo@jiahai.co",
+  "website": "luojiahai.com"
+}
 ```
 
 :::
