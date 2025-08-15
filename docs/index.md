@@ -36,20 +36,30 @@ import { Resume } from "./types";
 export default {
   education: [
     {
-      institution: "The University of Melbourne",
-      degree: ["Master of Science (Computer Science)", "Bachelor of Science"],
+      school: "The University of Melbourne",
+      degree: "Master of Science (Computer Science)",
       location: "Parkville, Victoria, Australia",
     },
     {
-      institution: "Peking University",
-      program: "Summer School International Program",
+      school: "The University of Melbourne",
+      degree: "Bachelor of Science",
+      location: "Parkville, Victoria, Australia",
+    },
+    {
+      school: "Peking University",
+      degree: "Summer School International Program",
       location: "Beijing, China",
     },
   ],
   experience: [
     {
       company: "REA Group (realestate.com.au)",
-      title: ["Senior Software Engineer", "Software Engineer"],
+      title: "Senior Software Engineer",
+      location: "Richmond, Victoria, Australia",
+    },
+    {
+      company: "REA Group (realestate.com.au)",
+      title: "Software Engineer",
       location: "Richmond, Victoria, Australia",
     },
     {
@@ -88,16 +98,19 @@ export interface WhoAmI {
 }
 
 interface Education {
-  institution: string;
-  degree?: string | string[];
-  program?: string | string[];
+  school: string;
+  degree: string;
   location: string;
+  startDate?: Date;
+  endDate?: Date;
 }
 
 interface Experience {
   company: string;
-  title: string | string[];
+  title: string;
   location: string;
+  startDate?: Date;
+  endDate?: Date;
 }
 
 export interface Resume {

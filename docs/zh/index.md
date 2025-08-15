@@ -36,20 +36,30 @@ import { Resume } from "./types";
 export default {
   education: [
     {
-      institution: "墨尔本大学",
-      degree: ["理学硕士（计算机科学）", "理学学士"],
+      school: "墨尔本大学",
+      degree: "理学硕士（计算机科学）",
       location: "澳大利亚墨尔本",
     },
     {
-      institution: "北京大学",
-      program: "暑期学校国际课程",
+      school: "墨尔本大学",
+      degree: "理学学士",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      school: "北京大学",
+      degree: "暑期学校国际课程",
       location: "中国北京",
     },
   ],
   experience: [
     {
       company: "REA 集团（realestate.com.au）",
-      title: ["高级软件工程师", "软件工程师"],
+      title: "高级软件工程师",
+      location: "澳大利亚墨尔本",
+    },
+    {
+      company: "REA 集团（realestate.com.au）",
+      title: "软件工程师",
       location: "澳大利亚墨尔本",
     },
     {
@@ -88,16 +98,19 @@ export interface WhoAmI {
 }
 
 interface Education {
-  institution: string;
-  degree?: string | string[];
-  program?: string | string[];
+  school: string;
+  degree: string;
   location: string;
+  startDate?: Date;
+  endDate?: Date;
 }
 
 interface Experience {
   company: string;
-  title: string | string[];
+  title: string;
   location: string;
+  startDate?: Date;
+  endDate?: Date;
 }
 
 export interface Resume {
