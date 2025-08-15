@@ -14,10 +14,10 @@ hero:
 export default {
   name: "luojiahai",
   selfProclaimedTitle: "低级地球居民",
-  mbti: {
-    code: "intj",
+  personality: {
+    type: "intj",
     identity: "assertive",
-    name: "架构师",
+    friendlyName: "架构师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: "luojiahai.com/zh",
