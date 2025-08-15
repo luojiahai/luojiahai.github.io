@@ -20,59 +20,59 @@ This is a preview of my resume and does not include full details. The complete v
 
 ::: code-group
 
-```json [resume.json] :line-numbers
-{
-  "education": [
+```typescript [resume.ts] :line-numbers
+export default {
+  education: [
     {
-      "institution": "The University of Melbourne",
-      "degree": "Master of Science (Computer Science)",
-      "location": "Parkville, Victoria, Australia"
+      institution: "The University of Melbourne",
+      degree: "Master of Science (Computer Science)",
+      location: "Parkville, Victoria, Australia",
     },
     {
-      "institution": "The University of Melbourne",
-      "degree": "Bachelor of Science",
-      "location": "Parkville, Victoria, Australia"
+      institution: "The University of Melbourne",
+      degree: "Bachelor of Science",
+      location: "Parkville, Victoria, Australia",
     },
     {
-      "institution": "Peking University",
-      "program": "Summer School International Program",
-      "location": "Beijing, China"
-    }
+      institution: "Peking University",
+      program: "Summer School International Program",
+      location: "Beijing, China",
+    },
   ],
-  "experience": [
+  experience: [
     {
-      "company": "REA Group (realestate.com.au)",
-      "position": "Senior Software Engineer",
-      "location": "Richmond, Victoria, Australia"
+      company: "REA Group (realestate.com.au)",
+      position: "Senior Software Engineer",
+      location: "Richmond, Victoria, Australia",
     },
     {
-      "company": "REA Group (realestate.com.au)",
-      "position": "Software Engineer",
-      "location": "Richmond, Victoria, Australia"
+      company: "REA Group (realestate.com.au)",
+      position: "Software Engineer",
+      location: "Richmond, Victoria, Australia",
     },
     {
-      "company": "Amazon Web Services (AWS)",
-      "position": "Software Development Engineer",
-      "location": "Sydney, New South Wales, Australia"
+      company: "Amazon Web Services (AWS)",
+      position: "Software Development Engineer",
+      location: "Sydney, New South Wales, Australia",
     },
     {
-      "company": "Deloitte",
-      "position": "Software Development Consultant",
-      "location": "Melbourne, Victoria, Australia"
+      company: "Deloitte",
+      position: "Software Development Consultant",
+      location: "Melbourne, Victoria, Australia",
     },
     {
-      "company": "The University of Melbourne",
-      "position": "Teaching Assistant",
-      "location": "Parkville, Victoria, Australia"
-    }
+      company: "The University of Melbourne",
+      position: "Teaching Assistant",
+      location: "Parkville, Victoria, Australia",
+    },
   ],
-  "skills": {
-    "functional": [
+  skills: {
+    functional: [
       "Full-Stack Software Development",
       "Cloud Computing",
-      "Site Reliability Engineering"
+      "Site Reliability Engineering",
     ],
-    "technical": [
+    technical: [
       "Python",
       "TypeScript",
       "Java",
@@ -82,13 +82,13 @@ This is a preview of my resume and does not include full details. The complete v
       "GraphQL",
       "Node.js",
       "React",
-      "LaTeX"
-    ]
+      "LaTeX",
+    ],
   },
-  "additional_information": {
-    "languages": ["English", "Mandarin Chinese", "Cantonese Chinese"]
-  }
-}
+  additional_information: {
+    languages: ["English", "Mandarin Chinese", "Cantonese Chinese"],
+  },
+};
 ```
 
 :::
