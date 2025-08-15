@@ -21,7 +21,7 @@ export default {
     type: "架构师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"), // 电子邮箱已进行混淆以防垃圾邮件，请将 [at] 替换为 @
-  website: "luojiahai.com/zh",
+  website: new URL("zh", "https://luojiahai.com/"),
   languages: ["中文普通话", "中文广东话", "英文"],
   professions: ["软件工程", "站点可靠性工程"],
 } satisfies WhoAmI;
@@ -92,7 +92,7 @@ export interface WhoAmI {
   selfProclaimedTitle: string;
   personality: Personality;
   email: string;
-  website: string;
+  website: URL;
   languages: string[];
   professions: string[];
 }
