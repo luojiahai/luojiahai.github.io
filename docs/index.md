@@ -28,8 +28,7 @@ export default {
 
 ```typescript [resume.ts] :line-numbers
 // It is a preview of my resume. Full version available upon request.
-// Please contact via LinkedIn with role and compensation details
-// (Melbourne or remote only; no agency inquiries).
+// Please contact via LinkedIn with role and compensation details (Melbourne or remote only; no agency inquiries).
 
 export default {
   education: [
