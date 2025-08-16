@@ -6,11 +6,6 @@ hero:
   name: luojiahai
   text: non-senior earth resident
   tagline: Hello, World!
-  actions:
-    - theme: brand
-      text: Howdy
-    - theme: alt
-      text: Useless Button
 ---
 
 ::: code-group
