@@ -8,7 +8,7 @@ hero:
   tagline: Hello, World!
   actions:
     - theme: brand
-      text: Howdy!
+      text: Howdy
     - theme: alt
       text: Useless Button
 ---

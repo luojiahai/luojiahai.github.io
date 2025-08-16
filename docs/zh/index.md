@@ -8,7 +8,7 @@ hero:
   tagline: 你好，世界！
   actions:
     - theme: brand
-      text: 你好！
+      text: 吃了么您
     - theme: alt
       text: 没用的按钮
 ---
