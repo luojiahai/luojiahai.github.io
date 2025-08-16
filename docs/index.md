@@ -11,6 +11,8 @@ hero:
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
+// I’m using TypeScript just to make it easier for you to read, not because I like it.
+
 import { WhoAmI } from "./types";
 
 export default {
@@ -104,7 +106,3 @@ export interface Resume {
 ```
 
 :::
-
-> <small>
-> Disclaimer: I’m using TypeScript just to make it easier for you to read, not because I like it.
-> </small>
