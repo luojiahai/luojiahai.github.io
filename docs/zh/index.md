@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: luójiāhǎi
   text: 低级地球居民
   tagline: 你好，世界！
 ---
