@@ -8,7 +8,7 @@ export const zh = defineConfig({
   themeConfig: {
     footer: {
       message:
-        '在 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a>  许可下发布.',
+        '在 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a>  许可下发布。',
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
 
