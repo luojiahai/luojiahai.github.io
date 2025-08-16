@@ -29,6 +29,7 @@ export default {
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"), // 电子邮箱已进行混淆以防垃圾邮件，请将 [at] 替换为 @
   website: new URL("zh", "https://luojiahai.com/"),
+  birthplace: "广州",
   languages: ["中文普通话", "中文广东话", "英文"],
 } satisfies WhoAmI;
 ```
@@ -115,6 +116,7 @@ export interface WhoAmI {
   personality: Personality;
   email: string;
   website: URL;
+  birthplace: string;
   languages: string[];
 }
 

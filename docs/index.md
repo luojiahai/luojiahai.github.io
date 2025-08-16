@@ -29,6 +29,7 @@ export default {
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"), // email is obfuscated to prevent spam; replace [at] with @
   website: new URL("https://luojiahai.com/"),
+  birthplace: "guangzhou",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
 } satisfies WhoAmI;
 ```
@@ -115,6 +116,7 @@ export interface WhoAmI {
   personality: Personality;
   email: string;
   website: URL;
+  birthplace: string;
   languages: string[];
 }
 
