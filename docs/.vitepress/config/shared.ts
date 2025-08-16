@@ -11,7 +11,7 @@ export const shared = defineConfig({
   metaChunk: true,
 
   markdown: {
-    math: true,
+    theme: { light: "github-light-default", dark: "github-dark-default" },
   },
 
   sitemap: {
