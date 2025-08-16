@@ -39,36 +39,60 @@ export default {
     {
       school: "墨尔本大学",
       degree: "理学硕士（计算机科学）",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2018),
+      endDate: new Date(2019),
     },
     {
       school: "墨尔本大学",
       degree: "理学学士",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2015),
+      endDate: new Date(2017),
     },
     {
       school: "北京大学",
       degree: "暑期学校国际课程",
+      location: "中国北京",
+      startDate: new Date(2016),
+      endDate: new Date(2016),
     },
   ],
   experience: [
     {
       company: "REA 集团（realestate.com.au）",
       title: "高级软件工程师",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2025, 3),
+      endDate: new Date(Date.now()),
     },
     {
       company: "REA 集团（realestate.com.au）",
       title: "软件工程师",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2024, 3),
+      endDate: new Date(2025, 3),
     },
     {
       company: "亚马逊云科技（AWS）",
       title: "软件开发工程师",
+      location: "澳大利亚悉尼",
+      startDate: new Date(2021, 10),
+      endDate: new Date(2024, 3),
     },
     {
       company: "德勤",
       title: "软件开发顾问",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2020, 3),
+      endDate: new Date(2021, 10),
     },
     {
       company: "墨尔本大学",
       title: "教学助理",
+      location: "澳大利亚墨尔本",
+      startDate: new Date(2018),
+      endDate: new Date(2020),
     },
   ],
 } satisfies Resume;
@@ -92,11 +116,17 @@ export interface WhoAmI {
 interface Education {
   school: string;
   degree: string;
+  location: string;
+  startDate: Date;
+  endDate: Date;
 }
 
 interface Experience {
   company: string;
   title: string;
+  location: string;
+  startDate: Date;
+  endDate: Date;
 }
 
 export interface Resume {
