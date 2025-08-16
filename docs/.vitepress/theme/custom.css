@@ -94,8 +94,10 @@
   }
 }
 
-.VPFooter .container {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+@media (min-width: 960px) {
+  .VPFooter .container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
 }
