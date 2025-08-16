@@ -93,3 +93,9 @@
     font-size: 18px !important;
   }
 }
+
+.VPFooter .container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
