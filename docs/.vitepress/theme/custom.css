@@ -25,8 +25,7 @@
 }
 
 :root {
-  --vp-font-family-base: "Cascadia Code", "PingFang SC", "Helvetica Neue",
-    Helvetica, Arial, "Microsoft YaHei", sans-serif;
+  --vp-font-family-base: Arial, "Microsoft YaHei", sans-serif;
   --vp-font-family-mono: "Cascadia Mono", Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
@@ -68,6 +67,8 @@
 .VPHero .tagline {
   line-height: 16px !important;
   font-size: 12px !important;
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial,
+    "Microsoft YaHei", sans-serif;
 }
 
 @media (min-width: 640px) {
@@ -91,13 +92,5 @@
   .VPHero .tagline {
     line-height: 24px !important;
     font-size: 16px !important;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPFooter .container {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
   }
 }
