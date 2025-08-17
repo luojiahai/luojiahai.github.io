@@ -50,6 +50,11 @@
   --vp-c-tip-2: var(--brand-alt);
   --vp-c-tip-3: var(--brand-alt);
   --vp-c-tip-soft: var(--brand-alt-soft);
+
+  --vp-c-note-1: var(--brand-alt);
+  --vp-c-note-2: var(--brand-alt);
+  --vp-c-note-3: var(--brand-alt);
+  --vp-c-note-soft: var(--brand-alt-soft);
 }
 
 * {
