@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luójiāhǎi
+  name: luojiahai
   text: 低级地球居民
   tagline: |
     “luojiahai”源自我的中文名字“罗嘉海”的拼音，我在网上就用它作为昵称。
