@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luójiāhǎi
   text: 低级地球居民
-  tagline: 你好，世界！
+  tagline: 吃饭了吗？
 ---
 
 ::: code-group
@@ -17,6 +17,7 @@ import { WhoAmI } from "./types";
 
 export default {
   name: "luojiahai",
+  anglicizedName: "geoffrey",
   title: "低级地球居民",
   personality: {
     code: "intj",

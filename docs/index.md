@@ -5,18 +5,19 @@ title: luojiahai
 hero:
   name: luojiahai
   text: non-senior earth resident
-  tagline: Hello, World!
+  tagline: Have you eaten?
 ---
 
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
-// I’m using TypeScript just to make it easier for you to read, not because I like it.
+// I'm using TypeScript just to make it easier for you to read, not because I like it.
 
 import { WhoAmI } from "./types";
 
 export default {
   name: "luojiahai",
+  anglicizedName: "geoffrey",
   title: "non-senior earth resident",
   personality: {
     code: "intj",
