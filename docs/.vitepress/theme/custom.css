@@ -1,6 +1,6 @@
 :root {
   --background: #ffffff;
-  --background-alt: #ffffff;
+  --background-alt: #f6f7f8;
   --text-1: #18191c;
   --text-2: #61666d;
   --text-3: #9499a0;
@@ -15,7 +15,7 @@
 
 .dark {
   --background: #17181a;
-  --background-alt: #17181a;
+  --background-alt: #101011;
   --text-1: #e7e9eb;
   --text-2: #a2a7ae;
   --text-3: #757a81;
