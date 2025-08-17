@@ -17,6 +17,10 @@
   --text-1: #e7e9eb;
   --text-2: #a2a7ae;
   --text-3: #757a81;
+  --brand: #ff6699;
+  --brand-soft: rgba(255, 102, 153, 0.16);
+  --brand-alt: #00aeec;
+  --brand-alt-soft: rgba(0, 174, 236, 0.16);
   --border: #2f3134;
 }
 
