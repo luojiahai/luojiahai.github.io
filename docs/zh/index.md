@@ -6,7 +6,7 @@ hero:
   name: luojiahai
   text: 低级地球居民
   tagline: |
-    “luojiahai”源自我的中文名字“罗嘉海”的拼音，我在网上就用它作为昵称。
+    “luojiahai”源自我的中文名字“罗嘉海”的拼音，我就用它作为网名。
 ---
 
 ::: code-group
