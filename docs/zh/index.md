@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luójiāhǎi
   text: 低级地球居民
-  tagline: 吃饭了吗？luojiahai 是我中文名字的拼音。我在网上就用它当昵称。
+  tagline: 吃饭了吗？luojiahai 是我中文名字的拼音，我在网上就用它当昵称。
 ---
 
 ::: code-group
