@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai
   text: non-senior earth resident
-  tagline: Have you eaten? luojiahai is the Pinyin of my Chinese name. I use it as my handle on the internet.
+  tagline: 👋 Hi there, luojiahai is the Pinyin of my Chinese name. I use it as my handle on the internet.
 ---
 
 ::: code-group
