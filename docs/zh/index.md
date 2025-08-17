@@ -17,7 +17,7 @@ import { WhoAmI } from "./types";
 
 export default {
   name: "luojiahai",
-  anglicizedName: "geoffrey",
+  anglicization: "geoffrey",
   title: "低级地球居民",
   personality: {
     code: "intj",
