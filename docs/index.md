@@ -5,7 +5,8 @@ title: luojiahai
 hero:
   name: luojiahai
   text: non-senior earth resident
-  tagline: 👋 Hi there, luojiahai is the Pinyin of my Chinese name. I use it as my handle on the internet.
+  tagline: |
+    "luojiahai" is derived from the Pinyin of my Chinese name, 罗嘉海 (luó jiā hǎi). I use it as my handle on the internet.
 ---
 
 ::: code-group
