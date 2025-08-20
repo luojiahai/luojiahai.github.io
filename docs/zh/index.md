@@ -55,7 +55,7 @@ export default {
     },
     {
       school: "北京大学",
-      degree: "暑期学校国际课程",
+      degree: "北京大学暑期学校国际课程",
       location: "中国北京",
       startDate: new Date(2016, 7),
       endDate: new Date(2016, 8),

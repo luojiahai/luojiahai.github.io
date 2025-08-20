@@ -55,7 +55,7 @@ export default {
     },
     {
       school: "Peking University",
-      degree: "Summer School International Program",
+      degree: "PKUSSI (Peking University Summer School International) Program",
       location: "Beijing, China",
       startDate: new Date(2016, 7),
       endDate: new Date(2016, 8),
