@@ -28,9 +28,6 @@ export const shared = defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
-    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap' }],
     ['link', { rel: 'stylesheet', href: 'https://use.typekit.net/htd7ieb.css' }],
     ['script', {}, `
       (function(d) {
