@@ -74,9 +74,22 @@
   font-size: 40px !important;
 }
 
+@keyframes caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-1);
+  }
+}
+
 .VPHero .text {
   line-height: 32px !important;
   font-size: 24px !important;
+
+  border-right: 0.1em solid var(--text-1);
+  animation: caret 1s step-end infinite;
 }
 
 .VPHero .tagline {
