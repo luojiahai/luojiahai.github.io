@@ -25,10 +25,8 @@
 }
 
 :root {
-  --vp-font-family-base: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei",
-    sans-serif;
-  --vp-font-family-mono: "Cascadia Code", Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  --vp-font-family-base: source-sans-pro, sans-serif, "Microsoft YaHei";
+  --vp-font-family-mono: "Cascadia Code", monospace;
 }
 
 :root {
