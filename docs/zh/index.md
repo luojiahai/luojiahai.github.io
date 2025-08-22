@@ -12,8 +12,6 @@ hero:
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
-// 我用 TypeScript 只是为了让你更容易看懂，不是因为我喜欢它。
-
 import { WhoAmI } from "./types";
 
 export default {
@@ -24,7 +22,8 @@ export default {
     code: "intj",
     type: "架构师",
   },
-  email: "luo[at]jiahai.co".replace("[at]", "@"), // 电子邮箱已进行混淆以防垃圾邮件，请将 [at] 替换为 @
+  // 电子邮箱已进行混淆以防垃圾邮件，请将 [at] 替换为 @
+  email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com/"),
   birthplace: "广州",
   languages: ["中文普通话", "中文广东话", "英文"],

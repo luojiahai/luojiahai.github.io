@@ -12,8 +12,6 @@ hero:
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
-// I'm using TypeScript just to make it easier for you to read, not because I like it.
-
 import { WhoAmI } from "./types";
 
 export default {
@@ -24,7 +22,8 @@ export default {
     code: "intj",
     type: "architect",
   },
-  email: "luo[at]jiahai.co".replace("[at]", "@"), // email is obfuscated to prevent spam; replace [at] with @
+  // email is obfuscated to prevent spam; replace [at] with @
+  email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com/"),
   birthplace: "guangzhou",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
