@@ -68,28 +68,30 @@
   gap: 4px !important;
 }
 
-.VPHero .name {
-  line-height: 48px !important;
-  font-size: 40px !important;
-}
-
 @keyframes caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: var(--text-1);
+    border-color: var(--brand);
   }
+}
+
+.VPHero .name {
+  line-height: 48px !important;
+  font-size: 40px !important;
+
+  /*
+  border-right: 0.1em solid var(--brand);
+  white-space: nowrap;
+  animation: caret 1s step-end infinite;
+  */
 }
 
 .VPHero .text {
   line-height: 32px !important;
   font-size: 24px !important;
-
-  border-right: 0.1em solid var(--text-1);
-  white-space: nowrap;
-  animation: caret 1s step-end infinite;
 }
 
 .VPHero .tagline {
