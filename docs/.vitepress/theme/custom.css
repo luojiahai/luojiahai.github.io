@@ -27,7 +27,7 @@
 :root {
   --vp-font-family-base: source-sans-pro, source-han-sans-simplified-c,
     sans-serif;
-  --vp-font-family-mono: source-code-pro, monospace;
+  --vp-font-family-mono: "Cascadia Code", monospace;
 }
 
 :root {
