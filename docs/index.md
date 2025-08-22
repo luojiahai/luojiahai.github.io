@@ -6,7 +6,7 @@ hero:
   name: luojiahai
   text: non-senior earth resident
   tagline: |
-    "luojiahai" is derived from the <a href="https://en.wikipedia.org/wiki/Pinyin" target="_blank">Pinyin</a> of my Chinese name, 罗嘉海 (luó jiā hǎi). I use it as my handle on the internet.
+    "luojiahai" is derived from the <a href="https://en.wikipedia.org/wiki/pinyin" target="_blank">pinyin</a> of my chinese name, 罗嘉海 (luó jiā hǎi). i use it as my handle on the internet.
 ---
 
 ::: code-group
