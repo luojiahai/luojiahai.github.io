@@ -22,7 +22,6 @@ export default {
     code: "intj",
     type: "架构师",
   },
-  // 电子邮箱已进行混淆以防垃圾邮件，请将 [at] 替换为 @
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com/"),
   birthplace: "广州",

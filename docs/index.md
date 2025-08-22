@@ -22,7 +22,6 @@ export default {
     code: "intj",
     type: "architect",
   },
-  // email is obfuscated to prevent spam; replace [at] with @
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com/"),
   birthplace: "guangzhou",
