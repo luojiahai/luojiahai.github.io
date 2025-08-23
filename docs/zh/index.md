@@ -9,6 +9,11 @@ hero:
     <code>main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
 ---
 
+<!-- <Badge type="info" text="占位符" /> -->
+<Badge type="tip" text="占位符" />
+<Badge type="warning" text="占位符" />
+<Badge type="danger" text="占位符" />
+
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
