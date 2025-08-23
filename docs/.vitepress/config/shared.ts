@@ -6,7 +6,7 @@ export const shared = defineConfig({
     initialValue: "dark",
   },
 
-  lastUpdated: true,
+  lastUpdated: false,
 
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
@@ -65,5 +65,25 @@ export const shared = defineConfig({
         },
       },
     },
+
+    sidebar: [
+      {
+        text: "Documents",
+        items: [
+          { text: "What is?", link: "/documents/what-is" },
+          {
+            text: "Examples",
+            collapsed: false,
+            items: [
+              { text: "Runtime API Examples", link: "/documents/api-examples" },
+              {
+                text: "Markdown Extension Examples",
+                link: "/documents/markdown-examples",
+              },
+            ],
+          },
+        ],
+      },
+    ],
   },
 });
