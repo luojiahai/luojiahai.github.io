@@ -25,8 +25,7 @@
 }
 
 :root {
-  --vp-font-family-base: source-sans-pro, source-han-sans-simplified-c,
-    sans-serif;
+  --vp-font-family-base: "Helvetica Neue", "Noto Sans SC", sans-serif;
   --vp-font-family-mono: "Cascadia Code", monospace;
 }
 
