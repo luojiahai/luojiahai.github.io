@@ -4,7 +4,8 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  # text: 低级地球居民
+  text: |
+    title: non-senior earth resident
   tagline: |
     “luojiahai”是我名字“罗嘉海”的<a href="https://baike.baidu.com/item/%E6%8B%BC%E9%9F%B3" target="_blank">拼音</a>，也是我的网名。
 ---
@@ -15,9 +16,8 @@ hero:
 import { WhoAmI } from "./types";
 
 export default {
-  name: "luojiahai",
+  handle: "luojiahai",
   anglicization: "geoffrey",
-  title: "低级地球居民",
   personality: {
     code: "intj",
     type: "架构师",
