@@ -105,9 +105,8 @@ interface Personality {
 }
 
 export interface WhoAmI {
-  name: string;
+  handle: string;
   anglicization: string;
-  title: string;
   personality: Personality;
   email: string;
   website: URL;
