@@ -7,9 +7,16 @@ hero:
   text: hello, world!
   tagline: |
     <code>main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
+  actions:
+    - theme: brand
+      text: What is it?
+      link: /documents/what-is-it
+    - theme: alt
+      text: Source
+      link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<Badge type="info" text="non-senior earth resident" />
+<!-- <Badge type="info" text="non-senior earth resident" /> -->
 
 ::: code-group
 
