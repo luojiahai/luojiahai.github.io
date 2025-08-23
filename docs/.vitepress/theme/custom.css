@@ -102,10 +102,6 @@
   text-wrap: nowrap !important;
 }
 
-.VPHero a {
-  text-decoration: underline !important;
-}
-
 @media (min-width: 640px) {
   .VPHero .name {
     line-height: 56px !important;
