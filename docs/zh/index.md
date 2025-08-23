@@ -6,8 +6,7 @@ hero:
   name: luojiahai
   # text: hello, world!
   tagline: |
-    <code>int i;main(){for(;i["]&lt;i;++i){--i;}"];read('-'-'-',i+++"hell\
-    o, world!\n",'/'/'/'));}read(j,i,p){write(j/p+p,i---j,i/i);}</code>
+    <code>main(v,c)char**c;{for(v[c++]=strdup("Hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
 ---
 
 ::: code-group
