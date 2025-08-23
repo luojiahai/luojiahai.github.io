@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: hello, world!
+  # text: hello, world!
   tagline: |
     <code>int i;main(){for(;i["]&lt;i;++i){--i;}"];read('-'-'-',i+++"hell\
     o, world!\n",'/'/'/'));}read(j,i,p){write(j/p+p,i---j,i/i);}</code>

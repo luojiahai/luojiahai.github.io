@@ -81,8 +81,8 @@
   line-height: 48px !important;
   font-size: 40px !important;
 
-  /* color: var(--text-1) !important;
-  -webkit-text-fill-color: var(--text-1) !important; */
+  color: var(--text-1) !important;
+  -webkit-text-fill-color: var(--text-1) !important;
 
   /* border-right: 0.1em solid var(--text-1);
   white-space: nowrap;
