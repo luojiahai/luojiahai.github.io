@@ -97,6 +97,9 @@
 .VPHero .tagline {
   line-height: 22px !important;
   font-size: 14px !important;
+
+  overflow: auto !important;
+  overflow-wrap: unset !important;
 }
 
 .VPHero a {
