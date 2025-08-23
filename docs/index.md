@@ -4,8 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: |
-    title: non-senior earth resident
+  text: non-senior earth resident
   tagline: |
     "luojiahai" is derived from the <a href="https://en.wikipedia.org/wiki/pinyin" target="_blank">pinyin</a> of my name, 罗嘉海 (<i>luó jiā hǎi</i>). I use it as my handle.
 ---
