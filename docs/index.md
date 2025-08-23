@@ -9,7 +9,6 @@ hero:
     <code>main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
 ---
 
-<Badge type="info" text="senior software engineer" />
 <Badge type="danger" text="non-senior earth resident" />
 
 ::: code-group
