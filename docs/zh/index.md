@@ -4,9 +4,10 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: 低级地球居民
+  text: hello, world!
   tagline: |
-    “luojiahai”是我名字“罗嘉海”的<a href="https://baike.baidu.com/item/%E6%8B%BC%E9%9F%B3" target="_blank">拼音</a>，也是我的网名。
+    <code>int i;main(){for(;i["]&lt;i;++i){--i;}"];read('-'-'-',i+++"hell\
+    o, world!\n",'/'/'/'));}read(j,i,p){write(j/p+p,i---j,i/i);}</code>
 ---
 
 ::: code-group

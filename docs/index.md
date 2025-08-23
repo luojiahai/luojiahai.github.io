@@ -4,9 +4,10 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: non-senior earth resident
+  text: hello, world!
   tagline: |
-    "luojiahai" is derived from the <a href="https://en.wikipedia.org/wiki/pinyin" target="_blank">pinyin</a> of my name, 罗嘉海 (<i>luó jiā hǎi</i>). I use it as my handle.
+    <code>int i;main(){for(;i["]&lt;i;++i){--i;}"];read('-'-'-',i+++"hell\
+    o, world!\n",'/'/'/'));}read(j,i,p){write(j/p+p,i---j,i/i);}</code>
 ---
 
 ::: code-group
