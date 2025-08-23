@@ -64,7 +64,7 @@
 }
 
 .VPHero {
-  padding-bottom: 32px !important;
+  padding-bottom: 28px !important;
 }
 
 .VPHero .heading {
@@ -125,6 +125,10 @@
 }
 
 @media (min-width: 960px) {
+  .VPHero {
+    padding-bottom: 32px !important;
+  }
+
   .VPHero .name {
     line-height: 64px !important;
     font-size: 56px !important;
