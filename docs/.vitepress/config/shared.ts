@@ -5,7 +5,7 @@ export const shared = defineConfig({
   appearance: {
     initialValue: "dark",
   },
-  lastUpdated: false,
+  lastUpdated: true,
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
   },
@@ -54,6 +54,10 @@ export const shared = defineConfig({
           ...zhSearch,
         },
       },
+    },
+    editLink: {
+      pattern:
+        "https://github.com/luojiahai/luojiahai.github.io/edit/main/docs/:path",
     },
   },
 });
