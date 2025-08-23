@@ -63,8 +63,12 @@
   border-radius: 0 !important;
 }
 
+.VPHome {
+  margin-bottom: 32px !important;
+}
+
 .VPHero {
-  padding-bottom: 28px !important;
+  padding-bottom: 24px !important;
 }
 
 .VPHero .heading {
