@@ -67,6 +67,14 @@
   gap: 4px !important;
 }
 
+.VPHero .name {
+  line-height: 48px !important;
+  font-size: 40px !important;
+
+  /* color: var(--text-1) !important;
+  -webkit-text-fill-color: var(--text-1) !important; */
+}
+
 @keyframes caret {
   from,
   to {
@@ -77,21 +85,13 @@
   }
 }
 
-.VPHero .name {
-  line-height: 48px !important;
-  font-size: 40px !important;
-
-  /* color: var(--text-1) !important;
-  -webkit-text-fill-color: var(--text-1) !important; */
-
-  /* border-right: 0.1em solid var(--text-1);
-  white-space: nowrap;
-  animation: caret 1s step-end infinite; */
-}
-
 .VPHero .text {
   line-height: 32px !important;
   font-size: 24px !important;
+
+  border-right: 0.2em solid var(--text-1);
+  white-space: nowrap;
+  animation: caret 1s step-end infinite;
 }
 
 .VPHero .tagline {
