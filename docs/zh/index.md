@@ -22,7 +22,7 @@ export default {
     type: "架构师",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: new URL("zh", "https://luojiahai.com/"),
+  website: new URL("zh", "https://luojiahai.com"),
   birthplace: "广州",
   languages: ["中文普通话", "中文广东话", "英文"],
 } satisfies WhoAmI;

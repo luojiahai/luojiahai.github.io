@@ -2,16 +2,22 @@ import { defineConfig } from "vitepress";
 import { search as zhSearch } from "./zh";
 
 export const shared = defineConfig({
-  rewrites: {
-    "en/:rest*": ":rest*",
+  appearance: {
+    initialValue: "dark",
   },
 
   lastUpdated: true,
-  cleanUrls: true,
-  metaChunk: true,
 
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
+  },
+
+  metaChunk: true,
+
+  cleanUrls: true,
+
+  rewrites: {
+    "en/:rest*": ":rest*",
   },
 
   sitemap: {

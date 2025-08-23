@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 export const en = defineConfig({
   lang: "en-US",
   title: "luojiahai",
-  description: "non-senior earth resident",
+  description: "hello, world!",
 
   themeConfig: {
     footer: {

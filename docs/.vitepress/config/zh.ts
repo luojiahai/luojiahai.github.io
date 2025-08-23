@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 export const zh = defineConfig({
   lang: "zh-Hans",
   title: "luojiahai",
-  description: "低级地球居民",
+  description: "hello, world!",
 
   themeConfig: {
     footer: {

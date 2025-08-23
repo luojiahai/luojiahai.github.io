@@ -22,7 +22,7 @@ export default {
     type: "architect",
   },
   email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: new URL("https://luojiahai.com/"),
+  website: new URL("https://luojiahai.com"),
   birthplace: "guangzhou",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
 } satisfies WhoAmI;
