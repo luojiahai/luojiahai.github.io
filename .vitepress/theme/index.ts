@@ -1,4 +1,4 @@
-import DefaultTheme from "vitepress/theme-without-fonts";
+import DefaultTheme from "vitepress/theme";
 import "./style.css";
 
 export default DefaultTheme;
