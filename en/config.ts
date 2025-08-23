@@ -5,29 +5,10 @@ export const config = defineConfig({
   title: "luojiahai",
   description: "hello, world!",
   themeConfig: {
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Documents", link: "/documents/what-is-it" },
-    ],
-    sidebar: [
-      {
-        text: "Documents",
-        items: [
-          { text: "What is it?", link: "/documents/what-is-it" },
-          {
-            text: "Examples",
-            collapsed: false,
-            items: [
-              { text: "Runtime API Examples", link: "/documents/api-examples" },
-              {
-                text: "Markdown Extension Examples",
-                link: "/documents/markdown-examples",
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    nav: nav(),
+    sidebar: {
+      "/documents/": { base: "/documents/", items: sidebarDocuments() },
+    },
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
@@ -40,3 +21,36 @@ export const config = defineConfig({
     },
   },
 });
+
+function nav(): DefaultTheme.NavItem[] {
+  return [
+    { text: "Home", link: "/" },
+    {
+      text: "Documents",
+      link: "/documents/what-is-it",
+      activeMatch: "/documents/",
+    },
+  ];
+}
+
+function sidebarDocuments(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "Documents",
+      items: [
+        { text: "What is it?", link: "what-is-it" },
+        {
+          text: "Examples",
+          collapsed: false,
+          items: [
+            { text: "Runtime API Examples", link: "api-examples" },
+            {
+              text: "Markdown Extension Examples",
+              link: "markdown-examples",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+}

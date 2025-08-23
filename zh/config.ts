@@ -5,29 +5,10 @@ export const config = defineConfig({
   title: "luojiahai",
   description: "hello, world!",
   themeConfig: {
-    nav: [
-      { text: "首页", link: "/zh" },
-      { text: "文档", link: "/zh/documents/what-is-it" },
-    ],
-    sidebar: [
-      {
-        text: "文档",
-        items: [
-          { text: "这是什么？", link: "/zh/documents/what-is-it" },
-          {
-            text: "示例",
-            collapsed: false,
-            items: [
-              { text: "运行时 API 示例", link: "/zh/documents/api-examples" },
-              {
-                text: "Markdown 扩展示例",
-                link: "/zh/documents/markdown-examples",
-              },
-            ],
-          },
-        ],
-      },
-    ],
+    nav: nav(),
+    sidebar: {
+      "/zh/documents/": { base: "/zh/documents/", items: sidebarDocuments() },
+    },
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
@@ -60,6 +41,39 @@ export const config = defineConfig({
     darkModeSwitchTitle: "切换到深色模式",
   },
 });
+
+function nav(): DefaultTheme.NavItem[] {
+  return [
+    { text: "首页", link: "/zh" },
+    {
+      text: "文档",
+      link: "/zh/documents/what-is-it",
+      activeMatch: "/zh/documents/",
+    },
+  ];
+}
+
+function sidebarDocuments(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "文档",
+      items: [
+        { text: "这是什么？", link: "what-is-it" },
+        {
+          text: "示例",
+          collapsed: false,
+          items: [
+            { text: "运行时 API 示例", link: "api-examples" },
+            {
+              text: "Markdown 扩展示例",
+              link: "markdown-examples",
+            },
+          ],
+        },
+      ],
+    },
+  ];
+}
 
 export const search: DefaultTheme.AlgoliaSearchOptions["locales"] = {
   zh: {
