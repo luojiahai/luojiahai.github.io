@@ -100,6 +100,7 @@
 
   overflow: auto !important;
   overflow-wrap: unset !important;
+  text-wrap: nowrap !important;
 }
 
 .VPHero a {
@@ -120,6 +121,8 @@
   .VPHero .tagline {
     line-height: 22px !important;
     font-size: 14px !important;
+
+    text-wrap: unset !important;
   }
 }
 
@@ -137,5 +140,7 @@
   .VPHero .tagline {
     line-height: 22px !important;
     font-size: 14px !important;
+
+    text-wrap: unset !important;
   }
 }
