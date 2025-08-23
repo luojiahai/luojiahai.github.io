@@ -13,7 +13,7 @@ export const en = defineConfig({
       {
         text: "Documents",
         items: [
-          { text: "What is?", link: "/documents/what-is-it" },
+          { text: "What is it?", link: "/documents/what-is-it" },
           {
             text: "Examples",
             collapsed: false,
