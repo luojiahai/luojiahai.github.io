@@ -1,6 +1,6 @@
 import { defineConfig, type DefaultTheme } from "vitepress";
 
-export const zh = defineConfig({
+export const config = defineConfig({
   lang: "zh-Hans",
   title: "luojiahai",
   description: "hello, world!",
@@ -28,9 +28,14 @@ export const zh = defineConfig({
         ],
       },
     ],
+    editLink: {
+      pattern:
+        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+      text: "在 GitHub 上编辑此页面",
+    },
     footer: {
       message:
-        '在 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a>  许可下发布。',
+        '基于 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a> 许可发布',
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
     docFooter: {

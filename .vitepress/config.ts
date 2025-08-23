@@ -1,7 +1,12 @@
 import { defineConfig } from "vitepress";
-import { search as zhSearch } from "./zh";
+import { config as enConfig } from "../en/config";
+import { config as zhConfig, search as zhSearch } from "../zh/config";
 
-export const shared = defineConfig({
+export default defineConfig({
+  locales: {
+    root: { label: "English", ...enConfig },
+    zh: { label: "简体中文", ...zhConfig },
+  },
   appearance: {
     initialValue: "dark",
   },
@@ -54,10 +59,6 @@ export const shared = defineConfig({
           ...zhSearch,
         },
       },
-    },
-    editLink: {
-      pattern:
-        "https://github.com/luojiahai/luojiahai.github.io/edit/main/docs/:path",
     },
   },
 });

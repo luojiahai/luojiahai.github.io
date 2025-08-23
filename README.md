@@ -5,6 +5,7 @@
 ## Installation
 
 Windows:
+
 ```shell
 # installs fnm (Fast Node Manager)
 winget install Schniz.fnm
@@ -24,5 +25,5 @@ npm -v
 # install dependencies
 npm install
 # run dev server locally
-npm run docs:dev
+npm run dev
 ```
