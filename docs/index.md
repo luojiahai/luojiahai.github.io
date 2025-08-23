@@ -6,7 +6,7 @@ hero:
   name: luojiahai
   # text: hello, world!
   tagline: |
-    <code>main(v,c)char**c;{for(v[c++]=strdup("Hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
+    <code>main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}</code>
 ---
 
 ::: code-group
