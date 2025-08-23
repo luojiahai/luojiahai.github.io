@@ -5,28 +5,21 @@ export const shared = defineConfig({
   appearance: {
     initialValue: "dark",
   },
-
   lastUpdated: false,
-
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
   },
-
   metaChunk: true,
-
   cleanUrls: true,
-
   rewrites: {
     "en/:rest*": ":rest*",
   },
-
   sitemap: {
     hostname: "https://luojiahai.com",
     transformItems(items) {
       return items.filter((item) => !item.url.includes("migration"));
     },
   },
-
   /* prettier-ignore */
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -46,17 +39,14 @@ export const shared = defineConfig({
     ['meta', { property: 'og:image', content: 'https://luojiahai.com/image.png' }],
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
-
   themeConfig: {
     logo: { src: "/apple-touch-icon.png" },
-
     socialLinks: [
       { icon: "x", link: "https://x.com/luojiahai" },
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
-
     search: {
       provider: "local",
       options: {
@@ -65,25 +55,5 @@ export const shared = defineConfig({
         },
       },
     },
-
-    sidebar: [
-      {
-        text: "Documents",
-        items: [
-          { text: "What is?", link: "/documents/what-is" },
-          {
-            text: "Examples",
-            collapsed: false,
-            items: [
-              { text: "Runtime API Examples", link: "/documents/api-examples" },
-              {
-                text: "Markdown Extension Examples",
-                link: "/documents/markdown-examples",
-              },
-            ],
-          },
-        ],
-      },
-    ],
   },
 });

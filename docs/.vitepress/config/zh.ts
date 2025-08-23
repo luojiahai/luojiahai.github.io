@@ -4,23 +4,42 @@ export const zh = defineConfig({
   lang: "zh-Hans",
   title: "luojiahai",
   description: "hello, world!",
-
   themeConfig: {
+    nav: [
+      { text: "首页", link: "/zh" },
+      { text: "文档", link: "/zh/documents/what-is-it" },
+    ],
+    sidebar: [
+      {
+        text: "文档",
+        items: [
+          { text: "这是什么？", link: "/zh/documents/what-is-it" },
+          {
+            text: "示例",
+            collapsed: false,
+            items: [
+              { text: "运行时 API 示例", link: "/zh/documents/api-examples" },
+              {
+                text: "Markdown 扩展示例",
+                link: "/zh/documents/markdown-examples",
+              },
+            ],
+          },
+        ],
+      },
+    ],
     footer: {
       message:
         '在 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a>  许可下发布。',
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
-
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
-
     outline: {
       label: "页面导航",
     },
-
     lastUpdated: {
       text: "最后更新于",
       formatOptions: {
@@ -28,7 +47,6 @@ export const zh = defineConfig({
         timeStyle: "medium",
       },
     },
-
     langMenuLabel: "多语言",
     returnToTopLabel: "回到顶部",
     sidebarMenuLabel: "菜单",
