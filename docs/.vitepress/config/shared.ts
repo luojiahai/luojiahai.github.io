@@ -42,7 +42,7 @@ export const shared = defineConfig({
   ],
 
   themeConfig: {
-    // logo: { src: "/apple-touch-icon.png" },
+    logo: { src: "/apple-touch-icon.png" },
 
     socialLinks: [
       { icon: "x", link: "https://x.com/luojiahai" },
