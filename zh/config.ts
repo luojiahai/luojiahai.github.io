@@ -2,8 +2,6 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 
 export const config = defineConfig({
   lang: "zh-Hans",
-  title: "luojiahai",
-  description: "hello, world!",
   themeConfig: {
     nav: nav(),
     sidebar: {

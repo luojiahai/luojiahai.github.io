@@ -3,6 +3,8 @@ import { config as enConfig } from "../en/config";
 import { config as zhConfig, search as zhSearch } from "../zh/config";
 
 export default defineConfig({
+  title: "luojiahai",
+  description: "hello, world!",
   locales: {
     root: { label: "English", ...enConfig },
     zh: { label: "简体中文", ...zhConfig },
