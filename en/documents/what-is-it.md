@@ -2,7 +2,11 @@
 
 It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). The homepage includes my professional profile and résumé. This site does not host a blog or portfolio.
 
+<div class="tip custom-block" style="padding-top: 8px">
+
 On the homepage, there is a one‑liner C program that prints `hello, world!`, but takes its time saying hello. It was a 1985 winning entry in the International Obfuscated C Code Contest (IOCCC), see [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html).
+
+</div>
 
 ## Who am I?
 
