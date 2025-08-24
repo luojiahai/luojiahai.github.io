@@ -86,9 +86,6 @@
 .VPHero .name {
   line-height: 48px !important;
   font-size: 40px !important;
-
-  /* color: var(--text-1) !important;
-  -webkit-text-fill-color: var(--text-1) !important; */
 }
 
 @keyframes caret {
@@ -111,12 +108,8 @@
 }
 
 .VPHero .tagline {
-  line-height: 22px !important;
-  font-size: 14px !important;
-
-  height: 48px !important;
-  overflow: auto !important;
-  text-wrap: nowrap !important;
+  line-height: 20px !important;
+  font-size: 12px !important;
 }
 
 @media (min-width: 640px) {
@@ -128,11 +121,6 @@
   .VPHero .text {
     line-height: 32px !important;
     font-size: 24px !important;
-  }
-
-  .VPHero .tagline {
-    line-height: 22px !important;
-    font-size: 14px !important;
   }
 }
 
@@ -149,13 +137,5 @@
   .VPHero .text {
     line-height: 32px !important;
     font-size: 24px !important;
-  }
-
-  .VPHero .tagline {
-    line-height: 22px !important;
-    font-size: 14px !important;
-
-    height: auto !important;
-    text-wrap: unset !important;
   }
 }
