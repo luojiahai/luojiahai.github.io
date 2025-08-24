@@ -12,6 +12,6 @@ My proclaimed title is Non‑Senior Earth Resident, as I still have much to lear
 
 ## What I do?
 
-I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and the meaningful impact its products have on millions of Australians.
+I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and impactful products.
 
 Previously, I was a Software Development Engineer at [Amazon Web Services (AWS)](https://aws.amazon.com/), one of the major US tech companies. I appreciated the scale, technical challenges, and talented colleagues, but I found that the culture and management style didn’t align well with how I work best.

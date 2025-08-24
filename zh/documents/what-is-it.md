@@ -12,6 +12,6 @@
 
 ## 我做什么？
 
-我目前是 [REA Group](https://www.rea-group.com/)（ASX:REA）的高级软件工程师。这家公司运营着 [realestate.com.au](https://www.realestate.com.au/)，是澳大利亚领先的房地产网站之一。我强烈推荐在这里工作，这里有以人为本的优秀文化和非常有影响力的产品。
+我目前是 [REA Group](https://www.rea-group.com/)（ASX:REA）的高级软件工程师。这家公司运营着 [realestate.com.au](https://www.realestate.com.au/)，是澳大利亚领先的房地产网站之一。我强烈推荐在这里工作，这里有以人为本的优秀文化和富有影响力的产品。
 
 在此之前，我是 [Amazon Web Services (AWS)](https://aws.amazon.com/) 的软件开发工程师，这是一家美国大型科技公司。我欣赏这里的业务规模、技术挑战和才华横溢的同事，但发现它的文化和管理方式与我的工作方式并不完全契合。
