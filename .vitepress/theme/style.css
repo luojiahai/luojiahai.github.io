@@ -102,9 +102,9 @@
   line-height: 32px !important;
   font-size: 24px !important;
 
-  border-right: 0.2em solid var(--text-1);
+  /* border-right: 0.2em solid var(--text-1);
   white-space: nowrap;
-  animation: caret 1s step-end infinite;
+  animation: caret 1s step-end infinite; */
 }
 
 .VPHero .tagline {
