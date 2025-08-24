@@ -1,6 +1,6 @@
 # 这是什么？
 
-这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成。首页包含了我的职业简介和简历。本站不提供博客或作品集。
+这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。首页包含我的职业简介和简历。本站不提供博客或作品集。
 
 在主页上，有一段用输出 `hello, world!` 的单行 C 程序，不过它会慢慢地向你打招呼。这是 1985 年 IOCCC 的获奖作品，参见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
 
