@@ -2,6 +2,8 @@
 
 这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成。首页包含了我的职业简介和简历。本站不提供博客或作品集。
 
+在主页上，有一段用输出 `hello, world!` 的单行 C 程序，不过它会慢慢地向你打招呼。这个代码来自 1985 年 IOCCC 的获奖作品，参见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
+
 ## 我是谁？
 
 我叫罗嘉海，网名 luojiahai，取自我名字罗嘉海的拼音。在各种账号、邮箱和社交媒体上，我基本都使用这个网名。

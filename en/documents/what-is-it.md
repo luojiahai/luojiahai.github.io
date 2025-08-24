@@ -2,6 +2,8 @@
 
 It is my personal site, statically generated using [VitePress](https://vitepress.dev/). It includes my professional profile and résumé, both available from the homepage. This site does not host a blog or portfolio.
 
+On the homepage, a one‑liner C program prints `hello, world!`, but takes its time saying hello. This snippet comes from a 1985 winning entry in the International Obfuscated C Code Contest (IOCCC), see [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html).
+
 ## Who am I?
 
 I am Geoffrey (anglicized). My handle is luojiahai, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
