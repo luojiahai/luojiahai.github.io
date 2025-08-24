@@ -14,7 +14,7 @@ export const config = defineConfig({
     },
     footer: {
       message:
-        '基于 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT</a> 许可发布',
+        '基于 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT 许可</a>发布',
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
     docFooter: {
