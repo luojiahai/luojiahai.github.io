@@ -10,7 +10,7 @@ On the homepage, there is a one‑liner C program that prints `hello, world!`, b
 
 ## Who am I?
 
-I am Geoffrey (anglicized). My handle is luojiahai, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
+I am Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
 
 My proclaimed title is Non‑Senior Earth Resident, as I still have much to learn about how to be a good one, living on Earth and getting along with my fellow Earth residents.
 
