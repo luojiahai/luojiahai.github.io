@@ -7,7 +7,7 @@ On the homepage, you will find this one‑liner C program:
 ::: code-group
 
 ```c [hello.c] :line-numbers
-main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
+main(c,v)char**v;{for(c[v++]=strdup("hello, world!\n\n");(!!v)[*v]&&(c--||--v&&execlp(*v,*v,v[!!v]+!!v,!v));**v=!v)write(!!*v,*v,!!**v);}
 ```
 
 ```makefile [Makefile] :line-numbers
@@ -17,7 +17,7 @@ auto:
 
 :::
 
-It prints `hello, world!`, but does so with delay. It was a 1985 winning entry in the International Obfuscated C Code Contest (IOCCC), see [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html).
+It prints `hello, world!`, but does so with delay.
 
 ## Who am I?
 

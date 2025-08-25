@@ -7,7 +7,7 @@
 ::: code-group
 
 ```c [hello.c] :line-numbers
-main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
+main(c,v)char**v;{for(c[v++]=strdup("hello, world!\n\n");(!!v)[*v]&&(c--||--v&&execlp(*v,*v,v[!!v]+!!v,!v));**v=!v)write(!!*v,*v,!!**v);}
 ```
 
 ```makefile [Makefile] :line-numbers
@@ -17,13 +17,7 @@ auto:
 
 :::
 
-它会打印 `hello, world!`，但会延迟输出。这是 1985 年 IOCCC 的获奖作品，详见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
-
-<div class="tip custom-block" style="padding-top: 8px">
-
-在主页上，有一段用输出 `hello, world!` 的单行 C 程序，不过它会慢慢地向你打招呼。这是 1985 年 IOCCC 的获奖作品，参见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
-
-</div>
+它会打印 `hello, world!`，但会延迟输出。
 
 ## 我是谁？
 
