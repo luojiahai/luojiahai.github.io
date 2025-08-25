@@ -4,9 +4,18 @@ It is my personal site, statically generated using [VitePress](https://vitepress
 
 On the homepage, you will find this one‑liner C program:
 
-```c :line-numbers
+::: code-group
+
+```c [hello.c] :line-numbers
 main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
 ```
+
+```makefile [Makefile] :line-numbers
+auto:
+    cc -std=gnu89 -Wall -Wextra -Wno-error -Wno-implicit-function-declaration -Wno-logical-op-parentheses -Wno-deprecated-non-prototype -Wno-implicit-int -Wno-parentheses -Wno-return-type -Wno-builtin-declaration-mismatch -Wno-format -Wno-missing-parameter-type -Wno-unknown-warning-option   -include unistd.h -O3 hello.c -o hello
+```
+
+:::
 
 It prints `hello, world!`, but does so with delay. It was a 1985 winning entry in the International Obfuscated C Code Contest (IOCCC), see [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html).
 
@@ -21,3 +30,7 @@ My proclaimed title is Non‑Senior Earth Resident, as I still have much to lear
 I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and impactful products.
 
 Previously, I was a Software Development Engineer at [Amazon Web Services (AWS)](https://aws.amazon.com/), one of the major US tech companies. I appreciated the scale, technical challenges, and talented colleagues, but I found that the culture and management style were toxic and incompatible with how I work best.
+
+```
+
+```

@@ -4,9 +4,18 @@
 
 在首页上，你会看到这个单行 C 程序：
 
-```c :line-numbers
+::: code-group
+
+```c [hello.c] :line-numbers
 main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
 ```
+
+```makefile [Makefile] :line-numbers
+auto:
+    cc -std=gnu89 -Wall -Wextra -Wno-error -Wno-implicit-function-declaration -Wno-logical-op-parentheses -Wno-deprecated-non-prototype -Wno-implicit-int -Wno-parentheses -Wno-return-type -Wno-builtin-declaration-mismatch -Wno-format -Wno-missing-parameter-type -Wno-unknown-warning-option   -include unistd.h -O3 hello.c -o hello
+```
+
+:::
 
 它会打印 `hello, world!`，但会延迟输出。这是 1985 年 IOCCC 的获奖作品，详见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
 
