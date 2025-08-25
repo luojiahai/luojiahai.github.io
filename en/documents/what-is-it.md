@@ -23,8 +23,6 @@ It prints `hello, world!`, but does so with delay.
 
 I am Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
 
-My proclaimed title is Non‑Senior Earth Resident, as I still have much to learn about how to be a good one, living on Earth and getting along with my fellow Earth residents.
-
 ## What I do?
 
 I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and impactful products.
