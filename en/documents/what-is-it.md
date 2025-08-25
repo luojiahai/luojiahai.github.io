@@ -2,7 +2,7 @@
 
 It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). The homepage includes my professional profile and résumé. This site does not host a blog or portfolio.
 
-On the homepage, you will find this one‑liner C program :
+On the homepage, you will find this one‑liner C program:
 
 ```c :line-numbers
 main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
