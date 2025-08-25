@@ -2,6 +2,14 @@
 
 这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。首页包含我的职业简介和简历。本站不提供博客或作品集。
 
+在首页上，你会看到这个单行 C 程序：
+
+```c :line-numbers
+main(v,c)char**c;{for(v[c++]=strdup("hello, world!\n\n");(!!c)[*c]&&(v--||--c&&execlp(*c,*c,c[!!c]+!!c,!c));**c=!c)write(!!*c,*c,!!**c);}
+```
+
+它会打印 `hello, world!`，但会延迟输出。这是 1985 年 IOCCC 的获奖作品，详见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
+
 <div class="tip custom-block" style="padding-top: 8px">
 
 在主页上，有一段用输出 `hello, world!` 的单行 C 程序，不过它会慢慢地向你打招呼。这是 1985 年 IOCCC 的获奖作品，参见 [1985/applin - Best one liner](https://www.ioccc.org/1985/applin/index.html)。
