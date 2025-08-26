@@ -9,6 +9,7 @@ export default defineConfig({
     root: { label: "English", ...enConfig },
     zh: { label: "简体中文", ...zhConfig },
   },
+  srcExclude: ["**/README.md"],
   appearance: {
     initialValue: "dark",
   },
