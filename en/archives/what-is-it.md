@@ -1,6 +1,6 @@
 # What is it?
 
-It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). The homepage includes my professional profile and résumé. This site does not host a blog or portfolio.
+It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). It features my professional profile and résumé but does not include a blog or portfolio.
 
 ## Who am I?
 

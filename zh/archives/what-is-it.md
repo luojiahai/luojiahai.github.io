@@ -1,6 +1,6 @@
 # 这是什么？
 
-这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。首页包含我的职业简介和简历。本站不提供博客或作品集。
+这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。网站包含我的简介和简历，但不包含博客或作品集。
 
 ## 我是谁？
 
