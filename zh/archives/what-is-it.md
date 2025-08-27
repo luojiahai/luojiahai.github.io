@@ -2,8 +2,6 @@
 
 这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。首页包含我的职业简介和简历。本站不提供博客或作品集。
 
-:::
-
 ## 我是谁？
 
 我叫罗嘉海，网名 `luojiahai`，取自我名字罗嘉海的拼音。在各种账号、邮箱和社交媒体上，我基本都使用这个网名。
