@@ -4,11 +4,11 @@
 
 ::: code-group
 
-```c [hello.c]
+```c [hello.c] :line-numbers
 main(c,v)char**v;{for(c[v++]=strdup("hello, world!\n\n");(!!v)[*v]&&(c--||--v&&execlp(*v,*v,v[!!v]+!!v,!v));**v=!v)write(!!*v,*v,!!**v);}
 ```
 
-```c [hello-annotated.c]
+```c [hello-annotated.c] :line-numbers
 /* 主入口，使用 K&R 风格的旧式 C 声明 */
 main(c,v)char**v;{
     /*

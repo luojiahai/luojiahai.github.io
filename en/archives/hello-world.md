@@ -4,11 +4,11 @@ That one‑liner C program prints `hello, world!` with a delay. The annotated ve
 
 ::: code-group
 
-```c [hello.c]
+```c [hello.c] :line-numbers
 main(c,v)char**v;{for(c[v++]=strdup("hello, world!\n\n");(!!v)[*v]&&(c--||--v&&execlp(*v,*v,v[!!v]+!!v,!v));**v=!v)write(!!*v,*v,!!**v);}
 ```
 
-```c [hello-annotated.c]
+```c [hello-annotated.c] :line-numbers
 /* main entry point with K&R-style old C declaration */
 main(c,v)char**v;{
     /*
