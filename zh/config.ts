@@ -26,10 +26,13 @@ export const config = defineConfig({
     },
     lastUpdated: {
       text: "最后更新于",
-      formatOptions: {
-        dateStyle: "short",
-        timeStyle: "medium",
-      },
+    },
+    notFound: {
+      title: "页面未找到",
+      quote:
+        "但如果你不改变方向，并且继续寻找，你可能最终会到达你所前往的地方。",
+      linkLabel: "前往首页",
+      linkText: "带我回首页",
     },
     langMenuLabel: "多语言",
     returnToTopLabel: "回到顶部",
@@ -37,6 +40,7 @@ export const config = defineConfig({
     darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "切换到浅色模式",
     darkModeSwitchTitle: "切换到深色模式",
+    skipToContentLabel: "跳转到内容",
   },
 });
 
