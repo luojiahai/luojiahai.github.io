@@ -13,7 +13,7 @@ export default defineConfig({
   appearance: {
     initialValue: "dark",
   },
-  lastUpdated: true,
+  lastUpdated: false,
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
   },
