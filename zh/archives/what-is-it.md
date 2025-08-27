@@ -2,19 +2,6 @@
 
 这是我的个人网站，使用 [VitePress](https://vitepress.dev/) 静态生成，并托管在 [GitHub Pages](https://docs.github.com/en/pages) 上。首页包含我的职业简介和简历。本站不提供博客或作品集。
 
-那个单行 C 程序会延迟打印 `hello, world!`：
-
-::: code-group
-
-```c [hello.c] :line-numbers
-main(c,v)char**v;{for(c[v++]=strdup("hello, world!\n\n");(!!v)[*v]&&(c--||--v&&execlp(*v,*v,v[!!v]+!!v,!v));**v=!v)write(!!*v,*v,!!**v);}
-```
-
-```makefile [Makefile] :line-numbers
-auto:
-    cc -std=gnu89 -Wall -Wextra -Wno-error -Wno-implicit-function-declaration -Wno-logical-op-parentheses -Wno-deprecated-non-prototype -Wno-implicit-int -Wno-parentheses -Wno-return-type -Wno-builtin-declaration-mismatch -Wno-format -Wno-missing-parameter-type -Wno-unknown-warning-option   -include unistd.h -O3 hello.c -o hello
-```
-
 :::
 
 ## 我是谁？
