@@ -35,20 +35,7 @@ function sidebarDocuments(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "Documents",
-      items: [
-        { text: "What is it?", link: "what-is-it" },
-        {
-          text: "Examples",
-          collapsed: false,
-          items: [
-            { text: "Runtime API Examples", link: "api-examples" },
-            {
-              text: "Markdown Extension Examples",
-              link: "markdown-examples",
-            },
-          ],
-        },
-      ],
+      items: [{ text: "What is it?", link: "what-is-it" }],
     },
   ];
 }

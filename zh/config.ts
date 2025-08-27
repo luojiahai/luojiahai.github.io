@@ -55,20 +55,7 @@ function sidebarDocuments(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "文档",
-      items: [
-        { text: "这是什么？", link: "what-is-it" },
-        {
-          text: "示例",
-          collapsed: false,
-          items: [
-            { text: "运行时 API 示例", link: "api-examples" },
-            {
-              text: "Markdown 扩展示例",
-              link: "markdown-examples",
-            },
-          ],
-        },
-      ],
+      items: [{ text: "这是什么？", link: "what-is-it" }],
     },
   ];
 }
