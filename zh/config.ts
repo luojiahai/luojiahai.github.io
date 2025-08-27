@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/zh/documents/": { base: "/zh/documents/", items: sidebarDocuments() },
+      "/zh/archives/": { base: "/zh/archives/", items: sidebarArchives() },
     },
     editLink: {
       pattern:
@@ -48,17 +48,17 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh" },
     {
-      text: "文档",
-      link: "/zh/documents/what-is-it",
-      activeMatch: "/zh/documents/",
+      text: "档案",
+      link: "/zh/archives/what-is-it",
+      activeMatch: "/zh/archives/",
     },
   ];
 }
 
-function sidebarDocuments(): DefaultTheme.SidebarItem[] {
+function sidebarArchives(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "文档",
+      text: "档案",
       items: [{ text: "这是什么？", link: "what-is-it" }],
     },
   ];

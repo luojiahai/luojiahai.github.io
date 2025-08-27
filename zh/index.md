@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: 这是什么？
-      link: /zh/documents/what-is-it
+      link: /zh/archives/what-is-it
     - theme: alt
       text: 源代码
       link: https://github.com/luojiahai/luojiahai.github.io
