@@ -2,7 +2,7 @@
 
 It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). The homepage includes my professional profile and résumé. This site does not host a blog or portfolio.
 
-On the homepage, you will find this one‑liner C program:
+That one‑liner C program prints `hello, world!` with a delay:
 
 ::: code-group
 
@@ -17,8 +17,6 @@ auto:
 
 :::
 
-It prints `hello, world!`, but does so with delay.
-
 ## Who am I?
 
 I am Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
@@ -27,4 +25,4 @@ I am Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the 
 
 I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and impactful products.
 
-Previously, I was a Software Development Engineer at [Amazon Web Services (AWS)](https://aws.amazon.com/), one of the major US tech companies. I appreciated the scale, technical challenges, and talented colleagues, but I found that the culture and management style were toxic and incompatible with how I work best.
+Previously, I was a Software Development Engineer at [Amazon Web Services (AWS)](https://aws.amazon.com/), one of the major US tech companies. I appreciated the scale, technical challenges, and talented colleagues, but the culture and management style were incompatible with how I work best.
