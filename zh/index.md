@@ -20,8 +20,10 @@ hero:
 
 ```typescript [whoami.ts] :line-numbers
 export default {
-  handle: "luojiahai",
-  anglicization: "geoffrey",
+  name: {
+    handle: "luojiahai",
+    anglicized: "geoffrey",
+  },
   personality: {
     code: "intj",
     type: "架构师",
