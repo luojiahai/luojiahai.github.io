@@ -16,13 +16,9 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<!-- <Badge type="info" text="non-senior earth resident" /> -->
-
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
-import { WhoAmI } from "./types";
-
 export default {
   handle: "luojiahai",
   anglicization: "geoffrey",
@@ -34,15 +30,12 @@ export default {
   website: new URL("https://luojiahai.com"),
   birthplace: "guangzhou",
   languages: ["mandarin chinese", "cantonese chinese", "english"],
-} satisfies WhoAmI;
+};
 ```
 
 ```typescript [resume.ts] :line-numbers
 // It is a preview of my resume with limited information. Full version available upon request.
 // Please contact via LinkedIn with role and compensation details (Melbourne or remote only; no agency inquiries).
-
-import { Resume } from "./types";
-
 export default {
   education: [
     {
@@ -104,45 +97,7 @@ export default {
       endDate: new Date(2019, 12),
     },
   ],
-} satisfies Resume;
-```
-
-```typescript [types.ts] :line-numbers
-interface Personality {
-  code: string;
-  type: string;
-}
-
-export interface WhoAmI {
-  handle: string;
-  anglicization: string;
-  personality: Personality;
-  email: string;
-  website: URL;
-  birthplace: string;
-  languages: string[];
-}
-
-interface Education {
-  school: string;
-  degree: string;
-  location: string;
-  startDate: Date;
-  endDate: Date;
-}
-
-interface Experience {
-  company: string;
-  title: string;
-  location: string;
-  startDate: Date;
-  endDate: Date;
-}
-
-export interface Resume {
-  education: Education[];
-  experience: Experience[];
-}
+};
 ```
 
 :::
