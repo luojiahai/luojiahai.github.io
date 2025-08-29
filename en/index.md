@@ -20,7 +20,7 @@ hero:
 
 ```typescript [whoami.ts] :line-numbers
 export default {
-  name: "luo jiahai",
+  name: "luojiahai",
   anglicized: "geoffrey",
   personality: "intj",
   email: "luo[at]jiahai.co".replace("[at]", "@"),
