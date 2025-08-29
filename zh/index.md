@@ -21,7 +21,7 @@ hero:
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: {
-    handle: "luojiahai",
+    full: "罗嘉海",
     anglicized: "geoffrey",
   },
   personality: {
