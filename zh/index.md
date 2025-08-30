@@ -20,9 +20,11 @@ hero:
 
 ```typescript [whoami.ts] :line-numbers
 export default {
-  name: "罗嘉海",
-  anglicized: "geoffrey",
-  personality: "intj",
+  name: {
+    full: "罗嘉海",
+    anglicized: "geoffrey",
+  },
+  personality: MyersBriggs.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com"),
   birthplace: "广州",
