@@ -6,7 +6,7 @@
 
 ```cpp [hello.cpp] :line-numbers
 #include<iostream>
-int main(){static char s[]={104,101,108,108,111,44,32,119,111,114,108,100,33,10,0};for(char*p=s;*p;)std::cout<<*p++;}
+int main(){[](){static char s[]="ifmmp-!xpsme\"\x0b";for(char*p=s;*p;)std::cout<<(char)(*p++-1);}();}
 ```
 
 :::
