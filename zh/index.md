@@ -22,7 +22,7 @@ hero:
 export default {
   name: {
     full: "罗嘉海",
-    anglicized: "geoffrey",
+    anglicized: "Geoffrey",
   },
   personality: MyersBriggs.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),

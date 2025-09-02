@@ -21,15 +21,15 @@ hero:
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: {
-    full: "luojiahai",
-    anglicized: "geoffrey",
+    full: "Luo Jiahai",
+    anglicized: "Geoffrey",
   },
   personality: MyersBriggs.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),
-  hometown: "guangzhou, china",
-  location: "melbourne, australia",
-  languages: ["mandarin chinese", "cantonese chinese", "english"],
+  hometown: "Guangzhou, China",
+  location: "Melbourne, Australia",
+  languages: ["Mandarin Chinese", "Cantonese Chinese", "English"],
 };
 ```
 
