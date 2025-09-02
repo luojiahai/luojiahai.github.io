@@ -14,12 +14,7 @@ int main(){for(const char* p="ifmmp-!xpsme\"\x0b";*p;)std::cout<<char(*p++-1);}
 **编译**
 
 ```shell
-cc -std=gnu89 -Wall -Wextra \
-   -Wno-error -Wno-implicit-function-declaration -Wno-logical-op-parentheses \
-   -Wno-deprecated-non-prototype -Wno-implicit-int -Wno-parentheses \
-   -Wno-return-type -Wno-builtin-declaration-mismatch -Wno-format \
-   -Wno-missing-parameter-type -Wno-unknown-warning-option \
-   -include unistd.h -O3 hello.c -o hello
+g++ -std=c++17 -o hello hello.cpp
 ```
 
 **运行**
