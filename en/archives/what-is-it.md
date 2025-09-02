@@ -4,7 +4,7 @@ It is my personal site, statically generated using [VitePress](https://vitepress
 
 ## Who am I?
 
-I am Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
+I am Luo Jiahai, also known as Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
 
 ## What I do?
 
