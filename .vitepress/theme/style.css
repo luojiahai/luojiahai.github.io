@@ -26,7 +26,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+.VPNavBarTitle {
   font-family: Satoshi, sans-serif !important;
   color: #000 !important;
 }
@@ -65,9 +66,9 @@ h4 {
 }
 
 .VPHero .name {
+  letter-spacing: -1.3px !important;
   line-height: 48px !important;
   font-size: 40px !important;
-  letter-spacing: -1.3px;
 }
 
 .VPHero .text {
