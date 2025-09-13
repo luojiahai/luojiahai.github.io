@@ -58,6 +58,11 @@
   border-radius: 0 !important;
 }
 
+html {
+  font-optical-sizing: auto !important;
+  font-feature-settings: "salt" 1 !important;
+}
+
 h1,
 h2,
 h3,
@@ -149,6 +154,11 @@ h4,
 .VPButton.alt:hover {
   color: var(--background) !important;
   background-color: var(--brand) !important;
+}
+
+.VPFooter .copyright {
+  color: var(--text-3) !important;
+  font-family: "IBM Plex Mono", monospace !important;
 }
 
 @media (min-width: 640px) {
