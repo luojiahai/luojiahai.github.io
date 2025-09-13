@@ -119,11 +119,11 @@ h4,
 }
 
 .VPHero .name {
-  letter-spacing: -1.3px !important;
+  letter-spacing: -1px !important;
   line-height: 48px !important;
   font-size: 40px !important;
 
-  padding-right: 4px;
+  padding-right: 2px;
   border-right: 0.15em solid var(--brand);
   white-space: nowrap;
   animation: caret 1s step-end infinite;
