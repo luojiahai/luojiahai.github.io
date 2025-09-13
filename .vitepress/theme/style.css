@@ -23,6 +23,11 @@
   border-radius: 0 !important;
 }
 
+.VPNavBar.home {
+  background-color: var(--vp-nav-bg-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
 .VPNavBarMenuLink {
   color: #b0b0b0 !important;
 }
