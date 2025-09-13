@@ -159,6 +159,7 @@ h4,
 .VPFooter .copyright {
   color: var(--text-3) !important;
   font-family: "IBM Plex Mono", monospace !important;
+  font-size: 12px !important;
 }
 
 @media (min-width: 640px) {
