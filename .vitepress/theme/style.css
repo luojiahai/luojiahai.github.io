@@ -52,10 +52,6 @@
   --vp-c-brand-2: var(--brand);
   --vp-c-brand-3: var(--brand);
   --vp-c-brand-soft: var(--brand-soft);
-
-  --vp-button-brand-text: var(--background);
-  --vp-button-brand-active-text: var(--background);
-  --vp-button-brand-hover-text: var(--background);
 }
 
 * {
@@ -90,7 +86,7 @@ h4,
 }
 
 .VPHome {
-  margin-bottom: 64px !important;
+  margin-bottom: 48px !important;
 }
 
 .VPHero {
@@ -123,8 +119,7 @@ h4,
   line-height: 48px !important;
   font-size: 40px !important;
 
-  padding-right: 2px;
-  border-right: 0.15em solid var(--brand);
+  border-right: 0.2em solid var(--brand);
   white-space: nowrap;
   animation: caret 1s step-end infinite;
 }
@@ -137,6 +132,23 @@ h4,
 .VPHero .tagline {
   line-height: 20px !important;
   font-size: 12px !important;
+}
+
+.VPButton.brand {
+  border-color: var(--brand) !important;
+  color: var(--background) !important;
+  background-color: var(--brand) !important;
+}
+
+.VPButton.alt {
+  border-color: var(--brand) !important;
+  color: var(--brand) !important;
+  background-color: var(--background) !important;
+}
+
+.VPButton.alt:hover {
+  color: var(--background) !important;
+  background-color: var(--brand) !important;
 }
 
 @media (min-width: 640px) {
