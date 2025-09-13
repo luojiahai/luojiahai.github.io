@@ -23,6 +23,11 @@
   border-radius: 0 !important;
 }
 
+html {
+  font-optical-sizing: auto;
+  font-feature-settings: "salt" 1;
+}
+
 .VPNavBar.home {
   background-color: var(--vp-nav-bg-color) !important;
   border-bottom: 1px solid var(--border-color) !important;
