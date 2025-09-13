@@ -10,7 +10,7 @@ export default defineConfig({
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["examples/**/*", "README.md"],
-  appearance: false,
+  appearance: true,
   lastUpdated: true,
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
@@ -47,7 +47,10 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
   themeConfig: {
-    logo: { src: "/apple-touch-icon.png" },
+    logo: {
+      light: "/apple-touch-icon.png",
+      dark: "/apple-touch-icon-dark.png",
+    },
     socialLinks: [
       { icon: "x", link: "https://x.com/luojiahai" },
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
