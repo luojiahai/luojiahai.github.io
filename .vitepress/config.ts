@@ -46,7 +46,7 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
   themeConfig: {
-    // logo: { src: "/apple-touch-icon.png" },
+    logo: { src: "/apple-touch-icon.png" },
     socialLinks: [
       { icon: "x", link: "https://x.com/luojiahai" },
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
