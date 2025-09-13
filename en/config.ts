@@ -13,8 +13,6 @@ export const config = defineConfig({
       text: "Edit this page on GitHub",
     },
     footer: {
-      message:
-        'Released under the <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT License</a>.',
       copyright: `Copyright © 2015-${new Date().getFullYear()} luojiahai`,
     },
   },

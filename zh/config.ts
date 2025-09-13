@@ -13,8 +13,6 @@ export const config = defineConfig({
       text: "在 GitHub 上编辑此页面",
     },
     footer: {
-      message:
-        '基于 <a href="https://github.com/luojiahai/luojiahai.github.io/blob/main/LICENSE" target="_blank">MIT 许可</a>发布',
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
     },
     docFooter: {
