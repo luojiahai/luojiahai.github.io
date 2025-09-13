@@ -1,74 +1,32 @@
 :root {
-  --background: #ffffff;
-  --background-alt: #f6f7f8;
-  --text-1: #18191c;
-  --text-2: #61666d;
-  --text-3: #9499a0;
-  --brand-1: #ff6699;
-  --brand-2: #ff6699;
-  --brand-3: #e84b85;
-  --brand-soft: rgba(255, 102, 153, 0.14);
-  --brand-alt-1: #00aeec;
-  --brand-alt-2: #00aeec;
-  --brand-alt-3: #008ac5;
-  --brand-alt-soft: rgba(0, 174, 236, 0.14);
-  --border: #e3e5e7;
-}
-
-.dark {
-  --background: #171717;
-  --background-alt: #101010;
-  --text-1: #e7e9eb;
-  --text-2: #a2a7ae;
-  --text-3: #757a81;
-  --brand-1: #ff6699;
-  --brand-2: #ff6699;
-  --brand-3: #e84b85;
-  --brand-soft: rgba(255, 102, 153, 0.16);
-  --brand-alt-1: #00aeec;
-  --brand-alt-2: #00aeec;
-  --brand-alt-3: #008ac5;
-  --brand-alt-soft: rgba(0, 174, 236, 0.16);
-  --border: #2f3134;
-}
-
-:root {
-  --vp-font-family-base: "Helvetica Neue", "Noto Sans SC", sans-serif;
+  --vp-font-family-base: Inter, sans-serif;
   --vp-font-family-mono: "Cascadia Mono", monospace;
-}
 
-:root {
-  --vp-c-bg: var(--background);
-  --vp-c-bg-alt: var(--background-alt);
-  --vp-c-bg-elv: var(--background-alt);
-  --vp-c-bg-soft: var(--background-alt);
+  --vp-c-border: #c2c2c4;
+  --vp-c-divider: #e2e2e3;
+  --vp-c-gutter: #e2e2e3;
 
-  --vp-c-border: var(--border);
-  --vp-c-divider: var(--border);
-  --vp-c-gutter: var(--border);
+  --vp-c-text-1: #3c3c43;
+  --vp-c-text-2: #67676c;
+  --vp-c-text-3: #929295;
 
-  --vp-c-text-1: var(--text-1);
-  --vp-c-text-2: var(--text-2);
-  --vp-c-text-3: var(--text-3);
-
-  --vp-c-brand-1: var(--brand-1);
-  --vp-c-brand-2: var(--brand-2);
-  --vp-c-brand-3: var(--brand-3);
-  --vp-c-brand-soft: var(--brand-soft);
-
-  --vp-c-tip-1: var(--brand-alt-1);
-  --vp-c-tip-2: var(--brand-alt-2);
-  --vp-c-tip-3: var(--brand-alt-3);
-  --vp-c-tip-soft: var(--brand-alt-soft);
-
-  --vp-c-note-1: var(--brand-alt-1);
-  --vp-c-note-2: var(--brand-alt-2);
-  --vp-c-note-3: var(--brand-alt-3);
-  --vp-c-note-soft: var(--brand-alt-soft);
+  --vp-c-brand-1: #000;
+  --vp-c-brand-2: #000;
+  --vp-c-brand-3: #000;
+  --vp-c-brand-soft: rgba(0, 0, 0, 0.14);
 }
 
 * {
   border-radius: 0 !important;
+}
+
+.VPNavBarMenuLink {
+  color: #b0b0b0 !important;
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+  color: #4f4f4f !important;
 }
 
 .VPHome {
@@ -88,23 +46,9 @@
   font-size: 40px !important;
 }
 
-@keyframes caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--text-1);
-  }
-}
-
 .VPHero .text {
   line-height: 32px !important;
   font-size: 24px !important;
-
-  /* border-right: 0.2em solid var(--text-1);
-  white-space: nowrap;
-  animation: caret 1s step-end infinite; */
 }
 
 .VPHero .tagline {
