@@ -23,9 +23,16 @@
   border-radius: 0 !important;
 }
 
-html {
-  font-optical-sizing: auto;
-  font-feature-settings: "salt" 1;
+h1,
+h2,
+h3,
+h4 {
+  font-family: Satoshi, sans-serif !important;
+  color: #000 !important;
+}
+
+.VPButton {
+  font-family: Satoshi, sans-serif !important;
 }
 
 .VPNavBar.home {
@@ -60,6 +67,7 @@ html {
 .VPHero .name {
   line-height: 48px !important;
   font-size: 40px !important;
+  letter-spacing: -1.3px;
 }
 
 .VPHero .text {
