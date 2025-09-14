@@ -44,7 +44,7 @@ export const config = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: "首页", link: "/zh" },
+    { text: "首页", link: "/zh/" },
     {
       text: "档案",
       link: "/zh/archives/what-is-it",
@@ -57,10 +57,7 @@ function sidebarArchives(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "档案",
-      items: [
-        { text: "这是什么？", link: "what-is-it" },
-        { text: "你好，世界！", link: "hello-world" },
-      ],
+      items: [{ text: "这是什么？", link: "what-is-it" }],
     },
   ];
 }
