@@ -8,9 +8,6 @@
   --brand: #000;
   --brand-soft: rgba(0, 0, 0, 0.14);
 
-  --nav-bar-menu-link: #b0b0b0;
-  --nav-bar-menu-link-active: #4f4f4f;
-
   --border-color: #dedede;
   --border-color-secondary: #f6f6f6;
 }
@@ -24,9 +21,6 @@
 
   --brand: #fff;
   --brand-soft: rgba(255, 255, 255, 0.16);
-
-  --nav-bar-menu-link: #505050;
-  --nav-bar-menu-link-active: #b1b1b1;
 
   --border-color: #222222;
   --border-color-secondary: #0a0a0a;
@@ -81,13 +75,15 @@ h4,
   border-bottom: 1px solid var(--border-color) !important;
 }
 
-.VPNavBarMenuLink {
-  color: var(--nav-bar-menu-link) !important;
+.VPNavBarMenuLink,
+.VPSocialLink {
+  color: var(--text-3) !important;
 }
 
 .VPNavBarMenuLink.active,
-.VPNavBarMenuLink:hover {
-  color: var(--nav-bar-menu-link-active) !important;
+.VPNavBarMenuLink:hover,
+.VPSocialLink:hover {
+  color: var(--brand) !important;
 }
 
 .VPHome {
