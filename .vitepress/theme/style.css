@@ -139,8 +139,8 @@ h4,
   max-width: calc(var(--vp-layout-max-width) - 64px);
 }
 
+.VPFooter .message,
 .VPFooter .copyright {
-  color: var(--vp-c-text-3) !important;
   font-family: "Cascadia Mono", monospace !important;
   font-size: 12px !important;
 }
