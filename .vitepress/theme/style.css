@@ -138,6 +138,7 @@ h4,
   color: var(--vp-c-text-3) !important;
   font-family: "Cascadia Mono", monospace !important;
   font-size: 12px !important;
+  line-height: 36px !important;
 }
 
 @media (min-width: 640px) {
