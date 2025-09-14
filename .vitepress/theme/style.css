@@ -129,14 +129,20 @@ h4,
 }
 
 .VPFooter {
-  padding: 17px 20px !important;
+  padding: 24px 24px !important;
+}
+
+.VPFooter .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(var(--vp-layout-max-width) - 64px);
 }
 
 .VPFooter .copyright {
   color: var(--vp-c-text-3) !important;
   font-family: "Cascadia Mono", monospace !important;
   font-size: 12px !important;
-  line-height: 36px !important;
 }
 
 @media (min-width: 640px) {
