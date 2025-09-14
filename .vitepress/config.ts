@@ -10,7 +10,7 @@ export default defineConfig({
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["examples/**/*", "README.md"],
-  appearance: false,
+  appearance: true,
   lastUpdated: true,
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
@@ -56,13 +56,13 @@ export default defineConfig({
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
-    // search: {
-    //   provider: "local",
-    //   options: {
-    //     locales: {
-    //       ...zhSearch,
-    //     },
-    //   },
-    // },
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          ...zhSearch,
+        },
+      },
+    },
   },
 });

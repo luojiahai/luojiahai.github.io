@@ -54,14 +54,12 @@ h4,
   border-bottom: 1px solid var(--border-color) !important;
 }
 
-.VPNavBarMenuLink,
-.VPSocialLink {
-  color: var(--vp-c-text-3) !important;
+.VPNavBarMenuLink {
+  color: var(--vp-c-text-2) !important;
 }
 
 .VPNavBarMenuLink.active,
-.VPNavBarMenuLink:hover,
-.VPSocialLink:hover {
+.VPNavBarMenuLink:hover {
   color: var(--brand) !important;
 }
 
