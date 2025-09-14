@@ -10,8 +10,8 @@
   --background: #000;
   --brand: #fff;
   --brand-soft: rgba(255, 255, 255, 0.16);
-  --border-color: #222222;
-  --border-color-secondary: #0a0a0a;
+  --border-color: #3a3a3a;
+  --border-color-secondary: #222222;
 }
 
 :root {
