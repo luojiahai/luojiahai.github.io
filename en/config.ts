@@ -13,7 +13,7 @@ export const config = defineConfig({
       text: "Edit this page on GitHub",
     },
     footer: {
-      message: "[#] luojiahai",
+      message: "<a href='/'>[#] luojiahai</a>",
       copyright: `Copyright © 2015-${new Date().getFullYear()} luojiahai`,
     },
   },

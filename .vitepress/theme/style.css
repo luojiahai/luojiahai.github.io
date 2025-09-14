@@ -145,6 +145,10 @@ h4,
   font-size: 12px !important;
 }
 
+.VPFooter a {
+  text-decoration-line: none !important;
+}
+
 @media (min-width: 640px) {
   .VPHero .name {
     line-height: 56px !important;
