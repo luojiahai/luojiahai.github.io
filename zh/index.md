@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。
+  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须再来点零食。
   actions:
     - theme: brand
       text: 这是什么？

@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai
   text: hello, world!
-  tagline: I like eating, cooking, and grocery shopping.
+  tagline: I like eating, cooking, and grocery shopping. Eating snacks after a meal is a must.
   actions:
     - theme: brand
       text: What is it?
