@@ -78,16 +78,6 @@ h4,
   border-bottom: 1px solid var(--border-color) !important;
 }
 
-@keyframes caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--brand);
-  }
-}
-
 .VPHero .heading {
   gap: 8px !important;
 }
@@ -95,10 +85,35 @@ h4,
 .VPHero .name {
   line-height: 48px !important;
   font-size: 40px !important;
+}
 
-  border-right: 0.2em solid var(--brand);
-  white-space: nowrap;
-  animation: caret 1s step-end infinite;
+.VPHero .name .spinner {
+  font-family: "Cascadia Mono", monospace !important;
+  padding-left: 16px !important;
+}
+
+.VPHero .name .spinner::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  animation: spinner 1s steps(4, end) infinite;
+}
+
+@keyframes spinner {
+  0%,
+  20% {
+    content: "|";
+  }
+  40% {
+    content: "/";
+  }
+  60% {
+    content: "—";
+  }
+  80%,
+  100% {
+    content: "\\";
+  }
 }
 
 .VPHero .text {

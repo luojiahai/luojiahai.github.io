@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai
+  name: luojiahai<span class="spinner"></span>
   text: hello, world!
   tagline: I like eating, cooking, and grocery shopping. Eating snacks after a meal is a must.
   actions:
