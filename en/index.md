@@ -26,7 +26,7 @@ export default {
   personality: MyersBriggs.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),
-  hometown: "Guangzhou, Guangdong, China",
+  hometown: "Guangzhou, Guangdong, China (mainland)",
   location: "Melbourne, Victoria, Australia",
   languages: ["Mandarin Chinese", "Cantonese Chinese", "English"],
 };
