@@ -3,6 +3,11 @@
   --brand: #000;
   --brand-soft: rgba(0, 0, 0, 0.14);
   --grid-color: #f6f6f6;
+
+  --vp-c-indigo-1: #3491b3;
+  --vp-c-indigo-2: #39a5cc;
+  --vp-c-indigo-3: #56adcc;
+  --vp-c-indigo-soft: rgba(99, 214, 255, 0.14);
 }
 
 .dark {
@@ -10,6 +15,11 @@
   --brand: #fff;
   --brand-soft: rgba(255, 255, 255, 0.16);
   --grid-color: #222222;
+
+  --vp-c-indigo-1: #a8e8ff;
+  --vp-c-indigo-2: #5dc3e8;
+  --vp-c-indigo-3: #3eb3de;
+  --vp-c-indigo-soft: rgba(99, 213, 255, 0.16);
 }
 
 :root {
