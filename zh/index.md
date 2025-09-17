@@ -39,30 +39,6 @@ export default {
 // 这是我的简历预览版，仅包含有限的信息。完整版本可按需提供。
 // 请通过领英联系，并注明职位及薪资细节（仅限墨尔本或远程；谢绝中介）。
 
-const education = [
-  {
-    school: "墨尔本大学",
-    degree: "理学硕士（计算机科学）",
-    location: "澳大利亚墨尔本",
-    startDate: new Date(2018, 2),
-    endDate: new Date(2019, 12),
-  },
-  {
-    school: "墨尔本大学",
-    degree: "理学学士",
-    location: "澳大利亚墨尔本",
-    startDate: new Date(2015, 3),
-    endDate: new Date(2017, 12),
-  },
-  {
-    school: "北京大学",
-    degree: "北京大学暑期学校国际课程",
-    location: "中国北京",
-    startDate: new Date(2016, 7),
-    endDate: new Date(2016, 8),
-  },
-];
-
 const experience = [
   {
     company: "REA 集团（realestate.com.au）",
@@ -101,9 +77,33 @@ const experience = [
   },
 ];
 
+const education = [
+  {
+    school: "墨尔本大学",
+    degree: "理学硕士（计算机科学）",
+    location: "澳大利亚墨尔本",
+    startDate: new Date(2018, 2),
+    endDate: new Date(2019, 12),
+  },
+  {
+    school: "墨尔本大学",
+    degree: "理学学士",
+    location: "澳大利亚墨尔本",
+    startDate: new Date(2015, 3),
+    endDate: new Date(2017, 12),
+  },
+  {
+    school: "北京大学",
+    degree: "北京大学暑期学校国际课程",
+    location: "中国北京",
+    startDate: new Date(2016, 7),
+    endDate: new Date(2016, 8),
+  },
+];
+
 export default {
-  education,
   experience,
+  education,
 };
 ```
 
