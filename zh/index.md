@@ -15,10 +15,10 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<Badge type="info" text="Introverted" />
-<Badge type="tip" text="Intuitive" />
-<Badge type="warning" text="Thinking" />
-<Badge type="danger" text="Judging" />
+<Badge type="info" text="内向" />
+<Badge type="tip" text="天马行空" />
+<Badge type="warning" text="理性思考" />
+<Badge type="danger" text="运筹帷幄" />
 
 ::: code-group
 
