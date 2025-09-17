@@ -15,10 +15,10 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<Badge type="info" text="🅘 Introverted" />
-<Badge type="tip" text="🅝 Intuitive" />
-<Badge type="warning" text="🅣 Thinking" />
-<Badge type="danger" text="🅙 Judging" />
+<Badge type="info" text="[I] Introverted" />
+<Badge type="tip" text="[N] Intuitive" />
+<Badge type="warning" text="[T] Thinking" />
+<Badge type="danger" text="[J] Judging" />
 
 ::: code-group
 
