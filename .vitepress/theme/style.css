@@ -79,11 +79,6 @@ h4,
   gap: 8px !important;
 }
 
-.VPHero .name {
-  line-height: 48px !important;
-  font-size: 40px !important;
-}
-
 .VPHero .name .spinner {
   font-family: "Cascadia Mono", monospace !important;
   padding-left: 16px !important;
@@ -167,30 +162,6 @@ h4,
 
 .VPFooter a {
   text-decoration-line: none !important;
-}
-
-@media (min-width: 640px) {
-  .VPHero .name {
-    line-height: 56px !important;
-    font-size: 48px !important;
-  }
-
-  .VPHero .text {
-    line-height: 32px !important;
-    font-size: 24px !important;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPHero .name {
-    line-height: 64px !important;
-    font-size: 56px !important;
-  }
-
-  .VPHero .text {
-    line-height: 32px !important;
-    font-size: 24px !important;
-  }
 }
 
 /* prettier-ignore */
