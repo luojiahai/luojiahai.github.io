@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: hello, world!
-  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must.
+  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips.
   actions:
     - theme: brand
       text: What is it?
@@ -14,6 +14,11 @@ hero:
       text: Source
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
+
+<Badge type="info" text="Introverted" />
+<Badge type="tip" text="Intuitive" />
+<Badge type="warning" text="Thinking" />
+<Badge type="danger" text="Judging" />
 
 ::: code-group
 

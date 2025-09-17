@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须来点零食。
+  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须来点零食，通常是薯片。
   actions:
     - theme: brand
       text: 这是什么？
@@ -14,6 +14,11 @@ hero:
       text: 源代码
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
+
+<Badge type="info" text="Introverted" />
+<Badge type="tip" text="Intuitive" />
+<Badge type="warning" text="Thinking" />
+<Badge type="danger" text="Judging" />
 
 ::: code-group
 

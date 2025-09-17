@@ -2,16 +2,14 @@
   --background: #fff;
   --brand: #000;
   --brand-soft: rgba(0, 0, 0, 0.14);
-  --border-color: #dedede;
-  --border-color-secondary: #f6f6f6;
+  --grid-color: #f6f6f6;
 }
 
 .dark {
   --background: #000;
   --brand: #fff;
   --brand-soft: rgba(255, 255, 255, 0.16);
-  --border-color: #3a3a3a;
-  --border-color-secondary: #222222;
+  --grid-color: #222222;
 }
 
 :root {
@@ -22,14 +20,17 @@
 :root {
   --vp-c-bg: var(--background);
 
-  --vp-c-border: var(--border-color);
-  --vp-c-divider: var(--border-color);
-  --vp-c-gutter: var(--border-color);
+  --vp-c-gutter: var(--vp-c-divider);
 
   --vp-c-brand-1: var(--brand);
   --vp-c-brand-2: var(--brand);
   --vp-c-brand-3: var(--brand);
   --vp-c-brand-soft: var(--brand-soft);
+
+  --vp-c-tip-1: var(--vp-c-indigo-1);
+  --vp-c-tip-2: var(--vp-c-indigo-2);
+  --vp-c-tip-3: var(--vp-c-indigo-3);
+  --vp-c-tip-soft: var(--vp-c-indigo-soft);
 }
 
 * {
@@ -51,7 +52,7 @@ h4,
 
 .VPNavBar.home {
   background-color: var(--vp-nav-bg-color) !important;
-  border-bottom: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
 .VPNavBarMenuLink {
@@ -64,18 +65,14 @@ h4,
 }
 
 .VPHome {
-  margin-bottom: 48px !important;
+  margin-bottom: unset !important;
 }
 
 .VPHero {
-  background-image: linear-gradient(
-      90deg,
-      var(--border-color-secondary) 1px,
-      #0000 1px
-    ),
-    linear-gradient(var(--border-color-secondary) 1px, #0000 1px) !important;
+  background-image: linear-gradient(90deg, var(--grid-color) 1px, #0000 1px),
+    linear-gradient(var(--grid-color) 1px, #0000 1px) !important;
   background-size: 14px 14px !important;
-  border-bottom: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
 }
 
 .VPHero .heading {
@@ -140,6 +137,11 @@ h4,
 .VPButton.alt:hover {
   color: var(--background) !important;
   background-color: var(--brand) !important;
+}
+
+.VPHome .vp-doc {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 .VPFooter {
