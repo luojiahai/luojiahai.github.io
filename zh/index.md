@@ -28,7 +28,7 @@ export default {
     full: "罗嘉海",
     anglicized: "Geoffrey",
   },
-  personality: MyersBriggs.INTJ,
+  personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com"),
   hometown: "中国广州",
