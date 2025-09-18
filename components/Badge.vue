@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-  logo?: string;
+  label?: string;
   text?: string;
   type?: "pink" | "light-blue" | "green" | "yellow" | "red";
 }
@@ -11,7 +11,7 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <span class="Badge" :class="type">
-    <span class="logo">{{ logo }}</span>
+    <span class="label">{{ label }}</span>
     <span class="text">{{ text }}</span>
   </span>
 </template>
@@ -33,13 +33,13 @@ withDefaults(defineProps<Props>(), {
   font-size: 10px;
 }
 
-.Badge .logo,
+.Badge .label,
 .Badge .text {
   display: flex;
   padding: 0 6px;
 }
 
-.Badge.small .logo,
+.Badge.small .label,
 .Badge.small .text {
   padding: 0 4px;
 }
@@ -70,7 +70,7 @@ withDefaults(defineProps<Props>(), {
   line-height: 18px;
 }
 
-.Badge.pink .logo {
+.Badge.pink .label {
   color: var(--Pi5);
   background-color: rgba(var(--Pi5_rgb), 0.32);
 }
@@ -80,7 +80,7 @@ withDefaults(defineProps<Props>(), {
   background-color: rgba(var(--Pi5_rgb), 0.16);
 }
 
-.Badge.light-blue .logo {
+.Badge.light-blue .label {
   color: var(--Lb5);
   background-color: rgba(var(--Lb5_rgb), 0.32);
 }
@@ -90,7 +90,7 @@ withDefaults(defineProps<Props>(), {
   background-color: rgba(var(--Lb5_rgb), 0.16);
 }
 
-.Badge.green .logo {
+.Badge.green .label {
   color: var(--Gr5);
   background-color: rgba(var(--Gr5_rgb), 0.32);
 }
@@ -100,7 +100,7 @@ withDefaults(defineProps<Props>(), {
   background-color: rgba(var(--Gr5_rgb), 0.16);
 }
 
-.Badge.yellow .logo {
+.Badge.yellow .label {
   color: var(--Ye5);
   background-color: rgba(var(--Ye5_rgb), 0.32);
 }
@@ -110,7 +110,7 @@ withDefaults(defineProps<Props>(), {
   background-color: rgba(var(--Ye5_rgb), 0.16);
 }
 
-.Badge.red .logo {
+.Badge.red .label {
   color: var(--Re5);
   background-color: rgba(var(--Re5_rgb), 0.32);
 }

@@ -15,10 +15,10 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<Badge type="pink" logo="I" text="内向" />
-<Badge type="light-blue" logo="N" text="天马行空" />
-<Badge type="yellow" logo="T" text="理性思考" />
-<Badge type="red" logo="J" text="运筹帷幄" />
+<Badge type="pink" label="I" text="内向" />
+<Badge type="light-blue" label="N" text="天马行空" />
+<Badge type="yellow" label="T" text="理性思考" />
+<Badge type="red" label="J" text="运筹帷幄" />
 
 ::: code-group
 
