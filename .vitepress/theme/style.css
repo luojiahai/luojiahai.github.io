@@ -387,6 +387,10 @@
   --background: var(--Wh0);
   --brand: var(--Ba0);
   --brand-soft: rgba(var(--Ba0_rgb), 0.14);
+
+  --pink: var(--Pi5);
+  --pink-soft: rgba(var(--Pi5_rgb), 0.14);
+
   --border: var(--Ga3);
   --divider: var(--Ga2);
   --gutter: var(--Ga2);
@@ -418,6 +422,10 @@
   --background: var(--Ba0);
   --brand: var(--Wh0);
   --brand-soft: rgba(var(--Wh0_rgb), 0.16);
+
+  --pink: var(--Pi5);
+  --pink-soft: rgba(var(--Pi5_rgb), 0.16);
+
   --border: var(--Ga8);
   --divider: var(--Ga9);
   --gutter: var(--Ga9);
@@ -573,13 +581,18 @@ h4,
   background-color: var(--brand) !important;
 }
 
-.VPHome .vp-doc {
+.VPHome .vp-doc.container {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
 }
 
-.VPHome .vp-doc .VPBadge {
+.VPHome .vp-doc.container .VPBadge {
   font-family: "Cascadia Mono", monospace !important;
+}
+
+.VPBadge.info {
+  color: var(--pink) !important;
+  background-color: var(--pink-soft) !important;
 }
 
 .VPFooter {
