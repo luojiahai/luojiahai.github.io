@@ -454,26 +454,21 @@
 
 :root {
   --vp-c-bg: var(--brand-negative);
-
   --vp-c-border: var(--border);
   --vp-c-divider: var(--divider);
   --vp-c-gutter: var(--gutter);
-
   --vp-c-brand-1: var(--brand);
   --vp-c-brand-2: var(--brand);
   --vp-c-brand-3: var(--brand);
   --vp-c-brand-soft: var(--brand-soft);
-
   --vp-c-tip-1: var(--vp-c-indigo-1);
   --vp-c-tip-2: var(--vp-c-indigo-2);
   --vp-c-tip-3: var(--vp-c-indigo-3);
   --vp-c-tip-soft: var(--vp-c-indigo-soft);
-
   --vp-c-note-1: var(--vp-c-indigo-1);
   --vp-c-note-2: var(--vp-c-indigo-2);
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
-
   --vp-button-brand-text: var(--brand-negative);
 }
 
