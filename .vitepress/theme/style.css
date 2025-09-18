@@ -384,42 +384,42 @@
 }
 
 :root {
-  --background: var(--Wh0);
   --brand: var(--Ba0);
   --brand-soft: rgba(var(--Ba0_rgb), 0.14);
-
+  --brand-negative: var(--Wh0);
+  --brand-negative-soft: rgba(var(--Wh0_rgb), 0.14);
   --border: var(--Ga3);
   --divider: var(--Ga2);
   --gutter: var(--Ga2);
   --grid: var(--Ga1);
 
-  --vp-c-indigo-1: var(--Bl6);
-  --vp-c-indigo-2: var(--Bl5);
-  --vp-c-indigo-3: var(--Bl4);
+  --vp-c-indigo-1: var(--Bl5);
+  --vp-c-indigo-2: var(--Bl4);
+  --vp-c-indigo-3: var(--Bl3);
   --vp-c-indigo-soft: rgba(var(--Bl5_rgb), 0.14);
-  --vp-c-purple-1: var(--Pu6);
-  --vp-c-purple-2: var(--Pu5);
-  --vp-c-purple-3: var(--Pu4);
+  --vp-c-purple-1: var(--Pu5);
+  --vp-c-purple-2: var(--Pu4);
+  --vp-c-purple-3: var(--Pu3);
   --vp-c-purple-soft: rgba(var(--Pu5_rgb), 0.14);
-  --vp-c-green-1: var(--Gr6);
-  --vp-c-green-2: var(--Gr5);
-  --vp-c-green-3: var(--Gr4);
+  --vp-c-green-1: var(--Gr5);
+  --vp-c-green-2: var(--Gr4);
+  --vp-c-green-3: var(--Gr3);
   --vp-c-green-soft: rgba(var(--Gr5_rgb), 0.14);
-  --vp-c-yellow-1: var(--Ye6);
-  --vp-c-yellow-2: var(--Ye5);
-  --vp-c-yellow-3: var(--Ye4);
+  --vp-c-yellow-1: var(--Ye5);
+  --vp-c-yellow-2: var(--Ye4);
+  --vp-c-yellow-3: var(--Ye3);
   --vp-c-yellow-soft: rgba(var(--Ye5_rgb), 0.14);
-  --vp-c-red-1: var(--Re6);
-  --vp-c-red-2: var(--Re5);
-  --vp-c-red-3: var(--Re4);
+  --vp-c-red-1: var(--Re5);
+  --vp-c-red-2: var(--Re4);
+  --vp-c-red-3: var(--Re3);
   --vp-c-red-soft: rgba(var(--Re5_rgb), 0.14);
 }
 
 .dark {
-  --background: var(--Ba0);
   --brand: var(--Wh0);
   --brand-soft: rgba(var(--Wh0_rgb), 0.16);
-
+  --brand-negative: var(--Ba0);
+  --brand-negative-soft: rgba(var(--Ba0_rgb), 0.16);
   --border: var(--Ga8);
   --divider: var(--Ga9);
   --gutter: var(--Ga9);
@@ -453,7 +453,7 @@
 }
 
 :root {
-  --vp-c-bg: var(--background);
+  --vp-c-bg: var(--brand-negative);
 
   --vp-c-border: var(--border);
   --vp-c-divider: var(--divider);
@@ -473,6 +473,8 @@
   --vp-c-note-2: var(--vp-c-indigo-2);
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
+
+  --vp-button-brand-text: var(--brand-negative);
 }
 
 * {
@@ -561,23 +563,6 @@ h4,
 .VPHero .tagline {
   line-height: 20px !important;
   font-size: 12px !important;
-}
-
-.VPButton.brand {
-  border-color: var(--brand) !important;
-  color: var(--background) !important;
-  background-color: var(--brand) !important;
-}
-
-.VPButton.alt {
-  border-color: var(--brand) !important;
-  color: var(--brand) !important;
-  background-color: var(--background) !important;
-}
-
-.VPButton.alt:hover {
-  color: var(--background) !important;
-  background-color: var(--brand) !important;
 }
 
 .VPHome .vp-doc.container {
