@@ -18,7 +18,6 @@ withDefaults(defineProps<Props>(), {
 
 <style>
 .Badge {
-  font-family: "Cascadia Mono", monospace !important;
   display: inline-flex;
   margin-right: 2px;
   border: 1px solid transparent;
@@ -27,35 +26,22 @@ withDefaults(defineProps<Props>(), {
   line-height: 22px;
   font-size: 12px;
   font-weight: 500;
-  transform: translateY(-2px);
 }
 
-.logo {
+.Badge.small {
+  line-height: 18px;
+  font-size: 10px;
+}
+
+.Badge .logo,
+.Badge .text {
   display: flex;
-  align-items: center;
-  line-height: 24px;
   padding: 0 6px;
 }
 
-.text {
-  display: flex;
-  align-items: center;
-  line-height: 24px;
-  padding: 0 8px;
-}
-
-.Badge.small .logo {
-  padding: 0 4px;
-  line-height: 18px;
-  font-size: 10px;
-  transform: translateY(-8px);
-}
-
+.Badge.small .logo,
 .Badge.small .text {
-  padding: 0 6px;
-  line-height: 18px;
-  font-size: 10px;
-  transform: translateY(-8px);
+  padding: 0 4px;
 }
 
 .VPDocFooter .Badge {
