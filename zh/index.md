@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。我喜欢喝可乐、吃零食。我是麦当劳和肯德基的信徒。
+  tagline: 我喜欢吃饭、做饭、逛超市；躺在沙发上看电视，配上可乐和零食。我是麦当劳和肯德基的信徒。
 ---
 
 <Badge type="pink" label="🖥️" text="软件工程打工人" />
