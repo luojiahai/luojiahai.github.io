@@ -3,15 +3,15 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai<span class="spinner"></span>
+  name: luojiahai<span class="spinner" />
   text: hello, world!
   tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips or chocolates.
 ---
 
-<Badge type="pink" label="🖥️" text="Software Engineering Labor" /><br/>
-<Badge type="light-blue" label="✈️" text="MSFS FlyByWire A32NX Pilot" /><br/>
-<Badge type="yellow" label="🍟" text="McDonald's Faithful Believer" /><br/>
-<Badge type="red" label="🍗" text="Kentucky Fried Chicken Enthusiast" /><br/>
+<Badge type="pink" label="🖥️" text="Software Engineering Labor" />
+<Badge type="light-blue" label="✈️" text="MSFS FlyByWire A32NX Pilot" />
+<Badge type="yellow" label="🍟" text="McDonald's Faithful Believer" />
+<Badge type="red" label="🍗" text="Kentucky Fried Chicken Enthusiast" />
 
 ::: code-group
 
