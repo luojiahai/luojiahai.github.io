@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai<span class="spinner"/>
+  name: luojiahai<span class="spinner"></span>
   text: hello, world!
   tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips or chocolates.
 ---
