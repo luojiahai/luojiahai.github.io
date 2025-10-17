@@ -9,7 +9,7 @@ hero:
 ---
 
 <Badge type="pink" label="🖥️" text="Software Engineering Labor" /><br/>
-<Badge type="light-blue" label="✈️" text="FlyByWire A32NX Pilot" /><br/>
+<Badge type="light-blue" label="✈️" text="MSFS FlyByWire A32NX Pilot" /><br/>
 <Badge type="yellow" label="🍟" text="McDonald's Faithful Believer" /><br/>
 <Badge type="red" label="🍗" text="Kentucky Fried Chicken Enthusiast" /><br/>
 
