@@ -10,8 +10,6 @@ hero:
 
 <Badge type="pink" label="🖥️" text="软件工程打工人" />
 <Badge type="light-blue" label="✈️" text="空客模拟飞行员" />
-<Badge type="yellow" label="🍟" text="麦当劳忠实信徒" />
-<Badge type="red" label="🍗" text="肯德基炸鸡狂热爱好者" />
 
 ::: code-group
 

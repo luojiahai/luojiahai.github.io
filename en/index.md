@@ -10,8 +10,6 @@ hero:
 
 <Badge type="pink" label="🖥️" text="Software Engineering Labor" />
 <Badge type="light-blue" label="✈️" text="MSFS FlyByWire A32NX Pilot" />
-<Badge type="yellow" label="🍟" text="McDonald's Faithful Believer" />
-<Badge type="red" label="🍗" text="Kentucky Fried Chicken Enthusiast" />
 
 ::: code-group
 
