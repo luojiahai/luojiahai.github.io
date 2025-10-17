@@ -3,29 +3,19 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai<span class="spinner"></span>
+  name: luojiahai<span class="spinner"/>
   text: hello, world!
-  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips.
-  actions:
-    - theme: brand
-      text: What is it?
-      link: /archives/what-is-it
-    - theme: alt
-      text: Source
-      link: https://github.com/luojiahai/luojiahai.github.io
+  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips or chocolates.
 ---
 
-<Badge type="pink" label="I" text="Introverted" />
-<Badge type="light-blue" label="N" text="Intuitive" />
-<Badge type="yellow" label="T" text="Thinking" />
-<Badge type="red" label="J" text="Judging" />
+<Badge type="pink" label="🖥️" text="Software Engineering Labor" /><br/>
+<Badge type="light-blue" label="✈️" text="FlyByWire A32NX Pilot" /><br/>
 
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: "luojiahai",
-  anglicizedName: "Geoffrey",
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),

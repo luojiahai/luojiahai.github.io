@@ -3,29 +3,19 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai<span class="spinner"></span>
+  name: luojiahai<span class="spinner"/>
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须来点零食，通常是薯片。
-  actions:
-    - theme: brand
-      text: 这是什么？
-      link: /zh/archives/what-is-it
-    - theme: alt
-      text: 源代码
-      link: https://github.com/luojiahai/luojiahai.github.io
+  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须来点零食，通常是薯片或者巧克力。
 ---
 
-<Badge type="pink" label="I" text="内向" />
-<Badge type="light-blue" label="N" text="天马行空" />
-<Badge type="yellow" label="T" text="理性思考" />
-<Badge type="red" label="J" text="运筹帷幄" />
+<Badge type="pink" label="🖥️" text="软件工程打工人" /><br/>
+<Badge type="light-blue" label="✈️" text="FlyByWire A32NX 飞行员" /><br/>
 
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: "罗嘉海",
-  anglicizedName: "Geoffrey",
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com"),
