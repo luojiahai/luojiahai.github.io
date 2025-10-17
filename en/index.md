@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: hello, world!
-  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips or chocolates.
+  tagline: I like eating, cooking, and grocery shopping. Eating snacks after each meal is a must, usually potato chips or chocolates. I'm a believer in McDonald's and Kentucky Fried Chicken.
 ---
 
 <Badge type="pink" label="🖥️" text="Software Engineering Labor" />
