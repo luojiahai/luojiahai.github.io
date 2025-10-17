@@ -1,13 +1,5 @@
 # What is it?
 
-It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages). It features my profile and résumé but does not include a blog or portfolio.
+It is my personal site, statically generated using [VitePress](https://vitepress.dev/) and hosted on [GitHub Pages](https://docs.github.com/en/pages).
 
-## Who am I?
-
-I am Luo Jiahai, also known as Geoffrey (anglicized). My handle is `luojiahai`, which is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi), and I use it consistently across usernames, emails, and social networks, essentially everywhere on the Internet.
-
-## What I do?
-
-I am currently a Senior Software Engineer at [REA Group](https://www.rea-group.com/) (ASX:REA), the company that operates [realestate.com.au](https://www.realestate.com.au/), one of Australia's leading property websites. I highly recommend working here for its great people‑driven culture and impactful products.
-
-Previously, I was a Software Development Engineer at [Amazon Web Services (AWS)](https://aws.amazon.com/), one of the major US tech companies. I appreciated the scale, technical challenges, and talented colleagues, but the culture and management style were incompatible with how I work best.
+My handle `luojiahai` is derived from the Pinyin of my name, 罗嘉海 (luó jiā hǎi). I use it consistently across usernames, emails, and social networks, everywhere on the Internet.

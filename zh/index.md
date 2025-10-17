@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。饭后必须来点零食，通常是薯片和巧克力。我是麦当劳和肯德基的信徒。
+  tagline: 我喜欢吃饭、做饭、逛超市。我喜欢喝可乐、吃零食。我是麦当劳和肯德基的信徒。
 ---
 
 <Badge type="pink" label="🖥️" text="软件工程打工人" />
@@ -15,7 +15,7 @@ hero:
 
 ```typescript [whoami.ts] :line-numbers
 export default {
-  name: "罗嘉海",
+  name: "luojiahai",
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com"),
