@@ -9,7 +9,9 @@ hero:
 ---
 
 <Badge type="pink" label="🖥️" text="软件工程打工人" /><br/>
-<Badge type="light-blue" label="✈️" text="FlyByWire A32NX 飞行员" /><br/>
+<Badge type="light-blue" label="✈️" text="空客模拟飞行员" /><br/>
+<Badge type="yellow" label="🍟" text="麦当劳忠实信徒" /><br/>
+<Badge type="red" label="🍗" text="肯德基炸鸡狂热爱好者" /><br/>
 
 ::: code-group
 
