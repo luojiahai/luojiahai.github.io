@@ -8,7 +8,7 @@ hero:
   tagline: 我喜欢吃饭、做饭、逛超市；躺在沙发上看电视，配上可乐和零食。我是麦当劳和肯德基的信徒。
 ---
 
-<Badge type="pink" label="🖥️" text="软件工程打工人" />
+<Badge type="pink" label="🖥️" text="软件开发工程工位主理人" />
 <Badge type="light-blue" label="✈️" text="空客模拟飞行员" />
 
 ::: code-group
@@ -19,8 +19,8 @@ export default {
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("zh", "https://luojiahai.com"),
-  hometown: "中国广州",
-  location: "澳大利亚墨尔本",
+  hometown: new MapboxGeocoder({ countries: ["cn"] }).query("guangzhou"),
+  location: new MapboxGeocoder({ countries: ["au"] }).query("melbourne"),
   languages: ["中文普通话", "中文广东话", "英文"],
 };
 ```
