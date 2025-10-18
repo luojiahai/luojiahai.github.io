@@ -19,8 +19,8 @@ export default {
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),
-  hometown: new MapboxGeocoder({ countries: ["cn"] }).query("guangzhou"),
-  location: new MapboxGeocoder({ countries: ["au"] }).query("melbourne"),
+  hometown: "Guangzhou, Guangdong, China",
+  location: "Melbourne, Victoria, Australia",
   languages: ["Mandarin Chinese", "Cantonese Chinese", "English"],
 };
 ```
