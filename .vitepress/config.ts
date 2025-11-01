@@ -11,7 +11,7 @@ export default defineConfig({
   },
   srcExclude: ["examples/**/*", "README.md"],
   appearance: true,
-  lastUpdated: true,
+  lastUpdated: false,
   markdown: {
     theme: { light: "github-light-default", dark: "github-dark-default" },
   },
