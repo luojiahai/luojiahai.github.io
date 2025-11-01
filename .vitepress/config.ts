@@ -6,7 +6,7 @@ export default defineConfig({
   title: "luojiahai",
   description: "hello, world!",
   locales: {
-    root: { label: "English", ...enConfig },
+    root: { label: "english", ...enConfig },
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["examples/**/*", "README.md"],
@@ -57,13 +57,13 @@ export default defineConfig({
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
-    search: {
-      provider: "local",
-      options: {
-        locales: {
-          ...zhSearch,
-        },
-      },
-    },
+    // search: {
+    //   provider: "local",
+    //   options: {
+    //     locales: {
+    //       ...zhSearch,
+    //     },
+    //   },
+    // },
   },
 });

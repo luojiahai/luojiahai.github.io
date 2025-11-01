@@ -30,21 +30,21 @@ export default {
 
 const experience = [
   {
-    company: "REA 集团（realestate.com.au）",
+    company: "rea 集团（realestate.com.au）",
     title: "高级软件工程师",
     location: "澳大利亚墨尔本",
     startDate: new Date(2025, 3),
     endDate: new Date(Date.now()),
   },
   {
-    company: "REA 集团（realestate.com.au）",
+    company: "rea 集团（realestate.com.au）",
     title: "软件工程师",
     location: "澳大利亚墨尔本",
     startDate: new Date(2024, 3),
     endDate: new Date(2025, 3),
   },
   {
-    company: "亚马逊云科技（AWS）",
+    company: "亚马逊云科技（aws）",
     title: "软件开发工程师",
     location: "澳大利亚悉尼",
     startDate: new Date(2021, 10),

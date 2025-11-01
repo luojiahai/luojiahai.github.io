@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: hello, world!
-  tagline: I like eating, cooking, and grocery shopping; lying on the couch watching tv with a coke and some snacks. I'm a believer in mcdonald's and kentucky fried chicken.
+  tagline: i like eating, cooking, and grocery shopping; lying on the couch watching tv with a coke and some snacks. i'm a believer in mcdonald's and kentucky fried chicken.
 ---
 
 <!-- <Badge type="pink" label="🖥️" text="Member of Technical Staff" /> -->
@@ -18,9 +18,9 @@ export default {
   personality: MyersBriggsTypeIndicator.INTJ,
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),
-  hometown: "Guangzhou, Guangdong, China",
-  location: "Melbourne, Victoria, Australia",
-  languages: ["Mandarin Chinese", "Cantonese Chinese", "English"],
+  hometown: "guangzhou, guangdong, china",
+  location: "melbourne, victoria, australia",
+  languages: ["mandarin Chinese", "cantonese Chinese", "english"],
 };
 ```
 
@@ -30,37 +30,37 @@ export default {
 
 const experience = [
   {
-    company: "REA Group (realestate.com.au)",
-    title: "Senior Software Engineer",
-    location: "Richmond, Victoria, Australia",
+    company: "rea group (realestate.com.au)",
+    title: "senior software engineer",
+    location: "richmond, victoria, australia",
     startDate: new Date(2025, 3),
     endDate: new Date(Date.now()),
   },
   {
-    company: "REA Group (realestate.com.au)",
-    title: "Software Engineer",
-    location: "Richmond, Victoria, Australia",
+    company: "rea group (realestate.com.au)",
+    title: "software engineer",
+    location: "richmond, victoria, australia",
     startDate: new Date(2024, 3),
     endDate: new Date(2025, 3),
   },
   {
-    company: "Amazon Web Services (AWS)",
-    title: "Software Development Engineer",
-    location: "Sydney, New South Wales, Australia",
+    company: "amazon web services (aws)",
+    title: "software development engineer",
+    location: "sydney, new south wales, australia",
     startDate: new Date(2021, 10),
     endDate: new Date(2024, 3),
   },
   {
-    company: "Deloitte",
-    title: "Software Development Consultant",
-    location: "Melbourne, Victoria, Australia",
+    company: "deloitte",
+    title: "software development consultant",
+    location: "melbourne, victoria, australia",
     startDate: new Date(2020, 3),
     endDate: new Date(2021, 10),
   },
   {
-    company: "The University of Melbourne",
-    title: "Teaching Assistant",
-    location: "Parkville, Victoria, Australia",
+    company: "the university of melbourne",
+    title: "teaching assistant",
+    location: "parkville, victoria, australia",
     startDate: new Date(2018, 2),
     endDate: new Date(2019, 12),
   },
@@ -68,23 +68,23 @@ const experience = [
 
 const education = [
   {
-    school: "The University of Melbourne",
-    degree: "Master of Science (Computer Science)",
-    location: "Parkville, Victoria, Australia",
+    school: "the university of melbourne",
+    degree: "master of science (computer science)",
+    location: "parkville, victoria, australia",
     startDate: new Date(2018, 2),
     endDate: new Date(2019, 12),
   },
   {
-    school: "The University of Melbourne",
-    degree: "Bachelor of Science",
-    location: "Parkville, Victoria, Australia",
+    school: "the university of melbourne",
+    degree: "bachelor of science",
+    location: "parkville, victoria, australia",
     startDate: new Date(2015, 3),
     endDate: new Date(2017, 12),
   },
   {
-    school: "Peking University",
-    degree: "PKUSSI (Peking University Summer School International) Program",
-    location: "Beijing, China",
+    school: "peking university",
+    degree: "pkussi (peking university summer school international) program",
+    location: "beijing, china",
     startDate: new Date(2016, 7),
     endDate: new Date(2016, 8),
   },

@@ -10,20 +10,20 @@ export const config = defineConfig({
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
-      text: "Edit this page on GitHub",
+      text: "edit this page on github",
     },
     footer: {
       message: "<a href='/'>[#] luojiahai</a>",
-      copyright: `Copyright © 2015-${new Date().getFullYear()} luojiahai`,
+      copyright: `copyright © 2015-${new Date().getFullYear()} luojiahai`,
     },
   },
 });
 
 function nav(): DefaultTheme.NavItem[] {
   return [
-    { text: "Home", link: "/" },
+    { text: "home", link: "/" },
     {
-      text: "Archives",
+      text: "archives",
       link: "/archives/what-is-it",
       activeMatch: "/archives/",
     },
@@ -33,8 +33,8 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarArchives(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "Archives",
-      items: [{ text: "What is it?", link: "what-is-it" }],
+      text: "archives",
+      items: [{ text: "what is it?", link: "what-is-it" }],
     },
   ];
 }
