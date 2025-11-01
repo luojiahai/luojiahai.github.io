@@ -7,15 +7,39 @@ export const config = defineConfig({
     sidebar: {
       "/archives/": { base: "/archives/", items: sidebarArchives() },
     },
-    editLink: {
-      pattern:
-        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
-      text: "edit this page on github",
-    },
+    // editLink: {
+    //   pattern:
+    //     "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+    //   text: "edit this page on github",
+    // },
     footer: {
       message: "<a href='/'>[#] luojiahai</a>",
       copyright: `copyright © 2015-${new Date().getFullYear()} luojiahai`,
     },
+    docFooter: {
+      prev: "previous",
+      next: "next",
+    },
+    outline: {
+      label: "on this page",
+    },
+    lastUpdated: {
+      text: "last updated",
+    },
+    notFound: {
+      title: "page not found",
+      quote:
+        "but if you don't change your direction, and if you keep looking, you may end up where you are heading.",
+      linkLabel: "go to home",
+      linkText: "take me home",
+    },
+    langMenuLabel: "change language",
+    returnToTopLabel: "return to top",
+    sidebarMenuLabel: "menu",
+    darkModeSwitchLabel: "appearance",
+    lightModeSwitchTitle: "switch to light theme",
+    darkModeSwitchTitle: "switch to dark theme",
+    skipToContentLabel: "skip to content",
   },
 });
 

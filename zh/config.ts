@@ -7,11 +7,11 @@ export const config = defineConfig({
     sidebar: {
       "/zh/archives/": { base: "/zh/archives/", items: sidebarArchives() },
     },
-    editLink: {
-      pattern:
-        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
-      text: "在 github 上编辑此页面",
-    },
+    // editLink: {
+    //   pattern:
+    //     "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+    //   text: "在 github 上编辑此页面",
+    // },
     footer: {
       message: "<a href='/'>[#] luojiahai</a>",
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,
