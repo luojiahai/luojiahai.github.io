@@ -8,7 +8,7 @@ hero:
   tagline: 我喜欢吃饭、做饭、逛超市；躺在沙发上看电视，配上可乐和零食。我是麦当劳和肯德基的信徒。
 ---
 
-<Badge type="pink" label="🖥️" text="计算机普通技工" />
+<Badge type="pink" label="🖥️" text="普通技工（计算机）" />
 
 ::: code-group
 
