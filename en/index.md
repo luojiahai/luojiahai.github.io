@@ -8,7 +8,7 @@ hero:
   tagline: I like eating, cooking, and grocery shopping; lying on the couch watching tv with a coke and some snacks. I'm a believer in mcdonald's and kentucky fried chicken.
 ---
 
-<Badge type="pink" label="🖥️" text="Software Engineering Labor" />
+<Badge type="pink" label="🖥️" text="Member of Technical Staff, Software Development" />
 <Badge type="light-blue" label="✈️" text="MSFS FlyByWire A32NX Pilot" />
 
 ::: code-group
