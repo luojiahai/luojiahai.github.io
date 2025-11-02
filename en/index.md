@@ -23,8 +23,8 @@ export default {
 ```
 
 ```typescript [resume.ts] :line-numbers
-// It is a preview of my resume with limited information. Full version available upon request.
-// Please contact via LinkedIn with role and compensation details (Melbourne or remote only; no agency inquiries).
+// it is a preview of my resume with limited information. full version available upon request.
+// please contact via linkedin with role and compensation details (melbourne or remote only; no agency inquiries).
 
 const experience = [
   {
