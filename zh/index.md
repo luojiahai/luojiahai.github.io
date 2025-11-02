@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: 你好，世界！
-  tagline: 我喜欢吃饭、做饭、逛超市。在家没事的时候，我会拿着一瓶可乐和一些零食，躺在沙发上看电视。我是麦当劳和肯德基的忠实信徒。
+  tagline: 我喜欢吃饭、做饭、逛超市。在家没事的时候，我会拿着一瓶可乐和一些零食，躺在沙发上看电视。
 ---
 
 ::: code-group
