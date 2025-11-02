@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import { config as enConfig } from "../en/config";
-import { config as zhConfig, search as zhSearch } from "../zh/config";
+import { config as zhConfig } from "../zh/config";
 
 export default defineConfig({
   title: "luojiahai",
@@ -47,23 +47,11 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
   themeConfig: {
-    logo: {
-      light: "/apple-touch-icon.png",
-      dark: "/apple-touch-icon-dark.png",
-    },
     socialLinks: [
       { icon: "x", link: "https://x.com/luojiahai" },
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
-    // search: {
-    //   provider: "local",
-    //   options: {
-    //     locales: {
-    //       ...zhSearch,
-    //     },
-    //   },
-    // },
   },
 });

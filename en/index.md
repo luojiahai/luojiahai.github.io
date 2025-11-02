@@ -18,7 +18,7 @@ export default {
   website: new URL("https://luojiahai.com"),
   hometown: "guangzhou, guangdong, china",
   location: "melbourne, victoria, australia",
-  languages: ["mandarin Chinese", "cantonese Chinese", "english"],
+  languages: ["mandarin chinese", "cantonese chinese", "english"],
 };
 ```
 
