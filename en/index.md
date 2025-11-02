@@ -8,8 +8,6 @@ hero:
   tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch with a coke and some snacks, watching tv. i'm a firm believer in mcdonald's and kentucky fried chicken.
 ---
 
-<!-- <Badge type="pink" label="🖥️" text="Member of Technical Staff" /> -->
-
 ::: code-group
 
 ```typescript [whoami.ts] :line-numbers
