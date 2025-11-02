@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luojiahai<span class="spinner"></span>
   text: hello, world!
-  tagline: i like eating, cooking, and grocery shopping; lying on the couch watching tv with a coke and some snacks. i'm a believer in mcdonald's and kentucky fried chicken.
+  tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch with a coke and some snacks, watching tv. i'm a firm believer in mcdonald's and kentucky fried chicken.
 ---
 
 <!-- <Badge type="pink" label="🖥️" text="Member of Technical Staff" /> -->
