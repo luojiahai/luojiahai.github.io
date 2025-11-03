@@ -10,16 +10,16 @@ hero:
 
 ::: code-group
 
-```typescript [whoami.ts] :line-numbers
-export default {
-  name: "luojiahai",
-  personality: "intj",
-  email: "luo[at]jiahai.co".replace("[at]", "@"),
-  website: new URL("https://luojiahai.com"),
-  hometown: "guangzhou, guangdong, china",
-  location: "melbourne, victoria, australia",
-  languages: ["mandarin chinese", "cantonese chinese", "english"],
-};
+```json [whoami.json] :line-numbers
+{
+  "name": "luojiahai",
+  "personality": "intj",
+  "email": "luo[at]jiahai.co", // replace [at] with @
+  "website": "https://luojiahai.com",
+  "hometown": "guangzhou, guangdong, china",
+  "location": "melbourne, victoria, australia",
+  "languages": ["mandarin chinese", "cantonese chinese", "english"]
+}
 ```
 
 :::
