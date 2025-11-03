@@ -13,7 +13,7 @@ hero:
 ```typescript [whoami.ts] :line-numbers
 export default {
   name: "luojiahai",
-  personality: MyersBriggsTypeIndicator.INTJ,
+  personality: "intj",
   email: "luo[at]jiahai.co".replace("[at]", "@"),
   website: new URL("https://luojiahai.com"),
   hometown: "guangzhou, guangdong, china",
