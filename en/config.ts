@@ -58,7 +58,10 @@ function sidebarArchives(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "archives",
-      items: [{ text: "what is it?", link: "what-is-it" }],
+      items: [
+        { text: "what is it?", link: "what-is-it" },
+        { text: "resume", link: "resume" },
+      ],
     },
   ];
 }

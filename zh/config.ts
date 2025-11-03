@@ -58,7 +58,10 @@ function sidebarArchives(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "档案",
-      items: [{ text: "这是什么？", link: "what-is-it" }],
+      items: [
+        { text: "这是什么？", link: "what-is-it" },
+        { text: "简历", link: "resume" },
+      ],
     },
   ];
 }
