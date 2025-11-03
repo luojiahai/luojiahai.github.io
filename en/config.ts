@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/archives/": { base: "/archives/", items: sidebarArchives() },
+      "/archive/": { base: "/archive/", items: sidebarArchive() },
     },
     // editLink: {
     //   pattern:
@@ -47,17 +47,17 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "home", link: "/" },
     {
-      text: "archives",
-      link: "/archives/what-is-it",
-      activeMatch: "/archives/",
+      text: "archive",
+      link: "/archive/what-is-it",
+      activeMatch: "/archive/",
     },
   ];
 }
 
-function sidebarArchives(): DefaultTheme.SidebarItem[] {
+function sidebarArchive(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "archives",
+      text: "archive",
       items: [
         { text: "what is it?", link: "what-is-it" },
         { text: "resume", link: "resume" },

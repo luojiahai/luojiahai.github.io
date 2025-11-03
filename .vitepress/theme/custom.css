@@ -84,11 +84,11 @@
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
   --vp-button-brand-border: var(--brand);
-  --vp-button-brand-text: var(--brand-negative);
-  --vp-button-brand-bg: var(--brand);
+  --vp-button-brand-text: var(--brand);
+  --vp-button-brand-bg: var(--brand-negative);
   --vp-button-brand-hover-border: var(--brand);
-  --vp-button-brand-hover-text: var(--brand);
-  --vp-button-brand-hover-bg: var(--brand-negative);
+  --vp-button-brand-hover-text: var(--brand-negative);
+  --vp-button-brand-hover-bg: var(--brand);
 }
 
 * {
