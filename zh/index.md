@@ -7,7 +7,7 @@ hero:
   text: 你好，世界！
   tagline: 我喜欢吃饭、做饭、逛超市。在家没事的时候，我会拿着一瓶可乐和一些零食，躺在沙发上看电视。
   actions:
-    - theme: brand
+    - theme: alt
       text: 档案
       link: /zh/archive/what-is-it
     - theme: alt

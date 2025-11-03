@@ -10,6 +10,10 @@
   --gutter: var(--Ga2);
   --grid: var(--Ga1);
 
+  --vp-c-gray-1: var(--Ga4);
+  --vp-c-gray-2: var(--Ga3);
+  --vp-c-gray-3: var(--Ga2);
+  --vp-c-gray-soft: rgba(var(--Ga4_rgb), 0.14);
   --vp-c-indigo-1: var(--Bl5);
   --vp-c-indigo-2: var(--Bl4);
   --vp-c-indigo-3: var(--Bl3);
@@ -42,6 +46,10 @@
   --gutter: var(--Ga9);
   --grid: var(--Ga10);
 
+  --vp-c-gray-1: var(--Ga7);
+  --vp-c-gray-2: var(--Ga8);
+  --vp-c-gray-3: var(--Ga9);
+  --vp-c-gray-soft: rgba(var(--Ga7_rgb), 0.16);
   --vp-c-indigo-1: var(--Bl5);
   --vp-c-indigo-2: var(--Bl6);
   --vp-c-indigo-3: var(--Bl7);
@@ -83,12 +91,6 @@
   --vp-c-note-2: var(--vp-c-indigo-2);
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
-  --vp-button-brand-border: var(--brand);
-  --vp-button-brand-text: var(--brand);
-  --vp-button-brand-bg: var(--brand-negative);
-  --vp-button-brand-hover-border: var(--brand);
-  --vp-button-brand-hover-text: var(--brand-negative);
-  --vp-button-brand-hover-bg: var(--brand);
 }
 
 * {
