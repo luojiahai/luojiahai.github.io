@@ -8,38 +8,55 @@ it is a preview of my resume with limited information. full version available up
 
 ## experience
 
-### rea group (realestate.com.au)
-
-**senior software engineer** | richmond, victoria, australia | 2025 - present
-
-**software engineer** | richmond, victoria, australia | 2024 - 2025
-
-### amazon web services (aws)
-
-**software development engineer** | sydney, new south wales, australia | 2021 - 2024
-
-### deloitte
-
-**software development consultant** | melbourne, victoria, australia | 2020 - 2021
-
-### the university of melbourne
-
-**teaching assistant** | parkville, victoria, australia | 2018 - 2020
+<ul style="list-style-type: none; padding-left: 0;">
+  <li>
+    <h3>rea group (realestate.com.au)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>senior software engineer</strong> | richmond, victoria, australia | 2025 - present</li>
+      <li><strong>software engineer</strong> | richmond, victoria, australia | 2024 - 2025</li>
+    </ul>
+  </li>
+  <li>
+    <h3>amazon web services (aws)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>software development engineer</strong> | sydney, new south wales, australia | 2021 - 2024</li>
+    </ul>
+  </li>
+  <li>
+    <h3>deloitte</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>software development consultant</strong> | melbourne, victoria, australia | 2020 - 2021</li>
+    </ul>
+  </li>
+  <li>
+    <h3>the university of melbourne</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>teaching assistant</strong> | parkville, victoria, australia | 2018 - 2020</li>
+    </ul>
+  </li>
+</ul>
 
 ## skills
 
-**programming languages**: python, typescript, java, c
-
-**technologies**: amazon web services (aws), docker, kafka, graphql, postgresql, react
+<ul style="list-style-type: none; padding-left: 0;">
+  <li><strong>programming languages</strong>: python, typescript, java, c</li>
+  <li><strong>technologies</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
+</ul>
 
 ## education
 
-### the university of melbourne
-
-**master of science (computer science)** | parkville, victoria, australia | 2018 - 2020
-
-**bachelor of science** | parkville, victoria, australia | 2015 - 2018
-
-### peking university
-
-**pkussi (peking university summer school international) program** | beijing, china | 2016
+<ul style="list-style-type: none; padding-left: 0;">
+  <li>
+    <h3>the university of melbourne</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>master of science (computer science)</strong> | parkville, victoria, australia | 2018 - 2020</li>
+      <li><strong>bachelor of science</strong> | parkville, victoria, australia | 2015 - 2018</li>
+    </ul>
+  </li>
+  <li>
+    <h3>peking university</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li><strong>pkussi (peking university summer school international) program</strong> | beijing, china | 2016</li>
+    </ul>
+  </li>
+</ul>
