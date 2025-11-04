@@ -69,6 +69,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
             { text: "布朗尼", link: "brownie" },
             { text: "生滚粥", link: "cantonese-congee" },
             { text: "叉烧", link: "char-siu" },
+            { text: "干锅花菜", link: "dry-pot-cauliflower" },
           ],
         },
       ],

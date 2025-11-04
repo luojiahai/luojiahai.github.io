@@ -69,6 +69,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
             { text: "brownie", link: "brownie" },
             { text: "cantonese congee", link: "cantonese-congee" },
             { text: "char siu", link: "char-siu" },
+            { text: "dry pot cauliflower", link: "dry-pot-cauliflower" },
           ],
         },
       ],
