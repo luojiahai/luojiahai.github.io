@@ -1,4 +1,4 @@
-# char siu
+# char siu (cantonese bbq pork)
 
 ## ingredients
 
