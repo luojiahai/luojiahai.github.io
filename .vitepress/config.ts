@@ -54,5 +54,13 @@ export default defineConfig({
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
+    search: {
+      provider: "algolia",
+      options: {
+        appId: "JJV32E8OQJ",
+        apiKey: "8e30ee18cfe987f7218309941a459be5",
+        indexName: "luojiahai_com_jjv32e8oqj_pages",
+      },
+    },
   },
 });
