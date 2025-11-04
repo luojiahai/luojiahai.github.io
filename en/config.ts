@@ -48,7 +48,10 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "home", link: "/" },
     {
       text: "archive",
-      link: "/archive/what-is-it",
+      items: [
+        { text: "what is it?", link: "/archive/what-is-it" },
+        { text: "resume", link: "/archive/resume" },
+      ],
       activeMatch: "/archive/",
     },
   ];
