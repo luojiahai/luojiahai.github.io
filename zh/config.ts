@@ -57,17 +57,17 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarArchive(): DefaultTheme.SidebarItem[] {
   return [
     {
-      collapsed: false,
+      text: "档案",
       items: [
         { text: "这是什么？", link: "what-is-it" },
         { text: "简历", link: "resume" },
+        {
+          text: "食谱",
+          base: "/zh/archive/recipes/",
+          collapsed: true,
+          items: [{ text: "布朗尼", link: "brownie" }],
+        },
       ],
-    },
-    {
-      text: "食谱",
-      base: "/zh/archive/recipes/",
-      collapsed: true,
-      items: [{ text: "布朗尼", link: "brownie" }],
     },
   ];
 }

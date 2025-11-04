@@ -57,17 +57,17 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarArchive(): DefaultTheme.SidebarItem[] {
   return [
     {
-      collapsed: false,
+      text: "archive",
       items: [
         { text: "what is it?", link: "what-is-it" },
         { text: "resume", link: "resume" },
+        {
+          text: "recipes",
+          base: "/archive/recipes/",
+          collapsed: true,
+          items: [{ text: "brownie", link: "brownie" }],
+        },
       ],
-    },
-    {
-      text: "recipes",
-      base: "/archive/recipes/",
-      collapsed: true,
-      items: [{ text: "brownie", link: "brownie" }],
     },
   ];
 }
