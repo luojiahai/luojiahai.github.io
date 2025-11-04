@@ -7,11 +7,11 @@ export const config = defineConfig({
     sidebar: {
       "/archive/": { base: "/archive/", items: sidebarArchive() },
     },
-    // editLink: {
-    //   pattern:
-    //     "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
-    //   text: "edit this page on github",
-    // },
+    editLink: {
+      pattern:
+        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+      text: "edit this page on github",
+    },
     footer: {
       message: "<a href='/'>luojiahai</a>",
       copyright: `copyright © 2015-${new Date().getFullYear()} luojiahai`,
@@ -68,7 +68,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
           items: [
             { text: "brownie", link: "brownie" },
             { text: "cantonese congee", link: "cantonese-congee" },
-            { text: "char siu", link: "char-siu" },
+            { text: "char siu (cantonese bbq pork)", link: "char-siu" },
             { text: "dry pot cauliflower", link: "dry-pot-cauliflower" },
           ],
         },
