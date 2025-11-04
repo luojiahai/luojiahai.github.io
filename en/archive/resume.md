@@ -10,7 +10,7 @@ it is a preview of my resume with limited information. full version available up
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">rea group (realestate.com.au)</h3>
+      <h3 style="margin-top: 0.5rem;">rea group</h3>
       <span><strong>richmond, victoria, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">

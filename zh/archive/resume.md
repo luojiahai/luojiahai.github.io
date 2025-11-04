@@ -10,7 +10,7 @@
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">rea 集团（realestate.com.au）</h3>
+      <h3 style="margin-top: 0.5rem;">rea 集团</h3>
       <span><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
