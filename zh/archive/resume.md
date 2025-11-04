@@ -71,7 +71,7 @@
       <span><strong>中国北京</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
-      <li style="display: flex; justify-content: space-between;"><span><em>北京大学暑期学校国际课程</em></span><span>2016</span></li>
+      <li style="display: flex; justify-content: space-between;"><span><em>北京大学暑期学校国际课程</em></span><span>2016夏</span></li>
     </ul>
   </li>
 </ul>

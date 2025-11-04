@@ -71,7 +71,7 @@ it is a preview of my resume with limited information. full version available up
       <span><strong>beijing, china</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
-      <li style="display: flex; justify-content: space-between;"><span><em>pkussi (peking university summer school international) program</em></span><span>2016</span></li>
+      <li style="display: flex; justify-content: space-between;"><span><em>pkussi (peking university summer school international) program</em></span><span>summer 2016</span></li>
     </ul>
   </li>
 </ul>
