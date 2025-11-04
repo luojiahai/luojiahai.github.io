@@ -48,10 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "home", link: "/" },
     {
       text: "archive",
-      items: [
-        { text: "what is it?", link: "/archive/what-is-it" },
-        { text: "resume", link: "/archive/resume" },
-      ],
+      link: "/archive/what-is-it",
       activeMatch: "/archive/",
     },
   ];
@@ -60,11 +57,17 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebarArchive(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "archive",
+      collapsed: false,
       items: [
         { text: "what is it?", link: "what-is-it" },
         { text: "resume", link: "resume" },
       ],
+    },
+    {
+      text: "recipes",
+      base: "/archive/recipes/",
+      collapsed: true,
+      items: [{ text: "brownie", link: "brownie" }],
     },
   ];
 }

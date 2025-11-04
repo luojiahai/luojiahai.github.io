@@ -49,7 +49,7 @@
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">专业技能</h2>
 <ul style="list-style-type: none; padding-left: 0;">
-  <li><strong>编程语言</strong>: python, typescript, java, c</li>
+  <li><strong>编程语言</strong>: 任何语言，我都用 ai 写代码</li>
   <li><strong>应用技术</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
 </ul>
 
