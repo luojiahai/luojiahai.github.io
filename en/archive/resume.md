@@ -11,7 +11,7 @@ it is a preview of my resume with limited information. full version available up
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <h3 style="margin-top: 0.5rem;">rea group</h3>
-      <span style="white-space: nowrap;"><strong>melbourne, australia</strong></span>
+      <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>senior software engineer</em></span><span style="white-space: nowrap;">2025 - present</span></li>
@@ -21,7 +21,7 @@ it is a preview of my resume with limited information. full version available up
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <h3 style="margin-top: 0.5rem;">amazon web services (aws)</h3>
-      <span style="white-space: nowrap;"><strong>sydney, australia</strong></span>
+      <span style="white-space: nowrap;"><strong>sydney, nsw, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>software development engineer</em></span><span style="white-space: nowrap;">2021 - 2024</span></li>
@@ -30,7 +30,7 @@ it is a preview of my resume with limited information. full version available up
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <h3 style="margin-top: 0.5rem;">deloitte</h3>
-      <span style="white-space: nowrap;"><strong>melbourne, australia</strong></span>
+      <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>software development consultant</em></span><span style="white-space: nowrap;">2020 - 2021</span></li>
@@ -39,7 +39,7 @@ it is a preview of my resume with limited information. full version available up
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <h3 style="margin-top: 0.5rem;">the university of melbourne</h3>
-      <span style="white-space: nowrap;"><strong>melbourne, australia</strong></span>
+      <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>teaching assistant</em></span><span style="white-space: nowrap;">2018 - 2020</span></li>
@@ -58,7 +58,7 @@ it is a preview of my resume with limited information. full version available up
   <li>
     <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <h3 style="margin-top: 0.5rem;">the university of melbourne</h3>
-      <span style="white-space: nowrap;"><strong>melbourne, australia</strong></span>
+      <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>master of science (computer science)</em></span><span style="white-space: nowrap;">2018 - 2020</span></li>
