@@ -67,6 +67,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
           collapsed: true,
           items: [
             { text: "布朗尼", link: "brownie" },
+            { text: "生滚粥", link: "cantonese-congee" },
             { text: "叉烧", link: "char-siu" },
           ],
         },

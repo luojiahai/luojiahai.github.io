@@ -67,6 +67,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
           collapsed: true,
           items: [
             { text: "brownie", link: "brownie" },
+            { text: "cantonese congee", link: "cantonese-congee" },
             { text: "char siu", link: "char-siu" },
           ],
         },
