@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
 import { config as enConfig } from "../en/config";
 import { config as zhConfig } from "../zh/config";
+import { searchOptions as enSearchOptions } from "../en/config";
+import { searchOptions as zhSearchOptions } from "../zh/config";
 
 export default defineConfig({
   title: "luojiahai",
@@ -55,11 +57,12 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/luojiahai" },
     ],
     search: {
-      provider: "algolia",
+      provider: "local",
       options: {
-        appId: "JJV32E8OQJ",
-        apiKey: "8e30ee18cfe987f7218309941a459be5",
-        indexName: "luojiahai_com_jjv32e8oqj_pages",
+        locales: {
+          root: enSearchOptions(),
+          zh: zhSearchOptions(),
+        },
       },
     },
   },

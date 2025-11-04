@@ -76,3 +76,29 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
     },
   ];
 }
+
+export function searchOptions(): DefaultTheme.LocalSearchOptions {
+  return {
+    translations: {
+      button: {
+        buttonText: "search",
+        buttonAriaLabel: "search",
+      },
+      modal: {
+        displayDetails: "display detailed list",
+        resetButtonTitle: "reset search",
+        backButtonTitle: "close search",
+        noResultsText: "no results for",
+        footer: {
+          selectText: "to select",
+          selectKeyAriaLabel: "enter",
+          navigateText: "to navigate",
+          navigateUpKeyAriaLabel: "up arrow",
+          navigateDownKeyAriaLabel: "down arrow",
+          closeText: "to close",
+          closeKeyAriaLabel: "escape",
+        },
+      },
+    },
+  };
+}
