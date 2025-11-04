@@ -65,7 +65,10 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
           text: "recipes",
           base: "/archive/recipes/",
           collapsed: true,
-          items: [{ text: "brownie", link: "brownie" }],
+          items: [
+            { text: "brownie", link: "brownie" },
+            { text: "char siu", link: "char-siu" },
+          ],
         },
       ],
     },

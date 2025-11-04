@@ -65,7 +65,10 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
           text: "食谱",
           base: "/zh/archive/recipes/",
           collapsed: true,
-          items: [{ text: "布朗尼", link: "brownie" }],
+          items: [
+            { text: "布朗尼", link: "brownie" },
+            { text: "叉烧", link: "char-siu" },
+          ],
         },
       ],
     },
