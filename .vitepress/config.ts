@@ -45,6 +45,7 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: '' }],
     ['meta', { property: 'og:image', content: 'https://luojiahai.com/image.png' }],
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
+    ['meta', { property: 'algolia-site-verification', content: '80498881ADCCEDF2' }],
   ],
   themeConfig: {
     socialLinks: [
