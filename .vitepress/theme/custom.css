@@ -196,6 +196,23 @@
 }
 
 /* prettier-ignore */
+.VPButton[href*="github.com"]:not(:is(.no-icon, svg a, :has(img, svg)))::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background: currentColor;
+  color: var(--vp-button-alt-text);
+  flex-shrink: 0;
+  --icon: url('https://api.iconify.design/simple-icons/github.svg');
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+  mask-size: 100% 100%;
+}
+
+/* prettier-ignore */
 :is(.VPButton[href*='://'], .VPButton[target='_blank']):not(:is(.no-icon, svg a, :has(img, svg)))::after {
   display: inline-block;
   margin-top: -1px;
