@@ -49,7 +49,7 @@ it is a preview of my resume with limited information. full version available up
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">skills</h2>
 <ul style="list-style-type: none; padding-left: 0;">
-  <li><strong>programming languages</strong>: any, i use ai to write code</li>
+  <li><strong>programming languages</strong>: any (i use ai to write code)</li>
   <li><strong>technologies</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
 </ul>
 
