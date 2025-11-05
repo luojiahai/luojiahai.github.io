@@ -20,4 +20,4 @@
 4. once the congee is cooked, pour it into a large pot and heat over high heat until boiling.
 5. when the congee is boiling, add the sliced meat or seafood and gently stir with chopsticks to prevent sticking to the bottom.
 6. once the meat changes color and is cooked through, add the chopped vegetables.
-7. when all ingredients are cooked and the congee returns to a boil, add salt, fish sauce, and white pepper powder to taste. stir well, then turn off the heat and serve.
+7. when all ingredients are cooked and the congee returns to a boil, add salt, fish sauce, and white pepper powder to taste. stir well.
