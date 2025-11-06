@@ -199,7 +199,7 @@
 .VPButton[href*="github.com"]:not(:is(.no-icon, svg a, :has(img, svg)))::before {
   content: "";
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
   margin-right: 4px;
   width: 16px;
   height: 16px;
