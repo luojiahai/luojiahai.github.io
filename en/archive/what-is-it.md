@@ -4,4 +4,4 @@ this is my personal site, statically generated using [vitepress](https://vitepre
 
 the favicon of this site is a 💾 floppy disk, the first portable storage device i ever used, the 3½‑inch kind. back then, most computers had a built‑in floppy disk drive.
 
-my handle `luojiahai` is derived from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, 罗嘉海 (luó jiā hǎi). 罗 is my family name, 嘉 means excellent or auspicious, and 海 means sea or ocean. i use it consistently across usernames, emails, and social networks, essentially everywhere on the internet.
+my handle `luojiahai` is derived from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, 罗嘉海 (luó jiā hǎi). 罗 is my family name, and 嘉海 is my given name - 嘉 means excellent or auspicious, and 海 means sea or ocean. i use it consistently across usernames, emails, and social networks, essentially everywhere on the internet.
