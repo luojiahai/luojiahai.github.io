@@ -199,7 +199,7 @@
 .VPButton[href*="github.com"]:not(:is(.no-icon, svg a, :has(img, svg)))::before {
   content: "";
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
   margin-right: 0.25rem;
   width: 1rem;
   height: 1rem;
@@ -215,10 +215,10 @@
 /* prettier-ignore */
 :is(.VPButton[href*='://'], .VPButton[target='_blank']):not(:is(.no-icon, svg a, :has(img, svg)))::after {
   display: inline-block;
-  margin-top: -1px;
-  margin-left: 4px;
-  width: 11px;
-  height: 11px;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+  width: 1rem;
+  height: 1rem;
   background: currentColor;
   color: var(--vp-c-text-3);
   flex-shrink: 0;
