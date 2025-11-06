@@ -216,6 +216,7 @@
 :is(.VPButton[href*='://'], .VPButton[target='_blank']):not(:is(.no-icon, svg a, :has(img, svg)))::after {
   display: inline-block;
   vertical-align: middle;
+  margin-top: -1px;
   margin-left: 4px;
   width: 13px;
   height: 13px;
