@@ -99,7 +99,10 @@
 
 .VPNavBar.home {
   background-color: var(--vp-nav-bg-color) !important;
-  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPNavBar .divider .divider-line {
+  background-color: var(--vp-c-divider) !important;
 }
 
 .VPNavBarTitle a.title {
