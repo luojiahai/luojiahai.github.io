@@ -134,6 +134,7 @@
 .VPHero .name .spinner {
   font-family: "Cascadia Mono", monospace;
   padding-left: 1rem;
+  -webkit-text-fill-color: var(--vp-c-text-3);
 }
 
 .VPHero .name .spinner::after {
