@@ -127,6 +127,10 @@
     linear-gradient(var(--grid) 1px, #0000 1px);
   background-size: 1rem 1rem;
   border-bottom: 1px solid var(--vp-c-divider);
+  padding-top: calc(
+    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px
+  ) !important;
+  padding-bottom: 32px !important;
 }
 
 .VPHero .heading {
