@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luojiahai <span class="spinner"></span>
+  name: luó, jiāhǎi <span class="spinner"></span>
   text: hello, world!
   tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch with a coke and some snacks, watching tv.
   actions:

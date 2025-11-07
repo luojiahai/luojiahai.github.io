@@ -106,6 +106,8 @@
 }
 
 .VPNavBarTitle a.title {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.875rem;
   color: var(--brand) !important;
 }
 
@@ -139,7 +141,7 @@
 }
 
 .VPHero .name .spinner {
-  font-family: "Cascadia Mono", monospace;
+  font-family: var(--vp-font-family-mono);
   padding-left: 0.5rem;
   -webkit-text-fill-color: var(--vp-c-gray-2);
 }
