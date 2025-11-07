@@ -106,8 +106,6 @@
 }
 
 .VPNavBarTitle a.title {
-  font-family: var(--vp-font-family-mono);
-  font-size: 0.875rem;
   color: var(--brand) !important;
 }
 
