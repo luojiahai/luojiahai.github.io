@@ -200,6 +200,7 @@
 
 .VPFooter .container {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 0 auto;
   max-width: calc(var(--vp-layout-max-width) - 4rem);
