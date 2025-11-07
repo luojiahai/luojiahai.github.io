@@ -73,8 +73,8 @@
 }
 
 :root {
-  --vp-font-family-base: "Inter", "LXGW WenKai TC", "Noto Sans SC", sans-serif;
-  --vp-font-family-mono: "Cascadia Mono", "LXGW WenKai Mono TC", monospace;
+  --vp-font-family-base: "Inter", "Noto Sans SC", sans-serif;
+  --vp-font-family-mono: "Cascadia Mono", monospace;
   --vp-c-bg: var(--brand-negative);
   --vp-c-border: var(--border);
   --vp-c-divider: var(--divider);
