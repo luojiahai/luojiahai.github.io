@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: alt
       text: archive
-      link: /archive/what-is-it
+      link: /archive/index
     - theme: alt
       text: source
       link: https://github.com/luojiahai/luojiahai.github.io

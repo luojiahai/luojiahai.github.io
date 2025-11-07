@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/archive/": { base: "/archive/", items: sidebarArchive() },
+      "/archive/": { base: "/archive", items: sidebarArchive() },
     },
     editLink: {
       pattern:
@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "home", link: "/" },
     {
       text: "archive",
-      link: "/archive/what-is-it",
+      link: "/archive/index",
       activeMatch: "/archive/",
     },
   ];
@@ -59,17 +59,17 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
     {
       text: "archive",
       items: [
-        { text: "what is it?", link: "what-is-it" },
-        { text: "resume", link: "resume" },
+        { text: "index", link: "/" },
+        { text: "resume", link: "/resume" },
         {
           text: "recipes",
-          base: "/archive/recipes/",
+          base: "/archive/recipes",
           collapsed: true,
           items: [
-            { text: "brownie", link: "brownie" },
-            { text: "cantonese congee", link: "cantonese-congee" },
-            { text: "char siu (cantonese bbq pork)", link: "char-siu" },
-            { text: "dry pot cauliflower", link: "dry-pot-cauliflower" },
+            { text: "brownie", link: "/brownie" },
+            { text: "cantonese congee", link: "/cantonese-congee" },
+            { text: "char siu (cantonese bbq pork)", link: "/char-siu" },
+            { text: "dry pot cauliflower", link: "/dry-pot-cauliflower" },
           ],
         },
       ],

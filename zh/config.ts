@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/zh/archive/": { base: "/zh/archive/", items: sidebarArchive() },
+      "/zh/archive/": { base: "/zh/archive", items: sidebarArchive() },
     },
     editLink: {
       pattern:
@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "首页", link: "/zh/" },
     {
       text: "档案",
-      link: "/zh/archive/what-is-it",
+      link: "/zh/archive/index",
       activeMatch: "/zh/archive/",
     },
   ];
@@ -59,17 +59,17 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
     {
       text: "档案",
       items: [
-        { text: "这是什么？", link: "what-is-it" },
-        { text: "简历", link: "resume" },
+        { text: "索引", link: "/" },
+        { text: "简历", link: "/resume" },
         {
           text: "食谱",
-          base: "/zh/archive/recipes/",
+          base: "/zh/archive/recipes",
           collapsed: true,
           items: [
-            { text: "布朗尼", link: "brownie" },
-            { text: "生滚粥", link: "cantonese-congee" },
-            { text: "叉烧", link: "char-siu" },
-            { text: "干锅花菜", link: "dry-pot-cauliflower" },
+            { text: "布朗尼", link: "/brownie" },
+            { text: "生滚粥", link: "/cantonese-congee" },
+            { text: "叉烧", link: "/char-siu" },
+            { text: "干锅花菜", link: "/dry-pot-cauliflower" },
           ],
         },
       ],

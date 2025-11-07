@@ -1,6 +1,6 @@
-# what is it?
+# index
 
-it is my personal site, statically generated using [vitepress](https://vitepress.dev/) and hosted on [github pages](https://docs.github.com/en/pages). it is available in both english and simplified chinese, with support for light and dark themes.
+this is my personal site, statically generated using [vitepress](https://vitepress.dev/) and hosted on [github pages](https://docs.github.com/en/pages). it is available in both english and simplified chinese, with support for light and dark themes.
 
 the favicon of this site is a 💾 floppy disk, the first portable storage device i ever used, the 3½‑inch kind. back then, most computers had a built‑in floppy disk drive.
 
