@@ -1,10 +1,12 @@
 @import "color.css";
 
 :root {
+  --vp-font-family-base: "Inter", sans-serif;
+  --vp-font-family-mono: "Cascadia Mono", monospace;
+
   --brand: var(--Ba0);
   --brand-soft: rgba(var(--Ba0_rgb), 0.14);
   --brand-negative: var(--Wh0);
-  --brand-negative-soft: rgba(var(--Wh0_rgb), 0.14);
   --border: var(--Ga3);
   --divider: var(--Ga2);
   --gutter: var(--Ga2);
@@ -40,7 +42,6 @@
   --brand: var(--Wh0);
   --brand-soft: rgba(var(--Wh0_rgb), 0.16);
   --brand-negative: var(--Ba0);
-  --brand-negative-soft: rgba(var(--Ba0_rgb), 0.16);
   --border: var(--Ga8);
   --divider: var(--Ga9);
   --gutter: var(--Ga9);
@@ -73,8 +74,6 @@
 }
 
 :root {
-  --vp-font-family-base: "Inter", "Noto Sans SC", sans-serif;
-  --vp-font-family-mono: "Cascadia Mono", monospace;
   --vp-c-bg: var(--brand-negative);
   --vp-c-border: var(--border);
   --vp-c-divider: var(--divider);
