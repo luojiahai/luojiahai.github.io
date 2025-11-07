@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "home", link: "/" },
     {
       text: "archive",
-      link: "/archive/index",
+      link: "/archive/",
       activeMatch: "/archive/",
     },
   ];

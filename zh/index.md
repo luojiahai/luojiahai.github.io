@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: alt
       text: 档案
-      link: /zh/archive/index
+      link: /zh/archive/
     - theme: alt
       text: 源
       link: https://github.com/luojiahai/luojiahai.github.io

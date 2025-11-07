@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "首页", link: "/zh/" },
     {
       text: "档案",
-      link: "/zh/archive/index",
+      link: "/zh/archive/",
       activeMatch: "/zh/archive/",
     },
   ];
