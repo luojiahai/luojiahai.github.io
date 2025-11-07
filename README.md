@@ -1,6 +1,6 @@
 # [luojiahai.com](https://luojiahai.com/)
 
-🛰️ It is the source of my site.
+it is the source of my site.
 
 ## Installation
 
