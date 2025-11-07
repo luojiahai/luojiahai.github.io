@@ -8,4 +8,4 @@ my handle `luojiahai` is taken from the [pinyin](https://en.wikipedia.org/wiki/p
 
 the cantonese romanization of my name is law ka hoi. in real life, in english-speaking places, i use my anglicized name, geoffrey, pronounced the same as jeffrey, not jee-oh at the start.
 
-i was born in guangzhou, the capital of guangdong province in china, the heart of cantonese culture and just a short distance from hong kong. i'm a native speaker of both mandarin and cantonese, though my proficiency in programming languages is probably better.
+i was born in guangzhou, the capital of guangdong province in china, the heart of cantonese culture. i'm a native speaker of both mandarin and cantonese, though my proficiency in programming languages is probably better.
