@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import Modal from "./Modal.vue";
 
 const props = defineProps<{
   title: string;
@@ -47,69 +48,30 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Teleport to="body">
-    <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
-      <div class="modal-container">
-        <div class="modal-content">
-          <h3 class="modal-title">{{ props.title }}</h3>
-          <p class="modal-message">
-            {{ props.message }}
-          </p>
-          <p class="modal-url">{{ url }}</p>
-        </div>
-        <hr class="modal-divider" />
-        <div class="modal-footer">
-          <button class="modal-button brand" @click="handleConfirm">
-            {{ props.confirmText }}
-          </button>
-          <button class="modal-button alt" @click="handleCancel">
-            {{ props.cancelText }}
-          </button>
-        </div>
-      </div>
-    </div>
-  </Teleport>
+  <Modal :show="showModal" @close="handleCancel">
+    <template #title>{{ props.title }}</template>
+    <template #content>
+      <p class="modal-message">
+        {{ props.message }}
+      </p>
+      <p class="modal-url">{{ url }}</p>
+    </template>
+    <template #footer>
+      <button class="modal-button brand" @click="handleConfirm">
+        {{ props.confirmText }}
+      </button>
+      <button class="modal-button alt" @click="handleCancel">
+        {{ props.cancelText }}
+      </button>
+    </template>
+  </Modal>
 </template>
 
 <style scoped>
-.modal-mask {
-  position: fixed;
-  z-index: 200;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-container {
-  width: 300px;
-  background-color: var(--vp-c-bg-elv);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--vp-c-border);
-}
-
-.modal-content {
-  padding: 20px 30px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.modal-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-}
-
 .modal-message {
   font-size: 14px;
   color: var(--vp-c-text-2);
+  margin-bottom: 0.5rem;
 }
 
 .modal-url {
@@ -119,19 +81,6 @@ onUnmounted(() => {
   font-size: 12px;
   word-break: break-all;
   font-family: var(--vp-font-family-mono);
-}
-
-.modal-divider {
-  border: none;
-  border-top: 1px solid var(--vp-c-divider);
-  margin: 0;
-}
-
-.modal-footer {
-  padding: 16px 30px 20px;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
 }
 
 .modal-button {
