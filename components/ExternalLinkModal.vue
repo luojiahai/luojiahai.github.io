@@ -50,11 +50,14 @@ onUnmounted(() => {
   <Teleport to="body">
     <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
       <div class="modal-container">
-        <h3 class="modal-title">{{ props.title }}</h3>
-        <p class="modal-message">
-          {{ props.message }}
-        </p>
-        <p class="modal-url">{{ url }}</p>
+        <div class="modal-content">
+          <h3 class="modal-title">{{ props.title }}</h3>
+          <p class="modal-message">
+            {{ props.message }}
+          </p>
+          <p class="modal-url">{{ url }}</p>
+        </div>
+        <hr class="modal-divider" />
         <div class="modal-footer">
           <button class="modal-button" @click="handleConfirm">
             {{ props.confirmText }}
@@ -84,10 +87,14 @@ onUnmounted(() => {
 
 .modal-container {
   width: 300px;
-  margin: auto;
-  padding: 20px 30px;
   background-color: var(--vp-c-bg-elv);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -113,11 +120,16 @@ onUnmounted(() => {
   font-family: var(--vp-font-family-mono);
 }
 
+.modal-divider {
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 0;
+}
+
 .modal-footer {
-  margin: 8px 0 0 0;
+  padding: 20px 30px;
   display: flex;
-  gap: 8px;
-  justify-content: flex-end;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
