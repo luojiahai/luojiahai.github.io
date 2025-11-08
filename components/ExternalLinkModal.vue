@@ -48,25 +48,23 @@ onUnmounted(() => {
 
 <template>
   <Teleport to="body">
-    <Transition name="modal">
-      <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
-        <div class="modal-container">
-          <h3 class="modal-title">{{ props.title }}</h3>
-          <p class="modal-message">
-            {{ props.message }}
-          </p>
-          <p class="modal-url">{{ url }}</p>
-          <div class="modal-footer">
-            <button class="modal-button" @click="handleConfirm">
-              {{ props.confirmText }}
-            </button>
-            <button class="modal-button" @click="handleCancel">
-              {{ props.cancelText }}
-            </button>
-          </div>
+    <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
+      <div class="modal-container">
+        <h3 class="modal-title">{{ props.title }}</h3>
+        <p class="modal-message">
+          {{ props.message }}
+        </p>
+        <p class="modal-url">{{ url }}</p>
+        <div class="modal-footer">
+          <button class="modal-button" @click="handleConfirm">
+            {{ props.confirmText }}
+          </button>
+          <button class="modal-button" @click="handleCancel">
+            {{ props.cancelText }}
+          </button>
         </div>
       </div>
-    </Transition>
+    </div>
   </Teleport>
 </template>
 
@@ -82,7 +80,6 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease;
 }
 
 .modal-container {
@@ -91,7 +88,6 @@ onUnmounted(() => {
   padding: 20px 30px;
   background-color: var(--vp-c-bg-elv);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -132,7 +128,6 @@ onUnmounted(() => {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  transition: all 0.2s ease;
   flex: 1;
 }
 
@@ -152,15 +147,5 @@ onUnmounted(() => {
   border-color: var(--vp-button-alt-hover-border);
   color: var(--vp-button-alt-hover-text);
   background-color: var(--vp-button-alt-hover-bg);
-}
-
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-}
-
-.modal-enter-from .modal-container,
-.modal-leave-to .modal-container {
-  transform: scale(1.1);
 }
 </style>
