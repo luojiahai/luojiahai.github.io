@@ -4,9 +4,14 @@
   --vp-font-family-base: "Inter", sans-serif;
   --vp-font-family-mono: "Cascadia Mono", monospace;
 
-  --brand: var(--Ba0);
+  --brand-1: var(--Ba0);
+  --brand-2: var(--Ga10);
+  --brand-3: var(--Ga9);
   --brand-soft: rgba(var(--Ba0_rgb), 0.14);
-  --brand-negative: var(--Wh0);
+  --bg: var(--Wh0);
+  --bg-alt: var(--Ga13);
+  --bg-elv: var(--Wh0);
+  --bg-soft: rgba(var(--Wh0_rgb), 0.14);
   --border: var(--Ga3);
   --divider: var(--Ga2);
   --gutter: var(--Ga2);
@@ -39,9 +44,14 @@
 }
 
 .dark {
-  --brand: var(--Wh0);
+  --brand-1: var(--Wh0);
+  --brand-2: var(--Ga12);
+  --brand-3: var(--Ga13);
   --brand-soft: rgba(var(--Wh0_rgb), 0.16);
-  --brand-negative: var(--Ba0);
+  --bg: var(--Ba0);
+  --bg-alt: var(--Ga10);
+  --bg-elv: var(--Ga10);
+  --bg-soft: rgba(var(--Ba0_rgb), 0.16);
   --border: var(--Ga8);
   --divider: var(--Ga9);
   --gutter: var(--Ga9);
@@ -74,13 +84,16 @@
 }
 
 :root {
-  --vp-c-bg: var(--brand-negative);
+  --vp-c-bg: var(--bg);
+  --vp-c-bg-alt: var(--bg-alt);
+  --vp-c-bg-elv: var(--bg-elv);
+  --vp-c-bg-soft: var(--bg-soft);
   --vp-c-border: var(--border);
   --vp-c-divider: var(--divider);
   --vp-c-gutter: var(--gutter);
-  --vp-c-brand-1: var(--brand);
-  --vp-c-brand-2: var(--brand);
-  --vp-c-brand-3: var(--brand);
+  --vp-c-brand-1: var(--brand-1);
+  --vp-c-brand-2: var(--brand-2);
+  --vp-c-brand-3: var(--brand-3);
   --vp-c-brand-soft: var(--brand-soft);
   --vp-c-tip-1: var(--vp-c-indigo-1);
   --vp-c-tip-2: var(--vp-c-indigo-2);
@@ -90,6 +103,9 @@
   --vp-c-note-2: var(--vp-c-indigo-2);
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
+  --vp-local-search-bg: var(--vp-c-bg-alt);
+  --vp-local-search-result-bg: var(--vp-c-bg-alt);
+  --vp-local-search-result-selected-bg: var(--vp-c-bg-alt);
 }
 
 * {

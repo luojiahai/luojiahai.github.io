@@ -15,6 +15,13 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
+<ExternalLinkModal 
+  title="外部链接"
+  message="这将打开一个新标签页访问以下网站。"
+  cancelText="取消"
+  confirmText="继续"
+/>
+
 ::: code-group
 
 ```json [whoami.json] :line-numbers
