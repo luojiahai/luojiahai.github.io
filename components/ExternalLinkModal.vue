@@ -26,14 +26,14 @@ const handleClick = (e: MouseEvent) => {
   }
 };
 
-const confirmNavigation = () => {
+const handleConfirm = () => {
   if (url.value) {
     window.open(url.value, "_blank", "noopener,noreferrer");
   }
-  closeModal();
+  handleCancel();
 };
 
-const closeModal = () => {
+const handleCancel = () => {
   showModal.value = false;
 };
 
@@ -49,7 +49,7 @@ onUnmounted(() => {
 <template>
   <Teleport to="body">
     <Transition name="modal">
-      <div v-show="showModal" class="modal-mask" @click.self="closeModal">
+      <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
         <div class="modal-container">
           <h3 class="modal-title">{{ props.title }}</h3>
           <p class="modal-message">
@@ -57,11 +57,11 @@ onUnmounted(() => {
           </p>
           <p class="modal-url">{{ url }}</p>
           <div class="modal-footer">
-            <button class="modal-button" @click="closeModal">
-              {{ props.cancelText }}
-            </button>
-            <button class="modal-button" @click="confirmNavigation">
+            <button class="modal-button" @click="handleConfirm">
               {{ props.confirmText }}
+            </button>
+            <button class="modal-button" @click="handleCancel">
+              {{ props.cancelText }}
             </button>
           </div>
         </div>
@@ -136,7 +136,7 @@ onUnmounted(() => {
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  flex: 1 1 auto;
+  flex: 1;
 }
 
 @media (max-width: 639px) {
