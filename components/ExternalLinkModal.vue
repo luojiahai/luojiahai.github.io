@@ -90,7 +90,6 @@ onUnmounted(() => {
   margin: auto;
   padding: 20px 30px;
   background-color: var(--vp-c-bg-elv);
-  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
   display: flex;
@@ -112,7 +111,6 @@ onUnmounted(() => {
 .modal-url {
   padding: 8px 12px;
   background-color: var(--vp-c-default-soft);
-  border-radius: 4px;
   color: var(--vp-c-text-2);
   font-size: 12px;
   word-break: break-all;
@@ -129,7 +127,6 @@ onUnmounted(() => {
 
 .modal-button {
   padding: 6px 16px;
-  border-radius: 4px;
   border: 1px solid;
   font-size: 14px;
   font-weight: 600;
