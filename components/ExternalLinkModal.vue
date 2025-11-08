@@ -59,10 +59,10 @@ onUnmounted(() => {
         </div>
         <hr class="modal-divider" />
         <div class="modal-footer">
-          <button class="modal-button" @click="handleConfirm">
+          <button class="modal-button brand" @click="handleConfirm">
             {{ props.confirmText }}
           </button>
-          <button class="modal-button" @click="handleCancel">
+          <button class="modal-button alt" @click="handleCancel">
             {{ props.cancelText }}
           </button>
         </div>
@@ -91,6 +91,7 @@ onUnmounted(() => {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--vp-c-border);
 }
 
 .modal-content {
@@ -149,13 +150,25 @@ onUnmounted(() => {
   }
 }
 
-.modal-button {
+.modal-button.brand {
+  border-color: var(--vp-button-brand-border);
+  color: var(--vp-button-brand-text);
+  background-color: var(--vp-button-brand-bg);
+}
+
+.modal-button.alt {
   border-color: var(--vp-button-alt-border);
   color: var(--vp-button-alt-text);
   background-color: var(--vp-button-alt-bg);
 }
 
-.modal-button:hover {
+.modal-button.brand:hover {
+  border-color: var(--vp-button-brand-hover-border);
+  color: var(--vp-button-brand-hover-text);
+  background-color: var(--vp-button-brand-hover-bg);
+}
+
+.modal-button.alt:hover {
   border-color: var(--vp-button-alt-hover-border);
   color: var(--vp-button-alt-hover-text);
   background-color: var(--vp-button-alt-hover-bg);

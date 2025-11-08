@@ -7,7 +7,7 @@ hero:
   text: hello, world!
   tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch with a coke and some snacks, watching tv.
   actions:
-    - theme: alt
+    - theme: brand
       text: archive
       link: /archive
     - theme: alt

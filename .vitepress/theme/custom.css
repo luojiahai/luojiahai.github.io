@@ -1,21 +1,39 @@
 @import "color.css";
 
 :root {
+  --brand-pink: var(--Pi5);
+  --brand-pink-thin: var(--Pi1);
+  --brand-pink-soft: rgba(var(--Pi5_rgb), 0.14);
+  --brand-blue: var(--Lb5);
+  --brand-blue-thin: var(--Lb1);
+  --brand-blue-soft: rgba(var(--Lb5_rgb), 0.14);
+  --bg-1: var(--Wh0);
+  --bg-2: var(--Ga0);
+  --bg-3: var(--Ga1);
+  --bg-soft: var(--Ga0_s);
+  --line-light: var(--Ga1_s);
+  --line-regular: var(--Ga2);
+  --line-bold: var(--Ga3);
+}
+
+:root {
   --vp-font-family-base: "Inter", sans-serif;
   --vp-font-family-mono: "Cascadia Mono", monospace;
 
-  --brand-1: var(--Ba0);
-  --brand-2: var(--Ga10);
-  --brand-3: var(--Ga9);
-  --brand-soft: rgba(var(--Ba0_rgb), 0.14);
-  --bg: var(--Wh0);
-  --bg-alt: var(--Ga13);
-  --bg-elv: var(--Wh0);
-  --bg-soft: var(--Ga13);
-  --border: var(--Ga3);
-  --divider: var(--Ga2);
-  --gutter: var(--Ga2);
-  --grid: var(--Ga1);
+  --vp-c-brand-1: var(--brand-blue);
+  --vp-c-brand-2: var(--brand-blue);
+  --vp-c-brand-3: var(--brand-blue);
+  --vp-c-brand-soft: var(--brand-blue-soft);
+  --vp-c-bg: var(--bg-1);
+  --vp-c-bg-alt: var(--bg-2);
+  --vp-c-bg-elv: var(--bg-3);
+  --vp-c-bg-soft: var(--bg-soft);
+  --vp-c-border: var(--line-regular);
+  --vp-c-divider: var(--line-regular);
+  --vp-c-gutter: var(--line-bold);
+  --vp-c-text-1: var(--Ga10);
+  --vp-c-text-2: var(--Ga7);
+  --vp-c-text-3: var(--Ga5);
 
   --vp-c-gray-1: var(--Ga4);
   --vp-c-gray-2: var(--Ga3);
@@ -41,72 +59,8 @@
   --vp-c-red-2: var(--Re4);
   --vp-c-red-3: var(--Re3);
   --vp-c-red-soft: rgba(var(--Re5_rgb), 0.14);
-}
 
-.dark {
-  --brand-1: var(--Wh0);
-  --brand-2: var(--Ga12);
-  --brand-3: var(--Ga13);
-  --brand-soft: rgba(var(--Wh0_rgb), 0.16);
-  --bg: var(--Ba0);
-  --bg-alt: var(--Ga10);
-  --bg-elv: var(--Ga10);
-  --bg-soft: var(--Ga10);
-  --border: var(--Ga8);
-  --divider: var(--Ga9);
-  --gutter: var(--Ga9);
-  --grid: var(--Ga10);
-
-  --vp-c-gray-1: var(--Ga7);
-  --vp-c-gray-2: var(--Ga8);
-  --vp-c-gray-3: var(--Ga9);
-  --vp-c-gray-soft: rgba(var(--Ga7_rgb), 0.16);
-  --vp-c-indigo-1: var(--Bl5);
-  --vp-c-indigo-2: var(--Bl6);
-  --vp-c-indigo-3: var(--Bl7);
-  --vp-c-indigo-soft: rgba(var(--Bl5_rgb), 0.16);
-  --vp-c-purple-1: var(--Pu5);
-  --vp-c-purple-2: var(--Pu6);
-  --vp-c-purple-3: var(--Pu7);
-  --vp-c-purple-soft: rgba(var(--Pu5_rgb), 0.16);
-  --vp-c-green-1: var(--Gr5);
-  --vp-c-green-2: var(--Gr6);
-  --vp-c-green-3: var(--Gr7);
-  --vp-c-green-soft: rgba(var(--Gr5_rgb), 0.16);
-  --vp-c-yellow-1: var(--Ye5);
-  --vp-c-yellow-2: var(--Ye6);
-  --vp-c-yellow-3: var(--Ye7);
-  --vp-c-yellow-soft: rgba(var(--Ye5_rgb), 0.16);
-  --vp-c-red-1: var(--Re5);
-  --vp-c-red-2: var(--Re6);
-  --vp-c-red-3: var(--Re7);
-  --vp-c-red-soft: rgba(var(--Re5_rgb), 0.16);
-}
-
-:root {
-  --vp-c-bg: var(--bg);
-  --vp-c-bg-alt: var(--bg-alt);
-  --vp-c-bg-elv: var(--bg-elv);
-  --vp-c-bg-soft: var(--bg-soft);
-  --vp-c-border: var(--border);
-  --vp-c-divider: var(--divider);
-  --vp-c-gutter: var(--gutter);
-  --vp-c-brand-1: var(--brand-1);
-  --vp-c-brand-2: var(--brand-2);
-  --vp-c-brand-3: var(--brand-3);
-  --vp-c-brand-soft: var(--brand-soft);
-  --vp-c-tip-1: var(--vp-c-indigo-1);
-  --vp-c-tip-2: var(--vp-c-indigo-2);
-  --vp-c-tip-3: var(--vp-c-indigo-3);
-  --vp-c-tip-soft: var(--vp-c-indigo-soft);
-  --vp-c-note-1: var(--vp-c-indigo-1);
-  --vp-c-note-2: var(--vp-c-indigo-2);
-  --vp-c-note-3: var(--vp-c-indigo-3);
-  --vp-c-note-soft: var(--vp-c-indigo-soft);
-
-  --vp-local-search-bg: var(--vp-c-bg-alt);
-  --vp-local-search-result-bg: var(--vp-c-bg-alt);
-  --vp-local-search-result-selected-bg: var(--vp-c-bg-alt);
+  --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
 * {
@@ -121,21 +75,13 @@
   background-color: var(--vp-c-divider) !important;
 }
 
-.VPNavBarTitle a.title {
-  color: var(--vp-c-brand-1) !important;
-}
-
-.VPNavBarMenuLink:not(.active, :hover) {
-  color: var(--vp-c-text-2) !important;
-}
-
 .VPHome {
   margin-bottom: unset !important;
 }
 
 .VPHero {
-  background-image: linear-gradient(90deg, var(--grid) 1px, #0000 1px),
-    linear-gradient(var(--grid) 1px, #0000 1px);
+  background-image: linear-gradient(90deg, var(--line-light) 1px, #0000 1px),
+    linear-gradient(var(--line-light) 1px, #0000 1px);
   background-size: 1rem 1rem;
   border-bottom: 1px solid var(--vp-c-divider);
   padding-top: calc(
@@ -146,13 +92,12 @@
 
 .VPHero .heading {
   gap: 0.5rem;
-  color: var(--vp-c-brand-1);
 }
 
 .VPHero .name .spinner {
   font-family: var(--vp-font-family-mono);
   padding-left: 0.5rem;
-  -webkit-text-fill-color: var(--vp-c-default-2);
+  -webkit-text-fill-color: var(--vp-c-text-3);
 }
 
 .VPHero .name .spinner::after {
