@@ -9,8 +9,8 @@ it is a preview of my resume with limited information. full version available up
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">experience</h2>
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">rea group</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>rea group</strong></span>
       <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -19,8 +19,8 @@ it is a preview of my resume with limited information. full version available up
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">amazon web services (aws)</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>amazon web services (aws)</strong></span>
       <span style="white-space: nowrap;"><strong>sydney, nsw, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -28,8 +28,8 @@ it is a preview of my resume with limited information. full version available up
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">deloitte</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>deloitte</strong></span>
       <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -37,8 +37,8 @@ it is a preview of my resume with limited information. full version available up
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">the university of melbourne</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>the university of melbourne</strong></span>
       <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -56,8 +56,8 @@ it is a preview of my resume with limited information. full version available up
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">education</h2>
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">the university of melbourne</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>the university of melbourne</strong></span>
       <span style="white-space: nowrap;"><strong>melbourne, vic, australia</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -66,8 +66,8 @@ it is a preview of my resume with limited information. full version available up
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">peking university</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>peking university</strong></span>
       <span style="white-space: nowrap;"><strong>beijing, china</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">

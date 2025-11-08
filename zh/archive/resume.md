@@ -9,8 +9,8 @@
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">工作经历</h2>
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">rea 集团</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>rea 集团</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -19,8 +19,8 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">亚马逊云科技（aws）</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>亚马逊云科技（aws）</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚悉尼</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -28,8 +28,8 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">德勤</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>德勤</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -37,8 +37,8 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">墨尔本大学</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>墨尔本大学</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -56,8 +56,8 @@
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">教育背景</h2>
 <ul style="list-style-type: none; padding-left: 0;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">墨尔本大学</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>墨尔本大学</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
@@ -66,8 +66,8 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <h3 style="margin-top: 0.5rem;">北京大学</h3>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+      <span><strong>北京大学</strong></span>
       <span style="white-space: nowrap;"><strong>中国北京</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
