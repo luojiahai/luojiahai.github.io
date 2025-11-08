@@ -75,6 +75,15 @@
   background-color: var(--vp-c-divider) !important;
 }
 
+.VPNavBarMenuLink {
+  color: var(--vp-c-text-3) !important;
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuLink:hover {
+  color: var(--vp-c-text-1) !important;
+}
+
 .VPHome {
   margin-bottom: unset !important;
 }
