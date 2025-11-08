@@ -61,6 +61,7 @@
   --vp-c-red-soft: rgba(var(--Re5_rgb), 0.14);
 
   --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-button-brand-hover-bg: var(--Lb4);
 }
 
 * {

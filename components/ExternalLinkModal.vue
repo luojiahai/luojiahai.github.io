@@ -153,7 +153,7 @@ onUnmounted(() => {
 .modal-button.brand {
   border-color: var(--vp-button-brand-border);
   color: var(--vp-button-brand-text);
-  background-color: var(--vp-button-brand-bg);
+  background-color: var(--vp-c-yellow-1);
 }
 
 .modal-button.alt {
@@ -165,7 +165,7 @@ onUnmounted(() => {
 .modal-button.brand:hover {
   border-color: var(--vp-button-brand-hover-border);
   color: var(--vp-button-brand-hover-text);
-  background-color: var(--vp-button-brand-hover-bg);
+  background-color: var(--vp-c-yellow-2);
 }
 
 .modal-button.alt:hover {
