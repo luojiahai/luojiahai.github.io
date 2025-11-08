@@ -11,7 +11,7 @@
   --bg: var(--Wh0);
   --bg-alt: var(--Ga13);
   --bg-elv: var(--Wh0);
-  --bg-soft: rgba(var(--Wh0_rgb), 0.14);
+  --bg-soft: var(--Ga13);
   --border: var(--Ga3);
   --divider: var(--Ga2);
   --gutter: var(--Ga2);
@@ -51,7 +51,7 @@
   --bg: var(--Ba0);
   --bg-alt: var(--Ga10);
   --bg-elv: var(--Ga10);
-  --bg-soft: rgba(var(--Ba0_rgb), 0.16);
+  --bg-soft: var(--Ga10);
   --border: var(--Ga8);
   --divider: var(--Ga9);
   --gutter: var(--Ga9);
