@@ -122,16 +122,11 @@
 }
 
 .VPNavBarTitle a.title {
-  color: var(--brand) !important;
+  color: var(--vp-c-brand-1) !important;
 }
 
-.VPNavBarMenuLink {
+.VPNavBarMenuLink:not(.active, :hover) {
   color: var(--vp-c-text-2) !important;
-}
-
-.VPNavBarMenuLink.active,
-.VPNavBarMenuLink:hover {
-  color: var(--brand) !important;
 }
 
 .VPHome {
@@ -151,13 +146,13 @@
 
 .VPHero .heading {
   gap: 0.5rem;
-  color: var(--brand);
+  color: var(--vp-c-brand-1);
 }
 
 .VPHero .name .spinner {
   font-family: var(--vp-font-family-mono);
   padding-left: 0.5rem;
-  -webkit-text-fill-color: var(--vp-c-gray-2);
+  -webkit-text-fill-color: var(--vp-c-default-2);
 }
 
 .VPHero .name .spinner::after {
