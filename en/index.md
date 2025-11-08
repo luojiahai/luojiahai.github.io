@@ -18,8 +18,8 @@ hero:
 <ExternalLinkModal 
   title="external link"
   message="this will open a new tab to visit the following site."
+  confirmText="confirm"
   cancelText="cancel"
-  confirmText="continue"
 />
 
 ::: code-group

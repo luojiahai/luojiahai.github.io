@@ -4,8 +4,8 @@ import { ref, onMounted, onUnmounted } from "vue";
 const props = defineProps<{
   title: string;
   message: string;
-  cancelText: string;
   confirmText: string;
+  cancelText: string;
 }>();
 
 const showModal = ref(false);

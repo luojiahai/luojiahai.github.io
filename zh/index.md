@@ -18,8 +18,8 @@ hero:
 <ExternalLinkModal 
   title="外部链接"
   message="这将打开一个新标签页访问以下网站。"
+  confirmText="确认"
   cancelText="取消"
-  confirmText="继续"
 />
 
 ::: code-group
