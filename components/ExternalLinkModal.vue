@@ -94,7 +94,7 @@ onUnmounted(() => {
 }
 
 .modal-content {
-  padding: 20px 30px;
+  padding: 20px 30px 16px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -127,7 +127,7 @@ onUnmounted(() => {
 }
 
 .modal-footer {
-  padding: 20px 30px;
+  padding: 16px 30px 20px;
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
