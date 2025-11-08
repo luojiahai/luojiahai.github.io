@@ -7,9 +7,9 @@
 :::
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">工作经历</h2>
-<ul style="list-style-type: none; padding-left: 0;">
+<ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>rea 集团</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
@@ -19,7 +19,7 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>亚马逊云科技（aws）</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚悉尼</strong></span>
     </div>
@@ -28,7 +28,7 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>德勤</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
@@ -37,7 +37,7 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>墨尔本大学</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
@@ -54,9 +54,9 @@
 </ul>
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">教育背景</h2>
-<ul style="list-style-type: none; padding-left: 0;">
+<ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>墨尔本大学</strong></span>
       <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
     </div>
@@ -66,7 +66,7 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-top: 1rem;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline;">
       <span><strong>北京大学</strong></span>
       <span style="white-space: nowrap;"><strong>中国北京</strong></span>
     </div>
