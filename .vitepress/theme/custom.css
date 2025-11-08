@@ -12,10 +12,6 @@
   --bg-alt: var(--Ga13);
   --bg-elv: var(--Wh0);
   --bg-soft: var(--Ga13);
-  --border: var(--Ga3);
-  --divider: var(--Ga2);
-  --gutter: var(--Ga2);
-  --grid: var(--Ga1);
 
   --vp-c-gray-1: var(--Ga4);
   --vp-c-gray-2: var(--Ga3);
@@ -52,10 +48,6 @@
   --bg-alt: var(--Ga10);
   --bg-elv: var(--Ga9);
   --bg-soft: var(--Ga9);
-  --border: var(--Ga7);
-  --divider: var(--Ga8);
-  --gutter: var(--Ga8);
-  --grid: var(--Ga9);
 
   --vp-c-gray-1: var(--Ga7);
   --vp-c-gray-2: var(--Ga8);
@@ -88,9 +80,9 @@
   --vp-c-bg-alt: var(--bg-alt);
   --vp-c-bg-elv: var(--bg-elv);
   --vp-c-bg-soft: var(--bg-soft);
-  --vp-c-border: var(--border);
-  --vp-c-divider: var(--divider);
-  --vp-c-gutter: var(--gutter);
+  --vp-c-border: var(--vp-c-gray-1);
+  --vp-c-divider: var(--vp-c-gray-2);
+  --vp-c-gutter: var(--vp-c-gray-2);
   --vp-c-brand-1: var(--brand-1);
   --vp-c-brand-2: var(--brand-2);
   --vp-c-brand-3: var(--brand-3);
@@ -138,8 +130,8 @@
 }
 
 .VPHero {
-  background-image: linear-gradient(90deg, var(--grid) 1px, #0000 1px),
-    linear-gradient(var(--grid) 1px, #0000 1px);
+  background-image: linear-gradient(90deg, var(--vp-c-gray-3) 1px, #0000 1px),
+    linear-gradient(var(--vp-c-gray-3) 1px, #0000 1px);
   background-size: 1rem 1rem;
   border-bottom: 1px solid var(--vp-c-divider);
   padding-top: calc(
