@@ -111,9 +111,9 @@ onUnmounted(() => {
 
 .modal-url {
   padding: 8px 12px;
-  background-color: var(--vp-c-gray-3);
+  background-color: var(--vp-c-default-soft);
   border-radius: 4px;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-text-2);
   font-size: 12px;
   word-break: break-all;
   font-family: var(--vp-font-family-mono);
