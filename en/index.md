@@ -23,11 +23,11 @@ hero:
 />
 
 ```bash
-$ curl -X GET localhost/whoami -H "Accept: application/json" -o whoami.json
+$ curl localhost:5173/en/whoami.json
 ```
 
 ::: code-group
 
-<<< @/public/en/whoami {json :line-numbers}
+<<< @/public/en/whoami.json {json :line-numbers}
 
 :::
