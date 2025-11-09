@@ -28,9 +28,10 @@ hero:
 {
   "name": "luojiahai",
   "personality": "intj",
-  "email": "luo[at]jiahai.co", // [at] 替换为 @
-  "hometown": "中国广州",
+  "email": "luo[at]jiahai.co",
+  "alma_mater": "墨尔本大学",
   "location": "澳大利亚墨尔本",
+  "hometown": "中国广州",
   "languages": ["中文普通话", "中文广东话", "英文"]
 }
 ```
