@@ -29,7 +29,6 @@ hero:
   "name": "luojiahai",
   "personality": "intj",
   "email": "luo[at]jiahai.co", // replace [at] with @
-  "website": "https://luojiahai.com",
   "hometown": "guangzhou, guangdong, china",
   "location": "melbourne, victoria, australia",
   "languages": ["mandarin chinese", "cantonese chinese", "english"]
