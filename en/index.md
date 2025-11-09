@@ -29,7 +29,7 @@ hero:
   "name": "luojiahai",
   "personality": "intj",
   "email": "luo[at]jiahai.co",
-  "alma_mater": "the university of melbourne",
+  "school": "the university of melbourne",
   "location": "melbourne, victoria, australia",
   "hometown": "guangzhou, guangdong, china",
   "languages": ["mandarin chinese", "cantonese chinese", "english"]
