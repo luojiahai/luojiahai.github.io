@@ -28,6 +28,6 @@ $ curl -X GET localhost/whoami -H "Accept: application/json" -o whoami.json
 
 ::: code-group
 
-<<< @/en/whoami.json {json :line-numbers}
+<<< @/public/en/whoami {json :line-numbers}
 
 :::
