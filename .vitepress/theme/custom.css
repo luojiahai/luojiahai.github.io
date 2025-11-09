@@ -87,9 +87,9 @@
   background-size: 1rem 1rem;
   border-bottom: 1px solid var(--vp-c-divider);
   padding-top: calc(
-    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px
+    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 1.5rem
   ) !important;
-  padding-bottom: 32px !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .VPHero .heading {
@@ -137,6 +137,11 @@
 .VPHero .tagline {
   line-height: 1.25rem;
   font-size: 0.75rem;
+  padding-top: 0.5rem !important;
+}
+
+.VPHero .actions {
+  padding-top: 1.5rem !important;
 }
 
 .VPFooter {
