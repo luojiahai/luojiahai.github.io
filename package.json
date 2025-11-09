@@ -1,5 +1,12 @@
 {
-  "name": "luojiahai.github.io",
+  "name": "luojiahai",
+  "homepage": "https://luojiahai.com/",
+  "bugs": {
+    "url": "https://github.com/luojiahai/luojiahai.github.io/issues"
+  },
+  "repository": "github:luojiahai/luojiahai.github.io",
+  "license": "MIT",
+  "author": "luojiahai",
   "type": "module",
   "devDependencies": {
     "lint-staged": "^16.2.6",
