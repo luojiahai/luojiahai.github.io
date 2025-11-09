@@ -26,15 +26,19 @@ const handleClick = (e: MouseEvent) => {
   }
 };
 
-const handleConfirm = () => {
+const navigate = () => {
   if (url.value) {
     window.open(url.value, "_blank", "noopener,noreferrer");
   }
-  handleCancel();
+  closeModal();
 };
 
-const handleCancel = () => {
+const closeModal = () => {
   showModal.value = false;
+};
+
+const resetUrl = () => {
+  url.value = "";
 };
 
 onMounted(() => {
@@ -43,12 +47,13 @@ onMounted(() => {
 
 onUnmounted(() => {
   document.removeEventListener("click", handleClick, true);
+  resetUrl();
 });
 </script>
 
 <template>
   <Teleport to="body">
-    <div v-show="showModal" class="modal-mask" @click.self="handleCancel">
+    <div v-show="showModal" class="modal-mask" @click.self="closeModal">
       <div class="modal-container">
         <div class="modal-content">
           <h3 class="modal-title">{{ props.title }}</h3>
@@ -59,10 +64,10 @@ onUnmounted(() => {
         </div>
         <hr class="modal-divider" />
         <div class="modal-footer">
-          <button class="modal-button brand" @click="handleConfirm">
+          <button class="modal-button brand" @click="navigate">
             {{ props.confirmText }}
           </button>
-          <button class="modal-button alt" @click="handleCancel">
+          <button class="modal-button alt" @click="closeModal">
             {{ props.cancelText }}
           </button>
         </div>
