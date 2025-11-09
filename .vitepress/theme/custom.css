@@ -69,7 +69,7 @@
 }
 
 .VPNavBar.home {
-  background-color: var(--vp-nav-bg-color) !important;
+  background-color: var(--vp-nav-bg-color);
 }
 
 .VPNavBar .divider .divider-line {
