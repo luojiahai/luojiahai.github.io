@@ -2,11 +2,21 @@
   "name": "luojiahai.github.io",
   "type": "module",
   "devDependencies": {
+    "lint-staged": "^16.2.6",
+    "prettier": "3.6.2",
+    "simple-git-hooks": "^2.13.1",
     "vitepress": "^1.6.4"
   },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "format": "prettier --write ."
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
   }
 }
