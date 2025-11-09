@@ -26,8 +26,4 @@ hero:
 $ curl localhost:5173/zh/whoami.json
 ```
 
-::: code-group
-
 <<< @/public/zh/whoami.json {json :line-numbers}
-
-:::
