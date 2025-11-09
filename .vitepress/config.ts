@@ -3,12 +3,8 @@ import { config as enConfig } from "../en/config";
 import { config as zhConfig } from "../zh/config";
 import { searchOptions as enSearchOptions } from "../en/config";
 import { searchOptions as zhSearchOptions } from "../zh/config";
-import { jsonEndpointsPlugin } from "./plugins/json-endpoints";
 
 export default defineConfig({
-  vite: {
-    plugins: [jsonEndpointsPlugin()],
-  },
   title: "luojiahai",
   description: "hello, world!",
   locales: {
