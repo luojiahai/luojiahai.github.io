@@ -4,11 +4,11 @@
 
 | ingredient         | amount |
 | ------------------ | ------ |
-| pork shoulder      | 200g   |
-| light soy sauce    | 20g    |
+| pork shoulder      | 1kg    |
+| light soy sauce    | 25g    |
 | granulated sugar   | 40g    |
-| cooking wine       | 10g    |
-| oyster sauce       | 10g    |
+| cooking wine       | 20g    |
+| oyster sauce       | 15g    |
 | red fermented tofu | 1 cube |
 
 ## instructions
