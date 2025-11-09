@@ -22,18 +22,12 @@ hero:
   cancelText="cancel"
 />
 
+```bash
+$ curl -X GET localhost/whoami -H "Accept: application/json" -o whoami.json
+```
+
 ::: code-group
 
-```json [whoami.json] :line-numbers
-{
-  "name": "luojiahai",
-  "personality": "intj",
-  "email": "luo[at]jiahai.co",
-  "school": "the university of melbourne",
-  "location": "melbourne, victoria, australia",
-  "hometown": "guangzhou, guangdong, china",
-  "languages": ["mandarin chinese", "cantonese chinese", "english"]
-}
-```
+<<< @/en/whoami {json :line-numbers}
 
 :::
