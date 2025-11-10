@@ -113,7 +113,7 @@ onUnmounted(() => {
 }
 
 .modal-message {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--vp-c-text-2);
 }
 
