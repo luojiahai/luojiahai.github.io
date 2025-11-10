@@ -2,20 +2,20 @@
 
 ## ingredients
 
-| ingredient      | amount   |
-| --------------- | -------- |
-| beef            | 500 g    |
-| tomato          | 3        |
-| onion           | 1        |
-| ginger          | to taste |
-| garlic          | to taste |
-| light soy sauce | 10 g     |
-| oyster sauce    | 10 g     |
-| cooking wine    | 10 g     |
-| white pepper    | to taste |
-| tomato sauce    | 10 g     |
-| sugar           | 5 g      |
-| cooking oil     | to taste |
+| ingredient             | amount   |
+| ---------------------- | -------- |
+| beef                   | 500 g    |
+| tomato                 | 3        |
+| onion                  | 1        |
+| ginger                 | to taste |
+| garlic                 | to taste |
+| light soy sauce        | 10 g     |
+| oyster sauce           | 10 g     |
+| cooking wine           | 10 g     |
+| black and white pepper | to taste |
+| tomato sauce           | 10 g     |
+| sugar                  | 5 g      |
+| cooking oil            | to taste |
 
 ## instructions
 
