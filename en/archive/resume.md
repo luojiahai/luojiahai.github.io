@@ -1,10 +1,7 @@
 # resume
 
-::: warning warning
-
-it is a preview of my resume with limited information. full version available upon request. please contact via linkedin with role and compensation details (melbourne or remote only; no agency inquiries).
-
-:::
+> [!warning] warning
+> it is a preview of my resume with limited information. full version available upon request. please contact via linkedin with role and compensation details (melbourne or remote only; no agency inquiries).
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">experience</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
@@ -49,9 +46,12 @@ it is a preview of my resume with limited information. full version available up
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">skills</h2>
 <ul style="list-style-type: none; padding-left: 0;">
-  <li><strong>programming languages</strong>: any (i use ai to write code)</li>
+  <li><strong>programming languages</strong>: python, typescript, java, c</li>
   <li><strong>technologies</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
 </ul>
+
+> [!note] note
+> i use ai professionally. i can work with virtually **any** programming language or technology, not limited to those mentioned above, in collaboration with ai.
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">education</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">

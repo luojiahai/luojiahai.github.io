@@ -1,10 +1,7 @@
 # 简历
 
-::: warning 警告
-
-这是我的简历预览版，仅包含有限的信息。完整版本可按需提供。请通过领英联系，并注明职位及薪资细节（仅限墨尔本或远程；中介猎头别来）。
-
-:::
+> [!warning] 警告
+> 这是我的简历预览版，仅包含有限的信息。完整版本可按需提供。请通过领英联系，并注明职位及薪资细节（仅限墨尔本或远程；中介猎头别来）。
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">工作经历</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
@@ -49,9 +46,12 @@
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">专业技能</h2>
 <ul style="list-style-type: none; padding-left: 0;">
-  <li><strong>编程语言</strong>: 任何语言（我都用 ai 写代码）</li>
+  <li><strong>编程语言</strong>: python, typescript, java, c</li>
   <li><strong>应用技术</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
 </ul>
+
+> [!note] 注意
+> 我专业使用 ai。通过与 ai 协作，我可以使用几乎任何编程语言或技术，不限于上述提到的。
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">教育背景</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
