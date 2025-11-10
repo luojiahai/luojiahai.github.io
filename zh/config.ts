@@ -70,6 +70,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
             { text: "生滚粥", link: "/cantonese-congee" },
             { text: "叉烧", link: "/char-siu" },
             { text: "干锅花菜", link: "/dry-pot-cauliflower" },
+            { text: "番茄牛肉", link: "/tomato-beef" },
           ],
         },
       ],

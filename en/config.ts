@@ -70,6 +70,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
             { text: "cantonese congee", link: "/cantonese-congee" },
             { text: "char siu (cantonese bbq pork)", link: "/char-siu" },
             { text: "dry pot cauliflower", link: "/dry-pot-cauliflower" },
+            { text: "tomato beef", link: "/tomato-beef" },
           ],
         },
       ],
