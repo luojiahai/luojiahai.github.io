@@ -50,8 +50,8 @@
   <li><strong>应用技术</strong>: amazon web services (aws), docker, kafka, graphql, postgresql, react</li>
 </ul>
 
-> [!note] 注意
-> 我专业使用 ai。通过与 ai 协作，我可以使用几乎任何编程语言或技术，不限于上述提到的。
+> [!note] 备注
+> 我专业使用人工智能。通过与它协作，我可以使用几乎**任何**编程语言或技术，不限于上述提到的。
 
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">教育背景</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
