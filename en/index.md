@@ -23,7 +23,7 @@ hero:
 />
 
 ```bash
-$ curl localhost:5173/en/whoami.json
+$ curl https://luojiahai.com/en/whoami.json
 ```
 
 <<< @/public/en/whoami.json {json :line-numbers}
