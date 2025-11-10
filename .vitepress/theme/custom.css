@@ -68,7 +68,15 @@
   --vp-c-note-3: var(--vp-c-indigo-3);
   --vp-c-note-soft: var(--vp-c-indigo-soft);
 
-  --vp-home-hero-name-color: var(--Ba0_s);
+  /* --vp-home-hero-name-color: var(--Ba0_s); */
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    var(--Lb9),
+    var(--Lb7),
+    var(--Lb5)
+  );
 }
 
 * {
