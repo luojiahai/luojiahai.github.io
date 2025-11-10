@@ -1,12 +1,10 @@
 @import "color.css";
 
 :root {
-  --brand-pink: var(--Pi5);
-  --brand-pink-thin: var(--Pi1);
-  --brand-pink-soft: rgba(var(--Pi5_rgb), 0.14);
-  --brand-blue: var(--Lb5);
-  --brand-blue-thin: var(--Lb1);
-  --brand-blue-soft: rgba(var(--Lb5_rgb), 0.14);
+  --brand-1: var(--Lb5);
+  --brand-2: var(--Lb5);
+  --brand-3: var(--Lb5);
+  --brand-soft: rgba(var(--Lb5_rgb), 0.14);
   --bg-1: var(--Wh0);
   --bg-2: var(--Ga0);
   --bg-3: var(--Ga1);
@@ -20,10 +18,11 @@
   --vp-font-family-base: "Inter", sans-serif;
   --vp-font-family-mono: "Cascadia Mono", monospace;
 
-  --vp-c-brand-1: var(--brand-blue);
-  --vp-c-brand-2: var(--brand-blue);
-  --vp-c-brand-3: var(--brand-blue);
-  --vp-c-brand-soft: var(--brand-blue-soft);
+  --vp-c-brand: var(--brand-1);
+  --vp-c-brand-1: var(--brand-1);
+  --vp-c-brand-2: var(--brand-2);
+  --vp-c-brand-3: var(--brand-3);
+  --vp-c-brand-soft: var(--brand-soft);
   --vp-c-bg: var(--bg-1);
   --vp-c-bg-alt: var(--bg-2);
   --vp-c-bg-elv: var(--bg-3);
@@ -40,25 +39,34 @@
   --vp-c-gray-3: var(--Ga2);
   --vp-c-gray-soft: rgba(var(--Ga4_rgb), 0.14);
   --vp-c-indigo-1: var(--Bl5);
-  --vp-c-indigo-2: var(--Bl4);
-  --vp-c-indigo-3: var(--Bl3);
+  --vp-c-indigo-2: var(--Bl6);
+  --vp-c-indigo-3: var(--Bl7);
   --vp-c-indigo-soft: rgba(var(--Bl5_rgb), 0.14);
   --vp-c-purple-1: var(--Pu5);
-  --vp-c-purple-2: var(--Pu4);
-  --vp-c-purple-3: var(--Pu3);
+  --vp-c-purple-2: var(--Pu6);
+  --vp-c-purple-3: var(--Pu7);
   --vp-c-purple-soft: rgba(var(--Pu5_rgb), 0.14);
   --vp-c-green-1: var(--Gr5);
-  --vp-c-green-2: var(--Gr4);
-  --vp-c-green-3: var(--Gr3);
+  --vp-c-green-2: var(--Gr6);
+  --vp-c-green-3: var(--Gr7);
   --vp-c-green-soft: rgba(var(--Gr5_rgb), 0.14);
   --vp-c-yellow-1: var(--Ye5);
-  --vp-c-yellow-2: var(--Ye4);
-  --vp-c-yellow-3: var(--Ye3);
+  --vp-c-yellow-2: var(--Ye6);
+  --vp-c-yellow-3: var(--Ye7);
   --vp-c-yellow-soft: rgba(var(--Ye5_rgb), 0.14);
   --vp-c-red-1: var(--Re5);
-  --vp-c-red-2: var(--Re4);
-  --vp-c-red-3: var(--Re3);
+  --vp-c-red-2: var(--Re6);
+  --vp-c-red-3: var(--Re7);
   --vp-c-red-soft: rgba(var(--Re5_rgb), 0.14);
+
+  --vp-c-tip-1: var(--vp-c-indigo-1);
+  --vp-c-tip-2: var(--vp-c-indigo-2);
+  --vp-c-tip-3: var(--vp-c-indigo-3);
+  --vp-c-tip-soft: var(--vp-c-indigo-soft);
+  --vp-c-note-1: var(--vp-c-indigo-1);
+  --vp-c-note-2: var(--vp-c-indigo-2);
+  --vp-c-note-3: var(--vp-c-indigo-3);
+  --vp-c-note-soft: var(--vp-c-indigo-soft);
 
   --vp-home-hero-name-color: var(--vp-c-text-1);
   --vp-button-brand-hover-bg: var(--Lb6);
