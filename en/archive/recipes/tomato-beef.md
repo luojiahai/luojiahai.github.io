@@ -7,13 +7,13 @@
 | beef            | 500 g    |
 | tomato          | 3        |
 | onion           | 1        |
-| ginger          | 3 slices |
-| garlic          | 3 cloves |
+| ginger          | to taste |
+| garlic          | to taste |
 | light soy sauce | 10 g     |
 | oyster sauce    | 10 g     |
 | cooking wine    | 10 g     |
-| white pepper    | 5 g      |
-| tomato sauce    | 15 g     |
+| white pepper    | to taste |
+| tomato sauce    | 10 g     |
 | sugar           | 5 g      |
 | cooking oil     | to taste |
 
