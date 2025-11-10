@@ -158,7 +158,7 @@ onUnmounted(() => {
 .modal-button.brand {
   border-color: var(--vp-button-brand-border);
   color: var(--vp-button-brand-text);
-  background-color: var(--vp-c-yellow-1);
+  background-color: var(--vp-c-yellow-3);
 }
 
 .modal-button.alt {
