@@ -16,8 +16,8 @@ const fetchWeather = async (): Promise<void> => {
     error.value = null;
 
     const url = weatherLocation.value
-      ? `https://wttr.in/${weatherLocation.value}`
-      : "https://wttr.in";
+      ? `https://wttr.in/${weatherLocation.value}?lang=en`
+      : "https://wttr.in/?lang=en";
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
