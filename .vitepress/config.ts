@@ -21,6 +21,7 @@ export default defineConfig({
   cleanUrls: true,
   rewrites: {
     "en/:rest*": ":rest*",
+    "root/:rest*": ":rest*",
   },
   sitemap: {
     hostname: "https://luojiahai.com",

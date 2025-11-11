@@ -213,7 +213,7 @@
   mask-image: var(--icon);
 }
 
-.parrot-page .VPSkipLink,
-.parrot-page .VPLocalNav {
+.custom-page .VPSkipLink,
+.custom-page .VPLocalNav {
   display: none !important;
 }

@@ -6,7 +6,7 @@ sidebar: false
 aside: false
 outline: false
 footer: false
-pageClass: parrot-page
+pageClass: custom-page
 ---
 
 <PartyParrot />
