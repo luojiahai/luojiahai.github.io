@@ -52,14 +52,9 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: "/zh/archive/",
     },
     {
-      text: "随机",
-      items: [
-        {
-          text: "派对鹦鹉",
-          link: "/partyparrot",
-          target: "_blank",
-        },
-      ],
+      text: "派对鹦鹉",
+      link: "/partyparrot",
+      target: "_blank",
     },
   ];
 }

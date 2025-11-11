@@ -52,14 +52,9 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: "/archive/",
     },
     {
-      text: "random",
-      items: [
-        {
-          text: "partyparrot",
-          link: "/partyparrot",
-          target: "_blank",
-        },
-      ],
+      text: "partyparrot",
+      link: "/partyparrot",
+      target: "_blank",
     },
   ];
 }
