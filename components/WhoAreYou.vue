@@ -168,7 +168,7 @@ onMounted(fetchWhoAreYou);
 
 <template>
   <div class="whoareyou-container">
-    <div v-if="loading" class="whoareyou-loading">loading who are you...</div>
+    <div v-if="loading" class="whoareyou-loading">loading whoareyou...</div>
     <div v-else-if="error" class="whoareyou-error">error: {{ error }}</div>
     <div v-else-if="whoAreYouData" class="whoareyou-data">
       <div
