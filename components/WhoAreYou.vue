@@ -195,7 +195,7 @@ onMounted(fetchWhoAreYou);
 
 <style scoped>
 .whoareyou-container {
-  padding: 1rem;
+  margin: 1rem;
   font-size: 0.75rem;
 }
 
