@@ -5,7 +5,7 @@ title: luojiahai
 hero:
   name: luó, jiāhǎi <span class="spinner"></span>
   text: hello, world!
-  tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch with a coke and some snacks, watching tv.
+  tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch watching tv, drinking coke, and eating snacks.
   actions:
     - theme: brand
       text: archive
