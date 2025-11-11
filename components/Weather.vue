@@ -47,8 +47,8 @@ onMounted(fetchWeather);
 <style scoped>
 .weather-container {
   padding: 1rem;
-  font-family: var(--vp-font-family-mono);
   font-size: 0.75rem;
+  line-height: 1.2;
 }
 
 .weather-loading {

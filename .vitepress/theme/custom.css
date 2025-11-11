@@ -23,9 +23,6 @@
 }
 
 :root {
-  --vp-font-family-base: "Inter", sans-serif;
-  --vp-font-family-mono: "Cascadia Mono", monospace;
-
   --vp-c-brand: var(--brand-1);
   --vp-c-brand-1: var(--brand-1);
   --vp-c-brand-2: var(--brand-2);
