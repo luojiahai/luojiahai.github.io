@@ -178,7 +178,7 @@ onMounted(fetchWhoAreYou);
       >
         <h3>{{ section.title }}</h3>
         <div v-for="item in section.items" :key="item.label" class="info-item">
-          <span class="label">{{ item.label.toLowerCase() }}</span>
+          <span class="label">{{ item.label.toLowerCase() }}:</span>
           <span class="value">{{ item.value.toLowerCase() }}</span>
         </div>
       </div>
@@ -213,17 +213,17 @@ onMounted(fetchWhoAreYou);
 .whoareyou-data {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 
 .info-section {
   border: 1px solid var(--vp-c-divider);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   background-color: var(--vp-c-bg-soft);
 }
 
 .info-section h3 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1rem;
   font-weight: 600;
   color: var(--vp-c-text-1);
@@ -234,14 +234,8 @@ onMounted(fetchWhoAreYou);
 .info-item {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--vp-c-divider-light);
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.info-item:last-child {
-  border-bottom: none;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 .label {
@@ -249,6 +243,7 @@ onMounted(fetchWhoAreYou);
   font-family: var(--vp-font-family-mono);
   color: var(--vp-c-text-2);
   flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .value {
