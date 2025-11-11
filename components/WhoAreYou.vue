@@ -196,13 +196,10 @@ onMounted(fetchWhoAreYou);
 <style scoped>
 .whoareyou-container {
   padding: 1rem;
-  font-family: var(--vp-font-family-base);
+  font-size: 0.75rem;
 }
 
-.whoareyou-loading,
-.whoareyou-error {
-  padding: 1rem;
-  text-align: center;
+.whoareyou-loading {
   color: var(--vp-c-text-2);
 }
 
@@ -235,7 +232,7 @@ onMounted(fetchWhoAreYou);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 0.625rem;
 }
 
 .label {
@@ -259,7 +256,7 @@ onMounted(fetchWhoAreYou);
   padding: 0.75rem;
   background-color: var(--vp-c-bg);
   font-family: var(--vp-font-family-mono);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--vp-c-text-1);
   word-break: break-all;
   line-height: 1.5;
