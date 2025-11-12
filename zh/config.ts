@@ -64,11 +64,6 @@ function nav(): DefaultTheme.NavItem[] {
           link: "/weather?location=guangzhou",
           target: "_blank",
         },
-        {
-          text: "你是谁",
-          link: "/whoareyou",
-          target: "_blank",
-        },
       ],
     },
   ];

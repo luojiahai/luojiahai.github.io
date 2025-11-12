@@ -64,11 +64,6 @@ function nav(): DefaultTheme.NavItem[] {
           link: "/weather?location=melbourne",
           target: "_blank",
         },
-        {
-          text: "whoareyou",
-          link: "/whoareyou",
-          target: "_blank",
-        },
       ],
     },
   ];
