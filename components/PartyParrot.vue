@@ -102,11 +102,10 @@ onUnmounted(() => {
 }
 
 .partyparrot-frame {
-  font-family: var(--vp-font-family-mono, monospace);
+  font-family: var(--vp-font-family-mono);
   font-size: 0.75rem;
   line-height: 1.2;
   margin: 0;
   white-space: pre;
-  transition: color 70ms ease-in-out;
 }
 </style>
