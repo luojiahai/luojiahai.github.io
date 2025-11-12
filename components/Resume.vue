@@ -104,7 +104,7 @@ const props = defineProps<{
 
 <style scoped>
 .resume {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
 }
 
 .separator {
