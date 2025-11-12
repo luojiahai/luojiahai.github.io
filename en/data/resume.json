@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "experience": "experience",
+    "skills": "skills",
+    "education": "education"
+  },
+  "experience": [
+    {
+      "name": "rea group",
+      "location": "melbourne, vic, australia",
+      "positions": [
+        { "title": "senior software engineer", "period": "2025 - present" },
+        { "title": "software engineer", "period": "2024 - 2025" }
+      ]
+    },
+    {
+      "name": "amazon web services (aws)",
+      "location": "sydney, nsw, australia",
+      "positions": [
+        { "title": "software development engineer", "period": "2021 - 2024" }
+      ]
+    },
+    {
+      "name": "deloitte",
+      "location": "melbourne, vic, australia",
+      "positions": [
+        { "title": "software development consultant", "period": "2020 - 2021" }
+      ]
+    },
+    {
+      "name": "the university of melbourne",
+      "location": "melbourne, vic, australia",
+      "positions": [{ "title": "teaching assistant", "period": "2018 - 2020" }]
+    }
+  ],
+  "skills": [
+    {
+      "category": "programming languages",
+      "items": "python, typescript, java, c"
+    },
+    {
+      "category": "technologies",
+      "items": "amazon web services (aws), docker, kafka, graphql, postgresql, react"
+    }
+  ],
+  "education": [
+    {
+      "name": "the university of melbourne",
+      "location": "melbourne, vic, australia",
+      "programs": [
+        {
+          "degree": "master of science (computer science)",
+          "period": "2018 - 2020"
+        },
+        { "degree": "bachelor of science", "period": "2015 - 2018" }
+      ]
+    },
+    {
+      "name": "peking university",
+      "location": "beijing, china",
+      "programs": [
+        {
+          "degree": "pkussi (peking university summer school international) program",
+          "period": "summer 2016"
+        }
+      ]
+    }
+  ]
+}

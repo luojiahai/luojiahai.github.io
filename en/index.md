@@ -28,6 +28,6 @@ hero:
 $ whoami
 ```
 
-<<<./whoami.json {json}
+<<<./data/whoami.json {json}
 
 </WhoAmITerminal>

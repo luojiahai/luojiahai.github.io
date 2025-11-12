@@ -24,6 +24,6 @@ hero:
 
 <WhoAmITerminal>
 
-<<<./whoami.json {json}
+<<<./data/whoami.json {json}
 
 </WhoAmITerminal>

@@ -1,150 +1,43 @@
 <script setup lang="ts">
-interface Props {
-  locale?: "en" | "zh";
+interface ResumeData {
+  sections: {
+    experience: string;
+    skills: string;
+    education: string;
+  };
+  experience: Array<{
+    name: string;
+    location: string;
+    positions: Array<{
+      title: string;
+      period: string;
+    }>;
+  }>;
+  skills: Array<{
+    category: string;
+    items: string;
+  }>;
+  education: Array<{
+    name: string;
+    location: string;
+    programs: Array<{
+      degree: string;
+      period: string;
+    }>;
+  }>;
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  locale: "en",
-});
-
-const content = {
-  en: {
-    sections: {
-      experience: "experience",
-      skills: "skills",
-      education: "education",
-    },
-    experience: [
-      {
-        name: "rea group",
-        location: "melbourne, vic, australia",
-        positions: [
-          { title: "senior software engineer", period: "2025 - present" },
-          { title: "software engineer", period: "2024 - 2025" },
-        ],
-      },
-      {
-        name: "amazon web services (aws)",
-        location: "sydney, nsw, australia",
-        positions: [
-          { title: "software development engineer", period: "2021 - 2024" },
-        ],
-      },
-      {
-        name: "deloitte",
-        location: "melbourne, vic, australia",
-        positions: [
-          { title: "software development consultant", period: "2020 - 2021" },
-        ],
-      },
-      {
-        name: "the university of melbourne",
-        location: "melbourne, vic, australia",
-        positions: [{ title: "teaching assistant", period: "2018 - 2020" }],
-      },
-    ],
-    skills: [
-      {
-        category: "programming languages",
-        items: "python, typescript, java, c",
-      },
-      {
-        category: "technologies",
-        items:
-          "amazon web services (aws), docker, kafka, graphql, postgresql, react",
-      },
-    ],
-    education: [
-      {
-        name: "the university of melbourne",
-        location: "melbourne, vic, australia",
-        programs: [
-          {
-            degree: "master of science (computer science)",
-            period: "2018 - 2020",
-          },
-          { degree: "bachelor of science", period: "2015 - 2018" },
-        ],
-      },
-      {
-        name: "peking university",
-        location: "beijing, china",
-        programs: [
-          {
-            degree:
-              "pkussi (peking university summer school international) program",
-            period: "summer 2016",
-          },
-        ],
-      },
-    ],
-  },
-  zh: {
-    sections: {
-      experience: "工作经历",
-      skills: "专业技能",
-      education: "教育背景",
-    },
-    experience: [
-      {
-        name: "rea 集团",
-        location: "澳大利亚墨尔本",
-        positions: [
-          { title: "高级软件工程师", period: "2025 - present" },
-          { title: "软件工程师", period: "2024 - 2025" },
-        ],
-      },
-      {
-        name: "亚马逊云科技（aws）",
-        location: "澳大利亚悉尼",
-        positions: [{ title: "软件开发工程师", period: "2021 - 2024" }],
-      },
-      {
-        name: "德勤",
-        location: "澳大利亚墨尔本",
-        positions: [{ title: "软件开发顾问", period: "2020 - 2021" }],
-      },
-      {
-        name: "墨尔本大学",
-        location: "澳大利亚墨尔本",
-        positions: [{ title: "教学助理", period: "2018 - 2020" }],
-      },
-    ],
-    skills: [
-      { category: "编程语言", items: "python, typescript, java, c" },
-      {
-        category: "应用技术",
-        items:
-          "amazon web services (aws), docker, kafka, graphql, postgresql, react",
-      },
-    ],
-    education: [
-      {
-        name: "墨尔本大学",
-        location: "澳大利亚墨尔本",
-        programs: [
-          { degree: "理学硕士（计算机科学）", period: "2018 - 2020" },
-          { degree: "理学学士", period: "2015 - 2018" },
-        ],
-      },
-      {
-        name: "北京大学",
-        location: "中国北京",
-        programs: [{ degree: "北京大学暑期学校国际课程", period: "2016 夏" }],
-      },
-    ],
-  },
-};
-
-const currentContent = content[props.locale];
+const props = defineProps<{
+  data: ResumeData;
+}>();
 </script>
 
 <template>
   <div class="resume">
-    <h2 class="section-title">{{ currentContent.sections.experience }}</h2>
+    <h2 class="section-title">{{ data.sections.experience }}</h2>
     <ul class="experience-list">
       <li
-        v-for="experience in currentContent.experience"
+        v-for="experience in data.experience"
         :key="experience.name"
         class="experience-item"
       >
@@ -152,9 +45,8 @@ const currentContent = content[props.locale];
           <span class="experience-name"
             ><strong>{{ experience.name }}</strong></span
           >
-          <span class="experience-location"
-            ><strong>{{ experience.location }}</strong></span
-          >
+          <span class="separator">|</span>
+          <span class="experience-location">{{ experience.location }}</span>
         </div>
         <ul class="positions-list">
           <li
@@ -165,22 +57,23 @@ const currentContent = content[props.locale];
             <span class="position-title"
               ><em>{{ position.title }}</em></span
             >
+            <span class="separator">|</span>
             <span class="position-period">{{ position.period }}</span>
           </li>
         </ul>
       </li>
     </ul>
-    <h2 class="section-title">{{ currentContent.sections.skills }}</h2>
+    <h2 class="section-title">{{ data.sections.skills }}</h2>
     <ul class="skills-list">
-      <li v-for="skill in currentContent.skills" :key="skill.category">
+      <li v-for="skill in data.skills" :key="skill.category">
         <strong>{{ skill.category }}</strong
         >: {{ skill.items }}
       </li>
     </ul>
-    <h2 class="section-title">{{ currentContent.sections.education }}</h2>
+    <h2 class="section-title">{{ data.sections.education }}</h2>
     <ul class="education-list">
       <li
-        v-for="institution in currentContent.education"
+        v-for="institution in data.education"
         :key="institution.name"
         class="institution-item"
       >
@@ -188,9 +81,8 @@ const currentContent = content[props.locale];
           <span class="institution-name"
             ><strong>{{ institution.name }}</strong></span
           >
-          <span class="institution-location"
-            ><strong>{{ institution.location }}</strong></span
-          >
+          <span class="separator">|</span>
+          <span class="institution-location">{{ institution.location }}</span>
         </div>
         <ul class="programs-list">
           <li
@@ -201,6 +93,7 @@ const currentContent = content[props.locale];
             <span class="program-degree"
               ><em>{{ program.degree }}</em></span
             >
+            <span class="separator">|</span>
             <span class="program-period">{{ program.period }}</span>
           </li>
         </ul>
@@ -211,8 +104,11 @@ const currentContent = content[props.locale];
 
 <style scoped>
 .resume {
-  max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
+}
+
+.separator {
+  display: none;
 }
 
 .section-title {
@@ -239,7 +135,6 @@ const currentContent = content[props.locale];
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
 }
 
 .experience-name,
@@ -273,10 +168,32 @@ const currentContent = content[props.locale];
 }
 
 @media (max-width: 639px) {
+  .separator {
+    display: unset;
+    color: var(--vp-c-divider);
+  }
+
+  .experience-list,
+  .skills-list,
+  .education-list {
+    white-space: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   .experience-header,
   .institution-header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .experience-name,
+  .institution-name {
+    flex: none;
   }
 
   .experience-location,
@@ -286,8 +203,10 @@ const currentContent = content[props.locale];
 
   .position-item,
   .program-item {
-    flex-direction: column;
-    gap: 0.25rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
   }
 }
 </style>

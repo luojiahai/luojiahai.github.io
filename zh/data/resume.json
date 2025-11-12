@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "experience": "工作经历",
+    "skills": "专业技能",
+    "education": "教育背景"
+  },
+  "experience": [
+    {
+      "name": "rea 集团",
+      "location": "澳大利亚墨尔本",
+      "positions": [
+        { "title": "高级软件工程师", "period": "2025 - present" },
+        { "title": "软件工程师", "period": "2024 - 2025" }
+      ]
+    },
+    {
+      "name": "亚马逊云科技（aws）",
+      "location": "澳大利亚悉尼",
+      "positions": [{ "title": "软件开发工程师", "period": "2021 - 2024" }]
+    },
+    {
+      "name": "德勤",
+      "location": "澳大利亚墨尔本",
+      "positions": [{ "title": "软件开发顾问", "period": "2020 - 2021" }]
+    },
+    {
+      "name": "墨尔本大学",
+      "location": "澳大利亚墨尔本",
+      "positions": [{ "title": "教学助理", "period": "2018 - 2020" }]
+    }
+  ],
+  "skills": [
+    { "category": "编程语言", "items": "python, typescript, java, c" },
+    {
+      "category": "应用技术",
+      "items": "amazon web services (aws), docker, kafka, graphql, postgresql, react"
+    }
+  ],
+  "education": [
+    {
+      "name": "墨尔本大学",
+      "location": "澳大利亚墨尔本",
+      "programs": [
+        { "degree": "理学硕士（计算机科学）", "period": "2018 - 2020" },
+        { "degree": "理学学士", "period": "2015 - 2018" }
+      ]
+    },
+    {
+      "name": "北京大学",
+      "location": "中国北京",
+      "programs": [
+        { "degree": "北京大学暑期学校国际课程", "period": "2016 夏" }
+      ]
+    }
+  ]
+}
