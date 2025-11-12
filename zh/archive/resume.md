@@ -6,9 +6,9 @@
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">工作经历</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>rea 集团</strong></span>
-      <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>rea 集团</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>高级软件工程师</em></span><span style="white-space: nowrap;">2025 - present</span></li>
@@ -16,27 +16,27 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>亚马逊云科技（aws）</strong></span>
-      <span style="white-space: nowrap;"><strong>澳大利亚悉尼</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>亚马逊云科技（aws）</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>澳大利亚悉尼</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>软件开发工程师</em></span><span style="white-space: nowrap;">2021 - 2024</span></li>
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>德勤</strong></span>
-      <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>德勤</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>软件开发顾问</em></span><span style="white-space: nowrap;">2020 - 2021</span></li>
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>墨尔本大学</strong></span>
-      <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>墨尔本大学</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>教学助理</em></span><span style="white-space: nowrap;">2018 - 2020</span></li>
@@ -56,9 +56,9 @@
 <h2 style="margin-top: 1.5rem; padding-top: 1.25rem;">教育背景</h2>
 <ul style="list-style-type: none; padding-left: 0; display: flex; flex-direction: column; gap: 0.5rem;">
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>墨尔本大学</strong></span>
-      <span style="white-space: nowrap;"><strong>澳大利亚墨尔本</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>墨尔本大学</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>澳大利亚墨尔本</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>理学硕士（计算机科学）</em></span><span style="white-space: nowrap;">2018 - 2020</span></li>
@@ -66,9 +66,9 @@
     </ul>
   </li>
   <li>
-    <div style="display: flex; justify-content: space-between; align-items: baseline;">
-      <span><strong>北京大学</strong></span>
-      <span style="white-space: nowrap;"><strong>中国北京</strong></span>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+      <span style="flex: 1; min-width: 0;"><strong>北京大学</strong></span>
+      <span style="flex: 1; min-width: 0; text-align: right;"><strong>中国北京</strong></span>
     </div>
     <ul style="list-style-type: none; padding-left: 0;">
       <li style="display: flex; justify-content: space-between;"><span><em>北京大学暑期学校国际课程</em></span><span style="white-space: nowrap;">2016 夏</span></li>
