@@ -57,11 +57,6 @@ const detectDevice = (ua: string): string => {
   return "desktop";
 };
 
-const timeZoneInfo = (() => {
-  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  return tz.toLowerCase();
-})();
-
 const formattedDateTime = computed(() => {
   const date = currentTime.value;
   const year = date.getFullYear();
@@ -72,7 +67,6 @@ const formattedDateTime = computed(() => {
   const ampm = hours24 >= 12 ? "pm" : "am";
   const minutes = pad(date.getMinutes());
   const seconds = pad(date.getSeconds());
-
   const offset = -date.getTimezoneOffset();
   const offsetHours = Math.floor(Math.abs(offset) / 60);
   const offsetMinutes = Math.abs(offset) % 60;
@@ -81,15 +75,15 @@ const formattedDateTime = computed(() => {
     offsetMinutes > 0
       ? `utc${sign}${offsetHours}:${pad(offsetMinutes)}`
       : `utc${sign}${offsetHours}`;
-
-  return `${year}-${month}-${day} ${hours12}:${minutes}:${seconds} ${ampm} ${utcOffset} ${timeZoneInfo}`;
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  return `${year}-${month}-${day} ${hours12}:${minutes}:${seconds} ${ampm} ${utcOffset} ${timezone}`;
 });
 
 const fetchWeather = async (): Promise<void> => {
   try {
     const response = await fetch("https://wttr.in/?format=%l:+%t+%C+%c\n");
     if (!response.ok) throw new Error(`http error! status: ${response.status}`);
-    weatherData.value = (await response.text()).trim().toLowerCase();
+    weatherData.value = (await response.text()).trim();
   } catch {
     weatherData.value = "weather unavailable";
   } finally {
@@ -99,10 +93,11 @@ const fetchWeather = async (): Promise<void> => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
+  const language = navigator.language || "unknown";
   const device = detectDevice(ua);
   const os = detectOS(ua);
   const browser = detectBrowser(ua);
-  systemInfo.value = `${device} ${os} ${browser}`;
+  systemInfo.value = `${language} ${device} ${os} ${browser}`;
 };
 
 onMounted(() => {
@@ -133,11 +128,13 @@ onUnmounted(() => {
       <slot />
     </div>
     <div class="window-footer">
-      <span>{{ formattedDateTime }}</span>
+      <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
       <span class="separator">|</span>
-      <span>{{ weatherLoading ? "loading..." : weatherData }}</span>
+      <span>{{
+        weatherLoading ? "loading..." : weatherData.toLocaleLowerCase()
+      }}</span>
       <span class="separator">|</span>
-      <span>{{ systemInfo }}</span>
+      <span>{{ systemInfo.toLocaleLowerCase() }}</span>
     </div>
   </div>
 </template>
@@ -180,7 +177,6 @@ onUnmounted(() => {
   height: 10px;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.7);
-  transition: opacity 0.2s;
   user-select: none;
 }
 
