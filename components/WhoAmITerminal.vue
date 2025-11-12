@@ -161,7 +161,7 @@ onUnmounted(() => {
 
 .window-header {
   display: flex;
-  padding: 0.625rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   background-color: var(--vp-c-bg-elv);
   border-bottom: 1px solid var(--vp-c-divider);
 }
@@ -219,8 +219,8 @@ onUnmounted(() => {
 .window-footer {
   display: flex;
   align-items: center;
-  padding: 0.375rem 1.5rem;
-  font-size: 0.625rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
