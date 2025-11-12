@@ -198,7 +198,7 @@ onUnmounted(() => {
   align-items: flex-start;
   gap: 0.25rem;
   padding: 0.5rem 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
