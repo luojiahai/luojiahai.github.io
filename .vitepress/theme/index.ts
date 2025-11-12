@@ -4,7 +4,7 @@ import "./custom.css";
 import ExternalLinkModal from "../../components/ExternalLinkModal.vue";
 import PartyParrot from "../../components/PartyParrot.vue";
 import Resume from "../../components/Resume.vue";
-import WhoAmITerminal from "../../components/WhoAmITerminal.vue";
+import Terminal from "../../components/Terminal.vue";
 
 export default {
   extends: DefaultTheme,
@@ -12,6 +12,6 @@ export default {
     app.component("ExternalLinkModal", ExternalLinkModal);
     app.component("PartyParrot", PartyParrot);
     app.component("Resume", Resume);
-    app.component("WhoAmITerminal", WhoAmITerminal);
+    app.component("Terminal", Terminal);
   },
 } satisfies Theme;

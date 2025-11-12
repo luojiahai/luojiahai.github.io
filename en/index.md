@@ -22,12 +22,12 @@ hero:
   cancelText="cancel"
 />
 
-<WhoAmITerminal>
+<Terminal>
 
-```bash
+```ansi
 $ whoami
 ```
 
 <<<./data/whoami.json {json}
 
-</WhoAmITerminal>
+</Terminal>

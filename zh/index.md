@@ -22,8 +22,8 @@ hero:
   cancelText="取消"
 />
 
-<WhoAmITerminal>
+<Terminal>
 
 <<<./data/whoami.json {json}
 
-</WhoAmITerminal>
+</Terminal>
