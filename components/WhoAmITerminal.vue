@@ -157,7 +157,7 @@ onUnmounted(() => {
 
 .window-header {
   display: flex;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: var(--vp-c-bg-elv);
   border-bottom: 1px solid var(--vp-c-divider);
 }
