@@ -178,15 +178,10 @@ onUnmounted(() => {
   justify-content: center;
   width: 10px;
   height: 10px;
-  cursor: pointer;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.2s;
   user-select: none;
-}
-
-.window-controls .control-button:hover {
-  opacity: 0.8;
 }
 
 .window-controls .control-button.close {
