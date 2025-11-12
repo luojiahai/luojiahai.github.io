@@ -87,7 +87,7 @@ const formattedDateTime = computed(() => {
 
 const fetchWeather = async (): Promise<void> => {
   try {
-    const response = await fetch("https://wttr.in/?format=3");
+    const response = await fetch("https://wttr.in/?format=%l:+%t+%C+%c\n");
     if (!response.ok) throw new Error(`http error! status: ${response.status}`);
     weatherData.value = (await response.text()).trim().toLowerCase();
   } catch {
@@ -233,7 +233,7 @@ onUnmounted(() => {
 
 .window-footer .separator {
   padding: 0 0.375rem;
-  color: var(--vp-c-gray-2);
+  color: var(--vp-c-divider);
   user-select: none;
 }
 
