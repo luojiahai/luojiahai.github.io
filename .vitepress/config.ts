@@ -15,7 +15,7 @@ export default defineConfig({
   appearance: true,
   lastUpdated: true,
   markdown: {
-    theme: { light: "github-light-default", dark: "github-dark-default" },
+    theme: { light: "vitesse-light", dark: "vitesse-dark" },
   },
   metaChunk: true,
   cleanUrls: true,
