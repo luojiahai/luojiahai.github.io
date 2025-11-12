@@ -209,7 +209,7 @@ onUnmounted(() => {
   padding: 0.5rem 1.5rem;
   font-size: 0.75rem;
   line-height: 1.5;
-  background-color: var(--vp-c-bg-alt);
+  background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
   overflow-x: auto;
