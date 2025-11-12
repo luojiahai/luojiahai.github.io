@@ -133,6 +133,9 @@ onUnmounted(() => {
           id="terminal-input-area"
           class="input-area"
           rows="1"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
           spellcheck="false"
           @keydown.enter.prevent
           @keydown.tab.prevent
