@@ -22,10 +22,8 @@ hero:
   cancelText="取消"
 />
 
-```bash
-$ curl https://luojiahai.com/zh/whoami.json
-```
+<WhoAmITerminal>
 
-<<< @/public/zh/whoami.json {json :line-numbers}
+<<<./whoami.json {json}
 
-<StatusBar />
+</WhoAmITerminal>

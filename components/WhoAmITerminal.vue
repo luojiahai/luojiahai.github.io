@@ -51,6 +51,12 @@ const detectOS = (ua: string): string => {
   return "unknown os";
 };
 
+const detectDevice = (ua: string): string => {
+  if (ua.includes("Mobile")) return "mobile";
+  if (ua.includes("Tablet") || ua.includes("iPad")) return "tablet";
+  return "desktop";
+};
+
 const timeZoneInfo = (() => {
   const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   return tz.toLowerCase();
@@ -82,7 +88,7 @@ const formattedDateTime = computed(() => {
 const fetchWeather = async (): Promise<void> => {
   try {
     const response = await fetch("https://wttr.in/?format=3");
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    if (!response.ok) throw new Error(`http error! status: ${response.status}`);
     weatherData.value = (await response.text()).trim().toLowerCase();
   } catch {
     weatherData.value = "weather unavailable";
@@ -93,9 +99,10 @@ const fetchWeather = async (): Promise<void> => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
+  const device = detectDevice(ua);
   const os = detectOS(ua);
   const browser = detectBrowser(ua);
-  systemInfo.value = `${os} ${browser}`;
+  systemInfo.value = `${device} ${os} ${browser}`;
 };
 
 onMounted(() => {
@@ -114,54 +121,134 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="status-bar">
-    <span class="status-item">{{ formattedDateTime }}</span>
-    <span class="status-separator">|</span>
-    <span class="status-item">{{
-      weatherLoading ? "loading..." : weatherData
-    }}</span>
-    <span class="status-separator">|</span>
-    <span class="status-item">{{ systemInfo }}</span>
+  <div class="window-frame">
+    <div class="window-header">
+      <div class="window-controls">
+        <span class="control-button close">×</span>
+        <span class="control-button minimize">−</span>
+        <span class="control-button maximize">+</span>
+      </div>
+    </div>
+    <div class="window-content">
+      <slot class="test" />
+    </div>
+    <div class="window-footer">
+      <span>{{ formattedDateTime }}</span>
+      <span class="separator">|</span>
+      <span>{{ weatherLoading ? "loading..." : weatherData }}</span>
+      <span class="separator">|</span>
+      <span>{{ systemInfo }}</span>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.status-bar {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.25rem;
-  padding: 1rem 1.5rem;
+.window-frame {
   margin: 1rem -1.5rem;
   font-family: var(--vp-font-family-mono);
   font-size: 0.75rem;
   line-height: 1.5;
+  color: var(--vp-c-text-1);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.window-frame::-webkit-scrollbar {
+  display: none;
+}
+
+.window-header {
+  display: flex;
+  padding: 0.625rem 1.5rem;
+  background-color: var(--vp-c-bg-elv);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.window-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.window-controls .control-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.2s;
+  user-select: none;
+}
+
+.window-controls .control-button:hover {
+  opacity: 0.8;
+}
+
+.window-controls .control-button.close {
+  background-color: var(--red);
+}
+
+.window-controls .control-button.minimize {
+  background-color: var(--yellow);
+}
+
+.window-controls .control-button.maximize {
+  background-color: var(--green);
+}
+
+.window-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
   background-color: var(--vp-c-bg-alt);
   color: var(--vp-c-text-1);
-  overflow-x: auto;
   white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.status-item {
-  display: inline-block;
+.window-content::-webkit-scrollbar {
+  display: none;
 }
 
-.status-separator {
-  color: var(--vp-c-divider);
+.window-footer {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 1.5rem;
+  font-size: 0.625rem;
+  line-height: 1.5;
+  background-color: var(--vp-c-bg-elv);
+  color: var(--vp-c-text-2);
+  border-top: 1px solid var(--vp-c-divider);
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.window-footer .separator {
+  padding: 0 0.375rem;
+  color: var(--vp-c-gray-2);
   user-select: none;
+}
+
+.window-footer::-webkit-scrollbar {
   display: none;
 }
 
 @media (min-width: 640px) {
-  .status-bar {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
-
-  .status-separator {
-    display: inline;
+  .window-frame {
+    margin: 1rem 0rem;
   }
 }
 </style>

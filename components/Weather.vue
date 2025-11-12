@@ -27,7 +27,7 @@ const fetchWeather = async (): Promise<void> => {
     weatherData.value = html.toLowerCase().replace(/<a[^>]*>.*?<\/a>/gi, "");
   } catch (e) {
     error.value =
-      e instanceof Error ? e.message : "Failed to fetch weather data";
+      e instanceof Error ? e.message : "failed to fetch weather data";
   } finally {
     loading.value = false;
   }

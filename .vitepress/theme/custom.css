@@ -215,3 +215,17 @@
 .custom-page .VPLocalNav {
   display: none !important;
 }
+
+.window-content div[class*="language-"] {
+  margin: 0 !important;
+}
+
+.window-content [class*="language-"] pre,
+.window-content [class*="language-"] code {
+  padding: 0;
+}
+
+.window-content [class*="language-"] > button.copy,
+.window-content [class*="language-"] > span.lang {
+  display: none;
+}
