@@ -116,18 +116,19 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="window-frame">
-    <div class="window-header">
-      <div class="window-controls">
+  <div class="terminal-frame">
+    <div class="terminal-header">
+      <div class="controls">
         <span class="control-button close">×</span>
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
+      <div class="title">luojiahai@localhost:/</div>
     </div>
-    <div class="window-content">
+    <div class="terminal-content">
       <slot />
     </div>
-    <div class="window-footer">
+    <div class="terminal-footer">
       <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
       <span class="separator">|</span>
       <span>{{
@@ -140,7 +141,7 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
-.window-frame {
+.terminal-frame {
   margin: 1rem -1.5rem;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
@@ -151,47 +152,60 @@ onUnmounted(() => {
   scrollbar-width: none;
 }
 
-.window-frame::-webkit-scrollbar {
+.terminal-frame::-webkit-scrollbar {
   display: none;
 }
 
-.window-header {
+.terminal-header {
   display: flex;
-  padding: 1rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
   background-color: var(--vp-c-bg-elv);
-  border-bottom: 1px solid var(--vp-c-divider);
+  position: relative;
 }
 
-.window-controls {
+.controls {
   display: flex;
   gap: 0.5rem;
   flex-shrink: 0;
 }
 
-.window-controls .control-button {
+.control-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 10px;
-  height: 10px;
-  font-size: 10px;
+  width: 0.75rem;
+  height: 0.75rem;
+  font-size: 0.75rem;
   color: rgba(0, 0, 0, 0.7);
   user-select: none;
+  border-radius: 50% !important;
 }
 
-.window-controls .control-button.close {
+.control-button.close {
   background-color: var(--red);
 }
 
-.window-controls .control-button.minimize {
+.control-button.minimize {
   background-color: var(--yellow);
 }
 
-.window-controls .control-button.maximize {
+.control-button.maximize {
   background-color: var(--green);
 }
 
-.window-content {
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  user-select: none;
+}
+
+.terminal-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -207,38 +221,38 @@ onUnmounted(() => {
   scrollbar-width: none;
 }
 
-.window-content::-webkit-scrollbar {
+.terminal-content::-webkit-scrollbar {
   display: none;
 }
 
-.window-footer {
+.terminal-footer {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  font-size: 0.75rem;
+  font-size: 11px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
-  border-top: 1px solid var(--vp-c-divider);
   white-space: nowrap;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.window-footer .separator {
+.terminal-footer::-webkit-scrollbar {
+  display: none;
+}
+
+.separator {
   padding: 0 0.375rem;
   color: var(--vp-c-divider);
   user-select: none;
 }
 
-.window-footer::-webkit-scrollbar {
-  display: none;
-}
-
 @media (min-width: 640px) {
-  .window-frame {
+  .terminal-frame {
     margin: 1rem 0rem;
+    border-radius: 0.75rem !important;
   }
 }
 </style>

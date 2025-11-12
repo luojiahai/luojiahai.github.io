@@ -215,16 +215,16 @@
   display: none !important;
 }
 
-.window-content div[class*="language-"] {
+.terminal-content div[class*="language-"] {
   margin: 0 !important;
 }
 
-.window-content [class*="language-"] pre,
-.window-content [class*="language-"] code {
+.terminal-content [class*="language-"] pre,
+.terminal-content [class*="language-"] code {
   padding: 0;
 }
 
-.window-content [class*="language-"] > button.copy,
-.window-content [class*="language-"] > span.lang {
+.terminal-content [class*="language-"] > button.copy,
+.terminal-content [class*="language-"] > span.lang {
   display: none;
 }
