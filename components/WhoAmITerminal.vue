@@ -128,6 +128,17 @@ onUnmounted(() => {
     <div class="terminal-content">
       <slot />
     </div>
+    <div class="terminal-input">
+      <span class="prompt">$</span>
+      <textarea
+        id="terminal-input-area"
+        class="input-area"
+        rows="1"
+        spellcheck="false"
+        @keydown.enter.prevent
+        @keydown.tab.prevent
+      ></textarea>
+    </div>
     <div class="terminal-footer">
       <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
       <span class="separator">|</span>
@@ -223,6 +234,30 @@ onUnmounted(() => {
 
 .terminal-content::-webkit-scrollbar {
   display: none;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  background-color: var(--vp-code-block-bg);
+  font-size: 13px;
+}
+
+.input-area {
+  flex: 1;
+  margin: 0;
+  padding: 0 0.5rem;
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-code-block-bg);
+  font-family: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+  white-space: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .terminal-footer {
