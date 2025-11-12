@@ -24,7 +24,7 @@ hero:
 
 <Terminal>
 
-```ansi
+```text
 $ whoami
 ```
 

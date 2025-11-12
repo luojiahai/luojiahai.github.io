@@ -24,6 +24,10 @@ hero:
 
 <Terminal>
 
+```text
+$ whoami
+```
+
 <<<./data/whoami.json {json}
 
 </Terminal>
