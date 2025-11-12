@@ -239,6 +239,7 @@ onUnmounted(() => {
 .terminal-input {
   display: flex;
   width: 100%;
+  font-family: inherit;
   font-size: 13px;
 }
 
@@ -249,6 +250,7 @@ onUnmounted(() => {
   color: inherit;
   background-color: inherit;
   font-family: inherit;
+  font-size: 13px;
   border: none;
   outline: none;
   resize: none;
