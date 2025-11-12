@@ -244,13 +244,13 @@ onUnmounted(() => {
 }
 
 .input-area {
-  width: 100%;
+  width: inherit;
   margin: 0;
   padding: 0 0.5rem;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: 13px;
+  font-size: inherit;
   border: none;
   outline: none;
   resize: none;
