@@ -127,17 +127,17 @@ onUnmounted(() => {
     </div>
     <div class="terminal-content">
       <slot />
-    </div>
-    <div class="terminal-input">
-      <span class="prompt">$</span>
-      <textarea
-        id="terminal-input-area"
-        class="input-area"
-        rows="1"
-        spellcheck="false"
-        @keydown.enter.prevent
-        @keydown.tab.prevent
-      ></textarea>
+      <div class="terminal-input">
+        <span class="prompt">$</span>
+        <textarea
+          id="terminal-input-area"
+          class="input-area"
+          rows="1"
+          spellcheck="false"
+          @keydown.enter.prevent
+          @keydown.tab.prevent
+        ></textarea>
+      </div>
     </div>
     <div class="terminal-footer">
       <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
@@ -238,18 +238,16 @@ onUnmounted(() => {
 
 .terminal-input {
   display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-  background-color: var(--vp-code-block-bg);
+  width: 100%;
   font-size: 13px;
 }
 
 .input-area {
-  flex: 1;
+  width: 100%;
   margin: 0;
   padding: 0 0.5rem;
-  color: var(--vp-c-text-1);
-  background-color: var(--vp-code-block-bg);
+  color: inherit;
+  background-color: inherit;
   font-family: inherit;
   border: none;
   outline: none;
