@@ -137,7 +137,7 @@ onUnmounted(() => {
           autocorrect="off"
           autocapitalize="off"
           spellcheck="false"
-          inputmode="none"
+          inputmode="text"
           @keydown.enter.prevent
           @keydown.tab.prevent
         ></textarea>
