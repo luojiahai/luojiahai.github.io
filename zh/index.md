@@ -27,3 +27,5 @@ $ curl https://luojiahai.com/zh/whoami.json
 ```
 
 <<< @/public/zh/whoami.json {json :line-numbers}
+
+<StatusBar />

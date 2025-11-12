@@ -236,7 +236,6 @@ onMounted(fetchWhoAreYou);
 }
 
 .label {
-  font-size: 0.875rem;
   font-family: var(--vp-font-family-mono);
   color: var(--vp-c-text-2);
   flex: 0 0 auto;
@@ -244,7 +243,6 @@ onMounted(fetchWhoAreYou);
 }
 
 .value {
-  font-size: 0.875rem;
   font-family: var(--vp-font-family-mono);
   color: var(--vp-c-text-1);
   text-align: left;
@@ -256,7 +254,6 @@ onMounted(fetchWhoAreYou);
   padding: 0.75rem;
   background-color: var(--vp-c-bg);
   font-family: var(--vp-font-family-mono);
-  font-size: 0.875rem;
   color: var(--vp-c-text-1);
   word-break: break-all;
   line-height: 1.5;
