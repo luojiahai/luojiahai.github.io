@@ -130,7 +130,7 @@ onUnmounted(() => {
       </div>
     </div>
     <div class="window-content">
-      <slot class="test" />
+      <slot />
     </div>
     <div class="window-footer">
       <span>{{ formattedDateTime }}</span>
