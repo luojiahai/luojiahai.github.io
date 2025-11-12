@@ -196,7 +196,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.25rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1rem;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
@@ -214,7 +214,7 @@ onUnmounted(() => {
 .window-footer {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 0.75rem;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
