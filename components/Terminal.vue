@@ -182,7 +182,7 @@ onUnmounted(() => {
 
 .controls {
   display: flex;
-  gap: 0.5rem;
+  gap: 9px;
   flex-shrink: 0;
 }
 
