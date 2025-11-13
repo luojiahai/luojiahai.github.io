@@ -140,18 +140,14 @@
 .VPHero .text {
   line-height: 24px;
   font-size: 16px;
-  padding-top: 8px !important;
+  padding-top: 12px !important;
 }
 
 .VPHero .tagline {
   line-height: 22px;
   font-size: 14px;
   font-weight: unset;
-  padding-top: 4px !important;
-}
-
-.VPHero .actions {
-  padding-top: 24px !important;
+  padding-top: 8px !important;
 }
 
 .VPFooter {
