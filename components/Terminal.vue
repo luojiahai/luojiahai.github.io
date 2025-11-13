@@ -157,7 +157,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 1rem -1.5rem;
+  margin: 16px -24px;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -175,7 +175,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
 }
@@ -213,7 +213,7 @@ onUnmounted(() => {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 600;
   color: var(--vp-c-text-2);
   user-select: none;
@@ -223,8 +223,8 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.25rem;
-  padding: 0.5rem 0.5rem;
+  gap: 4px;
+  padding: 8px 8px;
   font-size: 14px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
@@ -249,7 +249,7 @@ onUnmounted(() => {
 .input-area {
   width: inherit;
   margin: 0;
-  padding: 0 0.5rem;
+  padding: 0 8px;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
@@ -266,7 +266,7 @@ onUnmounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0.5rem;
+  padding: 8px 8px;
   font-size: 11px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
@@ -282,14 +282,14 @@ onUnmounted(() => {
 }
 
 .separator {
-  padding: 0 0.375rem;
+  padding: 0 6px;
   color: var(--vp-c-divider);
   user-select: none;
 }
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 1rem 0rem;
+    margin: 16px 0;
   }
 }
 </style>

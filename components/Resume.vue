@@ -104,7 +104,7 @@ const props = defineProps<{
 
 <style scoped>
 .resume {
-  margin: 0 auto 2rem;
+  margin: 0 auto 32px;
 }
 
 .separator {
@@ -112,8 +112,8 @@ const props = defineProps<{
 }
 
 .section-title {
-  margin-top: 1.5rem;
-  padding-top: 1.25rem;
+  margin-top: 24px;
+  padding-top: 20px;
 }
 
 .experience-list,
@@ -122,7 +122,7 @@ const props = defineProps<{
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .skills-list {
@@ -188,7 +188,7 @@ const props = defineProps<{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 8px;
   }
 
   .experience-name,
@@ -206,7 +206,7 @@ const props = defineProps<{
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 0.5rem;
+    gap: 8px;
   }
 }
 </style>

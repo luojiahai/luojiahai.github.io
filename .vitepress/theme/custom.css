@@ -97,21 +97,21 @@
   background-image:
     linear-gradient(90deg, var(--line-light) 1px, #0000 1px),
     linear-gradient(var(--line-light) 1px, #0000 1px);
-  background-size: 1rem 1rem;
+  background-size: 16px 16px;
   border-bottom: 1px solid var(--vp-c-border);
   padding-top: calc(
-    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 1.5rem
+    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px
   ) !important;
-  padding-bottom: 1.5rem !important;
+  padding-bottom: 24px !important;
 }
 
 .VPHero .heading {
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .VPHero .name .spinner {
   font-family: var(--vp-font-family-mono);
-  padding-left: 0.5rem;
+  padding-left: 8px;
   -webkit-text-fill-color: var(--vp-c-text-3);
 }
 
@@ -138,28 +138,28 @@
 }
 
 .VPHero .name {
-  line-height: 2.75rem;
-  font-size: 2.25rem;
+  line-height: 44px;
+  font-size: 36px;
 }
 
 .VPHero .text {
-  line-height: 2rem;
-  font-size: 1.5rem;
+  line-height: 32px;
+  font-size: 24px;
 }
 
 .VPHero .tagline {
-  line-height: 1.25rem;
-  font-size: 0.875rem;
-  padding-top: 0.5rem !important;
+  line-height: 20px;
+  font-size: 14px;
+  padding-top: 8px !important;
 }
 
 .VPHero .actions {
-  padding-top: 1.5rem !important;
+  padding-top: 24px !important;
 }
 
 .VPFooter {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 .VPFooter .container {

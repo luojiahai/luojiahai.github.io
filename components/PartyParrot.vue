@@ -98,12 +98,12 @@ onUnmounted(() => {
 
 <style scoped>
 .partyparrot {
-  padding: 1rem;
+  padding: 16px;
 }
 
 .partyparrot-frame {
   font-family: var(--vp-font-family-mono);
-  font-size: 0.75rem;
+  font-size: 12px;
   line-height: 1.2;
   margin: 0;
   white-space: pre;
