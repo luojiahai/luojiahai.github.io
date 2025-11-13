@@ -190,12 +190,11 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 0.75rem;
-  height: 0.75rem;
-  font-size: 0.75rem;
+  width: 11px;
+  height: 11px;
+  font-size: 11px;
   color: rgba(0, 0, 0, 0.7);
   user-select: none;
-  border-radius: 50% !important;
 }
 
 .control-button.close {
@@ -291,7 +290,6 @@ onUnmounted(() => {
 @media (min-width: 640px) {
   .terminal-frame {
     margin: 1rem 0rem;
-    border-radius: 0.75rem !important;
   }
 }
 </style>

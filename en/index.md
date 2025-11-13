@@ -15,13 +15,6 @@ hero:
       link: https://github.com/luojiahai/luojiahai.github.io
 ---
 
-<ExternalLinkModal 
-  title="external link"
-  message="this will open a new tab to visit the following site."
-  confirmText="confirm"
-  cancelText="cancel"
-/>
-
 <Terminal>
 
 ```text

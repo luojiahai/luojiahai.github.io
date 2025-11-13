@@ -98,7 +98,7 @@
     linear-gradient(90deg, var(--line-light) 1px, #0000 1px),
     linear-gradient(var(--line-light) 1px, #0000 1px);
   background-size: 1rem 1rem;
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-border);
   padding-top: calc(
     var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 1.5rem
   ) !important;
