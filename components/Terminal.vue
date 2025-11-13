@@ -193,7 +193,8 @@ onUnmounted(() => {
   width: 12px;
   height: 12px;
   font-size: 12px;
-  color: rgba(var(--Ba0_s_rgb), 0.6);
+  border-radius: 50% !important;
+  color: rgba(var(--Ba0_s_rgb), 0.5);
   user-select: none;
 }
 
