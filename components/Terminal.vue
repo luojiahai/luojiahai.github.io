@@ -182,7 +182,7 @@ onUnmounted(() => {
 
 .controls {
   display: flex;
-  gap: 9px;
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -190,10 +190,10 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 11px;
-  height: 11px;
-  font-size: 11px;
-  color: rgba(0, 0, 0, 0.7);
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  color: rgba(var(--Ba0_s_rgb), 0.6);
   user-select: none;
 }
 
@@ -225,7 +225,7 @@ onUnmounted(() => {
   align-items: flex-start;
   gap: 4px;
   padding: 8px 8px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
@@ -243,7 +243,7 @@ onUnmounted(() => {
   display: flex;
   width: 100%;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .input-area {
@@ -253,7 +253,7 @@ onUnmounted(() => {
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 14px;
   border: none;
   outline: none;
   resize: none;
@@ -267,7 +267,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   padding: 8px 8px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
