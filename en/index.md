@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luó, jiāhǎi <span class="spinner"></span>
-  text: hello, world!
+  text: <code>hello, world!</code>
   tagline: i like eating, cooking, and grocery shopping. in my downtime at home, i relax on the couch watching tv, drinking coke, and eating snacks.
   actions:
     - theme: brand
