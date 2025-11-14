@@ -34,7 +34,7 @@ things i'm using.
 
 - onedrive - cloud storage
 - iterm - terminal in mac
-- windows terminal in windows
+- windows terminal - terminal in windows
 - draw.io - diagramming tool
 - insomnia - api development platform
 - dbeaver - database management tool
