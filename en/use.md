@@ -7,8 +7,9 @@ things i'm using.
 - mobile: iphone 13 pro max
 - laptop: microsoft surface pro 5 2017
 - monitor: samsung ls27a700nwexxy / dell s2721qs
+- dock: dell d6000
 - mouse: logitech mx master 3s / ~~logitech mx master 3~~
-- keyboard: 8bitdo retro / keychron q1
+- keyboard: 8bitdo retro fami / keychron q1
 - speaker: marshall stockwell 2 / ultimate ears boom 3
 - power bank: sharge shargeek 140w 20000mah
 
