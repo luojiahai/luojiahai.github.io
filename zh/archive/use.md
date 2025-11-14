@@ -4,8 +4,8 @@ things i'm using.
 
 ## hardware
 
-- phone: iphone 13 pro max
-- laptop: microsoft surface pro 5 2017 / macbook pro 13inch m2 2022
+- mobile: iphone 13 pro max
+- laptop: microsoft surface pro 5 2017
 - monitor: samsung ls27a700nwexxy / dell s2721qs
 - mouse: logitech mx master 3s / ~~logitech mx master 3~~
 - keyboard: 8bitdo retro / keychron q1
