@@ -157,7 +157,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 16px -24px;
+  margin: 24px -24px;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -169,6 +169,12 @@ onUnmounted(() => {
 
 .terminal-frame::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 640px) {
+  .terminal-frame {
+    margin: 24px 0;
+  }
 }
 
 .terminal-header {
@@ -286,11 +292,5 @@ onUnmounted(() => {
   padding: 0 6px;
   color: var(--vp-c-divider);
   user-select: none;
-}
-
-@media (min-width: 640px) {
-  .terminal-frame {
-    margin: 16px 0;
-  }
 }
 </style>
