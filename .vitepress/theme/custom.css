@@ -115,7 +115,7 @@
   padding-top: calc(
     var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px
   ) !important;
-  padding-bottom: 32px !important;
+  padding-bottom: 24px !important;
 }
 
 .VPHero .spinner {
@@ -147,22 +147,22 @@
 }
 
 .VPHero .name {
-  line-height: 40px;
+  line-height: 1.5;
   font-size: 32px;
   letter-spacing: unset;
 }
 
 .VPHero .text {
-  line-height: 24px;
+  line-height: 1.5;
   font-size: 16px;
-  padding-top: 12px !important;
+  padding-top: 8px !important;
 }
 
 .VPHero .tagline {
-  line-height: 22px;
+  line-height: 1.5;
   font-size: 14px;
   font-weight: unset;
-  padding-top: 10px !important;
+  padding-top: 8px !important;
 }
 
 .VPFooter {
