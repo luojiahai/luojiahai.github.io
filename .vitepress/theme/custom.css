@@ -98,7 +98,12 @@
 }
 
 .VPHome {
-  margin-bottom: 0 !important;
+  margin-bottom: 32px !important;
+}
+
+.VPHome .vp-doc.container {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
 }
 
 .VPHero {
