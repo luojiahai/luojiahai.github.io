@@ -7,7 +7,7 @@
   "experience": [
     {
       "name": "rea group",
-      "location": "melbourne, vic, australia",
+      "location": "melbourne, victoria, australia",
       "positions": [
         { "title": "senior software engineer", "period": "2025 - present" },
         { "title": "software engineer", "period": "2024 - 2025" }
@@ -15,21 +15,21 @@
     },
     {
       "name": "amazon web services (aws)",
-      "location": "sydney, nsw, australia",
+      "location": "sydney, new south wales, australia",
       "positions": [
         { "title": "software development engineer", "period": "2021 - 2024" }
       ]
     },
     {
       "name": "deloitte",
-      "location": "melbourne, vic, australia",
+      "location": "melbourne, victoria, australia",
       "positions": [
         { "title": "software development consultant", "period": "2020 - 2021" }
       ]
     },
     {
       "name": "the university of melbourne",
-      "location": "melbourne, vic, australia",
+      "location": "melbourne, victoria, australia",
       "positions": [{ "title": "teaching assistant", "period": "2018 - 2020" }]
     }
   ],
@@ -46,7 +46,7 @@
   "education": [
     {
       "name": "the university of melbourne",
-      "location": "melbourne, vic, australia",
+      "location": "melbourne, victoria, australia",
       "programs": [
         {
           "degree": "master of science (computer science)",
