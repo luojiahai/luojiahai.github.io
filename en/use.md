@@ -12,7 +12,7 @@ things i'm using.
 - speaker: marshall stockwell 2 / ultimate ears boom 3
 - power bank: sharge shargeek 140w 20000mah
 
-### desktop
+### desktop computer
 
 - processor: amd ryzen 7 5700g
 - motherboard: asus prime b550m-a wifi 2
@@ -26,14 +26,14 @@ things i'm using.
 ### camera
 
 - digital camera: sony a7 1
-- film camera: pentax s1a no.700461
+- film camera: pentax s1a
 - lens: sony zeiss 35mm f2.8 / sigma af 50mm f1.4
 - films: kodak potra 400 / fujifilm fujicolor 200
 
 ## software
 
 - onedrive - cloud storage
-- iterm - terminal in mac
+- iterm2 - terminal in mac
 - windows terminal - terminal in windows
 - draw.io - diagramming tool
 - insomnia - api development platform
@@ -69,5 +69,5 @@ edge
 
 - `zsh` - shell in mac
 - `powershell` - shell in windows
-- `poetry` - python packaging and dependency manager
+- `poetry` - python package manager
 - `pnpm` - node package manager

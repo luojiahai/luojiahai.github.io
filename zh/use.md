@@ -1,45 +1,45 @@
-# use
+# 使用
 
-things i'm using.
+我使用的东西.
 
-## hardware
+## 硬件
 
-- mobile: iphone 13 pro max
-- laptop: microsoft surface pro 5 2017
-- monitor: samsung ls27a700nwexxy / dell s2721qs
-- mouse: logitech mx master 3s / ~~logitech mx master 3~~
-- keyboard: 8bitdo retro / keychron q1
-- speaker: marshall stockwell 2 / ultimate ears boom 3
-- power bank: sharge shargeek 140w 20000mah
+- 手机: iphone 13 pro max
+- 笔记本电脑: microsoft surface pro 5 2017
+- 显示器: samsung ls27a700nwexxy / dell s2721qs
+- 鼠标: logitech mx master 3s / ~~logitech mx master 3~~
+- 键盘: 8bitdo retro / keychron q1
+- 音响: marshall stockwell 2 / ultimate ears boom 3
+- 充电宝: sharge shargeek 140w 20000mah
 
-### desktop
+### 台式电脑
 
-- processor: amd ryzen 7 5700g
-- motherboard: asus prime b550m-a wifi 2
-- graphics: asus nvidia geforce gtx 3060
-- cooling: cooler master masterliquid ml240l v2
-- case: fractal design pop mini air rgb white micro atx
-- power supply: fractal design ion gold 750w
-- memory: kingston fury beast rgb 2x16GB
-- ssd: samsung 980 pro 1tb
+- 处理器: amd ryzen 7 5700g
+- 主板: asus prime b550m-a wifi 2
+- 显卡: asus nvidia geforce gtx 3060
+- 冷却: cooler master masterliquid ml240l v2
+- 机箱: fractal design pop mini air rgb white micro atx
+- 电源: fractal design ion gold 750w
+- 内存: kingston fury beast rgb 2x16GB
+- 硬盘: samsung 980 pro 1tb
 
-### camera
+### 相机
 
-- digital camera: sony a7 1
-- film camera: pentax s1a no.700461
-- lens: sony zeiss 35mm f2.8 / sigma af 50mm f1.4
-- films: kodak potra 400 / fujifilm fujicolor 200
+- 电子相机: sony a7 1
+- 胶片相机: pentax s1a
+- 镜头: sony zeiss 35mm f2.8 / sigma af 50mm f1.4
+- 胶片: kodak potra 400 / fujifilm fujicolor 200
 
-## software
+## 软件
 
-- onedrive - cloud storage
-- iterm - terminal in mac
-- windows terminal - terminal in windows
-- draw.io - diagramming tool
-- insomnia - api development platform
-- dbeaver - database management tool
+- onedrive - 云盘
+- iterm2 - 苹果电脑终端
+- windows terminal - windows 终端
+- draw.io - 画图工具
+- insomnia - api 开发平台
+- dbeaver - 数据库管理工具
 
-### editor
+### 编辑器
 
 visual studio code
 
@@ -47,7 +47,7 @@ visual studio code
 - theme: [vitesse](https://github.com/antfu/vscode-theme-vitesse)
 - icon: [catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
 
-#### editor extensions
+#### 编辑器扩展
 
 - git blame
 - git tree compare
@@ -56,18 +56,18 @@ visual studio code
 - python
 - vue
 
-### browser
+### 浏览器
 
 edge
 
-#### browser extensions
+#### 浏览器扩展
 
-- adblock - ad blocker
-- bitwarden - password manager
+- adblock - 广告拦截器
+- bitwarden - 密码管理器
 
-### cli
+### 命令行界面
 
-- `zsh` - shell in mac
-- `powershell` - shell in windows
-- `poetry` - python packaging and dependency manager
-- `pnpm` - node package manager
+- `zsh` - 苹果电脑命令解释器
+- `powershell` - windows 命令解释器
+- `poetry` - python 包管理器
+- `pnpm` - node 包管理器
