@@ -4,9 +4,6 @@ export const config = defineConfig({
   lang: "en-US",
   themeConfig: {
     nav: nav(),
-    sidebar: {
-      "/recipes/": { base: "/recipes", items: sidebarRecipes() },
-    },
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
@@ -52,29 +49,6 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "use",
       link: "/use",
-    },
-    {
-      text: "recipes",
-      link: "/recipes",
-      activeMatch: "/recipes/",
-    },
-  ];
-}
-
-function sidebarRecipes(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "recipes",
-      base: "/recipes",
-      collapsed: true,
-      items: [
-        { text: "index", link: "/" },
-        { text: "brownie", link: "/brownie" },
-        { text: "cantonese congee", link: "/cantonese-congee" },
-        { text: "char siu (cantonese bbq pork)", link: "/char-siu" },
-        { text: "dry pot cauliflower", link: "/dry-pot-cauliflower" },
-        { text: "tomato beef", link: "/tomato-beef" },
-      ],
     },
   ];
 }

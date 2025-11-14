@@ -4,9 +4,6 @@ export const config = defineConfig({
   lang: "zh-Hans",
   themeConfig: {
     nav: nav(),
-    sidebar: {
-      "/zh/recipes/": { base: "/zh/recipes", items: sidebarRecipes() },
-    },
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
@@ -52,29 +49,6 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "使用",
       link: "/zh/use",
-    },
-    {
-      text: "食谱",
-      link: "/zh/recipes",
-      activeMatch: "/zh/recipes/",
-    },
-  ];
-}
-
-function sidebarRecipes(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "食谱",
-      base: "/zh/recipes",
-      collapsed: true,
-      items: [
-        { text: "索引", link: "/" },
-        { text: "布朗尼", link: "/brownie" },
-        { text: "生滚粥", link: "/cantonese-congee" },
-        { text: "叉烧", link: "/char-siu" },
-        { text: "干锅花菜", link: "/dry-pot-cauliflower" },
-        { text: "番茄牛肉", link: "/tomato-beef" },
-      ],
     },
   ];
 }

@@ -11,7 +11,7 @@ export default defineConfig({
     root: { label: "english", ...enConfig },
     zh: { label: "简体中文", ...zhConfig },
   },
-  srcExclude: ["examples/**/*", "README.md"],
+  srcExclude: ["archive/**/*", "examples/**/*", "README.md"],
   appearance: true,
   lastUpdated: true,
   markdown: {
