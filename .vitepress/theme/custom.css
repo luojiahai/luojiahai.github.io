@@ -108,9 +108,9 @@
   background-size: 16px 16px;
   border-bottom: 1px solid var(--vp-c-border);
   padding-top: calc(
-    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px
+    var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px
   ) !important;
-  padding-bottom: 24px !important;
+  padding-bottom: 32px !important;
 }
 
 .VPHero .spinner {
@@ -157,7 +157,7 @@
   line-height: 22px;
   font-size: 14px;
   font-weight: unset;
-  padding-top: 8px !important;
+  padding-top: 10px !important;
 }
 
 .VPFooter {
