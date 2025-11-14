@@ -7,7 +7,7 @@
 :::
 
 <script setup>
-import data from "../data/resume.json"
+import data from "./data/resume.json"
 </script>
 
 <Resume :data="data" />

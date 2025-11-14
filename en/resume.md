@@ -7,7 +7,7 @@ it is a preview of my resume with limited information. full version available up
 :::
 
 <script setup>
-import data from "../data/resume.json"
+import data from "./data/resume.json"
 </script>
 
 <Resume :data="data" />

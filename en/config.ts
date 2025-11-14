@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/archive/": { base: "/archive", items: sidebarArchive() },
+      "/recipes/": { base: "/recipes", items: sidebarRecipes() },
     },
     editLink: {
       pattern:
@@ -46,33 +46,34 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "home", link: "/" },
     {
-      text: "archive",
-      link: "/archive/",
-      activeMatch: "/archive/",
+      text: "resume",
+      link: "/resume",
+    },
+    {
+      text: "use",
+      link: "/use",
+    },
+    {
+      text: "recipes",
+      link: "/recipes",
+      activeMatch: "/recipes/",
     },
   ];
 }
 
-function sidebarArchive(): DefaultTheme.SidebarItem[] {
+function sidebarRecipes(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "archive",
+      text: "recipes",
+      base: "/recipes",
+      collapsed: true,
       items: [
         { text: "index", link: "/" },
-        { text: "resume", link: "/resume" },
-        { text: "use", link: "/use" },
-        {
-          text: "recipes",
-          base: "/archive/recipes",
-          collapsed: true,
-          items: [
-            { text: "brownie", link: "/brownie" },
-            { text: "cantonese congee", link: "/cantonese-congee" },
-            { text: "char siu (cantonese bbq pork)", link: "/char-siu" },
-            { text: "dry pot cauliflower", link: "/dry-pot-cauliflower" },
-            { text: "tomato beef", link: "/tomato-beef" },
-          ],
-        },
+        { text: "brownie", link: "/brownie" },
+        { text: "cantonese congee", link: "/cantonese-congee" },
+        { text: "char siu (cantonese bbq pork)", link: "/char-siu" },
+        { text: "dry pot cauliflower", link: "/dry-pot-cauliflower" },
+        { text: "tomato beef", link: "/tomato-beef" },
       ],
     },
   ];

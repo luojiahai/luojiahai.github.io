@@ -5,7 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     sidebar: {
-      "/zh/archive/": { base: "/zh/archive", items: sidebarArchive() },
+      "/zh/recipes/": { base: "/zh/recipes", items: sidebarRecipes() },
     },
     editLink: {
       pattern:
@@ -46,33 +46,34 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
     {
-      text: "档案",
-      link: "/zh/archive/",
-      activeMatch: "/zh/archive/",
+      text: "简历",
+      link: "/zh/resume",
+    },
+    {
+      text: "使用",
+      link: "/zh/use",
+    },
+    {
+      text: "食谱",
+      link: "/zh/recipes",
+      activeMatch: "/zh/recipes/",
     },
   ];
 }
 
-function sidebarArchive(): DefaultTheme.SidebarItem[] {
+function sidebarRecipes(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "档案",
+      text: "食谱",
+      base: "/zh/recipes",
+      collapsed: true,
       items: [
         { text: "索引", link: "/" },
-        { text: "简历", link: "/resume" },
-        { text: "使用", link: "/use" },
-        {
-          text: "食谱",
-          base: "/zh/archive/recipes",
-          collapsed: true,
-          items: [
-            { text: "布朗尼", link: "/brownie" },
-            { text: "生滚粥", link: "/cantonese-congee" },
-            { text: "叉烧", link: "/char-siu" },
-            { text: "干锅花菜", link: "/dry-pot-cauliflower" },
-            { text: "番茄牛肉", link: "/tomato-beef" },
-          ],
-        },
+        { text: "布朗尼", link: "/brownie" },
+        { text: "生滚粥", link: "/cantonese-congee" },
+        { text: "叉烧", link: "/char-siu" },
+        { text: "干锅花菜", link: "/dry-pot-cauliflower" },
+        { text: "番茄牛肉", link: "/tomato-beef" },
       ],
     },
   ];
