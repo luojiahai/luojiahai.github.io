@@ -24,6 +24,8 @@ i'm a pragmatic engineer with expertise in full-stack software development and s
 
 outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator and pilot the airbus a320. in case you are interested, here are the [hardware/software i use](/use).
 
+---
+
 the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. in real life, in english-speaking places, i use my anglicized name, **geoffrey**.
 
 this site is statically generated using [vitepress](https://vitepress.dev/) and hosted on [github pages](https://docs.github.com/en/pages). it is available in both english and simplified chinese, with support for light and dark themes.
