@@ -113,13 +113,13 @@
   padding-bottom: 24px !important;
 }
 
-.VPHero .name .spinner {
+.VPHero .spinner {
   font-family: var(--vp-font-family-mono);
   padding-left: 8px;
   -webkit-text-fill-color: var(--vp-c-text-3);
 }
 
-.VPHero .name .spinner::after {
+.VPHero .spinner::after {
   content: "";
   display: inline-block;
   animation: spinner 1s infinite ease;
