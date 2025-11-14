@@ -60,6 +60,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
       items: [
         { text: "index", link: "/" },
         { text: "resume", link: "/resume" },
+        { text: "use", link: "/use" },
         {
           text: "recipes",
           base: "/archive/recipes",

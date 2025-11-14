@@ -60,6 +60,7 @@ function sidebarArchive(): DefaultTheme.SidebarItem[] {
       items: [
         { text: "索引", link: "/" },
         { text: "简历", link: "/resume" },
+        { text: "使用", link: "/use" },
         {
           text: "食谱",
           base: "/zh/archive/recipes",
