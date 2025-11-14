@@ -30,7 +30,14 @@ things i'm using.
 - lens: sony zeiss 35mm f2.8 / sigma af 50mm f1.4
 - films: kodak potra 400 / fujifilm fujicolor 200
 
-## development
+## software
+
+- onedrive - cloud storage
+- iterm - terminal in mac
+- windows terminal in windows
+- draw.io - diagramming tool
+- insomnia - api development platform
+- dbeaver - database management tool
 
 ### editor
 
@@ -57,15 +64,6 @@ edge
 
 - adblock - ad blocker
 - bitwarden - password manager
-
-### application
-
-- onedrive - cloud storage
-- iterm - terminal in mac
-- windows terminal in windows
-- draw.io - diagramming tool
-- insomnia - api development platform
-- dbeaver - database management tool
 
 ### cli
 
