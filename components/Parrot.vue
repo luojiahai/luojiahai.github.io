@@ -46,7 +46,7 @@ const getRandomColorIndex = (exclude: number): number => {
 
 const loadFrames = async (): Promise<void> => {
   const promises = Array.from({ length: TOTAL_FRAMES }, (_, i) =>
-    fetch(`/partyparrot/${i}.txt`)
+    fetch(`/parrot/${i}.txt`)
       .then((res) => res.text())
       .catch((err) => {
         console.error(`Failed to load frame ${i}:`, err);
@@ -89,19 +89,19 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="partyparrot">
-    <pre class="partyparrot-frame" :style="{ color: currentColor }">{{
+  <div class="parrot">
+    <pre class="parrot-frame" :style="{ color: currentColor }">{{
       frames[currentFrame]
     }}</pre>
   </div>
 </template>
 
 <style scoped>
-.partyparrot {
+.parrot {
   padding: 16px;
 }
 
-.partyparrot-frame {
+.parrot-frame {
   font-family: var(--vp-font-family-mono);
   font-size: 12px;
   line-height: 1.2;

@@ -9,4 +9,4 @@ footer: false
 pageClass: custom-page
 ---
 
-<PartyParrot />
+<Parrot />
