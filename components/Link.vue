@@ -27,14 +27,14 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <a :href="href">
-    <span class="Badge" :class="color">
+    <span class="Link" :class="color">
       <slot>{{ text }}</slot>
     </span>
   </a>
 </template>
 
 <style>
-.Badge {
+.Link {
   display: inline-block;
   margin-right: 4px;
   border: 1px solid transparent;
@@ -46,214 +46,214 @@ withDefaults(defineProps<Props>(), {
   transform: translateY(-2px);
 }
 
-.Badge.small {
+.Link.small {
   padding: 2px 6px;
   line-height: 18px;
   font-size: 10px;
   transform: translateY(-8px);
 }
 
-.VPDocFooter .Badge {
+.VPDocFooter .Link {
   display: none;
 }
 
-.vp-doc h1 > .Badge {
+.vp-doc h1 > .Link {
   margin-top: 4px;
   vertical-align: top;
 }
 
-.vp-doc h2 > .Badge {
+.vp-doc h2 > .Link {
   margin-top: 3px;
   padding: 0 8px;
   vertical-align: top;
 }
 
-.vp-doc h3 > .Badge {
+.vp-doc h3 > .Link {
   vertical-align: middle;
 }
 
-.vp-doc h4 > .Badge,
-.vp-doc h5 > .Badge,
-.vp-doc h6 > .Badge {
+.vp-doc h4 > .Link,
+.vp-doc h5 > .Link,
+.vp-doc h6 > .Link {
   vertical-align: middle;
   line-height: 18px;
 }
 
-.Badge.black {
+.Link.black {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.black:hover {
+.Link.black:hover {
   border-color: var(--black);
   color: var(--black);
   background-color: var(--white);
 }
 
-.Badge.white {
+.Link.white {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.white:hover {
+.Link.white:hover {
   border-color: var(--white);
   color: var(--white);
   background-color: var(--black);
 }
 
-.Badge.pink {
+.Link.pink {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.pink:hover {
+.Link.pink:hover {
   border-color: var(--pink);
   color: var(--pink);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.magenta {
+.Link.magenta {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.magenta:hover {
+.Link.magenta:hover {
   border-color: var(--magenta);
   color: var(--magenta);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.red {
+.Link.red {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.red:hover {
+.Link.red:hover {
   border-color: var(--red);
   color: var(--red);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.orange {
+.Link.orange {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.orange:hover {
+.Link.orange:hover {
   border-color: var(--orange);
   color: var(--orange);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.yellow {
+.Link.yellow {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.yellow:hover {
+.Link.yellow:hover {
   border-color: var(--yellow);
   color: var(--yellow);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.light-yellow {
+.Link.light-yellow {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.light-yellow:hover {
+.Link.light-yellow:hover {
   border-color: var(--light-yellow);
   color: var(--light-yellow);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.light-green {
+.Link.light-green {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.light-green:hover {
+.Link.light-green:hover {
   border-color: var(--light-green);
   color: var(--light-green);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.green {
+.Link.green {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.green:hover {
+.Link.green:hover {
   border-color: var(--green);
   color: var(--green);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.cyan {
+.Link.cyan {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.cyan:hover {
+.Link.cyan:hover {
   border-color: var(--cyan);
   color: var(--cyan);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.light-blue {
+.Link.light-blue {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.light-blue:hover {
+.Link.light-blue:hover {
   border-color: var(--light-blue);
   color: var(--light-blue);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.blue {
+.Link.blue {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.blue:hover {
+.Link.blue:hover {
   border-color: var(--blue);
   color: var(--blue);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.purple {
+.Link.purple {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.purple:hover {
+.Link.purple:hover {
   border-color: var(--purple);
   color: var(--purple);
   background-color: var(--vp-c-bg);
 }
 
-.Badge.brown {
+.Link.brown {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.brown:hover {
+.Link.brown:hover {
   border-color: var(--brown);
   color: var(--brown);
   background-color: var(--vp-c-bg);

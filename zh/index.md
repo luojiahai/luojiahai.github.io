@@ -26,10 +26,10 @@ $ whoami
 
 在这些地方找到我:
 
-<Badge color="black" href="https://x.com/luojiahai">x</Badge>
-<Badge color="pink" href="https://instagram.com/luojiahai">instagram</Badge>
-<Badge color="light-blue" href="https://linkedin.com/in/luojiahai">linkedin</Badge>
-<Badge color="white" href="https://github.com/luojiahai">github</Badge>
+<Link color="black" href="https://x.com/luojiahai">x</Link>
+<Link color="pink" href="https://instagram.com/luojiahai">instagram</Link>
+<Link color="light-blue" href="https://linkedin.com/in/luojiahai">linkedin</Link>
+<Link color="white" href="https://github.com/luojiahai">github</Link>
 
 ---
 
