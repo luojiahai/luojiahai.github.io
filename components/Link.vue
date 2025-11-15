@@ -50,7 +50,7 @@ const props = withDefaults(defineProps<Props>(), {
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .link-icon {
