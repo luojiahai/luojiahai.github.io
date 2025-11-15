@@ -32,6 +32,8 @@ find me on:
 <Link color="white" icon="github" href="https://github.com/luojiahai">github</Link>
 <Link color="pink" icon="bilibili" href="https://space.bilibili.com/866961">bilibili</Link>
 
+or mail me at `luo[at]jiahai.co`
+
 ---
 
 the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.

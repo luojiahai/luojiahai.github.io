@@ -32,6 +32,8 @@ $ whoami
 <Link color="white" icon="github" href="https://github.com/luojiahai">github</Link>
 <Link color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</Link>
 
+或者发邮件给我：`luo[at]jiahai.co`
+
 ---
 
 **luojiahai** 是我名字**罗嘉海**的拼音，我在网上都用这个网名。我名字的粤拼是 **law ka hoi**。我还用英文名 **geoffrey**。
