@@ -24,6 +24,13 @@ $ whoami
 
 在敲代码之外，我喜欢吃饭、做饭和逛超市。我还喜欢玩《微软飞行模拟》，驾驶空客 A320。如果你感兴趣的话，这里是我[使用的硬件和软件](/zh/use)。
 
+在这些地方找到我:
+
+<Badge color="black" href="https://x.com/luojiahai">x</Badge>
+<Badge color="pink" href="https://instagram.com/luojiahai">instagram</Badge>
+<Badge color="light-blue" href="https://linkedin.com/in/luojiahai">linkedin</Badge>
+<Badge color="white" href="https://github.com/luojiahai">github</Badge>
+
 ---
 
 **luojiahai** 是我名字**罗嘉海**的拼音，我在网上都用这个网名。我名字的粤拼是 **law ka hoi**。我还用英文名 **geoffrey**。

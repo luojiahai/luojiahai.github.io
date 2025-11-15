@@ -24,6 +24,13 @@ i'm a pragmatic engineer with expertise in full-stack software development and s
 
 outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator and pilot the airbus a320. in case you are interested, here are the [hardware/software i use](/use).
 
+find me on:
+
+<Badge color="black" href="https://x.com/luojiahai">x</Badge>
+<Badge color="pink" href="https://instagram.com/luojiahai">instagram</Badge>
+<Badge color="light-blue" href="https://linkedin.com/in/luojiahai">linkedin</Badge>
+<Badge color="white" href="https://github.com/luojiahai">github</Badge>
+
 ---
 
 the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.

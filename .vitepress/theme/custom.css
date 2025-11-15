@@ -13,13 +13,21 @@
   --line-regular: var(--Ga2);
   --line-bold: var(--Ga3);
 
+  --black: black;
+  --white: white;
+  --pink: var(--Pi5);
+  --magenta: var(--Ma5);
   --red: var(--Re5);
+  --orange: var(--Or5);
   --yellow: var(--Ye5);
+  --light-yellow: var(--Ly5);
+  --light-green: var(--Lg5);
   --green: var(--Gr5);
-  --blue: var(--Bl5);
-  --magenta: var(--Pu5);
   --cyan: var(--Cy5);
-  --white: var(--Ba0_s);
+  --light-blue: var(--Lb5);
+  --blue: var(--Bl5);
+  --purple: var(--Pu5);
+  --brown: var(--Br5);
 }
 
 :root {
