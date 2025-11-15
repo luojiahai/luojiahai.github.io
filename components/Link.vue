@@ -47,7 +47,6 @@ const props = withDefaults(defineProps<Props>(), {
   margin-right: 4px;
   border: 1px solid transparent;
   padding: 8px 10px;
-  line-height: 1.5;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
@@ -56,7 +55,8 @@ const props = withDefaults(defineProps<Props>(), {
 
 .link-icon {
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: middle;
+  margin-top: -2px;
   margin-right: 8px;
   width: 14px;
   height: 14px;
