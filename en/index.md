@@ -21,7 +21,7 @@ hi there, i'm **luojiahai**. i was born in guangzhou, the capital of guangdong p
 
 i'm a pragmatic engineer with expertise in full-stack software development and site reliability engineering. i solve complex problems by applying the first principles thinking. here is my [resume](/resume).
 
-outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator and pilot the airbus a320. in case you are interested, here are the [hardware/software i use](/use).
+outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator, i'm team airbus. in case you are interested, here are the [hardware/software i use](/use).
 
 find me on:
 
