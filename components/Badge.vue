@@ -81,92 +81,169 @@ withDefaults(defineProps<Props>(), {
 }
 
 .Badge.black {
-  border-color: var(--black);
-  color: white;
-  background-color: var(--black);
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
 }
 
-.Badge.white {
-  border-color: var(--white);
-  color: black;
+.Badge.black:hover {
+  border-color: var(--black);
+  color: var(--black);
   background-color: var(--white);
 }
 
+.Badge.white {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.white:hover {
+  border-color: var(--white);
+  color: var(--white);
+  background-color: var(--black);
+}
+
 .Badge.pink {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.pink:hover {
   border-color: var(--pink);
-  color: white;
-  background-color: var(--pink);
+  color: var(--pink);
 }
 
 .Badge.magenta {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.magenta:hover {
   border-color: var(--magenta);
-  color: white;
-  background-color: var(--magenta);
+  color: var(--magenta);
 }
 
 .Badge.red {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.red:hover {
   border-color: var(--red);
-  color: white;
-  background-color: var(--red);
+  color: var(--red);
 }
 
 .Badge.orange {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.orange:hover {
   border-color: var(--orange);
-  color: white;
-  background-color: var(--orange);
+  color: var(--orange);
 }
 
 .Badge.yellow {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.yellow:hover {
   border-color: var(--yellow);
-  color: white;
-  background-color: var(--yellow);
+  color: var(--yellow);
 }
 
 .Badge.light-yellow {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.light-yellow:hover {
   border-color: var(--light-yellow);
-  color: white;
-  background-color: var(--light-yellow);
+  color: var(--light-yellow);
 }
 
 .Badge.light-green {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.light-green:hover {
   border-color: var(--light-green);
-  color: white;
-  background-color: var(--light-green);
+  color: var(--light-green);
 }
 
 .Badge.green {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.green:hover {
   border-color: var(--green);
-  color: white;
-  background-color: var(--green);
+  color: var(--green);
 }
 
 .Badge.cyan {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.cyan:hover {
   border-color: var(--cyan);
-  color: white;
-  background-color: var(--cyan);
+  color: var(--cyan);
 }
 
 .Badge.light-blue {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.light-blue:hover {
   border-color: var(--light-blue);
-  color: white;
-  background-color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 .Badge.blue {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.blue:hover {
   border-color: var(--blue);
-  color: white;
-  background-color: var(--blue);
+  color: var(--blue);
 }
 
 .Badge.purple {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.purple:hover {
   border-color: var(--purple);
-  color: white;
-  background-color: var(--purple);
+  color: var(--purple);
 }
 
 .Badge.brown {
+  border-color: var(--line-regular);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-alt);
+}
+
+.Badge.brown:hover {
   border-color: var(--brown);
-  color: white;
-  background-color: var(--brown);
+  color: var(--brown);
 }
 </style>
