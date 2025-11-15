@@ -43,6 +43,7 @@ const props = withDefaults(defineProps<Props>(), {
 <style>
 .link {
   display: inline-block;
+  margin-top: 4px;
   margin-right: 4px;
   border: 1px solid transparent;
   padding: 8px 10px;
