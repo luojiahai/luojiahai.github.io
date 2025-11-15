@@ -19,11 +19,11 @@ $ whoami
 
 hi there, i'm **luojiahai**. i was born in guangzhou, the capital of guangdong province in china. i natively speak mandarin and cantonese. i'm currently based in melbourne, australia, working hard for a living.
 
-the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. in case you are interested, the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.
+the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. alternatively, the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.
 
 i'm a pragmatic engineer with expertise in full-stack software development and site reliability engineering. i solve complex problems by applying the first principles thinking. here is my [resume](/resume).
 
-outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator, i'm team airbus. in case you are interested, here are the [hardware/software i use](/use).
+outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator, i'm team airbus. here is the [hardware/software i use](/use).
 
 find me on:
 
