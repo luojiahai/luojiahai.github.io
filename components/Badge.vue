@@ -113,6 +113,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.pink:hover {
   border-color: var(--pink);
   color: var(--pink);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.magenta {
@@ -124,6 +125,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.magenta:hover {
   border-color: var(--magenta);
   color: var(--magenta);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.red {
@@ -135,6 +137,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.red:hover {
   border-color: var(--red);
   color: var(--red);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.orange {
@@ -146,6 +149,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.orange:hover {
   border-color: var(--orange);
   color: var(--orange);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.yellow {
@@ -157,6 +161,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.yellow:hover {
   border-color: var(--yellow);
   color: var(--yellow);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.light-yellow {
@@ -168,6 +173,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.light-yellow:hover {
   border-color: var(--light-yellow);
   color: var(--light-yellow);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.light-green {
@@ -179,6 +185,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.light-green:hover {
   border-color: var(--light-green);
   color: var(--light-green);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.green {
@@ -190,6 +197,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.green:hover {
   border-color: var(--green);
   color: var(--green);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.cyan {
@@ -201,6 +209,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.cyan:hover {
   border-color: var(--cyan);
   color: var(--cyan);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.light-blue {
@@ -212,6 +221,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.light-blue:hover {
   border-color: var(--light-blue);
   color: var(--light-blue);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.blue {
@@ -223,6 +233,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.blue:hover {
   border-color: var(--blue);
   color: var(--blue);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.purple {
@@ -234,6 +245,7 @@ withDefaults(defineProps<Props>(), {
 .Badge.purple:hover {
   border-color: var(--purple);
   color: var(--purple);
+  background-color: var(--vp-c-bg);
 }
 
 .Badge.brown {
@@ -245,5 +257,6 @@ withDefaults(defineProps<Props>(), {
 .Badge.brown:hover {
   border-color: var(--brown);
   color: var(--brown);
+  background-color: var(--vp-c-bg);
 }
 </style>
