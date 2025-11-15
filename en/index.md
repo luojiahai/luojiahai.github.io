@@ -32,7 +32,7 @@ find me on:
 <Link color="white" icon="github" href="https://github.com/luojiahai">github</Link>
 <Link color="pink" icon="bilibili" href="https://space.bilibili.com/866961">bilibili</Link>
 
-or mail me at `luo[at]jiahai.co`
+or mail me at <EmailAddress local="luo" domain="jiahai.co" />
 
 ---
 

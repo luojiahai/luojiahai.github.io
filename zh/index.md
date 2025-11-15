@@ -32,7 +32,7 @@ $ whoami
 <Link color="white" icon="github" href="https://github.com/luojiahai">github</Link>
 <Link color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</Link>
 
-或者发邮件给我：`luo[at]jiahai.co`
+或者发邮件给我：<EmailAddress local="luo" domain="jiahai.co" />
 
 ---
 
