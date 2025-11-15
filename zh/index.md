@@ -27,7 +27,7 @@ $ whoami
 在这些地方找到我:
 
 <Link color="black" href="https://x.com/luojiahai">x</Link>
-<Link color="pink" href="https://instagram.com/luojiahai">instagram</Link>
+<Link color="magenta" href="https://instagram.com/luojiahai">instagram</Link>
 <Link color="light-blue" href="https://linkedin.com/in/luojiahai">linkedin</Link>
 <Link color="white" href="https://github.com/luojiahai">github</Link>
 <Link color="pink" href="https://space.bilibili.com/866961">bilibili</Link>
