@@ -52,6 +52,7 @@ export default defineConfig({
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "github", link: "https://github.com/luojiahai" },
+      { icon: "bilibili", link: "https://space.bilibili.com/866961" },
     ],
     search: {
       provider: "local",

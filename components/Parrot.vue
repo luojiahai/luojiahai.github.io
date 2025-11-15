@@ -1,17 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
 
-const props = withDefaults(
-  defineProps<{
-    flip?: boolean;
-    frameDelay?: number;
-  }>(),
-  {
-    flip: false,
-    frameDelay: 70,
-  },
-);
-
 const TOTAL_FRAMES = 10;
 const COLORS = [
   "var(--red)",
@@ -30,9 +19,7 @@ const flippedFrames = ref<string[]>([]);
 
 let animationInterval: number | undefined;
 
-const frames = computed(() =>
-  props.flip ? flippedFrames.value : originalFrames.value,
-);
+const frames = computed(() => originalFrames.value);
 
 const currentColor = computed(() => COLORS[currentColorIndex.value]);
 
@@ -68,7 +55,7 @@ const tick = (): void => {
 
 const startAnimation = (): void => {
   if (animationInterval !== undefined) return;
-  animationInterval = window.setInterval(tick, props.frameDelay);
+  animationInterval = window.setInterval(tick, 70);
 };
 
 const stopAnimation = (): void => {

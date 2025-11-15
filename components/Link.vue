@@ -38,45 +38,12 @@ withDefaults(defineProps<Props>(), {
   display: inline-block;
   margin-right: 4px;
   border: 1px solid transparent;
-  padding: 4px 10px;
-  line-height: 22px;
-  font-size: 12px;
+  padding: 8px 10px;
+  line-height: 1.5;
+  font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
   transform: translateY(-2px);
-}
-
-.Link.small {
-  padding: 2px 6px;
-  line-height: 18px;
-  font-size: 10px;
-  transform: translateY(-8px);
-}
-
-.VPDocFooter .Link {
-  display: none;
-}
-
-.vp-doc h1 > .Link {
-  margin-top: 4px;
-  vertical-align: top;
-}
-
-.vp-doc h2 > .Link {
-  margin-top: 3px;
-  padding: 0 8px;
-  vertical-align: top;
-}
-
-.vp-doc h3 > .Link {
-  vertical-align: middle;
-}
-
-.vp-doc h4 > .Link,
-.vp-doc h5 > .Link,
-.vp-doc h6 > .Link {
-  vertical-align: middle;
-  line-height: 18px;
 }
 
 .Link.black {
@@ -86,9 +53,9 @@ withDefaults(defineProps<Props>(), {
 }
 
 .Link.black:hover {
-  border-color: var(--black);
-  color: var(--black);
-  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .Link.white {
@@ -98,9 +65,9 @@ withDefaults(defineProps<Props>(), {
 }
 
 .Link.white:hover {
-  border-color: var(--white);
-  color: var(--white);
-  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .Link.pink {

@@ -27,9 +27,10 @@ interface ResumeData {
   }>;
 }
 
-const props = defineProps<{
+interface Props {
   data: ResumeData;
-}>();
+}
+defineProps<Props>();
 </script>
 
 <template>
