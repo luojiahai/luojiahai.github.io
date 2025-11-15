@@ -36,11 +36,10 @@ withDefaults(defineProps<Props>(), {
 <style>
 .Badge {
   display: inline-block;
-  margin-left: 2px;
+  margin-right: 4px;
   border: 1px solid transparent;
-  border-radius: 12px;
-  padding: 0 10px;
-  line-height: 22px;
+  padding: 2px 10px;
+  line-height: 24px;
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
