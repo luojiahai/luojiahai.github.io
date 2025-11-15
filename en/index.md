@@ -5,7 +5,6 @@ title: luojiahai
 hero:
   name: luó, jiāhǎi
   text: <code>hello, world!</code><span class="spinner"></span>
-  tagline: earth resident / artificial intelligence user / member of technical staff / software engineer / flight simulator pilot
 ---
 
 <Terminal>
