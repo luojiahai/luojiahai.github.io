@@ -55,14 +55,6 @@ export default defineConfig({
       { icon: "bluesky", link: "https://bsky.app/profile/luojiahai.com" },
       { icon: "bilibili", link: "https://space.bilibili.com/866961" },
       { icon: "sinaweibo", link: "https://weibo.com/ljiahai" },
-      {
-        icon: "xiaohongshu",
-        link: "https://www.xiaohongshu.com/user/profile/5c8e525c000000001203a0ba",
-      },
-      {
-        icon: "tiktok",
-        link: "https://www.douyin.com/user/MS4wLjABAAAAiCvY7XFjEK8GiaIlcVR2M7ouyzJbstd01vBMPZ_qKNI",
-      },
     ],
     search: {
       provider: "local",

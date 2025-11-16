@@ -34,8 +34,6 @@ $ whoami
 <LinkButton color="blue" icon="bluesky" href="https://bsky.app/profile/luojiahai.com">bluesky</LinkButton>
 <LinkButton color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</LinkButton>
 <LinkButton color="yellow" icon="sinaweibo" href="https://weibo.com/ljiahai">微博</LinkButton>
-<LinkButton color="red" icon="xiaohongshu" href="https://www.xiaohongshu.com/user/profile/5c8e525c000000001203a0ba">小红书</LinkButton>
-<LinkButton color="default" icon="tiktok" href="https://www.douyin.com/user/MS4wLjABAAAAiCvY7XFjEK8GiaIlcVR2M7ouyzJbstd01vBMPZ_qKNI">抖音</LinkButton>
 
 或者发邮件给我：<EmailAddress local="luo" domain="jiahai.co" />
 
