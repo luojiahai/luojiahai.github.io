@@ -116,7 +116,7 @@
     linear-gradient(var(--line-light) 1px, #0000 1px);
   background-size: 16px 16px;
   border-bottom: 1px solid var(--vp-c-border);
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 0 24px !important;
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 0 16px !important;
 }
 
 .VPHome .VPHero .container {
