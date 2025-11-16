@@ -23,7 +23,7 @@ the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wik
 
 i'm a pragmatic programmer with expertise in full-stack software development and site reliability engineering. here is my [resume](/resume).
 
-outside of programming, i like eating, cooking, and grocery shopping. i also like playing microsoft flight simulator, i'm team airbus. here is the [hardware/software i use](/use).
+outside of programming, i like eating, cooking, and grocery shopping. i play microsoft flight simulator, i'm team airbus. here is the [hardware/software i use](/use).
 
 find me on:
 
