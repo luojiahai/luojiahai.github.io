@@ -27,11 +27,15 @@ outside of programming, i like eating, cooking, and grocery shopping. i play mic
 
 find me on:
 
-<LinkButton color="black" icon="x" href="https://x.com/luojiahai">x</LinkButton>
+<LinkButton color="default" icon="x" href="https://x.com/luojiahai">x</LinkButton>
 <LinkButton color="magenta" icon="instagram" href="https://instagram.com/luojiahai">instagram</LinkButton>
 <LinkButton color="light-blue" icon="linkedin" href="https://linkedin.com/in/luojiahai">linkedin</LinkButton>
-<LinkButton color="white" icon="github" href="https://github.com/luojiahai">github</LinkButton>
+<LinkButton color="default" icon="github" href="https://github.com/luojiahai">github</LinkButton>
+<LinkButton color="blue" icon="bluesky" href="https://bsky.app/profile/luojiahai.com">bluesky</LinkButton>
 <LinkButton color="pink" icon="bilibili" href="https://space.bilibili.com/866961">bilibili</LinkButton>
+<LinkButton color="yellow" icon="sinaweibo" href="https://weibo.com/ljiahai">weibo</LinkButton>
+<LinkButton color="red" icon="xiaohongshu" href="https://www.xiaohongshu.com/user/profile/5c8e525c000000001203a0ba">xiaohongshu</LinkButton>
+<LinkButton color="default" icon="tiktok" href="https://www.douyin.com/user/MS4wLjABAAAAiCvY7XFjEK8GiaIlcVR2M7ouyzJbstd01vBMPZ_qKNI">douyin</LinkButton>
 
 or mail me at <EmailAddress local="luo" domain="jiahai.co" />
 

@@ -2,8 +2,7 @@
 interface Props {
   text?: string;
   color?:
-    | "black"
-    | "white"
+    | "default"
     | "pink"
     | "magenta"
     | "red"
@@ -21,12 +20,12 @@ interface Props {
   href?: string;
 }
 withDefaults(defineProps<Props>(), {
-  color: "black",
+  color: "default",
 });
 </script>
 
 <template>
-  <a :href="href">
+  <a :href="href" target="_blank">
     <span class="link-button" :class="color">
       <span
         v-if="icon"
@@ -68,28 +67,16 @@ withDefaults(defineProps<Props>(), {
   mask-size: 100% 100%;
 }
 
-.link-button.black {
+.link-button.default {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link-button.black:hover {
-  border-color: var(--white);
-  color: var(--white);
-  background-color: var(--black);
-}
-
-.link-button.white {
-  border-color: var(--line-regular);
+.link-button.default:hover {
+  border-color: var(--vp-c-text-1);
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-bg-alt);
-}
-
-.link-button.white:hover {
-  border-color: var(--black);
-  color: var(--black);
-  background-color: var(--white);
+  background-color: var(--vp-c-bg);
 }
 
 .link-button.pink {
