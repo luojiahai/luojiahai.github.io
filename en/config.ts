@@ -43,12 +43,17 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "home", link: "/" },
     {
-      text: "resume",
-      link: "/resume",
-    },
-    {
-      text: "use",
-      link: "/use",
+      text: "folder",
+      items: [
+        {
+          text: "resume",
+          link: "/resume",
+        },
+        {
+          text: "use",
+          link: "/use",
+        },
+      ],
     },
   ];
 }

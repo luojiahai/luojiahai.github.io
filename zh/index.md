@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: luó, jiāhǎi
+  name: luojiahai
   text: <code>你好，世界！</code><span class="spinner"></span>
 ---
 
@@ -21,7 +21,7 @@ $ whoami
 
 **luojiahai** 是我名字**罗嘉海**的拼音，我在网上都用这个网名。我名字的粤拼是 **law ka hoi**。我还用英文名 **geoffrey**。
 
-我在厂里敲代码，主要做全栈软件开发和一些站点可靠性工程。我会运用第一性原理思维解决复杂问题。这是我的[简历](/zh/resume)。
+我在厂里敲代码，主要做全栈软件开发和一些站点可靠性工程。这是我的[简历](/zh/resume)。
 
 在敲代码之外，我喜欢吃饭、做饭和逛超市。我还喜欢玩《微软飞行模拟》，主要飞空客。这是我[使用的硬件和软件](/zh/use)。
 
