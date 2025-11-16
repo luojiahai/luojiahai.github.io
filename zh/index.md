@@ -23,11 +23,10 @@ $ whoami
 
 在这些地方找到我:
 
+<LinkButton color="default" icon="github" href="https://github.com/luojiahai">github</LinkButton>
 <LinkButton color="default" icon="x" href="https://x.com/luojiahai">x</LinkButton>
 <LinkButton color="magenta" icon="instagram" href="https://instagram.com/luojiahai">instagram</LinkButton>
 <LinkButton color="light-blue" icon="linkedin" href="https://linkedin.com/in/luojiahai">linkedin</LinkButton>
-<LinkButton color="default" icon="github" href="https://github.com/luojiahai">github</LinkButton>
-<LinkButton color="blue" icon="bluesky" href="https://bsky.app/profile/luojiahai.com">bluesky</LinkButton>
 <LinkButton color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</LinkButton>
 <LinkButton color="yellow" icon="sinaweibo" href="https://weibo.com/ljiahai">微博</LinkButton>
 
