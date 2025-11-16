@@ -55,14 +55,14 @@ export default defineConfig({
       { icon: "bilibili", link: "https://space.bilibili.com/866961" },
       { icon: "sinaweibo", link: "https://weibo.com/ljiahai" },
     ],
-    search: {
-      provider: "local",
-      options: {
-        locales: {
-          root: enSearchOptions(),
-          zh: zhSearchOptions(),
-        },
-      },
-    },
+    // search: {
+    //   provider: "local",
+    //   options: {
+    //     locales: {
+    //       root: enSearchOptions(),
+    //       zh: zhSearchOptions(),
+    //     },
+    //   },
+    // },
   },
 });
