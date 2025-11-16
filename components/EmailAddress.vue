@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <span class="email">
+  <span class="email-address">
     {{ local }}
     <svg class="at" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -24,7 +24,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.email {
+.email-address {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   display: inline-flex;

@@ -27,11 +27,11 @@ $ whoami
 
 在这些地方找到我:
 
-<Link color="black" icon="x" href="https://x.com/luojiahai">x</Link>
-<Link color="magenta" icon="instagram" href="https://instagram.com/luojiahai">instagram</Link>
-<Link color="light-blue" icon="linkedin" href="https://linkedin.com/in/luojiahai">linkedin</Link>
-<Link color="white" icon="github" href="https://github.com/luojiahai">github</Link>
-<Link color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</Link>
+<LinkButton color="black" icon="x" href="https://x.com/luojiahai">x</LinkButton>
+<LinkButton color="magenta" icon="instagram" href="https://instagram.com/luojiahai">instagram</LinkButton>
+<LinkButton color="light-blue" icon="linkedin" href="https://linkedin.com/in/luojiahai">linkedin</LinkButton>
+<LinkButton color="white" icon="github" href="https://github.com/luojiahai">github</LinkButton>
+<LinkButton color="pink" icon="bilibili" href="https://space.bilibili.com/866961">哔哩哔哩</LinkButton>
 
 或者发邮件给我：<EmailAddress local="luo" domain="jiahai.co" />
 

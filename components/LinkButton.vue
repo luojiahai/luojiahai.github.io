@@ -20,17 +20,17 @@ interface Props {
   icon?: string;
   href?: string;
 }
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   color: "black",
 });
 </script>
 
 <template>
   <a :href="href">
-    <span class="link" :class="color">
+    <span class="link-button" :class="color">
       <span
         v-if="icon"
-        class="link-icon"
+        class="link-button-icon"
         :style="{
           '--icon': `url('https://api.iconify.design/simple-icons/${icon}.svg')`,
         }"
@@ -41,7 +41,7 @@ const props = withDefaults(defineProps<Props>(), {
 </template>
 
 <style>
-.link {
+.link-button {
   display: inline-block;
   margin-top: 4px;
   margin-right: 4px;
@@ -53,7 +53,7 @@ const props = withDefaults(defineProps<Props>(), {
   transform: translateY(-4px);
 }
 
-.link-icon {
+.link-button-icon {
   display: inline-block;
   vertical-align: middle;
   margin-top: -2px;
@@ -68,181 +68,181 @@ const props = withDefaults(defineProps<Props>(), {
   mask-size: 100% 100%;
 }
 
-.link.black {
+.link-button.black {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.black:hover {
+.link-button.black:hover {
   border-color: var(--white);
   color: var(--white);
   background-color: var(--black);
 }
 
-.link.white {
+.link-button.white {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.white:hover {
+.link-button.white:hover {
   border-color: var(--black);
   color: var(--black);
   background-color: var(--white);
 }
 
-.link.pink {
+.link-button.pink {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.pink:hover {
+.link-button.pink:hover {
   border-color: var(--pink);
   color: var(--pink);
   background-color: var(--vp-c-bg);
 }
 
-.link.magenta {
+.link-button.magenta {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.magenta:hover {
+.link-button.magenta:hover {
   border-color: var(--magenta);
   color: var(--magenta);
   background-color: var(--vp-c-bg);
 }
 
-.link.red {
+.link-button.red {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.red:hover {
+.link-button.red:hover {
   border-color: var(--red);
   color: var(--red);
   background-color: var(--vp-c-bg);
 }
 
-.link.orange {
+.link-button.orange {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.orange:hover {
+.link-button.orange:hover {
   border-color: var(--orange);
   color: var(--orange);
   background-color: var(--vp-c-bg);
 }
 
-.link.yellow {
+.link-button.yellow {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.yellow:hover {
+.link-button.yellow:hover {
   border-color: var(--yellow);
   color: var(--yellow);
   background-color: var(--vp-c-bg);
 }
 
-.link.light-yellow {
+.link-button.light-yellow {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.light-yellow:hover {
+.link-button.light-yellow:hover {
   border-color: var(--light-yellow);
   color: var(--light-yellow);
   background-color: var(--vp-c-bg);
 }
 
-.link.light-green {
+.link-button.light-green {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.light-green:hover {
+.link-button.light-green:hover {
   border-color: var(--light-green);
   color: var(--light-green);
   background-color: var(--vp-c-bg);
 }
 
-.link.green {
+.link-button.green {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.green:hover {
+.link-button.green:hover {
   border-color: var(--green);
   color: var(--green);
   background-color: var(--vp-c-bg);
 }
 
-.link.cyan {
+.link-button.cyan {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.cyan:hover {
+.link-button.cyan:hover {
   border-color: var(--cyan);
   color: var(--cyan);
   background-color: var(--vp-c-bg);
 }
 
-.link.light-blue {
+.link-button.light-blue {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.light-blue:hover {
+.link-button.light-blue:hover {
   border-color: var(--light-blue);
   color: var(--light-blue);
   background-color: var(--vp-c-bg);
 }
 
-.link.blue {
+.link-button.blue {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.blue:hover {
+.link-button.blue:hover {
   border-color: var(--blue);
   color: var(--blue);
   background-color: var(--vp-c-bg);
 }
 
-.link.purple {
+.link-button.purple {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.purple:hover {
+.link-button.purple:hover {
   border-color: var(--purple);
   color: var(--purple);
   background-color: var(--vp-c-bg);
 }
 
-.link.brown {
+.link-button.brown {
   border-color: var(--line-regular);
   color: var(--vp-c-text-1);
   background-color: var(--vp-c-bg-alt);
 }
 
-.link.brown:hover {
+.link-button.brown:hover {
   border-color: var(--brown);
   color: var(--brown);
   background-color: var(--vp-c-bg);
