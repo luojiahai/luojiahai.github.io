@@ -5,7 +5,6 @@ title: luojiahai
 hero:
   name: luojiahai
   text: <code>hello, world!</code><span class="spinner"></span>
-  tagline: i'm a firm believer in
 ---
 
 <Terminal>
