@@ -33,7 +33,6 @@
 
 ## 软件
 
-- onedrive - 云盘
 - iterm2 - 苹果电脑终端
 - windows terminal - windows 终端
 - draw.io - 画图工具

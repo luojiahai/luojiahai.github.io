@@ -33,7 +33,6 @@ things i'm using.
 
 ## software
 
-- onedrive - cloud storage
 - iterm2 - terminal in mac
 - windows terminal - terminal in windows
 - draw.io - diagramming tool

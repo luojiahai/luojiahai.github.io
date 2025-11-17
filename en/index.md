@@ -38,4 +38,4 @@ or mail me at <EmailAddress local="luo" domain="jiahai.co" />
 
 ---
 
-this site is statically generated using [vitepress](https://vitepress.dev/) and hosted on [github pages](https://docs.github.com/en/pages). it is available in both english and simplified chinese, with support for light and dark themes.
+this site is statically generated using [vitepress](https://vitepress.dev/) and hosted on [github pages](https://docs.github.com/en/pages).
