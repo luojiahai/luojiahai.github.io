@@ -59,16 +59,8 @@ const detectDevice = (ua: string): string => {
   return "desktop";
 };
 
-const formattedDateTime = computed(() => {
+const dateTime = computed(() => {
   const date = currentTime.value;
-  const year = date.getFullYear();
-  const month = pad(date.getMonth() + 1);
-  const day = pad(date.getDate());
-  const hours24 = date.getHours();
-  const hours12 = hours24 % 12 || 12;
-  const ampm = hours24 >= 12 ? "pm" : "am";
-  const minutes = pad(date.getMinutes());
-  const seconds = pad(date.getSeconds());
   const offset = -date.getTimezoneOffset();
   const offsetHours = Math.floor(Math.abs(offset) / 60);
   const offsetMinutes = Math.abs(offset) % 60;
@@ -78,7 +70,7 @@ const formattedDateTime = computed(() => {
       ? `utc${sign}${offsetHours}:${pad(offsetMinutes)}`
       : `utc${sign}${offsetHours}`;
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  return `${year}-${month}-${day} ${hours12}:${minutes}:${seconds} ${ampm} ${utcOffset} ${timezone}`;
+  return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
 });
 
 const fetchWeather = async (): Promise<void> => {
@@ -148,7 +140,7 @@ onUnmounted(() => {
       </div>
     </div>
     <div class="terminal-footer">
-      <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
+      <span>{{ dateTime.toLocaleLowerCase() }}</span>
       <span v-if="WEATHER_ENABLED" class="separator">|</span>
       <span v-if="WEATHER_ENABLED">{{
         weatherLoading ? "loading..." : weatherData.toLocaleLowerCase()
