@@ -24,10 +24,10 @@ const BROWSER_PATTERNS = [
 
 const OS_PATTERNS = [
   { pattern: /Win/, name: "windows" },
-  { pattern: /Mac/, name: "macos" },
-  { pattern: /Linux/, name: "linux" },
-  { pattern: /Android/, name: "android" },
   { pattern: /iPhone|iPad|iOS/, name: "ios" },
+  { pattern: /Mac/, name: "macos" },
+  { pattern: /Android/, name: "android" },
+  { pattern: /Linux/, name: "linux" },
 ] as const;
 
 const pad = (n: number): string => String(n).padStart(2, "0");
