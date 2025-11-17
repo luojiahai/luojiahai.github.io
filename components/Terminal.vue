@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from "vue";
 
+const WEATHER_ENABLED = false;
+
 const currentTime = ref(new Date());
 const weatherData = ref("");
 const weatherLoading = ref(true);
@@ -102,7 +104,9 @@ const initSystemInfo = (): void => {
 
 onMounted(() => {
   initSystemInfo();
-  fetchWeather();
+  if (WEATHER_ENABLED) {
+    fetchWeather();
+  }
   timeInterval = window.setInterval(() => {
     currentTime.value = new Date();
   }, 1000);
@@ -145,8 +149,8 @@ onUnmounted(() => {
     </div>
     <div class="terminal-footer">
       <span>{{ formattedDateTime.toLocaleLowerCase() }}</span>
-      <span class="separator">|</span>
-      <span>{{
+      <span v-if="WEATHER_ENABLED" class="separator">|</span>
+      <span v-if="WEATHER_ENABLED">{{
         weatherLoading ? "loading..." : weatherData.toLocaleLowerCase()
       }}</span>
       <span class="separator">|</span>
