@@ -35,9 +35,9 @@
 
 - iterm2 - 苹果电脑终端
 - windows terminal - windows 终端
-- draw.io - 画图工具
-- insomnia - api 开发平台
-- dbeaver - 数据库管理工具
+- draw.io - 画图
+- insomnia - api 开发测试
+- dbeaver - 数据库管理
 
 ### 编辑器
 

@@ -35,9 +35,9 @@ things i'm using.
 
 - iterm2 - terminal in mac
 - windows terminal - terminal in windows
-- draw.io - diagramming tool
-- insomnia - api development platform
-- dbeaver - database management tool
+- draw.io - diagramming
+- insomnia - api development and testing
+- dbeaver - database management
 
 ### editor
 
