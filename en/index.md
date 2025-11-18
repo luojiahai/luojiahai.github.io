@@ -17,9 +17,9 @@ $ whoami
 
 </Terminal>
 
-hi there, i'm **luojiahai**. i was born in guangzhou, the capital of guangdong province in china. i natively speak mandarin and cantonese. i'm currently based in melbourne, australia, working hard for a living.
+hi there, i'm **luojiahai**. i was born in guangzhou, the capital of guangdong province in china. i'm currently based in melbourne, australia, working hard for a living.
 
-the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. alternatively, the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.
+the handle **luojiahai** is taken from the [pinyin](https://en.wikipedia.org/wiki/pinyin) (mandarin romanization) of my name, **罗嘉海** (**luó jiā hǎi**). i use this handle essentially everywhere on the internet. alternatively, the [jyutping](https://en.wikipedia.org/wiki/jyutping) (cantonese romanization) of my name is **law ka hoi**. also, i use my anglicized name, **geoffrey**.
 
 i'm a pragmatic programmer specializing in full-stack software development and site reliability engineering. i currently work at [rea group](https://www.rea-group.com/) (asx:rea), the company behind realestate.com.au, australia's no.1 property site for real estate. here is my [resume](/resume).
 
