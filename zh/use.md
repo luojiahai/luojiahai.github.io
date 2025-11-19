@@ -24,6 +24,12 @@
 - 内存：kingston fury beast rgb 2x16GB
 - 硬盘：samsung 980 pro 1tb
 
+### 飞行模拟
+
+- 操纵杆：thrustmaster tca sidestick airbus edition
+- 油门：winwing ursa minor 32 throttle metal
+- 气动构型面板：winwing 32 pac metal
+
 ### 相机
 
 - 电子相机：sony a7 1

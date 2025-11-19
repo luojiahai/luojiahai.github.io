@@ -24,6 +24,12 @@ things i'm using.
 - memory: kingston fury beast rgb 2x16GB
 - ssd: samsung 980 pro 1tb
 
+### flight simulator
+
+- joystick: thrustmaster tca sidestick airbus edition
+- throttle: winwing ursa minor 32 throttle metal
+- pac: winwing 32 pac metal
+
 ### camera
 
 - digital camera: sony a7 1
