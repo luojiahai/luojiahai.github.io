@@ -49,7 +49,7 @@ things i'm using.
 
 visual studio code
 
-- font: [cascadia mono](https://github.com/microsoft/cascadia-code)
+- font: [cascadia code](https://github.com/microsoft/cascadia-code)
 - theme: [vitesse](https://github.com/antfu/vscode-theme-vitesse)
 - icon: [catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
 

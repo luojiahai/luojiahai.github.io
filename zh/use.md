@@ -49,7 +49,7 @@
 
 visual studio code
 
-- 字体：[cascadia mono](https://github.com/microsoft/cascadia-code)
+- 字体：[cascadia code](https://github.com/microsoft/cascadia-code)
 - 主题：[vitesse](https://github.com/antfu/vscode-theme-vitesse)
 - 图标：[catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
 
