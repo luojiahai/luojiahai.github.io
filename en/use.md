@@ -28,7 +28,7 @@ things i'm using.
 
 - joystick: thrustmaster tca sidestick airbus edition
 - throttle: winwing ursa minor 32 throttle metal
-- pac: winwing 32 pac metal
+- aerodynamic control panel: winwing 32 pac metal
 
 ### camera
 
