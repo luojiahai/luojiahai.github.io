@@ -23,4 +23,4 @@ The handle **luojiahai** is the [Pinyin](https://en.wikipedia.org/wiki/pinyin) r
 
 I'm a pragmatic programmer who builds full-stack systems and keeps them running. These days I'm obsessed with AI-native development workflows. I live in Claude Code. Here is my [resume](/resume).
 
-Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, Team Airbus. Here is the [hardware/software I use](/use).
+Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus. Here is the [hardware/software I use](/use).
