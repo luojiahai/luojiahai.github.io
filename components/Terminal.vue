@@ -196,7 +196,7 @@ onUnmounted(() => {
   height: 12px;
   font-size: 12px;
   border-radius: 50% !important;
-  color: rgba(var(--Ba0_s_rgb), 0.5);
+  color: rgba(250, 249, 245, 0.5);
   user-select: none;
 }
 
