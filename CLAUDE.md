@@ -43,7 +43,7 @@ All components live in `components/` and are globally registered in `.vitepress/
 
 ### Styling
 
-- `.vitepress/theme/custom.css` — Anthropic brand token overrides and structural CSS overrides on top of VitePress defaults
+- `.vitepress/theme/custom.css` — brand token overrides and structural CSS overrides on top of VitePress defaults
 
 ### Deployment
 
