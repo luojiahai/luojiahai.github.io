@@ -12,6 +12,7 @@
 - 键盘：8bitdo retro fami / keychron q1
 - 音响：marshall stockwell 2 / ultimate ears boom 3
 - 充电宝：sharge shargeek 140w 20000mah
+- 手表：garmin epix pro (gen 2) sapphire 47mm
 
 ### 台式电脑
 
@@ -39,41 +40,10 @@
 
 ## 软件
 
+- 编辑器：visual studio code
+- 浏览器：edge
 - iterm2 - 苹果电脑终端
 - windows terminal - windows 终端
 - draw.io - 画图
 - insomnia - api 开发测试
 - dbeaver - 数据库管理
-
-### 编辑器
-
-visual studio code
-
-- 字体：[cascadia code](https://github.com/microsoft/cascadia-code)
-- 主题：[vitesse](https://github.com/antfu/vscode-theme-vitesse)
-- 图标：[catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
-
-#### 编辑器扩展
-
-- git blame
-- git tree compare
-- github copilot
-- jupyter
-- python
-- vue
-
-### 浏览器
-
-edge
-
-#### 浏览器扩展
-
-- adblock - 广告拦截器
-- bitwarden - 密码管理器
-
-### 命令行界面
-
-- `zsh` - 苹果电脑命令解释器
-- `powershell` - windows 命令解释器
-- `poetry` - python 包管理器
-- `pnpm` - node 包管理器

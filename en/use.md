@@ -12,6 +12,7 @@ things i'm using.
 - keyboard: 8bitdo retro fami / keychron q1
 - speaker: marshall stockwell 2 / ultimate ears boom 3
 - power bank: sharge shargeek 140w 20000mah
+- watch: garmin epix pro (gen 2) sapphire 47mm
 
 ### desktop computer
 
@@ -39,41 +40,10 @@ things i'm using.
 
 ## software
 
+- editor: visual studio code
+- browser: edge
 - iterm2 - terminal in mac
 - windows terminal - terminal in windows
 - draw.io - diagramming
 - insomnia - api development and testing
 - dbeaver - database management
-
-### editor
-
-visual studio code
-
-- font: [cascadia code](https://github.com/microsoft/cascadia-code)
-- theme: [vitesse](https://github.com/antfu/vscode-theme-vitesse)
-- icon: [catppuccin](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
-
-#### editor extensions
-
-- git blame
-- git tree compare
-- github copilot
-- jupyter
-- python
-- vue
-
-### browser
-
-edge
-
-#### browser extensions
-
-- adblock - ad blocker
-- bitwarden - password manager
-
-### cli
-
-- `zsh` - shell in mac
-- `powershell` - shell in windows
-- `poetry` - python package manager
-- `pnpm` - node package manager
