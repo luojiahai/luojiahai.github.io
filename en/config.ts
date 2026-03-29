@@ -18,18 +18,7 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
-    {
-      text: "Folder",
-      items: [
-        {
-          text: "Resume",
-          link: "/resume",
-        },
-        {
-          text: "Use",
-          link: "/use",
-        },
-      ],
-    },
+    { text: "Resume", link: "/resume" },
+    { text: "Use", link: "/use" },
   ];
 }

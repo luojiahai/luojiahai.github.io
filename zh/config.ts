@@ -42,19 +42,8 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
-    {
-      text: "文件夹",
-      items: [
-        {
-          text: "简历",
-          link: "/zh/resume",
-        },
-        {
-          text: "使用",
-          link: "/zh/use",
-        },
-      ],
-    },
+    { text: "简历", link: "/zh/resume" },
+    { text: "使用", link: "/zh/use" },
   ];
 }
 
