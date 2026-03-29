@@ -39,7 +39,7 @@ All components live in `components/` and are globally registered in `.vitepress/
 
 - `<Resume>` — renders resume data from `data/resume.json`
 - `<Terminal>` — terminal-style display
-- `<EmailAddress>`, `<LinkButton>`, `<Parrot>` — utility/UI components
+- `<EmailAddress>`, `<Parrot>` — utility/UI components
 
 ### Styling
 

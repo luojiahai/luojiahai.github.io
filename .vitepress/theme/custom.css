@@ -21,13 +21,7 @@
   --vp-c-divider: #2a2a28;
   --vp-c-gutter: #2a2a28;
 
-  /* Hero name */
-  --vp-home-hero-name-color: var(--vp-c-text-1);
-
-  /* Alias used by LinkButton.vue */
-  --line-regular: var(--vp-c-border);
-
-  /* Named colors for Terminal control buttons and LinkButton hover states */
+  /* Named colors for Terminal control buttons */
   --red: #f85a54;
   --yellow: #ffb027;
   --green: #2ac864;
