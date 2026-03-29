@@ -35,12 +35,16 @@
   ],
   "skills": [
     {
-      "category": "programming languages",
-      "items": "python, typescript, java, c"
+      "category": "languages & frameworks",
+      "items": "python, typescript, java, node.js, react, graphql"
     },
     {
-      "category": "technologies",
-      "items": "amazon web services (aws), docker, kafka, graphql, postgresql, react"
+      "category": "cloud & infrastructure",
+      "items": "aws, kafka, postgresql, docker, elasticsearch"
+    },
+    {
+      "category": "tooling",
+      "items": "claude code, langchain, huggingface, buildkite, splunk, latex"
     }
   ],
   "education": [

@@ -30,10 +30,17 @@
     }
   ],
   "skills": [
-    { "category": "编程语言", "items": "python, typescript, java, c" },
     {
-      "category": "应用技术",
-      "items": "amazon web services (aws), docker, kafka, graphql, postgresql, react"
+      "category": "语言与框架",
+      "items": "python, typescript, java, node.js, react, graphql"
+    },
+    {
+      "category": "云计算与基础设施",
+      "items": "aws, kafka, postgresql, docker, elasticsearch"
+    },
+    {
+      "category": "工具",
+      "items": "claude code, langchain, huggingface, buildkite, splunk, latex"
     }
   ],
   "education": [
