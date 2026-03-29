@@ -12,7 +12,7 @@ export default defineConfig({
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["archive/**/*", "examples/**/*", "README.md"],
-  appearance: true,
+  appearance: 'force-dark',
   lastUpdated: true,
   markdown: {
     theme: { light: "vitesse-light", dark: "vitesse-dark" },
@@ -36,7 +36,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
-    ['meta', { name: 'theme-color', content: '#00aeec' }],
+    ['meta', { name: 'theme-color', content: '#d97757' }],
     ['meta', { name: 'description', content: 'hello, world!' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
