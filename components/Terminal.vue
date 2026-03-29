@@ -67,8 +67,8 @@ const dateTime = computed(() => {
   const sign = offset >= 0 ? "+" : "-";
   const utcOffset =
     offsetMinutes > 0
-      ? `utc${sign}${offsetHours}:${pad(offsetMinutes)}`
-      : `utc${sign}${offsetHours}`;
+      ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}`
+      : `UTC${sign}${offsetHours}`;
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
 });
