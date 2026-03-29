@@ -11,23 +11,23 @@ const systemInfo = ref("");
 let timeInterval: number | undefined;
 
 const BROWSER_PATTERNS = [
-  { pattern: /Firefox\/([\d.]+)/, name: "firefox" },
-  { pattern: /Edg\/([\d.]+)/, name: "edge" },
-  { pattern: /Chrome\/([\d.]+)/, name: "chrome", exclude: /Edg\// },
+  { pattern: /Firefox\/([\d.]+)/, name: "Firefox" },
+  { pattern: /Edg\/([\d.]+)/, name: "Edge" },
+  { pattern: /Chrome\/([\d.]+)/, name: "Chrome", exclude: /Edg\// },
   {
     pattern: /Version\/([\d.]+)/,
-    name: "safari",
+    name: "Safari",
     check: /Safari\/(?!.*Chrome)/,
   },
-  { pattern: /(?:Opera|OPR)\/([\d.]+)/, name: "opera" },
+  { pattern: /(?:Opera|OPR)\/([\d.]+)/, name: "Opera" },
 ] as const;
 
 const OS_PATTERNS = [
-  { pattern: /Win/, name: "windows" },
-  { pattern: /iPhone|iPad|iOS/, name: "ios" },
-  { pattern: /Mac/, name: "macos" },
-  { pattern: /Android/, name: "android" },
-  { pattern: /Linux/, name: "linux" },
+  { pattern: /Win/, name: "Windows" },
+  { pattern: /iPhone|iPad|iOS/, name: "iOS" },
+  { pattern: /Mac/, name: "macOS" },
+  { pattern: /Android/, name: "Android" },
+  { pattern: /Linux/, name: "Linux" },
 ] as const;
 
 const pad = (n: number): string => String(n).padStart(2, "0");
@@ -43,20 +43,20 @@ const detectBrowser = (ua: string): string => {
     const match = ua.match(pattern);
     if (match) return `${name} ${match[1] || ""}`.trim();
   }
-  return "unknown browser";
+  return "Unknown Browser";
 };
 
 const detectOS = (ua: string): string => {
   for (const { pattern, name } of OS_PATTERNS) {
     if (pattern.test(ua)) return name;
   }
-  return "unknown os";
+  return "Unknown OS";
 };
 
 const detectDevice = (ua: string): string => {
-  if (ua.includes("Mobile")) return "mobile";
-  if (ua.includes("Tablet") || ua.includes("iPad")) return "tablet";
-  return "desktop";
+  if (ua.includes("Mobile")) return "Mobile";
+  if (ua.includes("Tablet") || ua.includes("iPad")) return "Tablet";
+  return "Desktop";
 };
 
 const dateTime = computed(() => {
@@ -140,13 +140,13 @@ onUnmounted(() => {
       </div>
     </div>
     <div class="terminal-footer">
-      <span>{{ dateTime.toLocaleLowerCase() }}</span>
+      <span>{{ dateTime }}</span>
       <span v-if="WEATHER_ENABLED" class="separator">|</span>
       <span v-if="WEATHER_ENABLED">{{
-        weatherLoading ? "loading..." : weatherData.toLocaleLowerCase()
+        weatherLoading ? "Loading..." : weatherData
       }}</span>
       <span class="separator">|</span>
-      <span>{{ systemInfo.toLocaleLowerCase() }}</span>
+      <span>{{ systemInfo }}</span>
     </div>
   </div>
 </template>

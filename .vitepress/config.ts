@@ -1,14 +1,12 @@
 import { defineConfig } from "vitepress";
 import { config as enConfig } from "../en/config";
 import { config as zhConfig } from "../zh/config";
-import { searchOptions as enSearchOptions } from "../en/config";
-import { searchOptions as zhSearchOptions } from "../zh/config";
 
 export default defineConfig({
   title: "luojiahai",
-  description: "hello, world!",
+  description: "Hello, World!",
   locales: {
-    root: { label: "english", ...enConfig },
+    root: { label: "English", ...enConfig },
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["archive/**/*", "examples/**/*", "README.md"],
@@ -37,7 +35,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['meta', { name: 'theme-color', content: '#d97757' }],
-    ['meta', { name: 'description', content: 'hello, world!' }],
+    ['meta', { name: 'description', content: 'Hello, World!' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:site_name', content: 'luojiahai' }],

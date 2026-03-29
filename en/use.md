@@ -1,49 +1,49 @@
-# use
+# Use
 
-things i'm using.
+Things I'm using.
 
-## hardware
+## Hardware
 
-- mobile: iphone 13 pro max
-- laptop: microsoft surface pro 5 2017
-- monitor: samsung ls27a700nwexxy / dell s2721qs
-- dock: dell d6000
-- mouse: logitech mx master 3s / ~~logitech mx master 3~~
-- keyboard: 8bitdo retro fami / keychron q1
-- speaker: marshall stockwell 2 / ultimate ears boom 3
-- power bank: sharge shargeek 140w 20000mah
-- watch: garmin epix pro (gen 2) sapphire 47mm
+- Mobile: iPhone 13 Pro Max
+- Laptop: Microsoft Surface Pro 5 2017
+- Monitor: Samsung LS27A700NWEXXY / Dell S2721QS
+- Dock: Dell D6000
+- Mouse: Logitech MX Master 3S / ~~Logitech MX Master 3~~
+- Keyboard: 8BitDo Retro Fami / Keychron Q1
+- Speaker: Marshall Stockwell 2 / Ultimate Ears Boom 3
+- Power Bank: Sharge Shargeek 140W 20000mAh
+- Watch: Garmin Epix Pro (Gen 2) Sapphire 47mm
 
-### desktop computer
+### Desktop Computer
 
-- processor: amd ryzen 7 5700g
-- motherboard: asus prime b550m-a wifi 2
-- graphics: asus nvidia geforce gtx 3060
-- cooling: cooler master masterliquid ml240l v2
-- case: fractal design pop mini air rgb white micro atx
-- power supply: fractal design ion gold 750w
-- memory: kingston fury beast rgb 2x16GB
-- ssd: samsung 980 pro 1tb
+- Processor: AMD Ryzen 7 5700G
+- Motherboard: ASUS Prime B550M-A WiFi II
+- Graphics: ASUS NVIDIA GeForce GTX 3060
+- Cooling: Cooler Master MasterLiquid ML240L V2
+- Case: Fractal Design Pop Mini Air RGB White Micro ATX
+- Power Supply: Fractal Design ION Gold 750W
+- Memory: Kingston Fury Beast RGB 2x16GB
+- SSD: Samsung 980 Pro 1TB
 
-### flight simulator
+### Flight Simulator
 
-- joystick: thrustmaster tca sidestick airbus edition
-- throttle: winwing ursa minor 32 throttle metal
-- aerodynamic control panel: winwing 32 pac metal
+- Joystick: Thrustmaster TCA Sidestick Airbus Edition
+- Throttle: Winwing Ursa Minor 32 Throttle Metal
+- Aerodynamic Control Panel: Winwing 32 PAC Metal
 
-### camera
+### Camera
 
-- digital camera: sony a7 1
-- film camera: pentax s1a
-- lens: sony zeiss 35mm f2.8 / sigma af 50mm f1.4
-- films: kodak potra 400 / fujifilm fujicolor 200
+- Digital Camera: Sony A7 I
+- Film Camera: Pentax S1a
+- Lens: Sony Zeiss 35mm f/2.8 / Sigma AF 50mm f/1.4
+- Films: Kodak Portra 400 / Fujifilm Fujicolor 200
 
-## software
+## Software
 
-- editor: visual studio code
-- browser: edge
-- iterm2 - terminal in mac
-- windows terminal - terminal in windows
-- draw.io - diagramming
-- insomnia - api development and testing
-- dbeaver - database management
+- Editor: Visual Studio Code
+- Browser: Edge
+- iTerm2 - Terminal in Mac
+- Windows Terminal - Terminal in Windows
+- Draw.io - Diagramming
+- Insomnia - API Development and Testing
+- DBeaver - Database Management

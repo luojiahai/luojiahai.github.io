@@ -1,71 +1,71 @@
 {
   "sections": {
-    "experience": "experience",
-    "skills": "skills",
-    "education": "education"
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education"
   },
   "experience": [
     {
-      "name": "rea group",
-      "location": "melbourne, victoria, australia",
+      "name": "REA Group",
+      "location": "Melbourne, Victoria, Australia",
       "positions": [
-        { "title": "senior software engineer", "period": "2025 - present" },
-        { "title": "software engineer", "period": "2024 - 2025" }
+        { "title": "Senior Software Engineer", "period": "2025 - Present" },
+        { "title": "Software Engineer", "period": "2024 - 2025" }
       ]
     },
     {
-      "name": "amazon web services (aws)",
-      "location": "sydney, new south wales, australia",
+      "name": "Amazon Web Services (AWS)",
+      "location": "Sydney, New South Wales, Australia",
       "positions": [
-        { "title": "software development engineer", "period": "2021 - 2024" }
+        { "title": "Software Development Engineer", "period": "2021 - 2024" }
       ]
     },
     {
-      "name": "deloitte",
-      "location": "melbourne, victoria, australia",
+      "name": "Deloitte",
+      "location": "Melbourne, Victoria, Australia",
       "positions": [
-        { "title": "software development consultant", "period": "2020 - 2021" }
+        { "title": "Software Development Consultant", "period": "2020 - 2021" }
       ]
     },
     {
-      "name": "the university of melbourne",
-      "location": "melbourne, victoria, australia",
-      "positions": [{ "title": "teaching assistant", "period": "2018 - 2020" }]
+      "name": "The University of Melbourne",
+      "location": "Melbourne, Victoria, Australia",
+      "positions": [{ "title": "Teaching Assistant", "period": "2018 - 2020" }]
     }
   ],
   "skills": [
     {
-      "category": "languages & frameworks",
-      "items": "python, typescript, java, node.js, react, graphql"
+      "category": "Languages & Frameworks",
+      "items": "Python, TypeScript, Java, Node.js, React, GraphQL"
     },
     {
-      "category": "cloud & infrastructure",
-      "items": "aws, kafka, postgresql, docker, elasticsearch"
+      "category": "Cloud & Infrastructure",
+      "items": "AWS, Kafka, PostgreSQL, Docker, Elasticsearch"
     },
     {
-      "category": "tooling",
-      "items": "claude code, langchain, huggingface, buildkite, splunk, latex"
+      "category": "Tooling",
+      "items": "Claude Code, LangChain, HuggingFace, Buildkite, Splunk, LaTeX"
     }
   ],
   "education": [
     {
-      "name": "the university of melbourne",
-      "location": "melbourne, victoria, australia",
+      "name": "The University of Melbourne",
+      "location": "Melbourne, Victoria, Australia",
       "programs": [
         {
-          "degree": "master of science (computer science)",
+          "degree": "Master of Science (Computer Science)",
           "period": "2018 - 2020"
         },
-        { "degree": "bachelor of science", "period": "2015 - 2018" }
+        { "degree": "Bachelor of Science", "period": "2015 - 2018" }
       ]
     },
     {
-      "name": "peking university",
-      "location": "beijing, china",
+      "name": "Peking University",
+      "location": "Beijing, China",
       "programs": [
         {
-          "degree": "summer school international program",
-          "period": "summer 2016"
+          "degree": "Summer School International Program",
+          "period": "Summer 2016"
         }
       ]
     }

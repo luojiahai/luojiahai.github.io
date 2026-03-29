@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: <code>hello, world!</code><span class="spinner"></span>
+  text: <code>Hello, World!</code><span class="spinner"></span>
 ---
 
 <Terminal>
@@ -17,10 +17,10 @@ $ whoami
 
 </Terminal>
 
-hi there, i'm **luojiahai**. i was born in guangzhou, china, and i'm currently based in melbourne, australia.
+Hi there, I'm **luojiahai**. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.
 
-the handle **luojiahai** is the [pinyin](https://en.wikipedia.org/wiki/pinyin) romanization of my name, **罗嘉海** (**luó jiā hǎi**). the cantonese romanization ([jyutping](https://en.wikipedia.org/wiki/jyutping)) is **law ka hoi**. i also go by **geoffrey**.
+The handle **luojiahai** is the [Pinyin](https://en.wikipedia.org/wiki/pinyin) romanization of my name, **罗嘉海** (**luó jiā hǎi**). The Cantonese romanization ([Jyutping](https://en.wikipedia.org/wiki/jyutping)) is **law ka hoi**. I also go by **Geoffrey**.
 
-i'm a pragmatic programmer who builds full-stack systems and keeps them running. these days i'm obsessed with ai-native development workflows. i live in claude code. here is my [resume](/resume).
+I'm a pragmatic programmer who builds full-stack systems and keeps them running. These days I'm obsessed with AI-native development workflows. I live in Claude Code. Here is my [resume](/resume).
 
-outside of programming, i like eating, cooking, and grocery shopping. i play microsoft flight simulator, team airbus. here is the [hardware/software i use](/use).
+Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, Team Airbus. Here is the [hardware/software I use](/use).

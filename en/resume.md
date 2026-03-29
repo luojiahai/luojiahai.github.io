@@ -1,9 +1,9 @@
-# resume
+# Resume
 
 ::: warning warning
 
-this is a preview with limited information. full version available upon request.
-contact via linkedin with role and compensation details — melbourne or remote only, no agency inquiries.
+This is a preview with limited information. Full version available upon request.
+Contact via LinkedIn with role and compensation details — Melbourne or remote only, no agency inquiries.
 
 :::
 
@@ -17,6 +17,6 @@ import data from "./data/resume.json"
 
 ::: info note
 
-i use ai as a core part of my development workflow. in practice, this means i'm not constrained to the languages and technologies listed above.
+I use AI as a core part of my development workflow. In practice, this means I'm not constrained to the languages and technologies listed above.
 
 :::

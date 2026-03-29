@@ -77,7 +77,7 @@ export function searchOptions(): DefaultTheme.LocalSearchOptions {
           navigateUpKeyAriaLabel: "上箭头",
           navigateDownKeyAriaLabel: "下箭头",
           closeText: "关闭",
-          closeKeyAriaLabel: "esc",
+          closeKeyAriaLabel: "Esc",
         },
       },
     },
