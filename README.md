@@ -1,3 +1,10 @@
 # [luojiahai.com](https://luojiahai.com/)
 
-it is the source of my site.
+source for my personal site. built with [vitepress](https://vitepress.dev/), deployed to [github pages](https://pages.github.com/).
+
+## development
+
+```sh
+pnpm install
+pnpm dev
+```
