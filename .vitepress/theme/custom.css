@@ -121,12 +121,9 @@
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
-.VPNavBar.home {
+.VPNavBar {
   background-color: var(--vp-nav-bg-color);
-}
-
-.VPNavBar .divider .divider-line {
-  background-color: var(--vp-c-divider) !important;
+  border-bottom: 1px solid var(--vp-c-brand-1);
 }
 
 .VPHome {
@@ -139,7 +136,7 @@
     linear-gradient(90deg, var(--grid) 1px, #0000 1px),
     linear-gradient(var(--grid) 1px, #0000 1px);
   background-size: 16px 16px;
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-brand-1);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px) 0 24px !important;
 }
 
@@ -169,10 +166,11 @@
   content: "";
   display: inline-block;
   width: 16px;
-  text-align: center;
   font-size: 16px;
+  text-align: center;
   animation: flower 2s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
+  margin-left: -2px;
   margin-right: 8px;
 }
 
