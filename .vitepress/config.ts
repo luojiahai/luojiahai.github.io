@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 import { config as enConfig } from "../en/config";
 import { config as zhConfig } from "../zh/config";
+import { searchOptions as zhSearchOptions } from "../zh/config";
 
 export default defineConfig({
   title: "luojiahai",
@@ -57,13 +58,13 @@ export default defineConfig({
       { icon: "bilibili", link: "https://space.bilibili.com/866961" },
       { icon: "sinaweibo", link: "https://weibo.com/ljiahai" },
     ],
-    // search: {
-    //   provider: "local",
-    //   options: {
-    //     locales: {
-    //       zh: zhSearchOptions(),
-    //     },
-    //   },
-    // },
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          zh: zhSearchOptions(),
+        },
+      },
+    },
   },
 });
