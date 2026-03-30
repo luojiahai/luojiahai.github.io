@@ -127,6 +127,7 @@
   display: inline-block;
   width: 1em;
   text-align: center;
+  font-size: 1.2em;
   animation: sparkle 1.5s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
   margin-right: 6px;
