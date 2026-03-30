@@ -126,10 +126,6 @@
   border-bottom: 0.0625em solid var(--vp-c-brand-1);
 }
 
-.VPHome {
-  margin-bottom: 2em !important;
-}
-
 /* prettier-ignore */
 .VPHome .VPHero {
   background-image:
@@ -137,23 +133,6 @@
     linear-gradient(var(--grid) 1px, #0000 1px);
   background-size: 1em 1em;
   border-bottom: 0.0625em solid var(--vp-c-brand-1);
-}
-
-.VPHome .VPHero .container {
-  max-width: 48em;
-  padding: 0 1.5em;
-}
-
-@media (min-width: 640px) {
-  .VPHome .VPHero .container {
-    padding: 0 3em;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPHome .VPHero .container {
-    padding: 0 4em;
-  }
 }
 
 .VPHome .VPHero .thinking {
@@ -209,17 +188,6 @@
   padding-top: 0.5em !important;
 }
 
-.VPHome .vp-doc.container {
-  max-width: 48em;
-  margin-top: 1.5em !important;
-  margin-bottom: 2em !important;
-}
-
-.VPFooter {
-  padding-top: 1em !important;
-  padding-bottom: 1em !important;
-}
-
 .VPFooter .container {
   display: flex;
   justify-content: space-between;
@@ -228,7 +196,6 @@
 .VPFooter .message,
 .VPFooter .copyright {
   font-family: var(--vp-font-family-mono);
-  font-size: 0.75em;
 }
 
 .custom-page .VPSkipLink,
