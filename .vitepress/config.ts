@@ -10,7 +10,7 @@ export default defineConfig({
     zh: { label: "简体中文", ...zhConfig },
   },
   srcExclude: ["archive/**/*", "examples/**/*", "README.md"],
-  appearance: 'force-dark',
+  appearance: true,
   lastUpdated: true,
   markdown: {
     theme: { light: "vitesse-light", dark: "vitesse-dark" },
