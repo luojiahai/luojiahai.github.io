@@ -26,7 +26,7 @@ function startTypewriter(el: Element) {
 
   function tick() {
     if (stopped) return;
-    const word = WORDS[wordIdx] + "...";
+    const word = " " + WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
       el.textContent = word.slice(0, charIdx + 1) + "_";
       charIdx++;

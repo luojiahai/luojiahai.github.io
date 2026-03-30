@@ -123,11 +123,11 @@
 
 .VPNavBar {
   background-color: var(--vp-nav-bg-color);
-  border-bottom: 1px solid var(--vp-c-brand-1);
+  border-bottom: 0.0625em solid var(--vp-c-brand-1);
 }
 
 .VPHome {
-  margin-bottom: 32px !important;
+  margin-bottom: 2em !important;
 }
 
 /* prettier-ignore */
@@ -135,25 +135,24 @@
   background-image:
     linear-gradient(90deg, var(--grid) 1px, #0000 1px),
     linear-gradient(var(--grid) 1px, #0000 1px);
-  background-size: 16px 16px;
-  border-bottom: 1px solid var(--vp-c-brand-1);
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px) 0 24px !important;
+  background-size: 1em 1em;
+  border-bottom: 0.0625em solid var(--vp-c-brand-1);
 }
 
 .VPHome .VPHero .container {
-  max-width: 768px;
-  padding: 0 24px;
+  max-width: 48em;
+  padding: 0 1.5em;
 }
 
 @media (min-width: 640px) {
   .VPHome .VPHero .container {
-    padding: 0 48px;
+    padding: 0 3em;
   }
 }
 
 @media (min-width: 960px) {
   .VPHome .VPHero .container {
-    padding: 0 64px;
+    padding: 0 4em;
   }
 }
 
@@ -164,14 +163,13 @@
 
 .VPHome .VPHero .thinking::before {
   content: "";
-  display: inline-block;
-  width: 16px;
-  font-size: 16px;
-  text-align: center;
+  font-family: "Noto Sans Symbols 2", monospace;
+  display: inline-flex;
+  justify-content: center;
+  width: 0.5em;
+  font-size: 1em;
   animation: flower 2s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
-  margin-left: -2px;
-  margin-right: 8px;
 }
 
 @keyframes flower {
@@ -189,30 +187,30 @@
 
 .VPHome .VPHero .name {
   line-height: 1.5;
-  font-size: 32px;
+  font-size: 2em;
 }
 
 .VPHome .VPHero .text {
   line-height: 1.5;
-  font-size: 16px;
-  padding-top: 8px !important;
+  font-size: 1em;
+  padding-top: 0.5em !important;
 }
 
 .VPHome .VPHero .tagline {
   line-height: 1.5;
-  font-size: 14px;
-  padding-top: 8px !important;
+  font-size: 1em;
+  padding-top: 0.5em !important;
 }
 
 .VPHome .vp-doc.container {
-  max-width: 768px;
-  margin-top: 24px !important;
-  margin-bottom: 32px !important;
+  max-width: 48em;
+  margin-top: 1.5em !important;
+  margin-bottom: 2em !important;
 }
 
 .VPFooter {
-  padding-top: 16px !important;
-  padding-bottom: 16px !important;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
 }
 
 .VPFooter .container {
@@ -223,7 +221,7 @@
 .VPFooter .message,
 .VPFooter .copyright {
   font-family: var(--vp-font-family-mono);
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .custom-page .VPSkipLink,

@@ -29,6 +29,9 @@ export default defineConfig({
   },
   /* prettier-ignore */
   head: [
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&text=·✢*✶✻✽&display=swap' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
