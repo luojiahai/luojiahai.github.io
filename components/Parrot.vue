@@ -3,13 +3,12 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const TOTAL_FRAMES = 10;
 const COLORS = [
-  "var(--red)",
-  "var(--yellow)",
-  "var(--green)",
-  "var(--blue)",
-  "var(--magenta)",
-  "var(--cyan)",
-  "var(--white)",
+  "var(--color-fig)",
+  "var(--color-clay)",
+  "var(--color-olive)",
+  "var(--color-sky)",
+  "var(--color-heather)",
+  "var(--color-coral)",
 ] as const;
 
 const currentFrame = ref(0);
