@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: <code>你好，世界！</code><span class="spinner"></span>
+  text: <span class="spinner"></span>
 ---
 
 <Terminal>
