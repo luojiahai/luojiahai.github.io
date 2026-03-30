@@ -163,12 +163,12 @@
 
 .VPHome .VPHero .thinking::before {
   content: "";
-  font-family: "Noto Sans Symbols 2", monospace;
+  /* font-family: "Noto Sans Symbols 2", monospace; */
   display: inline-flex;
   justify-content: center;
   width: 0.5em;
   font-size: 1em;
-  animation: flower 2s steps(1) infinite;
+  animation: spinner 2s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
 }
 
@@ -183,6 +183,13 @@
   70% { content: "✶"; }
   80% { content: "*"; }
   90% { content: "✢"; }
+}
+
+@keyframes spinner {
+  0% { content: "|"; }
+  25% { content: "/"; }
+  50% { content: "—"; }
+  75% { content: "\\"; }
 }
 
 .VPHome .VPHero .name {
