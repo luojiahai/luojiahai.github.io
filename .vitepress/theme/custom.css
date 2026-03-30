@@ -125,12 +125,12 @@
 .VPHome .VPHero .thinking::before {
   content: "·";
   display: inline-block;
-  width: 1.2em;
+  width: 1em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   animation: sparkle 1.5s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 @keyframes sparkle {
