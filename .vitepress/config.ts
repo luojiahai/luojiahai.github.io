@@ -45,6 +45,7 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
   themeConfig: {
+    logo: "/logo.svg",
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },
