@@ -161,6 +161,7 @@ onUnmounted(() => {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  border-radius: 8px;
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -201,7 +202,7 @@ onUnmounted(() => {
 }
 
 .control-button.close {
-  background-color: var(--color-fig);
+  background-color: var(--color-scarlet);
 }
 
 .control-button.minimize {

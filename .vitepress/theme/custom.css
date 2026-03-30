@@ -1,9 +1,4 @@
 :root {
-  /* Palette */
-  --color-dark: #141413;
-  --color-light: #faf9f5;
-  --color-mid-gray: #b0aea5;
-  --color-light-gray: #e8e6dc;
   --color-oat: #e3dacc;
   --color-olive: #788c5d;
   --color-cactus: #bcd1ca;
@@ -12,20 +7,75 @@
   --color-fig: #c46686;
   --color-coral: #ebcece;
   --color-clay: #d97757;
+  --color-scarlet: #df6666;
 
-  /* Brand colors */
+  --background-primary: #141413;
+  --background-secondary: #1a1918;
+  --background-tertiary: #1f1e1d;
+  --border-primary: #5e5d59;
+  --border-secondary: #3d3d3a;
+  --border-tertiary: #30302e;
+  --foreground-primary: #faf9f5;
+  --foreground-secondary: #b0aea5;
+  --foreground-tertiary: #87867f;
+}
+
+:root {
+  --vp-c-white: #ffffff;
+  --vp-c-black: #000000;
+
+  --vp-c-neutral: var(--vp-c-white);
+  --vp-c-neutral-inverse: var(--vp-c-black);
+
+  --vp-c-gray-1: #5e5d59;
+  --vp-c-gray-2: #4d4c48;
+  --vp-c-gray-3: #3d3d3a;
+  --vp-c-gray-soft: rgb(from #5e5d59 r g b / 16%);
+
+  --vp-c-indigo-1: var(--color-sky);
+  --vp-c-indigo-2: color-mix(in hsl, var(--color-sky), black 10%);
+  --vp-c-indigo-3: color-mix(in hsl, var(--color-sky), black 20%);
+  --vp-c-indigo-soft: rgb(from var(--color-sky) r g b / 16%);
+
+  --vp-c-purple-1: var(--color-fig);
+  --vp-c-purple-2: color-mix(in hsl, var(--color-fig), black 10%);
+  --vp-c-purple-3: color-mix(in hsl, var(--color-fig), black 20%);
+  --vp-c-purple-soft: rgb(from var(--color-fig) r g b / 16%);
+
+  --vp-c-green-1: var(--color-olive);
+  --vp-c-green-2: color-mix(in hsl, var(--color-olive), black 10%);
+  --vp-c-green-3: color-mix(in hsl, var(--color-olive), black 20%);
+  --vp-c-green-soft: rgb(from var(--color-olive) r g b / 16%);
+
+  --vp-c-yellow-1: var(--color-clay);
+  --vp-c-yellow-2: color-mix(in hsl, var(--color-clay), black 10%);
+  --vp-c-yellow-3: color-mix(in hsl, var(--color-clay), black 20%);
+  --vp-c-yellow-soft: rgb(from var(--color-clay) r g b / 16%);
+
+  --vp-c-red-1: var(--color-scarlet);
+  --vp-c-red-2: color-mix(in hsl, var(--color-scarlet), black 10%);
+  --vp-c-red-3: color-mix(in hsl, var(--color-scarlet), black 20%);
+  --vp-c-red-soft: rgb(from var(--color-scarlet) r g b / 16%);
+
+  --vp-c-bg: var(--background-primary);
+  --vp-c-bg-alt: var(--background-secondary);
+  --vp-c-bg-elv: var(--background-tertiary);
+  --vp-c-bg-soft: var(--background-tertiary);
+
+  --vp-c-border: var(--border-primary);
+  --vp-c-divider: var(--border-secondary);
+  --vp-c-gutter: var(--border-tertiary);
+
+  --vp-c-text-1: var(--foreground-primary);
+  --vp-c-text-2: var(--foreground-secondary);
+  --vp-c-text-3: var(--foreground-tertiary);
+}
+
+:root {
   --vp-c-brand-1: var(--color-clay);
-  --vp-c-brand-2: #c96442;
-  --vp-c-brand-3: #b04f2c;
-  --vp-c-brand-soft: color-mix(in srgb, var(--color-clay) 16%, transparent);
-
-  /* Backgrounds */
-  --vp-c-bg: var(--color-dark);
-
-  /* Text */
-  --vp-c-text-1: var(--color-light);
-  --vp-c-text-2: #f5f4ed;
-  --vp-c-text-3: #f0eee6;
+  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
+  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
+  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 16%);
 }
 
 .VPNavBar.home {
