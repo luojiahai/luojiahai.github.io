@@ -96,7 +96,7 @@
     linear-gradient(90deg, rgba(250, 249, 245, 0.06) 1px, #0000 1px),
     linear-gradient(rgba(250, 249, 245, 0.06) 1px, #0000 1px);
   background-size: 16px 16px;
-  border-bottom: 1px solid var(--vp-c-border);
+  border-bottom: 1px solid var(--vp-c-divider);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 24px) 0 24px !important;
 }
 
