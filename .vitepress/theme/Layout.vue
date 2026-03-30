@@ -56,7 +56,7 @@ onMounted(() => {
     () => {
       if (cleanup) cleanup();
       nextTick(() => {
-        const el = document.querySelector(".VPHome .VPHero .spinner");
+        const el = document.querySelector(".VPHome .VPHero .thinking");
         if (!el) return;
         cleanup = startTypewriter(el);
       });

@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: <span class="spinner"></span>
+  text: <span class="thinking"></span>
 ---
 
 <Terminal>
