@@ -125,9 +125,9 @@
 .VPHome .VPHero .thinking::before {
   content: "·";
   display: inline-block;
-  width: 1em;
+  width: 1.2em;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   animation: sparkle 1.5s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
   margin-right: 6px;
