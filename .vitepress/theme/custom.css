@@ -168,7 +168,7 @@
   justify-content: center;
   width: 0.5em;
   font-size: 1em;
-  animation: spinner 2s steps(1) infinite;
+  animation: spinner 1s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
 }
 
