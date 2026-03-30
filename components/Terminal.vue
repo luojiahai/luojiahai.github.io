@@ -206,7 +206,7 @@ onUnmounted(() => {
 }
 
 .control-button.minimize {
-  background-color: var(--color-clay);
+  background-color: var(--color-amber);
 }
 
 .control-button.maximize {

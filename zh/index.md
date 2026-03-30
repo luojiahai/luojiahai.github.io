@@ -4,7 +4,8 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  text: <span class="thinking"></span>
+  text: <code>> echo "Hello, World!"</code>
+  tagline: <span class="thinking"></span>
 ---
 
 <Terminal>
