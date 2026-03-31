@@ -8,14 +8,12 @@ const route = useRoute();
 
 const WORDS = [
   "Thinking",
-  "Pondering",
-  "Considering",
-  "Analyzing",
-  "Cogitating",
-  "Deliberating",
   "Contemplating",
+  "Deliberating",
+  "Discombobulating",
   "Flibbertigibbeting",
-  "Ruminating",
+  "Noodling",
+  "Shimmying",
   "Synthesizing",
 ];
 
