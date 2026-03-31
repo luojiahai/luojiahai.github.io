@@ -28,16 +28,33 @@ function startTypewriter(el: Element) {
     if (stopped) return;
     const word = " " + WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
-      el.textContent = word.slice(0, charIdx + 1) + "_";
+      el.textContent = word.slice(0, charIdx + 1) + "_❚";
       charIdx++;
       setTimeout(tick, 50);
     } else {
       el.textContent = word;
       setTimeout(() => {
         if (stopped) return;
+        const prevWord = word;
         wordIdx = (wordIdx + 1) % WORDS.length;
-        charIdx = 0;
-        tick();
+        const nextWord = " " + WORDS[wordIdx] + "...";
+        const maxLen = Math.max(prevWord.length, nextWord.length);
+        let replaceIdx = 1;
+        function replace() {
+          if (stopped) return;
+          if (replaceIdx < maxLen) {
+            el.textContent =
+              nextWord.slice(0, replaceIdx) +
+              "_❚" +
+              prevWord.slice(replaceIdx + 1);
+            replaceIdx++;
+            setTimeout(replace, 50);
+          } else {
+            charIdx = nextWord.length;
+            tick();
+          }
+        }
+        replace();
       }, 2000);
     }
   }
