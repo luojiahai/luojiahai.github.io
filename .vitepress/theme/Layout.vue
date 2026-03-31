@@ -8,13 +8,15 @@ const route = useRoute();
 
 const WORDS = [
   "Thinking",
+  "Coalescing",
   "Contemplating",
-  "Deliberating",
   "Discombobulating",
+  "Elucidating",
   "Flibbertigibbeting",
+  "Frolicking",
   "Noodling",
+  "Schlepping",
   "Shimmying",
-  "Synthesizing",
 ];
 
 function startTypewriter(el: Element) {
