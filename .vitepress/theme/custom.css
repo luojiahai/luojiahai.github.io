@@ -135,17 +135,11 @@
   border-bottom: 1px solid var(--vp-c-brand-1);
 }
 
-.VPHome .VPHero .thinking {
-  font-family: var(--vp-font-family-mono);
-  font-weight: 700;
-  -webkit-text-fill-color: var(--vp-c-text-2);
-}
-
 .VPHome .VPHero .thinking::before {
   content: "";
   display: inline-flex;
   justify-content: center;
-  width: 1ch;
+  width: 0.5em;
   animation: flower 1.44s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
 }
@@ -186,6 +180,7 @@
 .VPHome .VPHero .tagline {
   line-height: 1.5;
   font-size: 16px;
+  font-weight: 700;
   padding-top: 8px !important;
 }
 
