@@ -202,11 +202,11 @@ onUnmounted(() => {
 }
 
 .control-button.close {
-  background-color: var(--color-scarlet);
+  background-color: var(--color-blush);
 }
 
 .control-button.minimize {
-  background-color: var(--color-amber);
+  background-color: var(--color-egg);
 }
 
 .control-button.maximize {

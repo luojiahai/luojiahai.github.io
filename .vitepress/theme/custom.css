@@ -28,8 +28,8 @@
   --color-fig: #c46686;
   --color-coral: #ebcece;
   --color-clay: #d97757;
-  --color-scarlet: #df6666;
-  --color-amber: #d4a27f;
+  --color-blush: #df6666;
+  --color-egg: #d4a27f;
 }
 
 :root {
@@ -86,10 +86,10 @@
   --vp-c-yellow-3: color-mix(in hsl, var(--color-clay), black 20%);
   --vp-c-yellow-soft: rgb(from var(--color-clay) r g b / 16%);
 
-  --vp-c-red-1: var(--color-scarlet);
-  --vp-c-red-2: color-mix(in hsl, var(--color-scarlet), black 10%);
-  --vp-c-red-3: color-mix(in hsl, var(--color-scarlet), black 20%);
-  --vp-c-red-soft: rgb(from var(--color-scarlet) r g b / 16%);
+  --vp-c-red-1: var(--color-blush);
+  --vp-c-red-2: color-mix(in hsl, var(--color-blush), black 10%);
+  --vp-c-red-3: color-mix(in hsl, var(--color-blush), black 20%);
+  --vp-c-red-soft: rgb(from var(--color-blush) r g b / 16%);
 
   --vp-c-bg: var(--background-primary);
   --vp-c-bg-alt: var(--background-secondary);
