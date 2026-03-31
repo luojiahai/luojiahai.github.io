@@ -8,13 +8,11 @@ const route = useRoute();
 
 const WORDS = [
   "Thinking",
-  "Coalescing",
   "Contemplating",
   "Discombobulating",
   "Elucidating",
   "Flibbertigibbeting",
   "Frolicking",
-  "Noodling",
   "Schlepping",
   "Shimmying",
 ];
