@@ -11,7 +11,7 @@ pnpm preview    # Preview the built site locally
 pnpm format     # Format all files with Prettier
 ```
 
-Pre-commit hooks run Prettier via lint-staged automatically.
+Pre-commit hooks run Prettier via lint-staged via `simple-git-hooks` (not Husky).
 
 ## Architecture
 
@@ -37,6 +37,7 @@ VitePress rewrites `/en/*` → `/*`, so English is served at root; Chinese at `/
 
 All components live in `components/` and are globally registered in `.vitepress/theme/index.ts`:
 
+- `Layout.vue` — custom theme layout in `.vitepress/theme/`; wraps DefaultTheme's `<Layout>` and injects a typewriter animation on the home hero targeting `.VPHome .VPHero .thinking`
 - `<Resume>` — renders resume data from `data/resume.json`
 - `<Terminal>` — terminal-style display
 - `<EmailAddress>`, `<Parrot>` — utility/UI components

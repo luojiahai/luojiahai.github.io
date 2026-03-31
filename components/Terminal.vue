@@ -258,7 +258,7 @@ onMounted(() => {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.25em;
-  padding: 0.5em 1.5em;
+  padding: 0.75em 1.5em;
   font-size: 1em;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
