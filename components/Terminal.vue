@@ -18,9 +18,9 @@ withDefaults(
 );
 
 const LOGO_ART = `█ ▀ █
-█ █ █
-█ █ █▀█
-█▄█ █ █`;
+█ █ █▄
+█ █ █ █
+▌▄█ █ █`;
 
 const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
   en: [
@@ -276,7 +276,7 @@ onMounted(() => {
 .claude-header {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   padding: 4px 0;
 }
 
