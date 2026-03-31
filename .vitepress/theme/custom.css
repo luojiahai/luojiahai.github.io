@@ -137,6 +137,7 @@
 
 .VPHome .VPHero .thinking {
   font-family: var(--vp-font-family-mono);
+  font-weight: 700;
   -webkit-text-fill-color: var(--vp-c-text-2);
 }
 

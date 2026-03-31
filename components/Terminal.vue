@@ -1,14 +1,70 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useData } from "vitepress";
 
-const WEATHER_ENABLED = false;
+withDefaults(
+  defineProps<{
+    name?: string;
+    version?: string;
+    subtitle?: string;
+    path?: string;
+  }>(),
+  {
+    name: "luojiahai",
+    version: "v1.0.0",
+    subtitle: "INTJ Personality",
+    path: "~/luojiahai.com",
+  },
+);
 
-const currentTime = ref(new Date());
-const weatherData = ref("");
-const weatherLoading = ref(true);
+const LOGO_ART = `█ ▀ █
+█ █ █
+█ █ █▀█
+█▄█ █ █`;
+
+const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
+  en: [
+    {
+      question: "Who are you?",
+      answer:
+        "Hi there, I'm luojiahai. This handle is the Pinyin of my name, 罗嘉海 (luó jiā hǎi). I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.",
+    },
+    {
+      question: "What do you do?",
+      answer:
+        "I'm a pragmatic programmer, building and maintaining full-stack software systems. I'm deep into AI-native development workflows. I live in Claude Code.",
+    },
+    {
+      question: "What do you do outside of programming?",
+      answer:
+        "Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
+    },
+  ],
+  zh: [
+    {
+      question: "你是谁？",
+      answer:
+        "你好，我是 luojiahai。这个网名是我名字罗嘉海的拼音。我的英文名叫 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+    },
+    {
+      question: "你是做什么的？",
+      answer:
+        "我是一名务实的程序员，专注于构建和维护全栈软件系统。我深度参与 AI 原生开发工作流，日常在 Claude Code 中工作。",
+    },
+    {
+      question: "编程之外你喜欢做什么？",
+      answer:
+        "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客飞机。",
+    },
+  ],
+};
+
+const { lang } = useData();
+const conversation = computed(
+  () => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"],
+);
+
 const systemInfo = ref("");
-
-let timeInterval: number | undefined;
 
 const BROWSER_PATTERNS = [
   { pattern: /Firefox\/([\d.]+)/, name: "Firefox" },
@@ -29,8 +85,6 @@ const OS_PATTERNS = [
   { pattern: /Android/, name: "Android" },
   { pattern: /Linux/, name: "Linux" },
 ] as const;
-
-const pad = (n: number): string => String(n).padStart(2, "0");
 
 const detectBrowser = (ua: string): string => {
   for (const item of BROWSER_PATTERNS) {
@@ -59,32 +113,6 @@ const detectDevice = (ua: string): string => {
   return "Desktop";
 };
 
-const dateTime = computed(() => {
-  const date = currentTime.value;
-  const offset = -date.getTimezoneOffset();
-  const offsetHours = Math.floor(Math.abs(offset) / 60);
-  const offsetMinutes = Math.abs(offset) % 60;
-  const sign = offset >= 0 ? "+" : "-";
-  const utcOffset =
-    offsetMinutes > 0
-      ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}`
-      : `UTC${sign}${offsetHours}`;
-  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
-});
-
-const fetchWeather = async (): Promise<void> => {
-  try {
-    const response = await fetch("https://wttr.in/?format=%l:+%t+%C+%c\n");
-    if (!response.ok) throw new Error(`http error! status: ${response.status}`);
-    weatherData.value = (await response.text()).trim();
-  } catch {
-    weatherData.value = "weather unavailable";
-  } finally {
-    weatherLoading.value = false;
-  }
-};
-
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
   const language = navigator.language || "unknown";
@@ -96,19 +124,8 @@ const initSystemInfo = (): void => {
 
 onMounted(() => {
   initSystemInfo();
-  if (WEATHER_ENABLED) {
-    fetchWeather();
-  }
-  timeInterval = window.setInterval(() => {
-    currentTime.value = new Date();
-  }, 1000);
 });
 
-onUnmounted(() => {
-  if (timeInterval !== undefined) {
-    clearInterval(timeInterval);
-  }
-});
 </script>
 
 <template>
@@ -119,12 +136,29 @@ onUnmounted(() => {
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
-      <div class="title">luojiahai@localhost:/</div>
+      <div class="title">luojiahai@localhost</div>
     </div>
     <div class="terminal-content">
-      <slot />
+      <div class="claude-header">
+        <pre class="logo-art">{{ LOGO_ART }}</pre>
+        <div class="logo-info">
+          <div>
+            <span class="logo-name">{{ name }}</span>
+            <span class="logo-version">{{ version }}</span>
+          </div>
+          <div class="logo-dim">{{ subtitle }}</div>
+          <div class="logo-dim">{{ path }}</div>
+        </div>
+      </div>
+      <div class="conversation">
+        <div v-for="turn in conversation" :key="turn.question" class="turn">
+          <div class="user-line"><span class="prompt">❯</span> {{ turn.question }}</div>
+          <div class="assistant-line"><span class="bullet">●</span> {{ turn.answer }}</div>
+        </div>
+      </div>
+      <div class="divider" />
       <div class="terminal-input">
-        <span class="prompt">$</span>
+        <span class="prompt">❯</span>
         <textarea
           id="terminal-input-area"
           class="input-area"
@@ -138,14 +172,10 @@ onUnmounted(() => {
           @keydown.tab.prevent
         ></textarea>
       </div>
+      <div class="divider" />
+      <span class="shortcuts">? for shortcuts</span>
     </div>
     <div class="terminal-footer">
-      <span>{{ dateTime }}</span>
-      <span v-if="WEATHER_ENABLED" class="separator">|</span>
-      <span v-if="WEATHER_ENABLED">{{
-        weatherLoading ? "Loading..." : weatherData
-      }}</span>
-      <span class="separator">|</span>
       <span>{{ systemInfo }}</span>
     </div>
   </div>
@@ -153,7 +183,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 24px -24px;
+  margin: 1.5em -1.5em;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -161,7 +191,7 @@ onUnmounted(() => {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -170,7 +200,7 @@ onUnmounted(() => {
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 24px 0;
+    margin: 1.5em 0;
   }
 }
 
@@ -178,14 +208,14 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 16px;
+  padding: 1em 1em;
   background-color: var(--vp-c-bg-elv);
   position: relative;
 }
 
 .controls {
   display: flex;
-  gap: 8px;
+  gap: 0.5em;
   flex-shrink: 0;
 }
 
@@ -193,9 +223,9 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 12px;
-  height: 12px;
-  font-size: 12px;
+  width: 0.75em;
+  height: 0.75em;
+  font-size: 0.75em;
   border-radius: 50% !important;
   color: var(--vp-c-bg-soft);
   user-select: none;
@@ -217,7 +247,7 @@ onUnmounted(() => {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: 600;
   color: var(--vp-c-text-2);
   user-select: none;
@@ -227,9 +257,9 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-  padding: 8px 8px;
-  font-size: 16px;
+  gap: 0.25em;
+  padding: 0.5em 1.5em;
+  font-size: 1em;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
@@ -243,21 +273,127 @@ onUnmounted(() => {
   display: none;
 }
 
+.claude-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  padding: 0.25em 0;
+}
+
+.logo-art {
+  margin: 0;
+  padding: 0;
+  font-family: var(--vp-font-family-mono);
+  font-size: 1em;
+  line-height: 1;
+  color: var(--color-clay);
+  background: transparent;
+  border: none;
+  white-space: pre;
+  flex-shrink: 0;
+}
+
+
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  font-size: 0.875em;
+  line-height: 1.5;
+  padding-top: 0.125em;
+}
+
+.logo-name {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+.logo-version {
+  margin-left: 0.5ch;
+  color: var(--vp-c-text-2);
+}
+
+.logo-dim {
+  color: var(--vp-c-text-2);
+}
+
+.shortcuts {
+  font-size: 0.875em;
+  color: var(--vp-c-text-2);
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 1lh;
+  margin: 1lh 0;
+  width: 100%;
+  font-size: 0.875em;
+  white-space: normal;
+}
+
+.turn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.user-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.375em;
+  color: var(--vp-c-text-1);
+}
+
+.assistant-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.375em;
+  color: var(--vp-c-text-2);
+}
+
+.bullet {
+  width: 1ch;
+  text-align: center;
+  color: var(--color-clay);
+  flex-shrink: 0;
+}
+
+.user-line .prompt {
+  width: 1ch;
+  text-align: center;
+  padding-right: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid var(--vp-c-divider);
+  margin: 0.125em 0;
+}
+
 .terminal-input {
   display: flex;
   width: 100%;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875em;
+}
+
+.prompt {
+  color: var(--color-clay);
+  user-select: none;
+  padding-right: 0.25em;
 }
 
 .input-area {
   width: inherit;
   margin: 0;
-  padding: 0 8px;
+  padding: 0 0.25em;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875em;
   border: none;
   outline: none;
   resize: none;
@@ -270,8 +406,8 @@ onUnmounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
-  padding: 8px 8px;
-  font-size: 12px;
+  padding: 0.5em 0.5em;
+  font-size: 0.75em;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
@@ -283,11 +419,5 @@ onUnmounted(() => {
 
 .terminal-footer::-webkit-scrollbar {
   display: none;
-}
-
-.separator {
-  padding: 0 6px;
-  color: var(--vp-c-divider);
-  user-select: none;
 }
 </style>

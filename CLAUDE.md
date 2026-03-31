@@ -24,7 +24,7 @@ Content is split by locale:
 - `zh/` — Chinese pages and data
 - `root/` — Locale-agnostic pages (e.g., parrot easter egg)
 
-Each locale has `index.md` (home), `resume.md`, `use.md`, and a `data/` directory with `resume.json` and `whoami.json` for structured content.
+Each locale has `index.md` (home), `resume.md`, `use.md`, and a `data/` directory with `resume.json` for structured content.
 
 VitePress rewrites `/en/*` → `/*`, so English is served at root; Chinese at `/zh/`.
 

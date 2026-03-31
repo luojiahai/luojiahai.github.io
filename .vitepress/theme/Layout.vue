@@ -30,11 +30,11 @@ function startTypewriter(el: Element) {
     if (stopped) return;
     const word = " " + WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
-      el.textContent = word.slice(0, charIdx + 1) + "_❚";
+      el.innerHTML = "<code>" + word.slice(0, charIdx + 1) + "_❚</code>";
       charIdx++;
       setTimeout(tick, 50);
     } else {
-      el.textContent = word;
+      el.innerHTML = "<code>" + word + "</code>";
       setTimeout(() => {
         if (stopped) return;
         const prevWord = word;
@@ -45,10 +45,12 @@ function startTypewriter(el: Element) {
         function replace() {
           if (stopped) return;
           if (replaceIdx < maxLen) {
-            el.textContent =
+            el.innerHTML =
+              "<code>" +
               nextWord.slice(0, replaceIdx) +
               "_❚" +
-              prevWord.slice(replaceIdx + 1);
+              prevWord.slice(replaceIdx + 1) +
+              "</code>";
             replaceIdx++;
             setTimeout(replace, 50);
           } else {
