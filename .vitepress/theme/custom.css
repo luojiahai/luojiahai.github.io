@@ -145,7 +145,7 @@
   content: "";
   display: inline-flex;
   justify-content: center;
-  width: 8px;
+  width: 1ch;
   animation: flower 1.44s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
 }
