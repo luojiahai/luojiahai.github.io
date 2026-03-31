@@ -286,7 +286,7 @@ onMounted(() => {
   font-family: var(--vp-font-family-mono);
   font-size: 16px;
   line-height: 1;
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
   background: transparent;
   border: none;
   white-space: pre;
@@ -355,7 +355,7 @@ onMounted(() => {
 .bullet {
   width: 1ch;
   text-align: center;
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
   flex-shrink: 0;
 }
 
@@ -380,7 +380,7 @@ onMounted(() => {
 }
 
 .prompt {
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
   user-select: none;
   padding-right: 4px;
 }
