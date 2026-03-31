@@ -142,29 +142,29 @@
 
 .VPHome .VPHero .thinking::before {
   content: "";
-  /* font-family: "Noto Sans Symbols 2", monospace; */
   display: inline-flex;
   justify-content: center;
-  /* width: 0.5em;
-  font-size: 1em; */
-  animation: spinner 1s steps(1) infinite;
+  width: 0.5em;
+  animation: flower 1.44s steps(1) infinite;
   -webkit-text-fill-color: var(--color-clay);
 }
 
 @keyframes flower {
-  0% { content: "·"; }
-  10% { content: "✢"; }
-  20% { content: "*"; }
-  30% { content: "✶"; }
-  40% { content: "✻"; }
-  50% { content: "✽"; }
-  60% { content: "✻"; }
-  70% { content: "✶"; }
-  80% { content: "*"; }
-  90% { content: "✢"; }
+  0%   { content: "·"; }
+  9%   { content: "✢"; }
+  18%  { content: "✳"; }
+  27%  { content: "✶"; }
+  36%  { content: "✻"; }
+  45%  { content: "✽"; }
+  55%  { content: "✽"; }
+  64%  { content: "✻"; }
+  73%  { content: "✶"; }
+  82%  { content: "✳"; }
+  91%  { content: "✢"; }
+  100% { content: "·"; }
 }
 
-@keyframes spinner {
+@keyframes line {
   0% { content: "|"; }
   25% { content: "/"; }
   50% { content: "—"; }
