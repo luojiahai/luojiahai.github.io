@@ -115,7 +115,7 @@ const detectDevice = (ua: string): string => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
-  const language = navigator.language || "unknown";
+  const language = navigator.language.toUpperCase() || "Unknown";
   const device = detectDevice(ua);
   const os = detectOS(ua);
   const browser = detectBrowser(ua);
@@ -183,7 +183,7 @@ onMounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 1.5em -1.5em;
+  margin: 24px -24px;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -191,7 +191,7 @@ onMounted(() => {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  border-radius: 0.5em;
+  border-radius: 8px;
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -200,7 +200,7 @@ onMounted(() => {
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 1.5em 0;
+    margin: 24px 0;
   }
 }
 
@@ -208,14 +208,14 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 1em;
+  padding: 16px 16px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
 }
 
 .controls {
   display: flex;
-  gap: 0.5em;
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -223,9 +223,9 @@ onMounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 0.75em;
-  height: 0.75em;
-  font-size: 0.75em;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
   border-radius: 50% !important;
   color: var(--vp-c-bg-soft);
   user-select: none;
@@ -247,7 +247,7 @@ onMounted(() => {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.75em;
+  font-size: 12px;
   font-weight: 600;
   color: var(--vp-c-text-2);
   user-select: none;
@@ -257,9 +257,9 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.25em;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
+  gap: 4px;
+  padding: 16px 16px;
+  font-size: 16px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
@@ -276,15 +276,15 @@ onMounted(() => {
 .claude-header {
   display: flex;
   align-items: center;
-  gap: 1.5em;
-  padding: 0.25em 0;
+  gap: 24px;
+  padding: 4px 0;
 }
 
 .logo-art {
   margin: 0;
   padding: 0;
   font-family: var(--vp-font-family-mono);
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1;
   color: var(--color-clay);
   background: transparent;
@@ -293,15 +293,14 @@ onMounted(() => {
   flex-shrink: 0;
 }
 
-
 .logo-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0;
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 1.5;
-  padding-top: 0.125em;
+  padding-top: 2px;
 }
 
 .logo-name {
@@ -319,7 +318,7 @@ onMounted(() => {
 }
 
 .shortcuts {
-  font-size: 0.875em;
+  font-size: 14px;
   color: var(--vp-c-text-2);
 }
 
@@ -329,27 +328,27 @@ onMounted(() => {
   gap: 1lh;
   margin: 1lh 0;
   width: 100%;
-  font-size: 0.875em;
+  font-size: 14px;
   white-space: normal;
 }
 
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 4px;
 }
 
 .user-line {
   display: flex;
   align-items: baseline;
-  gap: 0.375em;
+  gap: 6px;
   color: var(--vp-c-text-1);
 }
 
 .assistant-line {
   display: flex;
   align-items: baseline;
-  gap: 0.375em;
+  gap: 6px;
   color: var(--vp-c-text-2);
 }
 
@@ -370,30 +369,30 @@ onMounted(() => {
   width: 100%;
   height: 0;
   border-top: 1px solid var(--vp-c-divider);
-  margin: 0.125em 0;
+  margin: 2px 0;
 }
 
 .terminal-input {
   display: flex;
   width: 100%;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 14px;
 }
 
 .prompt {
   color: var(--color-clay);
   user-select: none;
-  padding-right: 0.25em;
+  padding-right: 4px;
 }
 
 .input-area {
   width: inherit;
   margin: 0;
-  padding: 0 0.25em;
+  padding: 0 4px;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: 0.875em;
+  font-size: 14px;
   border: none;
   outline: none;
   resize: none;
@@ -406,11 +405,11 @@ onMounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
-  padding: 0.5em 0.5em;
-  font-size: 0.75em;
+  padding: 8px 16px;
+  font-size: 12px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
   white-space: nowrap;
   overflow-x: auto;
   -ms-overflow-style: none;
