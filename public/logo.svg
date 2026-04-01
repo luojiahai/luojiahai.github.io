@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 840" width="640" height="840">
   <!-- L  –  tall bar, bottom-right corner cut at 45° -->
-  <path d="M40,40 L120,40 L120,720 L40,800Z" fill="#d97757"/>
+  <path d="M40,40 L120,40 L120,720 L40,800Z" fill="#c46686"/>
 
   <!-- J tittle  –  square, u × u -->
-  <path d="M200,40 L280,40 L280,120 L200,120Z" fill="#d97757"/>
+  <path d="M200,40 L280,40 L280,120 L200,120Z" fill="#c46686"/>
 
   <!-- J body  –  bar with 45° bottom-left hook extending 1u left -->
-  <path d="M200,200 L280,200 L280,800 L120,800 L200,720Z" fill="#d97757"/>
+  <path d="M200,200 L280,200 L280,800 L120,800 L200,720Z" fill="#c46686"/>
 
   <!-- H-left  –  full-height rectangle, no diagonals -->
-  <path d="M360,40 L440,40 L440,800 L360,800Z" fill="#d97757"/>
+  <path d="M360,40 L440,40 L440,800 L360,800Z" fill="#c46686"/>
 
   <!-- H-right  –  45° diagonal top (arch implied toward H-left at y=240) -->
-  <path d="M520,320 L600,400 L600,800 L520,800Z" fill="#d97757"/>
+  <path d="M520,320 L600,400 L600,800 L520,800Z" fill="#c46686"/>
 </svg>

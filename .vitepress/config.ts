@@ -37,7 +37,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', href: '/android-chrome-192x192.png', sizes: '192x192' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/android-chrome-512x512.png', sizes: '512x512' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
-    ['meta', { name: 'theme-color', content: '#d97757' }],
+    ['meta', { name: 'theme-color', content: '#c46686' }],
     ['meta', { name: 'description', content: 'Hello, World!' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:locale', content: 'en' }],

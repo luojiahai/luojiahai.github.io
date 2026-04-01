@@ -113,10 +113,10 @@
 }
 
 :root {
-  --vp-c-brand-1: var(--color-clay);
-  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
-  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
-  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 16%);
+  --vp-c-brand-1: var(--color-fig);
+  --vp-c-brand-2: color-mix(in hsl, var(--color-fig), black 10%);
+  --vp-c-brand-3: color-mix(in hsl, var(--color-fig), black 20%);
+  --vp-c-brand-soft: rgb(from var(--color-fig) r g b / 16%);
 
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
@@ -141,7 +141,7 @@
   justify-content: center;
   width: 0.5em;
   animation: flower 1.44s steps(1) infinite;
-  -webkit-text-fill-color: var(--color-clay);
+  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 @keyframes flower {
