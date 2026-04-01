@@ -4,46 +4,43 @@
 
 ## 硬件
 
-- 手机：iphone 13 pro max
-- 笔记本电脑：microsoft surface pro 5 2017
-- 显示器：samsung ls27a700nwexxy / dell s2721qs
-- 扩展坞：dell d6000
-- 鼠标：logitech mx master 3s / ~~logitech mx master 3~~
-- 键盘：8bitdo retro fami / keychron q1
-- 音响：marshall stockwell 2 / ultimate ears boom 3
-- 充电宝：sharge shargeek 140w 20000mah
-- 手表：garmin epix pro (gen 2) sapphire 47mm
+- 手机：iPhone 13 Pro Max
+- 笔记本电脑：Microsoft Surface Pro 5 2017
+- 显示器：Samsung LS27A700NWEXXY / Dell S2721QS
+- 扩展坞：Dell D6000
+- 鼠标：Logitech MX Master 3S / ~~Logitech MX Master 3~~
+- 键盘：8BitDo Retro Fami / Keychron Q1
+- 音响：Marshall Stockwell 2 / Ultimate Ears Boom 3
+- 充电宝：Sharge Shargeek 140W 20000mAh
+- 手表：Garmin Epix Pro (Gen 2) Sapphire 47mm
 
 ### 台式电脑
 
-- 处理器：amd ryzen 7 5700g
-- 主板：asus prime b550m-a wifi 2
-- 显卡：asus nvidia geforce gtx 3060
-- 冷却：cooler master masterliquid ml240l v2
-- 机箱：fractal design pop mini air rgb white micro atx
-- 电源：fractal design ion gold 750w
-- 内存：kingston fury beast rgb 2x16GB
-- 硬盘：samsung 980 pro 1tb
+- 处理器：AMD Ryzen 7 5700G
+- 主板：ASUS Prime B550M-A WiFi II
+- 显卡：ASUS NVIDIA GeForce GTX 3060
+- 冷却：Cooler Master MasterLiquid ML240L V2
+- 机箱：Fractal Design Pop Mini Air RGB White Micro ATX
+- 电源：upply: Fractal Design ION Gold 750W
+- 内存：Kingston Fury Beast RGB 2x16GB
+- 硬盘：Samsung 980 Pro 1TB
 
 ### 飞行模拟
 
-- 操纵杆：thrustmaster tca sidestick airbus edition
-- 油门：winwing ursa minor 32 throttle metal
-- 气动构型面板：winwing 32 pac metal
+- 操纵杆：Thrustmaster TCA Sidestick Airbus Edition
+- 油门：Winwing Ursa Minor 32 Throttle Metal
+- 气动构型面板：Winwing 32 PAC Metal
 
 ### 相机
 
-- 电子相机：sony a7 1
-- 胶片相机：pentax s1a
-- 镜头：sony zeiss 35mm f2.8 / sigma af 50mm f1.4
-- 胶片：kodak potra 400 / fujifilm fujicolor 200
+- 电子相机：Sony A7 I
+- 胶片相机：Pentax S1a
+- 镜头：Sony Zeiss 35mm f/2.8 / Sigma AF 50mm f/1.4
+- 胶片：Kodak Portra 400 / Fujifilm Fujicolor 200
 
 ## 软件
 
-- 编辑器：visual studio code
-- 浏览器：edge
-- iterm2 - 苹果电脑终端
-- windows terminal - windows 终端
-- draw.io - 画图
-- insomnia - api 开发测试
-- dbeaver - 数据库管理
+- 编辑器：Visual Studio Code
+- 浏览器：Edge
+- 终端：iTerm2 / Windows Terminal
+- 画图：Draw.io / Mermaid

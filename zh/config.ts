@@ -7,7 +7,7 @@ export const config = defineConfig({
     editLink: {
       pattern:
         "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
-      text: "在 github 上编辑此页面",
+      text: "在 GitHub 上编辑此页面",
     },
     footer: {
       copyright: `版权所有 © 2015-${new Date().getFullYear()} luojiahai`,

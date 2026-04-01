@@ -42,8 +42,5 @@ Things I'm using.
 
 - Editor: Visual Studio Code
 - Browser: Edge
-- iTerm2 - Terminal in Mac
-- Windows Terminal - Terminal in Windows
-- Draw.io - Diagramming
-- Insomnia - API Development and Testing
-- DBeaver - Database Management
+- Terminal: iTerm2 / Windows Terminal
+- Diagramming: Draw.io / Mermaid
