@@ -12,7 +12,7 @@ withDefaults(
   {
     name: "luojiahai",
     version: "v3.1.4",
-    subtitle: "INTJ Personality · Claude User",
+    subtitle: "INTJ Personality · Claude User · Chinese Native Speaker",
     path: "/home/luojiahai/localhost",
   },
 );
@@ -28,12 +28,12 @@ const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
     {
       question: "Who are you?",
       answer:
-        "Hi there, I'm luojiahai. This handle is the Pinyin of my name, 罗嘉海 (luó jiā hǎi). I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.",
+        "Hi there, I'm luojiahai. I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.",
     },
     {
       question: "What do you do?",
       answer:
-        "I'm a pragmatic programmer, building and maintaining full-stack software systems. I'm deep into AI-native development workflows. I live in Claude Code.",
+        "I'm a pragmatic programmer, building useful things. I'm deep into AI-native development workflows. I live in Claude Code.",
     },
     {
       question: "What do you do outside of programming?",
@@ -45,17 +45,17 @@ const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
     {
       question: "你是谁？",
       answer:
-        "你好，我是 luojiahai。这个网名是我名字罗嘉海的拼音。我的英文名叫 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+        "你好，我是罗嘉海，英文名 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
     },
     {
       question: "你是做什么的？",
       answer:
-        "我是一名务实的程序员，专注于构建和维护全栈软件系统。我深度参与 AI 原生开发工作流，日常在 Claude Code 中工作。",
+        "我是一名务实的程序员，专注构建实用的东西。我深度投入 AI 原生开发工作流，常驻 Claude Code。",
     },
     {
-      question: "编程之外你喜欢做什么？",
+      question: "编程之外你有什么爱好？",
       answer:
-        "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客飞机。",
+        "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客。",
     },
   ],
 };
