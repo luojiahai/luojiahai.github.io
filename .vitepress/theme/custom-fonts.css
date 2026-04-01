@@ -82,6 +82,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Cascadia Next SC';
+  src: url('/fonts/CascadiaNextSC.wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --vp-font-family-mono: 'Cascadia Mono', ui-monospace, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  --vp-font-family-mono: 'Cascadia Mono', 'Cascadia Next SC', ui-monospace, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 }
