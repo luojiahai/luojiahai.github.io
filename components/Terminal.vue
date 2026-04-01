@@ -12,8 +12,8 @@ withDefaults(
   {
     name: "luojiahai",
     version: "v3.1.4",
-    subtitle: "INTJ Personality · Claude User · Chinese Native Speaker",
-    path: "/home/luojiahai/localhost",
+    subtitle: "INTJ Personality · Claude User",
+    path: "~/luojiahai.github.io",
   },
 );
 
@@ -137,7 +137,7 @@ onMounted(() => {
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
-      <div class="title">luojiahai@localhost</div>
+      <div class="title">✳ luojiahai@localhost</div>
     </div>
     <div class="terminal-content">
       <div class="claude-header">
