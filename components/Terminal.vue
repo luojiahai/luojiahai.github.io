@@ -17,10 +17,11 @@ withDefaults(
   },
 );
 
-const LOGO_ART = `▐▌▀▐▌
-▐▌█▐▌▌
-▐▌█▐▌█
-▐▄█▐▌█`;
+const LOGO_ART = `█ ▀ █
+█ █ █
+█ █ █ ▌
+█ █ █ █
+▌▄█ █ █`;
 
 const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
   en: [
@@ -283,7 +284,7 @@ onMounted(() => {
   margin: 0;
   padding: 0;
   font-family: var(--vp-font-family-mono);
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1;
   color: var(--vp-c-brand-1);
   background: transparent;
