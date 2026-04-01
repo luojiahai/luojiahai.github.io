@@ -142,7 +142,7 @@ onMounted(() => {
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
-      <div class="title">✳ luojiahai@localhost</div>
+      <div class="title">luojiahai@localhost</div>
     </div>
     <div class="terminal-content">
       <div class="logo">
@@ -188,7 +188,7 @@ onMounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin-top: 32px;
+  margin: 24px -24px;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -201,6 +201,12 @@ onMounted(() => {
 
 .terminal-frame::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 640px) {
+  .terminal-frame {
+    margin: 24px 0;
+  }
 }
 
 .terminal-header {
