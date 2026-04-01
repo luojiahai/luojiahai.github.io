@@ -135,11 +135,23 @@
   border-bottom: 1px solid var(--vp-c-brand-1);
 }
 
+.VPHome .VPHero .hello {
+  color: var(--vp-c-text-1);
+}
+
+.VPHome .VPHero .hello::before {
+  content: "❯";
+  display: inline-flex;
+  justify-content: center;
+  width: 1ch;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
+}
+
 .VPHome .VPHero .thinking::before {
   content: "";
   display: inline-flex;
   justify-content: center;
-  width: 0.5em;
+  width: 1ch;
   animation: flower 1.44s steps(1) infinite;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
@@ -167,20 +179,15 @@
 }
 
 .VPHome .VPHero .name {
-  line-height: 1.5;
   font-size: 32px;
 }
 
 .VPHome .VPHero .text {
-  line-height: 1.5;
-  font-size: 16px;
-  padding-top: 8px !important;
+  font-size: 20px;
 }
 
 .VPHome .VPHero .tagline {
-  line-height: 1.5;
-  font-size: 14px;
-  padding-top: 8px !important;
+  font-size: 16px;
 }
 
 .VPFooter .container {
