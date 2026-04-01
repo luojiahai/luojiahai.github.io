@@ -36,15 +36,15 @@
   "skills": [
     {
       "category": "Languages & Frameworks",
-      "items": "Python, TypeScript, Java, Node.js, React, GraphQL"
+      "items": "Python, TypeScript, Java, Node.js, React, GraphQL, LaTeX"
     },
     {
       "category": "Cloud & Infrastructure",
-      "items": "AWS, Kafka, PostgreSQL, Docker, Elasticsearch"
+      "items": "AWS, AWS CDK, DynamoDB, PostgreSQL, Docker, Kafka, Elasticsearch"
     },
     {
-      "category": "Tooling",
-      "items": "Claude Code, LangChain, HuggingFace, Buildkite, Splunk, LaTeX"
+      "category": "AI & Machine Learning",
+      "items": "Claude, Claude Code, GitHub Copilot, LangChain, HuggingFace, OpenAI"
     }
   ],
   "education": [

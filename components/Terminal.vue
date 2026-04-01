@@ -11,9 +11,9 @@ withDefaults(
   }>(),
   {
     name: "luojiahai",
-    version: "v1.0.0",
-    subtitle: "INTJ Personality",
-    path: "~/",
+    version: "v3.1.4",
+    subtitle: "INTJ Personality · Claude User",
+    path: "/home/luojiahai/localhost",
   },
 );
 

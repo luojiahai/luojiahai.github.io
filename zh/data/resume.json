@@ -6,7 +6,7 @@
   },
   "experience": [
     {
-      "name": "rea 集团",
+      "name": "REA 集团",
       "location": "澳大利亚墨尔本",
       "positions": [
         { "title": "高级软件工程师", "period": "2025 - present" },
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "name": "亚马逊云科技（aws）",
+      "name": "亚马逊云科技（AWS）",
       "location": "澳大利亚悉尼",
       "positions": [{ "title": "软件开发工程师", "period": "2021 - 2024" }]
     },
@@ -32,15 +32,15 @@
   "skills": [
     {
       "category": "语言与框架",
-      "items": "python, typescript, java, node.js, react, graphql"
+      "items": "Python, TypeScript, Java, Node.js, React, GraphQL, LaTeX"
     },
     {
       "category": "云计算与基础设施",
-      "items": "aws, kafka, postgresql, docker, elasticsearch"
+      "items": "AWS, AWS CDK, DynamoDB, PostgreSQL, Docker, Kafka, Elasticsearch"
     },
     {
-      "category": "工具",
-      "items": "claude code, langchain, huggingface, buildkite, splunk, latex"
+      "category": "人工智能与机器学习",
+      "items": "Claude, Claude Code, GitHub Copilot, LangChain, HuggingFace, OpenAI"
     }
   ],
   "education": [
