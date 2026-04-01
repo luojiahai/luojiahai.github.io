@@ -341,14 +341,12 @@ onMounted(() => {
 .user-line {
   display: flex;
   align-items: baseline;
-  gap: 8px;
   color: var(--vp-c-text-1);
 }
 
 .assistant-line {
   display: flex;
   align-items: baseline;
-  gap: 8px;
   color: var(--vp-c-text-2);
 }
 
@@ -370,14 +368,13 @@ onMounted(() => {
   width: 100%;
   font-family: inherit;
   font-size: 14px;
-  gap: 8px;
 }
 
 .prompt {
   color: var(--vp-c-brand-1);
   user-select: none;
   width: 1ch;
-  margin-right: 4px;
+  margin-right: 12px;
 }
 
 .input-area {
@@ -419,7 +416,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 1ch;
-  margin-right: 4px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
@@ -428,7 +425,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 1ch;
-  margin-right: 4px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>

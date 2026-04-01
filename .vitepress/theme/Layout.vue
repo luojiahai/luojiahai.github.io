@@ -28,7 +28,7 @@ function startTypewriter(el: Element) {
 
   function tick() {
     if (stopped) return;
-    const word = " " + WORDS[wordIdx] + "...";
+    const word = WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
       el.innerHTML = word.slice(0, charIdx + 1) + "_❚";
       charIdx++;
@@ -39,7 +39,7 @@ function startTypewriter(el: Element) {
         if (stopped) return;
         const prevWord = word;
         wordIdx = (wordIdx + 1) % WORDS.length;
-        const nextWord = " " + WORDS[wordIdx] + "...";
+        const nextWord = WORDS[wordIdx] + "...";
         const maxLen = Math.max(prevWord.length, nextWord.length);
         let replaceIdx = 1;
         function replace() {

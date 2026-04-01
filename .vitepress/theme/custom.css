@@ -145,6 +145,7 @@
   justify-content: center;
   width: 1ch;
   -webkit-text-fill-color: var(--vp-c-brand-1);
+  margin-right: 12px;
 }
 
 .VPHome .VPHero .thinking::before {
@@ -154,6 +155,7 @@
   width: 1ch;
   animation: flower 1.44s steps(1) infinite;
   -webkit-text-fill-color: var(--vp-c-brand-1);
+  margin-right: 12px;
 }
 
 @keyframes flower {
