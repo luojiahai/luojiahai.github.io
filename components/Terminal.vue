@@ -13,14 +13,14 @@ withDefaults(
     name: "luojiahai",
     version: "v1.0.0",
     subtitle: "INTJ Personality",
-    path: "~/luojiahai.com",
+    path: "~/",
   },
 );
 
-const LOGO_ART = `█ ▀ █
-█ █ █▄
-█ █ █ █
-▌▄█ █ █`;
+const LOGO_ART = `▐▌▀▐▌
+▐▌█▐▌▌
+▐▌█▐▌█
+▐▄█▐▌█`;
 
 const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
   en: [
@@ -115,7 +115,7 @@ const detectDevice = (ua: string): string => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
-  const language = navigator.language.toUpperCase() || "Unknown";
+  const language = navigator.language || "Unknown";
   const device = detectDevice(ua);
   const os = detectOS(ua);
   const browser = detectBrowser(ua);
@@ -173,7 +173,6 @@ onMounted(() => {
         ></textarea>
       </div>
       <div class="divider" />
-      <span class="shortcuts">? for shortcuts</span>
     </div>
     <div class="terminal-footer">
       <span>{{ systemInfo }}</span>
@@ -317,11 +316,6 @@ onMounted(() => {
   color: var(--vp-c-text-2);
 }
 
-.shortcuts {
-  font-size: 14px;
-  color: var(--vp-c-text-2);
-}
-
 .conversation {
   display: flex;
   flex-direction: column;
@@ -341,14 +335,14 @@ onMounted(() => {
 .user-line {
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 8px;
   color: var(--vp-c-text-1);
 }
 
 .assistant-line {
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 8px;
   color: var(--vp-c-text-2);
 }
 
