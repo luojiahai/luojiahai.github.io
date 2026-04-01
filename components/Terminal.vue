@@ -349,12 +349,6 @@ onMounted(() => {
   color: var(--vp-c-text-2);
 }
 
-.user-line .prompt {
-  width: 1ch;
-  text-align: center;
-  padding-right: 0;
-}
-
 .divider {
   width: 100%;
   height: 0;
