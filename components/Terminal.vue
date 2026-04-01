@@ -145,7 +145,7 @@ onMounted(() => {
       <div class="title">✳ luojiahai@localhost</div>
     </div>
     <div class="terminal-content">
-      <div class="claude-header">
+      <div class="logo">
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
           <div>
@@ -158,8 +158,8 @@ onMounted(() => {
       </div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
-          <div class="user-line"><span class="prompt">❯</span> {{ turn.question }}</div>
-          <div class="assistant-line"><span class="bullet">●</span> {{ turn.answer }}</div>
+          <div class="user-line">{{ turn.question }}</div>
+          <div class="assistant-line">{{ turn.answer }}</div>
         </div>
       </div>
       <div class="divider" />
@@ -278,7 +278,7 @@ onMounted(() => {
   display: none;
 }
 
-.claude-header {
+.logo {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -352,13 +352,6 @@ onMounted(() => {
   color: var(--vp-c-text-2);
 }
 
-.bullet {
-  width: 1ch;
-  text-align: center;
-  color: var(--vp-c-brand-1);
-  flex-shrink: 0;
-}
-
 .user-line .prompt {
   width: 1ch;
   text-align: center;
@@ -377,18 +370,19 @@ onMounted(() => {
   width: 100%;
   font-family: inherit;
   font-size: 14px;
+  gap: 8px;
 }
 
 .prompt {
   color: var(--vp-c-brand-1);
   user-select: none;
-  padding-right: 4px;
+  width: 1ch;
+  margin-right: 4px;
 }
 
 .input-area {
   width: inherit;
   margin: 0;
-  padding: 0 4px;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
@@ -418,5 +412,23 @@ onMounted(() => {
 
 .terminal-footer::-webkit-scrollbar {
   display: none;
+}
+
+.user-line::before {
+  content: "❯";
+  display: inline-flex;
+  justify-content: center;
+  width: 1ch;
+  margin-right: 4px;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
+}
+
+.assistant-line::before {
+  content: "●";
+  display: inline-flex;
+  justify-content: center;
+  width: 1ch;
+  margin-right: 4px;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>

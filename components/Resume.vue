@@ -148,9 +148,7 @@ const data = computed(
         class="experience-item"
       >
         <div class="experience-header">
-          <span class="experience-name"
-            ><strong>{{ experience.name }}</strong></span
-          >
+          <span class="experience-name"><strong>{{ experience.name }}</strong></span>
           <span class="separator">|</span>
           <span class="experience-location">{{ experience.location }}</span>
         </div>
@@ -160,9 +158,7 @@ const data = computed(
             :key="position.title"
             class="position-item"
           >
-            <span class="position-title"
-              ><em>{{ position.title }}</em></span
-            >
+            <span class="position-title"><em>{{ position.title }}</em></span>
             <span class="separator">|</span>
             <span class="position-period">{{ position.period }}</span>
           </li>
@@ -177,9 +173,7 @@ const data = computed(
         class="institution-item"
       >
         <div class="institution-header">
-          <span class="institution-name"
-            ><strong>{{ institution.name }}</strong></span
-          >
+          <span class="institution-name"><strong>{{ institution.name }}</strong></span>
           <span class="separator">|</span>
           <span class="institution-location">{{ institution.location }}</span>
         </div>
@@ -189,9 +183,7 @@ const data = computed(
             :key="program.degree"
             class="program-item"
           >
-            <span class="program-degree"
-              ><em>{{ program.degree }}</em></span
-            >
+            <span class="program-degree"><em>{{ program.degree }}</em></span>
             <span class="separator">|</span>
             <span class="program-period">{{ program.period }}</span>
           </li>
@@ -210,18 +202,13 @@ const data = computed(
   display: none;
 }
 
-.section-title {
-  margin-top: 24px;
-  padding-top: 20px;
-}
-
 .experience-list,
 .education-list {
   list-style-type: none;
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .experience-header,
@@ -248,6 +235,7 @@ const data = computed(
 .programs-list {
   list-style-type: none;
   padding-left: 0;
+  color: var(--vp-c-text-2);
 }
 
 .position-item,
@@ -281,7 +269,7 @@ const data = computed(
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 12px;
   }
 
   .experience-name,
@@ -301,5 +289,27 @@ const data = computed(
     justify-content: flex-start;
     gap: 8px;
   }
+}
+
+.experience-name::before,
+.institution-name::before {
+  font-family: var(--vp-font-family-mono);
+  content: "❯";
+  display: inline-flex;
+  justify-content: center;
+  width: 1ch;
+  margin-right: 12px;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
+}
+
+.position-title::before,
+.program-degree::before {
+  font-family: var(--vp-font-family-mono);
+  content: "●";
+  display: inline-flex;
+  justify-content: center;
+  width: 1ch;
+  margin-right: 12px;
+  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
