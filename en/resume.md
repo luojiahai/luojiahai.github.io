@@ -7,16 +7,4 @@ Contact via LinkedIn or <EmailAddress local="luo" domain="jiahai.co" /> with rol
 
 :::
 
-<script setup>
-import data from "./data/resume.json"
-</script>
-
-<Resume :data="data" />
-
----
-
-::: info note
-
-I use AI as a core part of my development workflow. In practice, this means I'm not constrained to the languages and technologies listed above.
-
-:::
+<Resume />

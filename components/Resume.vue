@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { computed } from "vue";
+import { useData } from "vitepress";
+
 interface ResumeData {
   sections: {
     experience: string;
-    skills: string;
     education: string;
   };
   experience: Array<{
@@ -12,10 +14,6 @@ interface ResumeData {
       title: string;
       period: string;
     }>;
-  }>;
-  skills: Array<{
-    category: string;
-    items: string;
   }>;
   education: Array<{
     name: string;
@@ -27,10 +25,117 @@ interface ResumeData {
   }>;
 }
 
-interface Props {
-  data: ResumeData;
-}
-defineProps<Props>();
+const RESUME_DATA: Record<string, ResumeData> = {
+  en: {
+    sections: {
+      experience: "Experience",
+      education: "Education",
+    },
+    experience: [
+      {
+        name: "REA Group",
+        location: "Melbourne, Victoria, Australia",
+        positions: [
+          { title: "Senior Software Engineer", period: "2025 - Present" },
+          { title: "Software Engineer", period: "2024 - 2025" },
+        ],
+      },
+      {
+        name: "Amazon Web Services (AWS)",
+        location: "Sydney, New South Wales, Australia",
+        positions: [
+          { title: "Software Development Engineer", period: "2021 - 2024" },
+        ],
+      },
+      {
+        name: "Deloitte",
+        location: "Melbourne, Victoria, Australia",
+        positions: [
+          { title: "Software Development Consultant", period: "2020 - 2021" },
+        ],
+      },
+      {
+        name: "The University of Melbourne",
+        location: "Melbourne, Victoria, Australia",
+        positions: [{ title: "Teaching Assistant", period: "2018 - 2020" }],
+      },
+    ],
+    education: [
+      {
+        name: "The University of Melbourne",
+        location: "Melbourne, Victoria, Australia",
+        programs: [
+          {
+            degree: "Master of Science (Computer Science)",
+            period: "2018 - 2020",
+          },
+          { degree: "Bachelor of Science", period: "2015 - 2018" },
+        ],
+      },
+      {
+        name: "Peking University",
+        location: "Beijing, China",
+        programs: [
+          {
+            degree: "Summer School International Program",
+            period: "Summer 2016",
+          },
+        ],
+      },
+    ],
+  },
+  zh: {
+    sections: {
+      experience: "工作经历",
+      education: "教育背景",
+    },
+    experience: [
+      {
+        name: "REA 集团",
+        location: "澳大利亚墨尔本",
+        positions: [
+          { title: "高级软件工程师", period: "2025 - present" },
+          { title: "软件工程师", period: "2024 - 2025" },
+        ],
+      },
+      {
+        name: "亚马逊云科技（AWS）",
+        location: "澳大利亚悉尼",
+        positions: [{ title: "软件开发工程师", period: "2021 - 2024" }],
+      },
+      {
+        name: "德勤",
+        location: "澳大利亚墨尔本",
+        positions: [{ title: "软件开发顾问", period: "2020 - 2021" }],
+      },
+      {
+        name: "墨尔本大学",
+        location: "澳大利亚墨尔本",
+        positions: [{ title: "教学助理", period: "2018 - 2020" }],
+      },
+    ],
+    education: [
+      {
+        name: "墨尔本大学",
+        location: "澳大利亚墨尔本",
+        programs: [
+          { degree: "理学硕士（计算机科学）", period: "2018 - 2020" },
+          { degree: "理学学士", period: "2015 - 2018" },
+        ],
+      },
+      {
+        name: "北京大学",
+        location: "中国北京",
+        programs: [{ degree: "暑期学校国际课程", period: "2016 夏" }],
+      },
+    ],
+  },
+};
+
+const { lang } = useData();
+const data = computed(
+  () => RESUME_DATA[lang.value.startsWith("zh") ? "zh" : "en"],
+);
 </script>
 
 <template>
@@ -62,13 +167,6 @@ defineProps<Props>();
             <span class="position-period">{{ position.period }}</span>
           </li>
         </ul>
-      </li>
-    </ul>
-    <h2 class="section-title">{{ data.sections.skills }}</h2>
-    <ul class="skills-list">
-      <li v-for="skill in data.skills" :key="skill.category">
-        <strong>{{ skill.category }}</strong
-        >: {{ skill.items }}
       </li>
     </ul>
     <h2 class="section-title">{{ data.sections.education }}</h2>
@@ -126,11 +224,6 @@ defineProps<Props>();
   gap: 8px;
 }
 
-.skills-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
 .experience-header,
 .institution-header {
   display: flex;
@@ -175,7 +268,6 @@ defineProps<Props>();
   }
 
   .experience-list,
-  .skills-list,
   .education-list {
     white-space: nowrap;
     overflow: auto;
