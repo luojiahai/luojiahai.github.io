@@ -281,7 +281,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 4px 0;
+  padding: 4px 24px;
 }
 
 .logo-art {
