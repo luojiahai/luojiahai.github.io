@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import { useData } from "vitepress";
 
-interface ResumeData {
+type Resume = {
   sections: {
     experience: string;
     education: string;
@@ -25,7 +25,7 @@ interface ResumeData {
   }>;
 }
 
-const RESUME_DATA: Record<string, ResumeData> = {
+const RESUME: Record<string, Resume> = {
   en: {
     sections: {
       experience: "Experience",
@@ -134,7 +134,7 @@ const RESUME_DATA: Record<string, ResumeData> = {
 
 const { lang } = useData();
 const data = computed(
-  () => RESUME_DATA[lang.value.startsWith("zh") ? "zh" : "en"],
+  () => RESUME[lang.value.startsWith("zh") ? "zh" : "en"],
 );
 </script>
 

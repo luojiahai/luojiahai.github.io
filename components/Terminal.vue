@@ -23,7 +23,12 @@ const LOGO_ART = `█ ▀ █
 █ █ █ █
 ▌▄█ █ █`;
 
-const CONVERSATION: Record<string, { question: string; answer: string }[]> = {
+type Conversation = Array<{
+  question: string;
+  answer: string;
+}>;
+
+const CONVERSATION: Record<string, Conversation> = {
   en: [
     {
       question: "Who are you?",
