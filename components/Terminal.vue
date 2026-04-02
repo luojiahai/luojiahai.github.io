@@ -20,9 +20,7 @@ const LOGO_ART = `█ ▀ █
 ▌▄█ █ █
 `;
 
-const LOGO_BORDER = LOGO_ART.split("\n")
-  .map(() => "│")
-  .join("\n");
+const LOGO_BORDER = "|\n|\n|\n|\n|\n|\n|";
 
 type Conversation = Array<{
   question: string;
@@ -155,9 +153,9 @@ let resizeObserver: ResizeObserver | null = null;
 
 const logoBoxTop = computed(() => {
   const label = ` ${props.name} ${props.version} `;
-  const fill = charLength.value - 4 - label.length;
+  const fill = charLength.value - 5 - label.length;
   return {
-    left: `╭──` + " ",
+    left: `╭───` + " ",
     name: props.name,
     version: props.version,
     right: " " + "─".repeat(Math.max(0, fill)) + "╮",
@@ -224,8 +222,8 @@ onUnmounted(() => {
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
           <span class="logo-name">Hello, World!</span>
-          <br />
-          <div class="logo-dim">INTJ Personality</div>
+          <div class="logo-dim">INTJ Personality · Claude User</div>
+          <div class="logo-dim">luo[at]jiahai.co</div>
         </div>
         <div class="logo-spacer"></div>
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
@@ -410,6 +408,7 @@ onUnmounted(() => {
   justify-content: center;
   gap: 0;
   white-space: pre-wrap;
+  line-height: 1.5;
 }
 
 .logo-name {

@@ -40,7 +40,7 @@ All components live in `components/` and are globally registered in `.vitepress/
 - `Layout.vue` — custom theme layout in `.vitepress/theme/`; wraps DefaultTheme's `<Layout>` and injects a typewriter animation on the home hero targeting `.VPHome .VPHero .thinking`
 - `<Resume>` — renders resume data from `data/resume.json`
 - `<Terminal>` — terminal-style display
-- `<EmailAddress>`, `<Parrot>` — utility/UI components
+- `<Parrot>` — utility/UI components
 
 ### Styling
 
