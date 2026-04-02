@@ -396,7 +396,7 @@ onMounted(() => {
   display: none;
 }
 
-.input-area::before,
+.terminal-input::before,
 .user-line::before {
   content: "❯";
   display: inline-flex;
