@@ -146,15 +146,36 @@ const initSystemInfo = (): void => {
   browser.value = detectBrowser(ua);
 };
 
+const terminalContent = ref<HTMLElement | null>(null);
+const charMeasure = ref<HTMLElement | null>(null);
+const dividerLength = ref(80);
+let resizeObserver: ResizeObserver | null = null;
+
+const updateDivider = () => {
+  if (!terminalContent.value || !charMeasure.value) return;
+  const charWidth = charMeasure.value.getBoundingClientRect().width;
+  if (charWidth > 0) {
+    dividerLength.value = Math.floor(
+      terminalContent.value.clientWidth / charWidth,
+    ) - 1; // subtract 1 to prevent wrapping
+  }
+};
+
 onMounted(() => {
   initSystemInfo();
   timer = setInterval(() => {
     currentTime.value = new Date();
   }, 1000);
+  resizeObserver = new ResizeObserver(updateDivider);
+  if (terminalContent.value) {
+    resizeObserver.observe(terminalContent.value);
+    updateDivider();
+  }
 });
 
 onUnmounted(() => {
   clearInterval(timer);
+  resizeObserver?.disconnect();
 });
 
 </script>
@@ -169,7 +190,8 @@ onUnmounted(() => {
       </div>
       <div class="title">luojiahai@localhost</div>
     </div>
-    <div class="terminal-content">
+    <div ref="terminalContent" class="terminal-content">
+      <span ref="charMeasure" class="char-measure">─</span>
       <div class="logo">
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
@@ -187,7 +209,7 @@ onUnmounted(() => {
           <div class="assistant-line">{{ turn.answer }}</div>
         </div>
       </div>
-      <div class="divider" />
+      <div class="divider">{{ "─".repeat(dividerLength) }}</div>
       <div class="terminal-input">
         <textarea
           id="terminal-input-area"
@@ -202,7 +224,8 @@ onUnmounted(() => {
           @keydown.tab.prevent
         ></textarea>
       </div>
-      <div class="divider" />
+      <div class="divider">{{ "─".repeat(dividerLength) }}</div>
+      <span class="shortcut">? for shortcuts</span>
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
@@ -248,6 +271,16 @@ onUnmounted(() => {
   position: relative;
 }
 
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  user-select: none;
+}
+
 .controls {
   display: flex;
   gap: 8px;
@@ -278,22 +311,11 @@ onUnmounted(() => {
   background-color: var(--color-olive);
 }
 
-.title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--vp-c-text-2);
-  user-select: none;
-}
-
 .terminal-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 4px;
-  font-size: 16px;
+  padding: 16px 8px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
@@ -311,7 +333,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 4px 20px;
+  padding: 0 20px;
 }
 
 .logo-art {
@@ -332,9 +354,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   gap: 0;
-  font-size: 14px;
   line-height: 1.5;
-  padding-top: 2px;
 }
 
 .logo-name {
@@ -357,7 +377,6 @@ onUnmounted(() => {
   gap: 1lh;
   margin: 1lh 0;
   width: 100%;
-  font-size: 14px;
   white-space: normal;
 }
 
@@ -371,6 +390,7 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
+  background-color: var(--vp-c-gutter);
 }
 
 .assistant-line {
@@ -379,28 +399,29 @@ onUnmounted(() => {
   color: var(--vp-c-text-2);
 }
 
+.char-measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .divider {
-  width: 100%;
-  height: 0;
-  border-top: 1px solid var(--vp-c-text-2);
-  margin: 0;
+  color: var(--vp-c-text-3);
+  line-height: 1;
 }
 
 .terminal-input {
   display: flex;
   width: 100%;
-  font-family: inherit;
-  font-size: 14px;
-  margin: 4px 0;
 }
 
 .input-area {
+  font-size: 16px;
   width: inherit;
   margin: 0;
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: 14px;
   border: none;
   outline: none;
   resize: none;
@@ -410,11 +431,16 @@ onUnmounted(() => {
   scrollbar-width: none;
 }
 
+.shortcut {
+  color: var(--vp-c-text-2);
+  padding: 0 20px;
+}
+
 .terminal-footer {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 8px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
@@ -440,7 +466,6 @@ onUnmounted(() => {
   display: inline-flex;
   width: 8px;
   margin-right: 12px;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .assistant-line::before {
@@ -448,6 +473,5 @@ onUnmounted(() => {
   display: inline-flex;
   width: 8px;
   margin-right: 12px;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
