@@ -164,7 +164,6 @@ onMounted(() => {
       </div>
       <div class="divider" />
       <div class="terminal-input">
-        <span class="prompt">❯</span>
         <textarea
           id="terminal-input-area"
           class="input-area"
