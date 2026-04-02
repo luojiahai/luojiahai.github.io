@@ -325,7 +325,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1lh;
-  margin: 1lh 4px;
+  margin: 1lh 8px;
   width: 100%;
   font-size: 14px;
   white-space: normal;
@@ -409,7 +409,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 4px;
-  margin-right: 16px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
@@ -418,7 +418,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 4px;
-  margin-right: 16px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
