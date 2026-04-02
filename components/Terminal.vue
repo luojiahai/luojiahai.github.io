@@ -325,7 +325,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1lh;
-  margin: 1lh 0;
+  margin: 1lh 4px;
   width: 100%;
   font-size: 14px;
   white-space: normal;
@@ -341,7 +341,6 @@ onMounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  margin-left: 4px;
 }
 
 .assistant-line {
