@@ -414,7 +414,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 4px;
+  padding: 8px 4px;
   font-size: 12px;
   line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
