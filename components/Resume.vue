@@ -158,7 +158,7 @@ const data = computed(
             :key="position.title"
             class="position-item"
           >
-            <span class="position-title"><em>{{ position.title }}</em></span>
+            <span class="position-title"><strong>{{ position.title }}</strong></span>
             <span class="separator">|</span>
             <span class="position-period">{{ position.period }}</span>
           </li>
@@ -183,7 +183,7 @@ const data = computed(
             :key="program.degree"
             class="program-item"
           >
-            <span class="program-degree"><em>{{ program.degree }}</em></span>
+            <span class="program-degree"><strong>{{ program.degree }}</strong></span>
             <span class="separator">|</span>
             <span class="program-period">{{ program.period }}</span>
           </li>
