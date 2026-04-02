@@ -351,7 +351,7 @@ onMounted(() => {
 .divider {
   width: 100%;
   height: 0;
-  border-top: 1px solid var(--vp-c-text-1);
+  border-top: 1px solid var(--vp-c-text-2);
   margin: 0 4px;
 }
 
