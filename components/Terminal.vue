@@ -409,7 +409,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 4px;
-  padding-left: 4px;
+  margin-left: 4px;
   margin-right: 16px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
@@ -419,7 +419,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 4px;
-  padding-left: 4px;
+  margin-left: 4px;
   margin-right: 16px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
