@@ -430,7 +430,7 @@ onUnmounted(() => {
 }
 
 .separator {
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-divider);
   user-select: none;
 }
 
