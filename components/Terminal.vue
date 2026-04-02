@@ -262,7 +262,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 12px;
+  padding: 16px 4px;
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
@@ -409,7 +409,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 1ch;
-  margin-right: 12px;
+  margin-right: 16px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
@@ -418,7 +418,7 @@ onMounted(() => {
   display: inline-flex;
   justify-content: center;
   width: 1ch;
-  margin-right: 12px;
+  margin-right: 16px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
