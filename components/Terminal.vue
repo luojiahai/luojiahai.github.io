@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
 
 withDefaults(
@@ -70,7 +70,27 @@ const conversation = computed(
   () => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"],
 );
 
-const systemInfo = ref("");
+const language = ref("");
+const deviceOS = ref("");
+const browser = ref("");
+const currentTime = ref(new Date());
+let timer: ReturnType<typeof setInterval>;
+
+const pad = (n: number) => String(n).padStart(2, "0");
+
+const dateTime = computed(() => {
+  const date = currentTime.value;
+  const offset = -date.getTimezoneOffset();
+  const offsetHours = Math.floor(Math.abs(offset) / 60);
+  const offsetMinutes = Math.abs(offset) % 60;
+  const sign = offset >= 0 ? "+" : "-";
+  const utcOffset =
+    offsetMinutes > 0
+      ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}`
+      : `UTC${sign}${offsetHours}`;
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
+});
 
 const BROWSER_PATTERNS = [
   { pattern: /Firefox\/([\d.]+)/, name: "Firefox" },
@@ -121,15 +141,20 @@ const detectDevice = (ua: string): string => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
-  const language = navigator.language || "Unknown";
-  const device = detectDevice(ua);
-  const os = detectOS(ua);
-  const browser = detectBrowser(ua);
-  systemInfo.value = `${language} ${device} ${os} ${browser}`;
+  language.value = navigator.language || "Unknown";
+  deviceOS.value = `${detectDevice(ua)} ${detectOS(ua)}`;
+  browser.value = detectBrowser(ua);
 };
 
 onMounted(() => {
   initSystemInfo();
+  timer = setInterval(() => {
+    currentTime.value = new Date();
+  }, 1000);
+});
+
+onUnmounted(() => {
+  clearInterval(timer);
 });
 
 </script>
@@ -180,7 +205,13 @@ onMounted(() => {
       <div class="divider" />
     </div>
     <div class="terminal-footer">
-      <span>{{ systemInfo }}</span>
+      <span>{{ dateTime }}</span>
+      <span class="separator">|</span>
+      <span>{{ language }}</span>
+      <span class="separator">|</span>
+      <span>{{ deviceOS }}</span>
+      <span class="separator">|</span>
+      <span>{{ browser }}</span>
     </div>
   </div>
 </template>
@@ -382,6 +413,7 @@ onMounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
+  gap: 8px;
   padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
@@ -395,6 +427,11 @@ onMounted(() => {
 
 .terminal-footer::-webkit-scrollbar {
   display: none;
+}
+
+.separator {
+  color: var(--vp-c-text-3);
+  user-select: none;
 }
 
 .terminal-input::before,
