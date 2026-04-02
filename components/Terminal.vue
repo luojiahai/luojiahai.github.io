@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
 
 withDefaults(
@@ -71,6 +71,24 @@ const conversation = computed(
 );
 
 const systemInfo = ref("");
+const currentTime = ref(new Date());
+let timer: ReturnType<typeof setInterval>;
+
+const pad = (n: number) => String(n).padStart(2, "0");
+
+const dateTime = computed(() => {
+  const date = currentTime.value;
+  const offset = -date.getTimezoneOffset();
+  const offsetHours = Math.floor(Math.abs(offset) / 60);
+  const offsetMinutes = Math.abs(offset) % 60;
+  const sign = offset >= 0 ? "+" : "-";
+  const utcOffset =
+    offsetMinutes > 0
+      ? `utc${sign}${offsetHours}:${pad(offsetMinutes)}`
+      : `utc${sign}${offsetHours}`;
+  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
+});
 
 const BROWSER_PATTERNS = [
   { pattern: /Firefox\/([\d.]+)/, name: "Firefox" },
@@ -130,6 +148,13 @@ const initSystemInfo = (): void => {
 
 onMounted(() => {
   initSystemInfo();
+  timer = setInterval(() => {
+    currentTime.value = new Date();
+  }, 1000);
+});
+
+onUnmounted(() => {
+  clearInterval(timer);
 });
 
 </script>
@@ -181,6 +206,7 @@ onMounted(() => {
     </div>
     <div class="terminal-footer">
       <span>{{ systemInfo }}</span>
+      <span>{{ dateTime }}</span>
     </div>
   </div>
 </template>
@@ -382,6 +408,8 @@ onMounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
