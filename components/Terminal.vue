@@ -149,13 +149,13 @@ const initSystemInfo = (): void => {
 
 const terminalContent = ref<HTMLElement | null>(null);
 const charMeasure = ref<HTMLElement | null>(null);
-const dividerLength = ref(80);
+const charLength = ref(80);
 const charWidth = ref(0);
 let resizeObserver: ResizeObserver | null = null;
 
 const logoBoxTop = computed(() => {
   const label = ` ${props.name} ${props.version} `;
-  const fill = dividerLength.value - 4 - label.length;
+  const fill = charLength.value - 4 - label.length;
   return {
     left: `╭──` + " ",
     name: props.name,
@@ -165,11 +165,11 @@ const logoBoxTop = computed(() => {
 });
 
 const logoBoxBottom = computed(() => {
-  return "╰" + "─".repeat(Math.max(0, dividerLength.value - 2)) + "╯";
+  return "╰" + "─".repeat(Math.max(0, charLength.value - 2)) + "╯";
 });
 
 const logoBoxWidth = computed(() =>
-  charWidth.value > 0 ? `${dividerLength.value * charWidth.value}px` : "100%",
+  charWidth.value > 0 ? `${charLength.value * charWidth.value}px` : "100%",
 );
 
 const updateDivider = () => {
@@ -177,7 +177,7 @@ const updateDivider = () => {
   const measured = charMeasure.value.getBoundingClientRect().width;
   if (measured > 0) {
     charWidth.value = measured;
-    dividerLength.value = Math.floor(
+    charLength.value = Math.floor(
       terminalContent.value.clientWidth / measured,
     ) - 1; // subtract 1 to prevent wrapping
   }
@@ -210,7 +210,7 @@ onUnmounted(() => {
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
-      <div class="title">luojiahai@localhost</div>
+      <div class="title">localhost</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -237,7 +237,7 @@ onUnmounted(() => {
           <div class="assistant-line">{{ turn.answer }}</div>
         </div>
       </div>
-      <div class="divider">{{ "─".repeat(dividerLength) }}</div>
+      <div class="divider">{{ "─".repeat(charLength) }}</div>
       <div class="terminal-input">
         <textarea
           id="terminal-input-area"
@@ -252,7 +252,7 @@ onUnmounted(() => {
           @keydown.tab.prevent
         ></textarea>
       </div>
-      <div class="divider">{{ "─".repeat(dividerLength) }}</div>
+      <div class="divider">{{ "─".repeat(charLength) }}</div>
       <span class="shortcut">? for shortcuts</span>
     </div>
     <div class="terminal-footer">
@@ -269,7 +269,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 24px -24px;
+  margin: 48px -24px;
   font-family: var(--vp-font-family-mono);
   line-height: 1.5;
   color: var(--vp-c-text-1);
@@ -286,7 +286,7 @@ onUnmounted(() => {
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 24px 0;
+    margin: 48px 0;
   }
 }
 
