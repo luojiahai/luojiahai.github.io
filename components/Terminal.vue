@@ -221,9 +221,9 @@ onUnmounted(() => {
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
-          <span class="logo-name">Hello, World!</span>
-          <div class="logo-dim">INTJ Personality · Claude User</div>
-          <div class="logo-dim">luo[at]jiahai.co</div>
+          <span class="logo-heading">Hello, World!</span>
+          <div class="logo-tagline">INTJ Personality · Claude User</div>
+          <div class="logo-tagline">luo[at]jiahai.co</div>
         </div>
         <div class="logo-spacer"></div>
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
@@ -302,7 +302,6 @@ onUnmounted(() => {
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
-  font-weight: 600;
   color: var(--vp-c-text-2);
   user-select: none;
 }
@@ -411,17 +410,11 @@ onUnmounted(() => {
   line-height: 1.5;
 }
 
-.logo-name {
+.logo-heading {
   color: var(--vp-c-text-1);
-  font-weight: 600;
 }
 
-.logo-version {
-  margin-left: 0.5ch;
-  color: var(--vp-c-text-2);
-}
-
-.logo-dim {
+.logo-tagline {
   color: var(--vp-c-text-2);
 }
 
