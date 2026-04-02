@@ -325,7 +325,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1lh;
-  margin: 1lh 8px;
+  margin: 1lh 4px;
   width: 100%;
   font-size: 14px;
   white-space: normal;
@@ -353,7 +353,7 @@ onMounted(() => {
   width: 100%;
   height: 0;
   border-top: 1px solid var(--vp-c-divider);
-  margin: 2px 0;
+  margin: 4px;
 }
 
 .terminal-input {
@@ -404,21 +404,18 @@ onMounted(() => {
   display: none;
 }
 
+.input-area::before,
 .user-line::before {
   content: "❯";
   display: inline-flex;
-  justify-content: center;
-  width: 4px;
-  margin-right: 12px;
+  width: 20px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .assistant-line::before {
   content: "●";
   display: inline-flex;
-  justify-content: center;
-  width: 4px;
-  margin-right: 12px;
+  width: 20px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
