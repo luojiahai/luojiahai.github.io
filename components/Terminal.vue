@@ -261,7 +261,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 0;
+  padding: 16px 4px;
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
@@ -280,7 +280,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 4px 24px;
+  padding: 4px 20px;
 }
 
 .logo-art {
@@ -324,7 +324,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   gap: 1lh;
-  margin: 1lh 4px;
+  margin: 1lh 0;
   width: 100%;
   font-size: 14px;
   white-space: normal;
@@ -352,7 +352,7 @@ onMounted(() => {
   width: 100%;
   height: 0;
   border-top: 1px solid var(--vp-c-text-2);
-  margin: 0 4px;
+  margin: 0;
 }
 
 .terminal-input {
@@ -360,7 +360,7 @@ onMounted(() => {
   width: 100%;
   font-family: inherit;
   font-size: 14px;
-  margin: 4px 4px;
+  margin: 4px 0;
 }
 
 .input-area {
