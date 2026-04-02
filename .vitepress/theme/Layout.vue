@@ -30,7 +30,7 @@ function startTypewriter(el: Element) {
     if (stopped) return;
     const word = WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
-      el.innerHTML = word.slice(0, charIdx + 1) + "_❚";
+      el.innerHTML = word.slice(0, charIdx + 1) + "_█";
       charIdx++;
       setTimeout(tick, 50);
     } else {
