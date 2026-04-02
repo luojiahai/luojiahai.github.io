@@ -13,8 +13,7 @@ const props = withDefaults(
   },
 );
 
-const LOGO_ART = `
-█ ▀ █
+const LOGO_ART = `█ ▀ █
 █ █ █
 █ █ █ ▌
 █ █ █ █
@@ -156,8 +155,12 @@ let resizeObserver: ResizeObserver | null = null;
 
 const logoBoxTop = computed(() => {
   const label = ` ${props.name} ${props.version} `;
-  const fill = dividerLength.value - 3 - label.length;
-  return "╭─" + label + "─".repeat(Math.max(0, fill)) + "╮";
+  const fill = dividerLength.value - 4 - label.length;
+  return {
+    left: `╭── ${props.name} `,
+    version: props.version,
+    right: " " + "─".repeat(Math.max(0, fill)) + "╮",
+  };
 });
 
 const logoBoxBottom = computed(() => {
@@ -210,7 +213,9 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div class="logo-top">{{ logoBoxTop }}</div>
+      <div class="logo-top">
+        <span>{{ logoBoxTop.left }}</span><span class="logo-top-version">{{ logoBoxTop.version }}</span><span>{{ logoBoxTop.right }}</span>
+      </div>
       <div class="logo" :style="{ width: logoBoxWidth }">
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
         <pre class="logo-art">{{ LOGO_ART }}</pre>
@@ -354,12 +359,16 @@ onUnmounted(() => {
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1lh;
 }
 
 .logo-top,
 .logo-bottom {
   color: var(--vp-c-brand-1);
+}
+
+.logo-top-version {
+  color: var(--vp-c-text-2);
 }
 
 .logo-border {
