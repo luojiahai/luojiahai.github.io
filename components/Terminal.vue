@@ -362,6 +362,7 @@ onUnmounted(() => {
 .logo-top,
 .logo-bottom {
   color: var(--vp-c-brand-1);
+  line-height: 1;
 }
 
 .logo-top-name {
@@ -375,7 +376,6 @@ onUnmounted(() => {
 .logo-border {
   margin: 0;
   padding: 0;
-  font-family: var(--vp-font-family-mono);
   line-height: 1;
   color: var(--vp-c-brand-1);
   background: transparent;
