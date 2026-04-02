@@ -43,7 +43,7 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'en' }],
     ['meta', { property: 'og:site_name', content: 'luojiahai' }],
     ['meta', { property: 'og:title', content: 'luojiahai' }],
-    ['meta', { property: 'og:description', content: '' }],
+    ['meta', { property: 'og:description', content: 'Hello, World!' }],
     ['meta', { property: 'og:image', content: 'https://luojiahai.com/image.png' }],
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],

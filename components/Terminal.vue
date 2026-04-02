@@ -157,7 +157,8 @@ const logoBoxTop = computed(() => {
   const label = ` ${props.name} ${props.version} `;
   const fill = dividerLength.value - 4 - label.length;
   return {
-    left: `╭── ${props.name} `,
+    left: `╭──` + " ",
+    name: props.name,
     version: props.version,
     right: " " + "─".repeat(Math.max(0, fill)) + "╮",
   };
@@ -214,7 +215,9 @@ onUnmounted(() => {
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
       <div class="logo-top">
-        <span>{{ logoBoxTop.left }}</span><span class="logo-top-version">{{ logoBoxTop.version }}</span><span>{{ logoBoxTop.right }}</span>
+        <span>{{ logoBoxTop.left }}</span>
+        <span class="logo-top-name">{{ logoBoxTop.name }}</span>&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
+        <span>{{ logoBoxTop.right }}</span>
       </div>
       <div class="logo" :style="{ width: logoBoxWidth }">
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
@@ -223,8 +226,8 @@ onUnmounted(() => {
           <div>
             <span class="logo-name">Hello, World!</span>
           </div>
-          <div class="logo-dim">INTJ Personality · Claude User</div>
-          <div class="logo-dim">/luojiahai.com/home</div>
+          <br />
+          <div class="logo-dim">INTJ Personality</div>
         </div>
         <div class="logo-spacer"></div>
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
@@ -359,12 +362,15 @@ onUnmounted(() => {
 .logo {
   display: flex;
   align-items: center;
-  gap: 1lh;
 }
 
 .logo-top,
 .logo-bottom {
   color: var(--vp-c-brand-1);
+}
+
+.logo-top-name {
+  font-weight: 600;
 }
 
 .logo-top-version {
@@ -388,7 +394,7 @@ onUnmounted(() => {
 }
 
 .logo-art {
-  margin: 0;
+  margin: 0 2lh;
   padding: 0;
   font-family: var(--vp-font-family-mono);
   font-size: 12px;
