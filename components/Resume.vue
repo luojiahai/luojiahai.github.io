@@ -158,7 +158,7 @@ const data = computed(
             :key="position.title"
             class="position-item"
           >
-            <span class="position-title"><strong>{{ position.title }}</strong></span>
+            <span class="position-title">{{ position.title }}</span>
             <span class="separator">|</span>
             <span class="position-period">{{ position.period }}</span>
           </li>
@@ -183,7 +183,7 @@ const data = computed(
             :key="program.degree"
             class="program-item"
           >
-            <span class="program-degree"><strong>{{ program.degree }}</strong></span>
+            <span class="program-degree">{{ program.degree }}</span>
             <span class="separator">|</span>
             <span class="program-period">{{ program.period }}</span>
           </li>
@@ -296,10 +296,8 @@ const data = computed(
   font-family: var(--vp-font-family-mono);
   content: "❯";
   display: inline-flex;
-  justify-content: center;
-  width: 1ch;
+  width: 8px;
   margin-right: 12px;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .position-title::before,
@@ -307,9 +305,7 @@ const data = computed(
   font-family: var(--vp-font-family-mono);
   content: "●";
   display: inline-flex;
-  justify-content: center;
-  width: 1ch;
+  width: 8px;
   margin-right: 12px;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
