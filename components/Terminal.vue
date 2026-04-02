@@ -223,9 +223,7 @@ onUnmounted(() => {
         <pre class="logo-border">{{ LOGO_BORDER }}</pre>
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
-          <div>
-            <span class="logo-name">Hello, World!</span>
-          </div>
+          <span class="logo-name">Hello, World!</span>
           <br />
           <div class="logo-dim">INTJ Personality</div>
         </div>
@@ -345,7 +343,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 8px;
+  padding: 8px 8px 1lh;
   line-height: 1.3;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
@@ -370,7 +368,7 @@ onUnmounted(() => {
 }
 
 .logo-top-name {
-  font-weight: 600;
+  color: var(--vp-c-brand-1);
 }
 
 .logo-top-version {
@@ -411,6 +409,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   gap: 0;
+  white-space: pre-wrap;
 }
 
 .logo-name {
