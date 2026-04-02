@@ -402,7 +402,7 @@ onMounted(() => {
   content: "❯";
   display: inline-flex;
   width: 8px;
-  mergin-right: 12px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
@@ -410,7 +410,7 @@ onMounted(() => {
   content: "●";
   display: inline-flex;
   width: 8px;
-  mergin-right: 12px;
+  margin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
