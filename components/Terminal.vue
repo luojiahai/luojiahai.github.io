@@ -360,6 +360,7 @@ onMounted(() => {
   width: 100%;
   font-family: inherit;
   font-size: 14px;
+  margin: 0 4px;
 }
 
 .input-area {
@@ -400,14 +401,16 @@ onMounted(() => {
 .user-line::before {
   content: "❯";
   display: inline-flex;
-  width: 20px;
+  width: 8px;
+  mergin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .assistant-line::before {
   content: "●";
   display: inline-flex;
-  width: 20px;
+  width: 8px;
+  mergin-right: 12px;
   -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 </style>
