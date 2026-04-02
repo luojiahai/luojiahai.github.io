@@ -206,11 +206,11 @@ onUnmounted(() => {
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
-      <span class="footer-sep">|</span>
+      <span class="separator">|</span>
       <span>{{ language }}</span>
-      <span class="footer-sep">|</span>
+      <span class="separator">|</span>
       <span>{{ deviceOS }}</span>
-      <span class="footer-sep">|</span>
+      <span class="separator">|</span>
       <span>{{ browser }}</span>
     </div>
   </div>
@@ -429,7 +429,7 @@ onUnmounted(() => {
   display: none;
 }
 
-.footer-sep {
+.separator {
   color: var(--vp-c-text-3);
   user-select: none;
 }
