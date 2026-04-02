@@ -352,7 +352,7 @@ onMounted(() => {
   width: 100%;
   height: 0;
   border-top: 1px solid var(--vp-c-divider);
-  margin: 4px;
+  margin: 0 4px;
 }
 
 .terminal-input {
@@ -360,7 +360,7 @@ onMounted(() => {
   width: 100%;
   font-family: inherit;
   font-size: 14px;
-  margin: 0 4px;
+  margin: 4px 4px;
 }
 
 .input-area {
