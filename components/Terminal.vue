@@ -70,7 +70,9 @@ const conversation = computed(
   () => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"],
 );
 
-const systemInfo = ref("");
+const language = ref("");
+const deviceOS = ref("");
+const browser = ref("");
 const currentTime = ref(new Date());
 let timer: ReturnType<typeof setInterval>;
 
@@ -139,11 +141,9 @@ const detectDevice = (ua: string): string => {
 
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
-  const language = navigator.language || "Unknown";
-  const device = detectDevice(ua);
-  const os = detectOS(ua);
-  const browser = detectBrowser(ua);
-  systemInfo.value = `${language} ${device} ${os} ${browser}`;
+  language.value = navigator.language || "Unknown";
+  deviceOS.value = `${detectDevice(ua)} ${detectOS(ua)}`;
+  browser.value = detectBrowser(ua);
 };
 
 onMounted(() => {
@@ -205,8 +205,13 @@ onUnmounted(() => {
       <div class="divider" />
     </div>
     <div class="terminal-footer">
-      <span>{{ systemInfo }}</span>
       <span>{{ dateTime }}</span>
+      <span class="footer-sep">|</span>
+      <span>{{ language }}</span>
+      <span class="footer-sep">|</span>
+      <span>{{ deviceOS }}</span>
+      <span class="footer-sep">|</span>
+      <span>{{ browser }}</span>
     </div>
   </div>
 </template>
@@ -408,8 +413,7 @@ onUnmounted(() => {
 .terminal-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
   padding: 8px 16px;
   font-size: 12px;
   line-height: 1.5;
@@ -423,6 +427,11 @@ onUnmounted(() => {
 
 .terminal-footer::-webkit-scrollbar {
   display: none;
+}
+
+.footer-sep {
+  color: var(--vp-c-text-3);
+  user-select: none;
 }
 
 .terminal-input::before,
