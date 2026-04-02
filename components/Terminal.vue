@@ -2,26 +2,28 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
 
-withDefaults(
+const props = withDefaults(
   defineProps<{
     name?: string;
     version?: string;
-    subtitle?: string;
-    path?: string;
   }>(),
   {
     name: "luojiahai",
     version: "v3.14159",
-    subtitle: "INTJ Personality · Claude User",
-    path: "/luojiahai.com/home",
   },
 );
 
-const LOGO_ART = `█ ▀ █
+const LOGO_ART = `
+█ ▀ █
 █ █ █
 █ █ █ ▌
 █ █ █ █
-▌▄█ █ █`;
+▌▄█ █ █
+`;
+
+const LOGO_BORDER = LOGO_ART.split("\n")
+  .map(() => "│")
+  .join("\n");
 
 type Conversation = Array<{
   question: string;
@@ -149,14 +151,30 @@ const initSystemInfo = (): void => {
 const terminalContent = ref<HTMLElement | null>(null);
 const charMeasure = ref<HTMLElement | null>(null);
 const dividerLength = ref(80);
+const charWidth = ref(0);
 let resizeObserver: ResizeObserver | null = null;
+
+const logoBoxTop = computed(() => {
+  const label = ` ${props.name} ${props.version} `;
+  const fill = dividerLength.value - 3 - label.length;
+  return "╭─" + label + "─".repeat(Math.max(0, fill)) + "╮";
+});
+
+const logoBoxBottom = computed(() => {
+  return "╰" + "─".repeat(Math.max(0, dividerLength.value - 2)) + "╯";
+});
+
+const logoBoxWidth = computed(() =>
+  charWidth.value > 0 ? `${dividerLength.value * charWidth.value}px` : "100%",
+);
 
 const updateDivider = () => {
   if (!terminalContent.value || !charMeasure.value) return;
-  const charWidth = charMeasure.value.getBoundingClientRect().width;
-  if (charWidth > 0) {
+  const measured = charMeasure.value.getBoundingClientRect().width;
+  if (measured > 0) {
+    charWidth.value = measured;
     dividerLength.value = Math.floor(
-      terminalContent.value.clientWidth / charWidth,
+      terminalContent.value.clientWidth / measured,
     ) - 1; // subtract 1 to prevent wrapping
   }
 };
@@ -192,17 +210,21 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div class="logo">
+      <div class="logo-top">{{ logoBoxTop }}</div>
+      <div class="logo" :style="{ width: logoBoxWidth }">
+        <pre class="logo-border">{{ LOGO_BORDER }}</pre>
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
           <div>
-            <span class="logo-name">{{ name }}</span>
-            <span class="logo-version">{{ version }}</span>
+            <span class="logo-name">Hello, World!</span>
           </div>
-          <div class="logo-dim">{{ subtitle }}</div>
-          <div class="logo-dim">{{ path }}</div>
+          <div class="logo-dim">INTJ Personality · Claude User</div>
+          <div class="logo-dim">/luojiahai.com/home</div>
         </div>
+        <div class="logo-spacer"></div>
+        <pre class="logo-border">{{ LOGO_BORDER }}</pre>
       </div>
+      <div class="logo-bottom">{{ logoBoxBottom }}</div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
           <div class="user-line">{{ turn.question }}</div>
@@ -315,8 +337,8 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 8px;
-  line-height: 1.5;
+  padding: 8px 8px;
+  line-height: 1.3;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -333,7 +355,27 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 0 20px;
+}
+
+.logo-top,
+.logo-bottom {
+  color: var(--vp-c-brand-1);
+}
+
+.logo-border {
+  margin: 0;
+  padding: 0;
+  font-family: var(--vp-font-family-mono);
+  line-height: 1;
+  color: var(--vp-c-brand-1);
+  background: transparent;
+  border: none;
+  white-space: pre;
+  flex-shrink: 0;
+}
+
+.logo-spacer {
+  flex: 1;
 }
 
 .logo-art {
@@ -354,7 +396,6 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   gap: 0;
-  line-height: 1.5;
 }
 
 .logo-name {
@@ -383,7 +424,7 @@ onUnmounted(() => {
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 1lh;
 }
 
 .user-line {
@@ -442,7 +483,6 @@ onUnmounted(() => {
   gap: 8px;
   padding: 8px 16px;
   font-size: 12px;
-  line-height: 1.5;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
   white-space: nowrap;
