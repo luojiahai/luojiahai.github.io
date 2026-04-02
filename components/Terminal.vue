@@ -363,13 +363,6 @@ onMounted(() => {
   font-size: 14px;
 }
 
-.prompt {
-  color: var(--vp-c-brand-1);
-  user-select: none;
-  width: 1ch;
-  margin-right: 12px;
-}
-
 .input-area {
   width: inherit;
   margin: 0;
