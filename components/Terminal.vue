@@ -262,7 +262,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 8px;
+  padding: 16px 12px;
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--vp-code-block-bg);
