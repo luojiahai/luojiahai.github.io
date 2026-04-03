@@ -17,8 +17,7 @@ const LOGO_ART = `█ ▀ █
 █ █ █
 █ █ █ ▌
 █ █ █ █
-▌▄█ █ █
-`;
+▌▄█ █ █`;
 
 const LOGO_BORDER = "|\n|\n|\n|\n|\n|\n|";
 
@@ -175,9 +174,8 @@ const updateDivider = () => {
   const measured = charMeasure.value.getBoundingClientRect().width;
   if (measured > 0) {
     charWidth.value = measured;
-    charLength.value = Math.floor(
-      terminalContent.value.clientWidth / measured,
-    ) - 1; // subtract 1 to prevent wrapping
+    charLength.value =
+      Math.floor(terminalContent.value.clientWidth / measured) - 1; // subtract 1 to prevent overflow
   }
 };
 
@@ -189,15 +187,14 @@ onMounted(() => {
   resizeObserver = new ResizeObserver(updateDivider);
   if (terminalContent.value) {
     resizeObserver.observe(terminalContent.value);
-    updateDivider();
   }
+  document.fonts.ready.then(updateDivider);
 });
 
 onUnmounted(() => {
   clearInterval(timer);
   resizeObserver?.disconnect();
 });
-
 </script>
 
 <template>
@@ -214,7 +211,8 @@ onUnmounted(() => {
       <span ref="charMeasure" class="char-measure">─</span>
       <div class="logo-top">
         <span>{{ logoBoxTop.left }}</span>
-        <span class="logo-top-name">{{ logoBoxTop.name }}</span>&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
+        <span class="logo-top-name">{{ logoBoxTop.name }}</span
+        >&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
         <span>{{ logoBoxTop.right }}</span>
       </div>
       <div class="logo" :style="{ width: logoBoxWidth }">
@@ -269,6 +267,7 @@ onUnmounted(() => {
 .terminal-frame {
   margin: 48px -24px;
   font-family: var(--vp-font-family-mono);
+  font-size: 14px;
   line-height: 1.5;
   color: var(--vp-c-text-1);
   overflow: auto;
@@ -301,9 +300,7 @@ onUnmounted(() => {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 14px;
   color: var(--vp-c-text-2);
-  user-select: none;
 }
 
 .controls {
@@ -463,7 +460,7 @@ onUnmounted(() => {
 }
 
 .input-area {
-  font-size: 16px;
+  font-size: 14px;
   width: inherit;
   margin: 0;
   color: inherit;
