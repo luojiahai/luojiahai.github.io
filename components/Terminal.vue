@@ -211,10 +211,10 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
+      <!-- prettier-ignore -->
       <div class="logo-top">
         <span>{{ logoBoxTop.left }}</span>
-        <span class="logo-top-name">{{ logoBoxTop.name }}</span
-        >&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
+        <span class="logo-top-name">{{ logoBoxTop.name }}</span>&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
         <span>{{ logoBoxTop.right }}</span>
       </div>
       <div class="logo" :style="{ width: logoBoxWidth }">

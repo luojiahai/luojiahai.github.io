@@ -146,9 +146,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
         class="experience-item"
       >
         <div class="experience-header">
-          <span class="experience-name"
-            ><strong>{{ experience.name }}</strong></span
-          >
+          <span class="experience-name">{{ experience.name }}</span>
           <span class="separator">|</span>
           <span class="experience-location">{{ experience.location }}</span>
         </div>
@@ -173,9 +171,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
         class="institution-item"
       >
         <div class="institution-header">
-          <span class="institution-name"
-            ><strong>{{ institution.name }}</strong></span
-          >
+          <span class="institution-name">{{ institution.name }}</span>
           <span class="separator">|</span>
           <span class="institution-location">{{ institution.location }}</span>
         </div>
@@ -224,6 +220,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
 .institution-name {
   flex: 1;
   min-width: 0;
+  font-weight: bold;
 }
 
 .experience-location,
