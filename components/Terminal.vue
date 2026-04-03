@@ -2,16 +2,16 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
 
-const props = withDefaults(
-  defineProps<{
-    name?: string;
-    version?: string;
-  }>(),
-  {
-    name: "luojiahai",
-    version: "v3.14159",
-  },
+const { lang } = useData();
+
+const NAME = "luojiahai";
+const VERSION = "v3.14159";
+const HEADING = computed(() => (lang.value.startsWith("zh") ? "你好，世界！" : "Hello, World!"));
+const TAGLINE = computed(() =>
+  lang.value.startsWith("zh") ? "INTJ 性格 · Claude 用户" : "INTJ Personality · Claude User",
 );
+const EMAIL = "luo[at]jiahai.co";
+const SHORTCUT = computed(() => (lang.value.startsWith("zh") ? "? 获取快捷方式" : "? for shortcuts"));
 
 const LOGO_ART = `
 █ ▀ █
@@ -21,7 +21,7 @@ const LOGO_ART = `
 ▌▄█ █ █
 `;
 
-const LOGO_BORDER = "|".repeat(8).split("").join("\n");
+const LOGO_FRAME_BORDER = "|".repeat(8).split("").join("\n");
 
 type Conversation = Array<{
   question: string;
@@ -49,26 +49,20 @@ const CONVERSATION: Record<string, Conversation> = {
   zh: [
     {
       question: "你是谁？",
-      answer:
-        "你好，我是罗嘉海，英文名 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+      answer: "你好，我是罗嘉海，英文名 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
     },
     {
       question: "你是做什么的？",
-      answer:
-        "我是一名务实的程序员，专注构建实用的东西。我深度投入 AI 原生开发工作流，常驻 Claude Code。",
+      answer: "我是一名务实的程序员，专注构建实用的东西。我深度投入 AI 原生开发工作流，常驻 Claude Code。",
     },
     {
       question: "编程之外你有什么爱好？",
-      answer:
-        "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客。",
+      answer: "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客。",
     },
   ],
 };
 
-const { lang } = useData();
-const conversation = computed(
-  () => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"],
-);
+const conversation = computed(() => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"]);
 
 const language = ref("");
 const deviceOS = ref("");
@@ -84,10 +78,7 @@ const dateTime = computed(() => {
   const offsetHours = Math.floor(Math.abs(offset) / 60);
   const offsetMinutes = Math.abs(offset) % 60;
   const sign = offset >= 0 ? "+" : "-";
-  const utcOffset =
-    offsetMinutes > 0
-      ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}`
-      : `UTC${sign}${offsetHours}`;
+  const utcOffset = offsetMinutes > 0 ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}` : `UTC${sign}${offsetHours}`;
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
 });
@@ -148,36 +139,33 @@ const initSystemInfo = (): void => {
 
 const terminalContent = ref<HTMLElement | null>(null);
 const charMeasure = ref<HTMLElement | null>(null);
-const charLength = ref(80);
 const charWidth = ref(0);
+const numChars = ref(80);
 let resizeObserver: ResizeObserver | null = null;
 
-const logoBoxTop = computed(() => {
-  const label = ` ${props.name} ${props.version} `;
-  const fill = charLength.value - 5 - label.length;
+const logoFrameTop = computed(() => {
+  const label = ` ${NAME} ${VERSION} `;
+  const fill = numChars.value - 5 - label.length;
   return {
     left: `╭───` + " ",
-    name: props.name,
-    version: props.version,
+    name: NAME,
+    version: VERSION,
     right: " " + "─".repeat(Math.max(0, fill)) + "╮",
   };
 });
 
-const logoBoxBottom = computed(() => {
-  return "╰" + "─".repeat(Math.max(0, charLength.value - 2)) + "╯";
+const logoFrameBottom = computed(() => {
+  return "╰" + "─".repeat(Math.max(0, numChars.value - 2)) + "╯";
 });
 
-const logoBoxWidth = computed(() =>
-  charWidth.value > 0 ? `${charLength.value * charWidth.value}px` : "100%",
-);
+const logoFrameWidth = computed(() => (charWidth.value > 0 ? `${numChars.value * charWidth.value}px` : "100%"));
 
-const updateDivider = () => {
+const updateNumChars = () => {
   if (!terminalContent.value || !charMeasure.value) return;
   const measured = charMeasure.value.getBoundingClientRect().width;
   if (measured > 0) {
     charWidth.value = measured;
-    charLength.value =
-      Math.floor(terminalContent.value.clientWidth / measured) - 2; // subtract 2 to prevent overflow
+    numChars.value = Math.floor(terminalContent.value.clientWidth / measured) - 2; // subtract 2 to prevent overflow
   }
 };
 
@@ -186,11 +174,11 @@ onMounted(() => {
   timer = setInterval(() => {
     currentTime.value = new Date();
   }, 1000);
-  resizeObserver = new ResizeObserver(updateDivider);
+  resizeObserver = new ResizeObserver(updateNumChars);
   if (terminalContent.value) {
     resizeObserver.observe(terminalContent.value);
   }
-  document.fonts.ready.then(updateDivider);
+  document.fonts.ready.then(updateNumChars);
 });
 
 onUnmounted(() => {
@@ -212,30 +200,30 @@ onUnmounted(() => {
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
       <!-- prettier-ignore -->
-      <div class="logo-top">
-        <span>{{ logoBoxTop.left }}</span>
-        <span class="logo-top-name">{{ logoBoxTop.name }}</span>&nbsp;<span class="logo-top-version">{{ logoBoxTop.version }}</span>
-        <span>{{ logoBoxTop.right }}</span>
+      <div class="logo-frame-top">
+        <span>{{ logoFrameTop.left }}</span>
+        <span class="logo-frame-top-name">{{ logoFrameTop.name }}</span>&nbsp;<span class="logo-frame-top-version">{{ logoFrameTop.version }}</span>
+        <span>{{ logoFrameTop.right }}</span>
       </div>
-      <div class="logo" :style="{ width: logoBoxWidth }">
-        <pre class="logo-border">{{ LOGO_BORDER }}</pre>
+      <div class="logo" :style="{ width: logoFrameWidth }">
+        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
         <pre class="logo-art">{{ LOGO_ART }}</pre>
         <div class="logo-info">
-          <span class="logo-heading">Hello, World!</span>
-          <div class="logo-tagline">INTJ Personality · Claude User</div>
-          <div class="logo-tagline">luo[at]jiahai.co</div>
+          <span class="logo-heading">{{ HEADING }}</span>
+          <div class="logo-tagline">{{ TAGLINE }}</div>
+          <div class="logo-tagline">{{ EMAIL }}</div>
         </div>
         <div class="logo-spacer"></div>
-        <pre class="logo-border">{{ LOGO_BORDER }}</pre>
+        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
       </div>
-      <div class="logo-bottom">{{ logoBoxBottom }}</div>
+      <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
           <div class="user-line">{{ turn.question }}</div>
           <div class="assistant-line">{{ turn.answer }}</div>
         </div>
       </div>
-      <div class="divider">{{ "─".repeat(charLength) }}</div>
+      <div class="divider">{{ "─".repeat(numChars) }}</div>
       <div class="terminal-input">
         <textarea
           id="terminal-input-area"
@@ -250,8 +238,8 @@ onUnmounted(() => {
           @keydown.tab.prevent
         ></textarea>
       </div>
-      <div class="divider">{{ "─".repeat(charLength) }}</div>
-      <span class="shortcut">? for shortcuts</span>
+      <div class="divider">{{ "─".repeat(numChars) }}</div>
+      <span class="shortcut">{{ SHORTCUT }}</span>
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
@@ -358,21 +346,21 @@ onUnmounted(() => {
   align-items: center;
 }
 
-.logo-top,
-.logo-bottom {
+.logo-frame-top,
+.logo-frame-bottom {
   color: var(--vp-c-brand-1);
   line-height: 1;
 }
 
-.logo-top-name {
+.logo-frame-top-name {
   color: var(--vp-c-brand-1);
 }
 
-.logo-top-version {
+.logo-frame-top-version {
   color: var(--vp-c-text-2);
 }
 
-.logo-border {
+.logo-frame-border {
   margin: 0;
   padding: 0;
   line-height: 1;

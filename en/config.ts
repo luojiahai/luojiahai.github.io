@@ -5,8 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     editLink: {
-      pattern:
-        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+      pattern: "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
       text: "Edit this page on GitHub",
     },
     footer: {

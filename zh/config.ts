@@ -5,8 +5,7 @@ export const config = defineConfig({
   themeConfig: {
     nav: nav(),
     editLink: {
-      pattern:
-        "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
+      pattern: "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
       text: "在 GitHub 上编辑此页面",
     },
     footer: {
@@ -24,8 +23,7 @@ export const config = defineConfig({
     },
     notFound: {
       title: "页面未找到",
-      quote:
-        "但如果你不改变方向，并且继续寻找，你可能最终会到达你所前往的地方。",
+      quote: "但如果你不改变方向，并且继续寻找，你可能最终会到达你所前往的地方。",
       linkLabel: "前往首页",
       linkText: "带我回首页",
     },

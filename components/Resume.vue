@@ -43,16 +43,12 @@ const RESUME: Record<string, Resume> = {
       {
         name: "Amazon Web Services (AWS)",
         location: "Sydney, New South Wales, Australia",
-        positions: [
-          { title: "Software Development Engineer", period: "2021 - 2024" },
-        ],
+        positions: [{ title: "Software Development Engineer", period: "2021 - 2024" }],
       },
       {
         name: "Deloitte",
         location: "Melbourne, Victoria, Australia",
-        positions: [
-          { title: "Software Development Consultant", period: "2020 - 2021" },
-        ],
+        positions: [{ title: "Software Development Consultant", period: "2020 - 2021" }],
       },
       {
         name: "The University of Melbourne",
@@ -140,22 +136,14 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
   <div class="resume">
     <h2 class="section-title">{{ data.sections.experience }}</h2>
     <ul class="experience-list">
-      <li
-        v-for="experience in data.experience"
-        :key="experience.name"
-        class="experience-item"
-      >
+      <li v-for="experience in data.experience" :key="experience.name" class="experience-item">
         <div class="experience-header">
           <span class="experience-name">{{ experience.name }}</span>
           <span class="separator">|</span>
           <span class="experience-location">{{ experience.location }}</span>
         </div>
         <ul class="positions-list">
-          <li
-            v-for="position in experience.positions"
-            :key="position.title"
-            class="position-item"
-          >
+          <li v-for="position in experience.positions" :key="position.title" class="position-item">
             <span class="position-title">{{ position.title }}</span>
             <span class="separator">|</span>
             <span class="position-period">{{ position.period }}</span>
@@ -165,22 +153,14 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
     </ul>
     <h2 class="section-title">{{ data.sections.education }}</h2>
     <ul class="education-list">
-      <li
-        v-for="institution in data.education"
-        :key="institution.name"
-        class="institution-item"
-      >
+      <li v-for="institution in data.education" :key="institution.name" class="institution-item">
         <div class="institution-header">
           <span class="institution-name">{{ institution.name }}</span>
           <span class="separator">|</span>
           <span class="institution-location">{{ institution.location }}</span>
         </div>
         <ul class="programs-list">
-          <li
-            v-for="program in institution.programs"
-            :key="program.degree"
-            class="program-item"
-          >
+          <li v-for="program in institution.programs" :key="program.degree" class="program-item">
             <span class="program-degree">{{ program.degree }}</span>
             <span class="separator">|</span>
             <span class="program-period">{{ program.period }}</span>

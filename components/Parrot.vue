@@ -42,9 +42,7 @@ const loadFrames = async (): Promise<void> => {
 
   const loadedFrames = await Promise.all(promises);
   originalFrames.value = loadedFrames;
-  flippedFrames.value = loadedFrames.map((frame) =>
-    frame.split("").reverse().join(""),
-  );
+  flippedFrames.value = loadedFrames.map((frame) => frame.split("").reverse().join(""));
 };
 
 const tick = (): void => {
@@ -76,9 +74,7 @@ onUnmounted(() => {
 
 <template>
   <div class="parrot">
-    <pre class="parrot-frame" :style="{ color: currentColor }">{{
-      frames[currentFrame]
-    }}</pre>
+    <pre class="parrot-frame" :style="{ color: currentColor }">{{ frames[currentFrame] }}</pre>
   </div>
 </template>
 

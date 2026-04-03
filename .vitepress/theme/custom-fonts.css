@@ -144,9 +144,8 @@
 
 :root {
   --vp-font-family-base:
-    "Inter", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Inter", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   --vp-font-family-mono:
-    "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas",
-    "Liberation Mono", "Courier New", monospace;
+    "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 }

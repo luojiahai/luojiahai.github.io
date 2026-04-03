@@ -45,10 +45,7 @@ function startTypewriter(el: Element) {
         function replace() {
           if (stopped) return;
           if (replaceIdx < maxLen) {
-            el.innerHTML =
-              nextWord.slice(0, replaceIdx) +
-              "_❚" +
-              prevWord.slice(replaceIdx + 1);
+            el.innerHTML = nextWord.slice(0, replaceIdx) + "_❚" + prevWord.slice(replaceIdx + 1);
             replaceIdx++;
             setTimeout(replace, 50);
           } else {
