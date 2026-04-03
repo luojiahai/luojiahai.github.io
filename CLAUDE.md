@@ -9,9 +9,11 @@ pnpm dev        # Start dev server with hot-reload
 pnpm build      # Build production site to .vitepress/dist
 pnpm preview    # Preview the built site locally
 pnpm format     # Format all files with Prettier
+pnpm lint       # Lint with ESLint (Vue + TypeScript + Prettier integration)
 ```
 
-Pre-commit hooks run Prettier via lint-staged via `simple-git-hooks` (not Husky).
+Pre-commit hooks run Prettier on all files and `eslint --fix` on `*.ts,*.vue` via lint-staged + `simple-git-hooks` (not Husky).
+Prettier config: `printWidth: 120`, double quotes, trailing commas, semicolons.
 
 ## Architecture
 
