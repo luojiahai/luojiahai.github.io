@@ -4,11 +4,12 @@ import { useData } from "vitepress";
 
 const { lang } = useData();
 
+const TITLE = "Code";
 const NAME = "luojiahai";
 const VERSION = "v3.14159";
 const HEADING = computed(() => (lang.value.startsWith("zh") ? "你好，世界！" : "Hello, World!"));
 const TAGLINE = computed(() =>
-  lang.value.startsWith("zh") ? "INTJ 性格 · Claude 用户" : "INTJ Personality · Claude User",
+  lang.value.startsWith("zh") ? "INTJ 人格 · 中国人" : "INTJ Personality · Native Chinese",
 );
 const EMAIL = "luo[at]jiahai.co";
 const SHORTCUT = computed(() => (lang.value.startsWith("zh") ? "? 获取快捷方式" : "? for shortcuts"));
@@ -21,7 +22,7 @@ const LOGO_ART = `
 ▌▄█ █ █
 `.trim();
 
-const LOGO_FRAME_BORDER = "|".repeat(8).split("").join("\n");
+const LOGO_FRAME_BORDER = "|".repeat(9).split("").join("\n");
 
 type Conversation = Array<{
   question: string;
@@ -191,11 +192,11 @@ onUnmounted(() => {
   <div class="terminal-frame">
     <div class="terminal-header">
       <div class="controls">
-        <span class="control-button close">×</span>
-        <span class="control-button minimize">−</span>
-        <span class="control-button maximize">+</span>
+        <span class="control-button close">●</span>
+        <span class="control-button minimize"></span>
+        <span class="control-button maximize"></span>
       </div>
-      <div class="title">✳ localhost (node)</div>
+      <div class="title">{{ TITLE }}</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -207,11 +208,15 @@ onUnmounted(() => {
       </div>
       <div class="logo" :style="{ width: logoFrameWidth }">
         <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
-        <pre class="logo-art">{{ LOGO_ART }}</pre>
-        <div class="logo-info">
-          <span class="logo-heading">{{ HEADING }}</span>
-          <div class="logo-tagline">{{ TAGLINE }}</div>
-          <div class="logo-tagline">{{ EMAIL }}</div>
+        <div class="logo-art-container">
+          <pre class="logo-art">{{ LOGO_ART }}</pre>
+        </div>
+        <div class="logo-info-container">
+          <div class="logo-heading">{{ HEADING }}</div>
+          <div class="logo-tagline-container">
+            <div class="logo-tagline">{{ TAGLINE }}</div>
+            <div class="logo-tagline">{{ EMAIL }}</div>
+          </div>
         </div>
         <div class="logo-spacer"></div>
         <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
@@ -239,7 +244,7 @@ onUnmounted(() => {
         ></textarea>
       </div>
       <div class="divider">{{ "─".repeat(numChars) }}</div>
-      <span class="shortcut">{{ SHORTCUT }}</span>
+      <div class="shortcut">{{ SHORTCUT }}</div>
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
@@ -258,13 +263,13 @@ onUnmounted(() => {
   margin: 48px -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.5;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 8px;
+  border: 1px solid var(--vp-c-gutter);
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -280,17 +285,22 @@ onUnmounted(() => {
 .terminal-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px 16px;
+  padding: 8px 8px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
 }
 
 .title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: 24px;
   color: var(--vp-c-text-2);
+  user-select: none;
+}
+
+.title::before {
+  content: "✳";
+  width: 8px;
+  margin-right: 6px;
+  font-size: 18px;
 }
 
 .controls {
@@ -303,16 +313,17 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   font-size: 12px;
-  border-radius: 50% !important;
+  border-radius: 50%;
   color: var(--vp-c-bg-soft);
   user-select: none;
 }
 
 .control-button.close {
   background-color: var(--color-blush);
+  color: color-mix(in hsl, var(--color-blush), black 50%);
 }
 
 .control-button.minimize {
@@ -328,7 +339,6 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: flex-start;
   padding: 8px 8px 1lh;
-  line-height: 1.3;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -375,25 +385,26 @@ onUnmounted(() => {
   flex: 1;
 }
 
-.logo-art {
-  margin: 24px 24px 0;
-  font-family: var(--vp-font-family-mono);
-  line-height: 1;
-  color: var(--vp-c-brand-1);
-  background: transparent;
-  border: none;
-  white-space: pre;
-  flex-shrink: 0;
+.logo-art-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 0 24px;
 }
 
-.logo-info {
+.logo-art {
+  margin: 0;
+  color: var(--vp-c-brand-1);
+  line-height: 1;
+}
+
+.logo-info-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0;
   margin-top: 24px;
   white-space: pre-wrap;
-  line-height: 1.5;
 }
 
 .logo-heading {
@@ -473,7 +484,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
+  padding: 0 8px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
