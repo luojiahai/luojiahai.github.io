@@ -19,7 +19,7 @@ const LOGO_ART = `
 █ █ █ ▌
 █ █ █ █
 ▌▄█ █ █
-`;
+`.trim();
 
 const LOGO_FRAME_BORDER = "|".repeat(8).split("").join("\n");
 
@@ -195,7 +195,7 @@ onUnmounted(() => {
         <span class="control-button minimize">−</span>
         <span class="control-button maximize">+</span>
       </div>
-      <div class="title">localhost</div>
+      <div class="title">✳ localhost (node)</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -343,7 +343,7 @@ onUnmounted(() => {
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo-frame-top,
@@ -376,10 +376,8 @@ onUnmounted(() => {
 }
 
 .logo-art {
-  margin: 0 2lh;
-  padding: 0;
+  margin: 24px 24px 0;
   font-family: var(--vp-font-family-mono);
-  font-size: 12px;
   line-height: 1;
   color: var(--vp-c-brand-1);
   background: transparent;
@@ -391,8 +389,9 @@ onUnmounted(() => {
 .logo-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0;
+  margin-top: 24px;
   white-space: pre-wrap;
   line-height: 1.5;
 }
@@ -450,7 +449,7 @@ onUnmounted(() => {
 }
 
 .input-area {
-  font-size: 14px;
+  font-size: inherit;
   width: inherit;
   margin: 0;
   color: inherit;
