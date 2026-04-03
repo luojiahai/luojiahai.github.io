@@ -20,6 +20,7 @@ This is a **VitePress** personal portfolio site with bilingual support (English/
 ### Content Organization
 
 Content is split by locale:
+
 - `en/` — English pages and data
 - `zh/` — Chinese pages and data
 - `root/` — Locale-agnostic pages (e.g., parrot easter egg)

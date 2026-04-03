@@ -23,7 +23,7 @@ type Resume = {
       period: string;
     }>;
   }>;
-}
+};
 
 const RESUME: Record<string, Resume> = {
   en: {
@@ -133,9 +133,7 @@ const RESUME: Record<string, Resume> = {
 };
 
 const { lang } = useData();
-const data = computed(
-  () => RESUME[lang.value.startsWith("zh") ? "zh" : "en"],
-);
+const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
 </script>
 
 <template>
@@ -148,7 +146,9 @@ const data = computed(
         class="experience-item"
       >
         <div class="experience-header">
-          <span class="experience-name"><strong>{{ experience.name }}</strong></span>
+          <span class="experience-name"
+            ><strong>{{ experience.name }}</strong></span
+          >
           <span class="separator">|</span>
           <span class="experience-location">{{ experience.location }}</span>
         </div>
@@ -173,7 +173,9 @@ const data = computed(
         class="institution-item"
       >
         <div class="institution-header">
-          <span class="institution-name"><strong>{{ institution.name }}</strong></span>
+          <span class="institution-name"
+            ><strong>{{ institution.name }}</strong></span
+          >
           <span class="separator">|</span>
           <span class="institution-location">{{ institution.location }}</span>
         </div>
