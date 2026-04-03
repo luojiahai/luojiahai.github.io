@@ -21,7 +21,7 @@ const LOGO_ART = `
 ▌▄█ █ █
 `;
 
-const LOGO_BORDER = "|\n|\n|\n|\n|\n|\n|\n|";
+const LOGO_BORDER = "|".repeat(8).split("").join("\n");
 
 type Conversation = Array<{
   question: string;
