@@ -13,13 +13,16 @@ const props = withDefaults(
   },
 );
 
-const LOGO_ART = `█ ▀ █
+const LOGO_ART = `
+█ ▀ █
 █ █ █
 █ █ █ ▌
 █ █ █ █
-▌▄█ █ █`;
+▌▄█ █ █
 
-const LOGO_BORDER = "|\n|\n|\n|\n|\n|\n|";
+`;
+
+const LOGO_BORDER = "|\n|\n|\n|\n|\n|\n|\n|";
 
 type Conversation = Array<{
   question: string;
@@ -175,7 +178,7 @@ const updateDivider = () => {
   if (measured > 0) {
     charWidth.value = measured;
     charLength.value =
-      Math.floor(terminalContent.value.clientWidth / measured) - 1; // subtract 1 to prevent overflow
+      Math.floor(terminalContent.value.clientWidth / measured) - 2; // subtract 2 to prevent overflow
   }
 };
 
