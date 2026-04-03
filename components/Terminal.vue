@@ -39,7 +39,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do?",
       answer:
-        "I'm a pragmatic programmer, building useful things. I'm deep into AI-native development workflows. I live in Claude Code.",
+        "I'm a programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
     },
     {
       question: "What do you do outside of programming?",
@@ -54,7 +54,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "你是做什么的？",
-      answer: "我是一名务实的程序员，专注构建实用的东西。我深度投入 AI 原生开发工作流，常驻 Claude Code。",
+      answer: "我是一名程序员，致力于构建有用的东西。我在深度实践 AI 原生工作流，常驻 Claude Code。",
     },
     {
       question: "编程之外你有什么爱好？",
