@@ -3,13 +3,13 @@ import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
 
 const { lang } = useData();
+const isZh = computed(() => lang.value.startsWith("zh"));
 
 const TITLE = "Code";
 const NAME = "luojiahai";
 const VERSION = "v3.14159";
-const isZh = computed(() => lang.value.startsWith("zh"));
 const HEADING = computed(() => (isZh.value ? "你好，世界！" : "Hello, World!"));
-const TAGLINE = "INTJ";
+const TAGLINE = computed(() => (isZh.value ? "INTJ · 软件工程师" : "INTJ · Member of Technical Staff"));
 const EMAIL = "luo[at]jiahai.co";
 const SHORTCUT = computed(() => (isZh.value ? "? 获取快捷方式" : "? for shortcuts"));
 
@@ -20,7 +20,7 @@ const LOGO_ART = `
 ▌▄█ █ █
 `.trim();
 
-const BORDER_SIDES = Array(9).fill("│").join("\n");
+const BORDER_SIDES = Array(8).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
 const LOGO_FRAME_BORDER_RIGHT = `╮\n${BORDER_SIDES}\n╯`;
 
@@ -410,13 +410,14 @@ onUnmounted(() => {
   margin: 0;
   line-height: 1;
   color: var(--vp-c-brand-1);
+  letter-spacing: -1px;
 }
 
 .logo-info-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 24px;
+  justify-content: center;
+  align-self: center;
   white-space: pre-wrap;
 }
 
