@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1320" width="1320" height="1320">
+  <rect width="100%" height="100%" fill="#faf9f5"/>
+
+  <!--
+    luojiahai — LJH monogram mark
+    ══════════════════════════════════════════════
+    Canvas       1320 × 1320px  (square)
+    Bar width    120px
+    Gap          80px
+
+    Horizontal layout (left = right margin = 300px):
+      L      x = 300 – 420
+      gap      420 – 500
+      J      x = 500 – 620
+      gap      620 – 700
+      H-left x = 700 – 820
+      gap      820 – 900
+      H-right x = 900 – 1020
+
+    Vertical: logo top = 280, logo bottom = 1040
+      top/bottom margin = (1320 − 760) / 2 = 280px
+      J tittle: 120 × 120px  (y = 280 – 400)
+      J gap (tittle→body): 80px  →  body top y = 480
+      Diagonal rule: Δx = Δy within each element (all 45°)
+        L cut:    Δx = 120 → Δy = 120  (diagonal starts y = 920)
+        J hook:   Δx =  80 → Δy =  80  (diagonal starts y = 960)
+        H-right:  Δx = 120 → Δy = 120
+    ══════════════════════════════════════════════
+  -->
+
+  <!-- L  ─  tall bar, bottom-right corner cut at 45° -->
+  <path d="M300,280 L420,280 L420,920 L300,1040Z" fill="#141413"/>
+
+  <!-- J tittle  ─  120 × 120px square -->
+  <path d="M500,280 L620,280 L620,400 L500,400Z" fill="#141413"/>
+
+  <!-- J body  ─  bar with 45° bottom-left hook spanning 1 gap (80px) left -->
+  <path d="M500,480 L620,480 L620,1040 L420,1040 L500,960Z" fill="#141413"/>
+
+  <!-- H-left  ─  full-height rectangle -->
+  <path d="M700,280 L820,280 L820,1040 L700,1040Z" fill="#141413"/>
+
+  <!-- H-right  ─  45° diagonal top -->
+  <path d="M900,560 L1020,680 L1020,1040 L900,1040Z" fill="#141413"/>
+</svg>

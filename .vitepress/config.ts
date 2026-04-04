@@ -30,7 +30,8 @@ export default defineConfig({
   },
   /* prettier-ignore */
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png', sizes: '32x32' }],
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon-16x16.png', sizes: '16x16' }],
@@ -44,11 +45,14 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: 'luojiahai' }],
     ['meta', { property: 'og:title', content: 'luojiahai' }],
     ['meta', { property: 'og:description', content: 'Hello, World!' }],
-    ['meta', { property: 'og:image', content: 'https://luojiahai.com/image.png' }],
+    ['meta', { property: 'og:image', content: 'https://luojiahai.com/apple-touch-icon.png' }],
     ['meta', { property: 'og:url', content: 'https://luojiahai.com/' }],
   ],
   themeConfig: {
-    logo: "/logo.svg",
+    logo: {
+      light: "/logo-light.svg",
+      dark: "/logo-dark.svg",
+    },
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },
