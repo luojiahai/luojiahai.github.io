@@ -191,12 +191,12 @@ onUnmounted(() => {
 <template>
   <div class="terminal-frame">
     <div class="terminal-header">
-      <div class="controls">
-        <span class="control-button close">●</span>
-        <span class="control-button minimize"></span>
-        <span class="control-button maximize"></span>
+      <div class="header-controls">
+        <span class="header-control-button close">●</span>
+        <span class="header-control-button minimize"></span>
+        <span class="header-control-button maximize"></span>
       </div>
-      <div class="title">{{ TITLE }}</div>
+      <div class="header-title">{{ TITLE }}</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -232,7 +232,7 @@ onUnmounted(() => {
           <div class="assistant-line">{{ turn.answer }}</div>
         </div>
       </div>
-      <div class="divider">{{ "─".repeat(numChars) }}</div>
+      <div class="input-border">{{ "─".repeat(numChars) }}</div>
       <div class="terminal-input">
         <textarea
           id="terminal-input-area"
@@ -247,8 +247,8 @@ onUnmounted(() => {
           @keydown.tab.prevent
         ></textarea>
       </div>
-      <div class="divider">{{ "─".repeat(numChars) }}</div>
-      <div class="shortcut">{{ SHORTCUT }}</div>
+      <div class="input-border">{{ "─".repeat(numChars) }}</div>
+      <div class="input-shortcut">{{ SHORTCUT }}</div>
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
@@ -294,26 +294,26 @@ onUnmounted(() => {
   position: relative;
 }
 
-.title {
+.header-title {
   margin-left: 24px;
   color: var(--vp-c-text-2);
   user-select: none;
 }
 
-.title::before {
+.header-title::before {
   content: "✳";
   width: 8px;
   margin-right: 6px;
   font-size: 16px;
 }
 
-.controls {
+.header-controls {
   display: flex;
   gap: 8px;
   flex-shrink: 0;
 }
 
-.control-button {
+.header-control-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -325,16 +325,16 @@ onUnmounted(() => {
   user-select: none;
 }
 
-.control-button.close {
+.header-control-button.close {
   background-color: var(--color-blush);
   color: color-mix(in hsl, var(--color-blush), black 50%);
 }
 
-.control-button.minimize {
+.header-control-button.minimize {
   background-color: var(--color-egg);
 }
 
-.control-button.maximize {
+.header-control-button.maximize {
   background-color: var(--color-olive);
 }
 
@@ -462,7 +462,7 @@ onUnmounted(() => {
   pointer-events: none;
 }
 
-.divider {
+.input-border {
   color: var(--vp-c-text-3);
   line-height: 1;
 }
@@ -488,7 +488,7 @@ onUnmounted(() => {
   scrollbar-width: none;
 }
 
-.shortcut {
+.input-shortcut {
   color: var(--vp-c-text-2);
   padding: 0 20px;
 }
