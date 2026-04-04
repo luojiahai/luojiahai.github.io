@@ -9,7 +9,7 @@ const NAME = "luojiahai";
 const VERSION = "v3.14159";
 const HEADING = computed(() => (lang.value.startsWith("zh") ? "你好，世界！" : "Hello, World!"));
 const TAGLINE = computed(() =>
-  lang.value.startsWith("zh") ? "INTJ 人格 · 中国人" : "INTJ Personality · Native Chinese",
+  lang.value.startsWith("zh") ? "INTJ" : "INTJ",
 );
 const EMAIL = "luo[at]jiahai.co";
 const SHORTCUT = computed(() => (lang.value.startsWith("zh") ? "? 获取快捷方式" : "? for shortcuts"));
