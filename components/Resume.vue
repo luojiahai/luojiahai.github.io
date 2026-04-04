@@ -178,7 +178,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 .item-list {
   list-style-type: none;
   padding-left: 0;
-  color: var(--vp-c-text-2);
+  color: var(--foreground-alternative);
 }
 
 .item {

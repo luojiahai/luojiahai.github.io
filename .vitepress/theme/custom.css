@@ -42,9 +42,9 @@
   --foreground-primary: var(--color-gray-950);
   --foreground-secondary: var(--color-gray-750);
   --foreground-tertiary: var(--color-gray-600);
-  --foreground-alternative: var(--color-gray-850);
 
-  --grid: var(--color-gray-150);
+  --border-grid: var(--color-gray-150);
+  --foreground-alternative: var(--color-gray-850);
 }
 
 .dark {
@@ -57,9 +57,9 @@
   --foreground-primary: var(--color-gray-050);
   --foreground-secondary: var(--color-gray-400);
   --foreground-tertiary: var(--color-gray-500);
-  --foreground-alternative: var(--color-gray-150);
 
-  --grid: var(--color-gray-850);
+  --border-grid: var(--color-gray-850);
+  --foreground-alternative: var(--color-gray-300);
 }
 
 :root {
@@ -135,8 +135,8 @@
 /* prettier-ignore */
 .VPHome .VPHero {
   background-image:
-    linear-gradient(90deg, var(--grid) 1px, #0000 1px),
-    linear-gradient(var(--grid) 1px, #0000 1px);
+    linear-gradient(90deg, var(--border-grid) 1px, #0000 1px),
+    linear-gradient(var(--border-grid) 1px, #0000 1px);
   background-size: 16px 16px;
   border-bottom: 1px solid var(--vp-c-divider);
 }
