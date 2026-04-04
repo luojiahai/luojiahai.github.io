@@ -21,7 +21,8 @@ const LOGO_ART = `
 ▌▄█ █ █
 `.trim();
 
-const LOGO_FRAME_BORDER = "|".repeat(9).split("").join("\n");
+const LOGO_FRAME_BORDER_LEFT = "╭\n" + Array(9).fill("│").join("\n") + "\n╰";
+const LOGO_FRAME_BORDER_RIGHT = "╮\n" + Array(9).fill("│").join("\n") + "\n╯";
 
 type Conversation = Array<{
   question: string;
@@ -147,15 +148,15 @@ const logoFrameTop = computed(() => {
   const label = ` ${NAME} ${VERSION} `;
   const fill = numChars.value - 5 - label.length;
   return {
-    left: `╭───` + " ",
+    left: `─── `,
     name: NAME,
     version: VERSION,
-    right: " " + "─".repeat(Math.max(0, fill)) + "╮",
+    right: " " + "─".repeat(Math.max(0, fill)),
   };
 });
 
 const logoFrameBottom = computed(() => {
-  return "╰" + "─".repeat(Math.max(0, numChars.value - 2)) + "╯";
+  return "─".repeat(Math.max(0, numChars.value - 2));
 });
 
 const logoFrameWidth = computed(() => (charWidth.value > 0 ? `${numChars.value * charWidth.value}px` : "100%"));
@@ -199,28 +200,32 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <!-- prettier-ignore -->
-      <div class="logo-frame-top">
-        <span>{{ logoFrameTop.left }}</span>
-        <span class="logo-frame-top-name">{{ logoFrameTop.name }}</span>&nbsp;<span class="logo-frame-top-version">{{ logoFrameTop.version }}</span>
-        <span>{{ logoFrameTop.right }}</span>
-      </div>
-      <div class="logo" :style="{ width: logoFrameWidth }">
-        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
-        <div class="logo-art-container">
-          <pre class="logo-art">{{ LOGO_ART }}</pre>
-        </div>
-        <div class="logo-info-container">
-          <div class="logo-heading">{{ HEADING }}</div>
-          <div class="logo-tagline-container">
-            <div class="logo-tagline">{{ TAGLINE }}</div>
-            <div class="logo-tagline">{{ EMAIL }}</div>
+      <div class="logo-frame" :style="{ width: logoFrameWidth }">
+        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</pre>
+        <div class="logo-inner">
+          <!-- prettier-ignore -->
+          <div class="logo-frame-top">
+            <span>{{ logoFrameTop.left }}</span>
+            <span class="logo-frame-top-name">{{ logoFrameTop.name }}</span>&nbsp;<span class="logo-frame-top-version">{{ logoFrameTop.version }}</span>
+            <span>{{ logoFrameTop.right }}</span>
           </div>
+          <div class="logo">
+            <div class="logo-art-container">
+              <pre class="logo-art">{{ LOGO_ART }}</pre>
+            </div>
+            <div class="logo-info-container">
+              <div class="logo-heading">{{ HEADING }}</div>
+              <div class="logo-tagline-container">
+                <div class="logo-tagline">{{ TAGLINE }}</div>
+                <div class="logo-tagline">{{ EMAIL }}</div>
+              </div>
+            </div>
+            <div class="logo-spacer"></div>
+          </div>
+          <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
         </div>
-        <div class="logo-spacer"></div>
-        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER }}</pre>
+        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</pre>
       </div>
-      <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
           <div class="user-line">{{ turn.question }}</div>
@@ -299,7 +304,7 @@ onUnmounted(() => {
   content: "✳";
   width: 8px;
   margin-right: 6px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .controls {
@@ -350,15 +355,28 @@ onUnmounted(() => {
   display: none;
 }
 
+.logo-frame {
+  display: flex;
+  align-items: stretch;
+}
+
+.logo-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
 .logo {
   display: flex;
   align-items: flex-start;
+  flex: 1;
 }
 
 .logo-frame-top,
 .logo-frame-bottom {
-  color: var(--vp-c-brand-1);
   line-height: 1;
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-name {
@@ -374,10 +392,6 @@ onUnmounted(() => {
   padding: 0;
   line-height: 1;
   color: var(--vp-c-brand-1);
-  background: transparent;
-  border: none;
-  white-space: pre;
-  flex-shrink: 0;
 }
 
 .logo-spacer {
