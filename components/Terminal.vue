@@ -380,7 +380,7 @@ onUnmounted(() => {
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-version {
@@ -409,6 +409,7 @@ onUnmounted(() => {
 .logo-art {
   margin: 0;
   line-height: 1;
+  color: var(--vp-c-brand-1);
 }
 
 .logo-info-container {
