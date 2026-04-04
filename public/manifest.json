@@ -1,19 +1,22 @@
 {
   "name": "luojiahai",
   "short_name": "luojiahai",
+  "background_color": "hsl(49 26.8% 92%)",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
-  ],
-  "theme_color": "#c46686",
-  "background_color": "#1f1e1d",
-  "display": "standalone"
+  ]
 }
