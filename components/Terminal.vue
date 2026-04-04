@@ -7,12 +7,11 @@ const { lang } = useData();
 const TITLE = "Code";
 const NAME = "luojiahai";
 const VERSION = "v3.14159";
-const HEADING = computed(() => (lang.value.startsWith("zh") ? "你好，世界！" : "Hello, World!"));
-const TAGLINE = computed(() =>
-  lang.value.startsWith("zh") ? "INTJ" : "INTJ",
-);
+const isZh = computed(() => lang.value.startsWith("zh"));
+const HEADING = computed(() => (isZh.value ? "你好，世界！" : "Hello, World!"));
+const TAGLINE = "INTJ";
 const EMAIL = "luo[at]jiahai.co";
-const SHORTCUT = computed(() => (lang.value.startsWith("zh") ? "? 获取快捷方式" : "? for shortcuts"));
+const SHORTCUT = computed(() => (isZh.value ? "? 获取快捷方式" : "? for shortcuts"));
 
 const LOGO_ART = `
 █ ▀ █
@@ -21,8 +20,9 @@ const LOGO_ART = `
 ▌▄█ █ █
 `.trim();
 
-const LOGO_FRAME_BORDER_LEFT = "╭\n" + Array(9).fill("│").join("\n") + "\n╰";
-const LOGO_FRAME_BORDER_RIGHT = "╮\n" + Array(9).fill("│").join("\n") + "\n╯";
+const BORDER_SIDES = Array(9).fill("│").join("\n");
+const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
+const LOGO_FRAME_BORDER_RIGHT = `╮\n${BORDER_SIDES}\n╯`;
 
 type Conversation = Array<{
   question: string;
@@ -63,7 +63,7 @@ const CONVERSATION: Record<string, Conversation> = {
   ],
 };
 
-const conversation = computed(() => CONVERSATION[lang.value.startsWith("zh") ? "zh" : "en"]);
+const conversation = computed(() => CONVERSATION[isZh.value ? "zh" : "en"]);
 
 const language = ref("");
 const deviceOS = ref("");
@@ -72,6 +72,7 @@ const currentTime = ref(new Date());
 let timer: ReturnType<typeof setInterval>;
 
 const pad = (n: number) => String(n).padStart(2, "0");
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 const dateTime = computed(() => {
   const date = currentTime.value;
@@ -80,7 +81,6 @@ const dateTime = computed(() => {
   const offsetMinutes = Math.abs(offset) % 60;
   const sign = offset >= 0 ? "+" : "-";
   const utcOffset = offsetMinutes > 0 ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}` : `UTC${sign}${offsetHours}`;
-  const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
 });
 

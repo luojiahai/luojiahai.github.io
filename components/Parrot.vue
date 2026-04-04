@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const TOTAL_FRAMES = 10;
+const FRAME_INTERVAL_MS = 80;
 const COLORS = [
   "var(--color-fig)",
   "var(--color-clay)",
@@ -13,22 +14,14 @@ const COLORS = [
 
 const currentFrame = ref(0);
 const currentColorIndex = ref(0);
-const originalFrames = ref<string[]>([]);
-const flippedFrames = ref<string[]>([]);
+const frames = ref<string[]>([]);
 
 let animationInterval: number | undefined;
 
-const frames = computed(() => originalFrames.value);
-
 const currentColor = computed(() => COLORS[currentColorIndex.value]);
 
-const getRandomColorIndex = (exclude: number): number => {
-  let index: number;
-  do {
-    index = Math.floor(Math.random() * COLORS.length);
-  } while (index === exclude && COLORS.length > 1);
-  return index;
-};
+const getRandomColorIndex = (exclude: number): number =>
+  (exclude + 1 + Math.floor(Math.random() * (COLORS.length - 1))) % COLORS.length;
 
 const loadFrames = async (): Promise<void> => {
   const promises = Array.from({ length: TOTAL_FRAMES }, (_, i) =>
@@ -40,9 +33,7 @@ const loadFrames = async (): Promise<void> => {
       }),
   );
 
-  const loadedFrames = await Promise.all(promises);
-  originalFrames.value = loadedFrames;
-  flippedFrames.value = loadedFrames.map((frame) => frame.split("").reverse().join(""));
+  frames.value = await Promise.all(promises);
 };
 
 const tick = (): void => {
@@ -52,7 +43,7 @@ const tick = (): void => {
 
 const startAnimation = (): void => {
   if (animationInterval !== undefined) return;
-  animationInterval = window.setInterval(tick, 70);
+  animationInterval = window.setInterval(tick, FRAME_INTERVAL_MS);
 };
 
 const stopAnimation = (): void => {

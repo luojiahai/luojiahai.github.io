@@ -30,22 +30,21 @@ function startTypewriter(el: Element) {
     if (stopped) return;
     const word = WORDS[wordIdx] + "...";
     if (charIdx < word.length) {
-      el.innerHTML = word.slice(0, charIdx + 1) + "_❚";
+      el.textContent = word.slice(0, charIdx + 1) + "_❚";
       charIdx++;
       setTimeout(tick, 50);
     } else {
-      el.innerHTML = word;
+      el.textContent = word;
       setTimeout(() => {
         if (stopped) return;
-        const prevWord = word;
         wordIdx = (wordIdx + 1) % WORDS.length;
         const nextWord = WORDS[wordIdx] + "...";
-        const maxLen = Math.max(prevWord.length, nextWord.length);
+        const maxLen = Math.max(word.length, nextWord.length);
         let replaceIdx = 1;
         function replace() {
           if (stopped) return;
           if (replaceIdx < maxLen) {
-            el.innerHTML = nextWord.slice(0, replaceIdx) + "_❚" + prevWord.slice(replaceIdx + 1);
+            el.textContent = nextWord.slice(0, replaceIdx) + "_❚" + word.slice(replaceIdx + 1);
             replaceIdx++;
             setTimeout(replace, 50);
           } else {

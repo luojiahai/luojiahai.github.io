@@ -2,172 +2,141 @@
 import { computed } from "vue";
 import { useData } from "vitepress";
 
-type Resume = {
-  sections: {
-    experience: string;
-    education: string;
-  };
-  experience: Array<{
-    name: string;
-    location: string;
-    positions: Array<{
-      title: string;
-      period: string;
-    }>;
-  }>;
-  education: Array<{
-    name: string;
-    location: string;
-    programs: Array<{
-      degree: string;
-      period: string;
-    }>;
-  }>;
+type ResumeEntry = {
+  name: string;
+  location: string;
+  items: Array<{ label: string; period: string }>;
 };
 
-const RESUME: Record<string, Resume> = {
-  en: {
-    sections: {
-      experience: "Experience",
-      education: "Education",
+type ResumeSection = {
+  title: string;
+  entries: ResumeEntry[];
+};
+
+const RESUME: Record<string, ResumeSection[]> = {
+  en: [
+    {
+      title: "Experience",
+      entries: [
+        {
+          name: "REA Group",
+          location: "Melbourne, Victoria, Australia",
+          items: [
+            { label: "Senior Software Engineer", period: "2025 - Present" },
+            { label: "Software Engineer", period: "2024 - 2025" },
+          ],
+        },
+        {
+          name: "Amazon Web Services (AWS)",
+          location: "Sydney, New South Wales, Australia",
+          items: [{ label: "Software Development Engineer", period: "2021 - 2024" }],
+        },
+        {
+          name: "Deloitte",
+          location: "Melbourne, Victoria, Australia",
+          items: [{ label: "Software Development Consultant", period: "2020 - 2021" }],
+        },
+        {
+          name: "The University of Melbourne",
+          location: "Melbourne, Victoria, Australia",
+          items: [{ label: "Teaching Assistant", period: "2018 - 2020" }],
+        },
+      ],
     },
-    experience: [
-      {
-        name: "REA Group",
-        location: "Melbourne, Victoria, Australia",
-        positions: [
-          { title: "Senior Software Engineer", period: "2025 - Present" },
-          { title: "Software Engineer", period: "2024 - 2025" },
-        ],
-      },
-      {
-        name: "Amazon Web Services (AWS)",
-        location: "Sydney, New South Wales, Australia",
-        positions: [{ title: "Software Development Engineer", period: "2021 - 2024" }],
-      },
-      {
-        name: "Deloitte",
-        location: "Melbourne, Victoria, Australia",
-        positions: [{ title: "Software Development Consultant", period: "2020 - 2021" }],
-      },
-      {
-        name: "The University of Melbourne",
-        location: "Melbourne, Victoria, Australia",
-        positions: [{ title: "Teaching Assistant", period: "2018 - 2020" }],
-      },
-    ],
-    education: [
-      {
-        name: "The University of Melbourne",
-        location: "Melbourne, Victoria, Australia",
-        programs: [
-          {
-            degree: "Master of Science (Computer Science)",
-            period: "2018 - 2020",
-          },
-          { degree: "Bachelor of Science", period: "2015 - 2018" },
-        ],
-      },
-      {
-        name: "Peking University",
-        location: "Beijing, China",
-        programs: [
-          {
-            degree: "Summer School International Program",
-            period: "Summer 2016",
-          },
-        ],
-      },
-    ],
-  },
-  zh: {
-    sections: {
-      experience: "工作经历",
-      education: "教育背景",
+    {
+      title: "Education",
+      entries: [
+        {
+          name: "The University of Melbourne",
+          location: "Melbourne, Victoria, Australia",
+          items: [
+            { label: "Master of Science (Computer Science)", period: "2018 - 2020" },
+            { label: "Bachelor of Science", period: "2015 - 2018" },
+          ],
+        },
+        {
+          name: "Peking University",
+          location: "Beijing, China",
+          items: [{ label: "Summer School International Program", period: "Summer 2016" }],
+        },
+      ],
     },
-    experience: [
-      {
-        name: "REA 集团",
-        location: "澳大利亚墨尔本",
-        positions: [
-          { title: "高级软件工程师", period: "2025 - present" },
-          { title: "软件工程师", period: "2024 - 2025" },
-        ],
-      },
-      {
-        name: "亚马逊云科技（AWS）",
-        location: "澳大利亚悉尼",
-        positions: [{ title: "软件开发工程师", period: "2021 - 2024" }],
-      },
-      {
-        name: "德勤",
-        location: "澳大利亚墨尔本",
-        positions: [{ title: "软件开发顾问", period: "2020 - 2021" }],
-      },
-      {
-        name: "墨尔本大学",
-        location: "澳大利亚墨尔本",
-        positions: [{ title: "教学助理", period: "2018 - 2020" }],
-      },
-    ],
-    education: [
-      {
-        name: "墨尔本大学",
-        location: "澳大利亚墨尔本",
-        programs: [
-          { degree: "理学硕士（计算机科学）", period: "2018 - 2020" },
-          { degree: "理学学士", period: "2015 - 2018" },
-        ],
-      },
-      {
-        name: "北京大学",
-        location: "中国北京",
-        programs: [{ degree: "暑期学校国际课程", period: "2016 夏" }],
-      },
-    ],
-  },
+  ],
+  zh: [
+    {
+      title: "工作经历",
+      entries: [
+        {
+          name: "REA 集团",
+          location: "澳大利亚墨尔本",
+          items: [
+            { label: "高级软件工程师", period: "2025 - Present" },
+            { label: "软件工程师", period: "2024 - 2025" },
+          ],
+        },
+        {
+          name: "亚马逊云科技（AWS）",
+          location: "澳大利亚悉尼",
+          items: [{ label: "软件开发工程师", period: "2021 - 2024" }],
+        },
+        {
+          name: "德勤",
+          location: "澳大利亚墨尔本",
+          items: [{ label: "软件开发顾问", period: "2020 - 2021" }],
+        },
+        {
+          name: "墨尔本大学",
+          location: "澳大利亚墨尔本",
+          items: [{ label: "教学助理", period: "2018 - 2020" }],
+        },
+      ],
+    },
+    {
+      title: "教育背景",
+      entries: [
+        {
+          name: "墨尔本大学",
+          location: "澳大利亚墨尔本",
+          items: [
+            { label: "理学硕士（计算机科学）", period: "2018 - 2020" },
+            { label: "理学学士", period: "2015 - 2018" },
+          ],
+        },
+        {
+          name: "北京大学",
+          location: "中国北京",
+          items: [{ label: "暑期学校国际课程", period: "2016 夏" }],
+        },
+      ],
+    },
+  ],
 };
 
 const { lang } = useData();
-const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
+const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
 </script>
 
 <template>
   <div class="resume">
-    <h2 class="section-title">{{ data.sections.experience }}</h2>
-    <ul class="experience-list">
-      <li v-for="experience in data.experience" :key="experience.name" class="experience-item">
-        <div class="experience-header">
-          <span class="experience-name">{{ experience.name }}</span>
-          <span class="separator">|</span>
-          <span class="experience-location">{{ experience.location }}</span>
-        </div>
-        <ul class="positions-list">
-          <li v-for="position in experience.positions" :key="position.title" class="position-item">
-            <span class="position-title">{{ position.title }}</span>
+    <template v-for="section in sections" :key="section.title">
+      <h2 class="section-title">{{ section.title }}</h2>
+      <ul class="entry-list">
+        <li v-for="entry in section.entries" :key="entry.name" class="entry-item">
+          <div class="entry-header">
+            <span class="entry-name">{{ entry.name }}</span>
             <span class="separator">|</span>
-            <span class="position-period">{{ position.period }}</span>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <h2 class="section-title">{{ data.sections.education }}</h2>
-    <ul class="education-list">
-      <li v-for="institution in data.education" :key="institution.name" class="institution-item">
-        <div class="institution-header">
-          <span class="institution-name">{{ institution.name }}</span>
-          <span class="separator">|</span>
-          <span class="institution-location">{{ institution.location }}</span>
-        </div>
-        <ul class="programs-list">
-          <li v-for="program in institution.programs" :key="program.degree" class="program-item">
-            <span class="program-degree">{{ program.degree }}</span>
-            <span class="separator">|</span>
-            <span class="program-period">{{ program.period }}</span>
-          </li>
-        </ul>
-      </li>
-    </ul>
+            <span class="entry-location">{{ entry.location }}</span>
+          </div>
+          <ul class="item-list">
+            <li v-for="item in entry.items" :key="item.label" class="item">
+              <span class="item-label">{{ item.label }}</span>
+              <span class="separator">|</span>
+              <span class="item-period">{{ item.period }}</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </template>
   </div>
 </template>
 
@@ -180,8 +149,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
   display: none;
 }
 
-.experience-list,
-.education-list {
+.entry-list {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -189,42 +157,36 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
   gap: 16px;
 }
 
-.experience-header,
-.institution-header {
+.entry-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.experience-name,
-.institution-name {
+.entry-name {
   flex: 1;
   min-width: 0;
   font-weight: bold;
 }
 
-.experience-location,
-.institution-location {
+.entry-location {
   flex: 1;
   min-width: 0;
   text-align: right;
 }
 
-.positions-list,
-.programs-list {
+.item-list {
   list-style-type: none;
   padding-left: 0;
   color: var(--vp-c-text-2);
 }
 
-.position-item,
-.program-item {
+.item {
   display: flex;
   justify-content: space-between;
 }
 
-.position-period,
-.program-period {
+.item-period {
   white-space: nowrap;
 }
 
@@ -234,8 +196,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
     color: var(--vp-c-divider);
   }
 
-  .experience-list,
-  .education-list {
+  .entry-list {
     white-space: nowrap;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -243,26 +204,22 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
     scrollbar-width: none;
   }
 
-  .experience-header,
-  .institution-header {
+  .entry-header {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 12px;
   }
 
-  .experience-name,
-  .institution-name {
+  .entry-name {
     flex: none;
   }
 
-  .experience-location,
-  .institution-location {
+  .entry-location {
     text-align: left;
   }
 
-  .position-item,
-  .program-item {
+  .item {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
@@ -270,8 +227,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
   }
 }
 
-.experience-name::before,
-.institution-name::before {
+.entry-name::before {
   font-family: var(--vp-font-family-mono);
   content: "❯";
   display: inline-flex;
@@ -279,8 +235,7 @@ const data = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"]);
   margin-right: 12px;
 }
 
-.position-title::before,
-.program-degree::before {
+.item-label::before {
   font-family: var(--vp-font-family-mono);
   content: "●";
   display: inline-flex;
