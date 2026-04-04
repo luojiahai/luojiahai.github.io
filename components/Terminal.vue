@@ -16,7 +16,6 @@ const SHORTCUT = computed(() => (lang.value.startsWith("zh") ? "? 获取快捷�
 
 const LOGO_ART = `
 █ ▀ █
-█ █ █
 █ █ █ ▌
 █ █ █ █
 ▌▄█ █ █
@@ -363,7 +362,7 @@ onUnmounted(() => {
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-version {
@@ -395,7 +394,6 @@ onUnmounted(() => {
 
 .logo-art {
   margin: 0;
-  color: var(--vp-c-brand-1);
   line-height: 1;
 }
 
@@ -440,7 +438,7 @@ onUnmounted(() => {
 .assistant-line {
   display: flex;
   align-items: baseline;
-  color: var(--vp-c-text-2);
+  color: var(--foreground-alternative);
 }
 
 .char-measure {

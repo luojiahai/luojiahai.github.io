@@ -42,6 +42,7 @@
   --foreground-primary: var(--color-gray-950);
   --foreground-secondary: var(--color-gray-750);
   --foreground-tertiary: var(--color-gray-600);
+  --foreground-alternative: var(--color-gray-850);
 
   --grid: var(--color-gray-150);
 }
@@ -56,6 +57,7 @@
   --foreground-primary: var(--color-gray-050);
   --foreground-secondary: var(--color-gray-400);
   --foreground-tertiary: var(--color-gray-500);
+  --foreground-alternative: var(--color-gray-150);
 
   --grid: var(--color-gray-850);
 }
@@ -113,17 +115,21 @@
 }
 
 :root {
-  --vp-c-brand-1: var(--color-fig);
-  --vp-c-brand-2: color-mix(in hsl, var(--color-fig), black 10%);
-  --vp-c-brand-3: color-mix(in hsl, var(--color-fig), black 20%);
-  --vp-c-brand-soft: rgb(from var(--color-fig) r g b / 16%);
+  --vp-c-brand-1: var(--color-clay);
+  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
+  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
+  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 16%);
 
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
 .VPNavBar {
   background-color: var(--vp-nav-bg-color);
-  border-bottom: 1px solid var(--vp-c-brand-1);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBar .divider {
+  display: none;
 }
 
 /* prettier-ignore */
@@ -132,7 +138,7 @@
     linear-gradient(90deg, var(--grid) 1px, #0000 1px),
     linear-gradient(var(--grid) 1px, #0000 1px);
   background-size: 16px 16px;
-  border-bottom: 1px solid var(--vp-c-brand-1);
+  border-bottom: 1px solid var(--vp-c-divider);
 }
 
 .VPHome .VPHero .hello {
@@ -144,8 +150,11 @@
   display: inline-flex;
   justify-content: center;
   width: 1ch;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
   margin-right: 12px;
+}
+
+.VPHome .VPHero .thinking {
+  color: var(--vp-c-brand-1);
 }
 
 .VPHome .VPHero .thinking::before {
@@ -154,7 +163,6 @@
   justify-content: center;
   width: 1ch;
   animation: flower 1.44s steps(1) infinite;
-  -webkit-text-fill-color: var(--vp-c-brand-1);
   margin-right: 12px;
 }
 
