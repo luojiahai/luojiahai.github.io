@@ -94,7 +94,8 @@ const OS_PATTERNS = [
 ] as const;
 
 const language = ref("");
-const deviceOS = ref("");
+const device = ref("");
+const operatingSystem = ref("");
 const browser = ref("");
 
 const detectBrowser = (ua: string): string => {
@@ -127,7 +128,8 @@ const detectDevice = (ua: string): string => {
 const initSystemInfo = (): void => {
   const ua = navigator.userAgent;
   language.value = navigator.language || "Unknown";
-  deviceOS.value = `${detectDevice(ua)} ${detectOS(ua)}`;
+  device.value = detectDevice(ua);
+  operatingSystem.value = detectOS(ua);
   browser.value = detectBrowser(ua);
 };
 
@@ -239,11 +241,13 @@ onUnmounted(() => {
       <div class="input-border">{{ "─".repeat(numChars) }}</div>
     </div>
     <div class="terminal-footer">
-      <span>{{ language }}</span>
+      <span>Language: {{ language }}</span>
       <span class="separator">|</span>
-      <span>{{ deviceOS }}</span>
+      <span>Device: {{ device }}</span>
       <span class="separator">|</span>
-      <span>{{ browser }}</span>
+      <span>Operating System: {{ operatingSystem }}</span>
+      <span class="separator">|</span>
+      <span>Browser: {{ browser }}</span>
     </div>
   </div>
 </template>
