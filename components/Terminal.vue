@@ -289,7 +289,6 @@ onUnmounted(() => {
 .header-title {
   color: var(--vp-c-text-2);
   word-spacing: -2px;
-  user-select: none;
 }
 
 .header-title::before {
@@ -313,7 +312,6 @@ onUnmounted(() => {
   font-size: 12px;
   border-radius: 50%;
   color: var(--vp-c-bg-soft);
-  user-select: none;
 }
 
 .header-control-button.close {
