@@ -42,6 +42,11 @@ const CONVERSATION: Record<string, Conversation> = {
         "I'm a programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
     },
     {
+      question: "What are you working on?",
+      answer:
+        "I'm working on an interesting project, check it out at http://localhost:5173.",
+    },
+    {
       question: "What do you do outside of programming?",
       answer:
         "Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
@@ -55,6 +60,10 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "你是做什么的？",
       answer: "我是一名程序员，致力于构建有用的东西。我在深度实践 AI 原生工作流，常驻 Claude Code。",
+    },
+    {
+      question: "你在做什么项目？",
+      answer: "我在做一个有趣的项目，访问 http://localhost:5173 看看吧。",
     },
     {
       question: "编程之外你有什么爱好？",
