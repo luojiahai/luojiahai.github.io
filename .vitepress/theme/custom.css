@@ -126,12 +126,11 @@
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
-.VPNavBar {
-  background-color: var(--vp-nav-bg-color);
+.VPNavBar:not(.has-sidebar) {
   border-bottom: 1px solid var(--vp-c-gutter);
 }
 
-.VPNavBar .divider {
+.VPNavBar:not(.has-sidebar) .divider {
   display: none;
 }
 
