@@ -4,7 +4,7 @@ title: luojiahai
 
 hero:
   name: luojiahai
-  tagline: <div class="hello">Hello, World!</div><div class="thinking"></div>
+  tagline: <span class="hello">Hello, World!</span><span class="thinking"></span>
 ---
 
 <Terminal />
