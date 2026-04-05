@@ -452,7 +452,7 @@ onUnmounted(() => {
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 1lh;
+  gap: 0.5lh;
 }
 
 .user-line {
