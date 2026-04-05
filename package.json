@@ -25,6 +25,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "debug": "DEBUG=true pnpm run build && pnpm run preview",
     "format": "prettier --write .",
     "lint": "eslint ."
   },

@@ -73,25 +73,6 @@ const CONVERSATION: Record<string, Conversation> = {
 
 const conversation = computed(() => CONVERSATION[isZh.value ? "zh" : "en"]);
 
-const language = ref("");
-const deviceOS = ref("");
-const browser = ref("");
-const currentTime = ref(new Date());
-let timer: ReturnType<typeof setInterval>;
-
-const pad = (n: number) => String(n).padStart(2, "0");
-const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-const dateTime = computed(() => {
-  const date = currentTime.value;
-  const offset = -date.getTimezoneOffset();
-  const offsetHours = Math.floor(Math.abs(offset) / 60);
-  const offsetMinutes = Math.abs(offset) % 60;
-  const sign = offset >= 0 ? "+" : "-";
-  const utcOffset = offsetMinutes > 0 ? `UTC${sign}${offsetHours}:${pad(offsetMinutes)}` : `UTC${sign}${offsetHours}`;
-  return `${date.toLocaleString()} ${utcOffset} ${timezone}`;
-});
-
 const BROWSER_PATTERNS = [
   { pattern: /Firefox\/([\d.]+)/, name: "Firefox" },
   { pattern: /Edg\/([\d.]+)/, name: "Edge" },
@@ -111,6 +92,10 @@ const OS_PATTERNS = [
   { pattern: /Android/, name: "Android" },
   { pattern: /Linux/, name: "Linux" },
 ] as const;
+
+const language = ref("");
+const deviceOS = ref("");
+const browser = ref("");
 
 const detectBrowser = (ua: string): string => {
   for (const item of BROWSER_PATTERNS) {
@@ -180,9 +165,6 @@ const updateNumChars = () => {
 
 onMounted(() => {
   initSystemInfo();
-  timer = setInterval(() => {
-    currentTime.value = new Date();
-  }, 1000);
   resizeObserver = new ResizeObserver(updateNumChars);
   if (terminalContent.value) {
     resizeObserver.observe(terminalContent.value);
@@ -191,7 +173,6 @@ onMounted(() => {
 });
 
 onUnmounted(() => {
-  clearInterval(timer);
   resizeObserver?.disconnect();
 });
 </script>
@@ -258,8 +239,6 @@ onUnmounted(() => {
       <div class="input-border">{{ "─".repeat(numChars) }}</div>
     </div>
     <div class="terminal-footer">
-      <span>{{ dateTime }}</span>
-      <span class="separator">|</span>
       <span>{{ language }}</span>
       <span class="separator">|</span>
       <span>{{ deviceOS }}</span>
