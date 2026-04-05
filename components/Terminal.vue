@@ -5,10 +5,10 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = "Code";
-const NAME = "luojiahai";
+const TITLE = "Potato";
+const NAME = "Potato";
 const VERSION = "v3.14159";
-const HEADING = computed(() => (isZh.value ? "你好，世界！" : "Hello, World!"));
+const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 软件工程师" : "INTJ · Member of Technical Staff"));
 const EMAIL = "luo[at]jiahai.co";
 const SHORTCUT = computed(() => (isZh.value ? "? 获取快捷方式" : "? for shortcuts"));
@@ -192,11 +192,11 @@ onUnmounted(() => {
   <div class="terminal-frame">
     <div class="terminal-header">
       <div class="header-controls">
-        <span class="header-control-button close">●</span>
+        <span class="header-control-button close"></span>
         <span class="header-control-button minimize"></span>
         <span class="header-control-button maximize"></span>
       </div>
-      <div class="header-title">{{ TITLE }}</div>
+      <div class="header-title"></div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -301,7 +301,8 @@ onUnmounted(() => {
 }
 
 .header-title::before {
-  content: "✳";
+  /* content: "✳"; */
+  content: "";
   width: 8px;
   margin-right: 6px;
   font-size: 16px;
@@ -332,10 +333,12 @@ onUnmounted(() => {
 
 .header-control-button.minimize {
   background-color: var(--color-egg);
+  color: color-mix(in hsl, var(--color-egg), black 50%);
 }
 
 .header-control-button.maximize {
   background-color: var(--color-olive);
+  color: color-mix(in hsl, var(--color-olive), black 50%);
 }
 
 .terminal-content {
