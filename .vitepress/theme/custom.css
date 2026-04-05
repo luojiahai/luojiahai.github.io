@@ -151,7 +151,7 @@
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0;
-  display: block;
+  display: flex;
   color: var(--vp-c-text-1);
 }
 
@@ -169,7 +169,7 @@
   font-weight: 400;
   line-height: 2;
   letter-spacing: 0;
-  display: block;
+  display: flex;
   color: var(--vp-c-brand-1);
 }
 
