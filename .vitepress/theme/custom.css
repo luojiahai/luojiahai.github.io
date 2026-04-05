@@ -125,7 +125,7 @@
 
 .VPNavBar {
   background-color: var(--vp-nav-bg-color);
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-gutter);
 }
 
 .VPNavBar .divider {
@@ -139,7 +139,7 @@
     linear-gradient(var(--border-grid) 1px, #0000 1px);
   background-size: 16px 16px; */
   background-color: var(--vp-c-bg-alt);
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--vp-c-gutter);
 }
 
 .VPHome .VPHero .heading {
