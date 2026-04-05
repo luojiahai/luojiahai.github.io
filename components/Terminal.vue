@@ -11,7 +11,6 @@ const VERSION = "v3.14159";
 const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 软件工程师" : "INTJ · Member of Technical Staff"));
 const EMAIL = "luo[at]jiahai.co";
-const SHORTCUT = computed(() => (isZh.value ? "? 获取快捷方式" : "? for shortcuts"));
 
 const LOGO_ART = `
 █ ▀ █
@@ -257,7 +256,6 @@ onUnmounted(() => {
         ></textarea>
       </div>
       <div class="input-border">{{ "─".repeat(numChars) }}</div>
-      <div class="input-shortcut">{{ SHORTCUT }}</div>
     </div>
     <div class="terminal-footer">
       <span>{{ dateTime }}</span>
@@ -273,7 +271,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 48px -24px;
+  margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   color: var(--vp-c-text-1);
@@ -291,7 +289,7 @@ onUnmounted(() => {
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 48px 0;
+    margin: 0 0;
   }
 }
 
@@ -461,13 +459,13 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-gutter);
+  background-color: var(--vp-c-bg-elv);
 }
 
 .assistant-line {
   display: flex;
   align-items: baseline;
-  color: var(--foreground-alternative);
+  color: var(--vp-c-text-2);
 }
 
 .char-measure {
@@ -500,11 +498,6 @@ onUnmounted(() => {
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.input-shortcut {
-  color: var(--vp-c-text-2);
-  padding: 0 20px;
 }
 
 .terminal-footer {
