@@ -43,7 +43,7 @@
   --foreground-secondary: var(--color-gray-750);
   --foreground-tertiary: var(--color-gray-600);
 
-  --border-grid: var(--color-gray-100);
+  --border-grid: var(--color-gray-150);
   --foreground-alternative: var(--color-gray-850);
 }
 
@@ -58,7 +58,7 @@
   --foreground-secondary: var(--color-gray-400);
   --foreground-tertiary: var(--color-gray-500);
 
-  --border-grid: var(--color-gray-800);
+  --border-grid: var(--color-gray-850);
   --foreground-alternative: var(--color-gray-300);
 }
 
