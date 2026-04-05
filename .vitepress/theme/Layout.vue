@@ -6,19 +6,15 @@ import { useRoute } from "vitepress";
 const { Layout } = DefaultTheme;
 const route = useRoute();
 
-const WORDS = [
+const THINKING_VERBS = [
   "Thinking",
-  "Boondoggling",
+  "Combobulating",
   "Choreographing",
-  "Dilly-dallying",
-  "Embellishing",
   "Flibbertigibbeting",
-  "Hullaballooing",
-  "Jitterbugging",
-  "Lollygagging",
-  "Pontificating",
-  "Recombobulating",
+  "Frolicking",
   "Schlepping",
+  "Shenaniganing",
+  "Whatchamacalliting",
 ];
 
 function startTypewriter(el: Element) {
@@ -28,7 +24,7 @@ function startTypewriter(el: Element) {
 
   function tick() {
     if (stopped) return;
-    const word = WORDS[wordIdx] + "...";
+    const word = THINKING_VERBS[wordIdx] + "...";
     if (charIdx < word.length) {
       el.textContent = word.slice(0, charIdx + 1) + "_❚";
       charIdx++;
@@ -37,8 +33,8 @@ function startTypewriter(el: Element) {
       el.textContent = word;
       setTimeout(() => {
         if (stopped) return;
-        wordIdx = (wordIdx + 1) % WORDS.length;
-        const nextWord = WORDS[wordIdx] + "...";
+        wordIdx = (wordIdx + 1) % THINKING_VERBS.length;
+        const nextWord = THINKING_VERBS[wordIdx] + "...";
         const maxLen = Math.max(word.length, nextWord.length);
         let replaceIdx = 1;
         function replace() {
