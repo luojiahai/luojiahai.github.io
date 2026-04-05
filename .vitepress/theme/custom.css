@@ -143,6 +143,7 @@
 }
 
 .VPHome .VPHero .hello {
+  font-family: var(--vp-font-family-mono);
   color: var(--vp-c-text-1);
 }
 
@@ -155,6 +156,7 @@
 }
 
 .VPHome .VPHero .thinking {
+  font-family: var(--vp-font-family-mono);
   color: var(--vp-c-brand-1);
 }
 

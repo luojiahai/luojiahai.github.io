@@ -201,7 +201,7 @@ onUnmounted(() => {
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
       <div class="logo-frame" :style="{ width: logoFrameWidth }">
-        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</pre>
+        <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</div>
         <div class="logo-inner">
           <!-- prettier-ignore -->
           <div class="logo-frame-top">
@@ -211,7 +211,7 @@ onUnmounted(() => {
           </div>
           <div class="logo">
             <div class="logo-art-container">
-              <pre class="logo-art">{{ LOGO_ART }}</pre>
+              <div class="logo-art">{{ LOGO_ART }}</div>
             </div>
             <div class="logo-info-container">
               <div class="logo-heading">{{ HEADING }}</div>
@@ -224,7 +224,7 @@ onUnmounted(() => {
           </div>
           <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
         </div>
-        <pre class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</pre>
+        <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</div>
       </div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
@@ -391,6 +391,7 @@ onUnmounted(() => {
 }
 
 .logo-frame-border {
+  white-space: pre;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -410,6 +411,7 @@ onUnmounted(() => {
 }
 
 .logo-art {
+  white-space: pre;
   margin: 0;
   line-height: 1;
   color: var(--vp-c-brand-1);
