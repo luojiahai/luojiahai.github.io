@@ -166,7 +166,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 .entry-name {
   flex: 1;
   min-width: 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .entry-location {
