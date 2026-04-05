@@ -9,7 +9,7 @@ const TITLE = "Whatchamacallit (node)";
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
-const TAGLINE = computed(() => (isZh.value ? "INTJ · 软件工程师" : "INTJ · Member of Technical Staff"));
+const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
 const EMAIL = "luo[at]jiahai.co";
 
 const LOGO_ART = `
@@ -38,7 +38,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do?",
       answer:
-        "I'm a programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
+        "I'm a computer programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
     },
     {
       question: "What are you working on?",
@@ -58,7 +58,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "你是做什么的？",
-      answer: "我是一名程序员，致力于构建有用的东西。我在深度实践 AI 原生工作流，常驻 Claude Code。",
+      answer: "我是一名计算机程序员，致力于构建有用的东西。我在深度实践 AI 原生工作流，常驻 Claude Code。",
     },
     {
       question: "你在做什么项目？",
