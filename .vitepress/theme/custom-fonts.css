@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono-Regular.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono-SemiLight.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono-Medium.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono-Italic.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono-SemiLightItalic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono-MediumItalic.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono-Italic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Regular.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC-Normal.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Medium.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC-Regular.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -128,7 +128,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-SemiBold.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC-Medium.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -138,6 +138,14 @@
   font-family: "Source Han Sans SC";
   src: url("/fonts/SourceHanSansSC-Bold.otf") format("opentype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Sans SC";
+  src: url("/fonts/SourceHanSansSC-Heavy.otf") format("opentype");
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
