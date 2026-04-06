@@ -181,12 +181,12 @@ onUnmounted(() => {
 <template>
   <div class="terminal-frame">
     <div class="terminal-header">
+      <!-- <div class="header-title">{{ TITLE }}</div> -->
       <div class="header-controls">
-        <span class="header-control-button close"></span>
-        <span class="header-control-button minimize"></span>
-        <span class="header-control-button maximize"></span>
+        <span class="header-control-button minimize">─</span>
+        <span class="header-control-button maximize">◻</span>
+        <span class="header-control-button close">⨉</span>
       </div>
-      <div class="header-title">{{ TITLE }}</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -278,14 +278,17 @@ onUnmounted(() => {
 
 .terminal-header {
   display: flex;
-  align-items: center;
-  padding: 8px 8px;
+  align-items: stretch;
+  padding: 0 0 0 8px;
+  height: 40px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
-  gap: 24px;
 }
 
 .header-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
   color: var(--vp-c-text-2);
   word-spacing: -2px;
 }
@@ -298,34 +301,29 @@ onUnmounted(() => {
 
 .header-controls {
   display: flex;
-  gap: 8px;
   flex-shrink: 0;
+  margin-left: auto;
+  align-self: stretch;
 }
 
 .header-control-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 40px;
   font-size: 12px;
-  border-radius: 50%;
-  color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  cursor: default;
+  user-select: none;
 }
 
-.header-control-button.close {
+.header-control-button:hover {
+  background-color: var(--vp-c-divider);
+}
+
+.header-control-button.close:hover {
   background-color: var(--color-blush);
   color: color-mix(in hsl, var(--color-blush), black 50%);
-}
-
-.header-control-button.minimize {
-  background-color: var(--color-egg);
-  color: color-mix(in hsl, var(--color-egg), black 50%);
-}
-
-.header-control-button.maximize {
-  background-color: var(--color-olive);
-  color: color-mix(in hsl, var(--color-olive), black 50%);
 }
 
 .terminal-content {
