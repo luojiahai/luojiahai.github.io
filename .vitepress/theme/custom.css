@@ -144,6 +144,12 @@
   border-bottom: 1px solid var(--vp-c-gutter);
 } */
 
+.VPHome .VPHero .name {
+  font-family: var(--unknown-serif);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
 .VPHome .VPHero .hello {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
