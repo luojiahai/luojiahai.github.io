@@ -109,19 +109,10 @@
 }
 
 :root {
-  --vp-c-brand-1: var(--vp-c-text-1);
-  --vp-c-brand-2: var(--vp-c-text-2);
-  --vp-c-brand-3: var(--vp-c-text-3);
-  --vp-c-brand-soft: rgb(from var(--vp-c-text-1) r g b / 15%);
-
-  --vp-home-hero-name-color: var(--vp-c-text-1);
-}
-
-.dark {
-  --vp-c-brand-1: var(--color-egg);
-  --vp-c-brand-2: color-mix(in hsl, var(--color-egg), black 10%);
-  --vp-c-brand-3: color-mix(in hsl, var(--color-egg), black 20%);
-  --vp-c-brand-soft: rgb(from var(--color-egg) r g b / 15%);
+  --vp-c-brand-1: var(--color-clay);
+  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
+  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
+  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 15%);
 
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
