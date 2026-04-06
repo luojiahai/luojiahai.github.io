@@ -319,12 +319,12 @@ onUnmounted(() => {
   user-select: none;
 }
 
-.header-control-button.maximize {
-  font-size: 16px;
+.header-control-button.minimize {
+  font-weight: 400;
 }
 
-.header-control-button.close {
-  font-weight: 700;
+.header-control-button.maximize {
+  font-size: 16px;
 }
 
 .header-control-button:hover {
