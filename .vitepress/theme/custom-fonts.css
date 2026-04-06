@@ -95,119 +95,65 @@
 }
 
 @font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-ExtraLight.otf") format("opentype");
-  font-weight: 200;
+  font-family: "Unknown Sans";
+  src: url("/fonts/UnknownSans-Roman-Web.woff2") format("woff2");
+  font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Light.otf") format("opentype");
-  font-weight: 300;
+  font-family: "Unknown Sans";
+  src: url("/fonts/UnknownSans-Italic-Web.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unknown Serif";
+  src: url("/fonts/UnknownSerif-Roman-Web.woff2") format("woff2");
+  font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Normal.otf") format("opentype");
-  font-weight: 400;
+  font-family: "Unknown Serif";
+  src: url("/fonts/UnknownSerif-Italic-Web.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unknown Mono";
+  src: url("/fonts/UnknownMono-Roman-Web.woff2") format("woff2");
+  font-weight: 300 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Regular.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Unknown Mono";
+  src: url("/fonts/UnknownMono-Italic-Web.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: italic;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Medium.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Heavy.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-    font-family: "Unknown Sans";
-    src: url("/fonts/UnknownSans-Roman-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Unknown Sans";
-    src: url("/fonts/UnknownSans-Italic-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: italic;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Unknown Serif";
-    src: url("/fonts/UnknownSerif-Roman-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Unknown Serif";
-    src: url("/fonts/UnknownSerif-Italic-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: italic;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Unknown Mono";
-    src: url("/fonts/UnknownMono-Roman-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Unknown Mono";
-    src: url("/fonts/UnknownMono-Italic-Web.woff2")format("woff2");
-    font-weight: 300 800;
-    font-style: italic;
-    font-display: swap
 }
 
 :root {
-  --vp-font-family-base:
-    "Unknown Sans", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --vp-font-family-mono:
+  --unknown-sans:
+    "Unknown Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --unknown-serif:
+    "Unknown Serif", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --unknown-mono:
+    "Unknown Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  --cascadia-mono:
     "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 
-  --unknown-sans: "Unknown Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --unknown-serif: "Unknown Serif", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --unknown-mono: "Unknown Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  --vp-font-family-base: var(--unknown-sans);
+  --vp-font-family-mono: var(--unknown-mono);
 }

@@ -126,7 +126,12 @@
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--unknown-serif);
   font-weight: 500 !important;
   letter-spacing: 0 !important;
@@ -151,9 +156,17 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 .VPHome .VPHero .name {
-  font-family: var(--unknown-serif);
+  font-size: 32px;
   font-weight: 500;
   letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.VPHome .VPHero .text {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
 }
 
 .VPHome .VPHero .hello {
@@ -259,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 .VPFooter .copyright {
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .custom-page .VPSkipLink,

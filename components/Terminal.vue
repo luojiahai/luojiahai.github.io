@@ -42,8 +42,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "What are you working on?",
-      answer:
-        "I'm working on an interesting project, check it out at http://localhost:5173.",
+      answer: "I'm working on an interesting project, check it out at http://localhost:5173.",
     },
     {
       question: "What do you do outside of programming?",
@@ -367,11 +366,11 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-3);
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-version {
@@ -383,7 +382,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-3);
 }
 
 .logo-spacer {
@@ -399,10 +398,11 @@ onUnmounted(() => {
 }
 
 .logo-art {
+  font-family: var(--cascadia-mono);
   white-space: pre;
   margin: 0;
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
   letter-spacing: -1px;
 }
 
