@@ -183,7 +183,7 @@ onUnmounted(() => {
     <div class="terminal-header">
       <div class="header-title">{{ TITLE }}</div>
       <div class="header-controls">
-        <span class="header-control-button minimize">－</span>
+        <span class="header-control-button minimize">─</span>
         <span class="header-control-button maximize">◻</span>
         <span class="header-control-button close">⨉</span>
       </div>
@@ -317,6 +317,10 @@ onUnmounted(() => {
   color: var(--vp-c-text-2);
   cursor: default;
   user-select: none;
+}
+
+.header-control-button.maximize {
+  font-size: 16px;
 }
 
 .header-control-button:hover {
