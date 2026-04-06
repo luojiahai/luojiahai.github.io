@@ -318,7 +318,7 @@ onUnmounted(() => {
 }
 
 .header-control-button:hover {
-  background-color: var(--vp-c-divider);
+  background-color: var(--vp-c-border);
 }
 
 .header-control-button.close:hover {
