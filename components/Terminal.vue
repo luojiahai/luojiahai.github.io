@@ -366,7 +366,7 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-divider);
+  color: var(--vp-c-border);
 }
 
 .logo-frame-top-name {
@@ -382,7 +382,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-divider);
+  color: var(--vp-c-border);
 }
 
 .logo-spacer {
@@ -457,7 +457,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-divider);
+  color: var(--vp-c-border);
   line-height: 1;
 }
 
