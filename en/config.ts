@@ -9,7 +9,7 @@ export const config = defineConfig({
       text: "Edit this page on GitHub",
     },
     footer: {
-      copyright: `Copyright © 2015-${new Date().getFullYear()} luojiahai`,
+      copyright: `© ${new Date().getFullYear()} LUOJIAHAI`,
     },
   },
 });

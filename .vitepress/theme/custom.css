@@ -245,9 +245,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.VPFooter {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
 .VPFooter .container {
   display: flex;
   justify-content: space-between;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .05em;
 }
 
 .custom-page .VPSkipLink,
