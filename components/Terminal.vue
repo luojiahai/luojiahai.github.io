@@ -5,7 +5,7 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = "";
+const TITLE = "Terminal";
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
@@ -313,6 +313,7 @@ onUnmounted(() => {
   justify-content: center;
   font-size: 14px;
   width: 14px;
+  margin-right: 4px;
 }
 
 .header-controls {
