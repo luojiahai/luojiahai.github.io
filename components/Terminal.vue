@@ -183,9 +183,22 @@ onUnmounted(() => {
     <div class="terminal-header">
       <div class="header-title">{{ TITLE }}</div>
       <div class="header-controls">
-        <span class="header-control-button minimize">─</span>
-        <span class="header-control-button maximize">◻</span>
-        <span class="header-control-button close">⨉</span>
+        <span class="header-control-button minimize">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="5" x2="10" y2="5" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </span>
+        <span class="header-control-button maximize">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.75" y="0.75" width="8.5" height="8.5" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </span>
+        <span class="header-control-button close">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.75" y1="0.75" x2="9.25" y2="9.25" stroke="currentColor" stroke-width="1.5" />
+            <line x1="9.25" y1="0.75" x2="0.75" y2="9.25" stroke="currentColor" stroke-width="1.5" />
+          </svg>
+        </span>
       </div>
     </div>
     <div ref="terminalContent" class="terminal-content">
@@ -317,14 +330,6 @@ onUnmounted(() => {
   color: var(--vp-c-text-2);
   cursor: default;
   user-select: none;
-}
-
-.header-control-button.minimize {
-  font-weight: 400;
-}
-
-.header-control-button.maximize {
-  font-size: 16px;
 }
 
 .header-control-button:hover {
