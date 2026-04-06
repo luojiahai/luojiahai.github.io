@@ -126,6 +126,12 @@
   --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--unknown-serif);
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+}
+
 .VPNavBar:not(.has-sidebar) {
   border-bottom: 1px solid var(--vp-c-gutter);
 }
@@ -242,11 +248,6 @@
 .VPFooter .container {
   display: flex;
   justify-content: space-between;
-}
-
-.VPFooter .message,
-.VPFooter .copyright {
-  font-family: var(--vp-font-family-mono);
 }
 
 .custom-page .VPSkipLink,
