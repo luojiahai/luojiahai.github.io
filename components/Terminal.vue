@@ -296,14 +296,13 @@ onUnmounted(() => {
   height: 40px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
+  color: var(--vp-c-text-2);
 }
 
 .header-title {
   flex: 1;
   display: flex;
   align-items: center;
-  color: var(--vp-c-text-2);
-  font-size: 12px;
 }
 
 .header-title::before {
@@ -311,7 +310,6 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
   width: 14px;
   margin-right: 4px;
 }
@@ -328,7 +326,6 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   width: 40px;
-  color: var(--vp-c-text-2);
   cursor: default;
   user-select: none;
 }
@@ -346,7 +343,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 8px 8px 1lh;
+  padding: 16px 8px 1lh;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
