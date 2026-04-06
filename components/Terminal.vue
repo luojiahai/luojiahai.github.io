@@ -377,15 +377,15 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-version {
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-text-2);
 }
 
 .logo-frame-border {
@@ -393,7 +393,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-1);
 }
 
 .logo-spacer {
@@ -468,7 +468,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-3);
   line-height: 1;
 }
 
