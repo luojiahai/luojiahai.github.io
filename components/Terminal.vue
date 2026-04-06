@@ -323,6 +323,10 @@ onUnmounted(() => {
   font-size: 16px;
 }
 
+.header-control-button.close {
+  font-weight: 700;
+}
+
 .header-control-button:hover {
   background-color: var(--vp-c-gutter);
 }
