@@ -5,7 +5,7 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = "Whatchamacallit (node)";
+const TITLE = "";
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
@@ -181,7 +181,7 @@ onUnmounted(() => {
 <template>
   <div class="terminal-frame">
     <div class="terminal-header">
-      <!-- <div class="header-title">{{ TITLE }}</div> -->
+      <div class="header-title">{{ TITLE }}</div>
       <div class="header-controls">
         <span class="header-control-button minimize">─</span>
         <span class="header-control-button maximize">◻</span>
@@ -290,13 +290,16 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   color: var(--vp-c-text-2);
-  word-spacing: -2px;
+  font-size: 12px;
 }
 
 .header-title::before {
   content: "✳";
-  width: 8px;
-  margin-right: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 14px;
 }
 
 .header-controls {
