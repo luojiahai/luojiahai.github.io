@@ -117,6 +117,10 @@
   --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 15%);
 }
 
+* {
+  border-radius: 0 !important;
+}
+
 h1,
 h2,
 h3,

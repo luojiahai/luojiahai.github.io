@@ -55,7 +55,7 @@ const CONVERSATION: Record<string, Conversation> = {
   zh: [
     {
       question: "你是谁？",
-      answer: "你好，我是罗嘉海，英文名 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+      answer: "你好，我是罗嘉海。我出生于中国广州，目前定居于澳大利亚墨尔本。",
     },
     {
       question: "你是做什么的？",
