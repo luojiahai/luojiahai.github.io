@@ -309,7 +309,7 @@ onUnmounted(() => {
   align-items: stretch;
   padding: 0 0 0 8px;
   height: 40px;
-  background-color: var(--vp-code-block-bg);
+  background-color: var(--vp-c-bg-elv);
   position: relative;
   color: var(--vp-c-text-2);
 }
@@ -514,7 +514,7 @@ onUnmounted(() => {
   gap: 8px;
   padding: 0 8px;
   font-size: 12px;
-  background-color: var(--vp-code-block-bg);
+  background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
   white-space: nowrap;
   overflow-x: auto;
