@@ -309,7 +309,7 @@ onUnmounted(() => {
   align-items: stretch;
   padding: 0 0 0 8px;
   height: 40px;
-  background-color: var(--terminal-bg);
+  background-color: var(--vp-c-bg-alt);
   position: relative;
   color: var(--vp-c-text-2);
 }
@@ -346,7 +346,12 @@ onUnmounted(() => {
 }
 
 .header-control-button:hover {
-  background-color: var(--vp-c-bg-elv);
+  background-color: var(--vp-c-gutter);
+}
+
+.header-control-button.close:hover {
+  background-color: var(--color-blush);
+  color: color-mix(in hsl, var(--color-blush), black 50%);
 }
 
 .terminal-content {
@@ -354,7 +359,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: flex-start;
   padding: 16px 8px 1lh;
-  background-color: var(--terminal-bg);
+  background-color: var(--vp-c-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
   overflow-x: auto;
@@ -509,7 +514,7 @@ onUnmounted(() => {
   gap: 8px;
   padding: 0 8px;
   font-size: 12px;
-  background-color: var(--terminal-bg);
+  background-color: var(--vp-c-bg-alt);
   color: var(--vp-c-text-3);
   white-space: nowrap;
   overflow-x: auto;
