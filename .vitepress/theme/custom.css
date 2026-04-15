@@ -42,6 +42,7 @@
   --foreground-primary: var(--color-gray-950);
   --foreground-secondary: var(--color-gray-750);
   --foreground-tertiary: var(--color-gray-600);
+  --terminal-bg: white;
 }
 
 .dark {
@@ -54,6 +55,7 @@
   --foreground-primary: var(--color-gray-050);
   --foreground-secondary: var(--color-gray-400);
   --foreground-tertiary: var(--color-gray-500);
+  --terminal-bg: black;
 }
 
 :root {
