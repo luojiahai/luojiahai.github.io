@@ -232,7 +232,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   content: "❯";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .item-label::before {
@@ -240,6 +240,6 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   content: "●";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 </style>

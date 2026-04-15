@@ -531,13 +531,13 @@ onUnmounted(() => {
   content: "❯";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .assistant-line::before {
   content: "●";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 </style>
