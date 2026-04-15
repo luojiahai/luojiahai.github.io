@@ -377,11 +377,11 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-name {
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-version {
@@ -413,7 +413,7 @@ onUnmounted(() => {
   white-space: pre;
   margin: 0;
   line-height: 1;
-  color: var(--color-clay);
+  color: var(--vp-c-brand-1);
   letter-spacing: -1px;
 }
 
