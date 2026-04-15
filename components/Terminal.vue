@@ -393,7 +393,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-spacer {
