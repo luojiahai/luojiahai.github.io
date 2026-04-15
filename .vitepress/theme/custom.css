@@ -174,7 +174,7 @@ h6 {
   line-height: 2;
   letter-spacing: 0;
   display: flex;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-2);
 }
 
 .VPHome .VPHero .thinking::before {
@@ -184,6 +184,7 @@ h6 {
   width: 1ch;
   animation: flower 1.44s steps(1) infinite;
   margin-right: 12px;
+  color: var(--vp-c-brand-1);
 }
 
 @keyframes flower {
