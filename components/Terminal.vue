@@ -12,6 +12,8 @@ const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
 const EMAIL = "luo[at]jiahai.co";
 
+const SHOW_LOGO_FRAME = false;
+
 const LOGO_ART = `
 █ ▀ █
 █ █ █
@@ -203,7 +205,7 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div class="logo-frame" :style="{ width: logoFrameWidth }">
+      <div v-if="SHOW_LOGO_FRAME" class="logo-frame" :style="{ width: logoFrameWidth }">
         <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</div>
         <div class="logo-inner">
           <!-- prettier-ignore -->
@@ -228,6 +230,19 @@ onUnmounted(() => {
           <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
         </div>
         <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</div>
+      </div>
+      <div v-else class="logo">
+        <div class="logo-art-container">
+          <div class="logo-art">{{ LOGO_ART }}</div>
+        </div>
+        <div class="logo-info-container">
+          <div class="logo-heading">{{ HEADING }}</div>
+          <div class="logo-tagline-container">
+            <div class="logo-tagline">{{ TAGLINE }}</div>
+            <div class="logo-tagline">{{ EMAIL }}</div>
+          </div>
+        </div>
+        <div class="logo-spacer"></div>
       </div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
@@ -294,7 +309,7 @@ onUnmounted(() => {
   align-items: stretch;
   padding: 0 0 0 8px;
   height: 40px;
-  background-color: var(--vp-c-bg-elv);
+  background-color: var(--vp-code-block-bg);
   position: relative;
   color: var(--vp-c-text-2);
 }
@@ -377,11 +392,11 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
 .logo-frame-top-version {
@@ -393,7 +408,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
 }
 
 .logo-spacer {
@@ -413,7 +428,7 @@ onUnmounted(() => {
   white-space: pre;
   margin: 0;
   line-height: 1;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
   letter-spacing: -1px;
 }
 
@@ -452,7 +467,7 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-bg-elv);
+  background-color: var(--vp-c-gutter);
 }
 
 .assistant-line {
@@ -468,7 +483,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-border);
   line-height: 1;
 }
 
@@ -499,7 +514,7 @@ onUnmounted(() => {
   gap: 8px;
   padding: 0 8px;
   font-size: 12px;
-  background-color: var(--vp-c-bg-elv);
+  background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-3);
   white-space: nowrap;
   overflow-x: auto;

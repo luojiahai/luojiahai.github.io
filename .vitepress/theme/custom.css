@@ -117,13 +117,6 @@
   --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 15%);
 }
 
-.dark {
-  --vp-c-brand-1: var(--color-clay);
-  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
-  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
-  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 15%);
-}
-
 h1,
 h2,
 h3,
@@ -154,17 +147,8 @@ h6 {
 } */
 
 .VPHome .VPHero .name {
-  font-size: 32px;
   font-weight: 500;
   letter-spacing: 0;
-  line-height: 1.5;
-}
-
-.VPHome .VPHero .text {
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.5;
 }
 
 .VPHome .VPHero .hello {
