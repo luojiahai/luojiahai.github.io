@@ -426,8 +426,7 @@ onUnmounted(() => {
 
 .logo-art {
   font-family: var(--cascadia-mono);
-  font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
