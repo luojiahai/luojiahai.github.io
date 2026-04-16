@@ -3,7 +3,7 @@ layout: home
 title: luojiahai
 
 hero:
-  name: Luo Jia Hai
+  name: luojiahai
   tagline: <span class="hello">Hello, World!</span><span class="thinking"></span>
   actions:
     - theme: brand
