@@ -10,7 +10,6 @@ const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
-const EMAIL = "luo[at]jiahai.co";
 
 const SHOW_LOGO_FRAME = false;
 
@@ -27,7 +26,7 @@ const LOGO_ART = `
   ▘▘ ▝▝
 `;
 
-const BORDER_SIDES = Array(8).fill("│").join("\n");
+const BORDER_SIDES = Array(6).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
 const LOGO_FRAME_BORDER_RIGHT = `╮\n${BORDER_SIDES}\n╯`;
 
@@ -228,7 +227,6 @@ onUnmounted(() => {
               <div class="logo-heading">{{ HEADING }}</div>
               <div class="logo-tagline-container">
                 <div class="logo-tagline">{{ TAGLINE }}</div>
-                <div class="logo-tagline">{{ EMAIL }}</div>
               </div>
             </div>
             <div class="logo-spacer"></div>
@@ -242,10 +240,12 @@ onUnmounted(() => {
           <div class="logo-art">{{ LOGO_ART }}</div>
         </div>
         <div class="logo-info-container">
-          <div class="logo-heading">{{ HEADING }}</div>
+          <div class="logo-heading">
+            {{ HEADING }}
+            <span class="logo-frame-top-version">{{ VERSION }}</span>
+          </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
-            <div class="logo-tagline">{{ EMAIL }}</div>
           </div>
         </div>
         <div class="logo-spacer"></div>
@@ -393,11 +393,11 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-version {
@@ -409,7 +409,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-spacer {
