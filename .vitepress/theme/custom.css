@@ -353,10 +353,10 @@
   --vp-c-indigo-3: hsl(var(--_blue-300));
   --vp-c-indigo-soft: hsl(var(--_blue-500) / 15%);
 
-  --vp-c-purple-1: hsl(var(--_magenta-500));
-  --vp-c-purple-2: hsl(var(--_magenta-400));
-  --vp-c-purple-3: hsl(var(--_magenta-300));
-  --vp-c-purple-soft: hsl(var(--_magenta-500) / 15%);
+  --vp-c-purple-1: hsl(var(--_violet-500));
+  --vp-c-purple-2: hsl(var(--_violet-400));
+  --vp-c-purple-3: hsl(var(--_violet-300));
+  --vp-c-purple-soft: hsl(var(--_violet-500) / 15%);
 
   --vp-c-green-1: hsl(var(--_green-500));
   --vp-c-green-2: hsl(var(--_green-400));
@@ -400,10 +400,10 @@
   --vp-c-indigo-3: hsl(var(--_blue-400));
   --vp-c-indigo-soft: hsl(var(--_blue-200) / 15%);
 
-  --vp-c-purple-1: hsl(var(--_magenta-200));
-  --vp-c-purple-2: hsl(var(--_magenta-300));
-  --vp-c-purple-3: hsl(var(--_magenta-400));
-  --vp-c-purple-soft: hsl(var(--_magenta-200) / 15%);
+  --vp-c-purple-1: hsl(var(--_violet-200));
+  --vp-c-purple-2: hsl(var(--_violet-300));
+  --vp-c-purple-3: hsl(var(--_violet-400));
+  --vp-c-purple-soft: hsl(var(--_violet-200) / 15%);
 
   --vp-c-green-1: hsl(var(--_green-200));
   --vp-c-green-2: hsl(var(--_green-300));
