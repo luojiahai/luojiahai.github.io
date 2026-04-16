@@ -331,9 +331,9 @@
 }
 
 .dark {
-  --bg-100: hsl(var(--_gray-800));
+  --bg-100: hsl(var(--_gray-860));
   --bg-200: hsl(var(--_gray-840));
-  --bg-300: hsl(var(--_gray-860));
+  --bg-300: hsl(var(--_gray-800));
   --border-100: hsl(var(--_gray-100) / 0.15);
   --border-200: hsl(var(--_gray-100) / 0.15);
   --border-300: hsl(var(--_gray-100) / 0.15);
@@ -419,11 +419,6 @@
   --vp-c-red-2: hsl(var(--_red-300));
   --vp-c-red-3: hsl(var(--_red-400));
   --vp-c-red-soft: hsl(var(--_red-200) / 0.15);
-
-  --vp-c-bg: var(--bg-300);
-  --vp-c-bg-alt: var(--bg-200);
-  --vp-c-bg-elv: var(--bg-100);
-  --vp-c-bg-soft: hsl(var(--bg-300) / 0.15);
 }
 
 :root {
