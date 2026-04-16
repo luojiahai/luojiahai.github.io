@@ -10,8 +10,9 @@ const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
+const EMAIL = "luo[at]jiahai.co";
 
-const SHOW_LOGO_FRAME = true;
+const SHOW_LOGO_FRAME = false;
 
 // const LOGO_ART = `
 // █ ▀ █
@@ -20,11 +21,9 @@ const SHOW_LOGO_FRAME = true;
 // ▌▄█ █ █
 // `.trim();
 
-const LOGO_ART = `
- ▐▛███▜▌
+const LOGO_ART = ` ▐▛███▜▌
 ▝▜█████▛▘
-  ▘▘ ▝▝
-`;
+  ▘▘ ▝▝`;
 
 const BORDER_SIDES = Array(6).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
@@ -246,6 +245,7 @@ onUnmounted(() => {
           </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
+            <div class="logo-tagline">{{ EMAIL }}</div>
           </div>
         </div>
         <div class="logo-spacer"></div>
@@ -291,6 +291,7 @@ onUnmounted(() => {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.5;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -420,25 +421,24 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
-  margin: 0 16px;
+  margin: 0 16px 0 0;
 }
 
 .logo-art {
   font-family: var(--cascadia-mono);
+  font-size: 16px;
+  line-height: 18px;
   white-space: pre;
   margin: 0;
-  line-height: 1;
   color: var(--vp-c-brand-1);
   letter-spacing: -1px;
-  transform: translateY(-2px);
+  transform: translateY(5px);
 }
 
 .logo-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
   white-space: pre-wrap;
 }
 
