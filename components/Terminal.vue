@@ -421,7 +421,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  margin: 0 24px;
+  margin: 0 16px;
 }
 
 .logo-art {
