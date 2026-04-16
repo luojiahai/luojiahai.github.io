@@ -319,59 +319,59 @@
 }
 
 :root {
-  --background-primary: var(--color-gray-050);
-  --background-secondary: var(--color-gray-100);
-  --background-tertiary: var(--color-gray-150);
-  --border-primary: var(--color-gray-400);
-  --border-secondary: var(--color-gray-300);
-  --border-tertiary: var(--color-gray-200);
-  --foreground-primary: var(--color-gray-950);
-  --foreground-secondary: var(--color-gray-750);
-  --foreground-tertiary: var(--color-gray-600);
+  --background-primary: hsl(var(--_gray-20));
+  --background-secondary: hsl(var(--_gray-30));
+  --background-tertiary: hsl(var(--_gray-50));
+  --border-primary: hsl(var(--_gray-250));
+  --border-secondary: hsl(var(--_gray-150));
+  --border-tertiary: hsl(var(--_gray-70));
+  --foreground-primary: hsl(var(--_gray-860));
+  --foreground-secondary: hsl(var(--_gray-750));
+  --foreground-tertiary: hsl(var(--_gray-550));
 }
 
 .dark {
-  --background-primary: var(--color-gray-950);
-  --background-secondary: var(--color-gray-900);
-  --background-tertiary: var(--color-gray-850);
-  --border-primary: var(--color-gray-600);
-  --border-secondary: var(--color-gray-700);
-  --border-tertiary: var(--color-gray-750);
-  --foreground-primary: var(--color-gray-050);
-  --foreground-secondary: var(--color-gray-400);
-  --foreground-tertiary: var(--color-gray-500);
+  --background-primary: hsl(var(--_gray-860));
+  --background-secondary: hsl(var(--_gray-840));
+  --background-tertiary: hsl(var(--_gray-820));
+  --border-primary: hsl(var(--_gray-550));
+  --border-secondary: hsl(var(--_gray-700));
+  --border-tertiary: hsl(var(--_gray-750));
+  --foreground-primary: hsl(var(--_gray-20));
+  --foreground-secondary: hsl(var(--_gray-250));
+  --foreground-tertiary: hsl(var(--_gray-350));
 }
 
 :root {
-  --vp-c-gray-1: var(--color-gray-400);
-  --vp-c-gray-2: var(--color-gray-350);
-  --vp-c-gray-3: var(--color-gray-300);
-  --vp-c-gray-soft: rgb(from var(--color-gray-400) r g b / 15%);
+  --vp-c-gray-1: hsl(var(--_gray-250));
+  --vp-c-gray-2: hsl(var(--_gray-200));
+  --vp-c-gray-3: hsl(var(--_gray-150));
+  --vp-c-gray-soft: hsl(var(--_gray-250) / 15%);
 
-  --vp-c-indigo-1: var(--color-sky);
-  --vp-c-indigo-2: color-mix(in hsl, var(--color-sky), black 10%);
-  --vp-c-indigo-3: color-mix(in hsl, var(--color-sky), black 20%);
-  --vp-c-indigo-soft: rgb(from var(--color-sky) r g b / 15%);
+  --vp-c-indigo-1: hsl(var(--_blue-350));
+  --vp-c-indigo-2: color-mix(in hsl, hsl(var(--_blue-350)), black 10%);
+  --vp-c-indigo-3: color-mix(in hsl, hsl(var(--_blue-350)), black 20%);
+  --vp-c-indigo-soft: hsl(var(--_blue-350) / 15%);
 
-  --vp-c-purple-1: var(--color-fig);
-  --vp-c-purple-2: color-mix(in hsl, var(--color-fig), black 10%);
-  --vp-c-purple-3: color-mix(in hsl, var(--color-fig), black 20%);
-  --vp-c-purple-soft: rgb(from var(--color-fig) r g b / 15%);
+  --vp-c-purple-1: hsl(var(--_magenta-400));
+  --vp-c-purple-2: color-mix(in hsl, hsl(var(--_magenta-400)), black 10%);
+  --vp-c-purple-3: color-mix(in hsl, hsl(var(--_magenta-400)), black 20%);
+  --vp-c-purple-soft: hsl(var(--_magenta-400) / 15%);
 
-  --vp-c-green-1: var(--color-olive);
-  --vp-c-green-2: color-mix(in hsl, var(--color-olive), black 10%);
-  --vp-c-green-3: color-mix(in hsl, var(--color-olive), black 20%);
-  --vp-c-green-soft: rgb(from var(--color-olive) r g b / 15%);
+  --vp-c-green-1: hsl(var(--_green-250));
+  --vp-c-green-2: color-mix(in hsl, hsl(var(--_green-250)), black 10%);
+  --vp-c-green-3: color-mix(in hsl, hsl(var(--_green-250)), black 20%);
+  --vp-c-green-soft: hsl(var(--_green-250) / 15%);
 
-  --vp-c-yellow-1: var(--color-clay);
-  --vp-c-yellow-2: color-mix(in hsl, var(--color-clay), black 10%);
-  --vp-c-yellow-3: color-mix(in hsl, var(--color-clay), black 20%);
-  --vp-c-yellow-soft: rgb(from var(--color-clay) r g b / 15%);
+  --vp-c-yellow-1: hsl(var(--_brand-clay));
+  --vp-c-yellow-2: color-mix(in hsl, hsl(var(--_brand-clay)), black 10%);
+  --vp-c-yellow-3: color-mix(in hsl, hsl(var(--_brand-clay)), black 20%);
+  --vp-c-yellow-soft: hsl(var(--_brand-clay) / 15%);
 
-  --vp-c-red-1: var(--color-blush);
-  --vp-c-red-2: color-mix(in hsl, var(--color-blush), black 10%);
-  --vp-c-red-3: color-mix(in hsl, var(--color-blush), black 20%);
-  --vp-c-red-soft: rgb(from var(--color-blush) r g b / 15%);
+  --vp-c-red-1: hsl(var(--_red-350));
+  --vp-c-red-2: color-mix(in hsl, hsl(var(--_red-350)), black 10%);
+  --vp-c-red-3: color-mix(in hsl, hsl(var(--_red-350)), black 20%);
+  --vp-c-red-soft: hsl(var(--_red-350) / 15%);
 
   --vp-c-bg: var(--background-primary);
   --vp-c-bg-alt: var(--background-secondary);
@@ -390,17 +390,17 @@
 }
 
 .dark {
-  --vp-c-gray-1: var(--color-gray-600);
-  --vp-c-gray-2: var(--color-gray-650);
-  --vp-c-gray-3: var(--color-gray-700);
-  --vp-c-gray-soft: rgb(from var(--color-gray-600) r g b / 15%);
+  --vp-c-gray-1: hsl(var(--_gray-550));
+  --vp-c-gray-2: hsl(var(--_gray-600));
+  --vp-c-gray-3: hsl(var(--_gray-700));
+  --vp-c-gray-soft: hsl(var(--_gray-550) / 15%);
 }
 
 :root {
-  --vp-c-brand-1: var(--color-clay);
-  --vp-c-brand-2: color-mix(in hsl, var(--color-clay), black 10%);
-  --vp-c-brand-3: color-mix(in hsl, var(--color-clay), black 20%);
-  --vp-c-brand-soft: rgb(from var(--color-clay) r g b / 15%);
+  --vp-c-brand-1: hsl(var(--_brand-clay));
+  --vp-c-brand-2: color-mix(in hsl, hsl(var(--_brand-clay)), black 10%);
+  --vp-c-brand-3: color-mix(in hsl, hsl(var(--_brand-clay)), black 20%);
+  --vp-c-brand-soft: hsl(var(--_brand-clay) / 15%);
 }
 
 * {
