@@ -363,10 +363,10 @@
   --vp-c-green-3: hsl(var(--_green-350));
   --vp-c-green-soft: hsl(var(--_green-250) / 15%);
 
-  --vp-c-yellow-1: hsl(var(--_brand-clay));
-  --vp-c-yellow-2: hsl(var(--_brand-clay-emphasized));
-  --vp-c-yellow-3: hsl(var(--_orange-500));
-  --vp-c-yellow-soft: hsl(var(--_brand-clay) / 15%);
+  --vp-c-yellow-1: hsl(var(--_yellow-200));
+  --vp-c-yellow-2: hsl(var(--_yellow-250));
+  --vp-c-yellow-3: hsl(var(--_yellow-300));
+  --vp-c-yellow-soft: hsl(var(--_yellow-200) / 15%);
 
   --vp-c-red-1: hsl(var(--_red-350));
   --vp-c-red-2: hsl(var(--_red-400));
