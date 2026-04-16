@@ -348,6 +348,53 @@
   --vp-c-gray-3: hsl(var(--_gray-150));
   --vp-c-gray-soft: hsl(var(--_gray-250) / 15%);
 
+  --vp-c-indigo-1: hsl(var(--_blue-350));
+  --vp-c-indigo-2: hsl(var(--_blue-300));
+  --vp-c-indigo-3: hsl(var(--_blue-250));
+  --vp-c-indigo-soft: hsl(var(--_blue-350) / 15%);
+
+  --vp-c-purple-1: hsl(var(--_magenta-350));
+  --vp-c-purple-2: hsl(var(--_magenta-300));
+  --vp-c-purple-3: hsl(var(--_magenta-250));
+  --vp-c-purple-soft: hsl(var(--_magenta-350) / 15%);
+
+  --vp-c-green-1: hsl(var(--_green-350));
+  --vp-c-green-2: hsl(var(--_green-300));
+  --vp-c-green-3: hsl(var(--_green-250));
+  --vp-c-green-soft: hsl(var(--_green-350) / 15%);
+
+  --vp-c-yellow-1: hsl(var(--_yellow-350));
+  --vp-c-yellow-2: hsl(var(--_yellow-300));
+  --vp-c-yellow-3: hsl(var(--_yellow-250));
+  --vp-c-yellow-soft: hsl(var(--_yellow-350) / 15%);
+
+  --vp-c-red-1: hsl(var(--_red-350));
+  --vp-c-red-2: hsl(var(--_red-300));
+  --vp-c-red-3: hsl(var(--_red-250));
+  --vp-c-red-soft: hsl(var(--_red-350) / 15%);
+
+  --vp-c-bg: var(--background-primary);
+  --vp-c-bg-alt: var(--background-secondary);
+  --vp-c-bg-elv: var(--background-tertiary);
+  --vp-c-bg-soft: var(--background-tertiary);
+
+  --vp-c-border: var(--border-primary);
+  --vp-c-divider: var(--border-secondary);
+  --vp-c-gutter: var(--border-tertiary);
+
+  --vp-c-text-1: var(--foreground-primary);
+  --vp-c-text-2: var(--foreground-secondary);
+  --vp-c-text-3: var(--foreground-tertiary);
+
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+}
+
+.dark {
+  --vp-c-gray-1: hsl(var(--_gray-550));
+  --vp-c-gray-2: hsl(var(--_gray-600));
+  --vp-c-gray-3: hsl(var(--_gray-700));
+  --vp-c-gray-soft: hsl(var(--_gray-550) / 15%);
+
   --vp-c-indigo-1: hsl(var(--_blue-200));
   --vp-c-indigo-2: hsl(var(--_blue-250));
   --vp-c-indigo-3: hsl(var(--_blue-300));
@@ -372,28 +419,6 @@
   --vp-c-red-2: hsl(var(--_red-250));
   --vp-c-red-3: hsl(var(--_red-300));
   --vp-c-red-soft: hsl(var(--_red-200) / 15%);
-
-  --vp-c-bg: var(--background-primary);
-  --vp-c-bg-alt: var(--background-secondary);
-  --vp-c-bg-elv: var(--background-tertiary);
-  --vp-c-bg-soft: var(--background-tertiary);
-
-  --vp-c-border: var(--border-primary);
-  --vp-c-divider: var(--border-secondary);
-  --vp-c-gutter: var(--border-tertiary);
-
-  --vp-c-text-1: var(--foreground-primary);
-  --vp-c-text-2: var(--foreground-secondary);
-  --vp-c-text-3: var(--foreground-tertiary);
-
-  --vp-home-hero-name-color: var(--vp-c-text-1);
-}
-
-.dark {
-  --vp-c-gray-1: hsl(var(--_gray-550));
-  --vp-c-gray-2: hsl(var(--_gray-600));
-  --vp-c-gray-3: hsl(var(--_gray-700));
-  --vp-c-gray-soft: hsl(var(--_gray-550) / 15%);
 }
 
 :root {
