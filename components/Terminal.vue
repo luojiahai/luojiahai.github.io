@@ -11,7 +11,7 @@ const VERSION = "v3.14159";
 const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
 
-const SHOW_LOGO_FRAME = false;
+const SHOW_LOGO_FRAME = true;
 
 // const LOGO_ART = `
 // █ ▀ █
@@ -421,7 +421,7 @@ onUnmounted(() => {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  margin: 0 16px 0 8px;
+  margin: 0 16px;
 }
 
 .logo-art {
@@ -431,6 +431,7 @@ onUnmounted(() => {
   line-height: 1;
   color: var(--vp-c-brand-1);
   letter-spacing: -1px;
+  transform: translateY(-2px);
 }
 
 .logo-info-container {
