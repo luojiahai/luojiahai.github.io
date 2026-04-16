@@ -14,12 +14,18 @@ const EMAIL = "luo[at]jiahai.co";
 
 const SHOW_LOGO_FRAME = false;
 
+// const LOGO_ART = `
+// █ ▀ █
+// █ █ █
+// █ █ █ ▌
+// ▌▄█ █ █
+// `.trim();
+
 const LOGO_ART = `
-█ ▀ █
-█ █ █
-█ █ █ ▌
-▌▄█ █ █
-`.trim();
+ ▐▛███▜▌
+▝▜█████▛▘
+  ▘▘ ▝▝
+`;
 
 const BORDER_SIDES = Array(8).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
@@ -423,7 +429,7 @@ onUnmounted(() => {
   white-space: pre;
   margin: 0;
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
   letter-spacing: -1px;
 }
 
