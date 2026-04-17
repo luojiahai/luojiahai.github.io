@@ -32,7 +32,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "Who are you?",
       answer:
-        "Hi there, I'm luojiahai. I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.",
+        "Hi there, I'm luojiahai. I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia. My native languages are Mandarin and Cantonese Chinese.",
     },
     {
       question: "What does luojiahai mean?",
@@ -56,7 +56,7 @@ const CONVERSATION: Record<string, Conversation> = {
   zh: [
     {
       question: "你是谁？",
-      answer: "你好，我是罗嘉海。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+      answer: "你好，我是罗嘉海。我出生于中国广州，目前定居于澳大利亚墨尔本。我会说普通话和粤语。",
     },
     {
       question: "你是做什么的？",
