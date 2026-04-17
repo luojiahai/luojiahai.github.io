@@ -451,6 +451,10 @@ h6 {
   display: none;
 }
 
+.VPHome {
+  margin-bottom: 48px;
+}
+
 /* prettier-ignore */
 /* .VPHome .VPHero {
   background-image:
