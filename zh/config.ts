@@ -4,6 +4,7 @@ export const config = defineConfig({
   lang: "zh-Hans",
   themeConfig: {
     nav: nav(),
+    sidebar: sidebar(),
     editLink: {
       pattern: "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
       text: "在 GitHub 上编辑此页面",
@@ -44,6 +45,18 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "使用", link: "/zh/use" },
   ];
 }
+
+function sidebar() {
+  return [
+    {
+      items: [
+        { text: '简历', link: '/resume' },
+        { text: '使用', link: '/use' },
+      ]
+    }
+  ];
+}
+
 
 export function searchOptions(): DefaultTheme.LocalSearchOptions {
   return {
