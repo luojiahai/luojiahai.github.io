@@ -443,11 +443,6 @@ h6 {
   letter-spacing: 0 !important;
 }
 
-.VPNavBarTitle .title {
-  font-family: var(--unknown-mono);
-  font-size: 14px;
-}
-
 .VPNavBar:not(.has-sidebar) {
   border-bottom: 1px solid var(--vp-c-gutter);
 }

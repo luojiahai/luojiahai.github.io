@@ -51,7 +51,7 @@ export default defineConfig({
       light: "/logo-light.svg",
       dark: "/logo-dark.svg",
     },
-    siteTitle: "/uojiaha!",
+    siteTitle: false,
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },
