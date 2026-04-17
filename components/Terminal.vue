@@ -14,13 +14,6 @@ const EMAIL = "luo[at]jiahai.co";
 
 const SHOW_LOGO_FRAME = false;
 
-// const LOGO_ART = `
-// █ ▀ █
-// █ █ █
-// █ █ █ ▌
-// ▌▄█ █ █
-// `.trim();
-
 const LOGO_ART = ` ▐▛███▜▌
 ▝▜█████▛▘
   ▘▘ ▝▝`;
