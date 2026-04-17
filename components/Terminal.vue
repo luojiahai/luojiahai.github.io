@@ -295,7 +295,6 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 8px;
-  border: 1px solid var(--vp-c-border);
 }
 
 .terminal-frame::-webkit-scrollbar {
