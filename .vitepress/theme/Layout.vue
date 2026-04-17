@@ -1,12 +1,26 @@
 <script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
-import { nextTick, onMounted, watch } from "vue";
+import { computed, nextTick, onMounted, watch } from "vue";
 import { useRoute } from "vitepress";
+import { useData } from "vitepress";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
 
-const THINKING_VERBS = [
+const { lang } = useData();
+const isZh = computed(() => lang.value.startsWith("zh"));
+
+const ZH_THINKING_VERBS = [
+  "思考中",
+  "捣鼓中",
+  "编排中",
+  "叽里咕噜中",
+  "撒欢中",
+  "磨叽中",
+  "搞事情中",
+  "那啥那啥中",
+];
+const EN_THINKING_VERBS = [
   "Thinking",
   "Combobulating",
   "Choreographing",
@@ -16,6 +30,7 @@ const THINKING_VERBS = [
   "Shenaniganing",
   "Whatchamacalliting",
 ];
+const THINKING_VERBS = computed(() => (isZh.value ? ZH_THINKING_VERBS : EN_THINKING_VERBS));
 
 function startTypewriter(el: Element) {
   let wordIdx = 0;
@@ -24,7 +39,7 @@ function startTypewriter(el: Element) {
 
   function tick() {
     if (stopped) return;
-    const word = THINKING_VERBS[wordIdx] + "...";
+    const word = THINKING_VERBS.value[wordIdx] + "...";
     if (charIdx < word.length) {
       el.textContent = word.slice(0, charIdx + 1) + "_❚";
       charIdx++;
@@ -33,8 +48,8 @@ function startTypewriter(el: Element) {
       el.textContent = word;
       setTimeout(() => {
         if (stopped) return;
-        wordIdx = (wordIdx + 1) % THINKING_VERBS.length;
-        const nextWord = THINKING_VERBS[wordIdx] + "...";
+        wordIdx = (wordIdx + 1) % THINKING_VERBS.value.length;
+        const nextWord = THINKING_VERBS.value[wordIdx] + "...";
         const maxLen = Math.max(word.length, nextWord.length);
         let replaceIdx = 1;
         function replace() {
