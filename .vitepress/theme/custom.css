@@ -443,6 +443,11 @@ h6 {
   letter-spacing: 0 !important;
 }
 
+.VPNavBarTitle .title {
+  font-family: var(--unknown-mono);
+  font-size: 14px;
+}
+
 .VPNavBar:not(.has-sidebar) {
   border-bottom: 1px solid var(--vp-c-gutter);
 }
@@ -469,7 +474,7 @@ h6 {
 .VPHome .VPHero .hello {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-text-1);
@@ -486,7 +491,7 @@ h6 {
 .VPHome .VPHero .thinking {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-brand-1);
