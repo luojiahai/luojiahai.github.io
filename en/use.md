@@ -35,11 +35,12 @@ Things I'm using.
 
 - Digital Camera: Sony A7 I
 - Film Camera: Pentax S1a
-- Lens: Sony Zeiss 35mm f/2.8 / Sigma AF 50mm f/1.4
+- Lens: Sony Zeiss 35mm f/2.8
 - Films: Kodak Portra 400 / Fujifilm Fujicolor 200
 
 ## Software
 
+- AI: Claude
 - Editor: Visual Studio Code
 - Browser: Edge
 - Terminal: iTerm2 / Windows Terminal

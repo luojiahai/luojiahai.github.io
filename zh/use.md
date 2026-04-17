@@ -35,11 +35,12 @@
 
 - 电子相机：Sony A7 I
 - 胶片相机：Pentax S1a
-- 镜头：Sony Zeiss 35mm f/2.8 / Sigma AF 50mm f/1.4
+- 镜头：Sony Zeiss 35mm f/2.8
 - 胶片：Kodak Portra 400 / Fujifilm Fujicolor 200
 
 ## 软件
 
+- AI：Claude
 - 编辑器：Visual Studio Code
 - 浏览器：Edge
 - 终端：iTerm2 / Windows Terminal
