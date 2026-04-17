@@ -439,6 +439,10 @@ h6 {
   letter-spacing: 0 !important;
 }
 
+.VPNavBar {
+  background-color: var(--vp-c-bg);
+}
+
 .VPNavBar:not(.has-sidebar) {
   border-bottom: 1px solid var(--vp-c-gutter);
 }

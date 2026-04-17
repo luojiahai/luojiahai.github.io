@@ -480,7 +480,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-gray-2);
+  color: var(--vp-c-gray-1);
   line-height: 1;
 }
 
