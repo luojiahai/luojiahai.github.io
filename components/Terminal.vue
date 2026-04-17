@@ -10,7 +10,6 @@ const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "/uojiaha!";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
-const EMAIL = "luo[at]jiahai.co";
 
 const SHOW_LOGO_FRAME = false;
 
@@ -242,7 +241,6 @@ onUnmounted(() => {
           </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
-            <div class="logo-tagline">{{ EMAIL }}</div>
           </div>
         </div>
         <div class="logo-spacer"></div>
