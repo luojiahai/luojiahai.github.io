@@ -479,14 +479,14 @@ h6 {
   content: "❯";
   display: inline-flex;
   justify-content: center;
-  width: 1ch;
+  width: 8px;
   margin-right: 12px;
 }
 
 .VPHome .VPHero .thinking {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-brand-1);
@@ -496,7 +496,7 @@ h6 {
   content: "";
   display: inline-flex;
   justify-content: center;
-  width: 1ch;
+  width: 8px;
   animation: flower 1.44s steps(1) infinite;
   margin-right: 12px;
   color: var(--vp-c-brand-1);
