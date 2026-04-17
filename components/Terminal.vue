@@ -12,14 +12,20 @@ const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
 const EMAIL = "luo[at]jiahai.co";
 
-const LOGO_ART = `
-█ ▀ █
-█ █ █
-█ █ █ ▌
-▌▄█ █ █
-`.trim();
+const SHOW_LOGO_FRAME = false;
 
-const BORDER_SIDES = Array(8).fill("│").join("\n");
+// const LOGO_ART = `
+// █ ▀ █
+// █ █ █
+// █ █ █ ▌
+// ▌▄█ █ █
+// `.trim();
+
+const LOGO_ART = ` ▐▛███▜▌
+▝▜█████▛▘
+  ▘▘ ▝▝`;
+
+const BORDER_SIDES = Array(6).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
 const LOGO_FRAME_BORDER_RIGHT = `╮\n${BORDER_SIDES}\n╯`;
 
@@ -53,7 +59,7 @@ const CONVERSATION: Record<string, Conversation> = {
   zh: [
     {
       question: "你是谁？",
-      answer: "你好，我是罗嘉海，英文名 Geoffrey。我出生于中国广州，目前定居于澳大利亚墨尔本。",
+      answer: "你好，我是罗嘉海。我出生于中国广州，目前定居于澳大利亚墨尔本。",
     },
     {
       question: "你是做什么的？",
@@ -203,7 +209,7 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div class="logo-frame" :style="{ width: logoFrameWidth }">
+      <div v-if="SHOW_LOGO_FRAME" class="logo-frame" :style="{ width: logoFrameWidth }">
         <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</div>
         <div class="logo-inner">
           <!-- prettier-ignore -->
@@ -220,7 +226,6 @@ onUnmounted(() => {
               <div class="logo-heading">{{ HEADING }}</div>
               <div class="logo-tagline-container">
                 <div class="logo-tagline">{{ TAGLINE }}</div>
-                <div class="logo-tagline">{{ EMAIL }}</div>
               </div>
             </div>
             <div class="logo-spacer"></div>
@@ -228,6 +233,22 @@ onUnmounted(() => {
           <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
         </div>
         <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</div>
+      </div>
+      <div v-else class="logo">
+        <div class="logo-art-container">
+          <div class="logo-art">{{ LOGO_ART }}</div>
+        </div>
+        <div class="logo-info-container">
+          <div class="logo-heading">
+            {{ HEADING }}
+            <span class="logo-frame-top-version">{{ VERSION }}</span>
+          </div>
+          <div class="logo-tagline-container">
+            <div class="logo-tagline">{{ TAGLINE }}</div>
+            <div class="logo-tagline">{{ EMAIL }}</div>
+          </div>
+        </div>
+        <div class="logo-spacer"></div>
       </div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
@@ -270,13 +291,14 @@ onUnmounted(() => {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.5;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 8px;
-  border: 1px solid var(--vp-c-gutter);
+  border: 1px solid var(--vp-c-border);
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -331,12 +353,7 @@ onUnmounted(() => {
 }
 
 .header-control-button:hover {
-  background-color: var(--vp-c-gutter);
-}
-
-.header-control-button.close:hover {
-  background-color: var(--color-blush);
-  color: color-mix(in hsl, var(--color-blush), black 50%);
+  background-color: var(--vp-c-gray-3);
 }
 
 .terminal-content {
@@ -377,11 +394,11 @@ onUnmounted(() => {
 .logo-frame-top,
 .logo-frame-bottom {
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-name {
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-frame-top-version {
@@ -393,7 +410,7 @@ onUnmounted(() => {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-spacer {
@@ -404,24 +421,23 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
-  margin: 0 24px;
+  margin: 0 16px 0 0;
 }
 
 .logo-art {
   font-family: var(--cascadia-mono);
+  line-height: 16px;
   white-space: pre;
   margin: 0;
-  line-height: 1;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
   letter-spacing: -1px;
+  transform: translateY(4px);
 }
 
 .logo-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
   white-space: pre-wrap;
 }
 
@@ -452,7 +468,7 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-bg-elv);
+  background-color: var(--vp-c-gray-3);
 }
 
 .assistant-line {
@@ -468,7 +484,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-text-3);
+  color: var(--vp-c-gray-2);
   line-height: 1;
 }
 
@@ -521,13 +537,13 @@ onUnmounted(() => {
   content: "❯";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 .assistant-line::before {
   content: "●";
   display: inline-flex;
   width: 8px;
-  margin-right: 12px;
+  margin-right: 16px;
 }
 </style>
