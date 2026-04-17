@@ -35,6 +35,10 @@ const CONVERSATION: Record<string, Conversation> = {
         "Hi there, I'm luojiahai. I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia.",
     },
     {
+      question: "What does luojiahai mean?",
+      answer: "It's the Pinyin (Mandarin romanization) of my Chinese name. I use it as my internet handle.",
+    },
+    {
       question: "What do you do?",
       answer:
         "I'm a computer programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
