@@ -40,7 +40,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do?",
       answer:
-        "I'm a computer programmer. I'm doing programming in computer. I'm currently deeply practicing in AI-native workflows.",
+        "I'm a computer programmer. I'm doing programming in computer. I'm currently practicing in AI-native workflows.",
     },
     {
       question: "What are you working on?",
@@ -59,7 +59,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "你是做什么的？",
-      answer: "我是一名计算机程序员，我在计算机里编程。我目前在深入实践 AI 原生工作流。",
+      answer: "我是一名计算机程序员，我在计算机里编程。我目前在实践 AI 原生工作流。",
     },
     {
       question: "你在做什么项目？",
