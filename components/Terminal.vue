@@ -40,7 +40,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do?",
       answer:
-        "I'm a computer programmer. I'm doing programming in computer. I'm currently practicing in AI-native workflows.",
+        "I'm a computer programmer. I do programming in computer.",
     },
     {
       question: "What are you working on?",
@@ -49,25 +49,25 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do outside of programming?",
       answer:
-        "Outside of programming, I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
+        "I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
     },
   ],
   zh: [
     {
       question: "你是谁？",
-      answer: "你好，我是罗嘉海。我出生于中国广州，目前定居于澳大利亚墨尔本。我会说普通话和粤语。",
+      answer: "你好，我是罗嘉海。我在广州出生，目前住在澳大利亚墨尔本。我会说普通话和粤语。",
     },
     {
       question: "你是做什么的？",
-      answer: "我是一名计算机程序员，我在计算机里编程。我目前在实践 AI 原生工作流。",
+      answer: "我是一名计算机程序员，我在计算机里编程。",
     },
     {
       question: "你在做什么项目？",
-      answer: "我在做一个有趣的项目，访问 http://localhost:5173 看看吧。",
+      answer: "我在做一个有趣的项目，可以去 http://localhost:5173 看一下。",
     },
     {
-      question: "编程之外你有什么爱好？",
-      answer: "编程之外，我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，驾驶空客。",
+      question: "除了编程以外你有什么爱好？",
+      answer: "我喜欢吃饭、做饭和逛超市。我玩微软飞行模拟器，飞空客。",
     },
   ],
 };
