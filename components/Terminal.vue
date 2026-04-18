@@ -31,7 +31,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "Who are you?",
       answer:
-        "Hi there, I'm luojiahai. I also go by Geoffrey. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia. My native languages are Mandarin and Cantonese Chinese.",
+        "Hi there, I'm luojiahai. I was born in Guangzhou, China, and I'm currently based in Melbourne, Australia. I speak Mandarin and Cantonese.",
     },
     {
       question: "What does luojiahai mean?",
@@ -40,7 +40,7 @@ const CONVERSATION: Record<string, Conversation> = {
     {
       question: "What do you do?",
       answer:
-        "I'm a computer programmer building useful things. I'm deeply practicing in AI-native workflows. I live in Claude Code.",
+        "I'm a computer programmer. I'm doing programming in computer. I'm currently deeply practicing in AI-native workflows.",
     },
     {
       question: "What are you working on?",
@@ -59,7 +59,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "你是做什么的？",
-      answer: "我是一名计算机程序员，致力于构建有用的东西。我在深度实践 AI 原生工作流，常驻 Claude Code。",
+      answer: "我是一名计算机程序员，我在计算机里编程。我目前在深入实践 AI 原生工作流。",
     },
     {
       question: "你在做什么项目？",
