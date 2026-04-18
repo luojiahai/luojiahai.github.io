@@ -425,7 +425,6 @@ onUnmounted(() => {
   margin: 0;
   color: var(--vp-c-brand-1);
   letter-spacing: -1px;
-  transform: translateY(4px);
 }
 
 .logo-info-container {
