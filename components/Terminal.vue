@@ -428,13 +428,6 @@ onUnmounted(() => {
   margin: 0;
   color: var(--vp-c-brand-1);
   letter-spacing: -4px;
-  font-variant-numeric: tabular-nums;
-  text-rendering: geometricPrecision;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-variant-ligatures: none;
-  font-feature-settings: "kern" 0, "calt" 0, "liga" 0;
-  -webkit-text-size-adjust: 100%;
 }
 
 .logo-info-container {
