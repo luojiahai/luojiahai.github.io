@@ -13,9 +13,12 @@ const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INT
 
 const SHOW_LOGO_FRAME = false;
 
-const LOGO_ART = ` ▐▛███▜▌
-▝▜█████▛▘
-  ▘▘ ▝▝`;
+const LOGO_ART = `    ///|||
+   /// |||
+  ///  |||
+ ///   ╵╵╵
+///    ╷╷╷
+`;
 
 const BORDER_SIDES = Array(6).fill("│").join("\n");
 const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
@@ -420,11 +423,13 @@ onUnmounted(() => {
 
 .logo-art {
   font-family: var(--cascadia-mono);
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 7.5px; 
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
-  letter-spacing: -1px;
+  letter-spacing: -5px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo-info-container {

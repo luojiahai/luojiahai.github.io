@@ -155,5 +155,5 @@
     "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 
   --vp-font-family-base: var(--unknown-sans);
-  --vp-font-family-mono: var(--unknown-mono);
+  --vp-font-family-mono: var(--cascadia-mono);
 }

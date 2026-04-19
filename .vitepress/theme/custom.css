@@ -385,8 +385,6 @@
   --vp-c-text-1: var(--fg-100);
   --vp-c-text-2: var(--fg-200);
   --vp-c-text-3: var(--fg-300);
-
-  --vp-home-hero-name-color: var(--vp-c-text-1);
 }
 
 .dark {
@@ -466,8 +464,22 @@ h6 {
 } */
 
 .VPHome .VPHero .name {
-  font-weight: 500;
-  letter-spacing: 0;
+  font-family: var(--cascadia-mono);
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  -webkit-text-fill-color: var(--vp-c-text-1);
+}
+
+.VPHome .VPHero .name .slash {
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  -webkit-text-fill-color: var(--vp-c-brand-1);
+}
+
+.VPHome .VPHero .name .bang {
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .VPHome .VPHero .hello {
