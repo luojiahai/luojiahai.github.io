@@ -429,7 +429,9 @@ onUnmounted(() => {
   margin: 0;
   color: var(--vp-c-brand-1);
   letter-spacing: -5px;
+  text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .logo-info-container {
