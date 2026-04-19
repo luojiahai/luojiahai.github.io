@@ -424,17 +424,18 @@ onUnmounted(() => {
 .logo-art {
   font-family: var(--cascadia-mono);
   font-weight: 700;
-  line-height: 0.5357; 
+  line-height: calc(15 / 28);
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
-  letter-spacing: -0.357em;
+  letter-spacing: calc(-5em / 14);
+  font-variant-numeric: tabular-nums;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  width: 10ch;
-  font-variant-numeric: tabular-nums;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0;
+  -webkit-text-size-adjust: 100%;
 }
 
 .logo-info-container {
