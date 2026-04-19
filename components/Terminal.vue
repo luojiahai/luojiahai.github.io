@@ -287,7 +287,6 @@ onUnmounted(() => {
   margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.5;
   color: var(--vp-c-text-1);
   overflow: auto;
@@ -421,7 +420,6 @@ onUnmounted(() => {
 }
 
 .logo-art {
-  font-family: var(--cascadia-mono);
   font-weight: 700;
   line-height: 1;
   white-space: pre;
