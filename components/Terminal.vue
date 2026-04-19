@@ -428,7 +428,7 @@ onUnmounted(() => {
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
-  letter-spacing: -5px;
+  letter-spacing: -0.357em;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
