@@ -449,6 +449,16 @@ h6 {
   display: none;
 }
 
+.VPNavBar .VPNavBarTitle .title {
+  font-family: var(--cascadia-mono);
+}
+
+.VPNavBar .VPNavBarTitle .title .slash,
+.VPNavBar .VPNavBarTitle .title .bang {
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+}
+
 .VPHome {
   margin-bottom: 48px;
 }
@@ -471,12 +481,7 @@ h6 {
   -webkit-text-fill-color: var(--vp-c-text-1);
 }
 
-.VPHome .VPHero .name .slash {
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-  -webkit-text-fill-color: var(--vp-c-brand-1);
-}
-
+.VPHome .VPHero .name .slash,
 .VPHome .VPHero .name .bang {
   font-weight: 700;
   color: var(--vp-c-brand-1);

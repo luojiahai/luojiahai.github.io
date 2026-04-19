@@ -52,7 +52,7 @@ export default defineConfig({
     //   dark: "/logo-dark.svg",
     // },
     logo: "/logo-clay.svg",
-    // siteTitle: false,
+    siteTitle: "<span class='slash'>/</span>luojiahai<span class='bang'>!</span>",
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },

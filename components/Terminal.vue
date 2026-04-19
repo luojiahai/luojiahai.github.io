@@ -8,7 +8,7 @@ const isZh = computed(() => lang.value.startsWith("zh"));
 const TITLE = "Terminal";
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
-const HEADING = "/uojiaha!";
+const HEADING = "luojiahai";
 const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
 
 const SHOW_LOGO_FRAME = false;
