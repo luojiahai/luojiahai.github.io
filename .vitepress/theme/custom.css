@@ -466,6 +466,7 @@ h6 {
 .VPHome .VPHero .name {
   font-family: var(--cascadia-mono);
   font-weight: 600;
+  letter-spacing: -1.4px;
   color: var(--vp-c-text-1);
   -webkit-text-fill-color: var(--vp-c-text-1);
 }
