@@ -452,7 +452,8 @@ h6 {
 .VPNavBar .VPNavBarTitle .title {
   font-family: var(--cascadia-mono);
   font-weight: 600;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.05em;
+  word-spacing: -0.3em;
 }
 
 .VPNavBar .VPNavBarTitle .title .slash,
@@ -478,7 +479,8 @@ h6 {
 .VPHome .VPHero .name {
   font-family: var(--cascadia-mono);
   font-weight: 600;
-  letter-spacing: -1.4px;
+  letter-spacing: -0.05em;
+  word-spacing: -0.3em;
   color: var(--vp-c-text-1);
   -webkit-text-fill-color: var(--vp-c-text-1);
 }
