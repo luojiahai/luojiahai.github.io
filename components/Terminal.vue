@@ -424,7 +424,7 @@ onUnmounted(() => {
 .logo-art {
   font-family: var(--cascadia-mono);
   font-weight: 700;
-  line-height: 7.5px; 
+  line-height: 0.5357; 
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
@@ -432,6 +432,9 @@ onUnmounted(() => {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  width: 10ch;
+  font-variant-numeric: tabular-nums;
 }
 
 .logo-info-container {
