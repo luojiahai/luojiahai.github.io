@@ -424,11 +424,11 @@ onUnmounted(() => {
 .logo-art {
   font-family: var(--cascadia-mono);
   font-weight: 700;
-  line-height: calc(15 / 28);
+  line-height: 7.55px;
   white-space: pre;
   margin: 0;
   color: var(--vp-c-brand-1);
-  letter-spacing: calc(-5em / 14);
+  letter-spacing: -5px;
   font-variant-numeric: tabular-nums;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
