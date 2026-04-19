@@ -220,7 +220,9 @@ onUnmounted(() => {
               <div class="logo-art">{{ LOGO_ART }}</div>
             </div>
             <div class="logo-info-container">
-              <div class="logo-heading">{{ HEADING }}</div>
+              <div class="logo-heading">
+                <span>{{ HEADING }}</span>
+              </div>
               <div class="logo-tagline-container">
                 <div class="logo-tagline">{{ TAGLINE }}</div>
               </div>
@@ -237,8 +239,7 @@ onUnmounted(() => {
         </div>
         <div class="logo-info-container">
           <div class="logo-heading">
-            {{ HEADING }}
-            <span class="logo-frame-top-version">{{ VERSION }}</span>
+            <span>{{ HEADING }}</span>&nbsp;<span class="logo-frame-top-version">{{ VERSION }}</span>
           </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
