@@ -451,6 +451,8 @@ h6 {
 
 .VPNavBar .VPNavBarTitle .title {
   font-family: var(--cascadia-mono);
+  font-weight: 600;
+  letter-spacing: -0.4px;
 }
 
 .VPNavBar .VPNavBarTitle .title .slash,
