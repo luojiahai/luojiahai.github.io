@@ -440,7 +440,6 @@
 
 .VPNavBar .VPNavBarTitle .title {
   font-family: var(--vp-font-family-mono);
-  font-weight: 600;
   letter-spacing: -0.05em;
   word-spacing: -0.3em;
 }
