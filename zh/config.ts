@@ -50,13 +50,12 @@ function sidebar() {
   return [
     {
       items: [
-        { text: '简历', link: '/resume' },
-        { text: '使用', link: '/use' },
-      ]
-    }
+        { text: "简历", link: "/resume" },
+        { text: "使用", link: "/use" },
+      ],
+    },
   ];
 }
-
 
 export function searchOptions(): DefaultTheme.LocalSearchOptions {
   return {

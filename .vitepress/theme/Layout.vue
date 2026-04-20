@@ -10,16 +10,7 @@ const route = useRoute();
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const ZH_THINKING_VERBS = [
-  "思考中",
-  "捣鼓中",
-  "编排中",
-  "叽里咕噜中",
-  "撒欢中",
-  "磨叽中",
-  "搞事情中",
-  "那啥那啥中",
-];
+const ZH_THINKING_VERBS = ["思考中", "捣鼓中", "编排中", "叽里咕噜中", "撒欢中", "磨叽中", "搞事情中", "那啥那啥中"];
 const EN_THINKING_VERBS = [
   "Thinking",
   "Combobulating",

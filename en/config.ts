@@ -27,9 +27,9 @@ function sidebar() {
   return [
     {
       items: [
-        { text: 'Resume', link: '/resume' },
-        { text: 'Use', link: '/use' },
-      ]
-    }
+        { text: "Resume", link: "/resume" },
+        { text: "Use", link: "/use" },
+      ],
+    },
   ];
 }

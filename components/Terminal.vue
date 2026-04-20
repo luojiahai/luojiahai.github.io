@@ -40,8 +40,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "What do you do?",
-      answer:
-        "I'm a computer programmer. I do programming in computer.",
+      answer: "I'm a computer programmer. I do programming in computer.",
     },
     {
       question: "What are you working on?",
@@ -49,8 +48,7 @@ const CONVERSATION: Record<string, Conversation> = {
     },
     {
       question: "What do you do outside of programming?",
-      answer:
-        "I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
+      answer: "I like eating, cooking, and grocery shopping. I play Microsoft Flight Simulator, flying Airbus.",
     },
   ],
   zh: [
@@ -239,7 +237,8 @@ onUnmounted(() => {
         </div>
         <div class="logo-info-container">
           <div class="logo-heading">
-            <span>{{ HEADING }}</span>&nbsp;<span class="logo-frame-top-version">{{ VERSION }}</span>
+            <span>{{ HEADING }}</span
+            >&nbsp;<span class="logo-frame-top-version">{{ VERSION }}</span>
           </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
