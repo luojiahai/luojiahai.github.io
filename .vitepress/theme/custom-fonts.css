@@ -67,5 +67,8 @@
 }
 
 :root {
-  --vp-font-family-mono: "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  --font-family-code:
+    "Cascadia Code", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  --vp-font-family-mono:
+    "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
 }
