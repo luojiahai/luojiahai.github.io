@@ -57,15 +57,16 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "客户营销旅程",
       company: "REA 集团",
       description:
-        "构建了数据管道，将客户画像整合为可营销的受众群体，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
+        "构建了数据管道，将客户画像整合为可营销的受众群体，实现了营销通知管理，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
       techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
-    name: "变更管理工具",
-    company: "AWS",
-    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，实施规范化的变更治理。构建了变更自动化，提高变更效率并减少人工操作负担。",
-    techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
-  },
+      name: "变更管理工具",
+      company: "AWS",
+      description:
+        "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，实施规范化的变更治理。构建了变更自动化，提高变更效率并减少人工操作负担。",
+      techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
+    },
   ],
 };
 
