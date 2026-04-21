@@ -423,7 +423,7 @@ onUnmounted(() => {
   line-height: 1;
   white-space: pre;
   margin: 0;
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
   letter-spacing: -4px;
 }
 
