@@ -13,9 +13,9 @@ const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INT
 
 const SHOW_LOGO_FRAME = false;
 
-const LOGO_ART = `   ///|||
-  /// |||
- ///  ╷╷╷
+const LOGO_ART = `  ///|||
+ /// |||
+///  ╷╷╷
 `;
 
 const BORDER_SIDES = Array(6).fill("│").join("\n");
@@ -425,6 +425,7 @@ onUnmounted(() => {
   margin: 0;
   color: var(--vp-c-text-1);
   letter-spacing: -4px;
+  word-spacing: 2px;
 }
 
 .logo-info-container {
