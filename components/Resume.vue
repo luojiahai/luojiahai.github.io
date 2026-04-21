@@ -70,7 +70,7 @@ const RESUME: Record<string, ResumeSection[]> = {
           name: "REA 集团",
           location: "澳大利亚墨尔本",
           items: [
-            { label: "高级软件工程师", period: "2025 - Present" },
+            { label: "高级软件工程师", period: "2025 - 至今" },
             { label: "软件工程师", period: "2024 - 2025" },
           ],
         },

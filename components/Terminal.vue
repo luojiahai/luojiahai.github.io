@@ -270,13 +270,13 @@ onUnmounted(() => {
       <div class="input-border">{{ "─".repeat(numChars) }}</div>
     </div>
     <div class="terminal-footer">
-      <span>Language: {{ language }}</span>
+      <span>{{ isZh ? "语言" : "Language" }}: {{ language }}</span>
       <span class="separator">|</span>
-      <span>Device: {{ device }}</span>
+      <span>{{ isZh ? "设备" : "Device" }}: {{ device }}</span>
       <span class="separator">|</span>
-      <span>Operating System: {{ operatingSystem }}</span>
+      <span>{{ isZh ? "操作系统" : "Operating System" }}: {{ operatingSystem }}</span>
       <span class="separator">|</span>
-      <span>Browser: {{ browser }}</span>
+      <span>{{ isZh ? "浏览器" : "Browser" }}: {{ browser }}</span>
     </div>
   </div>
 </template>

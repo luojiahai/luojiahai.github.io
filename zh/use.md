@@ -21,7 +21,7 @@
 - 显卡：ASUS NVIDIA GeForce GTX 3060
 - 冷却：Cooler Master MasterLiquid ML240L V2
 - 机箱：Fractal Design Pop Mini Air RGB White Micro ATX
-- 电源：upply: Fractal Design ION Gold 750W
+- 电源：Fractal Design ION Gold 750W
 - 内存：Kingston Fury Beast RGB 2x16GB
 - 硬盘：Samsung 980 Pro 1TB
 
