@@ -29,7 +29,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "Customer Marketing Journey",
       company: "REA Group",
       description: "Built a unified customer marketing service that consolidates customer profiles into marketable audiences, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
-      techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Braze"],
+      techStack: ["TypeScript", "GraphQL", "PostgreSQL"],
     },
     {
       name: "Change Management Tool",
@@ -58,7 +58,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       company: "REA 集团",
       description:
         "构建了统一的客户营销服务，将客户画像整合为可营销的受众群体，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
-      techStack: ["TypeScript", "PostgreSQL", "Braze"],
+      techStack: ["TypeScript", "GraphQL", "PostgreSQL"],
     },
     {
     name: "变更管理工具",
