@@ -123,6 +123,8 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 .item-name {
   font-weight: 600;
   color: var(--vp-c-text-1);
+  flex: 1;
+  min-width: 0;
 }
 
 .item-company {
