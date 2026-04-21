@@ -35,7 +35,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "Change Management Tool",
       company: "AWS",
       description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance.",
-      techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "Step Functions"],
+      techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
   zh: [
@@ -64,7 +64,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
     name: "变更管理工具",
     company: "AWS",
     description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，并强制实施结构化的变更治理规范。",
-    techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "Step Functions"],
+    techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
   },
   ],
 };
