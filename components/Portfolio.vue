@@ -15,29 +15,27 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "Ratings & Reviews Summary Generation (LLM powered)",
       company: "REA Group",
       description:
-        "Led full-stack implementation of an LLM-powered review summary agent on agent search pages, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
+        "Delivered an LLM-powered review summary feature on real estate agent search pages, leading the full-stack implementation from design to production, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
-      name: "Agent/Agency Search, Profile & Ratings Reviews",
+      name: "Agent/Agency Search, Profile, and Ratings & Reviews",
       company: "REA Group",
       description:
         "Managed agent and agency search, profile, and ratings & reviews pages on realestate.com.au, replatforming the search pages onto a microfrontend architecture.",
-      techStack: ["TypeScript", "React", "PostgreSQL"],
+      techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
-      name: "Customer Data Management",
+      name: "Customer Marketing Journey",
       company: "REA Group",
-      description:
-        "Designed and built an event streaming system to propagate customer profile state changes from a legacy system to downstream consumers, reducing architectural complexity and simplifying data flow.",
-      techStack: ["TypeScript", "Kafka", "PostgreSQL"],
-    },
-    {
-      name: "Customer Marketing Audience Service",
-      company: "REA Group",
-      description:
-        "Built a data pipeline that consolidates and transforms customer profile data from a legacy system into marketable audience segments, enabling omni-channel communications via Braze and increasing customer engagement.",
+      description: "Built a unified customer marketing service that consolidates customer profiles into marketable audiences, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
       techStack: ["TypeScript", "PostgreSQL", "Braze"],
+    },
+    {
+      name: "Change Management Tool",
+      company: "AWS",
+      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance.",
+      techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "Step Functions"],
     },
   ],
   zh: [
@@ -45,7 +43,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "评分与评价摘要生成（LLM 驱动）",
       company: "REA 集团",
       description:
-        "主导了中介搜索页面 LLM 评价摘要智能体的全栈实现，将评分与评价中的 AI 洞察呈现给用户，提升中介的可发现性。",
+        "在房产中介搜索页面上交付了 LLM 驱动的评价摘要功能，主导从设计到上线的全栈实现，将评分与评价中的 AI 生成洞察呈现给用户，提升中介的可发现性。",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
@@ -53,22 +51,21 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       company: "REA 集团",
       description:
         "负责维护 realestate.com.au 上的中介与机构搜索、档案及评分评价页面，并将搜索页面迁移至微前端架构。",
-      techStack: ["TypeScript", "React", "PostgreSQL"],
+      techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
-      name: "客户数据管理",
+      name: "客户营销旅程",
       company: "REA 集团",
       description:
-        "设计并构建了事件流系统，将客户画像状态变更从旧系统实时传递至下游消费者，降低了架构复杂度并简化了数据流。",
-      techStack: ["TypeScript", "Kafka", "PostgreSQL"],
-    },
-    {
-      name: "客户营销受众服务",
-      company: "REA 集团",
-      description:
-        "构建了数据管道，将旧系统中的客户画像数据整合并转换为可营销的受众细分，通过 Braze 实现全渠道触达，提升客户参与度。",
+        "构建了统一的客户营销服务，将客户画像整合为可营销的受众群体，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
       techStack: ["TypeScript", "PostgreSQL", "Braze"],
     },
+    {
+    name: "变更管理工具",
+    company: "AWS",
+    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，并强制实施结构化的变更治理规范。",
+    techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "Step Functions"],
+  },
   ],
 };
 
