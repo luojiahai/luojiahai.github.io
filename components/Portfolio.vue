@@ -22,19 +22,19 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "Agent/Agency Search, Profile, and Ratings & Reviews",
       company: "REA Group",
       description:
-        "Managed agent and agency search, profile, and ratings & reviews pages on realestate.com.au, replatforming the search pages onto a microfrontend architecture.",
+        "Managed the full-stack systems that power agent and agency search, profile, and ratings & reviews pages on realestate.com.au. Re-platformed the search pages onto a microfrontend architecture, modernising the frontend experience.",
       techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
       name: "Customer Marketing Journey",
       company: "REA Group",
       description: "Built a unified customer marketing service that consolidates customer profiles into marketable audiences, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
-      techStack: ["TypeScript", "PostgreSQL", "Braze"],
+      techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Braze"],
     },
     {
       name: "Change Management Tool",
       company: "AWS",
-      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance.",
+      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance, increasing change velocity and reducing manual toil.",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
@@ -50,7 +50,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "中介搜索、档案与评价页面",
       company: "REA 集团",
       description:
-        "负责维护 realestate.com.au 上的中介与机构搜索、档案及评分评价页面，并将搜索页面迁移至微前端架构。",
+        "负责 realestate.com.au 上的中介与机构搜索、档案及评分评价页面的全栈系统。将搜索页面重构为微前端架构，提升并现代化了前端用户体验。",
       techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
@@ -63,7 +63,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
     {
     name: "变更管理工具",
     company: "AWS",
-    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，并强制实施结构化的变更治理规范。",
+    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行。通过实施规范化的变更治理，提高变更效率并减少人工操作负担。",
     techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
   },
   ],
