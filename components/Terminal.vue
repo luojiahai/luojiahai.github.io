@@ -424,8 +424,8 @@ onUnmounted(() => {
   white-space: pre;
   margin: 0;
   color: var(--vp-c-text-1);
-  letter-spacing: -4px;
-  word-spacing: 2px;
+  letter-spacing: -5px;
+  word-spacing: 3px;
 }
 
 .logo-info-container {
