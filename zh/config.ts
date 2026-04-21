@@ -42,6 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
     { text: "简历", link: "/zh/resume" },
+    { text: "项目", link: "/zh/portfolio" },
     { text: "使用", link: "/zh/use" },
   ];
 }
@@ -51,6 +52,7 @@ function sidebar() {
     {
       items: [
         { text: "简历", link: "/resume" },
+        { text: "项目", link: "/portfolio" },
         { text: "使用", link: "/use" },
       ],
     },
