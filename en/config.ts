@@ -19,6 +19,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
     { text: "Resume", link: "/resume" },
+    { text: "Portfolio", link: "/portfolio" },
     { text: "Use", link: "/use" },
   ];
 }
@@ -28,6 +29,7 @@ function sidebar() {
     {
       items: [
         { text: "Resume", link: "/resume" },
+        { text: "Portfolio", link: "/portfolio" },
         { text: "Use", link: "/use" },
       ],
     },
