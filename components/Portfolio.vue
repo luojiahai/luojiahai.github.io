@@ -28,13 +28,13 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
     {
       name: "Customer Marketing Journey",
       company: "REA Group",
-      description: "Built a unified customer marketing service that consolidates customer profiles into marketable audiences, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
-      techStack: ["TypeScript", "GraphQL", "PostgreSQL"],
+      description: "Built a data pipeline that consolidates customer profiles into marketable audiences and implemented marketing notification management, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
+      techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
       name: "Change Management Tool",
       company: "AWS",
-      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance, increasing change velocity and reducing manual toil.",
+      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance. Built a change automation capability, increasing change velocity and reducing manual toil.",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
@@ -57,13 +57,13 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "客户营销旅程",
       company: "REA 集团",
       description:
-        "构建了统一的客户营销服务，将客户画像整合为可营销的受众群体，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
-      techStack: ["TypeScript", "GraphQL", "PostgreSQL"],
+        "构建了数据管道，将客户画像整合为可营销的受众群体，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
+      techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
     name: "变更管理工具",
     company: "AWS",
-    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行。通过实施规范化的变更治理，提高变更效率并减少人工操作负担。",
+    description: "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，实施规范化的变更治理。构建了变更自动化，提高变更效率并减少人工操作负担。",
     techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
   },
   ],
