@@ -423,7 +423,7 @@
 
 :root {
   --vp-c-brand-1: hsl(var(--_brand-clay));
-  --vp-c-brand-2: hsl(var(--_brand-clay-emphasized));
+  --vp-c-brand-2: hsl(var(--_brand-clay));
   --vp-c-brand-3: hsl(var(--_brand-clay-emphasized));
   --vp-c-brand-soft: hsl(var(--_brand-clay) / 0.15);
 }
