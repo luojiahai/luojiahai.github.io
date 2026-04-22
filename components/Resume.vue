@@ -124,13 +124,11 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
         <li v-for="entry in section.entries" :key="entry.name" class="entry-item">
           <div class="entry-header">
             <span class="entry-name">{{ entry.name }}</span>
-            <span class="separator">|</span>
             <span class="entry-location">{{ entry.location }}</span>
           </div>
           <ul class="item-list">
             <li v-for="item in entry.items" :key="item.label" class="item">
               <span class="item-label">{{ item.label }}</span>
-              <span class="separator">|</span>
               <span class="item-period">{{ item.period }}</span>
             </li>
           </ul>
@@ -145,8 +143,17 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   margin: 0 auto 32px;
 }
 
-.separator {
-  display: none;
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-2);
+  margin-top: 0;
+  padding-bottom: 16px;
+  border-top: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+  line-height: 1;
 }
 
 .entry-list {
@@ -157,88 +164,72 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   gap: 16px;
 }
 
+.entry-item {
+  border-left: 2px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+}
+
 .entry-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 5px;
 }
 
 .entry-name {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
   flex: 1;
   min-width: 0;
 }
 
 .entry-location {
-  flex: 1;
-  min-width: 0;
-  text-align: right;
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
 }
 
 .item-list {
   list-style-type: none;
   padding-left: 0;
-  color: var(--vp-c-text-2);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-label {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+
+.item-label::before {
+  content: "—";
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+  margin-right: 8px;
 }
 
 .item-period {
+  font-size: 11px;
+  font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-text-3);
   white-space: nowrap;
 }
 
 @media (max-width: 639px) {
-  .separator {
-    display: unset;
-    color: var(--vp-c-divider);
-  }
-
-  .entry-list {
-    white-space: nowrap;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
   .entry-header {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 12px;
-  }
-
-  .entry-name {
-    flex: none;
+    flex-direction: column;
+    gap: 2px;
   }
 
   .entry-location {
-    text-align: left;
+    white-space: normal;
   }
-
-  .item {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 8px;
-  }
-}
-
-.entry-name::before {
-  font-family: var(--vp-font-family-mono);
-  content: "❯";
-  display: inline-flex;
-  width: 8px;
-  margin-right: 16px;
-}
-
-.item-label::before {
-  font-family: var(--vp-font-family-mono);
-  content: "●";
-  display: inline-flex;
-  width: 8px;
-  margin-right: 16px;
 }
 </style>
