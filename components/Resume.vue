@@ -19,7 +19,7 @@ const RESUME: Record<string, ResumeSection[]> = {
       title: "Experience",
       entries: [
         {
-          name: "REA Group",
+          name: "REA Group (realestate.com.au)",
           location: "Melbourne, Victoria, Australia",
           items: [
             { label: "Senior Software Engineer", period: "2025 - Present" },
@@ -67,7 +67,7 @@ const RESUME: Record<string, ResumeSection[]> = {
       title: "工作经历",
       entries: [
         {
-          name: "REA 集团",
+          name: "REA 集团（realestate.com.au）",
           location: "澳大利亚墨尔本",
           items: [
             { label: "高级软件工程师", period: "2025 - 至今" },

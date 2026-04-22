@@ -13,58 +13,56 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
   en: [
     {
       name: "Ratings & Reviews Summary Generation (LLM powered)",
-      company: "REA Group",
+      company: "REA Group (realestate.com.au)",
       description:
-        "Delivered an LLM-powered review summary feature on real estate agent search pages, leading the full-stack implementation from design to production, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
+        "Led full-stack delivery of an LLM-powered review summary feature on real estate agent search pages, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
       name: "Agent/Agency Search, Profile, and Ratings & Reviews",
-      company: "REA Group",
+      company: "REA Group (realestate.com.au)",
       description:
-        "Managed the full-stack systems that power agent and agency search, profile, and ratings & reviews pages on realestate.com.au. Re-platformed the search pages onto a microfrontend architecture, modernising the frontend experience.",
+        "Owned the full-stack systems powering agent and agency search, profile, and ratings & reviews on realestate.com.au. Re-platformed the search pages onto a microfrontend architecture, modernising the frontend experience.",
       techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
       name: "Customer Marketing Journey",
-      company: "REA Group",
-      description: "Built a data pipeline that consolidates customer profiles into marketable audiences and implemented marketing notification management, enabling omni-channel communications to real estate agents in the marketing platform, increasing customer engagement.",
+      company: "REA Group (realestate.com.au)",
+      description: "Built a data pipeline consolidating customer profiles into marketable audiences and delivered a marketing preference management feature, enabling omni-channel communications to real estate agents and increasing customer engagement. Recognised with the \"Real Deal\" award.",
       techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
       name: "Change Management Tool",
-      company: "AWS",
-      description: "Managed the change management tool that enables internal teams to define, review, schedule, and execute changes across software systems and infrastructure, enforcing structured change governance. Built a change automation capability, increasing change velocity and reducing manual toil.",
+      company: "Amazon Web Services (AWS)",
+      description: "Owned an internal change management tool enforcing structured change governance across software systems and infrastructure. Built a change automation capability, increasing change velocity and reducing manual toil.",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
   zh: [
     {
       name: "评分与评价摘要生成（LLM 驱动）",
-      company: "REA 集团",
+      company: "REA 集团（realestate.com.au）",
       description:
-        "在房产中介搜索页面上交付了 LLM 驱动的评价摘要功能，主导从设计到上线的全栈实现，将评分与评价中的 AI 生成洞察呈现给用户，提升中介的可发现性。",
+        "主导了房地产经纪人搜索页面上 LLM 驱动的评价摘要功能的全栈交付，将 AI 生成的评分与评价洞察呈现给用户，提升经纪人的可发现性。",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
-      name: "中介搜索、档案与评价页面",
-      company: "REA 集团",
+      name: "经纪人/中介搜索、主页及评分与评价",
+      company: "REA 集团（realestate.com.au）",
       description:
-        "负责 realestate.com.au 上的中介与机构搜索、档案及评分评价页面的全栈系统。将搜索页面重构为微前端架构，提升并现代化了前端用户体验。",
+        "负责 realestate.com.au 上经纪人与中介的搜索、主页及评分评价功能的全栈系统。将搜索页面迁移至微前端架构，全面现代化前端体验。",
       techStack: ["TypeScript", "React", "GraphQL", "PostgreSQL"],
     },
     {
       name: "客户营销旅程",
-      company: "REA 集团",
-      description:
-        "构建了数据管道，将客户画像整合为可营销的受众群体，实现了营销通知管理，在营销平台上为房产中介提供全渠道触达能力，提升客户参与度。",
+      company: "REA 集团（realestate.com.au）",
+      description: "构建数据管道，将客户档案整合为可触达的营销受众，并交付了营销偏好管理功能，实现对房地产经纪人的全渠道沟通，提升客户参与度。荣获公司“Real Deal”奖项。",
       techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
       name: "变更管理工具",
-      company: "AWS",
-      description:
-        "负责变更管理工具的维护与迭代，支持内部团队对软件系统和基础设施的变更进行定义、审核、调度与执行，实施规范化的变更治理。构建了变更自动化，提高变更效率并减少人工操作负担。",
+      company: "亚马逊云科技（AWS）",
+      description: "负责一款内部变更管理工具，对软件系统与基础设施实施结构化变更治理。构建了变更自动化能力，提升变更效率，减少人工操作成本。",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
@@ -96,7 +94,7 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 
 <style scoped>
 .portfolio {
-  margin: 0 auto 32px;
+  margin: 32px auto;
 }
 
 .item-list {
