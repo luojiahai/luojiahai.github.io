@@ -18,19 +18,31 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
-    { text: "Resume", link: "/resume" },
-    { text: "Portfolio", link: "/portfolio" },
-    { text: "Use", link: "/use" },
+    {
+      text: "Life",
+      items: [{ text: "Use", link: "/use" }],
+    },
+    {
+      text: "Work",
+      items: [
+        { text: "Resume", link: "/resume" },
+        { text: "Portfolio", link: "/portfolio" },
+      ],
+    },
   ];
 }
 
 function sidebar() {
   return [
     {
+      text: "Life",
+      items: [{ text: "Use", link: "/use" }],
+    },
+    {
+      text: "Work",
       items: [
         { text: "Resume", link: "/resume" },
         { text: "Portfolio", link: "/portfolio" },
-        { text: "Use", link: "/use" },
       ],
     },
   ];

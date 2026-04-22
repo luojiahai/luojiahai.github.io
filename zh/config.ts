@@ -41,19 +41,31 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
-    { text: "简历", link: "/zh/resume" },
-    { text: "项目", link: "/zh/portfolio" },
-    { text: "使用", link: "/zh/use" },
+    {
+      text: "生活",
+      items: [{ text: "使用", link: "/zh/use" }],
+    },
+    {
+      text: "工作",
+      items: [
+        { text: "简历", link: "/zh/resume" },
+        { text: "项目", link: "/zh/portfolio" },
+      ],
+    },
   ];
 }
 
 function sidebar() {
   return [
     {
+      text: "生活",
+      items: [{ text: "使用", link: "/use" }],
+    },
+    {
+      text: "工作",
       items: [
         { text: "简历", link: "/resume" },
         { text: "项目", link: "/portfolio" },
-        { text: "使用", link: "/use" },
       ],
     },
   ];
