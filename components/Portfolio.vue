@@ -125,6 +125,7 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 
 .item-company {
   font-size: 14px;
+  font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
 }
@@ -149,5 +150,16 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 
 .tech-separator {
   color: var(--vp-c-text-3);
+}
+
+@media (max-width: 639px) {
+  .item-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .item-company {
+    white-space: normal;
+  }
 }
 </style>

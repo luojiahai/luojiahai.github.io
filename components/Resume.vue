@@ -185,6 +185,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 
 .entry-location {
   font-size: 14px;
+  font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
 }
