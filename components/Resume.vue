@@ -194,7 +194,6 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 3px;
 }
 
 .item {
@@ -206,6 +205,13 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 .item-label {
   font-size: 14px;
   color: var(--vp-c-text-2);
+}
+
+.item-label::before {
+  content: "•";
+  color: var(--vp-c-text-3);
+  font-size: 14px;
+  margin-right: 8px;
 }
 
 .item-period {
