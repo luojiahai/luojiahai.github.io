@@ -20,13 +20,15 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "Home", link: "/" },
     {
       text: "Life",
-      items: [{ text: "Use", link: "/use" }],
+      activeMatch: "/life/",
+      items: [{ text: "Use", link: "/life/use" }],
     },
     {
       text: "Work",
+      activeMatch: "/work/",
       items: [
-        { text: "Resume", link: "/resume" },
-        { text: "Portfolio", link: "/portfolio" },
+        { text: "Resume", link: "/work/resume" },
+        { text: "Portfolio", link: "/work/portfolio" },
       ],
     },
   ];
@@ -36,11 +38,19 @@ function sidebar() {
   return [
     {
       text: "Life",
-      items: [{ text: "Use", link: "/use" }],
+      collapsed: false,
+      base: "/life",
+      items: [
+        { text: "Index", link: "/" },
+        { text: "Use", link: "/use" }
+      ],
     },
     {
       text: "Work",
+      collapsed: false,
+      base: "/work",
       items: [
+        { text: "Index", link: "/" },
         { text: "Resume", link: "/resume" },
         { text: "Portfolio", link: "/portfolio" },
       ],

@@ -43,13 +43,15 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "首页", link: "/zh/" },
     {
       text: "生活",
-      items: [{ text: "使用", link: "/zh/use" }],
+      activeMatch: "/zh/life/",
+      items: [{ text: "使用", link: "/zh/life/use" }],
     },
     {
       text: "工作",
+      activeMatch: "/zh/work/",
       items: [
-        { text: "简历", link: "/zh/resume" },
-        { text: "项目", link: "/zh/portfolio" },
+        { text: "简历", link: "/zh/work/resume" },
+        { text: "项目", link: "/zh/work/portfolio" },
       ],
     },
   ];
@@ -59,11 +61,19 @@ function sidebar() {
   return [
     {
       text: "生活",
-      items: [{ text: "使用", link: "/use" }],
+      collapsed: false,
+      base: "/zh/life",
+      items: [
+        { text: "目录", link: "/" },
+        { text: "使用", link: "/use" },
+      ],
     },
     {
       text: "工作",
+      collapsed: false,
+      base: "/zh/work",
       items: [
+        { text: "目录", link: "/" },
         { text: "简历", link: "/resume" },
         { text: "项目", link: "/portfolio" },
       ],

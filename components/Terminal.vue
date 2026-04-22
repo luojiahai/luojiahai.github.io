@@ -5,7 +5,7 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = "Terminal";
+const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
