@@ -419,13 +419,9 @@ onUnmounted(() => {
 }
 
 .logo-art {
-  font-weight: 700;
-  line-height: 1;
   white-space: pre;
   margin: 0;
   color: var(--vp-c-text-1);
-  letter-spacing: -5px;
-  word-spacing: 3px;
 }
 
 .logo-info-container {
