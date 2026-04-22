@@ -462,7 +462,7 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-gray-3);
+  background-color: var(--vp-c-bg-soft);
 }
 
 .assistant-line {
