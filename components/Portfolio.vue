@@ -15,7 +15,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "Ratings & Reviews Summary Generation (LLM powered)",
       company: "REA Group (realestate.com.au)",
       description:
-        "Led full-stack delivery of an LLM-powered review summary feature on real estate agent search pages, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
+        "Led full-stack delivery of an LLM-powered review summary feature on realestate.com.au agent search pages, surfacing AI-generated insights from ratings and reviews to improve agent discoverability.",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
@@ -43,7 +43,7 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
       name: "评分与评价摘要生成（LLM 驱动）",
       company: "REA 集团（realestate.com.au）",
       description:
-        "主导了房地产经纪人搜索页面上 LLM 驱动的评价摘要功能的全栈交付，将 AI 生成的评分与评价洞察呈现给用户，提升经纪人的可发现性。",
+        "主导了 realestate.com.au 经纪人搜索页面上 LLM 驱动的评价摘要功能的全栈交付，将评分与评价转化为 AI 生成的洞察，提升经纪人的可发现性。",
       techStack: ["TypeScript", "Effect-TS", "OpenAI Agent SDK", "PostgreSQL"],
     },
     {
