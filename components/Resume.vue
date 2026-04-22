@@ -144,14 +144,16 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .section-title {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--vp-c-text-2);
-  margin-bottom: 20px;
-  padding-bottom: 10px;
+  margin-top: 0;
+  padding-bottom: 16px;
+  border-top: none;
   border-bottom: 1px solid var(--vp-c-divider);
+  line-height: 1;
 }
 
 .entry-list {
@@ -160,7 +162,6 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 36px;
 }
 
 .entry-item {
