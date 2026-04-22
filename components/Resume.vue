@@ -184,7 +184,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .entry-location {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--vp-c-text-2);
   white-space: nowrap;
 }
@@ -204,20 +204,12 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .item-label {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--vp-c-text-2);
 }
 
-.item-label::before {
-  content: "—";
-  color: var(--vp-c-text-3);
-  font-size: 11px;
-  margin-right: 8px;
-}
-
 .item-period {
-  font-size: 11px;
-  font-family: var(--vp-font-family-mono);
+  font-size: 14px;
   color: var(--vp-c-text-3);
   white-space: nowrap;
 }
