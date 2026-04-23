@@ -346,7 +346,7 @@ onUnmounted(() => {
 }
 
 .header-control-button:hover {
-  background-color: var(--vp-c-gray-3);
+  background-color: var(--vp-c-brand-soft);
 }
 
 .terminal-content {
