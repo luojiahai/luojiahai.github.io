@@ -472,23 +472,11 @@
 
 .VPHome .VPHero .hero-lottie-bg {
   position: absolute;
-  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
-  right: 24px;
-  height: calc(100% - calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)));
+  top: 0;
+  right: 0;
+  height: 100%;
   aspect-ratio: 1;
   pointer-events: none;
-}
-
-@media (min-width: 640px) {
-  .VPHome .VPHero .hero-lottie-bg {
-    right: 48px;
-  }
-}
-
-@media (min-width: 960px) {
-  .VPHome .VPHero .hero-lottie-bg {
-    right: 64px;
-  }
 }
 
 .VPHome .VPHero .hero-lottie-bg svg {

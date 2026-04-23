@@ -82,7 +82,7 @@ onMounted(() => {
       const currentTickId = ++tickId;
       nextTick(async () => {
         if (currentTickId !== tickId) return;
-        const hero = document.querySelector<HTMLElement>(".VPHome .VPHero");
+        const hero = document.querySelector<HTMLElement>(".VPHome .VPHero .container");
         if (hero) {
           let bg = hero.querySelector<HTMLElement>(".hero-lottie-bg");
           if (!bg) {
