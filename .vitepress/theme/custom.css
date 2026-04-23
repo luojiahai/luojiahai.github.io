@@ -460,7 +460,7 @@
     linear-gradient(var(--vp-c-bg-elv) 1px, #0000 1px);
   background-size: 16px 16px;
   background-color: var(--vp-c-bg-alt);
-  border-bottom: 1px solid var(--vp-c-gutter);
+  border-bottom: 1px solid var(--vp-c-border);
 }
 
 .VPHome .VPHero .actions {
