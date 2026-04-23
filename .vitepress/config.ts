@@ -51,8 +51,7 @@ export default defineConfig({
       light: "/logo-light.svg",
       dark: "/logo-dark.svg",
     },
-    // siteTitle: "<span class='slash'>/</span>&nbsp;<span>luojiahai</span>&nbsp;<span class='bang'>!</span>",
-    siteTitle: "luojiahai",
+    siteTitle: "LUOJIAHAI",
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },

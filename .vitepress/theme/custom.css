@@ -444,18 +444,6 @@
   display: none;
 }
 
-.VPNavBar .VPNavBarTitle .title {
-  font-family: var(--vp-font-family-mono);
-  letter-spacing: -0.05em;
-  word-spacing: -0.3em;
-}
-
-.VPNavBar .VPNavBarTitle .title .slash,
-.VPNavBar .VPNavBarTitle .title .bang {
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-}
-
 .VPHome {
   margin-bottom: 48px;
 }
@@ -477,13 +465,6 @@
   word-spacing: -0.3em;
   color: var(--vp-c-text-1);
   -webkit-text-fill-color: var(--vp-c-text-1);
-}
-
-.VPHome .VPHero .name .slash,
-.VPHome .VPHero .name .bang {
-  font-weight: 700;
-  color: var(--vp-c-brand-1);
-  -webkit-text-fill-color: var(--vp-c-brand-1);
 }
 
 .VPHome .VPHero .hello {
