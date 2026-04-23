@@ -473,16 +473,36 @@
 .VPHome .VPHero .hero-lottie-bg {
   position: absolute;
   top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
-  right: 0;
+  right: 24px;
   height: calc(100% - calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)));
   aspect-ratio: 1;
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .VPHome .VPHero .hero-lottie-bg {
+    right: 48px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHome .VPHero .hero-lottie-bg {
+    right: 64px;
+  }
 }
 
 .VPHome .VPHero .hero-lottie-bg svg {
   height: 100%;
   width: auto;
   display: block;
+}
+
+.dark .VPHome .VPHero .hero-lottie-bg svg [fill="rgb(19,19,20)"] {
+  fill: rgb(236, 236, 235) !important;
+}
+
+.dark .VPHome .VPHero .hero-lottie-bg svg [stroke="rgb(19,19,20)"] {
+  stroke: rgb(236, 236, 235) !important;
 }
 
 .VPHero {
