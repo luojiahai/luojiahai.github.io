@@ -299,12 +299,6 @@ onUnmounted(() => {
   display: none;
 }
 
-@media (min-width: 640px) {
-  .terminal-frame {
-    margin: 0 0;
-  }
-}
-
 .terminal-header {
   display: flex;
   align-items: stretch;
