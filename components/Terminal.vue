@@ -283,7 +283,6 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
-  margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   line-height: 1.5;
