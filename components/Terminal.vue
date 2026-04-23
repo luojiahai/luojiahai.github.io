@@ -9,12 +9,7 @@ const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
-const TAGLINE_1 = computed(() => (isZh.value ? "INTJ · 计算机程序员" : "INTJ · Computer Programmer"));
-const TAGLINE_2 = computed(() =>
-  isZh.value
-    ? "低级地球居民"
-    : "Non-Senior Earth Resident"
-);
+const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员 · 低级地球居民" : "INTJ · Computer Programmer · Non-Senior Earth Resident"));
 
 const SHOW_LOGO_FRAME = false;
 
@@ -227,8 +222,7 @@ onUnmounted(() => {
                 <span>{{ HEADING }}</span>
               </div>
               <div class="logo-tagline-container">
-                <div class="logo-tagline">{{ TAGLINE_1 }}</div>
-                <div class="logo-tagline">{{ TAGLINE_2 }}</div>
+                <div class="logo-tagline">{{ TAGLINE }}</div>
               </div>
             </div>
             <div class="logo-spacer"></div>
@@ -247,8 +241,7 @@ onUnmounted(() => {
             >&nbsp;<span class="logo-frame-top-version">{{ VERSION }}</span>
           </div>
           <div class="logo-tagline-container">
-            <div class="logo-tagline">{{ TAGLINE_1 }}</div>
-            <div class="logo-tagline">{{ TAGLINE_2 }}</div>
+            <div class="logo-tagline">{{ TAGLINE }}</div>
           </div>
         </div>
         <div class="logo-spacer"></div>
