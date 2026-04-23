@@ -463,23 +463,19 @@
   border-bottom: 1px solid var(--vp-c-border);
 }
 
-.VPHome .VPHero .actions {
-  padding-top: 24px;
-}
-
 .VPHero {
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 24px 32px !important;
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 24px 24px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 48px 32px !important;
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 48px 24px !important;
   }
 }
 
 @media (min-width: 960px) {
     .VPHero {
-        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 64px 32px !important;
+        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 64px 24px !important;
     }
 }
 
@@ -495,7 +491,7 @@
 }
 
 .VPHome .VPHero .tagline {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .VPHome .VPHero .hello {
@@ -516,7 +512,7 @@
 }
 
 .VPHome .VPHero .thinking {
-  padding-top: 12px;
+  padding-top: 8px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   line-height: 1.2;
@@ -587,6 +583,10 @@
   75% {
     content: "\\";
   }
+}
+
+.VPHome .VPHero .actions {
+  padding-top: 24px;
 }
 
 .VPFooter {
