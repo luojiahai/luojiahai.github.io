@@ -455,12 +455,36 @@
 
 /* prettier-ignore */
 .VPHome .VPHero {
+  position: relative;
+  overflow: hidden;
   background-image:
     linear-gradient(90deg, var(--vp-c-bg-elv) 1px, #0000 1px),
     linear-gradient(var(--vp-c-bg-elv) 1px, #0000 1px);
   background-size: 16px 16px;
   background-color: var(--vp-c-bg-alt);
   border-bottom: 1px solid var(--vp-c-border);
+}
+
+.VPHome .VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-lottie-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.12;
+}
+
+.hero-lottie-bg svg {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 
 .VPHero {
