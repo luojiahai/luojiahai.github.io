@@ -35,7 +35,7 @@ const CONVERSATION: Record<string, Conversation> = {
         "Hi there, I'm luojiahai. I was born and raised in Guangzhou, China. I'm currently based in Melbourne, Australia.",
     },
     {
-      question: "What does luojiahai mean?",
+      question: "What is \"luojiahai\"?",
       answer: "It's the Pinyin (Mandarin romanization) of my Chinese name. I use it as my internet handle.",
     },
     {
@@ -292,6 +292,7 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 8px;
+  border: 2px solid var(--vp-c-bg-elv);
 }
 
 .terminal-frame::-webkit-scrollbar {
