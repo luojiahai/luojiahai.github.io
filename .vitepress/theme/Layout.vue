@@ -3,7 +3,7 @@ import DefaultTheme from "vitepress/theme";
 import { computed, nextTick, onMounted, watch } from "vue";
 import { useRoute } from "vitepress";
 import { useData } from "vitepress";
-import lottie, { type AnimationItem } from "lottie-web";
+import { type AnimationItem } from "lottie-web";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
@@ -69,6 +69,7 @@ function startTypewriter(el: Element) {
 onMounted(() => {
   let cleanup: (() => void) | null = null;
   let lottieInstance: AnimationItem | null = null;
+  let tickId = 0;
 
   watch(
     () => route.path,
@@ -78,7 +79,9 @@ onMounted(() => {
         lottieInstance.destroy();
         lottieInstance = null;
       }
-      nextTick(() => {
+      const currentTickId = ++tickId;
+      nextTick(async () => {
+        if (currentTickId !== tickId) return;
         const hero = document.querySelector<HTMLElement>(".VPHome .VPHero");
         if (hero) {
           let bg = hero.querySelector<HTMLElement>(".hero-lottie-bg");
@@ -87,6 +90,8 @@ onMounted(() => {
             bg.className = "hero-lottie-bg";
             hero.insertBefore(bg, hero.firstChild);
           }
+          const { default: lottie } = await import("lottie-web");
+          if (currentTickId !== tickId) return;
           lottieInstance = lottie.loadAnimation({
             container: bg,
             path: "/lottie-overview.json",
