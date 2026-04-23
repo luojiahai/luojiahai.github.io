@@ -480,12 +480,8 @@
   display: block;
 }
 
-.dark .VPHome .VPHero .hero-lottie-bg svg [fill="rgb(19,19,20)"] {
-  fill: rgb(236, 236, 235) !important;
-}
-
-.dark .VPHome .VPHero .hero-lottie-bg svg [stroke="rgb(19,19,20)"] {
-  stroke: rgb(236, 236, 235) !important;
+.VPHome .VPHero .hero-lottie-bg svg [fill="rgb(19,19,20)"] {
+  fill: var(--vp-c-text-1) !important;
 }
 
 .VPHero {
