@@ -285,7 +285,7 @@ onUnmounted(() => {
 .terminal-frame {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -353,7 +353,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 8px 1lh;
+  padding: 1lh 8px;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -450,7 +450,7 @@ onUnmounted(() => {
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 0.5lh;
+  gap: 1lh;
 }
 
 .user-line {
@@ -502,7 +502,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 8px;
+  padding: 8px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
