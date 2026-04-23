@@ -472,12 +472,11 @@
 
 .VPHome .VPHero .hero-lottie-bg {
   position: absolute;
-  top: 0;
+  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px));
   right: 0;
-  height: 100%;
+  height: calc(100% - calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px)));
   aspect-ratio: 1;
   pointer-events: none;
-  opacity: 0.12;
 }
 
 .VPHome .VPHero .hero-lottie-bg svg {
