@@ -464,18 +464,18 @@
 }
 
 .VPHero {
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 24px 24px !important;
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 32px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 48px 24px !important;
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 48px 32px !important;
   }
 }
 
 @media (min-width: 960px) {
     .VPHero {
-        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 64px 24px !important;
+        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 64px 32px !important;
     }
 }
 
