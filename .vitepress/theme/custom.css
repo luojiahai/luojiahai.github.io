@@ -445,32 +445,63 @@
 }
 
 .VPHome {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+}
+
+.VPHome .vp-doc.container {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 /* prettier-ignore */
-/* .VPHome .VPHero {
+.VPHome .VPHero {
   background-image:
     linear-gradient(90deg, var(--vp-c-bg-elv) 1px, #0000 1px),
     linear-gradient(var(--vp-c-bg-elv) 1px, #0000 1px);
   background-size: 16px 16px;
   background-color: var(--vp-c-bg-alt);
   border-bottom: 1px solid var(--vp-c-gutter);
-} */
+}
+
+.VPHome .VPHero .actions {
+  padding-top: 24px;
+}
+
+.VPHero {
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 24px 32px !important;
+}
+
+@media (min-width: 640px) {
+  .VPHero {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 48px 32px !important;
+  }
+}
+
+@media (min-width: 960px) {
+    .VPHero {
+        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 64px 32px !important;
+    }
+}
 
 .VPHome .VPHero .name {
   font-family: var(--vp-font-family-mono);
+  font-size: 32px;
   font-weight: 600;
+  line-height: 40px;
   letter-spacing: -0.05em;
   word-spacing: -0.3em;
   color: var(--vp-c-text-1);
   -webkit-text-fill-color: var(--vp-c-text-1);
 }
 
+.VPHome .VPHero .tagline {
+  padding-top: 16px;
+}
+
 .VPHome .VPHero .hello {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-text-1);
@@ -485,9 +516,10 @@
 }
 
 .VPHome .VPHero .thinking {
+  padding-top: 8px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-brand-1);
