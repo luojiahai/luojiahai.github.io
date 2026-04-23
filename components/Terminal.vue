@@ -283,6 +283,7 @@ onUnmounted(() => {
 
 <style scoped>
 .terminal-frame {
+  margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   line-height: 1.2;
@@ -293,6 +294,12 @@ onUnmounted(() => {
   scrollbar-width: none;
   border-radius: 8px;
   border: 2px solid var(--vp-c-bg-elv);
+}
+
+@media (min-width: 640px) {
+  .terminal-frame {
+    margin: 48px 0;
+  }
 }
 
 .terminal-frame::-webkit-scrollbar {
