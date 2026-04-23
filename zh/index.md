@@ -7,10 +7,10 @@ hero:
   tagline: <span class="hello">你好，世界！</span><span class="thinking"></span>
   actions:
     - theme: brand
-      text: 我的生活
+      text: 生活
       link: /zh/life
     - theme: alt
-      text: 我的工作
+      text: 工作
       link: /zh/work
 ---
 

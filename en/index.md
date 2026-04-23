@@ -7,10 +7,10 @@ hero:
   tagline: <span class="hello">Hello, World!</span><span class="thinking"></span>
   actions:
     - theme: brand
-      text: My Life
+      text: Life
       link: /life
     - theme: alt
-      text: My Work
+      text: Work
       link: /work
 ---
 
