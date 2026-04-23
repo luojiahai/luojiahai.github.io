@@ -468,18 +468,18 @@
 }
 
 .VPHero {
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 24px 32px !important;
+  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 24px 32px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 48px 32px !important;
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 48px 32px !important;
   }
 }
 
 @media (min-width: 960px) {
     .VPHero {
-        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 32px) 64px 32px !important;
+        padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 40px) 64px 32px !important;
     }
 }
 
@@ -495,7 +495,7 @@
 }
 
 .VPHome .VPHero .tagline {
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
 .VPHome .VPHero .hello {
@@ -516,7 +516,7 @@
 }
 
 .VPHome .VPHero .thinking {
-  padding-top: 8px;
+  padding-top: 12px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   line-height: 1.2;
