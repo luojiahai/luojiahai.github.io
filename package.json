@@ -37,5 +37,8 @@
     "*": "prettier --ignore-unknown --write",
     "*.{ts,vue}": "eslint --fix"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "lottie-web": "^5.13.0"
+  }
 }
