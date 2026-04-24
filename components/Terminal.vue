@@ -300,7 +300,7 @@ onUnmounted(() => {
 
 @media (min-width: 640px) {
   .terminal-frame {
-    margin: 48px 0;
+    margin: 40px 0;
   }
 }
 
