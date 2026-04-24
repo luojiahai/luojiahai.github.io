@@ -42,7 +42,7 @@ function sidebar() {
       base: "/life",
       items: [
         { text: "Index", link: "/" },
-        { text: "Use", link: "/use" }
+        { text: "Use", link: "/use" },
       ],
     },
     {

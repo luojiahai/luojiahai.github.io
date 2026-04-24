@@ -9,13 +9,15 @@ const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
 const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
-const TAGLINE = computed(() => (isZh.value ? "INTJ · 计算机程序员 · 低级地球居民" : "INTJ · Computer Programmer · Non-Senior Earth Resident"));
+const TAGLINE = computed(() =>
+  isZh.value ? "INTJ · 计算机程序员 · 低级地球居民" : "INTJ · Computer Programmer · Non-Senior Earth Resident",
+);
 
 const SHOW_LOGO_FRAME = false;
 
-const LOGO_ART = `  ///|||
- /// |||
-///  ╷╷╷
+const LOGO_ART = ` ▐▛███▜▌ 
+▝▜█████▛▘
+  ▘▘ ▝▝  
 `;
 
 const BORDER_SIDES = Array(6).fill("│").join("\n");
@@ -35,7 +37,7 @@ const CONVERSATION: Record<string, Conversation> = {
         "Hi there, I'm luojiahai. I was born and raised in Guangzhou, China. I'm currently based in Melbourne, Australia.",
     },
     {
-      question: "What is \"luojiahai\"?",
+      question: 'What is "luojiahai"?',
       answer: "It's the Pinyin (Mandarin romanization) of my Chinese name. I use it as my internet handle.",
     },
     {
@@ -286,7 +288,7 @@ onUnmounted(() => {
   margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 16px;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -420,9 +422,10 @@ onUnmounted(() => {
 }
 
 .logo-art {
+  letter-spacing: -0.4px;
   white-space: pre;
   margin: 0;
-  color: var(--vp-c-text-1);
+  color: var(--vp-c-brand-1);
 }
 
 .logo-info-container {

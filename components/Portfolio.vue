@@ -28,13 +28,15 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
     {
       name: "Customer Marketing Journey",
       company: "REA Group (realestate.com.au)",
-      description: "Built a data pipeline consolidating customer profiles into marketable audiences and delivered a marketing preference management feature, enabling omni-channel communications to real estate agents and increasing customer engagement. Recognised with the \"Real Deal\" award.",
+      description:
+        'Built a data pipeline consolidating customer profiles into marketable audiences and delivered a marketing preference management feature, enabling omni-channel communications to real estate agents and increasing customer engagement. Recognised with the "Real Deal" award.',
       techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
       name: "Change Management Tool",
       company: "Amazon Web Services (AWS)",
-      description: "Owned an internal change management tool enforcing structured change governance across software systems and infrastructure. Built a change automation capability, increasing change velocity and reducing manual toil.",
+      description:
+        "Owned an internal change management tool enforcing structured change governance across software systems and infrastructure. Built a change automation capability, increasing change velocity and reducing manual toil.",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
@@ -56,13 +58,15 @@ const PORTFOLIO: Record<string, PortfolioItem[]> = {
     {
       name: "客户营销旅程",
       company: "REA 集团（realestate.com.au）",
-      description: "构建数据管道，将客户档案整合为可触达的营销受众，并交付了营销偏好管理功能，实现对房地产经纪人的全渠道沟通，提升客户参与度。荣获公司“Real Deal”奖项。",
+      description:
+        "构建数据管道，将客户档案整合为可触达的营销受众，并交付了营销偏好管理功能，实现对房地产经纪人的全渠道沟通，提升客户参与度。荣获公司“Real Deal”奖项。",
       techStack: ["TypeScript", "GraphQL", "PostgreSQL", "Kafka"],
     },
     {
       name: "变更管理工具",
       company: "亚马逊云科技（AWS）",
-      description: "负责一款内部变更管理工具，对软件系统与基础设施实施结构化变更治理。构建了变更自动化能力，提升变更效率，减少人工操作成本。",
+      description:
+        "负责一款内部变更管理工具，对软件系统与基础设施实施结构化变更治理。构建了变更自动化能力，提升变更效率，减少人工操作成本。",
       techStack: ["Java", "TypeScript", "Python", "DynamoDB", "Elasticsearch", "PostgreSQL", "CDK"],
     },
   ],
