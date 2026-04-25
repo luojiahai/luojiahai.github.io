@@ -10,7 +10,7 @@ const NAME = "Whatchamacallit";
 const VERSION = "v3.14159";
 const HEADING = "luojiahai";
 const TAGLINE = computed(() =>
-  isZh.value ? "INTJ · 计算机程序员 · 狂热飞友" : "INTJ · Computer Programmer · Fanatical Aviator",
+  isZh.value ? "INTJ · 计算机程序员 · 飞友（民航飞行驾驶向）" : "INTJ · Computer Programmer · Fanatical Aviator (Civil Aviation Pilot)",
 );
 
 const SHOW_LOGO_FRAME = false;
