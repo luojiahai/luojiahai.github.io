@@ -316,6 +316,7 @@ onUnmounted(() => {
   background-color: var(--vp-c-bg-elv);
   position: relative;
   color: var(--vp-c-text-2);
+  border-bottom: 2px solid var(--vp-c-bg-elv);
 }
 
 .header-title {
