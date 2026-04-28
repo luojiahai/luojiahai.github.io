@@ -6,8 +6,6 @@ The whole thing runs on React Ink, which is exactly what it sounds like: React, 
 
 Here is what the architecture actually looks like, from top to bottom.
 
------
-
 ## The Agent Loop Is a While Loop
 
 Not a framework. Not a graph. A `while (true)`.
@@ -30,8 +28,6 @@ This is a direct implementation of the ReAct pattern: Reason, Act, Observe, repe
 There is a comment in the source above this loop that the engineers called the “Rules of Thinking.” It covers three constraints on how thinking blocks (the model’s internal reasoning traces) must be handled. The comment ends with: *“Heed these rules well, young wizard. For they are the rules of thinking, and the rules of thinking are the rules of the universe. If ye does not heed these rules, ye will be punished with an entire day of debugging and hair pulling.”*
 
 I genuinely cannot tell if this is a human writing in character or the AI writing about itself.
-
------
 
 ## Tool Design: Fail Closed, Always
 
@@ -60,8 +56,6 @@ If a tool developer forgets to declare that their tool is read-only, the system 
 
 There is also `ToolSearchTool`, which solves a real problem. If you connect a lot of MCP plugins, the full tool definitions get too large to fit in the system prompt without burning tokens. Claude Code sends the model a compact summary of all tool names first, lets the model pick what it needs, then loads full definitions on demand.
 
------
-
 ## Read/Write Concurrency Separation
 
 When the model wants to run multiple tools at once, Claude Code does not just fire them all in parallel. `toolOrchestration.ts` partitions the calls into batches first.
@@ -71,8 +65,6 @@ The default concurrency limit is 10, configurable via `CLAUDE_CODE_MAX_TOOL_USE_
 There is a `try-catch` in the safety check: if the `isConcurrencySafe` function throws an exception during evaluation, the tool is treated as unsafe. Fail closed, again.
 
 Context modifications from concurrent tool runs do not apply immediately either. They queue up and flush in the original tool call order once the whole batch is done. This is read/write locking applied to an AI agent. The same pattern databases have used for decades, just in a new context.
-
------
 
 ## System Prompt Caching: Split at the Boundary
 
@@ -90,8 +82,6 @@ Everything below the boundary is dynamic: current timestamp, git repository stat
 
 The source comment warns explicitly: if dynamic content ever migrates above the boundary, every user’s system prompt becomes unique, the global cache invalidates, and costs spike. The boundary is protected with a `WARNING` comment in three separate files.
 
------
-
 ## Grep Instead of RAG
 
 The default approach to retrieval in AI applications is RAG: embed documents, store in a vector database, semantic search at query time. Claude Code does not do this.
@@ -106,8 +96,6 @@ const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.j
 Boris Cherny, one of Claude Code’s creators, has said in a podcast that they tried RAG and found that letting the AI decide what to search for, and how, produced dramatically better results than pre-computed embeddings.
 
 The framing that makes sense to me: RAG is handing a junior developer a pre-curated reading list. Agentic search is giving them access to the full company docs and letting them figure it out. The stronger the model, the more the second approach wins. And grep has no index staleness, no vector database to maintain, and no embedding pipeline to manage. One layer of complexity, gone.
-
------
 
 ## Three-Tier Memory Architecture
 
@@ -135,8 +123,6 @@ Older sessions are written to `.jsonl` files. Grep finds them when needed.
 
 Hot data is resident. Warm data loads on demand. Cold data gets searched. This is just cache tiering, applied to AI memory.
 
------
-
 ## Five Levels of Context Compression
 
 Context windows fill up. Tool results accumulate. Token costs compound. Claude Code handles this with five compression levels, applied from lightest to heaviest:
@@ -160,8 +146,6 @@ const MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3
 
 3,272 consecutive failed compression attempts in a single session. 250,000 wasted API calls globally, per day. The fix: give up after 3 consecutive failures. Sometimes the right engineering decision is to stop trying.
 
------
-
 ## Security Is Layered, Even in YOLO Mode
 
 `--dangerously-skip-permissions` skips the normal confirmation prompts. It does not skip security entirely.
@@ -181,8 +165,6 @@ Beyond the YOLO classifier, a single tool invocation passes through at minimum: 
 
 The bash security check alone defines 23 rule categories in `tools/BashTool/bashSecurity.ts`. These include: obfuscated flags, IFS variable injection, `/proc/environ` access, Unicode whitespace spoofing (where the display and actual execution differ), and Zsh-specific `zmodload` abuse. Unicode whitespace as an attack vector means someone thought carefully about prompt injection at the shell level.
 
------
-
 ## Feature Flags as a Roadmap
 
 Feature flags in the source read like a public roadmap:
@@ -192,8 +174,6 @@ Feature flags in the source read like a public roadmap:
 **COORDINATOR_MODE**: Multi-agent orchestration. One coordinator agent directs parallel worker agents through four phases: Research (workers explore the codebase in parallel), Synthesis (coordinator reads findings and drafts specs), Implementation (workers make changes and commit), Verification (workers run tests). Sub-agents communicate through a file-based message queue in `utils/mailbox.ts`.
 
 **VOICE_MODE** and **WEB_BROWSER_TOOL** are also present.
-
------
 
 ## Anti-Distillation and Undercover Mode
 
@@ -212,9 +192,7 @@ export function isUndercover(): boolean {
 }
 ```
 
-Default is on. It disables only when the repository is confirmed internal. The comment: *“There is NO force-OFF.”*
-
------
+Default is on. It disables only when the repository is confirmed internal. The comment: *”There is NO force-OFF.”*
 
 ## The Details That Add Up
 
@@ -234,8 +212,6 @@ TCP preconnection runs at startup in parallel with initialization:
 100ms shaved off the first request, for free.
 
 And buried in `buddy/types.ts`: a digital pet system with 18 species, including duck, capybara, axolotl, ghost, cactus, and `chonk`. Apparently planned as a launch feature. An AI that codes alongside you, and also needs feeding.
-
------
 
 ## What This Actually Is
 
