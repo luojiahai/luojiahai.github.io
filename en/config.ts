@@ -42,7 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/posts/": [{ text: "Posts", items: postsSidebarItems() }],
+    "/posts/": [{ text: "Posts", collapsed: false, items: postsSidebarItems() }],
     "/life/": [{ text: "Life", collapsed: false, base: "/life", items: [{ text: "Use", link: "/use" }] }],
     "/work/": [
       {
@@ -67,5 +67,6 @@ function postsSidebarItems(): DefaultTheme.SidebarItem[] {
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
       const slug = f.replace(/\.md$/, "");
       return { text: title, link: `/posts/${slug}` };
-    });
+    })
+    .sort((a, b) => a.text.localeCompare(b.text));
 }
