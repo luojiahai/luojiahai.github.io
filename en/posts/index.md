@@ -7,4 +7,4 @@ import { data as posts } from './posts.data.ts'
 
 # Posts
 
-<PostList :posts="posts" />
+<Posts :posts="posts" />

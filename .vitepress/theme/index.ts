@@ -5,7 +5,7 @@ import "./custom-fonts.css";
 import Layout from "./Layout.vue";
 import Parrot from "../../components/Parrot.vue";
 import Portfolio from "../../components/Portfolio.vue";
-import PostList from "../../components/PostList.vue";
+import Posts from "../../components/Posts.vue";
 import Resume from "../../components/Resume.vue";
 import Terminal from "../../components/Terminal.vue";
 
@@ -15,7 +15,7 @@ export default {
   enhanceApp({ app }) {
     app.component("Parrot", Parrot);
     app.component("Portfolio", Portfolio);
-    app.component("PostList", PostList);
+    app.component("Posts", Posts);
     app.component("Resume", Resume);
     app.component("Terminal", Terminal);
   },
