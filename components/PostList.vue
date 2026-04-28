@@ -42,13 +42,13 @@ defineProps<{
 
 .item {
   border-left: 2px solid var(--vp-c-brand-1);
-  padding-left: 16px;
 }
 
 .item-link {
   display: block;
   text-decoration: none;
   color: inherit;
+  padding-left: 16px;
 }
 
 .item-header {
