@@ -467,9 +467,9 @@
 
 .VPHome .VPHero .hero-lottie-bg {
   position: absolute;
-  top: -48px;
+  top: -32px;
   right: -24px;
-  height: 256px;
+  height: 224px;
   aspect-ratio: 1;
   pointer-events: none;
 }
