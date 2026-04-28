@@ -13,7 +13,7 @@ At a high level, the architecture breaks down into 6 layers:
 5. Context compression: keeping token costs under control
 6. Permission and security layer: at the bottom, holding everything accountable
 
-Let's go through each one.
+Let's look at how each module is implemented.
 
 ## 1. The Agent Loop
 
