@@ -15,8 +15,6 @@ At a high level, the architecture breaks down into 6 layers:
 
 Let's go through each one.
 
----
-
 ## 1. The Agent Loop
 
 Modern AI coding tools aren't simple Q&A anymore. They're autonomous agents that plan and execute across multiple steps. You might expect that kind of capability to require some sophisticated multi-agent orchestration framework under the hood.
@@ -95,8 +93,6 @@ Just above the loop definition, there's a comment block the engineers call the "
 
 Three constraints on how thinking blocks must be handled. The penalty for ignoring them: a full day of debugging and "hair pulling." Whether that's programmer humor or AI humor, hard to say.
 
----
-
 ## 2. Tool Design
 
 The 40+ built-in tools are registered in `tools.ts` via `getAllBaseTools()`:
@@ -157,8 +153,6 @@ const TOOL_DEFAULTS = {
 "Fail-closed where it matters." Both `isConcurrencySafe` and `isReadOnly` default to `false`. If a tool author forgets to explicitly declare "this is read-only," the system treats it as a write operation and blocks concurrent execution.
 
 Fail-closed is like a badge-access door: no badge, no entry. The opposite, fail-open, is a lobby where anyone can walk in. For AI tools that have full access to your codebase, defaulting to deny is the only sensible choice. `toAutoClassifierInput` also defaults to an empty string, skipping the auto-classifier check, but the comment specifically calls out that security-sensitive tools must override this. Same philosophy.
-
----
 
 ## 3. Read/Write Concurrency Separation
 
@@ -225,8 +219,6 @@ if (isConcurrencySafe) {
 
 Anyone who's worked with databases will recognize this: reads-parallel, read-write-exclusive. Classic concurrency control, applied to an AI tool execution layer.
 
----
-
 ## 4. System Prompt Cache Splitting
 
 Anthropic's API supports prompt caching. If the prefix of your system prompt stays constant across requests, the API caches that portion and reuses it, skipping reprocessing on subsequent calls.
@@ -260,8 +252,6 @@ The comments warn explicitly: accidentally mixing dynamic content into the stati
 
 If you're building AI apps at any real call volume, this pattern can make a meaningful dent in your API costs.
 
----
-
 ## 5. Retrieval Strategy: Grep Over RAG
 
 The model has no memory of your codebase, so it needs a way to "see" relevant code and docs. The standard industry approach is RAG: embed your project data into a vector database, retrieve semantically similar chunks at query time, and feed them to the model alongside the question.
@@ -283,8 +273,6 @@ Claude Code's creator Boris Cherny has said in a podcast that they tried RAG, bu
 The analogy that makes sense to me: RAG is like pre-packaging all the relevant material for an intern before they start work. Agentic search is giving them direct access to the entire document library and letting them dig. The stronger the model, the bigger the advantage for the latter approach, since the model knows better than you do what information it actually needs. And grep has no index expiry, no vector database to maintain, and an order of magnitude less engineering complexity.
 
 The broader lesson: as models get stronger, the boundary between "what the engineering system handles" and "what the model handles" keeps shifting. A lot of things that used to require complex retrieval pipelines might just be better off left to the agent.
-
----
 
 ## 6. Three-Tier Memory Architecture
 
@@ -361,8 +349,6 @@ Older conversations are stored as `.jsonl` files and searched by keyword with `g
 
 Hot data stays resident. Warm data loads on demand. Cold data is searched. Different temperature, different access pattern.
 
----
-
 ## 7. Five-Level Context Compression
 
 Context windows have limits. Long sessions with lots of tool call results will burn through tokens fast, and at some point you'll either hit the window ceiling or run up a serious bill.
@@ -398,8 +384,6 @@ const MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3
 ```
 
 Those numbers: on March 10, 2026, they measured 1,279 sessions with 50+ consecutive compression failures, with the worst single session failing 3,272 times and still retrying. 250,000 wasted API calls per day globally. The fix: stop after 3 consecutive failures. Classic circuit breaker.
-
----
 
 ## 8. Security Layer
 
@@ -455,8 +439,6 @@ const BASH_SECURITY_CHECK_IDS = {
 
 Rule 18 (`UNICODE_WHITESPACE`) covers attacks using zero-width Unicode characters to make what the security checker sees differ from what the shell actually executes. Rule 20 covers `zmodload` in Zsh, which can load modules that bypass standard file and network checks. The threat modeling here is serious.
 
----
-
 ## 9. Feature Flags and the Product Roadmap
 
 The codebase is full of `feature('XXX')` gates:
@@ -490,8 +472,6 @@ The flags also function as an accidental product roadmap preview:
 Sub-agents communicate through a `Mailbox` in `utils/mailbox.ts`, a file-based message queue.
 
 Other flags in the codebase: `VOICE_MODE`, `WEB_BROWSER_TOOL`, and more.
-
----
 
 ## 10. Anti-Distillation and Undercover Mode
 
@@ -537,8 +517,6 @@ export function isUndercover(): boolean {
 
 "There is NO force-OFF." It defaults to active for Anthropic employees and only turns off when the repo is confirmed internal. The concern is clearly internal model codenames leaking through open-source commit history.
 
----
-
 ## 11. Miscellaneous Details
 
 A few more things buried in the source worth calling out.
@@ -581,8 +559,6 @@ There's also a TCP preconnect in `utils/apiPreconnect.ts` that fires during init
  * happen in parallel with action-handler work.
  */
 ```
-
----
 
 ## Closing Thoughts
 
