@@ -18,6 +18,7 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
+    { text: "Posts", link: "/posts/", activeMatch: "/posts/" },
     {
       text: "Life",
       activeMatch: "/life/",
@@ -36,6 +37,12 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebar() {
   return [
+    {
+      text: "Posts",
+      collapsed: false,
+      base: "/posts",
+      items: [{ text: "Inside Claude Code", link: "/inside-claude-code" }],
+    },
     {
       text: "Life",
       collapsed: false,
