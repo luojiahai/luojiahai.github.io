@@ -61,8 +61,8 @@ function sidebar(): DefaultTheme.Sidebar {
 function postsSidebarItems(): DefaultTheme.SidebarItem[] {
   const postsDir = resolve(__dirname, "posts");
   return readdirSync(postsDir)
-    .filter((f) => f.endsWith(".md") && f !== "index.md")
-    .map((f) => {
+    .filter((f: string) => f.endsWith(".md") && f !== "index.md")
+    .map((f: string) => {
       const src = readFileSync(resolve(postsDir, f), "utf-8");
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
       const slug = f.replace(/\.md$/, "");
