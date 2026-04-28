@@ -18,7 +18,7 @@ export default createContentLoader("en/posts/*.md", {
       .map((item) => ({
         title: item.frontmatter.title ?? item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
         url: item.url.replace(/^\/en\//, "/"),
-        date: item.frontmatter.date ? new Date(item.frontmatter.date).toLocaleDateString("en-CA") : "",
+        date: item.frontmatter.date ? new Date(item.frontmatter.date).toLocaleDateString("zh-CN") : "",
         description: item.frontmatter.description ?? "",
       }))
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

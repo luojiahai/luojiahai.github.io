@@ -1,11 +1,11 @@
 ---
 date: 2026-04-28
-description: My distillation of Boris Cherny's 30-minute talk on using Claude Code well — practical tips, concrete prompts, and techniques for getting the most out of agentic coding.
+description: "Distilled from Mastering Claude Code in 30 minutes by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code."
 ---
 
 # Mastering Claude Code
 
-Boris Cherny built Claude Code. So when he gave a 30-minute talk on how to actually use it well, I paid attention. This post is my distillation of everything he covered: practical tips, concrete prompts, and a few things that weren’t obvious to me until he said them out loud.
+*Distilled from [Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0) by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code.*
 
 ## What Claude Code actually is
 
@@ -25,7 +25,7 @@ Before diving into real work, run these once:
 
 One underrated tip Boris mentioned: enable macOS Dictation (System Settings → Accessibility → Dictation) and just talk to Claude Code. Your prompts will be more natural, more detailed, and faster to produce than typing.
 
-## Tip 1 & 2: Start with codebase Q&A
+## Start with codebase Q&A
 
 This is the single best way to onboard yourself or your team to Claude Code. Don’t start by asking it to write code. Start by asking it questions.
 
@@ -47,7 +47,7 @@ The Q&A phase also teaches you where the boundaries are: what Claude gets immedi
 
 One thing worth noting: there’s no indexing, no remote database, no code upload. Everything stays local. You just start it and it works.
 
-## Tip 3 & 4: Tools and workflows
+## Tools and workflows
 
 Once you’re comfortable with Q&A, move to code editing. Claude will explore the codebase, brainstorm, and then make edits, all by chaining its tools together without you having to orchestrate any of it.
 
@@ -85,7 +85,7 @@ commit, push, pr
 
 That’s the whole prompt. Claude looks through the git log to figure out the commit format, makes the commit, pushes to a branch, and opens a PR on GitHub. No hand-holding needed.
 
-## Tip 5 & 6: Context is everything
+## Context is everything
 
 The more context Claude has, the smarter its decisions will be. This is where the `CLAUDE.md` file comes in.
 
@@ -113,7 +113,7 @@ The slash commands are more powerful than they look. At Anthropic, they have a `
 
 Boris’s advice: take time to actually tune your context. Run your `CLAUDE.md` through a prompt improver. Ask yourself whether it’s for you or your whole team, and whether it should load automatically or on demand. Getting this right has a dramatic effect on output quality.
 
-## Tip 7: Share with your team
+## Share with your team
 
 This is the leverage play. Configure once, benefit everywhere.
 

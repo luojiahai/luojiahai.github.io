@@ -1,6 +1,6 @@
 ---
 date: 2026-04-21
-description: Claude Code is built on 1,906 TypeScript source files and roughly 512,000 lines of code. A look at how each module works — the agent loop, tool system, memory, context compression, and permission layer.
+description: "Claude Code is built on 1,906 TypeScript source files and roughly 512,000 lines of code. A look at how each module works: the agent loop, tool system, memory, context compression, and permission layer."
 ---
 
 # Inside Claude Code
