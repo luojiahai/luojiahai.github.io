@@ -47,17 +47,13 @@ function sidebar() {
       text: "Life",
       collapsed: false,
       base: "/life",
-      items: [
-        { text: "Index", link: "/" },
-        { text: "Use", link: "/use" },
-      ],
+      items: [{ text: "Use", link: "/use" }],
     },
     {
       text: "Work",
       collapsed: false,
       base: "/work",
       items: [
-        { text: "Index", link: "/" },
         { text: "Resume", link: "/resume" },
         { text: "Portfolio", link: "/portfolio" },
       ],

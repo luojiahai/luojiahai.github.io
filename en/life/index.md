@@ -1,3 +1,3 @@
 # Life
 
-- [Use](./use.md) - Things I'm using.
+- [Use](./use.md)
