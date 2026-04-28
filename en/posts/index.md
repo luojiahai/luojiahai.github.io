@@ -1,4 +1,9 @@
 ---
+sidebar: false
+lastUpdated: false
+editLink: false
+prev: false
+next: false
 ---
 
 <script setup>

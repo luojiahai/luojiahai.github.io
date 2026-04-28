@@ -2,7 +2,6 @@
 type Post = {
   title: string;
   url: string;
-  date: string;
   description: string;
 };
 
@@ -16,10 +15,7 @@ defineProps<{
     <ul class="item-list">
       <li v-for="post in posts" :key="post.url" class="item">
         <a :href="post.url" class="item-link">
-          <div class="item-header">
-            <span class="item-title">{{ post.title }}</span>
-            <span class="item-date">{{ post.date }}</span>
-          </div>
+          <span class="item-title">{{ post.title }}</span>
           <p class="item-description">{{ post.description }}</p>
         </a>
       </li>
@@ -51,12 +47,6 @@ defineProps<{
   padding-left: 16px;
 }
 
-.item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .item-title {
   font-weight: 600;
   color: var(--vp-c-text-1);
@@ -72,29 +62,10 @@ defineProps<{
   color: var(--vp-c-brand-1);
 }
 
-.item-date {
-  font-size: 14px;
-  font-style: italic;
-  color: var(--vp-c-text-2);
-  white-space: nowrap;
-  margin-left: 12px;
-}
-
 .item-description {
   margin: 4px 0 0;
   color: var(--vp-c-text-2);
   font-size: 14px;
 }
 
-@media (max-width: 639px) {
-  .item-header {
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .item-date {
-    white-space: normal;
-    margin-left: 0;
-  }
-}
 </style>

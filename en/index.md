@@ -14,4 +14,8 @@ hero:
       link: /work
 ---
 
+<script setup>
+import { data as posts } from './posts/posts.data.ts'
+</script>
+
 <Terminal />

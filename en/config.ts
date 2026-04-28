@@ -38,15 +38,6 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar() {
   return [
     {
-      text: "Posts",
-      collapsed: false,
-      base: "/posts",
-      items: [
-        { text: "Mastering Claude Code", link: "/mastering-claude-code" },
-        { text: "Inside Claude Code", link: "/inside-claude-code" },
-      ],
-    },
-    {
       text: "Life",
       collapsed: false,
       base: "/life",

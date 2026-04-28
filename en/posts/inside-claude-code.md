@@ -1,11 +1,13 @@
 ---
-date: 2026-04-21
-description: "Claude Code is built on 1,906 TypeScript source files and roughly 512,000 lines of code. A look at how each module works: the agent loop, tool system, memory, context compression, and permission layer."
+description: "Claude Code is built on roughly 512,000 lines of code. A look at how each module works: the agent loop, tool system, memory, context compression, and permission layer."
+sidebar: false
+prev: false
+next: false
 ---
 
 # Inside Claude Code
 
-Claude Code is built on 1,906 TypeScript source files and roughly 512,000 lines of code. The client-side source covers the agent loop engine, 40+ built-in tools, system prompt assembly logic, a memory system, context compression, and a permission control layer, along with a handful of unreleased features.
+Claude Code is built on roughly 512,000 lines of code. The client-side source covers the agent loop engine, 40+ built-in tools, system prompt assembly logic, a memory system, context compression, and a permission control layer, along with a handful of unreleased features.
 
 The whole thing runs on React Ink, which lets you write terminal UIs with React. Think "webdev but in the terminal." That's why the Claude Code CLI feels so much smoother than most traditional tools.
 
