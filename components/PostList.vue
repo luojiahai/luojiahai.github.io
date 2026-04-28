@@ -13,14 +13,15 @@ defineProps<{
 
 <template>
   <div class="post-list">
-    <div class="section-title">All Posts</div>
     <ul class="item-list">
       <li v-for="post in posts" :key="post.url" class="item">
-        <div class="item-header">
-          <a :href="post.url" class="item-title">{{ post.title }}</a>
-          <span class="item-date">{{ post.date }}</span>
-        </div>
-        <p class="item-description">{{ post.description }}</p>
+        <a :href="post.url" class="item-link">
+          <div class="item-header">
+            <span class="item-title">{{ post.title }}</span>
+            <span class="item-date">{{ post.date }}</span>
+          </div>
+          <p class="item-description">{{ post.description }}</p>
+        </a>
       </li>
     </ul>
   </div>
@@ -31,31 +32,23 @@ defineProps<{
   margin: 0 auto 32px;
 }
 
-.section-title {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--vp-c-text-2);
-  margin-top: 0;
-  padding-bottom: 16px;
-  border-top: none;
-  border-bottom: 1px solid var(--vp-c-divider);
-  line-height: 1;
-}
-
 .item-list {
   list-style-type: none;
   padding-left: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 20px;
 }
 
 .item {
   border-left: 2px solid var(--vp-c-brand-1);
   padding-left: 16px;
+}
+
+.item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .item-header {
@@ -67,12 +60,11 @@ defineProps<{
 .item-title {
   font-weight: 600;
   color: var(--vp-c-text-1);
-  text-decoration: none;
   flex: 1;
   min-width: 0;
 }
 
-.item-title:hover {
+.item-link:hover .item-title {
   color: var(--vp-c-brand-1);
   text-decoration: underline;
   text-underline-offset: 3px;
