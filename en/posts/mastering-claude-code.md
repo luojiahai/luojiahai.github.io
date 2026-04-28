@@ -1,3 +1,8 @@
+---
+date: 2026-04-28
+description: My distillation of Boris Cherny's 30-minute talk on using Claude Code well — practical tips, concrete prompts, and techniques for getting the most out of agentic coding.
+---
+
 # Mastering Claude Code
 
 Boris Cherny built Claude Code. So when he gave a 30-minute talk on how to actually use it well, I paid attention. This post is my distillation of everything he covered: practical tips, concrete prompts, and a few things that weren’t obvious to me until he said them out loud.
