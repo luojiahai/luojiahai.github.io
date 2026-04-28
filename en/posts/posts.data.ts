@@ -16,7 +16,7 @@ export default createContentLoader("en/posts/*.md", {
     return rawData
       .filter((item) => !item.url.endsWith("/posts/"))
       .map((item) => ({
-        title: item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
+        title: item.frontmatter.title ?? item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
         url: item.url.replace(/^\/en\//, "/"),
         date: item.frontmatter.date ?? "",
         description: item.frontmatter.description ?? "",

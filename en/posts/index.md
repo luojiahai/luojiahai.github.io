@@ -1,4 +1,10 @@
+---
+---
+
+<script setup>
+import { data as posts } from './posts.data.ts'
+</script>
+
 # Posts
 
-- [Mastering Claude Code](/posts/mastering-claude-code)
-- [Inside Claude Code](/posts/inside-claude-code)
+<PostList :posts="posts" />
