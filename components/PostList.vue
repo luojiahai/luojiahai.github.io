@@ -29,7 +29,7 @@ defineProps<{
 
 <style scoped>
 .post-list {
-  margin: 0 auto 32px;
+  margin: 32px auto;
 }
 
 .item-list {
@@ -64,10 +64,12 @@ defineProps<{
   min-width: 0;
 }
 
+.item-link:hover {
+  background-color: var(--vp-c-brand-soft);
+}
+
 .item-link:hover .item-title {
   color: var(--vp-c-brand-1);
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .item-date {
