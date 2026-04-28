@@ -1,6 +1,10 @@
 :root {
-  --_brand-clay: 14.8 63.1% 59.6%;
-  --_brand-clay-emphasized: 15.1 54.2% 51.2%;
+  /* --_brand-clay: 14.8 63.1% 59.6%;
+  --_brand-clay-emphasized: 15.1 54.2% 51.2%; */
+  --_brand-clay: #d97757;
+  --_brand-clay-emphasized: #c96442;
+  --_brand-fig: #c46686;
+  --_brand-fig-emphasized: #b14f6e;
   --_gray-0: 0 0% 100%;
   --_gray-10: 60 14% 99%;
   --_gray-20: 60 14% 97%;
@@ -422,10 +426,15 @@
 }
 
 :root {
-  --vp-c-brand-1: hsl(var(--_brand-clay));
+  /* --vp-c-brand-1: hsl(var(--_brand-clay));
   --vp-c-brand-2: hsl(var(--_brand-clay));
   --vp-c-brand-3: hsl(var(--_brand-clay-emphasized));
-  --vp-c-brand-soft: hsl(var(--_brand-clay) / 0.15);
+  --vp-c-brand-soft: hsl(var(--_brand-clay) / 0.15); */
+
+  --vp-c-brand-1: var(--_brand-clay);
+  --vp-c-brand-2: var(--_brand-clay);
+  --vp-c-brand-3: var(--_brand-clay-emphasized);
+  --vp-c-brand-soft: color-mix(in srgb, var(--_brand-clay) 15%, transparent);
 }
 
 * {
@@ -478,6 +487,10 @@
   height: 100%;
   width: auto;
   display: block;
+}
+
+.VPHome .VPHero .hero-lottie-bg svg [fill="rgb(217,119,87)"] {
+  fill: var(--vp-c-brand-1) !important;
 }
 
 .VPHome .VPHero .hero-lottie-bg svg [fill="rgb(19,19,20)"] {
