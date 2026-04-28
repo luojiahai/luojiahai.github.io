@@ -460,14 +460,12 @@ The flags also function as an accidental product roadmap preview:
 
 **COORDINATOR_MODE**: multi-agent coordination. One AI orchestrating multiple AI workers. The workflow in `coordinatorMode.ts` has four phases:
 
-```
 | Phase          | Who                | Purpose                                               |
-|----------------|--------------------|---------------------------------------------------------|
+|----------------|--------------------|-------------------------------------------------------|
 | Research       | Workers (parallel) | Investigate codebase, find files, understand problem  |
 | Synthesis      | You (coordinator)  | Read findings, craft implementation specs             |
 | Implementation | Workers            | Make targeted changes per spec, commit                |
 | Verification   | Workers            | Test changes work                                     |
-```
 
 Sub-agents communicate through a `Mailbox` in `utils/mailbox.ts`, a file-based message queue.
 
