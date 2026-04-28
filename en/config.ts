@@ -41,7 +41,10 @@ function sidebar() {
       text: "Posts",
       collapsed: false,
       base: "/posts",
-      items: [{ text: "Inside Claude Code", link: "/inside-claude-code" }],
+      items: [
+        { text: "Mastering Claude Code", link: "/mastering-claude-code" },
+        { text: "Inside Claude Code", link: "/inside-claude-code" },
+      ],
     },
     {
       text: "Life",
