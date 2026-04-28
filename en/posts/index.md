@@ -1,5 +1,4 @@
 ---
-sidebar: false
 lastUpdated: false
 editLink: false
 prev: false
