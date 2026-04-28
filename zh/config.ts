@@ -57,24 +57,28 @@ function nav(): DefaultTheme.NavItem[] {
   ];
 }
 
-function sidebar() {
-  return [
-    {
-      text: "生活",
-      collapsed: false,
-      base: "/zh/life",
-      items: [{ text: "使用", link: "/use" }],
-    },
-    {
-      text: "工作",
-      collapsed: false,
-      base: "/zh/work",
-      items: [
-        { text: "简历", link: "/resume" },
-        { text: "项目", link: "/portfolio" },
-      ],
-    },
-  ];
+function sidebar(): DefaultTheme.Sidebar {
+  return {
+    "/zh/life/": [
+      {
+        text: "生活",
+        collapsed: false,
+        base: "/zh/life",
+        items: [{ text: "使用", link: "/use" }],
+      },
+    ],
+    "/zh/work/": [
+      {
+        text: "工作",
+        collapsed: false,
+        base: "/zh/work",
+        items: [
+          { text: "简历", link: "/resume" },
+          { text: "项目", link: "/portfolio" },
+        ],
+      },
+    ],
+  };
 }
 
 export function searchOptions(): DefaultTheme.LocalSearchOptions {
