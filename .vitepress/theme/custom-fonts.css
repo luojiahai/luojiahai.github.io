@@ -1,38 +1,4 @@
 @font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CascadiaCode.woff2") format("woff2");
-  font-weight: 200 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CascadiaCodeItalic.woff2") format("woff2");
-  font-weight: 200 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CascadiaCode.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-variation-settings: "wght" 400;
-}
-
-@font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CascadiaCodeItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  font-variation-settings: "wght" 400;
-}
-
-@font-face {
   font-family: "Cascadia Mono";
   src: url("/fonts/CascadiaMono.woff2") format("woff2");
   font-weight: 200 700;
@@ -46,29 +12,10 @@
   font-weight: 200 700;
   font-style: italic;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  font-variation-settings: "wght" 400;
-}
-
-@font-face {
-  font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMonoItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  font-variation-settings: "wght" 400;
 }
 
 :root {
-  --font-family-code:
-    "Cascadia Code", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
-  --vp-font-family-mono:
-    "Cascadia Mono", ui-monospace, "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+  --vp-font-family-base:
+    'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --vp-font-family-mono: "Cascadia Mono", ui-monospace, monospace;
 }
