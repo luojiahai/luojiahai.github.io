@@ -27,7 +27,13 @@ Content is split by locale:
 - `zh/` — Chinese pages and data
 - `root/` — Locale-agnostic pages (e.g., parrot easter egg)
 
-Each locale has `index.md` (home), `resume.md`, `use.md`, and a `data/` directory with `resume.json` for structured content.
+Content is organized into subdirectories:
+
+- `en/posts/` — blog posts (English-only; `posts.data.ts` uses `createContentLoader`)
+- `en/work/`, `zh/work/` — `resume.md`, `portfolio.md`
+- `en/life/`, `zh/life/` — `use.md`
+
+Resume content is embedded directly in `Resume.vue` (a `RESUME` constant keyed by locale), not in an external data file.
 
 VitePress rewrites `/en/*` → `/*`, so English is served at root; Chinese at `/zh/`.
 
@@ -40,10 +46,12 @@ VitePress rewrites `/en/*` → `/*`, so English is served at root; Chinese at `/
 
 All components live in `components/` and are globally registered in `.vitepress/theme/index.ts`:
 
-- `Layout.vue` — custom theme layout in `.vitepress/theme/`; wraps DefaultTheme's `<Layout>` and injects a typewriter animation on the home hero targeting `.VPHome .VPHero .thinking`
-- `<Resume>` — renders resume data from `data/resume.json`
+- `Layout.vue` — custom theme layout in `.vitepress/theme/`; injects a lottie animation (`/lottie-overview.json` via `lottie-web`) into `.VPHome .VPHero .container` and a typewriter on `.VPHome .VPHero .thinking`; both are locale-aware
+- `<Resume>` — renders resume (data embedded in component as a `RESUME` constant, keyed by locale)
+- `<Portfolio>` — project/portfolio display
+- `<Posts>` — blog posts listing
 - `<Terminal>` — terminal-style display
-- `<Parrot>` — utility/UI components
+- `<Parrot>` — easter egg / utility component
 
 ### Styling
 
