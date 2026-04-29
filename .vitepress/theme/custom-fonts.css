@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3/SourceSans3-SemiBoldIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-SemiboldIt.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -152,7 +152,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-SemiBold.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -160,7 +160,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Bold.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Heavy.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -208,7 +208,7 @@
 
 @font-face {
   font-family: "Source Han Mono SC";
-  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-SemiBold.otf") format("opentype");
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -216,7 +216,7 @@
 
 @font-face {
   font-family: "Source Han Mono SC";
-  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Bold.otf") format("opentype");
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Heavy.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
