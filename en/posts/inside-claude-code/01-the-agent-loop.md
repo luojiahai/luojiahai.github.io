@@ -34,7 +34,7 @@ async function* queryLoop(params: QueryParams, consumedCommandUuids: string[]) {
 
 Each iteration: compress context, call the model, check if the response contains `tool_use` blocks. If it does, execute those tools, append the results, loop again. When there are no more tool calls, the task is done.
 
-This is the ReAct pattern (Reasoning + Acting) — a tight "think → act → observe → think again" loop. Claude Code is one of the most grounded production implementations of this idea.
+This is the ReAct pattern (Reasoning + Acting): a tight "think → act → observe → think again" loop. Claude Code is one of the most grounded production implementations of this idea.
 
 But calling it a "simple while loop" undersells it. The loop contains most of what you'd otherwise build a framework for: state machines, error recovery, context management, concurrency, hook systems, and streaming. All inline.
 
@@ -64,32 +64,32 @@ The key field is `transition`. It records _why_ the previous iteration continued
 
 There are ten distinct exit conditions:
 
-| Reason                | Trigger                                      |
-| --------------------- | -------------------------------------------- |
-| `completed`           | No tool calls in response, stop hooks passed |
-| `blocking_limit`      | Token count at hard limit                    |
-| `prompt_too_long`     | Context too large even after recovery        |
-| `image_error`         | Image size/resize error                      |
-| `model_error`         | API/runtime error                            |
-| `aborted_streaming`   | User interrupted during model streaming      |
-| `aborted_tools`       | User interrupted during tool execution       |
-| `hook_stopped`        | Stop hook blocked continuation               |
-| `stop_hook_prevented` | Stop hook flagged preventContinuation        |
-| `max_turns`           | Hit configured turn limit                    |
+| Reason                | Trigger                                                 |
+| --------------------- | ------------------------------------------------------- |
+| `completed`           | No tool calls in response, stop hooks passed            |
+| `blocking_limit`      | Token count at hard limit                               |
+| `prompt_too_long`     | Context too large even after recovery                   |
+| `image_error`         | Image size/resize error                                 |
+| `model_error`         | API/runtime error                                       |
+| `aborted_streaming`   | User interrupted during model streaming                 |
+| `aborted_tools`       | User interrupted during tool execution                  |
+| `hook_stopped`        | PreToolUse/PostToolUse tool hook prevented continuation |
+| `stop_hook_prevented` | Stop hook flagged preventContinuation                   |
+| `max_turns`           | Hit configured turn limit                               |
 
 Normal completion (`completed`) is reached only deep in the `!needsFollowUp` branch, after stop hooks pass. Everything else is either an error state or an interruption.
 
 ## The Recovery Paths
 
-When things go wrong mid-loop, there are six distinct continue paths, each tracked in `transition.reason`:
+When things go wrong mid-loop, there are seven distinct continue paths, each tracked in `transition.reason`:
 
-- `next_turn` — the normal path: tool results collected, loop again
-- `max_output_tokens_escalate` — model hit the default 8k output cap; retry the same request at 64k
-- `max_output_tokens_recovery` — escalation also hit the cap; inject a meta-message and try again (up to 3 times)
-- `collapse_drain_retry` — context too long; drain staged context-collapses and retry
-- `reactive_compact_retry` — context too long even after drain; full reactive compaction and retry
-- `stop_hook_blocking` — a stop hook returned errors; inject them as user messages and continue
-- `token_budget_continuation` — token budget exceeded; inject a nudge message and continue
+- `next_turn`: the normal path: tool results collected, loop again
+- `max_output_tokens_escalate`: model hit the default 8k output cap; retry the same request at 64k
+- `max_output_tokens_recovery`: escalation also hit the cap; inject a meta-message and try again (up to 3 times)
+- `collapse_drain_retry`: context too long; drain staged context-collapses and retry
+- `reactive_compact_retry`: context too long even after drain; full reactive compaction and retry
+- `stop_hook_blocking`: a stop hook returned errors; inject them as user messages and continue
+- `token_budget_continuation`: token budget exceeded; inject a nudge message and continue
 
 The `max_output_tokens_recovery` path is particularly interesting. When Claude runs out of output tokens mid-response, the loop doesn't surface the error to the caller. It silently injects a `isMeta: true` user message:
 
@@ -101,33 +101,33 @@ Then it loops again. Up to three times. This is entirely transparent to whatever
 
 Before every API call, messages flow through up to five compaction stages in sequence:
 
-1. `applyToolResultBudget` — enforces per-message budget on tool result size; replaces oversized content
-2. `snipCompact` (feature-gated: `HISTORY_SNIP`) — snips old history sections
-3. `microcompact` — removes redundant or duplicate tool results; can be cached
-4. `contextCollapse` (feature-gated: `CONTEXT_COLLAPSE`) — collapses old context into summaries
-5. `autocompact` — the main full-conversation summarization, triggered by token threshold
+1. `applyToolResultBudget`: enforces per-message budget on tool result size; replaces oversized content
+2. `snipCompact` (feature-gated: `HISTORY_SNIP`): snips old history sections
+3. `microcompact`: removes redundant or duplicate tool results; can be cached
+4. `contextCollapse` (feature-gated: `CONTEXT_COLLAPSE`): collapses old context into summaries
+5. `autocompact`: the main full-conversation summarization, triggered by token threshold
 
 The ordering matters. Context-collapse runs before autocompact deliberately: if collapse brings the token count below the autocompact threshold, autocompact becomes a no-op. You preserve granular context instead of summaries whenever possible.
 
 ## Parallel Tool Execution
 
-`runTools` in `toolOrchestration.ts` partitions tool calls into batches by concurrency safety. Read-only tools in the same batch run concurrently — up to 10 at a time by default (configurable via `CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY`). State-modifying tools run sequentially.
+`runTools` in `toolOrchestration.ts` partitions tool calls into batches by concurrency safety. Read-only tools in the same batch run concurrently, up to 10 at a time by default (configurable via `CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY`). State-modifying tools run sequentially.
 
 There's also a newer `StreamingToolExecutor` (feature-gated: `streamingToolExecution`) that starts executing tool calls while the model is still streaming. As `tool_use` blocks arrive from the SSE stream, they're dispatched immediately. Completed results are drained back into the conversation before the loop continues. Latency savings for free, basically.
 
 ## Stop Hooks
 
-When the model produces a response with no tool calls, the loop doesn't exit immediately. It runs stop hooks — user-configured shell commands that can inspect the response and either:
+When the model produces a response with no tool calls, the loop doesn't exit immediately. It runs stop hooks, user-configured shell commands that can inspect the response and either:
 
 - Allow continuation
 - Block with errors (injected as user messages for another iteration)
 - Prevent continuation entirely
 
-The hook feedback path is a second continue mechanism, completely separate from tool execution. A death-spiral guard prevents the reactive compact logic from resetting across stop-hook retries — someone thought about this enough to put a guard on it.
+The hook feedback path is a second continue mechanism, completely separate from tool execution. A death-spiral guard prevents the reactive compact logic from resetting across stop-hook retries. Someone thought about this enough to put a guard on it.
 
 ## The Wizard's Code
 
-Just above the loop definition sits a comment block the engineers apparently call the "Wizard's Code":
+Near the top of the file's implementation section, above the type definitions and function bodies that make up the query loop, sits a comment block the engineers apparently call the "Wizard's Code":
 
 ```typescript
 /**
@@ -149,7 +149,7 @@ Just above the loop definition sits a comment block the engineers apparently cal
 const MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3;
 ```
 
-Three constraints on how thinking blocks must be handled. Rule 1 covers both `thinking` and `redacted_thinking` blocks — the latter is the encrypted form used when extended thinking is enabled with streaming. The constant defined immediately after — `MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3` — is its only neighbor. Whether that proximity is intentional humor or coincidence, no comment was left.
+Three constraints on how thinking blocks must be handled. Rule 1 covers both `thinking` and `redacted_thinking` blocks; the latter is the encrypted form used when extended thinking is enabled with streaming. The constant defined immediately after, `MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3`, is its only neighbor. Whether that proximity is intentional humor or coincidence, no comment was left.
 
 The penalty for ignoring the rules: a full day of debugging and hair pulling. Genuinely can't tell if that's programmer humor or a warning written in the aftermath of experience.
 
