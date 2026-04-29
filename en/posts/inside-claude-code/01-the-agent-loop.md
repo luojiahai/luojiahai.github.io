@@ -8,6 +8,8 @@ Modern AI coding tools aren't simple Q&A anymore. They're autonomous agents that
 
 Open `query.ts`, and what you find is a `while(true)` loop.
 
+The public entry point is `query()`, a thin wrapper that delegates immediately to `queryLoop()`. That's where the actual work happens:
+
 ```typescript
 // query.ts
 async function* queryLoop(params: QueryParams, consumedCommandUuids: string[]) {
@@ -103,7 +105,7 @@ Before every API call, messages flow through up to five compaction stages in seq
 
 1. `applyToolResultBudget`: enforces per-message budget on tool result size; replaces oversized content
 2. `snipCompact` (feature-gated: `HISTORY_SNIP`): snips old history sections
-3. `microcompact`: removes redundant or duplicate tool results; can be cached
+3. `microcompact` (feature-gated: `CACHED_MICROCOMPACT`): removes redundant or duplicate tool results; can be cached
 4. `contextCollapse` (feature-gated: `CONTEXT_COLLAPSE`): collapses old context into summaries
 5. `autocompact`: the main full-conversation summarization, triggered by token threshold
 
