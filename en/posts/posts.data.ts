@@ -9,7 +9,7 @@ export type Post = {
 declare const data: Post[];
 export { data };
 
-export default createContentLoader("en/posts/*.md", {
+export default createContentLoader(["en/posts/*.md", "en/posts/*/*.md"], {
   includeSrc: true,
   transform(rawData): Post[] {
     return rawData
@@ -19,6 +19,6 @@ export default createContentLoader("en/posts/*.md", {
         url: item.url.replace(/^\/en\//, "/"),
         description: item.frontmatter.description ?? "",
       }))
-      .sort((a, b) => a.title.localeCompare(b.title));
+      .sort((a, b) => a.url.localeCompare(b.url));
   },
 });

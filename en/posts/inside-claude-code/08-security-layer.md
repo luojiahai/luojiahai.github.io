@@ -1,5 +1,5 @@
 ---
-description: "How Claude Code's `--dangerously-skip-permissions` flag actually works under the hood, from a two-stage AI classifier that watches every action to 23 bash security rules covering everything from unicode spoofing to Zsh module attacks. The name sounds reckless; the implementation is anything but."
+description: "How Claude Code's --dangerously-skip-permissions flag actually works under the hood, from a two-stage AI classifier that watches every action to 23 bash security rules covering everything from unicode spoofing to Zsh module attacks. The name sounds reckless; the implementation is anything but."
 ---
 
 # Inside Claude Code: Security Layer
