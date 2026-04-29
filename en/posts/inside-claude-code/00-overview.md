@@ -17,8 +17,6 @@ At a high level, the architecture breaks down into 6 layers:
 5. **Context compression**: keeping token costs under control
 6. **Permission and security layer**: at the bottom, holding everything accountable
 
-Let's walk through each one.
-
 ## The Agent Loop
 
 Modern AI coding tools aren't simple Q&A. They're autonomous agents that plan and execute across multiple steps. You might expect that kind of capability to require some sophisticated orchestration framework under the hood.
