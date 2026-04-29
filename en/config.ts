@@ -60,29 +60,20 @@ function sidebar(): DefaultTheme.Sidebar {
 
 function postsSidebarItems(): DefaultTheme.SidebarItem[] {
   const postsDir = resolve(__dirname, "posts");
-  return readdirSync(postsDir)
-    .filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))
-    .map((f: string) => {
-      const fullPath = resolve(postsDir, f);
-      if (statSync(fullPath).isDirectory()) {
-        const children = readdirSync(fullPath)
-          .filter((c: string) => c.endsWith(".md"))
-          .sort()
-          .map((c: string) => {
-            const src = readFileSync(resolve(fullPath, c), "utf-8");
-            const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
-            const slug = c.replace(/\.md$/, "");
-            return { text: title, link: `/posts/${f}/${slug}` };
-          });
-        const dirTitle = f.replace(/-/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase());
-        return { text: dirTitle, collapsed: false, items: children };
+  const items: DefaultTheme.SidebarItem[] = [];
+  for (const f of readdirSync(postsDir).filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))) {
+    const fullPath = resolve(postsDir, f);
+    if (statSync(fullPath).isDirectory()) {
+      for (const c of readdirSync(fullPath).filter((c: string) => c.endsWith(".md")).sort()) {
+        const src = readFileSync(resolve(fullPath, c), "utf-8");
+        const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
+        items.push({ text: title, link: `/posts/${f}/${c.replace(/\.md$/, "")}` });
       }
+    } else {
       const src = readFileSync(fullPath, "utf-8");
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
-      const slug = f.replace(/\.md$/, "");
-      return { text: title, link: `/posts/${slug}` };
-    })
-    .sort((a: DefaultTheme.SidebarItem, b: DefaultTheme.SidebarItem) =>
-      (a.text ?? "").localeCompare(b.text ?? ""),
-    );
+      items.push({ text: title, link: `/posts/${f.replace(/\.md$/, "")}` });
+    }
+  }
+  return items.sort((a, b) => (a.link ?? "").localeCompare(b.link ?? ""));
 }
