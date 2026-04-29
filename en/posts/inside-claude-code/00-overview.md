@@ -4,6 +4,8 @@ description: "Claude Code is built on roughly 512,000 lines of code. A look at h
 
 # Inside Claude Code: Overview
 
+_Based on the source of Claude Code v2.1.88_.
+
 Claude Code is built on roughly 512,000 lines of code. The client-side source covers the agent loop engine, 40+ built-in tools, system prompt assembly logic, a three-tier memory system, context compression, and a permission layer, along with a handful of unreleased features.
 
 The whole thing runs on React Ink, which lets you write terminal UIs with React. Think "webdev but in the terminal." That's why the Claude Code CLI feels so much smoother than most traditional tools.
