@@ -1,7 +1,5 @@
 ---
 description: "Distilled from Mastering Claude Code in 30 minutes by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code."
-prev: false
-next: false
 ---
 
 # Mastering Claude Code
