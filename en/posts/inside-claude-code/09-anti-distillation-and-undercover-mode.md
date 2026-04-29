@@ -4,9 +4,7 @@ description: "Two hidden defensive mechanisms in Claude Code: anti-distillation,
 
 # Inside Claude Code: Anti-Distillation and Undercover Mode
 
-Reading through Claude Code's source is a study in defensive engineering. Most of it is what you'd expect for a coding assistant: tool definitions, context management, prompt construction. But two mechanisms stand out, not because of what they do for users, but because of what they do *against* adversaries.
-
-Both are invisible at runtime. Both only exist in specific build configurations. And both reveal something about how Anthropic thinks about threats.
+Anti-Distillation and Undercover Mode mechanisms are invisible at runtime. Both only exist in specific build configurations. And both reveal something about how Anthropic thinks about threats.
 
 ## Anti-Distillation
 
