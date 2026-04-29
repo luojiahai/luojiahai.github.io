@@ -75,7 +75,7 @@ function postsSidebarItems(): DefaultTheme.SidebarItem[] {
             return { text: title, link: `/posts/${f}/${slug}` };
           });
         const dirTitle = f.replace(/-/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase());
-        return { text: dirTitle, collapsed: true, items: children };
+        return { text: dirTitle, collapsed: false, items: children };
       }
       const src = readFileSync(fullPath, "utf-8");
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
