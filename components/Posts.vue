@@ -67,5 +67,4 @@ defineProps<{
   color: var(--vp-c-text-2);
   font-size: 14px;
 }
-
 </style>
