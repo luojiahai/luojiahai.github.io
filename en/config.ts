@@ -1,5 +1,5 @@
 import { defineConfig, type DefaultTheme } from "vitepress";
-import { readdirSync, readFileSync } from "fs";
+import { readdirSync, readFileSync, statSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -61,12 +61,28 @@ function sidebar(): DefaultTheme.Sidebar {
 function postsSidebarItems(): DefaultTheme.SidebarItem[] {
   const postsDir = resolve(__dirname, "posts");
   return readdirSync(postsDir)
-    .filter((f: string) => f.endsWith(".md") && f !== "index.md")
+    .filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))
     .map((f: string) => {
-      const src = readFileSync(resolve(postsDir, f), "utf-8");
+      const fullPath = resolve(postsDir, f);
+      if (statSync(fullPath).isDirectory()) {
+        const children = readdirSync(fullPath)
+          .filter((c: string) => c.endsWith(".md"))
+          .sort()
+          .map((c: string) => {
+            const src = readFileSync(resolve(fullPath, c), "utf-8");
+            const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
+            const slug = c.replace(/\.md$/, "");
+            return { text: title, link: `/posts/${f}/${slug}` };
+          });
+        const dirTitle = f.replace(/-/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase());
+        return { text: dirTitle, collapsed: true, items: children };
+      }
+      const src = readFileSync(fullPath, "utf-8");
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
       const slug = f.replace(/\.md$/, "");
       return { text: title, link: `/posts/${slug}` };
     })
-    .sort((a, b) => a.text.localeCompare(b.text));
+    .sort((a: DefaultTheme.SidebarItem, b: DefaultTheme.SidebarItem) =>
+      (a.text ?? "").localeCompare(b.text ?? ""),
+    );
 }

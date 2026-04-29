@@ -2,7 +2,7 @@
 description: "Distilled from Mastering Claude Code in 30 minutes by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code."
 ---
 
-# Mastering Claude Code
+# Mastering Claude Code in 30 minutes
 
 *Distilled from [Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0) by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code.*
 
