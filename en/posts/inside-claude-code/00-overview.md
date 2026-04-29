@@ -4,8 +4,6 @@ description: "Claude Code is built on roughly 512,000 lines of code. A look at h
 
 # Inside Claude Code: Overview
 
-_Based on the source of Claude Code v2.1.88_.
-
 Claude Code is built on roughly 512,000 lines of code. The client-side source covers the agent loop engine, 40+ built-in tools, system prompt assembly logic, a three-tier memory system, context compression, and a permission layer, along with a handful of unreleased features.
 
 The whole thing runs on React Ink, which lets you write terminal UIs with React. Think "webdev but in the terminal." That's why the Claude Code CLI feels so much smoother than most traditional tools.
@@ -152,12 +150,13 @@ Claude Code has a `--dangerously-skip-permissions` flag (YOLO mode) that bypasse
 ```typescript
 // utils/permissions/yoloClassifier.ts — runs in auto mode, not bypass mode
 export async function classifyYoloAction(
-  toolName: string,
-  toolInput: Record<string, unknown>,
-): Promise<"allow" | "soft_deny" | "hard_deny">;
-// allow: safe, proceed
-// soft_deny: risky, downgrade to manual confirmation
-// hard_deny: blocked, no negotiation
+  messages: Message[], // full conversation history
+  action: TranscriptEntry, // the action being evaluated
+  tools: Tools,
+  context: ToolPermissionContext,
+  signal: AbortSignal,
+): Promise<YoloClassifierResult>;
+// YoloClassifierResult: { shouldBlock: boolean; reason: string }
 ```
 
 That's just one checkpoint. Before a tool call executes, it passes through four permission and validation stages: Zod schema validation, custom input validation, pre-tool hooks, and permission resolution (which for Bash runs through the 23 bash security rules). The most restrictive result wins.
