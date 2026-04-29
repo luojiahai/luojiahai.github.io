@@ -1,5 +1,5 @@
 ---
-description: "Two hidden defensive mechanisms in Claude Code's source: anti-distillation, which poisons captured API traffic to degrade any model trained on it, and undercover mode, which automatically strips model attribution and identity when Anthropic employees contribute to public repos. Both mechanisms accidentally leaked the internal model codenames they were designed to protect."
+description: "Two hidden defensive mechanisms in Claude Code: anti-distillation, which poisons captured API traffic to degrade any model trained on it, and undercover mode, which automatically strips model attribution and identity when Anthropic employees contribute to public repos."
 ---
 
 # Inside Claude Code: Anti-Distillation and Undercover Mode
