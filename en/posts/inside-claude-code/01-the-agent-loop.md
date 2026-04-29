@@ -81,7 +81,7 @@ Normal completion (`completed`) is reached only deep in the `!needsFollowUp` bra
 
 ## The Recovery Paths
 
-When things go wrong mid-loop, there are seven distinct continue paths, each tracked in `transition.reason`:
+There are seven distinct continue paths, each tracked in `transition.reason`. Six are recovery or retry mechanisms; one is the normal path:
 
 - `next_turn`: the normal path: tool results collected, loop again
 - `max_output_tokens_escalate`: model hit the default 8k output cap; retry the same request at 64k
