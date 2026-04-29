@@ -17,10 +17,10 @@ const yoloClassifierResponseSchema = z.object({
   thinking: z.string(),
   shouldBlock: z.boolean(),
   reason: z.string(),
-})
+});
 ```
 
-That's the structural defense. The classifier is blind to the main model's output on purpose. Assistant text is deliberately excluded from its context, because model-authored text could be crafted to influence the classifier's decision. What the classifier *does* see is a compact serialization of the entire session: all user messages and all assistant tool calls. Your whole conversation history, just stripped of assistant prose.
+That's the structural defense. The classifier is blind to the main model's output on purpose. Assistant text is deliberately excluded from its context, because model-authored text could be crafted to influence the classifier's decision. What the classifier _does_ see is a compact serialization of the entire session: all user messages and all assistant tool calls. Your whole conversation history, just stripped of assistant prose.
 
 The session's `CLAUDE.md` is also injected, so actions that align with your stated project intent are judged accordingly.
 
@@ -65,7 +65,7 @@ The classifier tracks consecutive and total blocks:
 export const DENIAL_LIMITS = {
   maxConsecutive: 3,
   maxTotal: 20,
-} as const
+} as const;
 ```
 
 Three blocked actions in a row, or twenty total, escalates to manual prompting with a warning. In headless mode it aborts the agent entirely.
@@ -93,20 +93,20 @@ The YOLO classifier can't approve these. They always go to the human.
 
 ```typescript
 const BASH_SECURITY_CHECK_IDS = {
-  INCOMPLETE_COMMANDS: 1,       // Commands starting with tab or dash
-  JQ_SYSTEM_FUNCTION: 2,        // jq system() function calls
-  OBFUSCATED_FLAGS: 4,          // Obfuscated CLI flags
-  SHELL_METACHARACTERS: 5,      // Dangerous shell metacharacters
-  DANGEROUS_VARIABLES: 6,       // Dangerous environment variable injection
-  IFS_INJECTION: 11,            // IFS variable injection
-  PROC_ENVIRON_ACCESS: 13,      // /proc/environ access
-  CONTROL_CHARACTERS: 17,       // Control characters
-  UNICODE_WHITESPACE: 18,       // Unicode whitespace spoofing
-  ZSH_DANGEROUS_COMMANDS: 20,   // Zsh dangerous commands (zmodload, etc.)
-  COMMENT_QUOTE_DESYNC: 22,     // Comment/quote state desync
-  QUOTED_NEWLINE: 23,           // Newlines inside quotes
+  INCOMPLETE_COMMANDS: 1, // Commands starting with tab or dash
+  JQ_SYSTEM_FUNCTION: 2, // jq system() function calls
+  OBFUSCATED_FLAGS: 4, // Obfuscated CLI flags
+  SHELL_METACHARACTERS: 5, // Dangerous shell metacharacters
+  DANGEROUS_VARIABLES: 6, // Dangerous environment variable injection
+  IFS_INJECTION: 11, // IFS variable injection
+  PROC_ENVIRON_ACCESS: 13, // /proc/environ access
+  CONTROL_CHARACTERS: 17, // Control characters
+  UNICODE_WHITESPACE: 18, // Unicode whitespace spoofing
+  ZSH_DANGEROUS_COMMANDS: 20, // Zsh dangerous commands (zmodload, etc.)
+  COMMENT_QUOTE_DESYNC: 22, // Comment/quote state desync
+  QUOTED_NEWLINE: 23, // Newlines inside quotes
   // ... 23 total
-}
+};
 ```
 
 Rule 18 (`UNICODE_WHITESPACE`) covers attacks using zero-width Unicode characters to make what the security checker sees differ from what the shell actually executes. Classic prompt injection dressed up in invisible clothing.

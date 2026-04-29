@@ -64,7 +64,9 @@ function postsSidebarItems(): DefaultTheme.SidebarItem[] {
   for (const f of readdirSync(postsDir).filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))) {
     const fullPath = resolve(postsDir, f);
     if (statSync(fullPath).isDirectory()) {
-      for (const c of readdirSync(fullPath).filter((c: string) => c.endsWith(".md")).sort()) {
+      for (const c of readdirSync(fullPath)
+        .filter((c: string) => c.endsWith(".md"))
+        .sort()) {
         const src = readFileSync(resolve(fullPath, c), "utf-8");
         const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
         items.push({ text: title, link: `/posts/${f}/${c.replace(/\.md$/, "")}` });

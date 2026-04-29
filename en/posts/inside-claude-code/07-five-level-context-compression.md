@@ -20,9 +20,9 @@ The lightest touch. Feature-flagged via `HISTORY_SNIP`, it strips old tool call 
 
 ```typescript
 // query.ts
-const snipResult = snipModule!.snipCompactIfNeeded(messagesForQuery)
-messagesForQuery = snipResult.messages
-snipTokensFreed = snipResult.tokensFreed
+const snipResult = snipModule!.snipCompactIfNeeded(messagesForQuery);
+messagesForQuery = snipResult.messages;
+snipTokensFreed = snipResult.tokensFreed;
 ```
 
 One subtle implementation detail: the freed-token estimate is tracked separately (`snipTokensFreed`) and subtracted from the autocompact threshold check. That's because token counting reads cached usage from the surviving assistant message, which still reflects the pre-snip size. Without that correction, autocompact's threshold math would be working off stale numbers.
@@ -37,7 +37,7 @@ Still operating on tool results, but with two distinct sub-modes. Both target th
 
 ```typescript
 // microCompact.ts
-export const TIME_BASED_MC_CLEARED_MESSAGE = '[Old tool result content cleared]'
+export const TIME_BASED_MC_CLEARED_MESSAGE = "[Old tool result content cleared]";
 ```
 
 The branching logic makes sense: if the cache is cold, there's nothing to preserve, so the cheaper mutation path is fine.
@@ -56,7 +56,7 @@ When Context Collapse is active, it suppresses Autocompact entirely:
 // commit-start (90%) and blocking (95%), so it would race collapse and
 // usually win, nuking granular context that collapse was about to save.
 if (isContextCollapseEnabled()) {
-  return false
+  return false;
 }
 ```
 
@@ -87,7 +87,7 @@ There's also a circuit breaker:
 // Stop trying autocompact after this many consecutive failures.
 // BQ 2026-03-10: 1,279 sessions had 50+ consecutive failures (up to 3,272)
 // in a single session, wasting ~250K API calls/day globally.
-const MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3
+const MAX_CONSECUTIVE_AUTOCOMPACT_FAILURES = 3;
 ```
 
 On March 10, 2026, they measured 1,279 sessions with 50+ consecutive compression failures, the worst single session failing 3,272 times and still retrying. 250,000 wasted API calls per day globally. The fix: stop after 3 consecutive failures. Classic circuit breaker. The comment with the BQ query date and exact numbers is a nice touch, those kinds of data-backed decisions leave a useful paper trail in source.
@@ -110,6 +110,7 @@ if ((isWithheld413 || isWithheldMedia) && reactiveCompact) {
 ```
 
 The sequence:
+
 1. Drain all staged Context Collapse commits (`recoverFromOverflow`). Cheap, keeps granular context.
 2. If that doesn't work (or if it already tried), call `tryReactiveCompact` for full summarization on the already-failed messages.
 

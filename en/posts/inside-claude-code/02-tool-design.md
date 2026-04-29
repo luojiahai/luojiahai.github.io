@@ -36,13 +36,12 @@ There's also `process.env.USER_TYPE === 'ant'` which gates a `ConfigTool` for An
 Many tools don't just get disabled at runtime. They're not present in the distributed binary at all:
 
 ```typescript
-const SleepTool = feature('PROACTIVE') || feature('KAIROS')
-  ? require('./tools/SleepTool/SleepTool.js').SleepTool
-  : null
+const SleepTool =
+  feature("PROACTIVE") || feature("KAIROS") ? require("./tools/SleepTool/SleepTool.js").SleepTool : null;
 
-const WebBrowserTool = feature('WEB_BROWSER_TOOL')
-  ? require('./tools/WebBrowserTool/WebBrowserTool.js').WebBrowserTool
-  : null
+const WebBrowserTool = feature("WEB_BROWSER_TOOL")
+  ? require("./tools/WebBrowserTool/WebBrowserTool.js").WebBrowserTool
+  : null;
 ```
 
 The `feature()` function comes from `bun:bundle`. It's a compile-time define that the bundler evaluates statically, eliminating dead branches from the output. An external build sees the null branch. Clean.
@@ -55,12 +54,12 @@ The auto mode activates tool deferral only when the deferred tools exceed 10% of
 
 The search itself supports two modes. `select:tool_name` does a direct lookup. Everything else goes through keyword matching with a weighted scoring system:
 
-| Signal | Score (MCP) | Score (built-in) |
-|---|---|---|
-| Exact part match in name | 12 | 10 |
-| Partial part match in name | 6 | 5 |
-| `searchHint` field match | 4 | 4 |
-| Description word boundary match | 2 | 2 |
+| Signal                          | Score (MCP) | Score (built-in) |
+| ------------------------------- | ----------- | ---------------- |
+| Exact part match in name        | 12          | 10               |
+| Partial part match in name      | 6           | 5                |
+| `searchHint` field match        | 4           | 4                |
+| Description word boundary match | 2           | 2                |
 
 Each tool can declare a `searchHint`: a 3–10 word curated capability phrase specifically designed for keyword matching. `NotebookEditTool` might hint `jupyter` since that word doesn't appear in the tool name. Smart.
 
@@ -70,18 +69,15 @@ The full tool pool (built-ins + MCP) is assembled with a specific sort order:
 
 ```typescript
 export function assembleToolPool(permissionContext, mcpTools): Tools {
-  const builtInTools = getTools(permissionContext)
-  const allowedMcpTools = filterToolsByDenyRules(mcpTools, permissionContext)
+  const builtInTools = getTools(permissionContext);
+  const allowedMcpTools = filterToolsByDenyRules(mcpTools, permissionContext);
 
   // Sort each partition separately to keep built-ins as a contiguous prefix.
   // The server places a global cache breakpoint after the last built-in tool.
   // Interleaving MCP tools would invalidate all downstream cache keys
   // whenever an MCP tool sorts between existing built-ins.
-  const byName = (a: Tool, b: Tool) => a.name.localeCompare(b.name)
-  return uniqBy(
-    [...builtInTools].sort(byName).concat(allowedMcpTools.sort(byName)),
-    'name',
-  )
+  const byName = (a: Tool, b: Tool) => a.name.localeCompare(b.name);
+  return uniqBy([...builtInTools].sort(byName).concat(allowedMcpTools.sort(byName)), "name");
 }
 ```
 
@@ -97,8 +93,8 @@ const TOOL_DEFAULTS = {
   isConcurrencySafe: (_input?: unknown) => false,
   isReadOnly: (_input?: unknown) => false,
   isDestructive: (_input?: unknown) => false,
-  toAutoClassifierInput: () => '',
-}
+  toAutoClassifierInput: () => "",
+};
 ```
 
 The comment in the source says "fail-closed where it matters." Both `isConcurrencySafe` and `isReadOnly` default to `false`. If a tool author forgets to declare "this is read-only," the system treats it as a write operation and blocks concurrent execution.
@@ -114,14 +110,14 @@ Fail-closed is like a badge-access door: no badge, no entry. Fail-open is a lobb
 ```typescript
 function partitionToolCalls(toolUseMessages, toolUseContext): Batch[] {
   return toolUseMessages.reduce((acc, toolUse) => {
-    const isConcurrencySafe = tool?.isConcurrencySafe(parsedInput)
+    const isConcurrencySafe = tool?.isConcurrencySafe(parsedInput);
     if (isConcurrencySafe && acc[acc.length - 1]?.isConcurrencySafe) {
-      acc[acc.length - 1].blocks.push(toolUse)  // extend current safe batch
+      acc[acc.length - 1].blocks.push(toolUse); // extend current safe batch
     } else {
-      acc.push({ isConcurrencySafe, blocks: [toolUse] })  // new batch
+      acc.push({ isConcurrencySafe, blocks: [toolUse] }); // new batch
     }
-    return acc
-  }, [])
+    return acc;
+  }, []);
 }
 ```
 

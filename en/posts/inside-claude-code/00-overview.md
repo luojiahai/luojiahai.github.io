@@ -2,8 +2,6 @@
 description: "Claude Code is built on roughly 512,000 lines of code. A look at how each module works: the agent loop, tool system, memory, context compression, and permission layer."
 ---
 
------
-
 # Inside Claude Code: Overview
 
 Claude Code is built on roughly 512,000 lines of code. The client-side source covers the agent loop engine, 40+ built-in tools, system prompt assembly logic, a three-tier memory system, context compression, and a permission layer, along with a handful of unreleased features.
@@ -53,11 +51,11 @@ Each tool is built with fail-closed defaults. `isConcurrencySafe` and `isReadOnl
 // Tool.ts
 const TOOL_DEFAULTS = {
   isEnabled: () => true,
-  isConcurrencySafe: () => false,  // assume not safe
-  isReadOnly: () => false,          // assume writes
+  isConcurrencySafe: () => false, // assume not safe
+  isReadOnly: () => false, // assume writes
   isDestructive: () => false,
-  toAutoClassifierInput: () => '',  // skip classifier — security-relevant tools must override
-}
+  toAutoClassifierInput: () => "", // skip classifier — security-relevant tools must override
+};
 ```
 
 ## Read/Write Concurrency Separation
@@ -81,10 +79,10 @@ sections = [
   getSimpleIntroSection(),
   getUsingYourToolsSection(enabledTools),
   // ...
-  SYSTEM_PROMPT_DYNAMIC_BOUNDARY,  // === do not move or remove ===
+  SYSTEM_PROMPT_DYNAMIC_BOUNDARY, // === do not move or remove ===
   // Dynamic (per-user, not cached)
-  ...resolvedDynamicSections,  // current time, git state, CLAUDE.md, MCP tools, etc.
-]
+  ...resolvedDynamicSections, // current time, git state, CLAUDE.md, MCP tools, etc.
+];
 ```
 
 Accidentally mixing dynamic content into the static section invalidates the cache for everyone. The codebase has cross-file warnings to keep the boundary coordinated. If you’re building AI apps at any real call volume, this pattern makes a meaningful dent in API costs.
@@ -97,8 +95,8 @@ Claude Code doesn’t use RAG. For both memory file search and historical conver
 
 ```typescript
 // memdir/memdir.ts
-const memSearch        = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`
-const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`
+const memSearch = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`;
+const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`;
 ```
 
 Claude Code’s creator Boris Cherny has said they tried RAG, but letting the AI decide what to search for and how to search produces far better results. An agent with direct access to the full document library and the freedom to dig beats a pre-packaged information bundle, especially as models get stronger. And `grep` has no index expiry, no vector database to maintain, and an order of magnitude less engineering complexity.
@@ -111,8 +109,8 @@ This is the most elegant design in the codebase. Anyone who’s used an AI codin
 
 ```typescript
 // memdir/memdir.ts
-export const MAX_ENTRYPOINT_LINES = 200
-export const MAX_ENTRYPOINT_BYTES = 25_000
+export const MAX_ENTRYPOINT_LINES = 200;
+export const MAX_ENTRYPOINT_BYTES = 25_000;
 ```
 
 **Tier 2: Topic files (warm data)** — Coding preferences, architectural decisions, known pitfalls. At the start of each conversation, a lighter Sonnet model selects up to 5 files relevant to the current query. If a tool is actively being used, its documentation is skipped (you clearly know how to use it), but its known issues are always loaded.
@@ -124,7 +122,7 @@ useful to Claude Code as it processes a user's query.
 Return a list of filenames for the memories that will clearly be useful (up to 5).
 - DO NOT select usage reference or API docs for tools currently in use.
 - DO still select memories containing warnings, gotchas, or known issues — active
-  use is exactly when those matter.`
+  use is exactly when those matter.`;
 ```
 
 Also worth noting: Claude Code’s memory never stores code. Code changes; memory doesn’t auto-update. Memory tracks preferences and judgments; code facts are always read from source in real time.
@@ -154,7 +152,7 @@ Claude Code has a `--dangerously-skip-permissions` flag (YOLO mode) that bypasse
 export async function classifyYoloAction(
   toolName: string,
   toolInput: Record<string, unknown>,
-): Promise<'allow' | 'soft_deny' | 'hard_deny'>
+): Promise<"allow" | "soft_deny" | "hard_deny">;
 // allow: safe, proceed
 // soft_deny: risky, downgrade to manual confirmation
 // hard_deny: blocked, no negotiation
@@ -165,14 +163,14 @@ That’s just one checkpoint. Before a tool call executes, it passes through fou
 ```typescript
 // tools/BashTool/bashSecurity.ts
 const BASH_SECURITY_CHECK_IDS = {
-  INCOMPLETE_COMMANDS: 1,       // Commands starting with tab or dash
-  JQ_SYSTEM_FUNCTION: 2,        // jq system() function calls
-  SHELL_METACHARACTERS: 5,      // Dangerous shell metacharacters
-  IFS_INJECTION: 11,            // IFS variable injection
-  UNICODE_WHITESPACE: 18,       // Unicode whitespace (parser differential)
-  ZSH_DANGEROUS_COMMANDS: 20,   // zmodload and similar Zsh bypasses
+  INCOMPLETE_COMMANDS: 1, // Commands starting with tab or dash
+  JQ_SYSTEM_FUNCTION: 2, // jq system() function calls
+  SHELL_METACHARACTERS: 5, // Dangerous shell metacharacters
+  IFS_INJECTION: 11, // IFS variable injection
+  UNICODE_WHITESPACE: 18, // Unicode whitespace (parser differential)
+  ZSH_DANGEROUS_COMMANDS: 20, // zmodload and similar Zsh bypasses
   // ... 23 total
-}
+};
 ```
 
 ## Anti-Distillation and Undercover Mode
@@ -190,4 +188,3 @@ Looking at the source end-to-end, there’s no secret sauce. No novel algorithms
 What’s impressive is how well those fundamentals are applied to the specific constraints of an AI agent with full access to your codebase. Every design decision has a reason. Every default is conservative. Every edge case is handled explicitly.
 
 The fundamentals matter. They always did.
-

@@ -40,8 +40,8 @@ No embeddings. No cosine similarity. It's more like a card catalog: scan the ind
 **Layer 3: Self-directed grep.** For deeper searches through transcript history, the model is handed grep instructions directly and runs the search itself:
 
 ```typescript
-const memSearch = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`
-const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`
+const memSearch = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`;
+const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`;
 ```
 
 The "last resort" comment in the code is telling. Transcript files are large, full `.jsonl` conversation logs, slow to scan. They're only reached when the memory layer doesn't have what's needed. Under the hood "grep" is actually ripgrep, a Rust-based tool that ships bundled with Claude Code in three fallback modes: system `rg` binary if one exists, a vendored platform-specific binary, or embedded directly into the Bun executable. The 20-second timeout with SIGKILL escalation signals that this is load-bearing infrastructure, not a prototype.

@@ -16,9 +16,9 @@ Here's how it works.
 
 ```typescript
 // memdir/memdir.ts
-export const ENTRYPOINT_NAME = 'MEMORY.md'
-export const MAX_ENTRYPOINT_LINES = 200
-export const MAX_ENTRYPOINT_BYTES = 25_000
+export const ENTRYPOINT_NAME = "MEMORY.md";
+export const MAX_ENTRYPOINT_LINES = 200;
+export const MAX_ENTRYPOINT_BYTES = 25_000;
 ```
 
 Hard capped at 200 lines and 25KB. It stores pointers, not content. Think of it as a table of contents for the model's working knowledge about your project.
@@ -31,19 +31,16 @@ When the file hits either limit, truncation kicks in:
 
 ```typescript
 export function truncateEntrypointContent(raw: string): EntrypointTruncation {
-  let truncated = wasLineTruncated
-    ? contentLines.slice(0, MAX_ENTRYPOINT_LINES).join('\n')
-    : trimmed
+  let truncated = wasLineTruncated ? contentLines.slice(0, MAX_ENTRYPOINT_LINES).join("\n") : trimmed;
 
   if (truncated.length > MAX_ENTRYPOINT_BYTES) {
-    const cutAt = truncated.lastIndexOf('\n', MAX_ENTRYPOINT_BYTES)
-    truncated = truncated.slice(0, cutAt > 0 ? cutAt : MAX_ENTRYPOINT_BYTES)
+    const cutAt = truncated.lastIndexOf("\n", MAX_ENTRYPOINT_BYTES);
+    truncated = truncated.slice(0, cutAt > 0 ? cutAt : MAX_ENTRYPOINT_BYTES);
   }
 
   return {
-    content: truncated +
-      `\n\n> WARNING: ${ENTRYPOINT_NAME} is ${reason}. Only part of it was loaded.`,
-  }
+    content: truncated + `\n\n> WARNING: ${ENTRYPOINT_NAME} is ${reason}. Only part of it was loaded.`,
+  };
 }
 ```
 
@@ -64,7 +61,7 @@ Return a list of filenames for the memories that will clearly be useful (up to 5
 - If a list of recently-used tools is provided, do not select memories that are
   usage reference or API documentation for those tools (Claude Code is already
   exercising them). DO still select memories containing warnings, gotchas, or
-  known issues about those tools — active use is exactly when those matter.`
+  known issues about those tools — active use is exactly when those matter.`;
 ```
 
 If you're actively using a tool, skip its documentation but always load its gotchas. You clearly know how to invoke it. What you need right now is the list of ways it can go wrong.
@@ -89,10 +86,10 @@ So there's a `memoryAge.ts` that converts file modification times to human langu
 
 ```typescript
 export function memoryAge(mtimeMs: number): string {
-  const d = memoryAgeDays(mtimeMs)
-  if (d === 0) return 'today'
-  if (d === 1) return 'yesterday'
-  return `${d} days ago`
+  const d = memoryAgeDays(mtimeMs);
+  if (d === 0) return "today";
+  if (d === 1) return "yesterday";
+  return `${d} days ago`;
 }
 ```
 
@@ -117,7 +114,7 @@ Code changes. Memory doesn't auto-update. If a memory says "function X is on lin
 Older conversations are stored as `.jsonl` files and searched by keyword with `grep` when actually needed:
 
 ```typescript
-const transcriptSearch = `${GREP_TOOL_NAME} with pattern="<search term>" path="${projectDir}/" glob="*.jsonl"`
+const transcriptSearch = `${GREP_TOOL_NAME} with pattern="<search term>" path="${projectDir}/" glob="*.jsonl"`;
 ```
 
 The instructions explicitly say to use narrow search terms (error messages, file paths, function names) rather than broad keywords. Transcripts are large and slow. This tier is the last resort, not the first.

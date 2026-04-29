@@ -16,7 +16,7 @@ The concurrency cap defaults to 10, tunable via env var:
 
 ```typescript
 function getMaxToolUseConcurrency(): number {
-  return parseInt(process.env.CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY || '', 10) || 10
+  return parseInt(process.env.CLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY || "", 10) || 10;
 }
 ```
 
@@ -29,25 +29,25 @@ Before any tools run, `partitionToolCalls` walks through all the requested tool 
 ```typescript
 function partitionToolCalls(toolUseMessages, toolUseContext): Batch[] {
   return toolUseMessages.reduce((acc, toolUse) => {
-    const tool = findToolByName(toolUseContext.options.tools, toolUse.name)
-    const parsedInput = tool?.inputSchema.safeParse(toolUse.input)
+    const tool = findToolByName(toolUseContext.options.tools, toolUse.name);
+    const parsedInput = tool?.inputSchema.safeParse(toolUse.input);
     const isConcurrencySafe = parsedInput?.success
       ? (() => {
           try {
-            return Boolean(tool?.isConcurrencySafe(parsedInput.data))
+            return Boolean(tool?.isConcurrencySafe(parsedInput.data));
           } catch {
-            return false  // exceptions treated as unsafe
+            return false; // exceptions treated as unsafe
           }
         })()
-      : false  // parse failures treated as unsafe
+      : false; // parse failures treated as unsafe
 
     if (isConcurrencySafe && acc[acc.length - 1]?.isConcurrencySafe) {
-      acc[acc.length - 1].blocks.push(toolUse)  // merge into concurrent batch
+      acc[acc.length - 1].blocks.push(toolUse); // merge into concurrent batch
     } else {
-      acc.push({ isConcurrencySafe, blocks: [toolUse] })  // new batch
+      acc.push({ isConcurrencySafe, blocks: [toolUse] }); // new batch
     }
-    return acc
-  }, [])
+    return acc;
+  }, []);
 }
 ```
 
@@ -59,9 +59,9 @@ Second, the default is conservative. From `Tool.ts`:
 
 ```typescript
 const TOOL_DEFAULTS = {
-  isConcurrencySafe: (_input?: unknown) => false,  // assume not safe
-  isReadOnly: (_input?: unknown) => false,          // assume writes
-}
+  isConcurrencySafe: (_input?: unknown) => false, // assume not safe
+  isReadOnly: (_input?: unknown) => false, // assume writes
+};
 ```
 
 Any tool that doesn't explicitly opt in runs serially. Bash, FileEdit, FileWrite, and NotebookEdit all fall through to this default. The opt-in list reads like "things that genuinely can't corrupt state": FileRead, Grep, Glob, WebSearch, WebFetch, LSP diagnostics.
@@ -104,21 +104,21 @@ export async function* all<A>(
   generators: AsyncGenerator<A, void>[],
   concurrencyCap = Infinity,
 ): AsyncGenerator<A, void> {
-  const waiting = [...generators]
-  const promises = new Set<Promise<QueuedGenerator<A>>>()
+  const waiting = [...generators];
+  const promises = new Set<Promise<QueuedGenerator<A>>>();
 
   while (promises.size < concurrencyCap && waiting.length > 0) {
-    promises.add(next(waiting.shift()!))
+    promises.add(next(waiting.shift()!));
   }
 
   while (promises.size > 0) {
-    const { done, value, generator, promise } = await Promise.race(promises)
-    promises.delete(promise)
+    const { done, value, generator, promise } = await Promise.race(promises);
+    promises.delete(promise);
     if (!done) {
-      promises.add(next(generator))
-      if (value !== undefined) yield value
+      promises.add(next(generator));
+      if (value !== undefined) yield value;
     } else if (waiting.length > 0) {
-      promises.add(next(waiting.shift()!))
+      promises.add(next(waiting.shift()!));
     }
   }
 }

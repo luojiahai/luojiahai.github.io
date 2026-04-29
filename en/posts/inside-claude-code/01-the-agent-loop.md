@@ -19,7 +19,7 @@ async function* queryLoop(params: QueryParams, consumedCommandUuids: string[]) {
     hasAttemptedReactiveCompact: false,
     turnCount: 1,
     // ...
-  }
+  };
 
   while (true) {
     // 1. Compress context (prevent token explosion)
@@ -44,38 +44,38 @@ The loop is actually a state machine. Each iteration is driven by a `State` obje
 
 ```typescript
 type State = {
-  messages: Message[]
-  toolUseContext: ToolUseContext
-  autoCompactTracking: AutoCompactTrackingState | undefined
-  maxOutputTokensRecoveryCount: number
-  hasAttemptedReactiveCompact: boolean
-  maxOutputTokensOverride: number | undefined
-  pendingToolUseSummary: Promise<ToolUseSummaryMessage | null> | undefined
-  stopHookActive: boolean | undefined
-  turnCount: number
+  messages: Message[];
+  toolUseContext: ToolUseContext;
+  autoCompactTracking: AutoCompactTrackingState | undefined;
+  maxOutputTokensRecoveryCount: number;
+  hasAttemptedReactiveCompact: boolean;
+  maxOutputTokensOverride: number | undefined;
+  pendingToolUseSummary: Promise<ToolUseSummaryMessage | null> | undefined;
+  stopHookActive: boolean | undefined;
+  turnCount: number;
   // Why the previous iteration continued. Undefined on first iteration.
-  transition: Continue | undefined
-}
+  transition: Continue | undefined;
+};
 ```
 
-The key field is `transition`. It records *why* the previous iteration continued, not just that it did. The loop updates `state = { ... }` at each continue site rather than mutating nine separate variables. State transitions are explicit, atomic, and auditable. Tests can assert which recovery path fired without digging through message contents.
+The key field is `transition`. It records _why_ the previous iteration continued, not just that it did. The loop updates `state = { ... }` at each continue site rather than mutating nine separate variables. State transitions are explicit, atomic, and auditable. Tests can assert which recovery path fired without digging through message contents.
 
 ## How It Exits
 
 There are ten distinct exit conditions:
 
-| Reason | Trigger |
-|---|---|
-| `completed` | No tool calls in response, stop hooks passed |
-| `blocking_limit` | Token count at hard limit |
-| `prompt_too_long` | Context too large even after recovery |
-| `image_error` | Image size/resize error |
-| `model_error` | API/runtime error |
-| `aborted_streaming` | User interrupted during model streaming |
-| `aborted_tools` | User interrupted during tool execution |
-| `hook_stopped` | Stop hook blocked continuation |
-| `stop_hook_prevented` | Stop hook flagged preventContinuation |
-| `max_turns` | Hit configured turn limit |
+| Reason                | Trigger                                      |
+| --------------------- | -------------------------------------------- |
+| `completed`           | No tool calls in response, stop hooks passed |
+| `blocking_limit`      | Token count at hard limit                    |
+| `prompt_too_long`     | Context too large even after recovery        |
+| `image_error`         | Image size/resize error                      |
+| `model_error`         | API/runtime error                            |
+| `aborted_streaming`   | User interrupted during model streaming      |
+| `aborted_tools`       | User interrupted during tool execution       |
+| `hook_stopped`        | Stop hook blocked continuation               |
+| `stop_hook_prevented` | Stop hook flagged preventContinuation        |
+| `max_turns`           | Hit configured turn limit                    |
 
 Normal completion (`completed`) is reached only deep in the `!needsFollowUp` branch, after stop hooks pass. Everything else is either an error state or an interruption.
 
@@ -146,7 +146,7 @@ Just above the loop definition sits a comment block the engineers apparently cal
  * and the rules of thinking are the rules of the universe. If ye does not heed
  * these rules, ye will be punished with an entire day of debugging and hair pulling.
  */
-const MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3
+const MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3;
 ```
 
 Three constraints on how thinking blocks must be handled. Rule 1 covers both `thinking` and `redacted_thinking` blocks — the latter is the encrypted form used when extended thinking is enabled with streaming. The constant defined immediately after — `MAX_OUTPUT_TOKENS_RECOVERY_LIMIT = 3` — is its only neighbor. Whether that proximity is intentional humor or coincidence, no comment was left.

@@ -15,8 +15,7 @@ Claude Code solves this with a clean architectural pattern worth stealing.
 In `constants/prompts.ts`, the system prompt is assembled as an ordered array of strings, split at a sentinel:
 
 ```typescript
-export const SYSTEM_PROMPT_DYNAMIC_BOUNDARY =
-  '__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__'
+export const SYSTEM_PROMPT_DYNAMIC_BOUNDARY = "__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__";
 
 return [
   // --- Static content (cacheable) ---
@@ -31,7 +30,7 @@ return [
   ...(shouldUseGlobalCacheScope() ? [SYSTEM_PROMPT_DYNAMIC_BOUNDARY] : []),
   // --- Dynamic content (registry-managed) ---
   ...resolvedDynamicSections,
-]
+];
 ```
 
 Everything above the marker is static: role definition, behaviour rules, tool descriptions, tone requirements. Identical across every user, every session.
@@ -44,12 +43,12 @@ The static block gets tagged with `cache_control: { type: 'ephemeral', scope: 'g
 
 When the boundary marker is found, `splitSysPromptPrefix()` in `src/utils/api.ts` cuts the array into up to four blocks:
 
-| Block | Scope | What it is |
-|---|---|---|
-| Attribution header | `null` | Billing metadata, never cached |
-| System prompt prefix | `null` | Short preamble, not globally cached |
-| Static content | `'global'` | Role + rules + tool descriptions |
-| Dynamic content | `null` | Per-user context, not cached |
+| Block                | Scope      | What it is                          |
+| -------------------- | ---------- | ----------------------------------- |
+| Attribution header   | `null`     | Billing metadata, never cached      |
+| System prompt prefix | `null`     | Short preamble, not globally cached |
+| Static content       | `'global'` | Role + rules + tool descriptions    |
+| Dynamic content      | `null`     | Per-user context, not cached        |
 
 The `'global'` scope maps to `cache_control: { type: 'ephemeral', scope: 'global' }` in the API request. This is the interesting one. It lets the API serve this block from a shared cache across all Claude Code users, not just within a single organisation.
 
@@ -58,10 +57,10 @@ For eligible users (Anthropic employees or Claude.ai subscribers within rate lim
 ```typescript
 export function getCacheControl({ scope, querySource }) {
   return {
-    type: 'ephemeral',
-    ...(should1hCacheTTL(querySource) && { ttl: '1h' }),
-    ...(scope === 'global' && { scope }),
-  }
+    type: "ephemeral",
+    ...(should1hCacheTTL(querySource) && { ttl: "1h" }),
+    ...(scope === "global" && { scope }),
+  };
 }
 ```
 
@@ -92,13 +91,11 @@ MCP (Model Context Protocol) tools are per-user by definition. Their names, sche
 Claude Code detects this and falls back to tool-based caching instead:
 
 ```typescript
-const needsToolBasedCacheMarker =
-  useGlobalCacheFeature &&
-  filteredTools.some(t => t.isMcp === true && !willDefer(t))
+const needsToolBasedCacheMarker = useGlobalCacheFeature && filteredTools.some((t) => t.isMcp === true && !willDefer(t));
 
 const system = buildSystemPromptBlocks(systemPrompt, enablePromptCaching, {
   skipGlobalCacheForSystemPrompt: needsToolBasedCacheMarker,
-})
+});
 ```
 
 When `skipGlobalCacheForSystemPrompt` is true, the boundary marker is stripped entirely and the system falls back to org-level caching. Same behaviour as Bedrock and other third-party providers that don't support the global scope beta.

@@ -15,16 +15,13 @@ The typical response to this kind of thing is rate limiting, or detecting unusua
 ```typescript
 // services/api/claude.ts
 if (
-  feature('ANTI_DISTILLATION_CC')
-    ? process.env.CLAUDE_CODE_ENTRYPOINT === 'cli' &&
+  feature("ANTI_DISTILLATION_CC")
+    ? process.env.CLAUDE_CODE_ENTRYPOINT === "cli" &&
       shouldIncludeFirstPartyOnlyBetas() &&
-      getFeatureValue_CACHED_MAY_BE_STALE(
-        'tengu_anti_distill_fake_tool_injection',
-        false,
-      )
+      getFeatureValue_CACHED_MAY_BE_STALE("tengu_anti_distill_fake_tool_injection", false)
     : false
 ) {
-  result.anti_distillation = ['fake_tools']
+  result.anti_distillation = ["fake_tools"];
 }
 ```
 
@@ -52,14 +49,14 @@ When Anthropic employees use Claude Code to contribute to open-source projects, 
  */
 
 export function isUndercover(): boolean {
-  if (process.env.USER_TYPE === 'ant') {
-    if (isEnvTruthy(process.env.CLAUDE_CODE_UNDERCOVER)) return true
+  if (process.env.USER_TYPE === "ant") {
+    if (isEnvTruthy(process.env.CLAUDE_CODE_UNDERCOVER)) return true;
     // Auto: active unless we've positively confirmed we're in an allowlisted
     // internal repo. 'external', 'none', and null (check not yet run) all
     // resolve to ON. The check is primed in setup.ts; only 'internal' → OFF.
-    return getRepoClassCached() !== 'internal'
+    return getRepoClassCached() !== "internal";
   }
-  return false
+  return false;
 }
 ```
 
@@ -74,7 +71,7 @@ What "undercover" actually suppresses goes deeper than just stripping `Co-Author
 3. **Ant-specific model config.** Any internal model override configs are stripped from the system prompt.
 4. **Commit prompt.** The BashTool prompt prepends explicit instructions about what not to write, even when the user has disabled git instructions globally.
 
-That last part has the most interesting design note in the source: *"Defense-in-depth: undercover instructions must survive even if the user has disabled git instructions entirely."* The mechanical suppression handles most cases, but the explicit "don't blow your cover" instructions are the last line of defense against the model volunteering a codename in a commit message.
+That last part has the most interesting design note in the source: _"Defense-in-depth: undercover instructions must survive even if the user has disabled git instructions entirely."_ The mechanical suppression handles most cases, but the explicit "don't blow your cover" instructions are the last line of defense against the model volunteering a codename in a commit message.
 
 The injected instructions list exactly what the model must never write:
 

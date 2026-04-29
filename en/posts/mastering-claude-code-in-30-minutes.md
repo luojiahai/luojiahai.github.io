@@ -4,7 +4,7 @@ description: "Distilled from Mastering Claude Code in 30 minutes by Boris Cherny
 
 # Mastering Claude Code in 30 minutes
 
-*Distilled from [Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0) by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code.*
+_Distilled from [Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0) by Boris Cherny. Learn advanced features, shortcuts, and workflows to get the most from Claude Code._
 
 ## What Claude Code actually is
 
@@ -126,16 +126,16 @@ Run `/memory` to see exactly which memory files are active in your current sessi
 
 These aren’t well-advertised, so here’s a quick reference:
 
-|Key        |What it does                                                    |
-|-----------|----------------------------------------------------------------|
-|`Shift+Tab`|Toggle auto-accept edits mode                                   |
-|`#`        |Create a memory                                                 |
-|`!`        |Drop into bash mode (command runs locally and goes into context)|
-|`@`        |Add a file or folder to context                                 |
-|`Esc`      |Cancel what Claude is doing (safe to hit anytime)               |
-|`Esc Esc`  |Jump back in history                                            |
-|`Ctrl+R`   |Show verbose output (what Claude sees in its context window)    |
-|`--resume` |Resume a previous session when starting Claude                  |
+| Key         | What it does                                                     |
+| ----------- | ---------------------------------------------------------------- |
+| `Shift+Tab` | Toggle auto-accept edits mode                                    |
+| `#`         | Create a memory                                                  |
+| `!`         | Drop into bash mode (command runs locally and goes into context) |
+| `@`         | Add a file or folder to context                                  |
+| `Esc`       | Cancel what Claude is doing (safe to hit anytime)                |
+| `Esc Esc`   | Jump back in history                                             |
+| `Ctrl+R`    | Show verbose output (what Claude sees in its context window)     |
+| `--resume`  | Resume a previous session when starting Claude                   |
 
 The `Esc` key deserves a callout. You can hit it at any point, mid file edit or mid bash command, and it won’t corrupt anything. Boris uses it to interrupt a 20-line diff, tell Claude to change one line, and then have it redo the edit. Very handy.
 
