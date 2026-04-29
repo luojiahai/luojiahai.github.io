@@ -514,12 +514,9 @@
 }
 
 .VPHome .VPHero .name {
-  font-family: var(--vp-font-family-mono);
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
-  letter-spacing: -0.05em;
-  word-spacing: -0.3em;
   color: var(--vp-c-text-1);
   -webkit-text-fill-color: var(--vp-c-text-1);
 }
