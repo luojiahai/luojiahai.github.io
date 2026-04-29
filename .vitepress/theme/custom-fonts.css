@@ -186,5 +186,5 @@
   --vp-font-family-base:
     "Source Sans 3", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-  --vp-font-family-mono: "Cascadia Mono", ui-monospace, monospace;
+  --vp-font-family-mono: "Cascadia Mono", "Source Han Sans SC", ui-monospace, monospace;
 }
