@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-ExtraLight.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-Light.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-Regular.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-Medium.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-SemiBold.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-Bold.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-Black.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-ExtraLightIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-ExtraLightIt.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-LightIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-LightIt.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-It.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-It.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-MediumIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-MediumIt.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-SemiBoldIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-SemiBoldIt.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-BoldIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-BoldIt.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -104,7 +104,7 @@
 
 @font-face {
   font-family: "Source Sans 3";
-  src: url("/fonts/SourceSans3-BlackIt.ttf") format("truetype");
+  src: url("/fonts/SourceSans3/SourceSans3-BlackIt.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-ExtraLight.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-ExtraLight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -120,7 +120,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Light.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -128,7 +128,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Normal.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Normal.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -136,7 +136,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Regular.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Regular.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -144,7 +144,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Medium.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Medium.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -152,7 +152,7 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-SemiBold.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-SemiBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -160,7 +160,63 @@
 
 @font-face {
   font-family: "Source Han Sans SC";
-  src: url("/fonts/SourceHanSansSC-Bold.otf") format("opentype");
+  src: url("/fonts/SourceHanSansSC/SourceHanSansSC-Bold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Normal.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Medium.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-SemiBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Han Mono SC";
+  src: url("/fonts/SourceHanMonoSC/SourceHanMonoSC-Bold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -168,7 +224,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMono.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono/CascadiaMono.ttf") format("truetype");
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
@@ -176,7 +232,7 @@
 
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("/fonts/CascadiaMonoItalic.ttf") format("truetype");
+  src: url("/fonts/CascadiaMono/CascadiaMonoItalic.ttf") format("truetype");
   font-weight: 200 700;
   font-style: italic;
   font-display: swap;
@@ -186,5 +242,5 @@
   --vp-font-family-base:
     "Source Sans 3", "Source Han Sans SC", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
-  --vp-font-family-mono: "Cascadia Mono", "Source Han Sans SC", ui-monospace, monospace;
+  --vp-font-family-mono: "Cascadia Mono", "Source Han Mono SC", ui-monospace, monospace;
 }
