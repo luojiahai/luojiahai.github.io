@@ -105,7 +105,7 @@ Claude Code's creator Boris Cherny has said they tried RAG, but letting the AI d
 
 This is the most elegant design in the codebase. Anyone who's used an AI coding tool long enough has hit the wall: deep into a session, the AI starts contradicting itself, losing the thread. Claude Code addresses this with a tiered memory system.
 
-**Tier 1: MEMORY.md (hot data)** — Loaded into context every conversation. Hard capped at 200 lines and 25KB. It stores pointers, not content. If truncation kicks in, the model is explicitly told the index is incomplete, so it doesn't silently work with partial information.
+**Tier 1: MEMORY.md (hot data)** is loaded into context every conversation. Hard capped at 200 lines and 25KB. It stores pointers, not content. If truncation kicks in, the model is explicitly told the index is incomplete, so it doesn't silently work with partial information.
 
 ```typescript
 // memdir/memdir.ts
@@ -113,7 +113,7 @@ export const MAX_ENTRYPOINT_LINES = 200;
 export const MAX_ENTRYPOINT_BYTES = 25_000;
 ```
 
-**Tier 2: Topic files (warm data)** — Coding preferences, architectural decisions, known pitfalls. At the start of each conversation, Sonnet selects up to 5 files relevant to the current query. If a tool is actively being used, its documentation is skipped (you clearly know how to use it), but its known issues are always loaded.
+**Tier 2: Topic files (warm data)** covers coding preferences, architectural decisions, and known pitfalls. At the start of each conversation, Sonnet selects up to 5 files relevant to the current query. If a tool is actively being used, its documentation is skipped (you clearly know how to use it), but its known issues are always loaded.
 
 ```typescript
 // memdir/findRelevantMemories.ts
@@ -127,7 +127,7 @@ Return a list of filenames for the memories that will clearly be useful (up to 5
 
 Also worth noting: Claude Code's memory never stores code. Code changes; memory doesn't auto-update. Memory tracks preferences and judgments; code facts are always read from source in real time.
 
-**Tier 3: Conversation history (cold data)** — Older conversations stored as `.jsonl` files, searched by `grep` when needed.
+**Tier 3: Conversation history (cold data)** stores older conversations as `.jsonl` files, searched by `grep` when needed.
 
 Hot data stays resident. Warm data is selected by Sonnet at conversation start based on relevance to the query. Cold data is searched. Clean.
 
@@ -145,7 +145,7 @@ There's also a circuit breaker. On March 10, 2026, they measured 1,279 sessions 
 
 ## Security Layer
 
-Claude Code has a `--dangerously-skip-permissions` flag (YOLO mode) that bypasses all permission checks entirely — including the AI classifier. The classifier only runs in `--permission-mode auto`, a separate mode where a shadow AI evaluates every action the model wants to take.
+Claude Code has a `--dangerously-skip-permissions` flag (YOLO mode) that bypasses all permission checks entirely, including the AI classifier. The classifier only runs in `--permission-mode auto`, a separate mode where a shadow AI evaluates every action the model wants to take.
 
 ```typescript
 // utils/permissions/yoloClassifier.ts — runs in auto mode, not bypass mode
