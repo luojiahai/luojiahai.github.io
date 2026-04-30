@@ -12,7 +12,7 @@ Claude Code solves this with a clean architectural pattern worth stealing.
 
 ## The Boundary Marker
 
-In `constants/prompts.ts`, the system prompt is assembled as an ordered array of strings, split at a sentinel:
+In `src/constants/prompts.ts`, the system prompt is assembled as an ordered array of strings, split at a sentinel:
 
 ```typescript
 export const SYSTEM_PROMPT_DYNAMIC_BOUNDARY = "__SYSTEM_PROMPT_DYNAMIC_BOUNDARY__";
@@ -21,7 +21,8 @@ return [
   // --- Static content (cacheable) ---
   getSimpleIntroSection(outputStyleConfig),
   getSimpleSystemSection(),
-  getSimpleDoingTasksSection(),
+  // included only when outputStyleConfig is null or keepCodingInstructions is true
+  ...(outputStyleConfig?.keepCodingInstructions !== false ? [getSimpleDoingTasksSection()] : []),
   getActionsSection(),
   getUsingYourToolsSection(enabledTools),
   getSimpleToneAndStyleSection(),
@@ -88,7 +89,7 @@ The fix is structural: anything conditional goes after the boundary, even if it 
 
 MCP (Model Context Protocol) tools are per-user by definition. Their names, schemas, and descriptions depend on what the individual user has configured. Caching the system prompt globally when MCP tools are active would be wrong.
 
-Claude Code detects this and falls back to tool-based caching instead:
+Claude Code detects this and disables global caching for the system prompt:
 
 ```typescript
 const needsToolBasedCacheMarker = useGlobalCacheFeature && filteredTools.some((t) => t.isMcp === true && !willDefer(t));
@@ -105,7 +106,7 @@ When `skipGlobalCacheForSystemPrompt` is true, the boundary marker is stripped e
 There's a monitoring subsystem in `src/services/api/promptCacheBreakDetection.ts` that watches for unexpected drops in `cache_read_input_tokens`. If the read tokens drop more than 5% and exceed 2,000 tokens, it fires a `tengu_prompt_cache_break` telemetry event with a root cause explanation:
 
 - System prompt changed (+N chars)
-- Tool schemas changed (+N/-N tools)
+- Tools changed (+N/-N tools)
 - Model switched
 - Beta headers added/removed
 - Fast mode toggled
@@ -126,7 +127,11 @@ The assembled system prompt in the API call ends up looking like this:
     },
     {
       "type": "text",
-      "text": "You are Claude Code, Anthropic's official CLI for Claude...",
+      "text": "You are Claude Code, Anthropic's official CLI for Claude..."
+    },
+    {
+      "type": "text",
+      "text": "## Core behaviour\n## Tool guidance\n...",
       "cache_control": { "type": "ephemeral", "scope": "global", "ttl": "1h" }
     },
     {
@@ -137,7 +142,7 @@ The assembled system prompt in the API call ends up looking like this:
 }
 ```
 
-Three blocks. The static one carries the global cache marker. The dynamic one is unmarked and small.
+Four blocks in a typical CLI session. The attribution header and system prompt prefix (`"You are Claude Code..."`) both have no cache marker. The large static content block — intro, rules, tool guidance — gets the global cache marker. The dynamic block is unmarked and small.
 
 ## The Takeaway
 
