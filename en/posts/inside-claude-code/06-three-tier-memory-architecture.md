@@ -30,6 +30,7 @@ The 25KB byte cap was actually added after the fact. Someone found a way to stay
 When the file hits either limit, truncation kicks in:
 
 ```typescript
+// abbreviated — declarations of wasLineTruncated, contentLines, trimmed, and reason omitted
 export function truncateEntrypointContent(raw: string): EntrypointTruncation {
   let truncated = wasLineTruncated ? contentLines.slice(0, MAX_ENTRYPOINT_LINES).join("\n") : trimmed;
 
