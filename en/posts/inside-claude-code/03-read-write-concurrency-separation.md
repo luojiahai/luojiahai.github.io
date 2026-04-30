@@ -12,7 +12,7 @@ The answer is: it depends on what the tools are doing. And the way it figures th
 
 The execution layer in `toolOrchestration.ts` treats reads and writes differently, much like a database with read/write locks. Multiple read-only tools can run in parallel. The moment a write operation enters the mix, everything waits.
 
-The concurrency cap defaults to 10, tunable via env var:
+The concurrency cap defaults to 10, tunable via env var — this applies to the batch executor in `toolOrchestration.ts`:
 
 ```typescript
 function getMaxToolUseConcurrency(): number {
@@ -64,7 +64,7 @@ const TOOL_DEFAULTS = {
 };
 ```
 
-Any tool that doesn't explicitly opt in runs serially. Bash, FileEdit, FileWrite, and NotebookEdit all fall through to this default. The opt-in list reads like "things that genuinely can't corrupt state": FileRead, Grep, Glob, WebSearch, WebFetch, LSP diagnostics.
+Any tool that doesn't explicitly opt in runs serially. FileEdit, FileWrite, and NotebookEdit all fall through to this default. Bash is a notable exception: it has a custom `isConcurrencySafe` that delegates to `isReadOnly`, so read-only shell commands (those passing `checkReadOnlyConstraints`) can still run concurrently. The opt-in list reads like "things that genuinely can't corrupt state": FileRead, Grep, Glob, WebSearch, WebFetch, LSP diagnostics.
 
 If the safety check itself throws an exception, that's treated as unsafe too. Fail-closed, all the way down.
 
@@ -91,9 +91,9 @@ let streamingToolExecutor = useStreamingToolExecution
   : null
 ```
 
-`toolOrchestration.ts` is batch-based: it collects all tool calls from a response, partitions them upfront, then runs each batch.
+`toolOrchestration.ts` is batch-based: it collects all tool calls from a response, partitions them upfront, then runs each batch. The concurrency cap of 10 applies here.
 
-`StreamingToolExecutor.ts` is event-driven: it starts executing tools as `tool_use` blocks stream in, before the response even finishes. Lower latency, same safety guarantees. There is one acknowledged tradeoff though: the streaming executor doesn't support context modifiers for concurrent tools. If a concurrent tool emits one, it's only applied when the tool runs serially.
+`StreamingToolExecutor.ts` is event-driven: it starts executing tools as `tool_use` blocks stream in, before the response even finishes. Lower latency, same safety guarantees, but no numeric concurrency cap — its concurrency is governed purely by the safe/unsafe classification. There is one acknowledged limitation: the streaming executor doesn't support context modifiers for concurrent tools at all. If a concurrent tool emits one, it's silently dropped, not deferred. A code comment acknowledges this is a known gap.
 
 ## The Concurrency Pool
 
