@@ -1,5 +1,5 @@
 ---
-description: "Two hidden defensive mechanisms in Claude Code."
+description: "Claude Code's two hidden defensive mechanisms."
 ---
 
 # Inside Claude Code: Anti-Distillation and Undercover Mode

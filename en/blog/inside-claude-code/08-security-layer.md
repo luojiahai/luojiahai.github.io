@@ -1,5 +1,5 @@
 ---
-description: "Claude Code has a `--dangerously-skip-permissions` flag. Also known as YOLO mode. The name is doing a lot of work."
+description: "Claude Code has a `--dangerously-skip-permissions` flag, also known as YOLO mode."
 ---
 
 # Inside Claude Code: Security Layer

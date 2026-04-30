@@ -1,5 +1,5 @@
 ---
-description: "Claude Code's five-level context compression pipeline, from the lightweight Snip all the way to the emergency Reactive Compact fallback."
+description: "Claude Code has a five-level pipeline to compress context."
 ---
 
 # Inside Claude Code: Five-Level Context Compression

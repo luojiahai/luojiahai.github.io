@@ -1,5 +1,5 @@
 ---
-description: "Claude Code handles concurrent tool execution by borrowing a classic database pattern: reads run in parallel, writes serialize everything."
+description: "Claude Code handles concurrent tool execution by borrowing a classic database pattern."
 ---
 
 # Inside Claude Code: Read/Write Concurrency Separation

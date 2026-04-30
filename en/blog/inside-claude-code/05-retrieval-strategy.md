@@ -1,5 +1,5 @@
 ---
-description: "Claude Code skips the RAG stack entirely, using a three-layer architecture of metadata scanning."
+description: "Claude Code skips RAG, instead using a three-layer architecture of metadata scanning."
 ---
 
 # Inside Claude Code: Retrieval Strategy
