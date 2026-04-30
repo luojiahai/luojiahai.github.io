@@ -72,20 +72,19 @@ Three blocked actions in a row, or twenty total, escalates to manual prompting w
 
 ## Dangerous Allow-Rules Are Stripped
 
-Before entering auto mode, the permission setup strips allow rules that would let the model bypass the classifier. Any `Bash(python:*)`, `Bash(node:*)`, `Bash(eval:*)`, `Bash(curl:*)`, `Bash(git:*)` allow-rule gets removed on entry. Those prefixes grant arbitrary code execution, which is exactly what the classifier exists to guard against.
+Before entering auto mode, the permission setup strips allow rules that would let the model bypass the classifier. For all users, `Bash(python:*)`, `Bash(node:*)`, and `Bash(eval:*)` allow-rules are removed on entry. Those prefixes grant arbitrary code execution, which is exactly what the classifier exists to guard against.
 
-For Anthropic-internal users the list is longer: `kubectl`, `aws`, `gcloud`, `gh` are also stripped. The comment explains the threat model directly: "Network/exfil: `gh gist create --public`, `gh api` arbitrary HTTP, `curl`/`wget` POST."
+For Anthropic-internal users the list is significantly longer. On top of the base set, `curl`, `wget`, `git`, `gh`, `gh api`, `kubectl`, `aws`, `gcloud`, `gsutil`, and a few internal tools are also stripped. The comment explains the threat model: "Network/exfil: `gh gist create --public`, `gh api` arbitrary HTTP, `curl`/`wget` POST." External users don't get `curl` or `git` stripped, because that threat surface is scoped to internal infrastructure.
 
 ## Bypass-Immune Paths
 
-Some paths are marked `classifierApprovable: false` and always require manual review, even in full bypass mode:
+Two tiers of path sensitivity exist, and the blog post I based this on got them backwards, so let me be precise.
 
-- `.git/` directories and `.gitconfig` — prevent git hook-based code execution and data exfiltration
-- `.claude/settings.json`, `.claude/settings.local.json` — protect Claude's own config
-- Shell configs: `.bashrc`, `.zshrc`, `.profile`, `.vimrc`
-- IDE configs: `.vscode/`, `.idea/`
+The first tier is `DANGEROUS_FILES`: `.gitconfig`, `.gitmodules`, `.bashrc`, `.bash_profile`, `.zshrc`, `.zprofile`, `.profile`, `.ripgreprc`, `.mcp.json`, `.claude.json`, plus `.git/` directories and IDE configs like `.vscode/` and `.idea/`. These are marked `classifierApprovable: true`. The classifier can still approve edits to these files. They're sensitive but not unconditionally blocked.
 
-The YOLO classifier can't approve these. They always go to the human.
+The second tier is the truly bypass-immune set: suspicious Windows path patterns. NTFS Alternate Data Streams, 8.3 short names like `GIT~1`, long path prefixes (`\\?\`), trailing dots or spaces (`.git.`), DOS device names (`.git.CON`), and UNC paths. These are `classifierApprovable: false`. The classifier cannot approve them. They always require manual review.
+
+The distinction matters. Sensitive config files get a human-readable flag and classifier review. Obfuscated Windows paths get a hard no regardless of what the classifier thinks.
 
 ## The Bash Security Checks
 
