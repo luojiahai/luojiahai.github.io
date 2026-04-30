@@ -1,10 +1,8 @@
 ---
-description: "How Claude Code's built-in tools are registered, sorted, and conditionally compiled, how concurrency is driven entirely by tool declarations, and why every default is fail-closed. The architecture makes the safe path the easy path, and the dangerous path require explicit work."
+description: "Claude Code's built-in tools registration, sorting, and conditionally compilation."
 ---
 
 # Inside Claude Code: Tool Design
-
-# How Claude Code Thinks About Tools
 
 The Claude Code tool system is where a lot of the interesting safety and performance thinking lives. Every default, every sort order, every conditional import is a decision with a reason behind it.
 

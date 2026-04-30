@@ -1,5 +1,5 @@
 ---
-description: "How Claude Code splits its system prompt at a sentinel boundary to maximise Anthropic API cache hits, covering the global cache scope, the 2^N variant problem, and the monitoring layer that keeps it honest."
+description: "Claude Code splits its system prompt at a sentinel boundary to maximise Anthropic API cache hits."
 ---
 
 # Inside Claude Code: System Prompt Cache Splitting

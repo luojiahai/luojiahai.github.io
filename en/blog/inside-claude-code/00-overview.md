@@ -1,5 +1,5 @@
 ---
-description: "Claude Code is built on roughly 512,000 lines of code. A look at how each module works: the agent loop, tool system, memory, context compression, and permission layer."
+description: "Everything in Claude Code is built on concepts working engineers have encountered before."
 ---
 
 # Inside Claude Code: Overview

@@ -1,5 +1,5 @@
 ---
-description: "Claude Code skips the RAG stack entirely, using a three-layer architecture of metadata scanning, a lightweight LLM sidecar call, and self-directed grep to retrieve context. As models get better at writing precise memory descriptions, the whole system gets smarter for free, no vector database, no reindexing, no pipeline to maintain."
+description: "Claude Code skips the RAG stack entirely, using a three-layer architecture of metadata scanning."
 ---
 
 # Inside Claude Code: Retrieval Strategy

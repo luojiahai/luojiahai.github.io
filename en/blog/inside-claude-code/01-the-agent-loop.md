@@ -1,5 +1,5 @@
 ---
-description: "How Claude Code implements the ReAct pattern with a full state machine, ten exit conditions, six recovery paths, a five-stage compaction pipeline, and parallel tool execution, all inline without a framework in sight."
+description: "It's actually a while(true) loop."
 ---
 
 # Inside Claude Code: The Agent Loop

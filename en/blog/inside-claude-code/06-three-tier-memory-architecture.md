@@ -1,5 +1,5 @@
 ---
-description: "How Claude Code solves AI context drift with a three-tier memory architecture: hot indexes, on-demand topic files, and searchable conversation history, and the engineering decisions that make each tier actually work."
+description: "Claude Code solves AI context drift with a three-tier memory architecture."
 ---
 
 # Inside Claude Code: Three-Tier Memory Architecture

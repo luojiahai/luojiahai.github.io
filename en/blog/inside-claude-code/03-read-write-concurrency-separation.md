@@ -1,5 +1,5 @@
 ---
-description: "How Claude Code handles concurrent tool execution by borrowing a classic database pattern: reads run in parallel, writes serialize everything, with a conservative fail-closed default that ensures tools never corrupt shared state."
+description: "Claude Code handles concurrent tool execution by borrowing a classic database pattern: reads run in parallel, writes serialize everything."
 ---
 
 # Inside Claude Code: Read/Write Concurrency Separation
