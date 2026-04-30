@@ -4,7 +4,9 @@ description: "Two hidden defensive mechanisms in Claude Code: anti-distillation,
 
 # Inside Claude Code: Anti-Distillation and Undercover Mode
 
-Anti-Distillation and Undercover Mode mechanisms are invisible at runtime. Both only exist in specific build configurations. And both reveal something about how Anthropic thinks about threats.
+Claude Code ships two mechanisms that have nothing to do with helping you write code. They're not documented, not user-facing, and invisible at runtime. Both exist purely to defend against adversaries, and both only activate in specific build configurations.
+
+They reveal something about the threat model Anthropic is actually engineering against.
 
 ## Anti-Distillation
 
@@ -13,7 +15,7 @@ The threat model here is straightforward. If you're a competitor, you could run 
 The typical response to this kind of thing is rate limiting, or detecting unusual traffic patterns, or just ignoring it. Anthropic went a different direction.
 
 ```typescript
-// services/api/claude.ts
+// src/services/api/claude.ts
 if (
   feature("ANTI_DISTILLATION_CC")
     ? process.env.CLAUDE_CODE_ENTRYPOINT === "cli" &&
@@ -25,11 +27,11 @@ if (
 }
 ```
 
-When active, Claude Code injects fake tool definitions into the API request. Not to break the model's output, but to corrupt the training signal of anyone capturing the traffic. Any distilled model trained on those recordings gets progressively worse, not better. It's counterintelligence, not just defense.
+When active, Claude Code sets an `anti_distillation` field in the API request body, signalling the server to inject fake tool definitions into the response. The intent, at least from the client side, is to corrupt the training signal of anyone capturing the traffic. It's counterintelligence, not just defense.
 
-The activation is doubly gated. There's a build-time Bun flag (`feature('ANTI_DISTILLATION_CC')`) that can compile the whole thing out entirely. But even when compiled in, it still checks a server-side feature flag via what looks like LaunchDarkly. Anthropic can flip it remotely without shipping a new build. It only fires in the official first-party CLI, not through the SDK.
+The activation is doubly gated. There's a build-time Bun flag (`feature('ANTI_DISTILLATION_CC')`) that can compile the whole thing out entirely. But even when compiled in, it still checks a server-side feature flag via GrowthBook. Anthropic can flip it remotely without shipping a new build. It only fires in the official first-party CLI, not through the SDK.
 
-There's also an accidental leak buried in the feature flag name: `tengu_anti_distill_fake_tool_injection`. "Tengu" appears to be an internal codename for an unreleased model.
+One thing worth noting: `tengu` is not a unique leak. It's a pervasive internal prefix that appears across dozens of unrelated event names in the same file: `tengu_streaming_error`, `tengu_api_before_normalize`, `tengu_max_tokens_reached`, and more. It's the internal codename for Claude Code (or the API system broadly), not a secret unreleased model accidentally surfaced through one flag name.
 
 ## Undercover Mode
 
@@ -38,7 +40,7 @@ This one is more interesting.
 When Anthropic employees use Claude Code to contribute to open-source projects, the tool automatically strips all model attribution from commits and PRs. The model isn't told what model it is. No `Co-Authored-By` lines. No internal codenames in commit messages.
 
 ```typescript
-// utils/undercover.ts
+// src/utils/undercover.ts
 /**
  * Undercover mode — safety utilities for contributing to public repos.
  * When active, Claude Code strips all attribution to avoid leaking internal
@@ -62,7 +64,7 @@ export function isUndercover(): boolean {
 
 "There is NO force-OFF." That comment says a lot.
 
-The mode activates automatically for any Anthropic employee pushing to any repo that isn't on an explicit internal allowlist. That list lives in `commitAttribution.ts` and contains 20+ private repos. The public `anthropics/claude-code` repo is not on it. Undercover stays on there.
+The mode activates automatically for any Anthropic employee pushing to any repo that isn't on an explicit internal allowlist. That list lives in `commitAttribution.ts` and contains 22 private repos. The public `anthropics/claude-code` repo is not on it. Undercover stays on there.
 
 What "undercover" actually suppresses goes deeper than just stripping `Co-Authored-By` lines:
 
@@ -77,7 +79,7 @@ The injected instructions list exactly what the model must never write:
 
 > Internal model codenames (animal names like Capybara, Tengu, etc.), unreleased model version numbers (e.g., opus-4-7, sonnet-4-8), internal repo or project names, Slack channels or short links (e.g., go/cc, #claude-code-…)
 
-These aren't hypothetical. The source lists them as examples of what not to write, which means they're real. Capybara and Tengu are actual internal codenames. `opus-4-7` and `sonnet-4-8` are actual unreleased version numbers. These leaked through the very mechanism designed to prevent leaks.
+These aren't necessarily confirmed internal model IDs. Capybara and Tengu appear as codename examples, and `opus-4-7` and `sonnet-4-8` follow a plausible pattern given current IDs are at 4-6, but the source lists them as examples of what not to write rather than verified unreleased versions. What's clear is that the undercover system considers them realistic enough to explicitly guard against.
 
 ## The Safe-Default Design
 
