@@ -1,5 +1,5 @@
 ---
-description: "Claude Code's built-in tools registration, sorting, and conditionally compilation."
+description: "Claude Code's built-in tools."
 ---
 
 # Inside Claude Code: Tool Design

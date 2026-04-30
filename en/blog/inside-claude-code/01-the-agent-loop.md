@@ -1,5 +1,5 @@
 ---
-description: "It's actually a while(true) loop."
+description: "Claude Code is actually using a while(true) loop."
 ---
 
 # Inside Claude Code: The Agent Loop
