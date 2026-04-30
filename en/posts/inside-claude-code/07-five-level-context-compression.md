@@ -27,6 +27,8 @@ snipTokensFreed = snipResult.tokensFreed;
 
 One subtle implementation detail: the freed-token estimate is tracked separately (`snipTokensFreed`) and subtracted from the autocompact threshold check. That's because token counting reads cached usage from the surviving assistant message, which still reflects the pre-snip size. Without that correction, autocompact's threshold math would be working off stale numbers.
 
+---
+
 ## 2. Microcompact
 
 Still operating on tool results, but with two distinct sub-modes. Both target the same set of compactable tools: Read, Bash/Shell, Grep, Glob, WebSearch, WebFetch, FileEdit, FileWrite.
@@ -44,23 +46,27 @@ The branching logic makes sense: if the cache is cold, there's nothing to preser
 
 ## 3. Context Collapse
 
-Feature-flagged via `CONTEXT_COLLAPSE`, and notably it's described as "ant-only" internally (`marble_origami` agent). The key design choice here is non-destructive: rather than collapsing the conversation in place, it builds a projected view. Summary messages live in a separate commit log, not the REPL array, so collapses persist across turns by replaying the log on each `projectView()` call.
+Feature-flagged via `CONTEXT_COLLAPSE`. Internally, `marble_origami` is the ctx-agent that runs this, and the feature is excluded from external builds via feature gating and `excluded-strings.txt`. The key design choice here is non-destructive: rather than collapsing the conversation in place, it builds a projected view. Summary messages live in a separate commit log, not the REPL array, so collapses persist across turns by replaying the log on each `projectView()` call.
 
 It operates on headroom bands. At ~90% context usage it starts committing collapses. At ~95% it switches to a blocking-spawn mechanism.
 
 When Context Collapse is active, it suppresses Autocompact entirely:
 
 ```typescript
-// autoCompact.ts
+// autoCompact.ts:215–222
 // Autocompact firing at effective-13k (~93%) sits right between collapse's
 // commit-start (90%) and blocking (95%), so it would race collapse and
 // usually win, nuking granular context that collapse was about to save.
-if (isContextCollapseEnabled()) {
-  return false;
+if (feature("CONTEXT_COLLAPSE")) {
+  const { isContextCollapseEnabled } =
+    require("../contextCollapse/index.js") as typeof import("../contextCollapse/index.js");
+  if (isContextCollapseEnabled()) {
+    return false;
+  }
 }
 ```
 
-The comment explains the reasoning well. Autocompact's threshold (~93%) sits right between Context Collapse's commit band and its blocking threshold. Without suppression, the two systems would race, and Autocompact would usually win by destroying exactly the granular context Collapse was trying to preserve. Suppression is the right call.
+The comment explains the reasoning well. Autocompact's threshold (~93%) sits right between Context Collapse's commit band and its blocking threshold. Without suppression, the two systems would race, and Autocompact would usually win by destroying exactly the granular context Collapse was trying to preserve. The dynamic `require` is also deliberate: it breaks an init-time circular dependency between the two modules. Suppression is the right call.
 
 On a real API 413, Context Collapse gets first crack: it drains all staged collapses (`recoverFromOverflow`) before falling through to Reactive Compact.
 
@@ -76,9 +82,9 @@ blockingLimit          = effectiveContextWindow − 3_000   // hard cap for manu
 
 The 20,000 token reservation is based on p99.99 of compact output being ~17,387 tokens. Planning for tail risk.
 
-Before spinning up the expensive forked-agent summarization, Autocompact first tries **Session Memory Compaction** when the `tengu_sm_compact` flag is on. If the session has a continuously-maintained memory extract, that gets used as the summary directly, skipping the API call entirely. It keeps messages after the last summarized message ID, expanding backwards to meet minimums (10K tokens, 5 text-block messages, capped at 40K tokens), respecting tool-use/tool-result pair boundaries.
+Before spinning up the expensive forked-agent summarization, Autocompact first tries **Session Memory Compaction** when both `tengu_session_memory` and `tengu_sm_compact` are on (`sessionMemoryCompact.ts:412–420`). If the session has a continuously-maintained memory extract, that gets used as the summary directly, skipping the API call entirely. It keeps messages after the last summarized message ID, expanding backwards to meet minimums (10K tokens, 5 text-block messages, capped at 40K tokens), respecting tool-use/tool-result pair boundaries.
 
-If session memory isn't available, it falls back to `compactConversation()`, which forks an agent to generate a summary, strips images from the messages (to avoid the compact request itself hitting prompt-too-long), and re-injects recently-read files, plan context, invoked skills, and CLAUDE.md attachments post-compaction.
+If session memory isn't available, it falls back to `compactConversation()`, which forks an agent to generate a summary, strips images from the messages (to avoid the compact request itself hitting prompt-too-long), and re-injects recently-read files, plan context, invoked skills, tool delta, and session-start hook results post-compaction. CLAUDE.md is handled separately: `postCompactCleanup.ts` calls `resetGetMemoryFilesCache('compact')`, clearing the cache so CLAUDE.md gets re-read on the next API call's system prompt construction rather than being re-injected as an explicit attachment.
 
 There's also a circuit breaker:
 
@@ -97,8 +103,12 @@ On March 10, 2026, they measured 1,279 sessions with 50+ consecutive compression
 Emergency fallback, triggered after the API returns a 413 "prompt too long" error (or a media-size error for oversized images/PDFs). The streaming loop withholds the error message rather than surfacing it immediately, then recovery kicks in:
 
 ```typescript
-// query.ts
-if (isWithheld413) {
+// query.ts:1088–1115
+if (
+  feature('CONTEXT_COLLAPSE') &&
+  contextCollapse &&
+  state.transition?.reason !== 'collapse_drain_retry'  // don't re-drain after a failed drain
+) {
   // First: drain staged collapses
   const drained = contextCollapse.recoverFromOverflow(messagesForQuery, querySource)
   if (drained.committed > 0) { continue } // retry with drained view
@@ -111,7 +121,7 @@ if ((isWithheld413 || isWithheldMedia) && reactiveCompact) {
 
 The sequence:
 
-1. Drain all staged Context Collapse commits (`recoverFromOverflow`). Cheap, keeps granular context.
+1. Drain all staged Context Collapse commits (`recoverFromOverflow`). Cheap, keeps granular context. The `collapse_drain_retry` guard is key here: it prevents re-draining if a drain already ran and still didn't bring the context under the limit, which would otherwise loop forever.
 2. If that doesn't work (or if it already tried), call `tryReactiveCompact` for full summarization on the already-failed messages.
 
 A `hasAttemptedReactiveCompact` flag prevents spiraling. If the post-compact turn also 413s (because the oversized content is in the preserved tail), the error surfaces rather than looping.
