@@ -48,13 +48,13 @@ export function truncateEntrypointContent(raw: string): EntrypointTruncation {
 
 Line cap, then byte cap, cutting at natural line boundaries. The important part is the last bit: explicitly telling the model the index was truncated. Without that warning, the model would work with partial information and not know it. Silent failure is the worst kind.
 
-The memory directory is also git-aware. The path resolves to `~/.claude/projects/<sanitized-git-root>/memory/`, using the canonical git root. Every worktree of the same repo shares a single memory directory. You don't lose context when you branch.
+The memory directory is also git-aware. The base path defaults to `~/.claude` but is overridable via `CLAUDE_CODE_REMOTE_MEMORY_DIR`, resolving to `<memoryBase>/projects/<sanitized-git-root>/memory/`. It uses the canonical git root so every worktree of the same repo shares a single memory directory — with a fallback to the project root if no git root is found. You don't lose context when you branch.
 
 ## Tier 2: Topic files (loaded on demand)
 
 Coding preferences, architectural decisions, known pitfalls: these live in individual topic files. Things like `user_role.md` ("senior backend engineer, new to the React side") or `feedback_testing.md` ("integration tests must hit real database").
 
-On each turn, a lighter Sonnet model reads the index and picks up to five files relevant to your current query. The selection prompt includes this rule:
+On each turn, a lighter Sonnet model scans the topic files and picks up to five relevant to your current query. Importantly, it doesn't read `MEMORY.md` — that file is excluded from the scan entirely. Instead it reads a formatted manifest built from the YAML frontmatter of individual topic files. The selection prompt, paraphrased:
 
 ```typescript
 const SELECT_MEMORIES_SYSTEM_PROMPT = `You are selecting memories that will be
@@ -118,21 +118,15 @@ Code changes. Memory doesn't auto-update. If a memory says "function X is on lin
 
 ## Tier 3: Conversation history (grep search)
 
-Older conversations are stored as `.jsonl` files and searched by keyword with `grep` when actually needed. In embedded (REPL) mode, the model is given a literal shell command:
-
-```typescript
-const transcriptSearch = `${GREP_TOOL_NAME} with pattern="<search term>" path="${projectDir}/" glob="*.jsonl"`;
-```
-
-In non-embedded mode, it gets the `${GREP_TOOL_NAME}` tool invocation format instead. Either way, the instructions say to use narrow search terms (error messages, file paths, function names) rather than broad keywords. Transcripts are large and slow. This tier is the last resort, not the first.
+Older conversations are stored as `.jsonl` files and searched by keyword with `grep` when actually needed. The exact form depends on the mode: in embedded (REPL) mode it produces a shell command like `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`; in non-embedded mode it uses the `${GREP_TOOL_NAME}` tool invocation format instead. Either way, the instructions say to use narrow search terms (error messages, file paths, function names) rather than broad keywords. Transcripts are large and slow. This tier is the last resort, not the first.
 
 ## The background extraction agent
 
 The three tiers explain how memory is read. The fourth piece is how it gets written.
 
-At the end of each complete query loop, a background extraction agent fires. It's a forked agent: a perfect copy of the main conversation that shares the parent's prompt cache instead of starting cold. Reusing the cache means it doesn't pay the full cost of context re-ingestion.
+At the end of each complete query loop, a background extraction agent fires — when enabled. It's gated behind a feature flag (`tengu_passport_quail` via GrowthBook) and only runs when auto-memory is enabled, so this isn't universally active. When it does run, it's a forked agent: it shares the parent conversation's prompt cache prefix rather than starting cold, so it doesn't pay the full cost of context re-ingestion. Mutable execution state is deliberately isolated via a separate `ToolUseContext`.
 
-The fork runs with sandboxed permissions. Read and grep freely, read-only bash, write and edit only within the memory directory. It cannot touch your project files.
+The fork's permissions are asymmetric: read, grep, and glob are unrestricted — it can read any project file freely. What's locked down is writes: it can only write within the memory directory. It cannot modify your project files.
 
 The main agent and the background agent are mutually exclusive. If the main agent already wrote a memory during the conversation, the extractor detects this and skips. When the main agent writes, extraction skips. When it doesn't, extraction catches what was missed. The cursor advances each run so the extractor only processes messages added since the previous extraction.
 
