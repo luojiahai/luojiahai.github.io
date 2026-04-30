@@ -4,6 +4,8 @@ description: "How Claude Code's built-in tools are registered, sorted, and condi
 
 # Inside Claude Code: Tool Design
 
+# How Claude Code Thinks About Tools
+
 The Claude Code tool system is where a lot of the interesting safety and performance thinking lives. Every default, every sort order, every conditional import is a decision with a reason behind it.
 
 ## The registry problem nobody talks about
@@ -54,12 +56,13 @@ The auto mode activates tool deferral only when the deferred tools exceed 10% of
 
 The search itself supports two modes. `select:tool_name` does a direct lookup. Everything else goes through keyword matching with a weighted scoring system:
 
-| Signal                          | Score (MCP) | Score (built-in) |
-| ------------------------------- | ----------- | ---------------- |
-| Exact part match in name        | 12          | 10               |
-| Partial part match in name      | 6           | 5                |
-| `searchHint` field match        | 4           | 4                |
-| Description word boundary match | 2           | 2                |
+| Signal                                | Score (MCP) | Score (built-in) |
+| ------------------------------------- | ----------- | ---------------- |
+| Exact part match in name              | 12          | 10               |
+| Partial part match in name            | 6           | 5                |
+| `searchHint` field match              | 4           | 4                |
+| Description word boundary match       | 2           | 2                |
+| Full name fallback (no parts matched) | 3           | 3                |
 
 Each tool can declare a `searchHint`: a 3–10 word curated capability phrase specifically designed for keyword matching. `NotebookEditTool` might hint `jupyter` since that word doesn't appear in the tool name. Smart.
 
@@ -93,7 +96,9 @@ const TOOL_DEFAULTS = {
   isConcurrencySafe: (_input?: unknown) => false,
   isReadOnly: (_input?: unknown) => false,
   isDestructive: (_input?: unknown) => false,
+  checkPermissions: (input, _ctx) => Promise.resolve({ behavior: "allow", updatedInput: input }),
   toAutoClassifierInput: () => "",
+  userFacingName: (_input?: unknown) => "",
 };
 ```
 
@@ -141,7 +146,7 @@ ps: {
 },
 ```
 
-`tree -R` is blocked because it silently writes `00Tree.html` files to every subdirectory at the depth boundary. `ps e` (BSD-style) is blocked because it dumps environment variables for all processes. `fd -l/--list-details` is excluded because it shells out to `ls` internally, creating a PATH hijacking risk.
+`tree -R` is blocked because when combined with `-H` (HTML mode) and `-L` (depth limit), it silently writes `00Tree.html` files to every subdirectory at the depth boundary. `ps e` (BSD-style) is blocked because it dumps environment variables for all processes. `fd -l/--list-details` is excluded because it shells out to `ls` internally, creating a PATH hijacking risk.
 
 There's also a blanket `$` rejection: any token containing `$` in the command arguments is treated as unsafe. The reason is parser differentials. The validator sees `git diff "$Z--output=/tmp/pwned"` as a positional argument starting with `$`. Bash sees `--output=/tmp/pwned` after expansion. The allowlist cannot validate what it can't see, so the only safe answer is rejection.
 
