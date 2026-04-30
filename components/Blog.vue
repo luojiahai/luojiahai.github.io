@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="posts">
+  <div class="blog">
     <ul class="item-list">
       <li v-for="post in posts" :key="post.url" class="item">
         <a :href="post.url" class="item-link">
@@ -24,7 +24,7 @@ defineProps<{
 </template>
 
 <style scoped>
-.posts {
+.blog {
   margin: 32px auto;
 }
 

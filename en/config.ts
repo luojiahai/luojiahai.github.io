@@ -23,7 +23,7 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
-    { text: "Posts", link: "/posts/", activeMatch: "/posts/" },
+    { text: "Blog", link: "/blog/", activeMatch: "/blog/" },
     {
       text: "Life",
       activeMatch: "/life/",
@@ -42,7 +42,7 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/posts/": [{ text: "Posts", collapsed: false, items: postsSidebarItems() }],
+    "/blog/": [{ text: "Blog", collapsed: false, items: blogSidebarItems() }],
     "/life/": [{ text: "Life", collapsed: false, base: "/life", items: [{ text: "Use", link: "/use" }] }],
     "/work/": [
       {
@@ -58,23 +58,23 @@ function sidebar(): DefaultTheme.Sidebar {
   };
 }
 
-function postsSidebarItems(): DefaultTheme.SidebarItem[] {
-  const postsDir = resolve(__dirname, "posts");
+function blogSidebarItems(): DefaultTheme.SidebarItem[] {
+  const blogDir = resolve(__dirname, "blog");
   const items: DefaultTheme.SidebarItem[] = [];
-  for (const f of readdirSync(postsDir).filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))) {
-    const fullPath = resolve(postsDir, f);
+  for (const f of readdirSync(blogDir).filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))) {
+    const fullPath = resolve(blogDir, f);
     if (statSync(fullPath).isDirectory()) {
       for (const c of readdirSync(fullPath)
         .filter((c: string) => c.endsWith(".md"))
         .sort()) {
         const src = readFileSync(resolve(fullPath, c), "utf-8");
         const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
-        items.push({ text: title, link: `/posts/${f}/${c.replace(/\.md$/, "")}` });
+        items.push({ text: title, link: `/blog/${f}/${c.replace(/\.md$/, "")}` });
       }
     } else {
       const src = readFileSync(fullPath, "utf-8");
       const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
-      items.push({ text: title, link: `/posts/${f.replace(/\.md$/, "")}` });
+      items.push({ text: title, link: `/blog/${f.replace(/\.md$/, "")}` });
     }
   }
   return items.sort((a, b) => (a.link ?? "").localeCompare(b.link ?? ""));

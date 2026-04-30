@@ -15,7 +15,7 @@ hero:
 ---
 
 <script setup>
-import { data as posts } from './posts/posts.data.ts'
+import { data as posts } from './blog/blog.data.ts'
 </script>
 
 <Terminal />

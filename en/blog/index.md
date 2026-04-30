@@ -6,9 +6,9 @@ next: false
 ---
 
 <script setup>
-import { data as posts } from './posts.data.ts'
+import { data as posts } from './blog.data.ts'
 </script>
 
-# Posts
+# Blog
 
-<Posts :posts="posts" />
+<Blog :posts="posts" />

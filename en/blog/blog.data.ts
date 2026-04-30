@@ -9,11 +9,11 @@ export type Post = {
 declare const data: Post[];
 export { data };
 
-export default createContentLoader(["en/posts/*.md", "en/posts/*/*.md"], {
+export default createContentLoader(["en/blog/*.md", "en/blog/*/*.md"], {
   includeSrc: true,
   transform(rawData): Post[] {
     return rawData
-      .filter((item) => !item.url.endsWith("/posts/"))
+      .filter((item) => !item.url.endsWith("/blog/"))
       .map((item) => ({
         title: item.frontmatter.title ?? item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
         url: item.url.replace(/^\/en\//, "/"),
