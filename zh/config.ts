@@ -41,17 +41,14 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
+    { text: "博客", activeMatch: "/zh/blog/", link: "/zh/blog/" },
     {
-      text: "生活",
-      activeMatch: "/zh/life/",
-      items: [{ text: "使用", link: "/zh/life/use" }],
-    },
-    {
-      text: "工作",
-      activeMatch: "/zh/work/",
+      text: "什锦",
+      activeMatch: "/zh/miscellaneous/",
       items: [
-        { text: "简历", link: "/zh/work/resume" },
-        { text: "项目", link: "/zh/work/portfolio" },
+        { text: "使用", link: "/zh/miscellaneous/use" },
+        { text: "简历", link: "/zh/miscellaneous/resume" },
+        { text: "项目", link: "/zh/miscellaneous/portfolio" },
       ],
     },
   ];
@@ -59,20 +56,13 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/zh/life/": [
+    "/zh/miscellaneous/": [
       {
-        text: "生活",
+        text: "什锦",
         collapsed: false,
-        base: "/zh/life",
-        items: [{ text: "使用", link: "/use" }],
-      },
-    ],
-    "/zh/work/": [
-      {
-        text: "工作",
-        collapsed: false,
-        base: "/zh/work",
+        base: "/zh/miscellaneous",
         items: [
+          { text: "使用", link: "/use" },
           { text: "简历", link: "/resume" },
           { text: "项目", link: "/portfolio" },
         ],

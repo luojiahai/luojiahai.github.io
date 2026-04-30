@@ -5,6 +5,8 @@ prev: false
 next: false
 ---
 
-# Life
+# Miscellaneous
 
 - [Use](./use.md)
+- [Resume](./resume.md)
+- [Portfolio](./portfolio.md)

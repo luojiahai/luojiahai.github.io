@@ -25,16 +25,12 @@ function nav(): DefaultTheme.NavItem[] {
     { text: "Home", link: "/" },
     { text: "Blog", link: "/blog/", activeMatch: "/blog/" },
     {
-      text: "Life",
-      activeMatch: "/life/",
-      items: [{ text: "Use", link: "/life/use" }],
-    },
-    {
-      text: "Work",
-      activeMatch: "/work/",
+      text: "Miscellaneous",
+      activeMatch: "/miscellaneous/",
       items: [
-        { text: "Resume", link: "/work/resume" },
-        { text: "Portfolio", link: "/work/portfolio" },
+        { text: "Use", link: "/miscellaneous/use" },
+        { text: "Resume", link: "/miscellaneous/resume" },
+        { text: "Portfolio", link: "/miscellaneous/portfolio" },
       ],
     },
   ];
@@ -43,13 +39,13 @@ function nav(): DefaultTheme.NavItem[] {
 function sidebar(): DefaultTheme.Sidebar {
   return {
     "/blog/": [{ text: "Blog", collapsed: false, items: blogSidebarItems() }],
-    "/life/": [{ text: "Life", collapsed: false, base: "/life", items: [{ text: "Use", link: "/use" }] }],
-    "/work/": [
+    "/miscellaneous/": [
       {
-        text: "Work",
+        text: "Miscellaneous",
         collapsed: false,
-        base: "/work",
+        base: "/miscellaneous",
         items: [
+          { text: "Use", link: "/use" },
           { text: "Resume", link: "/resume" },
           { text: "Portfolio", link: "/portfolio" },
         ],
