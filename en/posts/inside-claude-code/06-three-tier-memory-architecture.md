@@ -39,7 +39,9 @@ export function truncateEntrypointContent(raw: string): EntrypointTruncation {
   }
 
   return {
-    content: truncated + `\n\n> WARNING: ${ENTRYPOINT_NAME} is ${reason}. Only part of it was loaded.`,
+    content:
+      truncated +
+      `\n\n> WARNING: ${ENTRYPOINT_NAME} is ${reason}. Only part of it was loaded. Keep index entries to one line under ~200 chars; move detail into topic files.`,
   };
 }
 ```
@@ -52,28 +54,31 @@ The memory directory is also git-aware. The path resolves to `~/.claude/projects
 
 Coding preferences, architectural decisions, known pitfalls: these live in individual topic files. Things like `user_role.md` ("senior backend engineer, new to the React side") or `feedback_testing.md` ("integration tests must hit real database").
 
-At the start of each conversation, a lighter Sonnet model reads the index and picks up to five files relevant to your current query. The selection prompt includes this rule:
+On each turn, a lighter Sonnet model reads the index and picks up to five files relevant to your current query. The selection prompt includes this rule:
 
 ```typescript
 const SELECT_MEMORIES_SYSTEM_PROMPT = `You are selecting memories that will be
 useful to Claude Code as it processes a user's query.
 Return a list of filenames for the memories that will clearly be useful (up to 5).
+Be selective and discerning. If you are unsure if a memory will be useful in
+processing the user's query, then do not include it. If there are no memories
+in the list that would clearly be useful, feel free to return an empty list.
 - If a list of recently-used tools is provided, do not select memories that are
   usage reference or API documentation for those tools (Claude Code is already
   exercising them). DO still select memories containing warnings, gotchas, or
   known issues about those tools — active use is exactly when those matter.`;
 ```
 
-If you're actively using a tool, skip its documentation but always load its gotchas. You clearly know how to invoke it. What you need right now is the list of ways it can go wrong.
+Two things worth noting here. First, the selectivity guidance: when in doubt, leave it out, and returning an empty list is explicitly valid. The 5-slot budget is a ceiling, not a target. Second, the tool rule: if you're actively using something, skip its documentation but always load its gotchas. You clearly know how to invoke it. What you need right now is the list of ways it can go wrong.
 
 The selector call is deliberately minimal: `max_tokens: 256`. It only needs filenames. Output is constrained with JSON schema enforcement so it physically cannot hallucinate filenames that don't exist.
 
 The scan phase only reads the first 30 lines of each file, enough to get the YAML frontmatter. Full content is never read during selection. The manifest the selector sees looks like:
 
 ```
-[feedback] feedback_testing.md (2026-04-15T10:32:00Z): integration tests must hit real database
-[user] user_role.md (2026-04-28T09:15:00Z): senior backend engineer, new to React side of repo
-[project] project_deadline.md (2026-04-20T14:00:00Z): merge freeze begins 2026-05-03 for mobile release
+- [feedback] feedback_testing.md (2026-04-15T10:32:00Z): integration tests must hit real database
+- [user] user_role.md (2026-04-28T09:15:00Z): senior backend engineer, new to React side of repo
+- [project] project_deadline.md (2026-04-20T14:00:00Z): merge freeze begins 2026-05-03 for mobile release
 ```
 
 Scan is capped at 200 files, sorted newest-first. Recent memories surface to where the selector sees them first. A deduplication pass also removes files already loaded earlier in the current conversation, so the 5-slot budget isn't wasted re-selecting what the model already has.
@@ -93,12 +98,14 @@ export function memoryAge(mtimeMs: number): string {
 }
 ```
 
-Memories older than one day get an inline caveat on load:
+Memories older than one day get a staleness caveat injected as a `<system-reminder>` XML tag alongside the memory content. These tags are stripped from the terminal UI display, so the user never sees them directly — they're instructions to the model, not visible output:
 
 ```
-▎ This memory is 47 days old. Memories are point-in-time observations, not live
-▎ state — claims about code behavior or file:line citations may be outdated.
-▎ Verify against current code before asserting as fact.
+<system-reminder>
+This memory is 47 days old. Memories are point-in-time observations, not live
+state — claims about code behavior or file:line citations may be outdated.
+Verify against current code before asserting as fact.
+</system-reminder>
 ```
 
 This feeds into a section of the system prompt titled "Before recommending from memory" (not "Trusting what you recall"). The heading is action-cue framing, placed at the decision point. Same body text with a more abstract header tested 0/3 in evals. The action-cue version tested 3/3. That's the kind of prompt engineering detail that only shows up after you've run the evals.
@@ -111,13 +118,13 @@ Code changes. Memory doesn't auto-update. If a memory says "function X is on lin
 
 ## Tier 3: Conversation history (grep search)
 
-Older conversations are stored as `.jsonl` files and searched by keyword with `grep` when actually needed:
+Older conversations are stored as `.jsonl` files and searched by keyword with `grep` when actually needed. In embedded (REPL) mode, the model is given a literal shell command:
 
 ```typescript
 const transcriptSearch = `${GREP_TOOL_NAME} with pattern="<search term>" path="${projectDir}/" glob="*.jsonl"`;
 ```
 
-The instructions explicitly say to use narrow search terms (error messages, file paths, function names) rather than broad keywords. Transcripts are large and slow. This tier is the last resort, not the first.
+In non-embedded mode, it gets the `${GREP_TOOL_NAME}` tool invocation format instead. Either way, the instructions say to use narrow search terms (error messages, file paths, function names) rather than broad keywords. Transcripts are large and slow. This tier is the last resort, not the first.
 
 ## The background extraction agent
 
