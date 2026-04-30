@@ -17,13 +17,13 @@ The retrieval architecture has three layers.
 **Layer 1: Metadata scan.** When the model needs to recall a memory, `memoryScan.ts` reads only the frontmatter header of every `.md` file in the memory directory, the first 30 lines, just the name, description, type, and timestamp. It assembles a compact manifest that looks something like this:
 
 ```
-[feedback] feedback_testing.md (2025-04-10T...): integration tests must hit a real db, not mocks
-[user] user_role.md (2025-04-08T...): user is a senior Go engineer, new to the React side
+- [feedback] feedback_testing.md (2025-04-10T...): integration tests must hit a real db, not mocks
+- [user] user_role.md (2025-04-08T...): user is a senior Go engineer, new to the React side
 ```
 
 Fast, cheap, no inference needed.
 
-**Layer 2: LLM sidecar call.** `findRelevantMemories.ts` sends this manifest to a lightweight Claude Sonnet call made outside the main conversation context. Sonnet reads the manifest and returns a JSON list of at most five filenames worth reading in full. The selection prompt is deliberately conservative: "If you are unsure if a memory will be useful, do not include it." Only those files get surfaced to the main model.
+**Layer 2: LLM sidecar call.** `findRelevantMemories.ts` sends this manifest to a lightweight Claude Sonnet call made outside the main conversation context. Sonnet reads the manifest and returns a JSON list of at most five filenames worth reading in full. The selection prompt is deliberately conservative: "If you are unsure if a memory will be useful in processing the user's query, then do not include it in your list. Be selective and discerning." Only those files get surfaced to the main model.
 
 ```typescript
 const result = await sideQuery({
@@ -31,7 +31,8 @@ const result = await sideQuery({
   system: SELECT_MEMORIES_SYSTEM_PROMPT,
   messages: [{ role: 'user', content: `Query: ${query}\n\nAvailable memories:\n${manifest}` }],
   max_tokens: 256,
-  output_format: { type: 'json_schema', ... }
+  output_format: { type: 'json_schema', ... },
+  skipSystemPromptPrefix: true,
 })
 ```
 
@@ -44,7 +45,9 @@ const memSearch = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`;
 const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`;
 ```
 
-The "last resort" comment in the code is telling. Transcript files are large, full `.jsonl` conversation logs, slow to scan. They're only reached when the memory layer doesn't have what's needed. Under the hood "grep" is actually ripgrep, a Rust-based tool that ships bundled with Claude Code in three fallback modes: system `rg` binary if one exists, a vendored platform-specific binary, or embedded directly into the Bun executable. The 20-second timeout with SIGKILL escalation signals that this is load-bearing infrastructure, not a prototype.
+The "last resort" comment in the code is telling. Transcript files are large, full `.jsonl` conversation logs, slow to scan. They're only reached when the memory layer doesn't have what's needed. Under the hood "grep" is actually ripgrep, a Rust-based tool that ships bundled with Claude Code in three fallback modes: system `rg` binary if one exists, a vendored platform-specific binary, or embedded directly into the Bun executable. The timeout handling is worth noting: in the embedded (spawn) path, SIGTERM fires at the timeout with SIGKILL escalating 5 seconds later; in the non-embedded (execFile) path, SIGKILL fires directly. Either way, this is load-bearing infrastructure, not a prototype.
+
+It's also worth noting that the grep command strings above are specific to embedded/REPL mode. In non-embedded mode, the model is given a structured `${GREP_TOOL_NAME}` tool call with `pattern=...` format instead. Same idea, different interface.
 
 ## Why this beats RAG
 
