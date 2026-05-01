@@ -1,5 +1,6 @@
 ---
 description: "Claude Code skips RAG, instead using a three-layer architecture of metadata scanning."
+date: 2026-03-08
 ---
 
 # Inside Claude Code: Retrieval Strategy

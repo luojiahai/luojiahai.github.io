@@ -1,5 +1,6 @@
 ---
 description: "Everything in Claude Code is built on concepts working engineers have encountered before."
+date: 2026-02-01
 ---
 
 # Inside Claude Code: Overview
