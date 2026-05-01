@@ -3,6 +3,7 @@ type Post = {
   title: string;
   url: string;
   description: string;
+  date: string;
 };
 
 defineProps<{
@@ -16,6 +17,7 @@ defineProps<{
       <li v-for="post in posts" :key="post.url" class="item">
         <a :href="post.url" class="item-link">
           <span class="item-title">{{ post.title }}</span>
+          <span class="item-date">{{ post.date }}</span>
           <p class="item-description">{{ post.description }}</p>
         </a>
       </li>
@@ -52,6 +54,11 @@ defineProps<{
   color: var(--vp-c-text-1);
   flex: 1;
   min-width: 0;
+}
+
+.item-date {
+  font-size: 13px;
+  color: var(--vp-c-text-3);
 }
 
 .item-link:hover {
