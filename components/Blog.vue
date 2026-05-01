@@ -65,7 +65,6 @@ defineProps<{
 }
 
 .item-date {
-  font-size: 14px;
   font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
@@ -93,6 +92,5 @@ defineProps<{
 .item-description {
   margin: 4px 0 0;
   color: var(--vp-c-text-2);
-  font-size: 14px;
 }
 </style>
