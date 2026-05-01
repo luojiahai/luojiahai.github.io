@@ -1,6 +1,7 @@
 ---
 description: "Learn advanced features, shortcuts, and workflows to get the most from Claude Code."
 date: 2026-01-01
+tags: ["Claude Code", "Productivity"]
 ---
 
 # Mastering Claude Code in 30 minutes

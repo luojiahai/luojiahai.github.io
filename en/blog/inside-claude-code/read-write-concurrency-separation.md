@@ -1,6 +1,7 @@
 ---
 description: "Claude Code handles concurrent tool execution by borrowing a classic database pattern."
 date: 2026-04-07
+tags: ["Claude Code", "Concurrency"]
 ---
 
 # Inside Claude Code: Read/Write Concurrency Separation
