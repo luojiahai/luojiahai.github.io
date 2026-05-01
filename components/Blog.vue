@@ -4,7 +4,7 @@ type Post = {
   url: string;
   description: string;
   date: string;
-  tags: string[];
+  tags?: string[];
 };
 
 defineProps<{
@@ -22,7 +22,7 @@ defineProps<{
             <span class="item-date">{{ post.date }}</span>
           </div>
           <p class="item-description">{{ post.description }}</p>
-          <div v-if="post.tags.length" class="item-tags">
+          <div v-if="post.tags?.length" class="item-tags">
             <template v-for="(tag, i) in post.tags" :key="tag">
               <span class="tag-token">{{ tag }}</span>
               <span v-if="i < post.tags.length - 1" class="tag-separator">·</span>
