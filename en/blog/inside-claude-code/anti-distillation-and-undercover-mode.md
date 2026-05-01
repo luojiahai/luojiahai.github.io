@@ -1,6 +1,6 @@
 ---
 description: "Claude Code has two hidden defensive mechanisms."
-date: 2026-04-05
+date: "2026-04-05"
 ---
 
 # Inside Claude Code: Anti-Distillation and Undercover Mode
