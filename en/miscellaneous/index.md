@@ -1,12 +1,15 @@
 ---
 lastUpdated: false
 editLink: false
+sidebar: false
 prev: false
 next: false
 ---
 
+<script setup>
+import { data as items } from './misc.data.ts'
+</script>
+
 # Miscellaneous
 
-- [Use](./use.md)
-- [Resume](./resume.md)
-- [Portfolio](./portfolio.md)
+<Blog :posts="items" />
