@@ -1,5 +1,6 @@
 ---
 description: "Claude Code solves AI context drift with a three-tier memory architecture."
+date: 2025-03-15
 ---
 
 # Inside Claude Code: Three-Tier Memory Architecture

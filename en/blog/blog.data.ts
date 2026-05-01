@@ -4,6 +4,7 @@ export type Post = {
   title: string;
   url: string;
   description: string;
+  date: string;
 };
 
 declare const data: Post[];
@@ -18,7 +19,8 @@ export default createContentLoader(["en/blog/*.md", "en/blog/*/*.md"], {
         title: item.frontmatter.title ?? item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
         url: item.url.replace(/^\/en\//, "/"),
         description: item.frontmatter.description ?? "",
+        date: item.frontmatter.date ?? "",
       }))
-      .sort((a, b) => a.url.localeCompare(b.url));
+      .sort((a, b) => b.date.localeCompare(a.date));
   },
 });

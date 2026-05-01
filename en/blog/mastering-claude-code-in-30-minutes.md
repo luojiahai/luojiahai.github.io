@@ -1,5 +1,6 @@
 ---
 description: "Learn advanced features, shortcuts, and workflows to get the most from Claude Code."
+date: 2025-01-01
 ---
 
 # Mastering Claude Code in 30 minutes

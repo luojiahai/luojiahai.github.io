@@ -1,5 +1,6 @@
 ---
 description: "Claude Code's built-in tools."
+date: 2025-02-15
 ---
 
 # Inside Claude Code: Tool Design
