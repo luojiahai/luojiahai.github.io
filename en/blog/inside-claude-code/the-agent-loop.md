@@ -1,6 +1,6 @@
 ---
 description: "Claude Code is actually using a while(true) loop."
-date: 2025-02-08
+date: 2026-02-08
 ---
 
 # Inside Claude Code: The Agent Loop
