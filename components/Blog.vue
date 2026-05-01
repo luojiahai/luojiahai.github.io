@@ -4,6 +4,7 @@ type Post = {
   url: string;
   description: string;
   date: string;
+  tags?: string[];
 };
 
 defineProps<{
@@ -21,6 +22,12 @@ defineProps<{
             <span class="item-date">{{ post.date }}</span>
           </div>
           <p class="item-description">{{ post.description }}</p>
+          <div v-if="post.tags?.length" class="item-tags">
+            <template v-for="(tag, i) in post.tags" :key="tag">
+              <span class="tag-token">{{ tag }}</span>
+              <span v-if="i < post.tags.length - 1" class="tag-separator">·</span>
+            </template>
+          </div>
         </a>
       </li>
     </ul>
@@ -90,7 +97,22 @@ defineProps<{
 }
 
 .item-description {
-  margin: 4px 0 0;
+  margin: 4px 0 6px;
   color: var(--vp-c-text-2);
+}
+
+.item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.tag-token {
+  color: var(--vp-c-brand-1);
+}
+
+.tag-separator {
+  color: var(--vp-c-text-3);
 }
 </style>

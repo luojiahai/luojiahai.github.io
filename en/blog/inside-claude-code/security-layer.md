@@ -1,6 +1,7 @@
 ---
 description: "Claude Code has a `--dangerously-skip-permissions` flag, also known as YOLO mode."
 date: 2026-04-17
+tags: ["Claude Code", "Security"]
 ---
 
 # Inside Claude Code: Security Layer

@@ -1,6 +1,7 @@
 ---
 description: "Claude Code's built-in tools."
 date: 2026-04-05
+tags: ["Claude Code", "Tools"]
 ---
 
 # Inside Claude Code: Tool Design

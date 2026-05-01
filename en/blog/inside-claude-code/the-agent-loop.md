@@ -1,6 +1,7 @@
 ---
 description: "Claude Code is actually using a while(true) loop."
 date: 2026-04-03
+tags: ["Claude Code", "Agent Loop"]
 ---
 
 # Inside Claude Code: The Agent Loop

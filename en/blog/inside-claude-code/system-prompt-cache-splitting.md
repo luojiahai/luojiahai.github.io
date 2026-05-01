@@ -1,6 +1,7 @@
 ---
 description: "Claude Code splits its system prompt at a sentinel boundary to maximise Anthropic API cache hits."
 date: 2026-04-09
+tags: ["Claude Code", "Caching"]
 ---
 
 # Inside Claude Code: System Prompt Cache Splitting
