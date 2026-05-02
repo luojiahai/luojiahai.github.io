@@ -23,10 +23,7 @@ defineProps<{
           </div>
           <p class="item-description">{{ post.description }}</p>
           <div v-if="post.tags?.length" class="item-tags">
-            <template v-for="(tag, i) in post.tags" :key="tag">
-              <span class="tag-token">{{ tag }}</span>
-              <span v-if="i < post.tags.length - 1" class="tag-separator">·</span>
-            </template>
+            <span v-for="tag in post.tags" :key="tag" class="tag-badge">{{ tag }}</span>
           </div>
         </a>
       </li>
@@ -104,15 +101,18 @@ defineProps<{
 .item-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 6px;
   align-items: center;
 }
 
-.tag-token {
+.tag-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
   color: var(--vp-c-brand-1);
-}
-
-.tag-separator {
-  color: var(--vp-c-text-3);
+  background-color: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-brand-2);
 }
 </style>
