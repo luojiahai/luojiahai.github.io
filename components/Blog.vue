@@ -111,8 +111,7 @@ defineProps<{
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--vp-c-brand-1);
-  background-color: var(--vp-c-brand-soft);
-  border: 1px solid var(--vp-c-brand-2);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-brand-1);
 }
 </style>
