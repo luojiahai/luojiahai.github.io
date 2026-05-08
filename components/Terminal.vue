@@ -416,7 +416,8 @@ onUnmounted(() => {
 }
 
 .logo-art-container {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   justify-content: center;
   margin: 0 16px 0 0;
