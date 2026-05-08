@@ -10,6 +10,7 @@ pnpm build      # Build production site to .vitepress/dist
 pnpm preview    # Preview the built site locally
 pnpm format     # Format all files with Prettier
 pnpm lint       # Lint with ESLint (Vue + TypeScript + Prettier integration)
+pnpm debug      # Build with DEBUG=true then preview (for troubleshooting build output)
 ```
 
 Pre-commit hooks run Prettier on all files and `eslint --fix` on `*.ts,*.vue` via lint-staged + `simple-git-hooks` (not Husky).
@@ -29,9 +30,8 @@ Content is split by locale:
 
 Content is organized into subdirectories:
 
-- `en/posts/` — blog posts (English-only; `posts.data.ts` uses `createContentLoader`)
-- `en/work/`, `zh/work/` — `resume.md`, `portfolio.md`
-- `en/life/`, `zh/life/` — `use.md`
+- `en/blog/` — blog posts (English-only; `blog.data.ts` loads `en/blog/*.md` and `en/blog/*/*.md`)
+- `en/miscellaneous/`, `zh/miscellaneous/` — `resume.md`, `portfolio.md`, `use.md` (loaded by `misc.data.ts`)
 
 Resume content is embedded directly in `Resume.vue` (a `RESUME` constant keyed by locale), not in an external data file.
 
@@ -49,13 +49,14 @@ All components live in `components/` and are globally registered in `.vitepress/
 - `Layout.vue` — custom theme layout in `.vitepress/theme/`; injects a lottie animation (`/lottie-overview.json` via `lottie-web`) into `.VPHome .VPHero .container` and a typewriter on `.VPHome .VPHero .thinking`; both are locale-aware
 - `<Resume>` — renders resume (data embedded in component as a `RESUME` constant, keyed by locale)
 - `<Portfolio>` — project/portfolio display
-- `<Posts>` — blog posts listing
+- `<Blog>` — blog posts listing
 - `<Terminal>` — terminal-style display
 - `<Parrot>` — easter egg / utility component
 
 ### Styling
 
 - `.vitepress/theme/custom.css` — brand token overrides and structural CSS overrides on top of VitePress defaults
+- `.vitepress/theme/custom-fonts.css` — font-face declarations for custom fonts
 
 ### Deployment
 
