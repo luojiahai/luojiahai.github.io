@@ -288,7 +288,7 @@ onUnmounted(() => {
   margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -424,6 +424,7 @@ onUnmounted(() => {
 }
 
 .logo-art {
+  font-family: "Segoe UI Symbol";
   letter-spacing: -0.4px;
   white-space: pre;
   margin: 0;
@@ -481,7 +482,6 @@ onUnmounted(() => {
 
 .input-border {
   color: var(--vp-c-gray-1);
-  line-height: 1;
 }
 
 .terminal-input {
