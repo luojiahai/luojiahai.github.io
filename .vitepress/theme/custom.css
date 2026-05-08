@@ -3,12 +3,14 @@
   --_brand-clay-emphasized: 15.1 54.2% 51.2%; */
   --_brand-clay: #d97757;
   --_brand-clay-emphasized: #c96442;
+  --_brand-kraft: #d4a27f;
+  --_brand-kraft-emphasized: #c38f6b;
   --_brand-fig: #c46686;
-  --_brand-fig-emphasized: #b05171;
+  --_brand-fig-emphasized: #b05574;
   --_brand-sky: #6a9bcc;
-  --_brand-sky-emphasized: #5487b9;
+  --_brand-sky-emphasized: #5788ba;
   --_brand-mineral: #629987;
-  --_brand-mineral-emphasized: #59796e;
+  --_brand-mineral-emphasized: #5c7a70;
   --_brand-peach: #ebc9b7;
   --_brand-oat: #e3dacc;
   --_brand-cactus: #bcd1ca;
@@ -434,15 +436,10 @@
 }
 
 :root {
-  /* --vp-c-brand-1: hsl(var(--_brand-clay));
-  --vp-c-brand-2: hsl(var(--_brand-clay));
-  --vp-c-brand-3: hsl(var(--_brand-clay-emphasized));
-  --vp-c-brand-soft: hsl(var(--_brand-clay) / 0.15); */
-
-  --vp-c-brand-1: var(--_brand-clay);
-  --vp-c-brand-2: var(--_brand-clay);
-  --vp-c-brand-3: var(--_brand-clay-emphasized);
-  --vp-c-brand-soft: color-mix(in srgb, var(--_brand-clay) 15%, transparent);
+  --vp-c-brand-1: var(--_brand-kraft);
+  --vp-c-brand-2: var(--_brand-kraft);
+  --vp-c-brand-3: var(--_brand-kraft-emphasized);
+  --vp-c-brand-soft: color-mix(in srgb, var(--_brand-kraft) 15%, transparent);
 }
 
 * {
