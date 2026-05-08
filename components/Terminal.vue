@@ -15,9 +15,8 @@ const TAGLINE = computed(() =>
 
 const SHOW_LOGO_FRAME = false;
 
-const LOGO_ART = `█████▓▒░
-█████▓▒░
-█████▓▒░
+const LOGO_ART = `████▓▒░
+████▓▒░
 `;
 
 const BORDER_SIDES = Array(6).fill("│").join("\n");
