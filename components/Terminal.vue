@@ -288,6 +288,7 @@ onUnmounted(() => {
   margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--vp-c-text-1);
   overflow: auto;
@@ -424,7 +425,6 @@ onUnmounted(() => {
 }
 
 .logo-art {
-  font-family: "Segoe UI Symbol";
   letter-spacing: -0.4px;
   white-space: pre;
   margin: 0;
