@@ -480,7 +480,7 @@
 }
 
 .VPHome .VPHero .hero-lottie-bg {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: -32px;
   right: -24px;
@@ -563,7 +563,7 @@
   display: inline-flex;
   justify-content: center;
   width: 8px;
-  animation: flower 1.44s steps(1) infinite;
+  animation: line 1.44s steps(1) infinite;
   margin-right: 16px;
   color: var(--vp-c-brand-1);
 }
@@ -642,21 +642,7 @@
   letter-spacing: 0.05em;
 }
 
-.custom-page .VPSkipLink,
-.custom-page .VPLocalNav {
+.parrot .VPSkipLink,
+.parrot .VPLocalNav {
   display: none !important;
-}
-
-.terminal-content div[class*="language-"] {
-  margin: 0 !important;
-}
-
-.terminal-content [class*="language-"] pre,
-.terminal-content [class*="language-"] code {
-  padding: 0;
-}
-
-.terminal-content [class*="language-"] > button.copy,
-.terminal-content [class*="language-"] > span.lang {
-  display: none;
 }

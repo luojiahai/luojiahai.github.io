@@ -5,7 +5,8 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
+// const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
+const TITLE = "";
 const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
 const TAGLINE = computed(() =>
@@ -261,7 +262,7 @@ onUnmounted(() => {
 .terminal-header {
   display: flex;
   align-items: stretch;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 16px;
   height: 40px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
@@ -273,15 +274,6 @@ onUnmounted(() => {
   flex: 1;
   display: flex;
   align-items: center;
-}
-
-.header-title::before {
-  content: "✳";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 14px;
-  margin-right: 4px;
 }
 
 .header-controls {
@@ -308,7 +300,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1lh 8px;
+  padding: 16px;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -364,8 +356,8 @@ onUnmounted(() => {
 .conversation {
   display: flex;
   flex-direction: column;
-  gap: 1lh;
-  margin: 1lh 0;
+  gap: 16px;
+  margin: 16px 0;
   width: 100%;
   white-space: normal;
 }
@@ -373,7 +365,7 @@ onUnmounted(() => {
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 1lh;
+  gap: 16px;
 }
 
 .user-line {
@@ -424,7 +416,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px;
+  padding: 4px 16px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
