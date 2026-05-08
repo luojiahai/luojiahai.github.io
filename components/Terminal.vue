@@ -249,12 +249,6 @@ onUnmounted(() => {
   border: 2px solid var(--vp-c-bg-elv);
 }
 
-@media (min-width: 640px) {
-  .terminal-frame {
-    margin: 40px 0;
-  }
-}
-
 .terminal-frame::-webkit-scrollbar {
   display: none;
 }
@@ -300,7 +294,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: 16px 8px;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -416,7 +410,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 16px;
+  padding: 4px 8px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
@@ -448,5 +442,17 @@ onUnmounted(() => {
   display: inline-flex;
   width: 8px;
   margin-right: 16px;
+}
+
+@media (min-width: 640px) {
+  .terminal-frame {
+    margin: 40px 0;
+  }
+  .terminal-content {
+    padding: 16px;
+  }
+  .terminal-footer {
+    padding: 4px 16px;
+  }
 }
 </style>
