@@ -13,9 +13,9 @@ const TAGLINE = computed(() =>
   isZh.value ? "INTJ · 计算机程序员 · 飞友" : "INTJ · Computer Programmer · Aviation Enthusiast",
 );
 
-const LOGO_ART = `█▓▒░
-░▒▓█
-█▓▒░
+const LOGO_ART = `██▓▒░
+░▒▓██
+██▓▒░
 `;
 
 type Conversation = Array<{
