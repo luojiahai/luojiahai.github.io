@@ -6,10 +6,8 @@ prev: false
 next: false
 ---
 
-<script setup>
-import { data as items } from './misc.data.ts'
-</script>
-
 # Miscellaneous
 
-<Blog :posts="items" />
+- [Use](./use.md)
+- [Resume](./resume.md)
+- [Portfolio](./portfolio.md)
