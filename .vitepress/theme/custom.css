@@ -476,6 +476,10 @@
   z-index: 1;
 }
 
+.VPHome .VPHero .actions {
+  padding-top: 24px;
+}
+
 .VPHome .VPHero .hero-lottie-bg {
   /* display: none; */
   position: absolute;
