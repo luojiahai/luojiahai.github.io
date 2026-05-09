@@ -501,18 +501,18 @@
 }
 
 .VPHero {
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px !important;
+  padding: 105px 24px 48px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 48px 48px !important;
+    padding: 105px 48px 48px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 64px 48px !important;
+    padding: 105px 64px 48px !important;
   }
 }
 
@@ -531,7 +531,7 @@
 .VPHome .VPHero .hello {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 20px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-text-1);
@@ -549,7 +549,7 @@
   padding-top: 8px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 20px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-brand-1);
@@ -617,10 +617,6 @@
   75% {
     content: "\\";
   }
-}
-
-.VPHome .VPHero .actions {
-  padding-top: 24px;
 }
 
 .VPFooter {
