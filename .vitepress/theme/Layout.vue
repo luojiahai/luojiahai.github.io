@@ -3,7 +3,7 @@ import DefaultTheme from "vitepress/theme";
 import { computed, nextTick, onMounted, watch } from "vue";
 import { useRoute } from "vitepress";
 import { useData } from "vitepress";
-import { type AnimationItem } from "lottie-web";
+import { type AnimationItem } from "lottie-web/build/player/lottie_light";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
@@ -90,7 +90,7 @@ onMounted(() => {
             bg.className = "hero-lottie-bg";
             hero.insertBefore(bg, hero.firstChild);
           }
-          const { default: lottie } = await import("lottie-web");
+          const { default: lottie } = await import("lottie-web/build/player/lottie_light");
           if (currentTickId !== tickId) return;
           lottieInstance = lottie.loadAnimation({
             container: bg,
