@@ -4,12 +4,12 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 const TOTAL_FRAMES = 10;
 const FRAME_INTERVAL_MS = 80;
 const COLORS = [
-  "var(--color-fig)",
-  "var(--color-clay)",
-  "var(--color-olive)",
-  "var(--color-sky)",
-  "var(--color-heather)",
-  "var(--color-coral)",
+  "var(--_brand-kraft)",
+  "var(--_brand-clay)",
+  "var(--_brand-fig)",
+  "var(--_brand-sky)",
+  "var(--_brand-mineral)",
+  "var(--_brand-peach)",
 ] as const;
 
 const currentFrame = ref(0);
@@ -71,13 +71,13 @@ onUnmounted(() => {
 
 <style scoped>
 .parrot {
-  padding: 16px;
+  padding: 64px;
 }
 
 .parrot-frame {
   font-family: var(--vp-font-family-mono);
-  font-size: 12px;
-  line-height: 1.2;
+  font-size: 10px;
+  line-height: 12px;
   margin: 0;
   white-space: pre;
 }
