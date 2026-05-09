@@ -245,7 +245,7 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 8px;
-  border: 2px solid var(--vp-c-bg-soft);
+  border: 2px solid var(--vp-c-bg-elv);
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -257,10 +257,10 @@ onUnmounted(() => {
   align-items: stretch;
   padding: 0 0 0 16px;
   height: 40px;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--vp-c-bg-elv);
   position: relative;
   color: var(--vp-c-text-2);
-  border-bottom: 2px solid var(--vp-c-bg-soft);
+  border-bottom: 2px solid var(--vp-c-bg-elv);
 }
 
 .header-title {
@@ -294,7 +294,7 @@ onUnmounted(() => {
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
-  background-color: var(--vp-code-block-bg);
+  background-color: var(--vp-c-bg-alt);
   color: var(--vp-c-text-1);
   white-space: nowrap;
   overflow-x: auto;
@@ -365,7 +365,7 @@ onUnmounted(() => {
   display: flex;
   align-items: baseline;
   color: var(--vp-c-text-1);
-  background-color: var(--vp-c-default-3);
+  background-color: var(--vp-c-bg-soft);
 }
 
 .assistant-line {
@@ -411,7 +411,7 @@ onUnmounted(() => {
   gap: 8px;
   padding: 4px 16px;
   font-size: 12px;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
   white-space: nowrap;
   overflow-x: auto;
