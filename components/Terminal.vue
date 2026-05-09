@@ -139,7 +139,7 @@ const updateNumChars = () => {
   const measured = charMeasure.value.getBoundingClientRect().width;
   if (measured > 0) {
     charWidth.value = measured;
-    numChars.value = Math.floor(terminalContent.value.clientWidth / measured) - 2; // subtract 2 to prevent overflow
+    numChars.value = Math.floor(terminalContent.value.clientWidth / measured) - 3; // subtract 3 to prevent overflow
   }
 };
 
