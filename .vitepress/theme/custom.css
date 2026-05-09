@@ -481,7 +481,7 @@
 }
 
 .VPHome .VPHero .hero-lottie-bg {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: -32px;
   right: -24px;
