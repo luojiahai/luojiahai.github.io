@@ -294,7 +294,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 8px;
+  padding: 16px;
   background-color: var(--vp-code-block-bg);
   color: var(--vp-c-text-1);
   white-space: nowrap;
@@ -410,7 +410,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 8px;
+  padding: 4px 16px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
@@ -447,12 +447,6 @@ onUnmounted(() => {
 @media (min-width: 640px) {
   .terminal-frame {
     margin: 40px 0;
-  }
-  .terminal-content {
-    padding: 16px;
-  }
-  .terminal-footer {
-    padding: 4px 16px;
   }
 }
 </style>

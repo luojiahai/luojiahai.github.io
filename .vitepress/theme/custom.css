@@ -1,20 +1,17 @@
 :root {
-  /* --_brand-clay: 14.8 63.1% 59.6%;
-  --_brand-clay-emphasized: 15.1 54.2% 51.2%; */
-  --_brand-clay: #d97757;
-  --_brand-clay-emphasized: #c96442;
   --_brand-kraft: #d4a27f;
   --_brand-kraft-emphasized: #c38f6b;
+  --_brand-clay: #d97757;
+  --_brand-clay-emphasized: #c96442;
   --_brand-fig: #c46686;
-  --_brand-fig-emphasized: #b05574;
   --_brand-sky: #6a9bcc;
-  --_brand-sky-emphasized: #5788ba;
   --_brand-mineral: #629987;
-  --_brand-mineral-emphasized: #5c7a70;
   --_brand-peach: #ebc9b7;
   --_brand-oat: #e3dacc;
   --_brand-cactus: #bcd1ca;
   --_brand-heather: #cbcadb;
+  --_brand-slate-dark: #141413;
+  --_brand-ivory-light: #faf9f5;
   --_gray-0: 0 0% 100%;
   --_gray-10: 60 14% 99%;
   --_gray-20: 60 14% 97%;
@@ -346,10 +343,10 @@
 }
 
 .dark {
-  --bg-100: hsl(var(--_gray-860));
-  --bg-200: hsl(var(--_gray-840));
-  --bg-300: hsl(var(--_gray-800));
-  --bg-400: hsl(var(--_gray-750));
+  --bg-100: hsl(var(--_gray-900));
+  --bg-200: hsl(var(--_gray-860));
+  --bg-300: hsl(var(--_gray-840));
+  --bg-400: hsl(var(--_gray-800));
   --border-100: hsl(var(--_gray-100) / 0.15);
   --border-200: hsl(var(--_gray-100) / 0.15);
   --border-300: hsl(var(--_gray-100) / 0.15);
