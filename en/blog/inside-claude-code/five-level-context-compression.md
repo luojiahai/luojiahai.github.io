@@ -1,6 +1,7 @@
 ---
-description: "Claude Code has a five-level pipeline to compress context."
-date: "2026-03-22"
+description: "Five compression strategies, applied lightest to heaviest, keep Claude Code's context window from overflowing."
+date: "2026-04-15"
+tags: ["Claude Code", "Compression"]
 ---
 
 # Inside Claude Code: Five-Level Context Compression

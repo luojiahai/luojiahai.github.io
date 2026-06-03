@@ -1,10 +1,17 @@
 :root {
-  /* --_brand-clay: 14.8 63.1% 59.6%;
-  --_brand-clay-emphasized: 15.1 54.2% 51.2%; */
+  --_brand-kraft: #d4a27f;
+  --_brand-kraft-emphasized: #c38f6b;
   --_brand-clay: #d97757;
   --_brand-clay-emphasized: #c96442;
   --_brand-fig: #c46686;
-  --_brand-fig-emphasized: #b14f6e;
+  --_brand-sky: #6a9bcc;
+  --_brand-mineral: #629987;
+  --_brand-peach: #ebc9b7;
+  --_brand-oat: #e3dacc;
+  --_brand-cactus: #bcd1ca;
+  --_brand-heather: #cbcadb;
+  --_brand-slate-dark: #141413;
+  --_brand-ivory-light: #faf9f5;
   --_gray-0: 0 0% 100%;
   --_gray-10: 60 14% 99%;
   --_gray-20: 60 14% 97%;
@@ -327,9 +334,9 @@
   --bg-200: hsl(var(--_gray-40));
   --bg-300: hsl(var(--_gray-50));
   --bg-400: hsl(var(--_gray-80));
-  --border-100: hsl(var(--_gray-810) / 0.15);
-  --border-200: hsl(var(--_gray-810) / 0.15);
-  --border-300: hsl(var(--_gray-810) / 0.15);
+  --border-100: hsl(var(--_gray-80));
+  --border-200: hsl(var(--_gray-80));
+  --border-300: hsl(var(--_gray-80));
   --fg-100: hsl(var(--_gray-860));
   --fg-200: hsl(var(--_gray-700));
   --fg-300: hsl(var(--_gray-700));
@@ -340,9 +347,9 @@
   --bg-200: hsl(var(--_gray-840));
   --bg-300: hsl(var(--_gray-800));
   --bg-400: hsl(var(--_gray-750));
-  --border-100: hsl(var(--_gray-100) / 0.15);
-  --border-200: hsl(var(--_gray-100) / 0.15);
-  --border-300: hsl(var(--_gray-100) / 0.15);
+  --border-100: hsl(var(--_gray-750));
+  --border-200: hsl(var(--_gray-750));
+  --border-300: hsl(var(--_gray-750));
   --fg-100: hsl(var(--_gray-20));
   --fg-200: hsl(var(--_gray-200));
   --fg-300: hsl(var(--_gray-200));
@@ -426,15 +433,10 @@
 }
 
 :root {
-  /* --vp-c-brand-1: hsl(var(--_brand-clay));
-  --vp-c-brand-2: hsl(var(--_brand-clay));
-  --vp-c-brand-3: hsl(var(--_brand-clay-emphasized));
-  --vp-c-brand-soft: hsl(var(--_brand-clay) / 0.15); */
-
-  --vp-c-brand-1: var(--_brand-clay);
-  --vp-c-brand-2: var(--_brand-clay);
-  --vp-c-brand-3: var(--_brand-clay-emphasized);
-  --vp-c-brand-soft: color-mix(in srgb, var(--_brand-clay) 15%, transparent);
+  --vp-c-brand-1: var(--_brand-kraft);
+  --vp-c-brand-2: var(--_brand-kraft);
+  --vp-c-brand-3: var(--_brand-kraft-emphasized);
+  --vp-c-brand-soft: color-mix(in srgb, var(--_brand-kraft) 15%, transparent);
 }
 
 * {
@@ -446,7 +448,7 @@
 }
 
 .VPNavBar:not(.has-sidebar) {
-  border-bottom: 1px solid var(--vp-c-gutter);
+  border-bottom: 1px solid var(--vp-c-border);
 }
 
 .VPNavBar:not(.has-sidebar) .divider {
@@ -462,10 +464,10 @@
   position: relative;
   overflow: hidden;
   background-image:
-    linear-gradient(90deg, var(--vp-c-bg-elv) 1px, #0000 1px),
-    linear-gradient(var(--vp-c-bg-elv) 1px, #0000 1px);
+    linear-gradient(90deg, var(--vp-c-bg-alt) 1px, #0000 1px),
+    linear-gradient(var(--vp-c-bg-alt) 1px, #0000 1px);
   background-size: 16px 16px;
-  background-color: var(--vp-c-bg-alt);
+  background-color: var(--vp-c-bg);
   border-bottom: 1px solid var(--vp-c-border);
 }
 
@@ -474,7 +476,12 @@
   z-index: 1;
 }
 
+.VPHome .VPHero .actions {
+  padding-top: 24px;
+}
+
 .VPHome .VPHero .hero-lottie-bg {
+  display: none;
   position: absolute;
   top: -32px;
   right: -24px;
@@ -498,18 +505,18 @@
 }
 
 .VPHero {
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px !important;
+  padding: 105px 24px 48px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 48px 48px !important;
+    padding: 105px 48px 48px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 64px 48px !important;
+    padding: 105px 64px 48px !important;
   }
 }
 
@@ -528,7 +535,7 @@
 .VPHome .VPHero .hello {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 20px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-text-1);
@@ -546,7 +553,7 @@
   padding-top: 8px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 20px;
   letter-spacing: 0;
   display: flex;
   color: var(--vp-c-brand-1);
@@ -616,10 +623,6 @@
   }
 }
 
-.VPHome .VPHero .actions {
-  padding-top: 24px;
-}
-
 .VPFooter {
   padding-top: 16px !important;
   padding-bottom: 16px !important;
@@ -636,21 +639,7 @@
   letter-spacing: 0.05em;
 }
 
-.custom-page .VPSkipLink,
-.custom-page .VPLocalNav {
+.parrot .VPSkipLink,
+.parrot .VPLocalNav {
   display: none !important;
-}
-
-.terminal-content div[class*="language-"] {
-  margin: 0 !important;
-}
-
-.terminal-content [class*="language-"] pre,
-.terminal-content [class*="language-"] code {
-  padding: 0;
-}
-
-.terminal-content [class*="language-"] > button.copy,
-.terminal-content [class*="language-"] > span.lang {
-  display: none;
 }

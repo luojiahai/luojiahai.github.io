@@ -1,6 +1,7 @@
 ---
-description: "Everything in Claude Code is built on concepts working engineers have encountered before."
-date: "2026-02-01"
+description: "An end-to-end tour of Claude Code's architecture, and why it's all fundamentals rather than secret sauce."
+date: "2026-04-01"
+tags: ["Claude Code", "Architecture"]
 ---
 
 # Inside Claude Code: Overview
@@ -102,7 +103,7 @@ const memSearch = `grep -rn "<search term>" ${autoMemDir} --include="*.md"`;
 const transcriptSearch = `grep -rn "<search term>" ${projectDir}/ --include="*.jsonl"`;
 ```
 
-Claude Code's creator Boris Cherny has said they tried RAG, but letting the AI decide what to search for and how to search produces far better results. An agent with direct access to the full document library and the freedom to dig beats a pre-packaged information bundle, especially as models get stronger. And `grep` has no index expiry, no vector database to maintain, and an order of magnitude less engineering complexity.
+Claude Code's bet is that letting the AI decide what to search for and how to search produces far better results than RAG. An agent with direct access to the full document library and the freedom to dig beats a pre-packaged information bundle, especially as models get stronger. And `grep` has no index expiry, no vector database to maintain, and an order of magnitude less engineering complexity.
 
 ## Three-Tier Memory Architecture
 

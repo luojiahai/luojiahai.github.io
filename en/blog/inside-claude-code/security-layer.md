@@ -1,17 +1,18 @@
 ---
-description: "Claude Code has a `--dangerously-skip-permissions` flag, also known as YOLO mode."
-date: "2026-03-29"
+description: "How Claude Code guards a tool call: an auto-mode AI classifier, fail-closed gates, and 23 Bash security rules."
+date: "2026-04-17"
+tags: ["Claude Code", "Security"]
 ---
 
 # Inside Claude Code: Security Layer
 
-Claude Code has a `--dangerously-skip-permissions` flag. Also known as YOLO mode. The name is doing a lot of work.
+Claude Code has a `--dangerously-skip-permissions` flag, also known as YOLO mode. The name is honest: it skips the interactive permission prompts _and_ the AI classifier alike, and lets the model execute freely. That really is the nuclear option.
 
-The flag bypasses all permission prompts and lets the AI execute freely. That sounds like the nuclear option. But there's a shadow AI running quietly in the background that most people don't know about.
+The interesting mechanism lives one mode over. In `--permission-mode auto`, Claude Code stops prompting you for approval and instead routes every action to a shadow AI running quietly in the background — one that most people don't know about.
 
 ## The YOLO Classifier
 
-`utils/permissions/yoloClassifier.ts` runs an independent classifier on every action the main model wants to take. The classifier result is binary: block or allow. And crucially, it uses `sideQuery`, a separate API call that never touches the main conversation, so the main agent can't see or influence its reasoning.
+`utils/permissions/yoloClassifier.ts` — despite the name, it gates auto mode, not the bypass flag — runs an independent classifier on every action the main model wants to take. The classifier result is binary: block or allow. And crucially, it uses `sideQuery`, a separate API call that never touches the main conversation, so the main agent can't see or influence its reasoning.
 
 ```typescript
 const yoloClassifierResponseSchema = z.object({
@@ -117,7 +118,7 @@ The path validator also blocks TOCTOU vulnerabilities. Tilde variants like `~use
 
 ## The Takeaway
 
-A single tool call in YOLO mode passes through at least five checkpoints:
+A single tool call in auto mode passes through at least five checkpoints:
 
 1. Current run mode (Plan / Auto / Bypass)
 2. User-defined rules in hooks
@@ -125,6 +126,6 @@ A single tool call in YOLO mode passes through at least five checkpoints:
 4. Bash command danger classification
 5. Rules engine from config files
 
-Multiple permission sources are evaluated and the most restrictive result wins. "Dangerously skip permissions" is the flag name. The actual behavior is closer to "skip the interactive prompts but run everything through an independent AI security review instead."
+Multiple permission sources are evaluated and the most restrictive result wins. The naming runs counter to intuition: `--dangerously-skip-permissions` really does skip everything, classifier included — it earns the "dangerously." The independent AI security review is what you opt into with `--permission-mode auto` instead, where every action runs through the classifier rather than an interactive prompt.
 
-The threat modeling here is serious. The name is just good marketing.
+The threat modeling here is serious. It just lives in auto mode, not behind the scary flag name.

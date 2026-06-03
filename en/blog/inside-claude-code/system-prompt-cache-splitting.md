@@ -1,6 +1,7 @@
 ---
-description: "Claude Code splits its system prompt at a sentinel boundary to maximise Anthropic API cache hits."
-date: "2026-03-01"
+description: "Claude Code splits its system prompt at a sentinel boundary to keep the cacheable prefix stable."
+date: "2026-04-09"
+tags: ["Claude Code", "Caching"]
 ---
 
 # Inside Claude Code: System Prompt Cache Splitting
@@ -43,7 +44,7 @@ The static block gets tagged with `cache_control: { type: 'ephemeral', scope: 'g
 
 ## Three Cache Scopes
 
-When the boundary marker is found, `splitSysPromptPrefix()` in `src/utils/api.ts` cuts the array into up to four blocks:
+Each block carries one of three cache scopes: `null` (never cached), `'org'` (cached per-organisation), or `'global'` (cached across all Claude Code users). When the boundary marker is found, `splitSysPromptPrefix()` in `src/utils/api.ts` cuts the array into up to four blocks — using `null` and `'global'` here, and falling back to `'org'` when global caching is off (see the MCP exception below):
 
 | Block                | Scope      | What it is                          |
 | -------------------- | ---------- | ----------------------------------- |

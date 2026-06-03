@@ -6,10 +6,8 @@ prev: false
 next: false
 ---
 
-<script setup>
-import { data as items } from './misc.data.ts'
-</script>
-
 # 什锦
 
-<Blog :posts="items" />
+- [使用](./use.md)
+- [简历](./resume.md)
+- [项目](./portfolio.md)

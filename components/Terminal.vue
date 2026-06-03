@@ -6,23 +6,16 @@ const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
 const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
-const NAME = "Whatchamacallit";
+const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
-const HEADING = "luojiahai";
 const TAGLINE = computed(() =>
   isZh.value ? "INTJ · 计算机程序员 · 飞友" : "INTJ · Computer Programmer · Aviation Enthusiast",
 );
 
-const SHOW_LOGO_FRAME = false;
-
-const LOGO_ART = ` ▐▛███▜▌ 
-▝▜█████▛▘
-  ▘▘ ▝▝  
+const LOGO_ART = `██▓▒░
+░▒▓██
+██▓▒░
 `;
-
-const BORDER_SIDES = Array(6).fill("│").join("\n");
-const LOGO_FRAME_BORDER_LEFT = `╭\n${BORDER_SIDES}\n╰`;
-const LOGO_FRAME_BORDER_RIGHT = `╮\n${BORDER_SIDES}\n╯`;
 
 type Conversation = Array<{
   question: string;
@@ -141,29 +134,12 @@ const charWidth = ref(0);
 const numChars = ref(80);
 let resizeObserver: ResizeObserver | null = null;
 
-const logoFrameTop = computed(() => {
-  const label = ` ${NAME} ${VERSION} `;
-  const fill = numChars.value - 5 - label.length;
-  return {
-    left: `─── `,
-    name: NAME,
-    version: VERSION,
-    right: " " + "─".repeat(Math.max(0, fill)),
-  };
-});
-
-const logoFrameBottom = computed(() => {
-  return "─".repeat(Math.max(0, numChars.value - 2));
-});
-
-const logoFrameWidth = computed(() => (charWidth.value > 0 ? `${numChars.value * charWidth.value}px` : "100%"));
-
 const updateNumChars = () => {
   if (!terminalContent.value || !charMeasure.value) return;
   const measured = charMeasure.value.getBoundingClientRect().width;
   if (measured > 0) {
     charWidth.value = measured;
-    numChars.value = Math.floor(terminalContent.value.clientWidth / measured) - 2; // subtract 2 to prevent overflow
+    numChars.value = Math.floor(terminalContent.value.clientWidth / measured) - 3; // subtract 3 to prevent overflow
   }
 };
 
@@ -206,41 +182,14 @@ onUnmounted(() => {
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div v-if="SHOW_LOGO_FRAME" class="logo-frame" :style="{ width: logoFrameWidth }">
-        <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_LEFT }}</div>
-        <div class="logo-inner">
-          <!-- prettier-ignore -->
-          <div class="logo-frame-top">
-            <span>{{ logoFrameTop.left }}</span>
-            <span class="logo-frame-top-name">{{ logoFrameTop.name }}</span>&nbsp;<span class="logo-frame-top-version">{{ logoFrameTop.version }}</span>
-            <span>{{ logoFrameTop.right }}</span>
-          </div>
-          <div class="logo">
-            <div class="logo-art-container">
-              <div class="logo-art">{{ LOGO_ART }}</div>
-            </div>
-            <div class="logo-info-container">
-              <div class="logo-heading">
-                <span>{{ HEADING }}</span>
-              </div>
-              <div class="logo-tagline-container">
-                <div class="logo-tagline">{{ TAGLINE }}</div>
-              </div>
-            </div>
-            <div class="logo-spacer"></div>
-          </div>
-          <div class="logo-frame-bottom">{{ logoFrameBottom }}</div>
-        </div>
-        <div class="logo-frame-border">{{ LOGO_FRAME_BORDER_RIGHT }}</div>
-      </div>
-      <div v-else class="logo">
+      <div class="logo">
         <div class="logo-art-container">
           <div class="logo-art">{{ LOGO_ART }}</div>
         </div>
         <div class="logo-info-container">
           <div class="logo-heading">
-            <span>{{ HEADING }}</span
-            >&nbsp;<span class="logo-frame-top-version">{{ VERSION }}</span>
+            <span>{{ NAME }}</span
+            >&nbsp;<span class="logo-version">{{ VERSION }}</span>
           </div>
           <div class="logo-tagline-container">
             <div class="logo-tagline">{{ TAGLINE }}</div>
@@ -288,7 +237,8 @@ onUnmounted(() => {
   margin: 0 -24px;
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 500;
+  line-height: 20px;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -298,12 +248,6 @@ onUnmounted(() => {
   border: 2px solid var(--vp-c-bg-elv);
 }
 
-@media (min-width: 640px) {
-  .terminal-frame {
-    margin: 40px 0;
-  }
-}
-
 .terminal-frame::-webkit-scrollbar {
   display: none;
 }
@@ -311,7 +255,7 @@ onUnmounted(() => {
 .terminal-header {
   display: flex;
   align-items: stretch;
-  padding: 0 0 0 8px;
+  padding: 0 0 0 16px;
   height: 40px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
@@ -323,15 +267,6 @@ onUnmounted(() => {
   flex: 1;
   display: flex;
   align-items: center;
-}
-
-.header-title::before {
-  content: "✳";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 14px;
-  margin-right: 4px;
 }
 
 .header-controls {
@@ -358,8 +293,8 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 1lh 8px;
-  background-color: var(--vp-code-block-bg);
+  padding: 16px;
+  background-color: var(--vp-c-bg-alt);
   color: var(--vp-c-text-1);
   white-space: nowrap;
   overflow-x: auto;
@@ -371,52 +306,19 @@ onUnmounted(() => {
   display: none;
 }
 
-.logo-frame {
-  display: flex;
-  align-items: stretch;
-}
-
-.logo-inner {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-}
-
 .logo {
   display: flex;
   align-items: flex-start;
   flex: 1;
 }
 
-.logo-frame-top,
-.logo-frame-bottom {
-  line-height: 1;
-  color: var(--vp-c-brand-1);
-}
-
-.logo-frame-top-name {
-  color: var(--vp-c-brand-1);
-}
-
-.logo-frame-top-version {
+.logo-version {
   color: var(--vp-c-text-2);
-}
-
-.logo-frame-border {
-  white-space: pre;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  color: var(--vp-c-brand-1);
-}
-
-.logo-spacer {
-  flex: 1;
 }
 
 .logo-art-container {
   display: flex;
+  /* display: none; */
   flex-direction: column;
   justify-content: center;
   margin: 0 16px 0 0;
@@ -447,8 +349,8 @@ onUnmounted(() => {
 .conversation {
   display: flex;
   flex-direction: column;
-  gap: 1lh;
-  margin: 1lh 0;
+  gap: 16px;
+  margin: 16px 0;
   width: 100%;
   white-space: normal;
 }
@@ -456,7 +358,7 @@ onUnmounted(() => {
 .turn {
   display: flex;
   flex-direction: column;
-  gap: 1lh;
+  gap: 16px;
 }
 
 .user-line {
@@ -479,8 +381,7 @@ onUnmounted(() => {
 }
 
 .input-border {
-  color: var(--vp-c-gray-1);
-  line-height: 1;
+  color: var(--vp-c-default-1);
 }
 
 .terminal-input {
@@ -508,7 +409,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px;
+  padding: 4px 16px;
   font-size: 12px;
   background-color: var(--vp-c-bg-elv);
   color: var(--vp-c-text-3);
@@ -540,5 +441,11 @@ onUnmounted(() => {
   display: inline-flex;
   width: 8px;
   margin-right: 16px;
+}
+
+@media (min-width: 640px) {
+  .terminal-frame {
+    margin: 40px 0;
+  }
 }
 </style>

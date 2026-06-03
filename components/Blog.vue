@@ -4,6 +4,7 @@ type Post = {
   url: string;
   description: string;
   date: string;
+  tags?: string[];
 };
 
 defineProps<{
@@ -21,6 +22,9 @@ defineProps<{
             <span class="item-date">{{ post.date }}</span>
           </div>
           <p class="item-description">{{ post.description }}</p>
+          <div v-if="post.tags?.length" class="item-tags">
+            <span v-for="tag in post.tags" :key="tag" class="tag-badge">{{ tag }}</span>
+          </div>
         </a>
       </li>
     </ul>
@@ -65,7 +69,7 @@ defineProps<{
 }
 
 .item-date {
-  font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
@@ -91,8 +95,25 @@ defineProps<{
 }
 
 .item-description {
-  margin: 4px 0 0;
+  font-weight: 400;
+  margin: 4px 0 6px;
   color: var(--vp-c-text-2);
-  font-size: 14px;
+}
+
+.item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-default-3);
 }
 </style>

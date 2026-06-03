@@ -128,20 +128,19 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .item-company {
-  font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
 }
 
 .item-description {
+  font-weight: 400;
   margin: 4px 0 6px;
   color: var(--vp-c-text-2);
-  font-size: 14px;
 }
 
 .item-tech {
-  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
@@ -149,6 +148,7 @@ const items = computed(() => PORTFOLIO[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .tech-token {
+  font-weight: 500;
   color: var(--vp-c-brand-1);
 }
 

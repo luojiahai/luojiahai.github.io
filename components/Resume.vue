@@ -144,16 +144,16 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .section-title {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--vp-c-text-2);
   margin-top: 0;
   padding-bottom: 16px;
   border-top: none;
   border-bottom: 1px solid var(--vp-c-divider);
-  line-height: 1;
+  line-height: 16px;
 }
 
 .entry-list {
@@ -184,7 +184,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .entry-location {
-  font-size: 14px;
+  font-weight: 400;
   font-style: italic;
   color: var(--vp-c-text-2);
   white-space: nowrap;
@@ -204,7 +204,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .item-label {
-  font-size: 14px;
+  font-weight: 400;
   color: var(--vp-c-text-2);
 }
 
@@ -212,13 +212,12 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   font-family: var(--vp-font-family-mono);
   content: "●";
   color: var(--vp-c-text-3);
-  font-size: 14px;
   width: 8px;
   margin-right: 16px;
 }
 
 .item-period {
-  font-size: 14px;
+  font-weight: 400;
   color: var(--vp-c-text-3);
   white-space: nowrap;
 }

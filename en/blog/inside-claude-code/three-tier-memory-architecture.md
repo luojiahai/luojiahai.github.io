@@ -1,6 +1,7 @@
 ---
-description: "Claude Code solves AI context drift with a three-tier memory architecture."
-date: "2026-03-15"
+description: "Claude Code fights long-session context drift with a hot-warm-cold, three-tier memory architecture."
+date: "2026-04-13"
+tags: ["Claude Code", "Memory"]
 ---
 
 # Inside Claude Code: Three-Tier Memory Architecture
@@ -73,7 +74,7 @@ in the list that would clearly be useful, feel free to return an empty list.
 
 Two things worth noting here. First, the selectivity guidance: when in doubt, leave it out, and returning an empty list is explicitly valid. The 5-slot budget is a ceiling, not a target. Second, the tool rule: if you're actively using something, skip its documentation but always load its gotchas. You clearly know how to invoke it. What you need right now is the list of ways it can go wrong.
 
-The selector call is deliberately minimal: `max_tokens: 256`. It only needs filenames. Output is constrained with JSON schema enforcement so it physically cannot hallucinate filenames that don't exist.
+The selector call is deliberately minimal: `max_tokens: 256`. It only needs filenames. Output is shape-constrained by a JSON schema, and every filename it returns is then checked against the actual file list — so invented names that don't exist get filtered out before they reach the main model.
 
 The scan phase only reads the first 30 lines of each file, enough to get the YAML frontmatter. Full content is never read during selection. The manifest the selector sees looks like:
 

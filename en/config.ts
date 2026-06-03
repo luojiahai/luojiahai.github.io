@@ -56,22 +56,29 @@ function sidebar(): DefaultTheme.Sidebar {
 
 function blogSidebarItems(): DefaultTheme.SidebarItem[] {
   const blogDir = resolve(__dirname, "blog");
-  const items: DefaultTheme.SidebarItem[] = [];
+  const posts: { text: string; link: string; date: string }[] = [];
+
+  const collect = (src: string, link: string, fallback: string) => {
+    const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? fallback;
+    const date = src.match(/^date:\s*['"]?(\d{4}-\d{2}-\d{2})/m)?.[1] ?? "";
+    posts.push({ text: title, link, date });
+  };
+
   for (const f of readdirSync(blogDir).filter((f: string) => f !== "index.md" && !f.endsWith(".ts"))) {
     const fullPath = resolve(blogDir, f);
     if (statSync(fullPath).isDirectory()) {
-      for (const c of readdirSync(fullPath)
-        .filter((c: string) => c.endsWith(".md"))
-        .sort()) {
+      for (const c of readdirSync(fullPath).filter((c: string) => c.endsWith(".md"))) {
         const src = readFileSync(resolve(fullPath, c), "utf-8");
-        const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? c.replace(/\.md$/, "");
-        items.push({ text: title, link: `/blog/${f}/${c.replace(/\.md$/, "")}` });
+        collect(src, `/blog/${f}/${c.replace(/\.md$/, "")}`, c.replace(/\.md$/, ""));
       }
     } else {
       const src = readFileSync(fullPath, "utf-8");
-      const title = src.match(/^#\s+(.+)/m)?.[1].trim() ?? f.replace(/\.md$/, "");
-      items.push({ text: title, link: `/blog/${f.replace(/\.md$/, "")}` });
+      collect(src, `/blog/${f.replace(/\.md$/, "")}`, f.replace(/\.md$/, ""));
     }
   }
-  return items.sort((a, b) => (a.link ?? "").localeCompare(b.link ?? ""));
+
+  // Sort by frontmatter date, newest first (matches the blog index in blog.data.ts).
+  return posts
+    .sort((a, b) => b.date.localeCompare(a.date) || a.link.localeCompare(b.link))
+    .map(({ text, link }) => ({ text, link }));
 }

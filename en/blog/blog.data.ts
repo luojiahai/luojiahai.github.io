@@ -5,6 +5,7 @@ export type Post = {
   url: string;
   description: string;
   date: string;
+  tags: string[];
 };
 
 declare const data: Post[];
@@ -20,6 +21,7 @@ export default createContentLoader(["en/blog/*.md", "en/blog/*/*.md"], {
         url: item.url.replace(/^\/en\//, "/"),
         description: item.frontmatter.description ?? "",
         date: item.frontmatter.date ?? "",
+        tags: item.frontmatter.tags ?? [],
       }))
       .sort((a, b) => b.date.localeCompare(a.date));
   },

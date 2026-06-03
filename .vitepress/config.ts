@@ -36,7 +36,7 @@ export default defineConfig({
     ["link", { rel: "icon", type: "image/png", href: "/favicon-32x32.png", sizes: "32x32" }],
     ["link", { rel: "icon", type: "image/png", href: "/favicon-16x16.png", sizes: "16x16" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
-    ["meta", { name: "theme-color", content: "#d97757" }],
+    ["meta", { name: "theme-color", content: "#d4a27f" }],
     ["meta", { name: "description", content: "Hello, World!" }],
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:locale", content: "en" }],
@@ -51,7 +51,7 @@ export default defineConfig({
       light: "/logo-light.svg",
       dark: "/logo-dark.svg",
     },
-    siteTitle: "luojiahai",
+    siteTitle: "LUOJIAHAI",
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
       { icon: "x", link: "https://x.com/luojiahai" },

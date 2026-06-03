@@ -6,12 +6,12 @@ It's the source for my personal site. Built with [VitePress](https://vitepress.d
 
 - **Bilingual** — Full English and Simplified Chinese support; English served at `/`, Chinese at `/zh/`
 - **Terminal home page** — macOS-style terminal widget with dynamic visitor system info (browser, OS, timezone, local time)
-- **Posts** — English-only blog at `/posts/`
+- **Blog** — English-only posts at `/blog/`
 - **Resume page** — Structured work and education history
 - **Portfolio page** — Selected project highlights with tech stack
 - **Uses page** — Hardware and software setup
 - **Easter egg** — Animated ASCII parrot at `/parrot`
-- **Self-hosted fonts** — Cascadia Mono (monospace) and Source Han Sans SC (Chinese)
+- **Self-hosted fonts** — Source Code Pro, Source Sans 3, Source Han Sans SC, Source Han Mono SC
 
 ## Development
 
