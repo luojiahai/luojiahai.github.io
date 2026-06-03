@@ -1,5 +1,5 @@
 ---
-description: "Claude Code is actually using a while(true) loop."
+description: "The autonomous agent at the heart of Claude Code is, underneath, a single while(true) loop."
 date: 2026-04-03
 tags: ["Claude Code", "Agent Loop"]
 ---
@@ -107,7 +107,7 @@ Before every API call, messages flow through up to five compaction stages in seq
 
 1. `applyToolResultBudget`: enforces per-message budget on tool result size; replaces oversized content
 2. `snipCompact` (feature-gated: `HISTORY_SNIP`): snips old history sections
-3. `microcompact` (feature-gated: `CACHED_MICROCOMPACT`): removes redundant or duplicate tool results; can be cached
+3. `microcompact`: clears old tool-result content for compactable tools; a cached variant (`CACHED_MICROCOMPACT`) defers the deletes server-side
 4. `contextCollapse` (feature-gated: `CONTEXT_COLLAPSE`): collapses old context into summaries
 5. `autocompact`: the main full-conversation summarization, triggered by token threshold
 

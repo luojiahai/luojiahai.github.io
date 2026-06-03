@@ -1,5 +1,5 @@
 ---
-description: "Claude Code handles concurrent tool execution by borrowing a classic database pattern."
+description: "Claude Code runs tools concurrently using the read/write-lock pattern straight out of databases."
 date: 2026-04-07
 tags: ["Claude Code", "Concurrency"]
 ---

@@ -1,5 +1,5 @@
 ---
-description: "Claude Code skips RAG, instead using a three-layer architecture of metadata scanning."
+description: "Claude Code skips RAG entirely, letting the agent grep and a small metadata index handle retrieval."
 date: 2026-04-11
 tags: ["Claude Code", "Retrieval"]
 ---
@@ -53,7 +53,7 @@ It's also worth noting that the grep command strings above are specific to embed
 
 ## Why this beats RAG
 
-Boris Cherny, Claude Code's creator, mentioned in a podcast that they tried RAG and moved away from it. The reason: when the agent decides what to search for and how to narrow it, the results are far more relevant than pre-packaged chunks.
+Claude Code's bet is that agentic search beats RAG: when the agent decides what to search for and how to narrow it, the results are far more relevant than pre-packaged chunks.
 
 The analogy that makes sense to me: RAG is like pre-packaging all the relevant material for an intern before they start work. Agentic search is giving them direct access to the entire document library and letting them dig. The stronger the model, the bigger the advantage for the latter, because the model knows better than you do what information it actually needs.
 
