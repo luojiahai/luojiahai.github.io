@@ -1,6 +1,6 @@
 ---
 description: "Claude Code's two multi-agent modes: a coordinator with disposable workers, and a swarm of teammates in terminal panes."
-date: 2026-06-07
+date: 2026-05-07
 tags: ["Claude Code", "Multi-Agent"]
 ---
 
