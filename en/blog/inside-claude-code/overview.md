@@ -1,6 +1,6 @@
 ---
 description: "An end-to-end tour of Claude Code's architecture, and why it's all fundamentals rather than secret sauce."
-date: 2026-04-01
+date: "2026-04-01"
 tags: ["Claude Code", "Architecture"]
 ---
 

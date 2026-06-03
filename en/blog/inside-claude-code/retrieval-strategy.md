@@ -1,6 +1,6 @@
 ---
 description: "Claude Code skips RAG entirely, letting the agent grep and a small metadata index handle retrieval."
-date: 2026-04-11
+date: "2026-04-11"
 tags: ["Claude Code", "Retrieval"]
 ---
 

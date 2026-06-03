@@ -1,6 +1,6 @@
 ---
 description: "Once a day, Claude Code forks a background agent to consolidate its memories — the source calls it dreaming."
-date: 2026-05-05
+date: "2026-05-05"
 tags: ["Claude Code", "Memory"]
 ---
 

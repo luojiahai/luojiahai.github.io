@@ -1,6 +1,6 @@
 ---
 description: "Claude Code speculatively runs your predicted next turn while you're idle, then commits it if you accept."
-date: 2026-05-03
+date: "2026-05-03"
 tags: ["Claude Code", "Performance"]
 ---
 

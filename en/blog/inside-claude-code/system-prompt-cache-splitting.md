@@ -1,6 +1,6 @@
 ---
 description: "Claude Code splits its system prompt at a sentinel boundary to keep the cacheable prefix stable."
-date: 2026-04-09
+date: "2026-04-09"
 tags: ["Claude Code", "Caching"]
 ---
 

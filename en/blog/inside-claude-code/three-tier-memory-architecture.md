@@ -1,6 +1,6 @@
 ---
 description: "Claude Code fights long-session context drift with a hot-warm-cold, three-tier memory architecture."
-date: 2026-04-13
+date: "2026-04-13"
 tags: ["Claude Code", "Memory"]
 ---
 

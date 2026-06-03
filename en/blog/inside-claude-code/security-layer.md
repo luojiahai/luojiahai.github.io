@@ -1,6 +1,6 @@
 ---
 description: "How Claude Code guards a tool call: an auto-mode AI classifier, fail-closed gates, and 23 Bash security rules."
-date: 2026-04-17
+date: "2026-04-17"
 tags: ["Claude Code", "Security"]
 ---
 

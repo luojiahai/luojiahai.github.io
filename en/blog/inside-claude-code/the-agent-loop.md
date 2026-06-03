@@ -1,6 +1,6 @@
 ---
 description: "The autonomous agent at the heart of Claude Code is, underneath, a single while(true) loop."
-date: 2026-04-03
+date: "2026-04-03"
 tags: ["Claude Code", "Agent Loop"]
 ---
 

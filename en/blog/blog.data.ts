@@ -20,7 +20,7 @@ export default createContentLoader(["en/blog/*.md", "en/blog/*/*.md"], {
         title: item.frontmatter.title ?? item.src?.match(/^#\s+(.+)/m)?.[1].trim() ?? "",
         url: item.url.replace(/^\/en\//, "/"),
         description: item.frontmatter.description ?? "",
-        date: item.frontmatter.date ? new Date(item.frontmatter.date).toISOString().slice(0, 10) : "",
+        date: item.frontmatter.date ?? "",
         tags: item.frontmatter.tags ?? [],
       }))
       .sort((a, b) => b.date.localeCompare(a.date));

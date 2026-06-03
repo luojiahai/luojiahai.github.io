@@ -1,6 +1,6 @@
 ---
 description: "How Claude Code's 40+ built-in tools are registered, deferred, and locked down with fail-closed defaults."
-date: 2026-04-05
+date: "2026-04-05"
 tags: ["Claude Code", "Tools"]
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: "Claude Code's two hidden defenses — one against model distillation, one against leaking internal codenames."
-date: 2026-04-19
+date: "2026-04-19"
 tags: ["Claude Code", "Security"]
 ---
 
