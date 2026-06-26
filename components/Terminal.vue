@@ -243,8 +243,8 @@ onUnmounted(() => {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  border-radius: 8px;
-  border: 2px solid var(--vp-c-bg-elv);
+  border-radius: 0;
+  border: 1px solid var(--vp-c-border);
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -445,6 +445,7 @@ onUnmounted(() => {
 @media (min-width: 640px) {
   .terminal-frame {
     margin: 40px 0;
+    border-radius: 8px;
   }
 }
 </style>
