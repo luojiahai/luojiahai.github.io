@@ -47,11 +47,11 @@ export default defineConfig({
     ["meta", { property: "og:url", content: "https://luojiahai.com/" }],
   ],
   themeConfig: {
-    // logo: {
-    //   light: "/logo-light.svg",
-    //   dark: "/logo-dark.svg",
-    // },
-    logo: "/logo.svg",
+    logo: {
+      light: "/logo-light.svg",
+      dark: "/logo-dark.svg",
+    },
+    // logo: "/logo.svg",
     // siteTitle: "LUOJIAHAI",
     socialLinks: [
       { icon: "github", link: "https://github.com/luojiahai" },
