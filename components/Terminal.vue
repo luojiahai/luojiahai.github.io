@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
+import { X, Minus, Maximize2 } from "@lucide/vue";
 
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
@@ -161,21 +162,14 @@ onUnmounted(() => {
     <div class="terminal-header">
       <div class="header-title">{{ TITLE }}</div>
       <div class="header-controls">
+        <span class="header-control-button close">
+          <X :size="10" />
+        </span>
         <span class="header-control-button minimize">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="5" x2="10" y2="5" stroke="currentColor" stroke-width="1.5" />
-          </svg>
+          <Minus :size="10" />
         </span>
         <span class="header-control-button maximize">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.75" y="0.75" width="8.5" height="8.5" stroke="currentColor" stroke-width="1.5" />
-          </svg>
-        </span>
-        <span class="header-control-button close">
-          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0.75" y1="0.75" x2="9.25" y2="9.25" stroke="currentColor" stroke-width="1.5" />
-            <line x1="9.25" y1="0.75" x2="0.75" y2="9.25" stroke="currentColor" stroke-width="1.5" />
-          </svg>
+          <Maximize2 :size="10" />
         </span>
       </div>
     </div>
@@ -244,7 +238,6 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 0;
-  border: 1px solid var(--vp-c-border);
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -253,17 +246,18 @@ onUnmounted(() => {
 
 .terminal-header {
   display: flex;
-  align-items: stretch;
-  padding: 0 0 0 16px;
-  height: 40px;
+  align-items: center;
+  padding: 0 14px;
+  height: 32px;
   background-color: var(--vp-c-bg-elv);
   position: relative;
   color: var(--vp-c-text-2);
-  border-bottom: 2px solid var(--vp-c-bg-elv);
 }
 
 .header-title {
-  flex: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
 }
@@ -271,21 +265,53 @@ onUnmounted(() => {
 .header-controls {
   display: flex;
   flex-shrink: 0;
-  margin-left: auto;
-  align-self: stretch;
+  align-items: center;
+  gap: 9px;
 }
 
 .header-control-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
   cursor: default;
   user-select: none;
+  position: relative;
 }
 
-.header-control-button:hover {
-  background-color: var(--vp-c-brand-soft);
+.header-control-button svg {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.header-control-button:hover svg {
+  opacity: 1;
+}
+
+.header-control-button.close {
+  background-color: #ff5f57;
+}
+
+.header-control-button.close svg {
+  color: #4d0000;
+}
+
+.header-control-button.minimize {
+  background-color: #febc2e;
+}
+
+.header-control-button.minimize svg {
+  color: #995700;
+}
+
+.header-control-button.maximize {
+  background-color: #28c840;
+}
+
+.header-control-button.maximize svg {
+  color: #006500;
 }
 
 .terminal-content {
