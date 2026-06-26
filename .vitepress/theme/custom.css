@@ -439,10 +439,6 @@
   --vp-c-brand-soft: color-mix(in srgb, var(--_brand-kraft) 15%, transparent);
 }
 
-* {
-  border-radius: 0 !important;
-}
-
 .VPNavBar {
   background-color: var(--vp-c-bg);
 }

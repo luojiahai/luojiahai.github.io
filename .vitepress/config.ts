@@ -58,6 +58,7 @@ export default defineConfig({
       { icon: "instagram", link: "https://instagram.com/luojiahai" },
       { icon: "linkedin", link: "https://linkedin.com/in/luojiahai" },
       { icon: "bilibili", link: "https://space.bilibili.com/866961" },
+      { icon: "xiaohongshu", link: "https://www.xiaohongshu.com/user/profile/5c8e525c000000001203a0ba" },
       { icon: "sinaweibo", link: "https://weibo.com/ljiahai" },
     ],
     search: {
