@@ -11,7 +11,6 @@ It's the source for my personal site. Built with [VitePress](https://vitepress.d
 - **Portfolio page** — Selected project highlights with tech stack
 - **Uses page** — Hardware and software setup
 - **Easter egg** — Animated ASCII parrot at `/parrot`
-- **Self-hosted fonts** — Source Code Pro, Source Sans 3, Source Han Sans SC, Source Han Mono SC
 
 ## Development
 

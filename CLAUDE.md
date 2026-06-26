@@ -56,7 +56,6 @@ All components live in `components/` and are globally registered in `.vitepress/
 ### Styling
 
 - `.vitepress/theme/custom.css` — brand token overrides and structural CSS overrides on top of VitePress defaults
-- `.vitepress/theme/custom-fonts.css` — font-face declarations for custom fonts
 
 ### Deployment
 

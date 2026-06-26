@@ -1,7 +1,6 @@
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./custom.css";
-import "./custom-fonts.css";
 import Layout from "./Layout.vue";
 import Parrot from "../../components/Parrot.vue";
 import Portfolio from "../../components/Portfolio.vue";
