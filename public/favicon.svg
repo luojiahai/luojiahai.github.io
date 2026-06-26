@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="2160" viewBox="0 0 2160 2160" version="1.1" id="svg_1" style="" xmlns:bx="https://boxy-svg.com">
-  <rect fill="#d4a27f" width="2160" height="2160"/>
-  <g transform="matrix(1.083496, 0, 0, 1.083496, -134.455811, 36.05616)" style="">
-    <g id="g_4" transform="matrix(2.428824, 0, 0, 2.428824, -945.751709, -608.275574)" style="">
-      <g id="g_5" transform="matrix(2.25, 0.0, 0.0, 2.25, 0.0, 0.0)" style="">
-        <g id="g_6" transform="matrix(1.0, 0.0, 0.0, 1.0, 478.705, 479.105)" style="">
-          <path fill="#141413" d="M -85.214 -100.19 C -61.572 -105.79 -49.046 -104.17 -26.318 -110.44 C -13.926 -113.98 -19.463 -129.98 -28.493 -132.76 C -36.98 -135.38 -56.007 -131.15 -63.914 -127.06 C -70.757 -123.52 -78.518 -117.62 -85.214 -100.19 Z M -97.975 -76.943 C -103.81 -93.276 -107.8 -111.52 -97.845 -125.96 L -84.182 -137.33 C -63.243 -151.97 -19.077 -160.17 -4.079 -133.56 C 8.175 -111.81 -9.141 -95.726 -29.407 -90.564 C -51.122 -85.029 -77.052 -84.812 -97.975 -76.943 Z" id="path_7"/>
-        </g>
-      </g>
-    </g>
-    <rect fill="#141413" x="1061.8" y="1114.86" width="118.136" height="609.139"/>
-    <g id="g_2" transform="matrix(2.509425, 0, 0, 2.509425, -1374.546509, -597.977783)" style="">
-      <g id="g_3" transform="matrix(2.25, 0.0, 0.0, 2.25, 0.0, 0.0)" style="">
-        <g id="Group_1" transform="matrix(1.0, 0.0, 0.0, 1.0, 431.194, 241.397)" style="">
-          <ellipse fill="#faf9f5" cx="10.769" cy="-15.845" rx="83.692" ry="83.692"/>
-        </g>
-      </g>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal-icon lucide-terminal">
+  <rect width="32" height="32" fill="#FFFFFF" stroke="none"/>
+  <path d="M12 19h8"/>
+  <path d="m4 17 6-6-6-6"/>
 </svg>
