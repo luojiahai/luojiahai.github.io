@@ -238,7 +238,7 @@ onUnmounted(() => {
   font-family: var(--vp-font-family-mono);
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 18px;
   color: var(--vp-c-text-1);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
