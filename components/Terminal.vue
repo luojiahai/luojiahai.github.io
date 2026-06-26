@@ -9,13 +9,12 @@ const isZh = computed(() => lang.value.startsWith("zh"));
 const TITLE = "";
 const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
-const TAGLINE = computed(() =>
-  isZh.value ? "INTJ · 计算机程序员 · 飞友" : "INTJ · Computer Programmer · Aviation Enthusiast",
-);
+const TAGLINE = computed(() => (isZh.value ? "INTJ" : "INTJ personality"));
 
-const LOGO_ART = `▌
+const LOGO_ART = `
 ▌
-`;
+▌
+`.trim();
 
 type Conversation = Array<{
   question: string;
