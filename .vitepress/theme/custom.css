@@ -439,22 +439,6 @@
   --vp-c-brand-soft: color-mix(in srgb, var(--_brand-kraft) 15%, transparent);
 }
 
-.VPNavBar {
-  background-color: var(--vp-c-bg);
-}
-
-.VPNavBar:not(.has-sidebar) {
-  border-bottom: 1px solid var(--vp-c-border);
-}
-
-.VPNavBar:not(.has-sidebar) .divider {
-  display: none;
-}
-
-.VPHome {
-  margin-bottom: 48px !important;
-}
-
 /* prettier-ignore */
 .VPHome .VPHero {
   position: relative;
