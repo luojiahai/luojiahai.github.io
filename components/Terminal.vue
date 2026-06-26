@@ -255,6 +255,8 @@ onUnmounted(() => {
 .header-title {
   display: flex;
   align-items: center;
+  font-size: 13px;
+  font-weight: 600;
   gap: 8px;
   margin-left: 16px;
 }
