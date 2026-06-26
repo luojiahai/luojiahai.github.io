@@ -23,34 +23,15 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "Home", link: "/" },
-    { text: "Blog", link: "/blog/", activeMatch: "/blog/" },
-    {
-      text: "Miscellaneous",
-      activeMatch: "/miscellaneous/",
-      items: [
-        { text: "Use", link: "/miscellaneous/use" },
-        { text: "Resume", link: "/miscellaneous/resume" },
-        { text: "Portfolio", link: "/miscellaneous/portfolio" },
-      ],
-    },
+    // { text: "Blog", link: "/blog/", activeMatch: "/blog/" },
+    { text: "Use", link: "/use" },
+    { text: "Resume", link: "/resume" },
   ];
 }
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
     "/blog/": [{ text: "Blog", collapsed: false, items: blogSidebarItems() }],
-    "/miscellaneous/": [
-      {
-        text: "Miscellaneous",
-        collapsed: false,
-        base: "/miscellaneous",
-        items: [
-          { text: "Use", link: "/use" },
-          { text: "Resume", link: "/resume" },
-          { text: "Portfolio", link: "/portfolio" },
-        ],
-      },
-    ],
   };
 }
 

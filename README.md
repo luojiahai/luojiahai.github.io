@@ -2,16 +2,6 @@
 
 It's the source for my personal site. Built with [VitePress](https://vitepress.dev/) and deployed to [GitHub Pages](https://pages.github.com/).
 
-## Features
-
-- **Bilingual** — Full English and Simplified Chinese support; English served at `/`, Chinese at `/zh/`
-- **Terminal home page** — macOS-style terminal widget with dynamic visitor system info (browser, OS, timezone, local time)
-- **Blog** — English-only posts at `/blog/`
-- **Resume page** — Structured work and education history
-- **Portfolio page** — Selected project highlights with tech stack
-- **Uses page** — Hardware and software setup
-- **Easter egg** — Animated ASCII parrot at `/parrot`
-
 ## Development
 
 ```sh

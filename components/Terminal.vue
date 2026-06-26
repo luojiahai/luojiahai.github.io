@@ -5,7 +5,8 @@ import { useData } from "vitepress";
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
+// const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
+const TITLE = "";
 const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
 const TAGLINE = computed(() =>
@@ -14,7 +15,6 @@ const TAGLINE = computed(() =>
 
 const LOGO_ART = `██▓▒░
 ░▒▓██
-██▓▒░
 `;
 
 type Conversation = Array<{
@@ -437,7 +437,7 @@ onUnmounted(() => {
 }
 
 .assistant-line::before {
-  content: "●";
+  content: "•";
   display: inline-flex;
   width: 8px;
   margin-right: 16px;

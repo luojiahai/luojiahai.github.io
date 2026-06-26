@@ -4,7 +4,6 @@ export const config = defineConfig({
   lang: "zh-Hans",
   themeConfig: {
     nav: nav(),
-    sidebar: sidebar(),
     editLink: {
       pattern: "https://github.com/luojiahai/luojiahai.github.io/edit/main/:path",
       text: "在 GitHub 上编辑此页面",
@@ -41,34 +40,10 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     { text: "首页", link: "/zh/" },
-    { text: "博客", activeMatch: "/zh/blog/", link: "/zh/blog/" },
-    {
-      text: "什锦",
-      activeMatch: "/zh/miscellaneous/",
-      items: [
-        { text: "使用", link: "/zh/miscellaneous/use" },
-        { text: "简历", link: "/zh/miscellaneous/resume" },
-        { text: "项目", link: "/zh/miscellaneous/portfolio" },
-      ],
-    },
+    // { text: "博客", activeMatch: "/zh/blog/", link: "/zh/blog/" },
+    { text: "使用", link: "/zh/use" },
+    { text: "简历", link: "/zh/resume" },
   ];
-}
-
-function sidebar(): DefaultTheme.Sidebar {
-  return {
-    "/zh/miscellaneous/": [
-      {
-        text: "什锦",
-        collapsed: false,
-        base: "/zh/miscellaneous",
-        items: [
-          { text: "使用", link: "/use" },
-          { text: "简历", link: "/resume" },
-          { text: "项目", link: "/portfolio" },
-        ],
-      },
-    ],
-  };
 }
 
 export function searchOptions(): DefaultTheme.LocalSearchOptions {
