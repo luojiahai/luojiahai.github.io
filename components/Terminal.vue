@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
-import { X, Minus, Maximize2 } from "@lucide/vue";
+import { X, Minus, Maximize2, SquareTerminal } from "@lucide/vue";
 
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
 
-// const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
-const TITLE = "";
+const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
 const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
 const TAGLINE = computed(() => (isZh.value ? "INTJ" : "INTJ personality"));
@@ -160,7 +159,6 @@ onUnmounted(() => {
 <template>
   <div class="terminal-frame">
     <div class="terminal-header">
-      <div class="header-title">{{ TITLE }}</div>
       <div class="header-controls">
         <span class="header-control-button close">
           <X :size="10" />
@@ -172,6 +170,7 @@ onUnmounted(() => {
           <Maximize2 :size="10" />
         </span>
       </div>
+      <div class="header-title"><SquareTerminal :size="14" /> {{ TITLE }}</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
@@ -250,16 +249,14 @@ onUnmounted(() => {
   padding: 0 14px;
   height: 32px;
   background-color: var(--vp-c-bg-elv);
-  position: relative;
   color: var(--vp-c-text-2);
 }
 
 .header-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   align-items: center;
+  gap: 8px;
+  margin-left: 16px;
 }
 
 .header-controls {
