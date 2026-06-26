@@ -13,9 +13,9 @@ const TAGLINE = computed(() =>
   isZh.value ? "INTJ · 计算机程序员 · 飞友" : "INTJ · Computer Programmer · Aviation Enthusiast",
 );
 
-// const LOGO_ART = `██▓▒░
-// ░▒▓██
-// `;
+const LOGO_ART = `▌
+▌
+`;
 
 type Conversation = Array<{
   question: string;
@@ -183,9 +183,9 @@ onUnmounted(() => {
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
       <div class="logo">
-        <!-- <div class="logo-art-container">
+        <div class="logo-art-container">
           <div class="logo-art">{{ LOGO_ART }}</div>
-        </div> -->
+        </div>
         <div class="logo-info-container">
           <div class="logo-heading">
             <span>{{ NAME }}</span
