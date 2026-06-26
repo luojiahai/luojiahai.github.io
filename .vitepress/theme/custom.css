@@ -471,39 +471,6 @@
   border-bottom: 1px solid var(--vp-c-border);
 }
 
-.VPHome .VPHero .container {
-  position: relative;
-  z-index: 1;
-}
-
-.VPHome .VPHero .actions {
-  padding-top: 24px;
-}
-
-.VPHome .VPHero .hero-lottie-bg {
-  display: none;
-  position: absolute;
-  top: -32px;
-  right: -24px;
-  height: 224px;
-  aspect-ratio: 1;
-  pointer-events: none;
-}
-
-.VPHome .VPHero .hero-lottie-bg svg {
-  height: 100%;
-  width: auto;
-  display: block;
-}
-
-.VPHome .VPHero .hero-lottie-bg svg [fill="rgb(217,119,87)"] {
-  fill: var(--vp-c-brand-1) !important;
-}
-
-.VPHome .VPHero .hero-lottie-bg svg [fill="rgb(19,19,20)"] {
-  fill: var(--vp-c-text-1) !important;
-}
-
 .VPHero {
   padding: 105px 24px 48px !important;
 }

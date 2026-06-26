@@ -3,7 +3,6 @@ import DefaultTheme from "vitepress/theme";
 import { computed, nextTick, onMounted, watch } from "vue";
 import { useRoute } from "vitepress";
 import { useData } from "vitepress";
-import { type AnimationItem } from "lottie-web/build/player/lottie_light";
 
 const { Layout } = DefaultTheme;
 const route = useRoute();
@@ -68,38 +67,15 @@ function startTypewriter(el: Element) {
 
 onMounted(() => {
   let cleanup: (() => void) | null = null;
-  let lottieInstance: AnimationItem | null = null;
   let tickId = 0;
 
   watch(
     () => route.path,
     () => {
       if (cleanup) cleanup();
-      if (lottieInstance) {
-        lottieInstance.destroy();
-        lottieInstance = null;
-      }
       const currentTickId = ++tickId;
       nextTick(async () => {
         if (currentTickId !== tickId) return;
-        const hero = document.querySelector<HTMLElement>(".VPHome .VPHero .container");
-        if (hero) {
-          let bg = hero.querySelector<HTMLElement>(".hero-lottie-bg");
-          if (!bg) {
-            bg = document.createElement("div");
-            bg.className = "hero-lottie-bg";
-            hero.insertBefore(bg, hero.firstChild);
-          }
-          const { default: lottie } = await import("lottie-web/build/player/lottie_light");
-          if (currentTickId !== tickId) return;
-          lottieInstance = lottie.loadAnimation({
-            container: bg,
-            path: "/lottie-overview.json",
-            renderer: "svg",
-            loop: true,
-            autoplay: true,
-          });
-        }
         const el = document.querySelector(".VPHome .VPHero .thinking");
         if (!el) return;
         cleanup = startTypewriter(el);
