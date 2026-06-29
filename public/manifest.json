@@ -1,7 +1,7 @@
 {
   "name": "luojiahai",
   "short_name": "luojiahai",
-  "background_color": "hsl(49 26.8% 92%)",
+  "background_color": "#d97757",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
