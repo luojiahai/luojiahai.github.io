@@ -230,6 +230,7 @@ onUnmounted(() => {
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-radius: 0;
+  border: none;
 }
 
 .terminal-frame::-webkit-scrollbar {
@@ -456,6 +457,7 @@ onUnmounted(() => {
   .terminal-frame {
     margin: 40px 0;
     border-radius: 8px;
+    border: 1px solid var(--vp-c-border);
   }
 }
 </style>
