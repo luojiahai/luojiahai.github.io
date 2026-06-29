@@ -69,4 +69,5 @@ TEST-results.xml
 *v8.log
 /lib/
 .superpowers/
+docs/superpowers/
 .worktrees/
