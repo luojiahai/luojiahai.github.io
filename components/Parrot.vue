@@ -77,7 +77,7 @@ onUnmounted(() => {
 .parrot-frame {
   font-family: var(--vp-font-family-mono);
   font-size: 10px;
-  line-height: 1.2;
+  line-height: 12px;
   margin: 0;
   white-space: pre;
 }

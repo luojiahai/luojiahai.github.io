@@ -153,7 +153,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
   padding-bottom: 16px;
   border-top: none;
   border-bottom: 1px solid var(--vp-c-divider);
-  line-height: 1;
+  line-height: 16px;
 }
 
 .entry-list {
