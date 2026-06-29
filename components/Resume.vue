@@ -165,7 +165,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 }
 
 .entry-item {
-  border-left: 2px solid var(--vp-c-brand-1);
+  border-left: 5px solid var(--vp-c-brand-1);
   padding-left: 16px;
 }
 

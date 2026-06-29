@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { useData } from "vitepress";
-import { X, Minus, Maximize2, SquareTerminal } from "@lucide/vue";
+import { X, Minus, Maximize2, Terminal } from "@lucide/vue";
 
 const { lang } = useData();
 const isZh = computed(() => lang.value.startsWith("zh"));
@@ -10,11 +10,6 @@ const TITLE = computed(() => (isZh.value ? "终端" : "Terminal"));
 const NAME = computed(() => (isZh.value ? "罗嘉海" : "luojiahai"));
 const VERSION = "v3.14159";
 const TAGLINE = computed(() => (isZh.value ? "INTJ" : "INTJ personality"));
-
-const LOGO_ART = `
-▌
-▌
-`.trim();
 
 type Conversation = Array<{
   question: string;
@@ -170,24 +165,22 @@ onUnmounted(() => {
           <Maximize2 :size="10" />
         </span>
       </div>
-      <div class="header-title"><SquareTerminal :size="14" /> {{ TITLE }}</div>
+      <div class="header-title"><Terminal :size="14" /> {{ TITLE }}</div>
     </div>
     <div ref="terminalContent" class="terminal-content">
       <span ref="charMeasure" class="char-measure">─</span>
-      <div class="logo">
-        <div class="logo-art-container">
-          <div class="logo-art">{{ LOGO_ART }}</div>
-        </div>
-        <div class="logo-info-container">
-          <div class="logo-heading">
+      <div class="heading">
+        <div class="heading-bar"></div>
+        <div class="heading-info">
+          <div class="heading-name">
             <span>{{ NAME }}</span
-            >&nbsp;<span class="logo-version">{{ VERSION }}</span>
+            >&nbsp;<span class="heading-version">{{ VERSION }}</span>
           </div>
-          <div class="logo-tagline-container">
-            <div class="logo-tagline">{{ TAGLINE }}</div>
+          <div class="heading-tagline-container">
+            <div class="heading-tagline">{{ TAGLINE }}</div>
           </div>
         </div>
-        <div class="logo-spacer"></div>
+        <div class="heading-spacer"></div>
       </div>
       <div class="conversation">
         <div v-for="turn in conversation" :key="turn.question" class="turn">
@@ -330,43 +323,35 @@ onUnmounted(() => {
   display: none;
 }
 
-.logo {
+.heading {
   display: flex;
   align-items: flex-start;
   flex: 1;
 }
 
-.logo-version {
+.heading-version {
   color: var(--vp-c-text-2);
 }
 
-.logo-art-container {
-  display: flex;
-  /* display: none; */
-  flex-direction: column;
-  justify-content: center;
+.heading-bar {
+  align-self: stretch;
   margin: 0 16px 0 0;
+  padding-left: 3px;
+  border-left: 5px solid var(--vp-c-brand-1);
 }
 
-.logo-art {
-  letter-spacing: -0.4px;
-  white-space: pre;
-  margin: 0;
-  color: var(--vp-c-brand-1);
-}
-
-.logo-info-container {
+.heading-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   white-space: pre-wrap;
 }
 
-.logo-heading {
+.heading-name {
   color: var(--vp-c-text-1);
 }
 
-.logo-tagline {
+.heading-tagline {
   color: var(--vp-c-text-2);
 }
 
