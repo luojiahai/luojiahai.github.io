@@ -461,7 +461,7 @@ onUnmounted(() => {
 }
 
 .assistant-line::before {
-  content: "⏺";
+  content: "⏺\FE0E";
   display: inline-flex;
   width: 8px;
   margin-right: 16px;

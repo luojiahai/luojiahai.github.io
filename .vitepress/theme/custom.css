@@ -506,18 +506,18 @@
 }
 
 .VPHero {
-  padding: 80px 24px 40px !important;
+  padding: 88px 24px 32px !important;
 }
 
 @media (min-width: 640px) {
   .VPHero {
-    padding: 88px 48px 48px !important;
+    padding: 96px 48px 40px !important;
   }
 }
 
 @media (min-width: 960px) {
   .VPHero {
-    padding: 88px 64px 48px !important;
+    padding: 96px 64px 40px !important;
   }
 }
 
