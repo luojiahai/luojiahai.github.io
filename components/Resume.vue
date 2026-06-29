@@ -141,16 +141,17 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 <style scoped>
 .resume {
   margin: 0 auto 32px;
+  font-size: 14px;
 }
 
 .section-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--vp-c-text-2);
   margin-top: 0;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   border-top: none;
   border-bottom: 1px solid var(--vp-c-divider);
   line-height: 16px;
