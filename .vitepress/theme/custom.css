@@ -1,3 +1,53 @@
+/* JetBrainsMono Nerd Font Mono */
+@font-face {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  src: url("/fonts/JetBrainsMonoNerdFontMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  src: url("/fonts/JetBrainsMonoNerdFontMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  src: url("/fonts/JetBrainsMonoNerdFontMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  src: url("/fonts/JetBrainsMonoNerdFontMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Symbols Nerd Font (icon fallback) */
+@font-face {
+  font-family: "Symbols Nerd Font";
+  src: url("/fonts/SymbolsNerdFont-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Symbols Nerd Font Mono";
+  src: url("/fonts/SymbolsNerdFontMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --_brand-clay: #d97757;
   --_brand-clay-hover: #c6613f;
@@ -398,6 +448,10 @@
   --vp-c-text-1: var(--fg-100);
   --vp-c-text-2: var(--fg-200);
   --vp-c-text-3: var(--fg-300);
+
+  --vp-font-family-mono:
+    "JetBrainsMono Nerd Font Mono", "Symbols Nerd Font Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 .dark {
