@@ -335,8 +335,8 @@ onUnmounted(() => {
 
 .heading-bar {
   align-self: stretch;
-  margin: 0 16px 0 0;
-  padding-left: 3px;
+  width: 8px;
+  margin-right: 16px;
   border-left: 5px solid var(--vp-c-brand-1);
 }
 
