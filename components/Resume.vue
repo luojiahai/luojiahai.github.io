@@ -146,7 +146,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 
 .section-title {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--vp-c-text-2);
