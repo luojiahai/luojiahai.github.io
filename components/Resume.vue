@@ -210,7 +210,7 @@ const sections = computed(() => RESUME[lang.value.startsWith("zh") ? "zh" : "en"
 
 .item-label::before {
   font-family: var(--vp-font-family-mono);
-  content: "•";
+  content: "⏺";
   color: var(--vp-c-text-3);
   width: 8px;
   margin-right: 12px;

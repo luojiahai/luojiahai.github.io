@@ -461,7 +461,7 @@ onUnmounted(() => {
 }
 
 .assistant-line::before {
-  content: "•";
+  content: "⏺";
   display: inline-flex;
   width: 8px;
   margin-right: 16px;
